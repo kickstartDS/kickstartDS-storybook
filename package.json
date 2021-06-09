@@ -1,0 +1,43 @@
+{
+  "name": "kickstartds-storybook",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p sass:watch storybook",
+    "storybook": "start-storybook -p 6006 -s static",
+    "build-storybook": "npm run sass && build-storybook -s static",
+    "sass": "sass --load-path=node_modules src/index.scss static/index.css",
+    "sass:watch": "npm run sass -- --watch",
+    "chromatic": "run-s build-storybook run-chromatic",
+    "run-chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --build-script-name 'build-storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "Lukas Mestel",
+  "license": "ISC",
+  "dependencies": {
+    "@kickstartds/base": "^1.0.0-alpha.25",
+    "@kickstartds/content": "^1.0.0-alpha.27",
+    "@kickstartds/core": "^1.0.0-alpha.15",
+    "@kickstartds/form": "^1.0.0-alpha.5",
+    "@whitespace/storybook-addon-html": "git+https://github.com/lmestel/storybook-addon-html.git",
+    "lazysizes": "^5.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
+    "babel-loader": "^8.2.2",
+    "chromatic": "^5.9.0",
+    "husky": "^6.0.0",
+    "include-media": "^1.4.10",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.34.1"
+  }
+}
