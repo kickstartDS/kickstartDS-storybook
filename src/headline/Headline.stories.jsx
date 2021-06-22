@@ -1,16 +1,9 @@
-import { getArgsShared, pack } from "@kickstartds/core/lib/storybook/helpers";
-import { Headline } from "@kickstartds/base";
-import schema from "@kickstartds/base/lib/headline/headline.schema.dereffed.json";
+import { pack } from "@kickstartds/core/lib/storybook/helpers";
+import headlineStories, {
+  Template,
+} from "@kickstartds/base/lib/headline/headline.stories";
 
-Headline.displayName = "Headline";
-const { argTypes } = getArgsShared(schema.properties);
-const Template = (args) => <Headline {...args} />;
-
-export default {
-  title: "Base/Headline",
-  component: Headline,
-  argTypes,
-};
+export default headlineStories;
 
 export const H1 = Template.bind({});
 H1.args = pack({
