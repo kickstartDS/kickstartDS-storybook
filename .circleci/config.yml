@@ -56,7 +56,7 @@ workflows:
     jobs:
       - install
 
-      # - release:
-      #    context: kickstartDS
-      #    requires:
-      #      - install
+      - release:
+         context: kickstartDS
+         requires:
+           - install

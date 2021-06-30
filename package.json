@@ -28,12 +28,15 @@
     "@kickstartds/form": "^1.0.0-alpha.8"
   },
   "devDependencies": {
+    "@auto-it/npm": "^10.29.3",
+    "@auto-it/released": "^10.29.3",
     "@babel/core": "^7.14.3",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
     "@storybook/react": "^6.2.9",
     "@whitespace/storybook-addon-html": "git+https://github.com/lmestel/storybook-addon-html.git",
+    "auto": "^10.29.3",
     "babel-loader": "^8.2.2",
     "chromatic": "^5.9.0",
     "include-media": "^1.4.10",
