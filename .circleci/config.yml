@@ -51,6 +51,15 @@ jobs:
           name: Create Release
           command: yarn auto shipit
 
+  chromatic:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache: *restore-cache-node
+      - run:
+          name: Deploy Storybook
+          command: yarn chromatic
+
 workflows:
   release:
     jobs:
@@ -58,5 +67,9 @@ workflows:
 
       - release:
          context: kickstartDS
+         requires:
+           - install
+
+      - chromatic:
          requires:
            - install

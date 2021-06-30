@@ -10,11 +10,10 @@
   ],
   "scripts": {
     "build-storybook": "npm run sass && build-storybook -s static",
-    "chromatic": "run-s build-storybook run-chromatic",
+    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --build-script-name 'build-storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes --exit-once-uploaded",
     "dist:bundle": "node node_modules/@kickstartds/core/bundle dist",
     "dist:sass": "sass --load-path=node_modules src/index.scss dist/kickstartds.css",
     "prepublishOnly": "rm -rf dist && run-p dist:*",
-    "run-chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --build-script-name 'build-storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes",
     "sass": "sass --load-path=node_modules src/index.scss static/index.css",
     "sass:watch": "npm run sass -- --watch",
     "start": "run-p sass:watch storybook",
