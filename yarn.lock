@@ -1700,7 +1700,7 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@storybook/addon-actions@6.3.1", "@storybook/addon-actions@^6.2.9":
+"@storybook/addon-actions@6.3.1", "@storybook/addon-actions@^6.3.1":
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-6.3.1.tgz#b483e1c2cf5c77b8b750fb8d03a3f7defc4adc98"
   integrity sha512-85gJI6Rl9Ig236pAD3e/315VN3htD8YJEBL8b6EI6Npi6ga4vtjvXPKh7wsXW6QI6am5msN/lhnHDSlJWWAvGg==
@@ -1805,7 +1805,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-essentials@^6.2.9":
+"@storybook/addon-essentials@^6.3.1":
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/@storybook/addon-essentials/-/addon-essentials-6.3.1.tgz#c89bc1dd4a270321c875fe39641bb4b8cc7b89cd"
   integrity sha512-p3InmICgqDevdoETir0zv+f3j5pIO2x1LhZOWVdguGxe0oh72m9I3RrfqO43z9jjZLXvw9t47XvwoMDle83Qow==
@@ -1825,7 +1825,7 @@
     storybook-addon-outline "^1.4.0"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-links@^6.2.9":
+"@storybook/addon-links@^6.3.1":
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.3.1.tgz#2a6e9e241a27ccdc269c7d5a71a4735cafd2c418"
   integrity sha512-zB8KVHSy+Ka4S87r36PMBKXZ7ZEC4td1OD2IFbdAXuhOnlR1OaRmoAhwJAsK3rjhS4uJvvtVj4CD3XTJ9qXEIw==
@@ -2311,7 +2311,7 @@
     react-docgen-typescript "^2.0.0"
     tslib "^2.0.0"
 
-"@storybook/react@^6.2.9":
+"@storybook/react@^6.3.1":
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.3.1.tgz#99e31dd3dcfd548d74ac90abd6b0932974827ef9"
   integrity sha512-P3neN04YWpIyJ0kLq5UWo390wwM9HG6hVOJUi1uw9lMFbZoy/oVM77ot+77Mtfq3S58Rv51iohFF9DAkxPFNzA==
