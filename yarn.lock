@@ -2843,9 +2843,9 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
-"@whitespace/storybook-addon-html@git+https://github.com/lmestel/storybook-addon-html.git":
-  version "5.0.0"
-  resolved "git+https://github.com/lmestel/storybook-addon-html.git#caf235ee36d4c3cab769b83475f3fb00b56e2c40"
+"@whitespace/storybook-addon-html@git+https://github.com/lmestel/storybook-addon-html.git#v5.1.0":
+  version "5.1.0"
+  resolved "git+https://github.com/lmestel/storybook-addon-html.git#7f4fd3b8928f17f7ff666c2a82078632da421b7c"
   dependencies:
     "@babel/generator" "^7.13.9"
     "@babel/parser" "^7.13.12"
