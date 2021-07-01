@@ -1,3 +1,20 @@
+# v1.0.2 (Thu Jul 01 2021)
+
+#### ⚠️ Pushed to `master`
+
+- chore(dependencies): update kickstarDS deps ([@julrich](https://github.com/julrich))
+
+#### 🔩 Dependency Updates
+
+- build: update storybook [#1](https://github.com/kickstartDS/kickstartDS-storybook/pull/1) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.1 (Wed Jun 30 2021)
 
 #### ⚠️ Pushed to `master`
