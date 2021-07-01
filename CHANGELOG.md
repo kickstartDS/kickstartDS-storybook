@@ -1,3 +1,16 @@
+# v1.0.3 (Thu Jul 01 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- chore(dependencies): switch to canary release ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.2 (Thu Jul 01 2021)
 
 #### ⚠️ Pushed to `master`
