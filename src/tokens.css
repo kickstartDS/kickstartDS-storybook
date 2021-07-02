@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #333;
+  --color-primary: #06708A;
   --color-primary-alpha-1: rgba(51, 51, 51, 0.1);
   --color-primary-alpha-2: rgba(51, 51, 51, 0.2);
   --color-primary-alpha-3: rgba(51, 51, 51, 0.3);
@@ -27,7 +27,7 @@
   --color-primary-darker-7: #131313;
   --color-primary-darker-8: #0e0e0e;
   --color-primary-darker-9: #0a0a0a;
-  --color-secondary: #999;
+  --color-secondary: #ECFF00;
   --color-white: #fff;
   --color-white-alpha-1: hsla(0, 0%, 100%, 0.1);
   --color-white-alpha-2: hsla(0, 0%, 100%, 0.2);
