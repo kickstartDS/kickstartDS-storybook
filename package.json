@@ -21,9 +21,9 @@
   },
   "keywords": [],
   "dependencies": {
-    "@kickstartds/base": "1.0.1-canary.150.864.0",
-    "@kickstartds/content": "1.0.1-canary.150.864.0",
-    "@kickstartds/core": "1.0.1-canary.150.864.0"
+    "@kickstartds/base": "1.0.0",
+    "@kickstartds/content": "1.0.0",
+    "@kickstartds/core": "1.0.0"
   },
   "devDependencies": {
     "@auto-it/npm": "^10.29.3",
