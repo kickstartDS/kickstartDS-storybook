@@ -1,3 +1,15 @@
+# v1.0.5 (Fri Jul 02 2021)
+
+#### ⚠️ Pushed to `master`
+
+- chore(dependencies): upgrade kickstartDS dependencies ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.4 (Fri Jul 02 2021)
 
 #### ⚠️ Pushed to `master`
