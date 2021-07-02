@@ -1,3 +1,15 @@
+# v1.0.4 (Fri Jul 02 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add stories ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.3 (Thu Jul 01 2021)
 
 #### ⚠️ Pushed to `master`
