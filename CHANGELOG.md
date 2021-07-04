@@ -1,3 +1,16 @@
+# v1.0.7 (Sun Jul 04 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: remove storytelling component for now ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.6 (Sun Jul 04 2021)
 
 #### ⚠️ Pushed to `master`
