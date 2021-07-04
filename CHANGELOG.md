@@ -1,3 +1,16 @@
+# v1.0.6 (Sun Jul 04 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix(dependencies): update yarn lock file ([@julrich](https://github.com/julrich))
+- feat(dependencies): update kickstartds modules ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.5 (Fri Jul 02 2021)
 
 #### ⚠️ Pushed to `master`
