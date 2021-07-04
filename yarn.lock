@@ -1384,14 +1384,14 @@
   resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
   integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
 
-"@kickstartds/base@1.0.0", "@kickstartds/base@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-1.0.0.tgz#456c770a60c5b8a0f20e77bbebd4000c22cbaaac"
-  integrity sha512-+H9ogYs5QoL2DwhSV6plU26UyNyzTBXV3zSARCMubBv9D+LoKh7f/QveWd2FBzkZv1roGoFLhgdGI5MZiT/wYQ==
+"@kickstartds/base@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-1.1.1.tgz#5faa5d97462b03dbba6bfb8ae7cc25cae1f27643"
+  integrity sha512-dMgiKnpcRpZ0Hrk4v7UgjdwyL3/AO13q76MmhtKUapkn9vssoQ7/qmhUJygjuZ8RDdxftA58f99ki++8JY57Zg==
   dependencies:
     "@babel/runtime" "^7.13.17"
     "@glidejs/glide" "git://github.com/glidejs/glide.git#master"
-    "@kickstartds/core" "^1.0.0"
+    "@kickstartds/core" "^1.1.1"
     classnames "^2.2.6"
     css-element-queries "^1.2.3"
     date-fns "^2.19.0"
@@ -1405,23 +1405,33 @@
     simplebar "^5.0.7"
     stickybits "^3.7.0"
 
-"@kickstartds/content@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-1.0.0.tgz#cd73de25667b410542c4be1be701771828d6a4e6"
-  integrity sha512-EF3gDRJmAzsFBrPJcf29Ar3Tw4r/0VokqI4rYG/ZE331faNXbDN+q58Fsy0EhDFPK8cVaRcrxV9Ph8nkL3zvLA==
+"@kickstartds/blog@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-1.1.2.tgz#94bb71e68d0a40bb5f4bb2f6f5b9d5f1f80a1c2a"
+  integrity sha512-pHedhQbUjavd8tM4K9ru+dBi9menzTCmbucla2xeZn4EYqZVTQYhPWpgqzmA0dkvWOJ/9wDfhNIG6TtsgWUrUA==
   dependencies:
     "@babel/runtime" "^7.13.17"
-    "@kickstartds/base" "^1.0.0"
-    "@kickstartds/core" "^1.0.0"
+    "@kickstartds/base" "^1.1.1"
+    "@kickstartds/core" "^1.1.1"
+    date-fns "^2.19.0"
+
+"@kickstartds/content@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-1.1.1.tgz#471dcc226bf11b1feb71d69c655ed5dc5cd25070"
+  integrity sha512-15aJWwR2Q/SXrJ4rlWNnAnYSwlOo1sn/e7BMDgbjivdCBqF+yB+lNoLr97cVEN/jZRtTrbDe9msCdTNxy15Xew==
+  dependencies:
+    "@babel/runtime" "^7.13.17"
+    "@kickstartds/base" "^1.1.1"
+    "@kickstartds/core" "^1.1.1"
     classnames "^2.2.6"
     countup.js "^2.0.7"
     date-fns "^2.19.0"
     objectFitPolyfill "^2.3.0"
 
-"@kickstartds/core@1.0.0", "@kickstartds/core@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-1.0.0.tgz#7381153662a901e5544f9173839b13a33f841476"
-  integrity sha512-0diBF7ElgkChUL391Li9TiVOR6Ot3jKfhszr9pLbOpUNSRo6ZDiyope0S55nGsnpLbYkI7uCXKQDCJ4sPA/9rw==
+"@kickstartds/core@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-1.1.1.tgz#d4338b73d89b6077f1e9027667b5e22673ec737c"
+  integrity sha512-xpfm2q/EVj+FC2EKeft1fRH/Ej6uAy0ubv0P8bIkhte1Jb5pLQ/et4m9BQIV+7WkiDEkWR++n17zok+e9U0O1A==
   dependencies:
     "@babel/runtime" "^7.13.17"
     bourbon "^7.0.0"
@@ -1436,6 +1446,16 @@
     pubsub-js "^1.9.3"
     sass "^1.32.8"
     vhtml "^2.2.0"
+
+"@kickstartds/form@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-1.1.2.tgz#26abcbf91ef46ca1dbb8300f6f571748aa3a94e7"
+  integrity sha512-9+E7Lcd91CDhEAWNg+PWZOi1OJIO9Qsz5vd4TbEi+yb8TTShyH753TM6V0K1JRSUt557+bKyoCLGHiiLnGsYpQ==
+  dependencies:
+    "@babel/runtime" "^7.13.17"
+    "@kickstartds/base" "^1.1.1"
+    "@kickstartds/core" "^1.1.1"
+    classnames "^2.2.6"
 
 "@mdx-js/loader@^1.6.22":
   version "1.6.22"
