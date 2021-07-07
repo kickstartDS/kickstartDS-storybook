@@ -1,3 +1,15 @@
+# v1.0.8 (Wed Jul 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: apply cd ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.7 (Sun Jul 04 2021)
 
 #### ⚠️ Pushed to `master`
