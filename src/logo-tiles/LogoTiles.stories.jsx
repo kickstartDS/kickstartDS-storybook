@@ -4,7 +4,7 @@ LogoTiles.displayName = "LogoTiles";
 const Template = (args) => <LogoTiles {...args} />;
 
 export default {
-  title: "Content/Siegel",
+  title: "Content/Logos",
   component: LogoTiles,
 };
 
@@ -14,27 +14,19 @@ Default.args = {
     {
       alt: "Erfolgsfaktor Familie",
       src:
-        "https://maxcluster.de/images/d/8/9/6/d/d896daf31d331dcce9a6d7abfb93843157c9cd46-eff.jpg",
-      height: 336,
-      width: 336,
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/640px-Shopify_logo_2018.svg.png",
     },
     {
       alt: "Familienfreundliches Unternehmen",
-      src: "https://maxcluster.de/user/pages/25.jobs/familenfreundlich.png",
-      height: 350,
-      width: 350,
+      src: "https://d21buns5ku92am.cloudfront.net/41748/images/177922-logo-d8345a-large-1441290673.png",
     },
     {
       alt: "Kooperationspartner der FHDW",
-      src: "https://maxcluster.de/user/pages/25.jobs/FHDW_Logo_RGB.jpg",
-      height: 337,
-      width: 841,
+      src: "https://timotheebinet.com/static/fa38ab30a9b8abb4a1ff8c0b7fb86cef/00d43/gatsby.png",
     },
     {
       alt: "Kooperationspartner von it´s owl",
-      src: "https://maxcluster.de/user/pages/25.jobs/logo-its-owl.png",
-      height: 358,
-      width: 500,
+      src: "https://www-cdn.bigcommerce.com/assets/mediakit/logo-plain.png",
     },
   ],
 };

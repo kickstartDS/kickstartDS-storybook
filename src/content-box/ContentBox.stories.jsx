@@ -21,8 +21,8 @@ MitLink.args = pack({
   ...Default.args,
   link: {
     enabled: true,
-    variant: "solid",
-    href: "https://maxcluster.de/",
+    variant: "outline",
+    href: "#",
     label: "Mehr erfahren",
   },
 });
