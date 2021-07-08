@@ -22,7 +22,6 @@ const Page = () => (
   <>
 
     <Visual
-      backgroundColor="#ccc"
       box={{
         background: 'transparent',
         enabled: true,
@@ -49,15 +48,10 @@ const Page = () => (
         image: {
           indent: 'none',
           srcDesktop: 'img/visual/visual_lemon.png',
-          srcMobile: '',
-          srcTablet: ''
+          srcMobile: 'img/visual/visual_lemon.png',
+          srcTablet: 'img/visual/visual_lemon.png'
         },
         mode: 'image',
-        video: {
-          srcDesktop: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4',
-          srcMobile: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4',
-          srcTablet: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4'
-        }
       }}
     />
     <Section
