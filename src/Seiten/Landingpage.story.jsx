@@ -29,6 +29,7 @@ const Page = () => (
         horizontal: 'left',
         indent: false,
         link: {
+          className: 'c-button--main',
           enabled: true,
           fillAnimation: false,
           href: 'https://example.com',
@@ -48,7 +49,7 @@ const Page = () => (
         image: {
           indent: 'none',
           srcDesktop: 'img/visual/visual_lemon.png',
-          srcMobile: 'img/visual/visual_lemon.png',
+          srcMobile: 'img/visual/visual_lemon-m.png',
           srcTablet: 'img/visual/visual_lemon.png'
         },
         mode: 'image',

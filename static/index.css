@@ -35,7 +35,7 @@
   --color-white-alpha-6: hsla(0, 0%, 100%, 0.6);
   --color-white-alpha-7: hsla(0, 0%, 100%, 0.7);
   --color-white-alpha-8: hsla(0, 0%, 100%, 0.8);
-  --color-white-alpha-9: hsla(0, 0%, 100%, 0.9);
+  --color-white-alpha-9: hsla(0, 0%, 100%, 0.95);
   --color-black: #050505;
   --color-black-alpha-1: rgba(5, 5, 5, 0.1);
   --color-black-alpha-2: rgba(5, 5, 5, 0.2);
@@ -144,7 +144,9 @@
   --font-ui-xxl: var(--font-size-xxl) /
     calc(var(--line-height-xxl) * var(--line-height-factor-ui))
     var(--font-family-ui);
+  --c-rich-text--color: #444f52;
   --g-headline--color: var(--color-primary);
+  --g-topic--color: #475C61;
   --g-header-height: 0px;
   --g-content-width-default: 62rem;
   --g-content-width-narrow: 46.5rem;
@@ -163,7 +165,7 @@
     --font-size-l: 1.3125rem;
     --font-size-xl: 1.75rem;
     --font-size-xxl: 2.25rem;
-    --line-height-m: 2rem;
+    --line-height-m: 1.75rem;
     --line-height-l: 2.5rem;
     --line-height-xxl: 3rem;
   }
@@ -179,7 +181,7 @@
     --font-size-s: 0.9375rem;
     --font-size-xl: 2rem;
     --font-size-xxl: 2.875rem;
-    --line-height-xl: 3rem;
+    --line-height-xl: 2.75rem;
     --line-height-xxl: 4rem;
   }
 }
@@ -200,11 +202,14 @@
   --c-button--color: var(--color-secondary);
   --c-button--background-color-hover: var(--color-primary-lighter-1);
   --c-button--background-color-active: var(--color-primary-lighter-2);
-  box-shadow: 0 5px 9px 0 rgba(6, 112, 138, 0.35);
 }
 
-.c-button--solid:hover {
-  box-shadow: 0 5px 15px 0 rgba(7, 126, 156, 0.35);
+.c-button--main {
+  --c-button--box-shadow: 0 5px 9px 0 rgba(6,112,138,0.35);
+}
+
+.c-button--main:hover {
+  --c-button--box-shadow-hover: 0 5px 15px 0 rgba(7, 126, 156, 0.35);
 }
 
 .c-button--solid-inverted {
@@ -236,10 +241,15 @@
   --c-teaser--color: var(--color-white);
 }
 
+.c-teaser__text {
+  --c-rich-text--font: var(--font-copy-s);
+  --g-topic--font: var(--font-copy-s);
+}
+
 .c-visual__box--transparent {
   --c-visual_box--background: transparent;
   --c-visual_topic--color: var(--color-primary);
-  --c-visual_box--color: var(--color-black);
+  --c-visual_box--color: var(--c-rich-text--color);
 }
 
 .l-section--accent {
@@ -248,6 +258,18 @@
 
 .l-section--dark {
   --l-section--background: var(--color-primary);
+}
+
+.c-button--main {
+  box-shadow: var(--c-button--box-shadow);
+}
+
+.c-button--main:hover {
+  box-shadow: var(--c-button--box-shadow-hover);
+}
+
+.c-content-box {
+  color: var(--g-topic--color);
 }
 
 .c-rich-text a, .c-rich-text.c-visual__text a {
