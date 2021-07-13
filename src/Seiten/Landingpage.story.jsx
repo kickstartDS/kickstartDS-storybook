@@ -94,17 +94,17 @@ const Page = () => (
       width="default"
     >
       <ContentBox
-        ratio="16:9"
-        topic="Lorem Ipsum"
+        image="img/icons/Button.svg"
+        topic="Use with any framework"
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
       />
       <ContentBox
-        ratio="16:9"
+        image="img/icons/Storytelling.svg"
         topic="Accessibility baked in"
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
       />
       <ContentBox
-        ratio="16:9"
+        image="img/icons/TextMedia.svg"
         topic="Powerful theming tools"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
       />
@@ -148,6 +148,73 @@ const Page = () => (
       <ContentBox
         image="https://picsum.photos/seed/kdsteaserbox/500/300"
         ratio="16:9"
+        topic="Powerful theming tools"
+        text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
+      />
+    </Section>
+
+    <Section
+      gutter="default"
+      headline={{
+        align: 'center',
+        content: 'What kickstartDS can do for you?',
+        level: 'h2',
+        pageHeader: false,
+        spaceAfter: 'none'
+      }}
+      background="accent"
+      mode="tile"
+      spaceAfter="default"
+      spaceBefore="default"
+      width="default"
+    >
+      <TeaserBox
+        image="img/icons/Headline.svg"
+        topic="Lorem Ipsum"
+        text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
+      />
+      <TeaserBox
+        image="img/icons/Quote.svg"
+        topic="Accessibility baked in"
+        text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
+      />
+      <TeaserBox
+        image="img/icons/Slider.svg"
+        topic="Powerful theming tools"
+        text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
+      />
+    </Section>
+
+    <Section
+      gutter="default"
+      headline={{
+        align: 'center',
+        content: 'What kickstartDS can do for you?',
+        level: 'h2',
+        pageHeader: false,
+        spaceAfter: 'none'
+      }}
+      background="accent"
+      mode="tile"
+      spaceAfter="default"
+      spaceBefore="default"
+      width="default"
+    >
+      <TeaserBox
+        darkStyle= "true"
+        image="img/icons/Headline.svg"
+        topic="Lorem Ipsum"
+        text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
+      />
+      <TeaserBox
+        darkStyle= "true"
+        image="img/icons/Quote.svg"
+        topic="Accessibility baked in"
+        text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
+      />
+      <TeaserBox
+        darkStyle= "true"
+        image="img/icons/Slider.svg"
         topic="Powerful theming tools"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
       />
