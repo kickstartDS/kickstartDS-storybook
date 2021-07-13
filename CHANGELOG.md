@@ -1,3 +1,15 @@
+# v1.0.11 (Tue Jul 13 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: adjust design + add exemplary icons ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.10 (Fri Jul 09 2021)
 
 #### ⚠️ Pushed to `master`
