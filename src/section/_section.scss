@@ -8,6 +8,13 @@
   
     &--dark {  
       .c-teaser {
+        a {
+          color: var(--g-link--color);
+          &:hover {
+            background: var(--g-link--backround-hover);
+            color: var(--g-link--color-hover);
+          }
+        }
         --c-teaser--shadow: none;
         --c-teaser--shadow-hover: 0 2px 45px -5px rgb(0 0 0 / 50%);
       }

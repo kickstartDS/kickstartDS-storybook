@@ -179,7 +179,7 @@
     --spacing-xs: 0.25rem;
     --spacing-s: 2rem;
     --spacing-m: 2.25rem;
-    --spacing-l: 4rem;
+    --spacing-l: 6rem;
     --spacing-xl: 2.5rem;
     --font-size-s: 0.9375rem;
     --font-size-xl: 2rem;
@@ -243,7 +243,7 @@
   --g-link--color-hover: var(--color-secondary);
   --g-link--backround-hover: var(--color-secondary-alpha-1);
   --c-teaser--color: var(--color-white-alpha-9);
-  --c-teaser--background: var(--color-primary-darker-1);
+  --c-teaser--background: var(--color-primary);
 }
 
 .c-teaser--style-dark .c-teaser__topic {
@@ -308,6 +308,13 @@
 .l-section--dark .c-teaser {
   --c-teaser--shadow: none;
   --c-teaser--shadow-hover: 0 2px 45px -5px rgb(0 0 0 / 50%);
+}
+.l-section--dark .c-teaser a {
+  color: var(--g-link--color);
+}
+.l-section--dark .c-teaser a:hover {
+  background: var(--g-link--backround-hover);
+  color: var(--g-link--color-hover);
 }
 .l-section--dark .c-rich-text li {
   color: var(--c-teaser--color);
