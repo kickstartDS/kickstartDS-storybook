@@ -11,10 +11,10 @@
   --color-primary-alpha-8: rgba(6, 86, 106, 0.8);
   --color-primary-alpha-9: rgba(6, 86, 106, 0.9);
   --color-primary-lighter-1: #06708A;
-  --color-primary-lighter-2: #077e9c;
-  --color-primary-lighter-3: #b6c6db;
+  --color-primary-lighter-2: #116C81;
+  --color-primary-lighter-3: #2C7C8F;
   --color-primary-lighter-4: #eceff3;
-  --color-primary-darker-1: #054859;
+  --color-primary-darker-1: #012F3A;
   --color-primary-darker-2: #03303B;
   --color-secondary: #ecff00;
   --color-secondary-alpha-1: rgba(236, 255, 0, 0.1);
@@ -259,7 +259,7 @@
 
 .l-section--dark .c-teaser {
   --c-teaser--border: 5px solid var(--color-white-alpha-1);
-  --c-teaser--border-hover: 5px solid var(--color-secondary-darker-1);
+  --c-teaser--border-hover: 5px solid var(--color-primary-lighter-3);
 }
 
 .l-section--dark .c-teaser--style-dark {
