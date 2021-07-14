@@ -1,3 +1,15 @@
+# v1.0.14 (Wed Jul 14 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: customise teaser hover states ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.13 (Tue Jul 13 2021)
 
 #### ⚠️ Pushed to `master`
