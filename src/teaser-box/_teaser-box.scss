@@ -1,3 +1,11 @@
-.c-teaser__body {
-    padding: var(--c-teaser--padding);
+.c-teaser {
+    &.js-linked {
+        transition-property: all;
+    }
+    &:hover {
+        border: var(--c-teaser--border-hover);
+    }
+    &__body {
+        padding: var(--c-teaser--padding);
+    }
 }

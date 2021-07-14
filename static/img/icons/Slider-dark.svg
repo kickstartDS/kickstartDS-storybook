@@ -4,7 +4,7 @@
     <title>Slider-dark</title>
     <desc>Created with Sketch.</desc>
     <g id="Slider-dark" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M309,61 L309,278 L92,278 L92,61 L309,61 Z M303.575,66.425 L97.425,66.425 L97.425,272.575 L303.575,272.575 L303.575,66.425 Z" id="Rectangle" fill="#ECFF00" fill-rule="nonzero"></path>
+        <path d="M309,61 L309,278 L92,278 L92,61 L309,61 Z M303.575,66.425 L97.425,66.425 L97.425,272.575 L303.575,272.575 L303.575,66.425 Z" id="Rectangle" fill-opacity="0.25" fill="#ECFF00"></path>
         <g id="Icon/Storytelling" transform="translate(64.328943, 85.813800)">
             <rect id="Rectangle" fill="#ECFF00" x="17.3851444" y="0.209977" width="237.571826" height="167.106241"></rect>
             <g id="solid/chevron-down" transform="translate(221.838932, 83.763097) rotate(-90.000000) translate(-221.838932, -83.763097) translate(173.362093, 35.248382)" fill="#06566A">
