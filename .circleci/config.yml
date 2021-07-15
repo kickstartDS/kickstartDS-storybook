@@ -79,9 +79,9 @@ workflows:
       - install
 
       - release:
-         context: kickstartDS
-         requires:
-           - install
+          context: kickstartDS
+          requires:
+            - install
 
       - update_website:
           context: kickstartDS
@@ -92,5 +92,5 @@ workflows:
             - release
 
       - chromatic:
-         requires:
-           - install
+          requires:
+            - install
