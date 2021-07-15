@@ -1,3 +1,15 @@
+# v1.0.19 (Thu Jul 15 2021)
+
+#### ⚠️ Pushed to `master`
+
+- ci: fix project slug ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.18 (Thu Jul 15 2021)
 
 #### ⚠️ Pushed to `master`
