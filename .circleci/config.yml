@@ -60,6 +60,19 @@ jobs:
           name: Deploy Storybook
           command: yarn chromatic
 
+  update_website:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - run:
+          name: Trigger website upgrade
+          command: |
+            curl --request POST \
+              --url https://circleci.com/api/v2/project/github/kickstartDS/website/pipeline \
+              --header 'Circle-Token: ${CIRCLE_CI_WEBSITE_BUILD_TOKEN}' \
+              --header 'content-type: application/json' \
+              --data '{"branch":"master","parameters":{"run_workflow_update":true}}'
+
 workflows:
   release:
     jobs:
@@ -69,6 +82,14 @@ workflows:
          context: kickstartDS
          requires:
            - install
+
+      - update_website:
+          context: kickstartDS
+          filters:
+            branches:
+              only: master
+          requires:
+            - release
 
       - chromatic:
          requires:
