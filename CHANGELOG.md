@@ -1,3 +1,16 @@
+# v1.0.17 (Thu Jul 15 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartds-storybook ([@lmestel](https://github.com/lmestel))
+- ci: trigger website update after release ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.16 (Thu Jul 15 2021)
 
 #### ⚠️ Pushed to `master`
