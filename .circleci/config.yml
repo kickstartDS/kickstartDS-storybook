@@ -68,7 +68,7 @@ jobs:
           name: Trigger website upgrade
           command: |
             curl --request POST \
-              --url https://circleci.com/api/v2/project/github/kickstartDS/website/pipeline \
+              --url https://circleci.com/api/v2/project/gh/kickstartDS/website/pipeline \
               --header 'Circle-Token: ${CIRCLE_CI_WEBSITE_BUILD_TOKEN}' \
               --header 'content-type: application/json' \
               --data '{"branch":"master","parameters":{"run_workflow_update":true}}'
