@@ -1,3 +1,15 @@
+# v1.0.22 (Mon Jul 19 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build(deps): update storybook ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.21 (Thu Jul 15 2021)
 
 #### ⚠️ Pushed to `master`
