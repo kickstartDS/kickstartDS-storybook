@@ -7,6 +7,7 @@ import '@kickstartds/core/lib/design-tokens/tokens.css';
 import '@kickstartds/base/lib/global/base.js';
 import '@kickstartds/base/lib/global/base.css';
 import '../static/index.css';
+import '../src/index';
 
 const myActions = actions('radio');
 window.rm.radio.on('*', myActions.radio);
