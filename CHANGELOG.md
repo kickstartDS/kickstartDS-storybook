@@ -1,3 +1,16 @@
+# v1.0.24 (Mon Jul 26 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: give text shadow to main button ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.23 (Mon Jul 26 2021)
 
 #### ⚠️ Pushed to `master`
