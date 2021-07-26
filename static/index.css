@@ -65,7 +65,7 @@
   --spacing-xxs: 0.09375rem;
   --spacing-xs: 0.1875rem;
   --spacing-s: 0.5rem;
-  --spacing-m: 0.625rem;
+  --spacing-m: 1rem;
   --spacing-l: 2rem;
   --spacing-xl: 1.875rem;
   --font-weight-light: 300;
@@ -149,7 +149,7 @@
     var(--font-family-ui);
   --c-rich-text--color: #444f52;
   --c-rich-text--vertical-spacing: var(--spacing-m);
-  --g-headline--color: var(--color-primary);
+  --g-headline--color: var(--color-black);
   --g-link--color: var(--color-primary);
   --g-link--color-hover: var(--color-primary);
   --g-link--backround-hover: var(--color-primary-alpha-1);
@@ -164,7 +164,7 @@
 @media (min-width: 40em) {
   :root {
     font-size: 20px;
-    --spacing-s: 1rem;
+    --spacing-s: 0.5rem;
     --spacing-m: 1.25rem;
     --spacing-l: 3rem;
     --font-size-s: 0.9375rem;
@@ -181,7 +181,6 @@
   :root {
     --spacing-xxs: 0.125rem;
     --spacing-xs: 0.25rem;
-    --spacing-s: 2rem;
     --spacing-m: 2.25rem;
     --spacing-l: 6rem;
     --spacing-xl: 2.5rem;
@@ -311,6 +310,7 @@
 }
 
 .c-content-box {
+  --c-content-box_topic--margin: 0 0 var(--spacing-s) 0;
   color: var(--g-topic--color);
 }
 
