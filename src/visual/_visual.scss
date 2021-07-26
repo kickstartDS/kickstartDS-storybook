@@ -1,3 +1,9 @@
+.c-visual {
+  &__link {
+    filter: drop-shadow(3px 5px 5px rgba(6,112,138, 0.5));
+  }
+}
+
 .c-visual__box.c-visual__box--transparent {
   overflow: unset;
 }

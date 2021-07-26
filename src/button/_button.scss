@@ -1,13 +1,3 @@
 .c-button--main {
-  box-shadow: var(--c-button--box-shadow);
-  text-shadow: var(--c-button--text-shadow);
-
-  .icon {
-    margin-left: var(--c-button-icon--margin);
-    filter: drop-shadow(-1px 1px 3px var(--color-secondary-alpha-5));
-  }
-}
-
-.c-button--main:hover {
-  box-shadow: var(--c-button--box-shadow-hover);
+  clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
 }

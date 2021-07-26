@@ -27,6 +27,7 @@
   --color-secondary-alpha-8: rgba(236, 255, 0, 0.8);
   --color-secondary-alpha-9: rgba(236, 255, 0, 0.9);
   --color-secondary-lighter-1: #fbffc3;
+  --color-secondary-lighter-2: #fdffe6;
   --color-secondary-darker-1: #e0f000;
   --color-secondary-darker-2: #cddb00;
   --color-white: #fff;
@@ -208,17 +209,13 @@
 
 .c-button--solid {
   --c-button--color: var(--color-secondary);
+  --c-button--color-hover: var(--color-secondary-lighter-1);
   --c-button--background-color-hover: var(--color-primary-lighter-1);
   --c-button--background-color-active: var(--color-primary-lighter-2);
 }
 
 .c-button.c-button--solid-inverted {
   --c-button--background-color-hover: var(--color-secondary-lighter-1);
-}
-
-.c-button--main {
-  --c-button--box-shadow: 0 5px 9px 0 rgba(6,112,138,0.35);
-  --c-button--text-shadow: -1px 1px 6px var(--color-secondary-alpha-5);
 }
 
 .c-button--main:hover {

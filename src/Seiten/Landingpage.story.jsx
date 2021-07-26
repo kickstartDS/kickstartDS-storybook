@@ -34,7 +34,7 @@ const Page = () => (
           fillAnimation: false,
           href: 'https://example.com',
           iconAfter: true,
-          iconAnimation: true,
+          iconAnimation: false,
           iconBefore: false,
           icon: {
             icon: 'chevron-right',
