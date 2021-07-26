@@ -65,7 +65,7 @@
   --spacing-xxs: 0.09375rem;
   --spacing-xs: 0.1875rem;
   --spacing-s: 0.5rem;
-  --spacing-m: 1rem;
+  --spacing-m: 0.625rem;
   --spacing-l: 2rem;
   --spacing-xl: 1.875rem;
   --font-weight-light: 300;
@@ -164,7 +164,7 @@
 @media (min-width: 40em) {
   :root {
     font-size: 20px;
-    --spacing-s: 0.5rem;
+    --spacing-s: 1rem;
     --spacing-m: 1.25rem;
     --spacing-l: 3rem;
     --font-size-s: 0.9375rem;
@@ -181,6 +181,7 @@
   :root {
     --spacing-xxs: 0.125rem;
     --spacing-xs: 0.25rem;
+    --spacing-s: 2rem;
     --spacing-m: 2.25rem;
     --spacing-l: 6rem;
     --spacing-xl: 2.5rem;
@@ -202,6 +203,7 @@
   --c-button--border-radius: 0;
   --c-button--font-weight: var(--font-weight-semi-bold);
   --c-button--padding: 0.5rem 1.5rem 0.4rem;
+  --c-button-icon--margin: 0;
 }
 
 .c-button--solid {
@@ -216,6 +218,7 @@
 
 .c-button--main {
   --c-button--box-shadow: 0 5px 9px 0 rgba(6,112,138,0.35);
+  --c-button--text-shadow: -1px 1px 6px var(--color-secondary-alpha-5);
 }
 
 .c-button--main:hover {
@@ -289,7 +292,7 @@
 
 .c-visual__box--transparent {
   --c-visual_box--background: transparent;
-  --c-visual_topic--color: var(--color-primary);
+  --c-visual_topic--color: var(--color-black);
   --c-visual_box--color: var(--c-rich-text--color);
 }
 
@@ -303,6 +306,11 @@
 
 .c-button--main {
   box-shadow: var(--c-button--box-shadow);
+  text-shadow: var(--c-button--text-shadow);
+}
+.c-button--main .icon {
+  margin-left: var(--c-button-icon--margin);
+  filter: drop-shadow(-1px 1px 3px var(--color-secondary-alpha-5));
 }
 
 .c-button--main:hover {
@@ -310,7 +318,6 @@
 }
 
 .c-content-box {
-  --c-content-box_topic--margin: 0 0 var(--spacing-s) 0;
   color: var(--g-topic--color);
 }
 

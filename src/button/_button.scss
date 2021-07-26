@@ -1,5 +1,11 @@
 .c-button--main {
   box-shadow: var(--c-button--box-shadow);
+  text-shadow: var(--c-button--text-shadow);
+
+  .icon {
+    margin-left: var(--c-button-icon--margin);
+    filter: drop-shadow(-1px 1px 3px var(--color-secondary-alpha-5));
+  }
 }
 
 .c-button--main:hover {
