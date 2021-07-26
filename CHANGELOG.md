@@ -1,3 +1,16 @@
+# v1.0.23 (Mon Jul 26 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: adjust spacings ([@fleven-kds](https://github.com/fleven-kds))
+- feat: adjust line height + customize teaser border tokens ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.22 (Mon Jul 19 2021)
 
 #### ⚠️ Pushed to `master`
