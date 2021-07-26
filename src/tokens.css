@@ -88,8 +88,8 @@
   --font-size-xl: 1.5rem;
   --font-size-xxl: 1.875rem;
   --line-height-xs: 1rem;
-  --line-height-s: 1.5rem;
-  --line-height-m: 1.75rem;
+  --line-height-s: 1.35rem;
+  --line-height-m: 1.5rem;
   --line-height-l: 2rem;
   --line-height-xl: 2.25rem;
   --line-height-xxl: 2.5rem;
@@ -148,6 +148,7 @@
     calc(var(--line-height-xxl) * var(--line-height-factor-ui))
     var(--font-family-ui);
   --c-rich-text--color: #444f52;
+  --c-rich-text--vertical-spacing: var(--spacing-m);
   --g-headline--color: var(--color-primary);
   --g-link--color: var(--color-primary);
   --g-link--color-hover: var(--color-primary);
@@ -237,14 +238,25 @@
   --section-dark-color: var(--color-white);
 }
 
+.c-headline__subheadline {
+  --c-headline_subheadline--font-weight: var(--font-weight-bold);
+}
+
 .c-teaser {
   --g-link--color: var(--color-primary);
   --c-teaser--background: var(--color-white);
-  --c-teaser--border: 5px solid var(--color-primary-lighter-4);
-  --c-teaser--border-hover: 5px solid var(--color-primary);
+  --c-teaser--border-color: var(--color-primary-lighter-4);
+  --c-teaser--border-color-hover: var(--color-primary);
+  --c-teaser--border-width: 4px;
+  --c-teaser--border-style: solid;
   --c-teaser--color: var(--c-rich-text--color);
   --c-teaser--padding: 1em 1.2em;
   --c-teaser--shadow-hover: none;
+}
+@media (min-width: 40em) {
+  .c-teaser {
+    --c-teaser--border-width: 5px;
+  }
 }
 
 .c-teaser--style-dark{
@@ -252,19 +264,19 @@
   --g-link--color-hover: var(--color-secondary);
   --g-link--backround-hover: var(--color-secondary-alpha-1);
   --c-teaser--background: var(--color-primary);
-  --c-teaser--border: 5px solid var(--color-primary);
-  --c-teaser--border-hover: 5px solid var(--color-secondary-darker-1);
+  --c-teaser--border-color: var(--color-primary);
+  --c-teaser--border-color-hover: var(--color-secondary-darker-1);
   --c-teaser--color: var(--color-white-alpha-9);
 }
 
 .l-section--dark .c-teaser {
-  --c-teaser--border: 5px solid var(--color-white-alpha-1);
-  --c-teaser--border-hover: 5px solid var(--color-primary-lighter-3);
+  --c-teaser--border-color: var(--color-white-alpha-1);
+  --c-teaser--border-color-hover: var(--color-primary-lighter-3);
 }
 
 .l-section--dark .c-teaser--style-dark {
-  --c-teaser--border: 5px solid var(--color-white-alpha-1);
-  --c-teaser--border-hover: 5px solid var(--color-secondary-darker-1);
+  --c-teaser--border-color: var(--color-white-alpha-1);
+  --c-teaser--border-color-hover: var(--color-secondary-darker-1);
 }
 
 .c-teaser--style-dark .c-teaser__topic{

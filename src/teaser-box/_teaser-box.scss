@@ -1,8 +1,12 @@
 .c-teaser {
+    border-color: var(--c-teaser--border-color);
+    border-width: var(--c-teaser--border-width);
+    border-style: var(--c-teaser--border-style);
+    
     &.js-linked {
         transition-property: all;
         &:hover {
-            border: var(--c-teaser--border-hover);
+            border-color: var(--c-teaser--border-color-hover);
         }
     }
     &__body {
