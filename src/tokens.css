@@ -231,6 +231,7 @@
 .c-content-box__text {
   --c-rich-text--font: var(--font-copy-s);
   --c-content-box_topic--font: var(--font-copy-s);
+  --c-content-box_topic--margin: 0 0 var(--spacing-s) 0;
 }
 
 .c-headline {

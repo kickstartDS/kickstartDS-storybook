@@ -6,6 +6,32 @@
       }
     }
   
+    &__pattern {
+      background-position: center;
+      background-size: cover;
+      background-repeat: repeat-y;
+
+      @media (min-width: 40em) {
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      &-1 {
+        background-image: url(../static/patterns/bg_1-d.svg);
+
+        @media (min-width: 40em) {
+          background-image: url(../static/patterns/bg_1-d.svg);
+        }
+      }
+      
+      &-2 {
+        background-image: url(../static/patterns/bg_2.svg);
+        @media (min-width: 40em) {
+          background-image: url(../static/patterns/bg_2-d.svg);
+        }
+      }
+    }
+
     &--dark {  
       .c-teaser {
         .c-rich-text a {

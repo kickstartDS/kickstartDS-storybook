@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="640px" viewBox="0 0 1920 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bg_1-d</title>
+    <defs>
+        <linearGradient x1="100%" y1="53.6368228%" x2="0%" y2="46.3631772%" id="linearGradient-1">
+            <stop stop-color="#ECFF00" stop-opacity="0.841673951" offset="0%"></stop>
+            <stop stop-color="#ECFF00" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="bg_1-d" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="url(#linearGradient-1)" opacity="0.20035226" x="930" y="373" width="990" height="267"></rect>
+        <g id="Group-2" transform="translate(1669.270137, 317.034198) rotate(-345.000000) translate(-1669.270137, -317.034198) translate(1548.806817, 59.956157)">
+            <polygon id="Rectangle" fill="#066B84" opacity="0.148489816" points="39.3480851 88.3389067 123.232929 1.48468751 202.961916 8.06076264e-13 228.914462 8.86826914 228.914462 79.5908698 63.845429 226.890298 39.3480851 200.432814"></polygon>
+            <polygon id="Rectangle-Copy" fill="#ECFF00" opacity="0.40272304" transform="translate(120.463320, 265.702447) rotate(-315.000000) translate(-120.463320, -265.702447) " points="78.6483875 321.206193 185.218112 323.059579 233.467047 280.774764 233.467047 245.935332 158.380977 208.345315 7.45959157 208.345315 8.68304673 251.240852"></polygon>
+            <polygon id="Rectangle" fill="#06566A" opacity="0.148489816" transform="translate(130.569266, 403.798708) rotate(-315.000000) translate(-130.569266, -403.798708) " points="80.8827878 297.416292 117.736321 297.416292 180.255744 358.381083 180.255744 488.429176 154.798381 510.181124 117.230348 510.181124 80.8827878 475.570323"></polygon>
+        </g>
+        <polygon id="Rectangle" fill="#ECFF00" opacity="0.40272304" transform="translate(153.878356, 441.552372) rotate(-330.000000) translate(-153.878356, -441.552372) " points="22.3441101 369.069264 257.194867 364.292656 286.955859 391.102419 285.293221 470.929213 253.429053 516.13065 121.591176 518.812088 20.8008533 443.164347"></polygon>
+        <polygon id="Rectangle" fill="#066B84" opacity="0.148489816" transform="translate(265.330088, 400.994232) rotate(-330.000000) translate(-265.330088, -400.994232) " points="152.691852 334.563436 359.693386 330.353252 398.595497 362.280725 396.410159 467.203476 178.515593 471.635213 132.06468 403.756138 133.149405 351.67616"></polygon>
+    </g>
+</svg>

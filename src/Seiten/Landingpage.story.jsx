@@ -113,7 +113,9 @@ const Page = () => (
       />
     </Section>
 
-    <Section>
+    <Section
+    className="l-section__pattern l-section__pattern-1"
+    >
       <Quote
         image="https://picsum.photos/seed/kdsquote/300/300"
         source="Max Mustermann, ABC GmbH"
@@ -123,6 +125,7 @@ const Page = () => (
 
     <Section
       background="dark"
+      className="l-section__pattern l-section__pattern-2"
       gutter="default"
       headline={{
         align: 'center',
