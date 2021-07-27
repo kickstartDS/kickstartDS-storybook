@@ -75,10 +75,7 @@
   --font-weight-bold: 700;
   --font-family-display: var(--font-family-copy);
   --font-family-copy: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  --font-family-ui: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next",
-    "Avenir", "Segoe UI", "Lucida Grande", "Fira Sans", "Roboto", "Noto", "Droid Sans",
-    "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  --font-family-ui: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
   --line-height-factor-display: 1;
   --line-height-factor-copy: 1;
   --line-height-factor-ui: 1;
@@ -166,7 +163,7 @@
     font-size: 20px;
     --spacing-s: 0.5rem;
     --spacing-m: 1.25rem;
-    --spacing-l: 3rem;
+    --spacing-l: 2rem;
     --font-size-s: 0.9375rem;
     --font-size-m: 1.125rem;
     --font-size-l: 1.3125rem;
@@ -182,7 +179,7 @@
     --spacing-xxs: 0.125rem;
     --spacing-xs: 0.25rem;
     --spacing-m: 2.25rem;
-    --spacing-l: 6rem;
+    --spacing-l: 4rem;
     --spacing-xl: 2.5rem;
     --font-size-s: 0.9375rem;
     --font-size-xl: 2rem;
@@ -196,6 +193,11 @@
     --spacing-xxs: 0.15625rem;
     --spacing-xs: 0.3125rem;
     --spacing-xl: 3.125rem;
+  }
+}
+@media (min-width: 90em) {
+  :root {
+    --spacing-l: 6rem;
   }
 }
 
@@ -215,6 +217,10 @@
 
 .c-button.c-button--solid-inverted {
   --c-button--background-color-hover: var(--color-secondary-lighter-1);
+}
+
+.c-button--main {
+  --c-button--padding: 0.6rem 2rem 0.5rem;
 }
 
 .c-button--main:hover {
@@ -288,6 +294,9 @@
   --c-teaser_text--spacing: var(--spacing-s);
 }
 
+.c-quote__source {
+  --c-quote_source--font: var(--font-ui-s);
+}
 
 .c-visual__box--transparent {
   --c-visual_box--background: transparent;

@@ -75,10 +75,7 @@
   --font-weight-bold: 700;
   --font-family-display: var(--font-family-copy);
   --font-family-copy: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  --font-family-ui: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next",
-    "Avenir", "Segoe UI", "Lucida Grande", "Fira Sans", "Roboto", "Noto", "Droid Sans",
-    "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  --font-family-ui: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
   --line-height-factor-display: 1;
   --line-height-factor-copy: 1;
   --line-height-factor-ui: 1;
@@ -167,7 +164,7 @@
     font-size: 20px;
     --spacing-s: 0.5rem;
     --spacing-m: 1.25rem;
-    --spacing-l: 3rem;
+    --spacing-l: 2rem;
     --font-size-s: 0.9375rem;
     --font-size-m: 1.125rem;
     --font-size-l: 1.3125rem;
@@ -183,7 +180,7 @@
     --spacing-xxs: 0.125rem;
     --spacing-xs: 0.25rem;
     --spacing-m: 2.25rem;
-    --spacing-l: 6rem;
+    --spacing-l: 4rem;
     --spacing-xl: 2.5rem;
     --font-size-s: 0.9375rem;
     --font-size-xl: 2rem;
@@ -197,6 +194,11 @@
     --spacing-xxs: 0.15625rem;
     --spacing-xs: 0.3125rem;
     --spacing-xl: 3.125rem;
+  }
+}
+@media (min-width: 90em) {
+  :root {
+    --spacing-l: 6rem;
   }
 }
 .c-button {
@@ -215,6 +217,10 @@
 
 .c-button.c-button--solid-inverted {
   --c-button--background-color-hover: var(--color-secondary-lighter-1);
+}
+
+.c-button--main {
+  --c-button--padding: 0.6rem 2rem 0.5rem;
 }
 
 .c-button--main:hover {
@@ -288,6 +294,10 @@
   --c-teaser_text--spacing: var(--spacing-s);
 }
 
+.c-quote__source {
+  --c-quote_source--font: var(--font-ui-s);
+}
+
 .c-visual__box--transparent {
   --c-visual_box--background: transparent;
   --c-visual_topic--color: var(--color-black);
@@ -303,7 +313,31 @@
 }
 
 .c-button--main {
-  clip-path: polygon(8% 0, 100% 0, 100% 70%, 92% 100%, 0 100%, 0 30%);
+  clip-path: polygon(0 0, 92% 0, 100% 40%, 100% 85%, 98% 100%, 7% 100%, 0 50%);
+  animation-name: button-hover;
+  animation-duration: 750ms;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  animation-timing-function: step-start;
+}
+@keyframes button-hover {
+  25% {
+    clip-path: polygon(0 25%, 11% 0, 75% 0, 97% 0, 100% 18%, 100% 48%, 100% 71%, 85% 100%, 82% 100%, 32% 100%, 3% 100%, 0 68%);
+  }
+  50% {
+    clip-path: polygon(0 59%, 5% 0, 75% 0, 84% 0, 100% 18%, 100% 48%, 100% 71%, 100% 100%, 82% 100%, 32% 100%, 3% 100%, 0 100%);
+  }
+  75% {
+    clip-path: polygon(0 80%, 10% 0, 100% 0, 80% 0, 100% 10%, 100% 50%, 100% 81%, 100% 100%, 82% 100%, 32% 100%, 3% 100%, 0 100%);
+  }
+}
+
+.c-button--main:hover {
+  animation-play-state: running;
+}
+
+.c-button .icon {
+  margin: var(--c-button--icon-margin);
 }
 
 .c-content-box {
