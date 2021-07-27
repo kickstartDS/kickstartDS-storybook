@@ -65,7 +65,7 @@
   --color-error: #e60201;
   --spacing-xxs: 0.09375rem;
   --spacing-xs: 0.1875rem;
-  --spacing-s: 0.5rem;
+  --spacing-s: 0.3rem;
   --spacing-m: 0.625rem;
   --spacing-l: 2rem;
   --spacing-xl: 1.875rem;
@@ -164,7 +164,7 @@
 @media (min-width: 40em) {
   :root {
     font-size: 20px;
-    --spacing-s: 1rem;
+    --spacing-s: 0.5rem;
     --spacing-m: 1.25rem;
     --spacing-l: 3rem;
     --font-size-s: 0.9375rem;
@@ -181,7 +181,6 @@
   :root {
     --spacing-xxs: 0.125rem;
     --spacing-xs: 0.25rem;
-    --spacing-s: 2rem;
     --spacing-m: 2.25rem;
     --spacing-l: 6rem;
     --spacing-xl: 2.5rem;
@@ -286,6 +285,7 @@
 .c-teaser__text {
   --c-rich-text--font: var(--font-copy-s);
   --g-topic--font: var(--font-copy-s);
+  --c-teaser_text--spacing: var(--spacing-s);
 }
 
 
