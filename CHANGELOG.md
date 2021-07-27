@@ -1,3 +1,15 @@
+# v1.0.26 (Tue Jul 27 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: multiple desighn customisations ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.25 (Mon Jul 26 2021)
 
 #### ⚠️ Pushed to `master`
