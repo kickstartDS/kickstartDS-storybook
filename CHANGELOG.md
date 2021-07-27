@@ -1,3 +1,16 @@
+# v1.0.27 (Tue Jul 27 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: adjust spacing-s ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.26 (Tue Jul 27 2021)
 
 #### ⚠️ Pushed to `master`
