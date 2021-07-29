@@ -346,19 +346,19 @@
   }
 }
 .l-section__pattern-1 {
-  background-image: url(../static/patterns/bg_1-d.svg);
+  background-image: url(/patterns/bg_1-d.svg);
 }
 @media (min-width: 40em) {
   .l-section__pattern-1 {
-    background-image: url(../static/patterns/bg_1-d.svg);
+    background-image: url(/patterns/bg_1-d.svg);
   }
 }
 .l-section__pattern-2 {
-  background-image: url(../static/patterns/bg_2.svg);
+  background-image: url(/patterns/bg_2.svg);
 }
 @media (min-width: 40em) {
   .l-section__pattern-2 {
-    background-image: url(../static/patterns/bg_2-d.svg);
+    background-image: url(/patterns/bg_2-d.svg);
   }
 }
 .l-section--dark .c-teaser .c-rich-text a {
