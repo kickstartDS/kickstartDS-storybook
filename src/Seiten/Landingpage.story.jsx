@@ -25,7 +25,9 @@ const Page = () => (
       box={{
         background: 'transparent',
         enabled: true,
-        headline: 'Building a design system for all your digital touch points feels now like squeezing a lemon',
+        headline: {
+          content: 'Building a design system for all your digital touch points feels now like squeezing a lemon',
+        },
         horizontal: 'left',
         indent: false,
         link: {

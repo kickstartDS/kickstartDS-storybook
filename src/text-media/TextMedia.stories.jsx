@@ -7,6 +7,7 @@ export default textMediaStories;
 
 export const BildUeberText = Template.bind({});
 BildUeberText.args = pack({
+  ...textMediaStories.args,
   media: [
     {
       image: {
