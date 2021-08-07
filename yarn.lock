@@ -1418,10 +1418,10 @@
   resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
   integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
 
-"@kickstartds/base@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-1.2.0.tgz#4678cc66c76bd37a69e4da5c2f12493d2ba3d9fc"
-  integrity sha512-J8PfDmBBSP21w1ycsa/De85voKzxSW4r3j+vx5IkbroJY86V54+zphJJQMhRq5l90Lwb5IRDdFKlHdXbaQ/rPg==
+"@kickstartds/base@1.2.1-next.0", "@kickstartds/base@^1.2.1-next.0":
+  version "1.2.1-next.0"
+  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-1.2.1-next.0.tgz#826247f587fdf44f268830a2f8d4e2f9a413ba89"
+  integrity sha512-lvLgAE3JeNu/i8GbrlIEiCOdhzefIvRCziCbMOjxyMSlU8mEWCgCLJNEbsL1anog3hjkxwQaaRbVKXpwSKOpWw==
   dependencies:
     "@babel/runtime" "^7.14.8"
     "@glidejs/glide" "git://github.com/glidejs/glide.git#master"
@@ -1439,24 +1439,24 @@
     simplebar "^5.3.5"
     stickybits "^3.7.0"
 
-"@kickstartds/blog@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-1.2.0.tgz#8daf7d154dba2d967996143ae8e9699929a568e0"
-  integrity sha512-h0cBZy/9tiWXcEaBnyVXvmHFWGqDvV79nw5ZQPjcono7VG0mCA71ITL4jymto1EZYJPu1p+3BrVvFw+j9u+DGQ==
+"@kickstartds/blog@1.2.1-next.0":
+  version "1.2.1-next.0"
+  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-1.2.1-next.0.tgz#1a3a1ee1ac7f7f187f2713f850584328c679f09b"
+  integrity sha512-qR5qGW3nRftH9obT9Qb0e0DX9mmgaZp0TddYW4bFdXgJeqiRTpAhBQixdlfRb8ktLIbgY1tb01qqf3jUb58cMw==
   dependencies:
     "@babel/runtime" "^7.14.8"
-    "@kickstartds/base" "^1.2.0"
+    "@kickstartds/base" "^1.2.1-next.0"
     "@kickstartds/core" "^1.2.0"
     classnames "^2.2.6"
     date-fns "^2.23.0"
 
-"@kickstartds/content@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-1.2.0.tgz#a61bff7e6d63bc675e41483941ebf0da80ef5071"
-  integrity sha512-9us9/FswaLG3YWEjR/f4iApx5IOUZNlOn5diT8DVuhtwX99x/DuOqe7NkH7uJ6hdRcJ3YfmgLuwfJwEcFKHD2A==
+"@kickstartds/content@1.2.1-next.0":
+  version "1.2.1-next.0"
+  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-1.2.1-next.0.tgz#dfde998c662ff19baf4809008d17de1bb1cdf9b1"
+  integrity sha512-aB4t8K89RTEcPIfPE8H2HSI+ow9y4i8Hbp87QzZ2hEcVc2ZrectuzKC+694xcc33tdNPX8B7keQVCdCNKlYHeQ==
   dependencies:
     "@babel/runtime" "^7.14.8"
-    "@kickstartds/base" "^1.2.0"
+    "@kickstartds/base" "^1.2.1-next.0"
     "@kickstartds/core" "^1.2.0"
     classnames "^2.2.6"
     countup.js "^2.0.8"
@@ -1482,13 +1482,13 @@
     sass "^1.37.5"
     vhtml "^2.2.0"
 
-"@kickstartds/form@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-1.2.0.tgz#46cd9be0effb568756eabaefdfa05e367da19398"
-  integrity sha512-xaWzWSGkGrk5cmD9Pc0owqIa+hbJsnYLwtNtvHZlWn9Y9wDFIaJTEXNG55KaDBQQvgKL0ehth4uYbV1vry7wJw==
+"@kickstartds/form@1.2.1-next.0":
+  version "1.2.1-next.0"
+  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-1.2.1-next.0.tgz#7c20fb46b85e74119d1cfbc88a38f22868d93e5b"
+  integrity sha512-jEGBkuKderEqRZ5lxK+S2Dp75Wf1rAh1KPdJ/FPOBwzCAO+oEFkq1JoL7nwKurAG3PcgIw4BBrcHipQE6QSRbA==
   dependencies:
     "@babel/runtime" "^7.14.8"
-    "@kickstartds/base" "^1.2.0"
+    "@kickstartds/base" "^1.2.1-next.0"
     "@kickstartds/core" "^1.2.0"
     classnames "^2.2.6"
 
