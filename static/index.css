@@ -13,6 +13,7 @@
   --color-primary-lighter-1: #06708A;
   --color-primary-lighter-2: #116C81;
   --color-primary-lighter-3: #2C7C8F;
+  --color-primary-lighter-3: #74b2c1;
   --color-primary-lighter-4: #eceff3;
   --color-primary-darker-1: #012F3A;
   --color-primary-darker-2: #03303B;
@@ -244,13 +245,18 @@
 }
 
 .c-headline__subheadline {
-  --c-headline_subheadline--font-weight: var(--font-weight-bold);
+  --c-headline_subheadline--color: var(--color-primary);
+  --c-headline_subheadline--font-weight: var(--font-weight-semi-bold);
+}
+
+.l-section--dark p.c-headline__subheadline {
+  --c-headline_subheadline--color: var(--color-primary-lighter-3);
 }
 
 .c-teaser {
   --g-link--color: var(--color-primary);
   --c-teaser--background: var(--color-white);
-  --c-teaser--border-color: var(--color-primary-lighter-4);
+  --c-teaser--border-color: var(--color-primary-lighter-5);
   --c-teaser--border-color-hover: var(--color-primary);
   --c-teaser--border-width: 4px;
   --c-teaser--border-style: solid;
@@ -312,28 +318,40 @@
   --l-section--background: var(--color-primary);
 }
 
+.no-stretch {
+  display: block;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
 .c-button--main {
   clip-path: polygon(0 0, 92% 0, 100% 40%, 100% 85%, 98% 100%, 7% 100%, 0 50%);
-  animation-name: button-hover;
-  animation-duration: 750ms;
-  animation-iteration-count: infinite;
-  animation-play-state: paused;
-  animation-timing-function: step-start;
+  transition: none;
 }
 @keyframes button-hover {
+  0% {
+    clip-path: polygon(0 0, 92% 0, 100% 40%, 100% 85%, 98% 100%, 7% 100%, 0 50%);
+  }
   25% {
-    clip-path: polygon(0 25%, 11% 0, 75% 0, 97% 0, 100% 18%, 100% 48%, 100% 71%, 85% 100%, 82% 100%, 32% 100%, 3% 100%, 0 68%);
+    clip-path: polygon(0 20%, 3% 0, 95% 0, 100% 9%, 100% 85%, 92% 100%, 6% 100%, 0% 85%);
   }
   50% {
-    clip-path: polygon(0 59%, 5% 0, 75% 0, 84% 0, 100% 18%, 100% 48%, 100% 71%, 100% 100%, 82% 100%, 32% 100%, 3% 100%, 0 100%);
+    clip-path: polygon(0 14%, 6% 0, 95% 0, 100% 14%, 100% 85%, 97% 100%, 2% 100%, 0 71%);
   }
   75% {
-    clip-path: polygon(0 80%, 10% 0, 100% 0, 80% 0, 100% 10%, 100% 50%, 100% 81%, 100% 100%, 82% 100%, 32% 100%, 3% 100%, 0 100%);
+    clip-path: polygon(0 34%, 1% 0, 97% 0, 100% 25%, 100% 76%, 97% 100%, 6% 99%, 0 89%);
   }
 }
 
 .c-button--main:hover {
+  animation-name: button-hover;
+  animation-duration: 400ms;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-timing-function: step-end;
   animation-play-state: running;
+  transform: scale(1.02);
 }
 
 .c-button .icon {
@@ -380,6 +398,7 @@
   }
 }
 .l-section__pattern-1 {
+  background-size: contain;
   background-image: url(../static/patterns/bg_1-d.svg);
 }
 @media (min-width: 40em) {
@@ -394,6 +413,9 @@
   .l-section__pattern-2 {
     background-image: url(../static/patterns/bg_2-d.svg);
   }
+}
+.l-section--deko {
+  clip-path: polygon(0% 15%, 15% 0%, 100% 0, 100% 86%, 87% 100%, 4% 100%, 0 88%);
 }
 .l-section--dark .c-teaser .c-rich-text a {
   color: var(--g-link--color);
@@ -414,7 +436,7 @@
 .l-section--dark .c-teaser p, .l-section--dark .c-teaser .c-rich-text li, .l-section--dark .c-teaser.mc-bulletlist li::before {
   color: var(--c-teaser--color);
 }
-.l-section--dark *, .l-section--dark .mc-bulletlist li::before {
+.l-section--dark h1, .l-section--dark h2, .l-section--dark h3, .l-section--dark h4, .l-section--dark .c-rich-text, .l-section--dark .mc-bulletlist li::before {
   color: var(--section-dark-color);
 }
 
@@ -431,6 +453,71 @@
 }
 .c-teaser__body {
   padding: var(--c-teaser--padding);
+}
+
+.c-teaser--animated {
+  --c-teaser--transition-speed: 200ms;
+  display: inline-block;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.c-teaser--animated::before, .c-teaser--animated::after {
+  content: "";
+  width: 0;
+  height: var(--c-teaser--border-width);
+  position: absolute;
+  transition: all var(--c-teaser--transition-speed) linear;
+  background: var(--c-teaser--border-color);
+}
+.c-teaser--animated span {
+  display: block;
+}
+.c-teaser--animated span::before, .c-teaser--animated span::after {
+  content: "";
+  width: var(--c-teaser--border-width);
+  height: 0;
+  position: absolute;
+  transition: all var(--c-teaser--transition-speed) linear;
+  background: var(--c-teaser--border-color);
+}
+.c-teaser--animated span::after {
+  transition-delay: calc(var(--c-teaser--transition-speed) * 2);
+  right: 0;
+  top: 0;
+}
+.c-teaser--animated span::before {
+  transition-delay: 0s;
+  left: 0;
+  bottom: 0;
+}
+.c-teaser--animated:hover::before, .c-teaser--animated:hover::after {
+  width: 100%;
+}
+.c-teaser--animated:hover span::before, .c-teaser--animated:hover span::after {
+  height: 100%;
+}
+.c-teaser--animated::after {
+  left: 0;
+  top: 0;
+  transition-delay: calc(var(--c-teaser--transition-speed) * 3);
+}
+.c-teaser--animated::before {
+  right: 0;
+  bottom: 0;
+  transition-delay: var(--c-teaser--transition-speed);
+}
+.c-teaser--animated:hover::after {
+  transition-delay: 0s;
+}
+.c-teaser--animated:hover span::after {
+  transition-delay: var(--c-teaser--transition-speed);
+}
+.c-teaser--animated:hover::before {
+  transition-delay: calc(var(--c-teaser--transition-speed) * 2);
+}
+.c-teaser--animated:hover span::before {
+  transition-delay: calc(var(--c-teaser--transition-speed) * 3);
 }
 
 .c-visual__link {
