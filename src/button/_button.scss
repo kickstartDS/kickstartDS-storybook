@@ -2,24 +2,23 @@
   clip-path: polygon(0 0, 92% 0, 100% 40%, 100% 85%, 98% 100%, 7% 100%, 0 50%);
   transition: none;  
 
-
-  
   @keyframes button-hover {
     0% { clip-path: polygon(0 0, 92% 0, 100% 40%, 100% 85%, 98% 100%, 7% 100%, 0 50%); }
-    25% { clip-path: polygon(0 20%, 3% 0, 95% 0, 100% 9%, 100% 85%, 92% 100%, 6% 100%, 0% 85%); }
-    50% { clip-path: polygon(0 14%, 6% 0, 95% 0, 100% 14%, 100% 85%, 97% 100%, 2% 100%, 0 71%); }
-    75% { clip-path: polygon(0 34%, 1% 0, 97% 0, 100% 25%, 100% 76%, 97% 100%, 6% 99%, 0 89%); }
+    33% { clip-path: polygon(0 34%, 1% 0, 97% 0, 100% 25%, 100% 76%, 97% 100%, 6% 99%, 0 89%); }
+    66% { clip-path: polygon(0 20%, 3% 0, 95% 0, 100% 9%, 100% 85%, 92% 100%, 6% 100%, 0% 85%); }
+    100% { clip-path: polygon(0 14%, 6% 0, 95% 0, 100% 14%, 100% 85%, 97% 100%, 2% 100%, 0 71%); }
   }
 }
 
 .c-button--main:hover {
   animation-name: button-hover;
-  animation-duration: 400ms;
+  animation-duration: 350ms;
   animation-iteration-count: 1;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
   animation-play-state: running;
+  animation-timing-function: step-start;
   transform: scale(1.02);
+
+  clip-path: polygon(0 14%, 6% 0, 95% 0, 100% 14%, 100% 85%, 97% 100%, 2% 100%, 0 71%);
 }
 
 
