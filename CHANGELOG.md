@@ -1,3 +1,17 @@
+# v1.0.29 (Thu Aug 12 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add button animation ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add helvetica for ui fallback fonts ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.28 (Thu Jul 29 2021)
 
 #### ⚠️ Pushed to `master`
