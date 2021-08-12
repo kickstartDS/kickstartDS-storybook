@@ -1,11 +1,11 @@
 .l-section {
-  
+
     &__container--max {
         @media (min-width: 100em) {
         max-width: 1800px;
       }
     }
-  
+
     &__pattern {
       background-position: center;
       background-size: cover;
@@ -15,20 +15,19 @@
         background-size: cover;
         background-repeat: no-repeat;
       }
-      
+
       &-1 {
-        background-size: contain;
-        background-image: url(../static/patterns/bg_1-d.svg);
+        background-image: url(/patterns/bg_1-d.svg);
 
         @media (min-width: 40em) {
-          background-image: url(../static/patterns/bg_1-d.svg);
+          background-image: url(/patterns/bg_1-d.svg);
         }
       }
-      
+
       &-2 {
-        background-image: url(../static/patterns/bg_2.svg);
+        background-image: url(/patterns/bg_2.svg);
         @media (min-width: 40em) {
-          background-image: url(../static/patterns/bg_2-d.svg);
+          background-image: url(/patterns/bg_2-d.svg);
         }
       }
     }
@@ -47,23 +46,23 @@
           }
         }
       }
-    
+
       .c-rich-text li {
         color: var(--c-teaser--color);
       }
-    
+
       .c-button--fill-animation:focus, .c-button--fill-animation:hover {
         * {
           color: var(--c-button_fill-animation--color-hover);
         }
       }
-  
+
       .c-button, .c-button--solid, .c-button--solid-inverted, .c-button---outline, .c-button---outline-inverted {
         * {
           color: var(--c-button--color);
         }
       }
-  
+
       .c-teaser p, .c-teaser .c-rich-text li, .c-teaser.mc-bulletlist li::before {
         color: var(--c-teaser--color);
       }
@@ -73,4 +72,3 @@
       }
     }
   }
-  
