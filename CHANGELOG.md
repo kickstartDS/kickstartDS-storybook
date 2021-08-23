@@ -1,3 +1,16 @@
+# v1.0.32 (Mon Aug 23 2021)
+
+#### 🐛 Bug Fix
+
+- build: update kickstartDS [#3](https://github.com/kickstartDS/kickstartDS-storybook/pull/3) ([@lmestel](https://github.com/lmestel) [@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.31 (Mon Aug 23 2021)
 
 #### ⚠️ Pushed to `master`
