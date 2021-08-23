@@ -3,7 +3,6 @@ import { actions } from '@storybook/addon-actions';
 import 'lazysizes/plugins/attrchange/ls.attrchange';
 import { unpackDecorator } from '@kickstartds/core/lib/storybook/helpers';
 
-import '@kickstartds/core/lib/design-tokens/tokens.css';
 import '@kickstartds/base/lib/global/base.js';
 import '@kickstartds/base/lib/global/base.css';
 import '../static/index.css';

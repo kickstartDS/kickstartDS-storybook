@@ -9,6 +9,9 @@ export const BoxHell = Template.bind({});
 BoxHell.args = pack({
   box: {
     background: "light",
+    link: {
+      variant: 'solid'
+    }
   },
 });
 
