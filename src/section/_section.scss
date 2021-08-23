@@ -32,7 +32,11 @@
       }
     }
 
-    &--dark {
+    &--deko {
+      clip-path: polygon(0% 15%, 15% 0%, 100% 0, 100% 86%, 87% 100%, 4% 100%, 0 88%);
+    }
+
+    &--dark {  
       .c-teaser {
         .c-rich-text a {
           color: var(--g-link--color);
@@ -62,8 +66,8 @@
       .c-teaser p, .c-teaser .c-rich-text li, .c-teaser.mc-bulletlist li::before {
         color: var(--c-teaser--color);
       }
-
-      *, .mc-bulletlist li::before {
+    
+      h1, h2, h3, h4, .c-rich-text, .mc-bulletlist li::before {
         color: var(--section-dark-color);
       }
     }

@@ -16,6 +16,7 @@
   --color-primary-lighter-1: #06708A;
   --color-primary-lighter-2: #116C81;
   --color-primary-lighter-3: #2C7C8F;
+  --color-primary-lighter-3: #74b2c1;
   --color-primary-lighter-4: #eceff3;
   --color-primary-darker-1: #012F3A;
   --color-primary-darker-2: #03303B;
@@ -85,10 +86,7 @@
   --font-weight-bold: 700;
   --font-family-display: var(--font-family-copy);
   --font-family-copy: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  --font-family-ui: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next",
-    "Avenir", "Segoe UI", "Lucida Grande", "Fira Sans", "Roboto", "Noto", "Droid Sans",
-    "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  --font-family-ui: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
   --line-height-factor-display: 1;
   --line-height-factor-copy: 1;
   --line-height-factor-ui: 1;
@@ -170,7 +168,6 @@
   --g-content-width-narrow: 46.5rem;
   --g-content-width-wide: 75rem;
   --g-content-padding: var(--spacing-m);
-  --breakpoints: '{"xs":"25em", "s":"40em", "m":"60em", "l":"64em", "xl":"75em"}';
   --section-dark-color: var(--color-white-alpha-9);
 }
 
@@ -221,6 +218,11 @@
     --spacing-xxl: 5.9876rem;
   }
 }
+@media (min-width: 90em) {
+  :root {
+    --spacing-l: 6rem;
+  }
+}
 .c-button {
   --c-button--border-radius: 0;
   --c-button--font-weight: var(--font-weight-semi-bold);
@@ -231,12 +233,17 @@
 .c-button--solid {
   --c-button--color: var(--color-secondary);
   --c-button--color-hover: var(--color-secondary-lighter-1);
+  --c-button--background-color: var(--color-primary);
   --c-button--background-color-hover: var(--color-primary-lighter-1);
   --c-button--background-color-active: var(--color-primary-lighter-2);
 }
 
 .c-button.c-button--solid-inverted {
   --c-button--background-color-hover: var(--color-secondary-lighter-1);
+}
+
+.c-button--main {
+  --c-button--padding: 0.6rem 2rem 0.5rem;
 }
 
 .c-button--main:hover {
@@ -260,13 +267,18 @@
 }
 
 .c-headline__subheadline {
-  --c-headline_subheadline--font-weight: var(--font-weight-bold);
+  --c-headline_subheadline--color: var(--color-primary);
+  --c-headline_subheadline--font-weight: var(--font-weight-semi-bold);
+}
+
+.l-section--dark p.c-headline__subheadline {
+  --c-headline_subheadline--color: var(--color-primary-lighter-3);
 }
 
 .c-teaser {
   --g-link--color: var(--color-primary);
   --c-teaser--background: var(--color-white);
-  --c-teaser--border-color: var(--color-primary-lighter-4);
+  --c-teaser--border-color: var(--color-primary-lighter-5);
   --c-teaser--border-color-hover: var(--color-primary);
   --c-teaser--border-width: 4px;
   --c-teaser--border-style: solid;
@@ -310,6 +322,10 @@
   --c-teaser_text--spacing: var(--spacing-s);
 }
 
+.c-quote__source {
+  --c-quote_source--font: var(--font-ui-s);
+}
+
 .c-visual__box--transparent {
   --c-visual_box--background: transparent;
   --c-visual_headline--color: var(--color-black);
@@ -328,8 +344,44 @@
   --c-headline--color: var(--section-dark-color);
 }
 
+.no-stretch {
+  display: block;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
 .c-button--main {
-  clip-path: polygon(8% 0, 100% 0, 100% 70%, 92% 100%, 0 100%, 0 30%);
+  clip-path: polygon(0 0, 92% 0, 100% 40%, 100% 85%, 98% 100%, 7% 100%, 0 50%);
+  transition: none;
+}
+@keyframes button-hover {
+  0% {
+    clip-path: polygon(0 0, 92% 0, 100% 40%, 100% 85%, 98% 100%, 7% 100%, 0 50%);
+  }
+  33% {
+    clip-path: polygon(0 34%, 1% 0, 97% 0, 100% 25%, 100% 76%, 97% 100%, 6% 99%, 0 89%);
+  }
+  66% {
+    clip-path: polygon(0 20%, 3% 0, 95% 0, 100% 9%, 100% 85%, 92% 100%, 6% 100%, 0% 85%);
+  }
+  100% {
+    clip-path: polygon(0 14%, 6% 0, 95% 0, 100% 14%, 100% 85%, 97% 100%, 2% 100%, 0 71%);
+  }
+}
+
+.c-button--main:hover {
+  animation-name: button-hover;
+  animation-duration: 350ms;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-timing-function: step-start;
+  transform: scale(1.02);
+  clip-path: polygon(0 14%, 6% 0, 95% 0, 100% 14%, 100% 85%, 97% 100%, 2% 100%, 0 71%);
+}
+
+.c-button .icon {
+  margin: var(--c-button--icon-margin);
 }
 
 .c-content-box {
@@ -387,6 +439,9 @@
     background-image: url(/patterns/bg_2-d.svg);
   }
 }
+.l-section--deko {
+  clip-path: polygon(0% 15%, 15% 0%, 100% 0, 100% 86%, 87% 100%, 4% 100%, 0 88%);
+}
 .l-section--dark .c-teaser .c-rich-text a {
   color: var(--g-link--color);
 }
@@ -406,7 +461,7 @@
 .l-section--dark .c-teaser p, .l-section--dark .c-teaser .c-rich-text li, .l-section--dark .c-teaser.mc-bulletlist li::before {
   color: var(--c-teaser--color);
 }
-.l-section--dark *, .l-section--dark .mc-bulletlist li::before {
+.l-section--dark h1, .l-section--dark h2, .l-section--dark h3, .l-section--dark h4, .l-section--dark .c-rich-text, .l-section--dark .mc-bulletlist li::before {
   color: var(--section-dark-color);
 }
 
@@ -423,6 +478,71 @@
 }
 .c-teaser__body {
   padding: var(--c-teaser--padding);
+}
+
+.c-teaser--animated {
+  --c-teaser--transition-speed: 200ms;
+  display: inline-block;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.c-teaser--animated::before, .c-teaser--animated::after {
+  content: "";
+  width: 0;
+  height: var(--c-teaser--border-width);
+  position: absolute;
+  transition: all var(--c-teaser--transition-speed) linear;
+  background: var(--c-teaser--border-color);
+}
+.c-teaser--animated span {
+  display: block;
+}
+.c-teaser--animated span::before, .c-teaser--animated span::after {
+  content: "";
+  width: var(--c-teaser--border-width);
+  height: 0;
+  position: absolute;
+  transition: all var(--c-teaser--transition-speed) linear;
+  background: var(--c-teaser--border-color);
+}
+.c-teaser--animated span::after {
+  transition-delay: calc(var(--c-teaser--transition-speed) * 2);
+  right: 0;
+  top: 0;
+}
+.c-teaser--animated span::before {
+  transition-delay: 0s;
+  left: 0;
+  bottom: 0;
+}
+.c-teaser--animated:hover::before, .c-teaser--animated:hover::after {
+  width: 100%;
+}
+.c-teaser--animated:hover span::before, .c-teaser--animated:hover span::after {
+  height: 100%;
+}
+.c-teaser--animated::after {
+  left: 0;
+  top: 0;
+  transition-delay: calc(var(--c-teaser--transition-speed) * 3);
+}
+.c-teaser--animated::before {
+  right: 0;
+  bottom: 0;
+  transition-delay: var(--c-teaser--transition-speed);
+}
+.c-teaser--animated:hover::after {
+  transition-delay: 0s;
+}
+.c-teaser--animated:hover span::after {
+  transition-delay: var(--c-teaser--transition-speed);
+}
+.c-teaser--animated:hover::before {
+  transition-delay: calc(var(--c-teaser--transition-speed) * 2);
+}
+.c-teaser--animated:hover span::before {
+  transition-delay: calc(var(--c-teaser--transition-speed) * 3);
 }
 
 .c-visual__link {
