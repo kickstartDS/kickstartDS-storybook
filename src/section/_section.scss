@@ -66,9 +66,5 @@
       .c-teaser p, .c-teaser .c-rich-text li, .c-teaser.mc-bulletlist li::before {
         color: var(--c-teaser--color);
       }
-    
-      h1, h2, h3, h4, .c-rich-text, .mc-bulletlist li::before {
-        color: var(--section-dark-color);
-      }
     }
   }
