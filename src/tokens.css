@@ -170,7 +170,6 @@
   --g-content-width-narrow: 46.5rem;
   --g-content-width-wide: 75rem;
   --g-content-padding: var(--spacing-m);
-  --breakpoints: '{"xs":"25em", "s":"40em", "m":"60em", "l":"64em", "xl":"75em"}';
   --section-dark-color: var(--color-white-alpha-9);
 }
 @media (min-width: 40em) {
