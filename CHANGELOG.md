@@ -1,3 +1,16 @@
+# v1.0.31 (Mon Aug 23 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: set teaser hover conditions ([@fleven-kds](https://github.com/fleven-kds))
+- feat: design adjustments ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.30 (Thu Aug 12 2021)
 
 #### ⚠️ Pushed to `master`

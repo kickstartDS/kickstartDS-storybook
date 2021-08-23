@@ -2,97 +2,14 @@
     border-color: var(--c-teaser--border-color);
     border-width: var(--c-teaser--border-width);
     border-style: var(--c-teaser--border-style);
-    
     &.js-linked {
         transition-property: all;
         &:hover {
             border-color: var(--c-teaser--border-color-hover);
+            background-color: var(--c-teaser--background-hover);
         }
     }
     &__body {
         padding: var(--c-teaser--padding);
     }
 }
-
-
-
-.c-teaser--animated {
-    --c-teaser--transition-speed: 200ms;
-
-    display: inline-block;
-    position: relative;
-    border: none;
-    cursor: pointer;
-
-    &::before, &::after{
-      content:"";
-      width: 0;
-      height: var(--c-teaser--border-width);
-      position: absolute;
-      transition: all var(--c-teaser--transition-speed) linear;
-      background: var(--c-teaser--border-color);
-    }
-
-    span {
-      display: block;
-
-      &::before, &::after{
-        content:"";
-        width: var(--c-teaser--border-width);
-        height:0;
-        position: absolute;
-        transition: all var(--c-teaser--transition-speed) linear;
-        background: var(--c-teaser--border-color);
-      }
-
-      &::after{
-        transition-delay: calc(var(--c-teaser--transition-speed) * 2);
-        right: 0;
-        top: 0
-      }
-
-      &::before{
-        transition-delay: 0s;
-        left: 0;
-        bottom: 0;
-      }
-    }
-
-    &:hover::before, &:hover::after{
-      width: 100%;
-    }
-    &:hover span::before, &:hover span::after{
-      height: 100%;
-    }
-
-    &::after{
-      left: 0;
-      top: 0;
-      transition-delay: calc(var(--c-teaser--transition-speed) * 3);
-    }
-
-    &::before{
-      right: 0;
-      bottom: 0;
-      transition-delay: var(--c-teaser--transition-speed);
-    }
-
-    &:hover::after{
-      transition-delay: 0s;
-    }
-    &:hover span::after{
-      transition-delay: var(--c-teaser--transition-speed);
-    }
-    &:hover::before{
-      transition-delay: calc(var(--c-teaser--transition-speed) * 2);
-    }
-
-    &:hover span::before{
-      transition-delay: calc(var(--c-teaser--transition-speed) * 3);
-    }
-    
-  }
-  
-
-
-  
