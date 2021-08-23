@@ -134,7 +134,6 @@ const Page = () => (
       align="center"
       >
         <TextMedia
-          media={null}
           mediaAlignment="above-center"
           text='kickstart DS is the foundation for your **design system** with reusable components and tools, guided by clear standards, that can be assembled together to **build digital** products: fast, flexible, responsive, accessible, xxx, yyy, zzz and the best of all:
 
@@ -151,7 +150,7 @@ you can plug it onto every digital touch point you own.'
       </Section>
 
     </Section>
-    
+
     <Section
     className="l-section__pattern l-section__pattern-1"
     >
