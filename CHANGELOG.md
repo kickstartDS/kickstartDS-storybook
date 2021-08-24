@@ -1,3 +1,15 @@
+# v1.0.35 (Tue Aug 24 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add countUp story ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.34 (Tue Aug 24 2021)
 
 #### ⚠️ Pushed to `master`
