@@ -263,6 +263,11 @@
   --c-content-box_topic--margin: 0 0 var(--spacing-s) 0;
 }
 
+.l-section--dark .c-count-up {
+  --c-count-up_topic--color: var(--color-white);
+  --c-count-up_number--color: var(--color-white);
+}
+
 .c-headline {
   --section-dark-color: var(--color-white);
 }
@@ -273,7 +278,7 @@
 }
 
 .l-section--dark p.c-headline__subheadline {
-  --c-headline_subheadline--color: var(--color-primary-lighter-3);
+  --c-headline_subheadline--color: var(--color-primary-lighter-4);
 }
 
 .c-teaser {
