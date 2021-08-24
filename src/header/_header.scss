@@ -1,0 +1,84 @@
+@use '@kickstartds/core/source/core/breakpoint';
+
+:root {
+  @include breakpoint.media("≥s") {
+    --g-header-height: 3.5rem;
+  }
+}
+
+.kds-header {
+
+  a {
+    --g-link--text-decoration: none;
+    --g-link--background-hover: none;
+  }
+
+  &__secondary {
+    display: none;
+
+    &.mobile {
+      display: block;
+    }
+
+    @include breakpoint.media("≥s") {
+      display: block;
+      border-bottom: 1px solid var(--color-black-alpha-1);
+      position: fixed;
+      z-index: 3;
+      background: white;
+      top: 0;
+      width: 100%;
+
+      &.mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    max-width: var(--g-content-width-max);
+    margin: auto;
+    padding: 0.5rem 0;
+
+    @include breakpoint.media("≥s") {
+      padding: 0.5rem var(--g-content-padding);
+    }
+
+    &--secondary {
+      flex-direction: column-reverse;
+
+      @include breakpoint.media("≥s") {
+        justify-content: space-between;
+        flex-direction: row;
+      }
+    }
+
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      @include breakpoint.media("≥s") {
+        padding: 1.5rem var(--g-content-padding);
+      }
+  }
+
+  &__logo {
+    --g-link--background-hover: none;
+
+    padding: 0 var(--g-content-padding);
+
+    @include breakpoint.media("≥s") {
+      padding: 0;
+    }
+
+    img {
+      height: 1.5rem;
+      width: auto;
+
+      @include breakpoint.media("≥s") {
+        height: auto;
+      }
+    }
+  }
+}

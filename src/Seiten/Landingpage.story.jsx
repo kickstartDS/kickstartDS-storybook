@@ -19,9 +19,11 @@ export default {
   title: "Landingpage",
 };
 
+import { Header } from "../header/HeaderComponent";
+
 const Page = () => (
   <>
-
+    <Header/>
     <Visual
       box={{
         background: 'transparent',

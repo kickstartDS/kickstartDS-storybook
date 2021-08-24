@@ -1,0 +1,53 @@
+@use 'sass:color';
+@use '@kickstartds/core/source/core/breakpoint';
+
+.kds-nav-main {
+  a {
+    --g-link--text-decoration: none;
+    --g-link--background-hover: none;
+    display: block;
+  }
+
+  ul,
+  dl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  dd {
+    margin-left: 0;
+  }
+
+  width: 100%;
+  white-space: nowrap;
+  z-index: 2;
+
+  @include breakpoint.media("≥s") {
+    display: block;
+    width: auto;
+  }
+
+  &__list {
+    padding: 0 var(--g-content-padding) !important;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    font: var(--font-ui-xs);
+    font-weight: var(--font-weight-bold);
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+
+    @include breakpoint.media("≥s") {
+      width: auto;
+      padding: 0.5rem;
+    }
+  }
+}

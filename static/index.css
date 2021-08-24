@@ -427,6 +427,130 @@
   color: var(--g-topic--color);
 }
 
+@media (min-width: 40em) {
+  :root {
+    --g-header-height: 3.5rem;
+  }
+}
+
+.kds-header a {
+  --g-link--text-decoration: none;
+  --g-link--background-hover: none;
+}
+.kds-header__secondary {
+  display: none;
+}
+.kds-header__secondary.mobile {
+  display: block;
+}
+@media (min-width: 40em) {
+  .kds-header__secondary {
+    display: block;
+    border-bottom: 1px solid var(--color-black-alpha-1);
+    position: fixed;
+    z-index: 3;
+    background: white;
+    top: 0;
+    width: 100%;
+  }
+  .kds-header__secondary.mobile {
+    display: none;
+  }
+}
+.kds-header__inner {
+  display: flex;
+  max-width: var(--g-content-width-max);
+  margin: auto;
+  padding: 0.5rem 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 40em) {
+  .kds-header__inner {
+    padding: 0.5rem var(--g-content-padding);
+  }
+}
+.kds-header__inner--secondary {
+  flex-direction: column-reverse;
+}
+@media (min-width: 40em) {
+  .kds-header__inner--secondary {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+@media (min-width: 40em) {
+  .kds-header__inner {
+    padding: 1.5rem var(--g-content-padding);
+  }
+}
+.kds-header__logo {
+  --g-link--background-hover: none;
+  padding: 0 var(--g-content-padding);
+}
+@media (min-width: 40em) {
+  .kds-header__logo {
+    padding: 0;
+  }
+}
+.kds-header__logo img {
+  height: 1.5rem;
+  width: auto;
+}
+@media (min-width: 40em) {
+  .kds-header__logo img {
+    height: auto;
+  }
+}
+
+.kds-nav-main {
+  width: 100%;
+  white-space: nowrap;
+  z-index: 2;
+}
+.kds-nav-main a {
+  --g-link--text-decoration: none;
+  --g-link--background-hover: none;
+  display: block;
+}
+.kds-nav-main ul,
+.kds-nav-main dl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.kds-nav-main dd {
+  margin-left: 0;
+}
+@media (min-width: 40em) {
+  .kds-nav-main {
+    display: block;
+    width: auto;
+  }
+}
+.kds-nav-main__list {
+  padding: 0 var(--g-content-padding) !important;
+}
+.kds-nav-main__item {
+  position: relative;
+}
+.kds-nav-main__link {
+  display: inline-flex;
+  align-items: center;
+  font: var(--font-ui-xs);
+  font-weight: var(--font-weight-bold);
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+@media (min-width: 40em) {
+  .kds-nav-main__link {
+    width: auto;
+    padding: 0.5rem;
+  }
+}
+
 .c-rich-text a, .c-rich-text.c-visual__text a {
   text-decoration: none;
   color: var(--g-link--color);

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="379px" height="72px" viewBox="0 0 379 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LP-HD" transform="translate(-118.000000, -79.000000)">
+            <g id="Group" transform="translate(118.000000, 79.000000)">
+                <g id="logo">
+                    <rect id="Rectangle" fill="#06566A" x="0" y="0" width="60" height="60" rx="4.6875"></rect>
+                    <path d="M18.7789964,7.56311896 L23.4449964,12.223119 L23.4453782,52.6890756 L15.0049964,52.688119 L11.2099964,48.897119 L11.2097311,9.81911896 L9.32773109,9.81941704 L9.32773109,7.56311922 L18.7789964,7.56311896 Z" id="Combined-Shape" fill="#ECFF00"></path>
+                    <path d="M35.2581407,28.487395 L51.6797647,45.024395 L43.7567647,53.003395 L43.7437647,52.990395 L42.5420799,54.2016807 L40.9601862,52.6087099 L42.1617647,51.397395 L19.4117647,28.487395 L35.2581407,28.487395 Z" id="Combined-Shape" fill="#ECFF00"></path>
+                    <path d="M55.7142857,17.1428571 L36.7286088,35.7983193 L23.5062689,35.7978571 L20.6722689,33.0128571 L36.822951,17.1428571 L55.7142857,17.1428571 Z" id="Combined-Shape" fill="#06566A"></path>
+                    <path d="M49.4117647,17.8991597 L49.4117647,20.1680672 L46.7849664,20.1671597 L34.0238111,33.0252101 L20.8209664,33.0251597 L19.9169664,32.1131597 L34.0238111,17.8991597 L49.4117647,17.8991597 Z" id="Combined-Shape" fill="#ECFF00"></path>
+                </g>
+                <text id="kickstart-DS" font-family="Campton-BoldDEMO, Campton" font-size="48" font-weight="bold" line-spacing="60" fill="#083D4A">
+                    <tspan x="82" y="52">kickstart DS</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

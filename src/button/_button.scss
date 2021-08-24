@@ -17,10 +17,8 @@
   animation-play-state: running;
   animation-timing-function: step-start;
   transform: scale(1.02);
-
   clip-path: polygon(0 14%, 6% 0, 95% 0, 100% 14%, 100% 85%, 97% 100%, 2% 100%, 0 71%);
 }
-
 
 .c-button .icon {
   margin: var(--c-button--icon-margin);
