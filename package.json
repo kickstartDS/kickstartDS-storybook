@@ -21,11 +21,11 @@
   },
   "keywords": [],
   "dependencies": {
-    "@kickstartds/base": "1.3.1-next.4",
-    "@kickstartds/blog": "1.3.1-next.4",
-    "@kickstartds/content": "1.3.1-next.5",
-    "@kickstartds/core": "1.3.1-next.1",
-    "@kickstartds/form": "1.3.1-next.4"
+    "@kickstartds/base": "1.3.1-next.6",
+    "@kickstartds/blog": "1.3.1-next.6",
+    "@kickstartds/content": "1.3.1-next.7",
+    "@kickstartds/core": "1.3.1-next.2",
+    "@kickstartds/form": "1.3.1-next.6"
   },
   "devDependencies": {
     "@auto-it/npm": "^10.29.3",
