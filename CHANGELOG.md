@@ -1,3 +1,17 @@
+# v1.0.34 (Tue Aug 24 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: edit teaser variants page ([@fleven-kds](https://github.com/fleven-kds))
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add dark style for quote ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.33 (Tue Aug 24 2021)
 
 #### ⚠️ Pushed to `master`
