@@ -1,3 +1,15 @@
+# v1.0.33 (Tue Aug 24 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: reverse subhealine color change + add dark style for count up ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.32 (Mon Aug 23 2021)
 
 #### 🐛 Bug Fix
