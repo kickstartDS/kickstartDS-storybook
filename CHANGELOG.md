@@ -1,3 +1,16 @@
+# v1.0.36 (Tue Aug 24 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add slider dark tokens ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.35 (Tue Aug 24 2021)
 
 #### ⚠️ Pushed to `master`
