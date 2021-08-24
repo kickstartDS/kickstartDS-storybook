@@ -1,3 +1,15 @@
+# v1.0.39 (Tue Aug 24 2021)
+
+#### ⚠️ Pushed to `master`
+
+- chore: update formatting ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.38 (Tue Aug 24 2021)
 
 #### ⚠️ Pushed to `master`
