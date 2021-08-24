@@ -304,8 +304,8 @@
   --g-link--color-hover: var(--color-secondary);
   --g-link--backround-hover: var(--color-secondary-alpha-1);
   --c-teaser--background: var(--color-primary);
-  --c-teaser--background-hover: #06637a;
-  --c-teaser--border-color: var(--color-primary-lighter-5);
+  --c-teaser--background-hover: var(--color-primary-lighter-1);
+  --c-teaser--border-color: var(--color-white);
   --c-teaser--border-color-hover: var(--color-white);
   --c-teaser--color: var(--color-white-alpha-9);
   --c-teaser--shadow-hover: none;
@@ -324,6 +324,15 @@
   --c-teaser--border-color-hover: var(--color-secondary-darker-1);
   --c-teaser--background-hover: var(--color-primary);
   --c-rich-text--color: var(--section-dark-color);
+}
+
+.l-section--dark .c-slider {
+  --c-slider_arrow--color: var(--section-dark-color);
+  --c-slider_arrow--background-hover: var(--color-white-alpha-1);
+  --c-slider_bullet--outline-color: var(--section-dark-color);
+  --c-slider_bullet--outline-color-active: var(--color-white);
+  --c-slider_bullet--background-active: var(--color-white);
+  --c-slider_bullet--background-hover: var(--color-white-alpha-1);
 }
 
 .c-teaser--style-dark .c-teaser__topic {
