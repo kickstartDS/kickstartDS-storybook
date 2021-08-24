@@ -340,6 +340,11 @@
   --c-quote_source--font: var(--font-ui-s);
 }
 
+.l-section--dark .c-quote__source {
+  --c-quote_source--font: var(--font-ui-s);
+  --c-quote_source--color: var(--color-white);
+}
+
 .c-visual__box--transparent {
   --c-visual_box--background: transparent;
   --c-visual_headline--color: var(--color-black);
