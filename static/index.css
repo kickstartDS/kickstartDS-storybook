@@ -326,6 +326,10 @@
   --c-rich-text--color: var(--section-dark-color);
 }
 
+.c-slider {
+  --c-slider-nav--margin: var(--spacing-m);
+}
+
 .l-section--dark .c-slider {
   --c-slider_arrow--color: var(--section-dark-color);
   --c-slider_arrow--background-hover: var(--color-white-alpha-1);
@@ -519,6 +523,10 @@
 
 .c-visual__box.c-visual__box--transparent {
   overflow: unset;
+}
+
+.c-slider-nav {
+  margin-top: var(--c-slider-nav--margin);
 }
 
 .c-quote__source {
