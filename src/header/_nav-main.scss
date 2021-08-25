@@ -19,13 +19,12 @@
     margin-left: 0;
   }
 
-  width: 100%;
+  width: auto;
   white-space: nowrap;
   z-index: 2;
 
   @include breakpoint.media("≥s") {
     display: block;
-    width: auto;
   }
 
   &__list {
@@ -41,13 +40,12 @@
     align-items: center;
     font: var(--font-ui-xs);
     font-weight: var(--font-weight-bold);
-    width: 100%;
+    width: auto;
     justify-content: space-between;
-    padding: 0.5rem 0;
+    // padding: var(--spacing-m);
 
     @include breakpoint.media("≥s") {
-      width: auto;
-      padding: 0.5rem;
+      // padding: var(--spacing-xs);
     }
   }
 }

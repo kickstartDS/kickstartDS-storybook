@@ -1,3 +1,5 @@
+@use '@kickstartds/core/source/core/breakpoint';
+
 .c-teaser {
     border-color: var(--c-teaser--border-color);
     border-width: var(--c-teaser--border-width);
@@ -12,4 +14,43 @@
     &__body {
         padding: var(--c-teaser--padding);
     }
+}
+
+.c-teaser-box__body[min-width~="0px"] {
+  --c-teaser-box_topic--font: var(--c-teaser-box_topic--font-xs);
+  .c-rich-text {
+    font: var(--c-teaser-box_rich-text--font-xs);
+  }
+
+  .c-button {
+    --c-button--font: var(--font-ui-xs);
+  }
+}
+
+.c-teaser-box__body[min-width~="200px"] {
+  --c-teaser-box_topic--font: var(--c-teaser-box_topic--font-s);
+  
+  .c-rich-text {
+    font: var(--c-teaser-box_rich-text--font-s);
+  }
+
+  .c-button {
+    @include breakpoint.media("≥m") {
+      --c-button--font: var(--font-ui-xs);
+    }
+
+    --c-button--font: var(--font-ui-s);
+  }
+}
+
+.c-teaser-box__body[min-width~="400px"] {
+  --c-teaser-box_topic--font: var(--c-teaser-box_topic--font-m);
+  
+  .c-rich-text {
+    font: var(--c-teaser-box_rich-text--font-m);
+  }
+
+  .c-button {
+    --c-button--font: var(--font-ui-s);
+  }
 }

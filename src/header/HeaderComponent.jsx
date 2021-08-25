@@ -9,7 +9,7 @@ export const Header = () => (
           <div className="kds-nav-main">
             <ul className="kds-nav-main__list">
               <li className="kds-nav-main__item">
-                <a className="kds-nav-main__link c-button c-button--small c-button--solid c-button--main" href="#">
+                <a className="kds-nav-main__link c-button c-button--small c-button--outline" href="#">
                   Blog
                 </a>
               </li>
