@@ -28,7 +28,7 @@
   }
 
   &__list {
-    padding: 0 var(--g-content-padding) !important;
+    padding: 0 var(--g-content-padding) 0 var(--spacing-xs) !important;
   }
 
   &__item {
@@ -42,10 +42,5 @@
     font-weight: var(--font-weight-bold);
     width: auto;
     justify-content: space-between;
-    // padding: var(--spacing-m);
-
-    @include breakpoint.media("≥s") {
-      // padding: var(--spacing-xs);
-    }
   }
 }

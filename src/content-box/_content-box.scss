@@ -2,10 +2,16 @@
 
 .c-content-box {
     color: var(--g-topic--color);
+
+    &__image {
+        margin-bottom: var(--spacing-s);
+    }
 }
 
 .c-content-box__body[min-width~="0px"] {
-  --c-content-box_topic--font: var(--c-content-box_topic--font-xs);
+    .c-content-box__topic {
+        --c-content-box_topic--font: var(--c-content-box_topic--font-xs);
+    }
   .c-rich-text {
     font: var(--c-content-box_rich-text--font-xs);
   }
@@ -16,7 +22,9 @@
 }
 
 .c-content-box__body[min-width~="200px"] {
-  --c-content-box_topic--font: var(--c-content-box_topic--font-s);
+    .c-content-box__topic {
+        --c-content-box_topic--font: var(--c-content-box_topic--font-s);
+    }
   
   .c-rich-text {
     font: var(--c-content-box_rich-text--font-s);
@@ -32,7 +40,9 @@
 }
 
 .c-content-box__body[min-width~="400px"] {
-  --c-content-box_topic--font: var(--c-content-box_topic--font-m);
+    .c-content-box__topic {
+        --c-content-box_topic--font: var(--c-content-box_topic--font-m);
+    }
   
   .c-rich-text {
     font: var(--c-content-box_rich-text--font-m);

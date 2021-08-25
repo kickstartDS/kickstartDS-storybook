@@ -45,15 +45,6 @@
       padding: 0.5rem var(--g-content-padding);
     }
 
-    &--secondary {
-      flex-direction: column-reverse;
-
-      @include breakpoint.media("≥s") {
-        justify-content: space-between;
-        flex-direction: row;
-      }
-    }
-
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
@@ -73,7 +64,7 @@
     }
 
     img {
-      height: 1.5rem;
+      height: calc(var(--spacing-l) * 2);
       width: auto;
 
       @include breakpoint.media("≥s") {
