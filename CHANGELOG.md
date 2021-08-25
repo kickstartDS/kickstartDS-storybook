@@ -1,3 +1,15 @@
+# v1.0.40 (Wed Aug 25 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add scaling buttons for content + teaser box ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.39 (Tue Aug 24 2021)
 
 #### ⚠️ Pushed to `master`
