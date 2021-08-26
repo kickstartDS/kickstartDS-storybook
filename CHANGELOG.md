@@ -1,3 +1,15 @@
+# v1.0.43 (Thu Aug 26 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: adjust spacings ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.42 (Wed Aug 25 2021)
 
 #### ⚠️ Pushed to `master`
