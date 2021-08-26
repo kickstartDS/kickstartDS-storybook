@@ -90,7 +90,7 @@
   --line-height-factor-display: 1;
   --line-height-factor-copy: 1;
   --line-height-factor-ui: 1;
-  --font-size-xs: 0.75rem;
+  --font-size-xs: 0.7rem;
   --font-size-s: 0.875rem;
   --font-size-m: 1rem;
   --font-size-l: 1.125rem;
@@ -214,8 +214,8 @@
     --spacing-s: 0.7rem;
     --spacing-m: 1.75rem;
     --spacing-l: 2.5rem;
-    --spacing-xl: 5rem;
-    --spacing-xxl: 6rem;
+    --spacing-xl: 4.5rem;
+    --spacing-xxl: 7rem;
   }
 }
 @media (min-width: 90em) {
@@ -372,6 +372,16 @@
   --c-quote_source--color: var(--color-white);
 }
 
+@media (min-width: 64em) {
+  .c-visual {
+    --c-visual--min-height: 24rem;
+  }
+}
+@media (min-width: 90em) {
+  .c-visual {
+    --c-visual--min-height: 32rem;
+  }
+}
 .c-visual__box--transparent {
   --c-visual_box--background: transparent;
   --c-visual_headline--color: var(--color-black);
@@ -538,12 +548,17 @@
   }
 }
 .kds-header__logo img {
-  height: calc(var(--spacing-l) * 2);
+  height: 2.4em;
   width: auto;
 }
 @media (min-width: 40em) {
   .kds-header__logo img {
-    height: auto;
+    height: 3em;
+  }
+}
+@media (min-width: 90em) {
+  .kds-header__logo img {
+    height: 4em;
   }
 }
 

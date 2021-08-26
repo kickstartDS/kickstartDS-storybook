@@ -64,11 +64,15 @@
     }
 
     img {
-      height: calc(var(--spacing-l) * 2);
+      height: 2.4em;
       width: auto;
-
+      
       @include breakpoint.media("≥s") {
-        height: auto;
+        height: 3em;
+      }
+      
+      @media (min-width: 90em) { 
+        height: 4em;
       }
     }
   }
