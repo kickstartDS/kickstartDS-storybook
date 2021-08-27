@@ -130,7 +130,7 @@ const Page = () => (
         spaceAfter: 'none'
       }}
       mode="list"
-      className="l-section--deko l-section__pattern l-section__pattern-1"
+      className="l-section--deko l-section__pattern l-section__pattern-1 l-section__pattern-1--dark"
       width="narrow"
       background="dark"
       align="center"
@@ -154,7 +154,7 @@ you can plug it onto every digital touch point you own.'
     </Section>
 
     <Section
-    className="l-section__pattern l-section__pattern-1"
+    className="l-section__pattern l-section__pattern-1 l-section__pattern-1--light"
     >
       <Quote
         image="https://picsum.photos/seed/kdsquote/300/300"
@@ -197,7 +197,7 @@ you can plug it onto every digital touch point you own.'
 
     <Section
       background="dark"
-      className="l-section__pattern l-section__pattern-2"
+      className="l-section__pattern l-section__pattern-2 l-section__pattern-2--dark"
       gutter="default"
       headline={{
         align: 'center',
