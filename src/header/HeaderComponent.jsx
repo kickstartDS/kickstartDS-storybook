@@ -21,5 +21,3 @@ export const Header = () => (
     <div className="main-header-spacer"></div>
   </>
 );
-
- 
