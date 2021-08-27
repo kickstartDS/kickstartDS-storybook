@@ -1,3 +1,16 @@
+# v1.0.46 (Fri Aug 27 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: publish schema ([@lmestel](https://github.com/lmestel))
+- feat: create custom section component ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.45 (Fri Aug 27 2021)
 
 #### ⚠️ Pushed to `master`
