@@ -1,6 +1,7 @@
 .DS_Store
 static/index.css.map
 storybook-static
+*.dereffed.json
 
 # Logs
 logs

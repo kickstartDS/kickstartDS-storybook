@@ -1,11 +1,11 @@
 import {
-  Section,
   TextMedia,
   Headline,
   ContentBox,
   TeaserBox,
   Divider,
 } from "@kickstartds/base";
+import { Section } from "../section/SectionComponent"
 import { Button } from "@kickstartds/base/lib/button";
 import {
   Visual,
@@ -130,7 +130,8 @@ const Page = () => (
         spaceAfter: 'none'
       }}
       mode="list"
-      className="l-section--deko l-section__pattern l-section__pattern-1 l-section__pattern-1--dark"
+      deko={true}
+      pattern="1"
       width="narrow"
       background="dark"
       align="center"
@@ -154,7 +155,7 @@ you can plug it onto every digital touch point you own.'
     </Section>
 
     <Section
-    className="l-section__pattern l-section__pattern-1 l-section__pattern-1--light"
+    pattern="1"
     >
       <Quote
         image="https://picsum.photos/seed/kdsquote/300/300"
@@ -197,7 +198,7 @@ you can plug it onto every digital touch point you own.'
 
     <Section
       background="dark"
-      className="l-section__pattern l-section__pattern-2 l-section__pattern-2--dark"
+      pattern="2"
       gutter="default"
       headline={{
         align: 'center',
