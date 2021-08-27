@@ -175,8 +175,8 @@
   :root {
     font-size: 20px;
     --spacing-xxs: 0.3rem;
-    --spacing-xs: 0.5rem;
-    --spacing-s: 0.8rem;
+    --spacing-xs: 0.4rem;
+    --spacing-s: 0.5rem;
     --spacing-m: 1rem;
     --spacing-l: 1.5rem;
     --spacing-xl: 3.5rem;
