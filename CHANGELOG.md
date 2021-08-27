@@ -1,3 +1,15 @@
+# v1.0.44 (Fri Aug 27 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: improve section background patterns ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.43 (Thu Aug 26 2021)
 
 #### ⚠️ Pushed to `master`
