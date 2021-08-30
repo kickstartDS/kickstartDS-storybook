@@ -1,3 +1,17 @@
+# v1.0.48 (Mon Aug 30 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: spacing + font-size overhaul ([@fleven-kds](https://github.com/fleven-kds))
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: adjust spacings ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.47 (Sat Aug 28 2021)
 
 #### ⚠️ Pushed to `master`
