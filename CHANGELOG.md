@@ -1,3 +1,31 @@
+# v1.0.47 (Sat Aug 28 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: make sure dist dir is created ([@julrich](https://github.com/julrich))
+- fix: copy images on publish ([@julrich](https://github.com/julrich))
+- fix: also publish original schemas ([@julrich](https://github.com/julrich))
+- fix: link to blog in header ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.0.46 (Fri Aug 27 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: publish schema ([@lmestel](https://github.com/lmestel))
+- feat: create custom section component ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.45 (Fri Aug 27 2021)
 
 #### ⚠️ Pushed to `master`
