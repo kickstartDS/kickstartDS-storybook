@@ -414,6 +414,10 @@
   margin: auto;
 }
 
+.c-button--solid {
+  clip-path: polygon(5% 0, 98% 0, 100% 10%, 95% 100%, 2% 100%, 0 90%);
+}
+
 .c-button--main {
   clip-path: polygon(0 0, 92% 0, 100% 40%, 100% 85%, 98% 100%, 7% 100%, 0 50%);
   transition: none;
@@ -805,7 +809,7 @@
 }
 
 .c-visual__link {
-  filter: drop-shadow(3px 5px 5px rgba(6, 112, 138, 0.5));
+  filter: drop-shadow(5px 5px 0px #ecff00);
 }
 
 .c-visual__box.c-visual__box--transparent {
