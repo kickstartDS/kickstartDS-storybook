@@ -1,3 +1,16 @@
+# v1.0.49 (Mon Aug 30 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: section deko overhaul ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.48 (Mon Aug 30 2021)
 
 #### ⚠️ Pushed to `master`
