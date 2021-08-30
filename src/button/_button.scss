@@ -1,5 +1,5 @@
 .c-button--solid {
-  clip-path: polygon(5% 0, 98% 0, 100% 10%, 95% 100%, 2% 100%, 0 90%);
+  // clip-path: polygon(10px 0, calc(100% - 5px) 0, 100% 5px, calc(100% - 10px) 100%, 5px 100%, 0 calc(100% - 5px));
 }
 
 .c-button--main {

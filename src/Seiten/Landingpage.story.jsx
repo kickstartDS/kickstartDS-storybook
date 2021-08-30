@@ -119,7 +119,7 @@ const Page = () => (
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
       />
     </Section>
-    <Section width="wide">
+    <Section width="wide" spaceAfter="none" spaceBefore="none">
       <Section
       headline={{
         align: 'center',

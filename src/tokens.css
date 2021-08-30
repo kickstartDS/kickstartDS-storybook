@@ -1,5 +1,5 @@
 :root {
-  font-size: 18px;
+  font-size: 20px;
   --color-primary-r: 6;
   --color-primary-g: 86;
   --color-primary-b: 106;
@@ -74,10 +74,9 @@
   --color-warning: #ffc103;
   --color-error: #e60201;
 
-
   --spacing-xxs: 0.118rem;
-  --spacing-xs: 0.375rem;
-  --spacing-s: 0.75rem;
+  --spacing-xs: 0.25rem;
+  --spacing-s: 0.65rem;
   --spacing-m: 1rem;
   --spacing-l: 1.25rem;
   --spacing-xl: 1.9rem;
@@ -85,7 +84,7 @@
   
   --font-weight-light: 300;
   --font-weight-regular: 400;
-  --font-weight-semi-bold: 600;
+  --font-weight-semi-bold: 500;
   --font-weight-bold: 700;
   --font-family-display: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   --font-family-copy: var(--font-family-display);
@@ -93,18 +92,18 @@
   --line-height-factor-display: 1;
   --line-height-factor-copy: 1;
   --line-height-factor-ui: 1;
-  --font-size-xs: 0.7rem;
-  --font-size-s: 0.875rem;
-  --font-size-m: 1rem;
-  --font-size-l: 1.125rem;
-  --font-size-xl: 1.5rem;
-  --font-size-xxl: 1.875rem;
+  --font-size-xs: 0.6rem;   /* Copy XS */
+  --font-size-s: 0.8rem;   /* Copy S */
+  --font-size-m: 0.9rem;    /* Copy, Subheadline */
+  --font-size-l: 1.125rem;  /* h3 */
+  --font-size-xl: 1.35rem;  /* h2 */
+  --font-size-xxl: 1.75rem; /* h1 */
   --line-height-xs: 1rem;
-  --line-height-s: 1.35rem;
-  --line-height-m: 1.5rem;
-  --line-height-l: 2rem;
-  --line-height-xl: 2.25rem;
-  --line-height-xxl: 2.5rem;
+  --line-height-s: 1.3rem;
+  --line-height-m: 1.4rem;
+  --line-height-l: 1.5rem;
+  --line-height-xl: 2rem;
+  --line-height-xxl: 2.25rem;
   --font-display-xs: var(--font-size-xs) /
     calc(var(--line-height-xs) * var(--line-height-factor-display))
     var(--font-family-display);
@@ -175,29 +174,28 @@
 }
 @media (min-width: 40em) {
   :root {
-    font-size: 20px;
     --spacing-xxs: 0.3rem;
     --spacing-xs: 0.4rem;
-    --spacing-s: 0.5rem;
+    --spacing-s: 0.75rem;
     --spacing-m: 1rem;
     --spacing-l: 1.5rem;
     --spacing-xl: 3.5rem;
     --spacing-xxl: 4.5rem;
+    --font-size-xs: 0.7rem;
     --font-size-s: 0.9375rem;
     --font-size-m: 1.125rem;
     --font-size-l: 1.3125rem;
     --font-size-xl: 1.75rem;
     --font-size-xxl: 2.25rem;
+    --line-height-s: 1.45rem;
     --line-height-m: 1.75rem;
-    --line-height-l: 2.5rem;
+    --line-height-l: 2rem;
+    --line-height-xl: 2.5rem;
     --line-height-xxl: 3rem;
   }
 }
 @media (min-width: 60em) {
   :root {
-    --spacing-xxs: 0.3rem;
-    --spacing-xs: 0.4rem;
-    --spacing-s: 0.5rem;
     --spacing-m: 1.2rem;
     --spacing-l: 2.2rem;
     --spacing-xl: 4rem;
@@ -211,8 +209,6 @@
 }
 @media (min-width: 75em) {
   :root {
-    --spacing-xxs: 0.3337rem;
-    --spacing-xs: 0.5rem;
     --spacing-s: 0.7rem;
     --spacing-m: 1.75rem;
     --spacing-l: 2.5rem;
@@ -222,7 +218,7 @@
 }
 @media (min-width: 90em) {
   :root {
-    --spacing-l: 6rem;
+    --spacing-l: 4rem;
   }
 }
 
@@ -276,6 +272,10 @@
   --c-content-box_topic--margin: 0 0 var(--spacing-xs) 0;
 }
 
+.c-count-up {
+  --c-count-up_text--font: var(--font-copy-s);
+}
+
 .l-section--dark .c-count-up {
   --c-count-up_topic--color: var(--color-white);
   --c-count-up_number--color: var(--color-white);
@@ -295,17 +295,30 @@
 }
 
 .c-teaser {
-  --g-link--color: var(--color-primary);
   --c-teaser--background: var(--color-white);
   --c-teaser--background-hover: var(--color-white);
   --c-teaser--border-color: var(--color-primary-lighter-5);
   --c-teaser--border-color-hover: var(--color-primary);
   --c-teaser--border-width: 2px;
   --c-teaser--border-style: solid;
-  --c-teaser--color: var(--c-rich-text--color);
   --c-teaser--padding: 1em 1.2em;
   --c-teaser--shadow-hover: none;
 }
+
+.c-teaser__text {
+  --g-link--color: var(--color-primary);
+  --c-teaser--color: var(--c-rich-text--color);
+  --c-teaser_text--spacing: var(--spacing-xs) !important;
+
+  --c-teaser_rich-text--font-xs:  var(--font-copy-xs);
+  --c-teaser_rich-text--font-s:  var(--font-copy-s);
+  --c-teaser_rich-text--font-m:  var(--font-copy-m);
+
+  --c-teaser_topic--font-size-xs: var(--font-size-xs);
+  --c-teaser_topic--font-size-s: var(--font-size-s);
+  --c-teaser_topic--font-size-m: var(--font-size-m);
+}
+
 @media (min-width: 40em) {
   .c-teaser {
     --c-teaser--border-width: 3px;
