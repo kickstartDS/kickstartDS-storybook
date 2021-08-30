@@ -176,7 +176,7 @@
       }
 
       .c-rich-text li {
-        color: var(--c-teaser--color);
+        // color: var(--c-teaser--color);
       }
 
       .c-button--fill-animation:focus, .c-button--fill-animation:hover {
@@ -192,7 +192,7 @@
       }
 
       .c-teaser p, .c-teaser .c-rich-text li, .c-teaser.mc-bulletlist li::before {
-        color: var(--c-teaser--color);
+        // color: var(--c-teaser--color);
       }
     }
   }
