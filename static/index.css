@@ -76,7 +76,7 @@
   --spacing-xxs: 0.118rem;
   --spacing-xs: 0.25rem;
   --spacing-s: 0.65rem;
-  --spacing-m: 1rem;
+  --spacing-m: 0.85rem;
   --spacing-l: 1.25rem;
   --spacing-xl: 1.9rem;
   --spacing-xxl: 2.1179rem;
@@ -219,11 +219,6 @@
     --spacing-l: 2.5rem;
     --spacing-xl: 4.5rem;
     --spacing-xxl: 7rem;
-  }
-}
-@media (min-width: 90em) {
-  :root {
-    --spacing-l: 4rem;
   }
 }
 .c-button {
@@ -432,7 +427,7 @@
 }
 
 .c-button--main {
-  clip-path: polygon(0 0, 92% 0, 100% 40%, 100% 85%, 98% 100%, 7% 100%, 0 50%);
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 15px 100%, 0 50%);
   transition: none;
 }
 @keyframes button-hover {
@@ -746,7 +741,14 @@
   }
 }
 .l-section--deko {
-  clip-path: polygon(0% 15%, 15% 0%, 100% 0, 100% 86%, 87% 100%, 4% 100%, 0 88%);
+  clip-path: polygon(0% var(--spacing-l), var(--spacing-xl) 0%, 100% 0, 100% calc(100% - var(--spacing-xxl)), calc(100% - var(--spacing-xxl)) 100%, var(--spacing-m) 100%, 0 calc(100% - var(--spacing-m)));
+  max-width: calc(100% - calc(var(--g-content-padding) * 2));
+  margin: auto;
+}
+@media (min-width: 1235px) {
+  .l-section--deko {
+    max-width: calc(var(--g-content-width-default) - calc(var(--g-content-padding) * 2));
+  }
 }
 .l-section--dark .c-teaser .c-rich-text a {
   color: var(--g-link--color);

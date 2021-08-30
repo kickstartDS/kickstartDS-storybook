@@ -1,9 +1,5 @@
-.c-button--solid {
-  // clip-path: polygon(10px 0, calc(100% - 5px) 0, 100% 5px, calc(100% - 10px) 100%, 5px 100%, 0 calc(100% - 5px));
-}
-
 .c-button--main {
-  clip-path: polygon(0 0, 92% 0, 100% 40%, 100% 85%, 98% 100%, 7% 100%, 0 50%);
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 15px 100%, 0 50%);
   transition: none;  
 
   @keyframes button-hover {

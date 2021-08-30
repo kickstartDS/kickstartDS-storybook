@@ -135,7 +135,33 @@
     }
 
     &--deko {
-      clip-path: polygon(0% 15%, 15% 0%, 100% 0, 100% 86%, 87% 100%, 4% 100%, 0 88%);
+      clip-path: polygon(
+        /* Corner Top Left */
+        0% var(--spacing-l),
+        var(--spacing-xl) 0%,
+        
+        /* Corner Top Right */
+        100% 0,
+        
+        /* Corner Bottom Right */
+        100% calc(100% - var(--spacing-xxl)),
+        calc(100% - var(--spacing-xxl)) 100%,
+        
+        /* Corner Bottom Left */
+        var(--spacing-m) 100%,
+        0 calc(100% - var(--spacing-m))
+      );
+
+      max-width: calc(100% - calc(var(--g-content-padding) * 2));
+      margin: auto;
+      
+      @media(min-width: 60em) {
+        // clip-path: polygon(0% 15%, 15% 0%, 100% 0, 100% 86%, 87% 100%, 4% 100%, 0 88%);
+      }
+
+      @media(min-width: 1235px) {
+        max-width: calc(var(--g-content-width-default) - calc(var(--g-content-padding) * 2));
+      }
     }
 
     &--dark {  

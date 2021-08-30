@@ -119,8 +119,7 @@ const Page = () => (
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
       />
     </Section>
-    <Section width="wide" spaceAfter="none" spaceBefore="none">
-      <Section
+    <Section
       headline={{
         align: 'center',
         content: 'Great components',
@@ -152,7 +151,6 @@ you can plug it onto every digital touch point you own.'
         />
       </Section>
 
-    </Section>
 
     <Section
     pattern="1"
