@@ -130,8 +130,42 @@ const Page = () => (
       }}
       mode="list"
       deko={true}
+      className="l-section--deko--max" /* Background Weite */
       pattern="1"
-      width="narrow"
+      width="full" /* Content Weite */
+      background="dark"
+      align="center"
+      >
+        <TextMedia
+          mediaAlignment="above-center"
+          text='kickstart DS is the foundation for your **design system** with reusable components and tools, guided by clear standards, that can be assembled together to **build digital** products: fast, flexible, responsive, accessible, xxx, yyy, zzz and the best of all:
+
+you can plug it onto every digital touch point you own.'
+        />
+        <Button
+          className="c-button--main no-stretch"
+          href="#"
+          label="mehr erfahren"
+          size="medium"
+          type="button"
+          variant="solid-inverted"
+        />
+      </Section>
+    <Section
+      width="max"
+    >
+
+<Section
+      headline={{
+        align: 'center',
+        content: 'Great components',
+        subheadline: 'Make the most out of your frontends by unifying their core utilizing component and design tokens',
+        level: 'h2',
+        pageHeader: false,
+        spaceAfter: 'none'
+      }}
+      mode="list"
+      pattern="1"
       background="dark"
       align="center"
       >
@@ -151,6 +185,9 @@ you can plug it onto every digital touch point you own.'
         />
       </Section>
 
+
+
+    </Section>
 
     <Section
     pattern="1"
