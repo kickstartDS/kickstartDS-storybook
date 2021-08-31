@@ -1,3 +1,17 @@
+# v1.0.52 (Tue Aug 31 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: overhaul section patterns ([@fleven-kds](https://github.com/fleven-kds))
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add "outer-width" section classes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.51 (Mon Aug 30 2021)
 
 #### ⚠️ Pushed to `master`
