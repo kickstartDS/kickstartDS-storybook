@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="427px" height="388px" viewBox="0 0 427 388" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="258px" height="235px" viewBox="0 0 258 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>pattern_1-dark--1</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pattern-1-dark" fill-rule="nonzero">
-            <g id="pattern_1-dark--1" transform="translate(0.000000, 0.000000)">
-                <polygon id="Rectangle" fill-opacity="0.15" fill="#FFFFFF" points="248.731125 54.167652 338.894253 0 406.31364 16.726051 426.150943 30.039014 410.206196 89.54562 238.10633 176.26903 223.45902 148.484432"></polygon>
-                <polygon id="Rectangle" fill-opacity="0.2" fill="#ECFF00" points="33.4359663 176.26903 212.684596 274.953731 223.45902 308.140906 187.436575 367.636995 143.711416 387.858057 43.0868354 332.459549 0 231.49319"></polygon>
-            </g>
+        <g id="pattern_1-dark--1" fill-rule="nonzero">
+            <polygon id="Rectangle" fill-opacity="0.15" fill="#FFFFFF" points="150.58662 32.8197339 205.173117 0 245.990114 10.1341764 258 18.200391 248.346743 54.2549531 144.154165 106.799952 135.286401 89.9654935"></polygon>
+            <polygon id="Rectangle" fill-opacity="0.2" fill="#ECFF00" points="20.2427789 106.799952 128.763356 166.592199 135.286401 186.700035 113.477718 222.748225 87.0056631 235 26.0856011 201.434501 0 140.259816"></polygon>
         </g>
     </g>
 </svg>
