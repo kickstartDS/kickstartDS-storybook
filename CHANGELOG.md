@@ -1,3 +1,15 @@
+# v1.0.53 (Wed Sep 01 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add updated visual to project ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.52 (Tue Aug 31 2021)
 
 #### ⚠️ Pushed to `master`
