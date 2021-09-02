@@ -1,0 +1,16 @@
+.c-quote__text {
+  --c-quote__text--margin: var(--spacing-s);
+}
+
+.c-quote__source {
+  --c-quote_source--font: var(--font-ui-s);
+}
+
+.l-section--dark .c-quote__source {
+  --c-quote_source--font: var(--font-ui-s);
+  --c-quote_source--color: var(--color-white);
+}
+
+.l-section--dark .c-quote__content {
+  --c-quote_icon--color: var(--section-dark-color);
+}

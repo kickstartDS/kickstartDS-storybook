@@ -6,6 +6,7 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    "@kickstartds/storybook-addon-component-tokens",
     "@whitespace/storybook-addon-html"
   ]
 }

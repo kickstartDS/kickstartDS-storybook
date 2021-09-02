@@ -1,3 +1,5 @@
+@use './visual-tokens';
+
 .c-visual {
   &__link {
     filter: drop-shadow(5px 5px 0px rgba(236,255,0));

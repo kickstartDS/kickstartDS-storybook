@@ -1,0 +1,8 @@
+.c-count-up {
+  --c-count-up_text--font: var(--font-copy-s);
+}
+
+.l-section--dark .c-count-up {
+  --c-count-up_topic--color: var(--color-white);
+  --c-count-up_number--color: var(--color-white);
+}

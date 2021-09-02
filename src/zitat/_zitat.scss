@@ -1,3 +1,5 @@
+@use './quote-tokens';
+
 .c-quote__text {
   margin-bottom: var(--c-quote__text--margin);
 }

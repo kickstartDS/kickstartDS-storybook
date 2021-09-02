@@ -1,9 +1,16 @@
+import merge from "deepmerge";
 import { pack } from "@kickstartds/core/lib/storybook/helpers";
 import countUpStories, {
   Template,
 } from "@kickstartds/content/lib/count-up/count-up.stories";
+import tokens from "./count-up-tokens.json";
 
-export default countUpStories;
+export default {
+  ...countUpStories,
+  parameters: {
+    cssprops: merge(countUpStories.parameters.cssprops, tokens),
+  },
+};
 
 export const Components = Template.bind({});
 Components.args = pack({
@@ -37,4 +44,3 @@ Obviously we have **design tokens** – colors, fonts, sizes, iconography.
 Additionally every components has several layers of component tokens, encoding a solid base layer for you to depend upon. And for all the exciting cases: re-use the general tokens for **automatic brand compliance!**
 `,
 });
-

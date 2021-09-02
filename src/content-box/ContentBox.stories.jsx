@@ -1,11 +1,16 @@
+import merge from "deepmerge";
 import { pack } from "@kickstartds/core/lib/storybook/helpers";
 import contentBoxStories, {
   Template,
 } from "@kickstartds/base/lib/content-box/content-box.stories";
+import tokens from "./content-box-tokens.json";
 
 export default {
   ...contentBoxStories,
   title: "Base/Inhaltsbox",
+  parameters: {
+    cssprops: merge(contentBoxStories.parameters.cssprops, tokens),
+  },
 };
 
 export const Default = Template.bind({});

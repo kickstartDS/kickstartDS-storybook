@@ -1,12 +1,17 @@
+import merge from "deepmerge";
 import { pack } from "@kickstartds/core/lib/storybook/helpers";
 import { QuotesSlider } from "@kickstartds/content/lib/quotes-slider";
 import quoteStories, {
   Template,
 } from "@kickstartds/content/lib/quote/quote.stories";
+import tokens from "./quote-tokens.json";
 
 export default {
   ...quoteStories,
   title: "Content/Zitat",
+  parameters: {
+    cssprops: merge(quoteStories.parameters.cssprops, tokens),
+  },
 };
 
 export const MitBild = Template.bind({});

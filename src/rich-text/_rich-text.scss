@@ -1,3 +1,5 @@
+@use './rich-text-tokens';
+
 .c-rich-text a, .c-rich-text.c-visual__text a {
     text-decoration: none;
     color: var(--g-link--color);
@@ -9,7 +11,7 @@
       color: var(--g-link--color-hover);
     }
   }
-  
+
   .l-section--dark .c-rich-text a {
     color: var(--color-secondary);
     &:hover {

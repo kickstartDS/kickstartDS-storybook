@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build-storybook": "yarn sass && yarn schema && build-storybook -s static",
+    "build-storybook": "run-p sass schema token && build-storybook -s static",
     "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --build-script-name 'build-storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes --exit-once-uploaded",
     "dist:js": "esbuild index=src/dist.js --outdir=dist --format=esm --bundle --minify --splitting",
     "dist:sass": "sass --load-path=node_modules src/dist.scss dist/index.css",
@@ -18,8 +18,10 @@
     "dist:images": "cp -r static/img static/patterns static/logo.svg dist/",
     "prepublishOnly": "rm -rf dist && mkdir -p dist && run-p dist:*",
     "sass": "sass --load-path=node_modules src/index.scss static/index.css",
+    "token": "node scripts/customPropertyExtract.js",
     "watch:sass": "yarn sass -- --watch",
     "watch:schema": "yarn schema && chokidar \"src/**/*.schema.json\" -c \"yarn schema {path}\"",
+    "watch:token": "yarn token && chokidar \"src/**/*-tokens.scss\" -c \"yarn token {path}\"",
     "schema": "node scripts/schema.js",
     "start": "run-p watch:* storybook",
     "storybook": "start-storybook -p 6006 -s static"
@@ -37,6 +39,7 @@
     "@auto-it/npm": "^10.29.3",
     "@auto-it/released": "^10.29.3",
     "@babel/core": "^7.14.3",
+    "@kickstartds/storybook-addon-component-tokens": "^0.1.4",
     "@storybook/addon-actions": "^6.3.6",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
@@ -46,6 +49,8 @@
     "babel-loader": "^8.2.2",
     "chokidar-cli": "^3.0.0",
     "chromatic": "^5.9.0",
+    "custom-property-extract": "^1.2.1",
+    "deepmerge": "^4.2.2",
     "esbuild": "^0.12.23",
     "fast-glob": "^3.2.7",
     "fs-extra": "^10.0.0",

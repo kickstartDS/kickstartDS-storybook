@@ -1,9 +1,16 @@
+import merge from "deepmerge";
 import { pack } from "@kickstartds/core/lib/storybook/helpers";
 import headlineStories, {
   Template,
 } from "@kickstartds/base/lib/headline/headline.stories";
+import tokens from "./headline-tokens.json";
 
-export default headlineStories;
+export default {
+  ...headlineStories,
+  parameters: {
+    cssprops: merge(headlineStories.parameters.cssprops, tokens),
+  },
+};
 
 export const H1 = Template.bind({});
 H1.args = pack({

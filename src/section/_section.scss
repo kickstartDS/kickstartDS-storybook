@@ -1,20 +1,22 @@
+@use './section-tokens';
+
 .l-section {
   margin: auto;
 
   &--outer-width-default {
     max-width: calc(100% - calc(var(--g-content-padding) * 2));
-  @media(min-width: 1235px) {
+    @media(min-width: 1235px) {
       max-width: calc(var(--g-content-width-default) - calc(var(--g-content-padding) * 2));
     }
   }
-  
+
   &--outer-width-narrow {
     max-width: calc(100% - calc(var(--g-content-padding) * 2));
-    @media(min-width: 960px) {      
+    @media(min-width: 960px) {
       max-width: calc(var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2));
     }
   }
-  
+
   &--outer-width-wide {
     max-width: calc(100% - calc(var(--g-content-padding) * 2));
     @media(min-width: 1500px) {
@@ -32,7 +34,7 @@
 
   &__pattern {
     position: relative;
-    overflow: hidden;  
+    overflow: hidden;
 
     .l-section__container {
       z-index: 1;
@@ -93,12 +95,12 @@
 
       &::before {
         left: -5em;
-      } 
+      }
 
       &::after {
         bottom: 10%;
         right: -6em;
-        
+
         @media (min-width: 40em) {
           right: -2em;
         }
@@ -129,21 +131,21 @@
       /* Corner Top Left */
       0% var(--spacing-l),
       var(--spacing-xl) 0%,
-      
+
       /* Corner Top Right */
       100% 0,
-      
+
       /* Corner Bottom Right */
       100% calc(100% - var(--spacing-xxl)),
       calc(100% - var(--spacing-xxl)) 100%,
-      
+
       /* Corner Bottom Left */
       var(--spacing-m) 100%,
       0 calc(100% - var(--spacing-m))
     );
   }
 
-  &--dark {  
+  &--dark {
     .c-teaser {
       .c-rich-text a {
         color: var(--g-link--color);

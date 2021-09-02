@@ -1,0 +1,16 @@
+@media (min-width: 64em) {
+  .c-visual {
+      --c-visual--min-height: 24rem;
+  }
+}
+@media (min-width: 90em) {
+  .c-visual {
+      --c-visual--min-height: 32rem;
+  }
+}
+
+.c-visual__box--transparent {
+  --c-visual_box--background: transparent;
+  --c-visual_headline--color: var(--color-black);
+  --c-visual_box--color: var(--c-rich-text--color);
+}

@@ -2,6 +2,7 @@
 static/index.css.map
 storybook-static
 *.dereffed.json
+*-tokens.json
 
 # Logs
 logs

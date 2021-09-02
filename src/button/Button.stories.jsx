@@ -1,11 +1,16 @@
+import merge from "deepmerge";
 import { pack } from "@kickstartds/core/lib/storybook/helpers";
 import ButtonStories, {
   Template,
 } from "@kickstartds/base/lib/button/button.stories";
+import tokens from "./button-tokens.json";
 
 export default {
   ...ButtonStories,
   title: "Base/Button",
+  parameters: {
+    cssprops: merge(ButtonStories.parameters.cssprops, tokens),
+  },
 };
 
 export const Default = Template.bind({});

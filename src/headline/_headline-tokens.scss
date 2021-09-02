@@ -1,0 +1,12 @@
+.c-headline__subheadline {
+  --c-headline_subheadline--color: var(--color-primary);
+  --c-headline_subheadline--font-weight: var(--font-weight-semi-bold);
+}
+
+.l-section--dark p.c-headline__subheadline {
+  --c-headline_subheadline--color: var(--color-primary-lighter-4);
+}
+
+.l-section--dark .c-headline {
+  --c-headline--color: var(--color-secondary);
+}
