@@ -1,24 +1,11 @@
 .c-storytelling {
-  &__text {
-    margin-bottom: var(--c-storytelling__text-margin);
-  }
-
-  &__box__content {
-    max-width: var(--c-storytelling__box-max-width);
-  }
-
-  &--animation {
-    .c-storytelling__text, .c-headline {
-      transform: translateY(0);
-      transition: transform ease-in-out 1s;
+  &[data-bg] {
+    .c-headline>:first-child, .c-rich-text {
+      color: var(--section-dark-color);
     }
-    &.lazyload {
-      .c-headline {
-        transform: translateY(calc(var(--c-headline_animated--translate) * -1));
-      }
-      .c-storytelling__text {
-        transform: translateY(var(--c-headline_animated--translate));
-      }
+
+    .c-headline__subheadline {
+      color: var(--color-primary-lighter-4);
     }
   }
 }

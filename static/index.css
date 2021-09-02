@@ -812,6 +812,13 @@
   margin-top: var(--c-slider-nav--margin);
 }
 
+.c-storytelling[data-bg] .c-headline > :first-child, .c-storytelling[data-bg] .c-rich-text {
+  color: var(--section-dark-color);
+}
+.c-storytelling[data-bg] .c-headline__subheadline {
+  color: var(--color-primary-lighter-4);
+}
+
 .c-quote__text {
   margin-bottom: var(--c-quote__text--margin);
 }

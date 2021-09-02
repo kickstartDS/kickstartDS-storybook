@@ -14,7 +14,7 @@ export default {
 export const Bild16zu9 = Template.bind({});
 Bild16zu9.args = pack({
   image: {
-    source: "img/2014_studenten_55_medium1.jpg",
+    source: "visual/visual_lemon.png",
   },
   box: {
     headline: {
