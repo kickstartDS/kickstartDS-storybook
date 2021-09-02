@@ -388,6 +388,10 @@
   --c-quote_source--color: var(--color-white);
 }
 
+.l-section--dark .c-quote__content {
+  --c-quote_icon--color: var(--section-dark-color);
+}
+
 @media (min-width: 64em) {
   .c-visual {
     --c-visual--min-height: 24rem;
