@@ -1,12 +1,24 @@
 import merge from "deepmerge";
-import { pack } from "@kickstartds/core/lib/storybook/helpers";
-import headlineStories, {
-  Template,
-} from "@kickstartds/base/lib/headline/headline.stories";
+import {
+  pack,
+  getArgsShared,
+} from "@kickstartds/core/lib/storybook/helpers";
+import { Headline } from "./HeadlineComponent";
+import headlineStories from "@kickstartds/base/lib/headline/headline.stories";
+import schema from "./headline.schema.dereffed.json";
 import tokens from "./headline-tokens.json";
+
+Headline.displayName = "Headline";
+const Template = (args) => (
+  <Headline {...args} />
+);
+
+const { defaultArgs: args, argTypes } = getArgsShared(schema);
 
 export default {
   ...headlineStories,
+  args,
+  argTypes,
   parameters: {
     cssprops: merge(headlineStories.parameters.cssprops, tokens),
   },
