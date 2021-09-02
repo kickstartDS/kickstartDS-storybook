@@ -1433,14 +1433,14 @@
   resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
   integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
 
-"@kickstartds/base@1.3.1-canary.367.2035.0":
-  version "1.3.1-canary.367.2035.0"
-  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-1.3.1-canary.367.2035.0.tgz#2302c7a6f9a5a4541ce7c12f3531d6a194e507f6"
-  integrity sha512-T/4DDzsETlE4glptYAfjUV6AIkNrJnfZj2ggMAQiCq/BDiWIhCZPm8p2g+B1xErkgJi6Stmb4ijLmUf6RsmGsg==
+"@kickstartds/base@1.3.1-next.8", "@kickstartds/base@^1.3.1-next.8":
+  version "1.3.1-next.8"
+  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-1.3.1-next.8.tgz#6e420fec045ccefb7999a0a392f534d60ee207cf"
+  integrity sha512-Ca5VdYBiwaiu9cZrRl7DcJvQsjQ1VzJm8Idlpaw7fMFSHm7eeQordOiAJoLNVYybuc6maMofyRLwUGxAdMdO6w==
   dependencies:
     "@babel/runtime" "^7.15.3"
     "@glidejs/glide" "git://github.com/glidejs/glide.git#master"
-    "@kickstartds/core" "1.3.1-canary.367.2035.0"
+    "@kickstartds/core" "^1.3.1-next.4"
     classnames "^2.2.6"
     css-element-queries "^1.2.3"
     date-fns "^2.23.0"
@@ -1454,34 +1454,34 @@
     simplebar "^5.3.5"
     stickybits "^3.7.0"
 
-"@kickstartds/blog@1.3.1-canary.367.2035.0":
-  version "1.3.1-canary.367.2035.0"
-  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-1.3.1-canary.367.2035.0.tgz#deccdcef304d9e0206f0b2e54af64b180fc3ccd4"
-  integrity sha512-25eQEequFGwdaykYMUgppXig4ErCFRQosM1cimODrfSbnGzEe0QpxLAVOYrDj7TcgbQ9WK8o1R0eHPx4bgJvDg==
+"@kickstartds/blog@1.3.1-next.8":
+  version "1.3.1-next.8"
+  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-1.3.1-next.8.tgz#75ec112ad5fe5b376f698f057ca4bb2eb9c20847"
+  integrity sha512-dVXk9fF4gRvHb5AYhAVfehr6nFLYxopItkVCnTmTV2ZqkzLlvgbal1wfyS8wfaW7VEEEEVs/K8OMG8u+JWuqHg==
   dependencies:
     "@babel/runtime" "^7.15.3"
-    "@kickstartds/base" "1.3.1-canary.367.2035.0"
-    "@kickstartds/core" "1.3.1-canary.367.2035.0"
+    "@kickstartds/base" "^1.3.1-next.8"
+    "@kickstartds/core" "^1.3.1-next.4"
     classnames "^2.2.6"
     date-fns "^2.23.0"
 
-"@kickstartds/content@1.3.1-canary.367.2035.0":
-  version "1.3.1-canary.367.2035.0"
-  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-1.3.1-canary.367.2035.0.tgz#2625efd0dc9a31e6e6bde64b10583e81b2a9740e"
-  integrity sha512-zkNgHmCA0wlXXLZAc7DmTTTHo3cqms4OpnrPjXU903H3f3R9D/h1l/o7kp4dVguooeFCKrbGs8yZIEx87sWVmQ==
+"@kickstartds/content@1.3.1-next.9":
+  version "1.3.1-next.9"
+  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-1.3.1-next.9.tgz#eb27774a594e46b3af1adb79ba4b1e2104d263a9"
+  integrity sha512-lUc73hIzLzCK4DpLGgSkoQgDPLKO9fEqfTCTYYCemNxAO8KzUac1HsLfaKjYI63JLIGH0mwIvkE3y+Hqvdlxvg==
   dependencies:
     "@babel/runtime" "^7.15.3"
-    "@kickstartds/base" "1.3.1-canary.367.2035.0"
-    "@kickstartds/core" "1.3.1-canary.367.2035.0"
+    "@kickstartds/base" "^1.3.1-next.8"
+    "@kickstartds/core" "^1.3.1-next.4"
     classnames "^2.2.6"
     countup.js "^2.0.8"
     date-fns "^2.23.0"
     objectFitPolyfill "^2.3.0"
 
-"@kickstartds/core@1.3.1-canary.367.2035.0":
-  version "1.3.1-canary.367.2035.0"
-  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-1.3.1-canary.367.2035.0.tgz#26fffb593b6bc6d2c78ac311dc795fdee0572a9c"
-  integrity sha512-b84Q3aasGhL9izFCD2MaRBt2dH/psN0JXJWIzGlubtnJmk0kaVVjNNCOrCC1ol0t+jMDf0CY+nS/317vVvplzw==
+"@kickstartds/core@1.3.1-next.4", "@kickstartds/core@^1.3.1-next.4":
+  version "1.3.1-next.4"
+  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-1.3.1-next.4.tgz#3105b0b1dea3eb7f62021d210ec94178dd3af1b5"
+  integrity sha512-8O6HbdESzi2BKy6QgAe28htX4z4EajumtTo1mykfx73uoJqd2EU6KSnYO3IMU7y6GUf13x/3rG9pzRBoeHf7aA==
   dependencies:
     "@babel/runtime" "^7.15.3"
     bourbon "^7.0.0"
@@ -1494,17 +1494,17 @@
     lazysizes "^5.3.2"
     lodash-es "^4.17.21"
     pubsub-js "^1.9.3"
-    sass "^1.38.2"
+    sass "^1.39.0"
     vhtml "^2.2.0"
 
-"@kickstartds/form@1.3.1-canary.367.2035.0":
-  version "1.3.1-canary.367.2035.0"
-  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-1.3.1-canary.367.2035.0.tgz#74f9cfb3dbc952d142128b720ed16f6ef623ba0a"
-  integrity sha512-cw7bzxivqwUxbWSQGE6W7pT0cGcyN/Q7R1Gdo6bxmP8AUmtQUpHkZrBckQvJVQUAobp8CwTX56iFTqil214oQw==
+"@kickstartds/form@1.3.1-next.8":
+  version "1.3.1-next.8"
+  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-1.3.1-next.8.tgz#d88a67edec9b489c120c5f549f7718d03434e50a"
+  integrity sha512-QDUEKhVJxGE5snINxTt7lbXZLEBOgvm9K4ObvhWeqN/K+ZTy55NKzHoXmWaRSuDo1FciLo+5eXKc1/L67HSQQw==
   dependencies:
     "@babel/runtime" "^7.15.3"
-    "@kickstartds/base" "1.3.1-canary.367.2035.0"
-    "@kickstartds/core" "1.3.1-canary.367.2035.0"
+    "@kickstartds/base" "^1.3.1-next.8"
+    "@kickstartds/core" "^1.3.1-next.4"
     classnames "^2.2.6"
 
 "@kickstartds/storybook-addon-component-tokens@^0.1.4":
@@ -10397,10 +10397,10 @@ sass@^1.34.1:
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
-sass@^1.38.2:
-  version "1.38.2"
-  resolved "https://registry.npmjs.org/sass/-/sass-1.38.2.tgz#970045d9966180002a8c8f3820fc114cddb42822"
-  integrity sha512-Bz1fG6qiyF0FX6m/I+VxtdVKz1Dfmg/e9kfDy2PhWOkq3T384q2KxwIfP0fXpeI+EyyETdOauH+cRHQDFASllA==
+sass@^1.39.0:
+  version "1.39.0"
+  resolved "https://registry.npmjs.org/sass/-/sass-1.39.0.tgz#6c64695d1c437767c8f1a4e471288e831f81d035"
+  integrity sha512-F4o+RhJkNOIG0b6QudYU8c78ZADKZjKDk5cyrf8XTKWfrgbtyVVXImFstJrc+1pkQDCggyidIOytq6gS4gCCZg==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
