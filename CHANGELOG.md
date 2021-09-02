@@ -1,3 +1,15 @@
+# v1.1.0 (Thu Sep 02 2021)
+
+#### 🚀 Enhancement
+
+- feat: add switchOrder field to headline schema [#7](https://github.com/kickstartDS/kickstartDS-storybook/pull/7) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.55 (Thu Sep 02 2021)
 
 #### ⚠️ Pushed to `master`
