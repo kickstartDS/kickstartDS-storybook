@@ -1,3 +1,15 @@
+# v1.0.55 (Thu Sep 02 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: add storybook component tokens addon ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.54 (Thu Sep 02 2021)
 
 #### ⚠️ Pushed to `master`
