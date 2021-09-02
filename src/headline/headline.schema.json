@@ -1,21 +1,21 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://kickstartds.com/headline.schema.json",
-    "title": "Headline",
-    "allOf": [
-      {
-        "$ref": "http://frontend.ruhmesmeile.com/base/molecules/headline.schema.json"
-      },
-      {
-        "type": "object",
-        "properties": {
-          "switchOrder": {
-            "type": "boolean",
-            "description": "Show subheadline first",
-            "default": false
-          }
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/headline.schema.json",
+  "title": "Headline",
+  "allOf": [
+    {
+      "$ref": "http://frontend.ruhmesmeile.com/base/molecules/headline.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "switchOrder": {
+          "type": "boolean",
+          "description": "Show subheadline first",
+          "default": false
         }
       }
-    ]
-  }
+    }
+  ]
+}
   
