@@ -1,3 +1,17 @@
+# v1.0.54 (Thu Sep 02 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add dark style for quote icon ([@fleven-kds](https://github.com/fleven-kds))
+- feat: adjust section behaviour ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add dark style for storytelling with bg ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.0.53 (Wed Sep 01 2021)
 
 #### ⚠️ Pushed to `master`
