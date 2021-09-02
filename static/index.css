@@ -637,13 +637,24 @@
 .l-section {
   margin: auto;
 }
+.l-section--outer-width-default {
+  max-width: calc(100% - calc(var(--g-content-padding) * 2));
+}
 @media (min-width: 1235px) {
   .l-section--outer-width-default {
     max-width: calc(var(--g-content-width-default) - calc(var(--g-content-padding) * 2));
   }
 }
 .l-section--outer-width-narrow {
-  max-width: calc(var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2));
+  max-width: calc(100% - calc(var(--g-content-padding) * 2));
+}
+@media (min-width: 960px) {
+  .l-section--outer-width-narrow {
+    max-width: calc(var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2));
+  }
+}
+.l-section--outer-width-wide {
+  max-width: calc(100% - calc(var(--g-content-padding) * 2));
 }
 @media (min-width: 1500px) {
   .l-section--outer-width-wide {

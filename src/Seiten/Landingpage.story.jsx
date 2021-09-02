@@ -130,9 +130,9 @@ const Page = () => (
       }}
       mode="list"
       deko={true}
-      className="l-section--content-width-max" /* Background Weite */
+      className="l-section--outer-width-wide" /* Background Weite */
       pattern="1"
-      width="full" /* Content Weite */
+      width="narrow" /* Content Weite */
       background="dark"
       align="center"
       >

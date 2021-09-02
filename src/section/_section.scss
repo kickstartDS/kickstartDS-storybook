@@ -1,18 +1,23 @@
 .l-section {
   margin: auto;
 
+  &--outer-width-default {
+    max-width: calc(100% - calc(var(--g-content-padding) * 2));
   @media(min-width: 1235px) {
-    &--outer-width-default {
       max-width: calc(var(--g-content-width-default) - calc(var(--g-content-padding) * 2));
     }
   }
   
   &--outer-width-narrow {
-    max-width: calc(var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2));
+    max-width: calc(100% - calc(var(--g-content-padding) * 2));
+    @media(min-width: 960px) {      
+      max-width: calc(var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2));
+    }
   }
   
-  @media(min-width: 1500px) {
-    &--outer-width-wide {
+  &--outer-width-wide {
+    max-width: calc(100% - calc(var(--g-content-padding) * 2));
+    @media(min-width: 1500px) {
       max-width: calc(var(--g-content-width-wide) - calc(var(--g-content-padding) * 2));
     }
   }
