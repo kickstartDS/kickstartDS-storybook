@@ -1,3 +1,15 @@
+# v1.1.1 (Thu Sep 02 2021)
+
+#### ⚠️ Pushed to `master`
+
+- chore: headline schema formatting ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.0 (Thu Sep 02 2021)
 
 #### 🚀 Enhancement
