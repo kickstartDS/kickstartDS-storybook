@@ -1,3 +1,17 @@
+# v1.1.9 (Fri Sep 03 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: rename footer component file ([@julrich](https://github.com/julrich))
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: build footer for package ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.8 (Fri Sep 03 2021)
 
 #### ⚠️ Pushed to `master`
