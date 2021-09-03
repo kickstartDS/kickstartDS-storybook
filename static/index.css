@@ -684,6 +684,12 @@
   font-weight: var(--c-headline--font-weight);
   margin: 0;
 }
+.c-headline > :first-child.c-headline__subheadline {
+  color: var(--c-headline_subheadline--color);
+  font: var(--c-headline_subheadline--font);
+  font-weight: var(--c-headline_subheadline--font-weight);
+  margin: var(--c-headline_subheadline--margin);
+}
 
 :root {
   --c-rich-text--color: var(--color-grey-7);

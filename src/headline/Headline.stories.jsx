@@ -57,3 +57,10 @@ MitSubheadline.args = pack({
   ...H2.args,
   subheadline: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
 });
+
+export const MitSubheadlineGetauscht = Template.bind({});
+MitSubheadlineGetauscht.args = pack({
+  ...H2.args,
+  subheadline: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+  switchOrder: true,
+});

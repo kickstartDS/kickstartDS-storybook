@@ -1,10 +1,19 @@
 @use './headline-tokens';
 
+// TODO clean up... I think this could be done in a more Design System-way ;)
+// just quickly overwrote those values copied from the browser
 .c-headline {
   > :not(.c-headline__subheadline) {
     color: var(--c-headline--color);
     font: var(--g-headline--font);
     font-weight: var(--c-headline--font-weight);
     margin: 0
+  }
+
+  > :first-child.c-headline__subheadline {
+    color: var(--c-headline_subheadline--color);
+    font: var(--c-headline_subheadline--font);
+    font-weight: var(--c-headline_subheadline--font-weight);
+    margin: var(--c-headline_subheadline--margin);
   }
 }
