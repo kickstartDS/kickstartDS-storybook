@@ -1,3 +1,16 @@
+# v1.1.13 (Fri Sep 03 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: update footer info ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.12 (Fri Sep 03 2021)
 
 #### ⚠️ Pushed to `master`
