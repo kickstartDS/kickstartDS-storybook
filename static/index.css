@@ -362,8 +362,17 @@
   }
 }
 
-.c-button--solid {
+.c-button--solid, .c-button--solid-inverted, .c-button--clear {
   clip-path: polygon(0 0.3em, 0.3em 0, calc(100% - .4em) 0, 100% calc(100% - .3em), calc(100% - .3em) 100%, 0.4em 100%);
+}
+
+.c-button--clear {
+  clip-path: polygon(0 0, 0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+  transition-property: all;
+}
+.c-button--clear:hover {
+  clip-path: polygon(0 0.3em, 0.3em 0, calc(100% - .4em) 0, 100% calc(100% - .3em), calc(100% - .3em) 100%, 0.4em 100%);
+  margin-left: 0;
 }
 
 .c-button--small {
