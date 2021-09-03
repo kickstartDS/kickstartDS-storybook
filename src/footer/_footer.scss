@@ -46,8 +46,13 @@
     }
   }
 
-  &__logo {
+  &__logo, a {
     display: inline-block;
+    width: fit-content;
+
+    &:hover {
+      background: none;
+    }
 
     img {
       height: var(--spacing-xl);

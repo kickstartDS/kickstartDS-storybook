@@ -484,19 +484,23 @@
   font: var(--font-ui-xs);
   margin: var(--spacing-xs) 0;
 }
-.kds-footer__logo {
+.kds-footer__logo, .kds-footer a {
   display: inline-block;
+  width: fit-content;
 }
-.kds-footer__logo img {
+.kds-footer__logo:hover, .kds-footer a:hover {
+  background: none;
+}
+.kds-footer__logo img, .kds-footer a img {
   height: var(--spacing-xl);
 }
 @media (min-width: 40em) {
-  .kds-footer__logo img {
+  .kds-footer__logo img, .kds-footer a img {
     height: 3rem;
   }
 }
 @media (min-width: 75em) {
-  .kds-footer__logo img {
+  .kds-footer__logo img, .kds-footer a img {
     height: 3rem;
   }
 }
