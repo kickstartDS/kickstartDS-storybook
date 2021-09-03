@@ -1,3 +1,15 @@
+# v1.1.11 (Fri Sep 03 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: revert to previous build variant ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.10 (Fri Sep 03 2021)
 
 #### ⚠️ Pushed to `master`
