@@ -1,3 +1,15 @@
+# v1.1.7 (Fri Sep 03 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add clip path to button--solid ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.1.6 (Fri Sep 03 2021)
 
 #### ⚠️ Pushed to `master`
