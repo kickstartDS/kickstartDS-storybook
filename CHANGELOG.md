@@ -1,3 +1,15 @@
+# v1.1.10 (Fri Sep 03 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: exclude dependencies from component bundle ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.1.9 (Fri Sep 03 2021)
 
 #### ⚠️ Pushed to `master`
