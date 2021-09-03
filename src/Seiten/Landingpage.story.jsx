@@ -4,8 +4,8 @@ import {
   ContentBox,
   TeaserBox,
   Divider,
+  Section,
 } from "@kickstartds/base";
-import { Section } from "../section/SectionComponent"
 import { Button } from "@kickstartds/base/lib/button";
 import {
   Visual,
@@ -23,80 +23,82 @@ import { Header } from "../header/HeaderComponent";
 
 const Page = () => (
   <>
-    <Header/>
+    <Header />
     <Visual
       box={{
-        background: 'transparent',
+        background: "transparent",
         enabled: true,
         headline: {
-          content: 'Building a design system for all your digital touch points feels now like squeezing a lemon',
+          content:
+            "Building a design system for all your digital touch points feels now like squeezing a lemon",
         },
-        horizontal: 'left',
+        horizontal: "left",
         indent: false,
         link: {
-          className: 'c-button--main',
+          className: "c-button--main",
           enabled: true,
           fillAnimation: false,
-          href: 'https://example.com',
+          href: "https://example.com",
           iconAfter: true,
           iconAnimation: false,
           iconBefore: false,
           icon: {
-            icon: 'chevron-right',
+            icon: "chevron-right",
           },
-          label: 'Request a guided demo',
+          label: "Request a guided demo",
           newTab: false,
-          size: 'medium',
-          variant: 'solid'
+          size: "medium",
+          variant: "solid",
         },
-        text: '[kickstart DS](http://example.com/) is the comprehensive pattern library and **design system**, that **helps** web development **teams to create** consistent and brand compliant web **frontends super efficiently**.',
-        vertical: 'center'
+        text:
+          "[kickstart DS](http://example.com/) is the comprehensive pattern library and **design system**, that **helps** web development **teams to create** consistent and brand compliant web **frontends super efficiently**.",
+        vertical: "center",
       }}
       height="default"
       media={{
         image: {
-          indent: 'none',
-          srcDesktop: 'img/visual/visual_lemon.png',
-          srcMobile: 'img/visual/visual_lemon-m.png',
-          srcTablet: 'img/visual/visual_lemon.png'
+          indent: "none",
+          srcDesktop: "img/visual/visual_lemon.png",
+          srcMobile: "img/visual/visual_lemon-m.png",
+          srcTablet: "img/visual/visual_lemon.png",
         },
-        mode: 'image',
+        mode: "image",
       }}
     />
-    <Section
-      width="wide"
-      spaceBefore="small"
-      spaceAfter="small"
-      >
+    <Section width="wide" spaceBefore="small" spaceAfter="small">
       <LogoTiles
         logos={[
           {
-            alt: 'Erfolgsfaktor Familie',
-            src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/640px-Shopify_logo_2018.svg.png'
+            alt: "Erfolgsfaktor Familie",
+            src:
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/640px-Shopify_logo_2018.svg.png",
           },
           {
-            alt: 'Familienfreundliches Unternehmen',
-            src: 'https://d21buns5ku92am.cloudfront.net/41748/images/177922-logo-d8345a-large-1441290673.png'
+            alt: "Familienfreundliches Unternehmen",
+            src:
+              "https://d21buns5ku92am.cloudfront.net/41748/images/177922-logo-d8345a-large-1441290673.png",
           },
           {
-            alt: 'Kooperationspartner der FHDW',
-            src: 'https://timotheebinet.com/static/fa38ab30a9b8abb4a1ff8c0b7fb86cef/00d43/gatsby.png'
+            alt: "Kooperationspartner der FHDW",
+            src:
+              "https://timotheebinet.com/static/fa38ab30a9b8abb4a1ff8c0b7fb86cef/00d43/gatsby.png",
           },
           {
-            alt: 'Kooperationspartner von it´s owl',
-            src: 'https://www-cdn.bigcommerce.com/assets/mediakit/logo-plain.png'
-          }
+            alt: "Kooperationspartner von it´s owl",
+            src:
+              "https://www-cdn.bigcommerce.com/assets/mediakit/logo-plain.png",
+          },
         ]}
       />
     </Section>
     <Section
       gutter="default"
       headline={{
-        align: 'center',
-        content: 'Features',
-        level: 'h2',
+        align: "center",
+        content: "Features",
+        level: "h2",
         pageHeader: false,
-        spaceAfter: 'none'
+        spaceAfter: "none",
       }}
       mode="tile"
       spaceAfter="default"
@@ -121,12 +123,13 @@ const Page = () => (
     </Section>
     <Section
       headline={{
-        align: 'center',
-        content: 'Great components',
-        subheadline: 'Make the most out of your frontends by unifying their core utilizing component and design tokens',
-        level: 'h2',
+        align: "center",
+        content: "Great components",
+        subheadline:
+          "Make the most out of your frontends by unifying their core utilizing component and design tokens",
+        level: "h2",
         pageHeader: false,
-        spaceAfter: 'none'
+        spaceAfter: "none",
       }}
       mode="list"
       deko={true}
@@ -135,25 +138,23 @@ const Page = () => (
       width="narrow" /* Content Weite */
       background="dark"
       align="center"
-      >
-        <TextMedia
-          mediaAlignment="above-center"
-          text='kickstart DS is the foundation for your **design system** with reusable components and tools, guided by clear standards, that can be assembled together to **build digital** products: fast, flexible, responsive, accessible, xxx, yyy, zzz and the best of all:
-
-you can plug it onto every digital touch point you own.'
-        />
-        <Button
-          className="c-button--main no-stretch"
-          href="#"
-          label="mehr erfahren"
-          size="medium"
-          type="button"
-          variant="solid-inverted"
-        />
-      </Section>
-    <Section
-    pattern="1"
     >
+      <TextMedia
+        mediaAlignment="above-center"
+        text="kickstart DS is the foundation for your **design system** with reusable components and tools, guided by clear standards, that can be assembled together to **build digital** products: fast, flexible, responsive, accessible, xxx, yyy, zzz and the best of all:
+
+you can plug it onto every digital touch point you own."
+      />
+      <Button
+        className="c-button--main no-stretch"
+        href="#"
+        label="mehr erfahren"
+        size="medium"
+        type="button"
+        variant="solid-inverted"
+      />
+    </Section>
+    <Section pattern="1">
       <Quote
         image="https://picsum.photos/seed/kdsquote/300/300"
         source="Max Mustermann, ABC GmbH"
@@ -164,12 +165,13 @@ you can plug it onto every digital touch point you own.'
     <Section
       gutter="default"
       headline={{
-        align: 'center',
-        content: 'What kickstartDS can do for you?',
-        subheadline: 'kickstartDS comes accessibility baked in and provides support',
-        level: 'h2',
+        align: "center",
+        content: "What kickstartDS can do for you?",
+        subheadline:
+          "kickstartDS comes accessibility baked in and provides support",
+        level: "h2",
         pageHeader: false,
-        spaceAfter: 'none'
+        spaceAfter: "none",
       }}
       mode="tile"
       spaceAfter="default"
@@ -198,11 +200,11 @@ you can plug it onto every digital touch point you own.'
       pattern="2"
       gutter="default"
       headline={{
-        align: 'center',
-        content: 'What kickstartDS can do for you?',
-        level: 'h2',
+        align: "center",
+        content: "What kickstartDS can do for you?",
+        level: "h2",
         pageHeader: false,
-        spaceAfter: 'none'
+        spaceAfter: "none",
       }}
       mode="tile"
       spaceAfter="default"
