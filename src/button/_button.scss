@@ -1,7 +1,7 @@
 @use './button-tokens';
 
-.c-button--main {
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 15px 100%, 0 50%);
+.c-button--main.c-button {
+  clip-path: polygon(0 0, calc(100% - 35px) 0, 100% 30px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 15px 100%, 0 50%);
   transition: none;
 
   @keyframes button-hover {
@@ -10,6 +10,14 @@
     66% { clip-path: polygon(0 20%, 3% 0, 95% 0, 100% 9%, 100% 85%, 92% 100%, 6% 100%, 0% 85%); }
     100% { clip-path: polygon(0 14%, 6% 0, 95% 0, 100% 14%, 100% 85%, 97% 100%, 2% 100%, 0 71%); }
   }
+}
+
+.c-button--solid {
+  clip-path: polygon(0 .3em, .3em 0, calc(100% - .4em) 0, 100% calc(100% - .3em), calc(100% - .3em) 100%, .4em 100%);
+}
+
+.c-button--small {
+  padding: var(--spacing-xs) var(--spacing-m);
 }
 
 .c-button--main:hover {
