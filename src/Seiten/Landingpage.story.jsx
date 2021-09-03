@@ -52,7 +52,7 @@ const Page = () => (
           variant: "solid",
         },
         text:
-          "[kickstart DS](http://example.com/) is the comprehensive pattern library and **design system**, that **helps** web development **teams to create** consistent and brand compliant web **frontends super efficiently**.",
+          "[kickstartDS](http://example.com/) is the comprehensive pattern library and **design system**, that **helps** web development **teams to create** consistent and brand compliant web **frontends super efficiently**.",
         vertical: "center",
       }}
       height="default"
@@ -142,7 +142,7 @@ const Page = () => (
     >
       <TextMedia
         mediaAlignment="above-center"
-        text="kickstart DS is the foundation for your **design system** with reusable components and tools, guided by clear standards, that can be assembled together to **build digital** products: fast, flexible, responsive, accessible, xxx, yyy, zzz and the best of all:
+        text="kickstartDS is the foundation for your **design system** with reusable components and tools, guided by clear standards, that can be assembled together to **build digital** products: fast, flexible, responsive, accessible, xxx, yyy, zzz and the best of all:
 
 you can plug it onto every digital touch point you own."
       />
