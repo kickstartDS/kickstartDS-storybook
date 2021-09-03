@@ -19,13 +19,13 @@ export const Footer = () => (
             Links
           </p>
           <li class="kds-footer-nav_list_item">
-            <a class="kds-footer-nav_list_item_link">
+            <a href="/privacy" class="kds-footer-nav_list_item_link">
               Privacy
             </a>
           </li>
           <li class="kds-footer-nav_list_item">
-            <a class="kds-footer-nav_list_item_link">
-              Imprint
+            <a href="/legal" class="kds-footer-nav_list_item_link">
+              Legal notice
             </a>
           </li>
         </ul>
@@ -34,7 +34,7 @@ export const Footer = () => (
             Get in touch
           </p>
           <li class="kds-footer-nav_list_item">
-            <a class="kds-footer-nav_list_item_link">
+            <a href="https://twitter.com/kickstartDS" class="kds-footer-nav_list_item_link">
               Twitter
             </a>
           </li>
@@ -49,7 +49,7 @@ export const Footer = () => (
             Contact us
           </p>
           <li class="kds-footer-nav_list_item">
-            <a class="kds-footer-nav_list_item_link">
+            <a href="mailto:hello@kickstartds.com"class="kds-footer-nav_list_item_link">
               hello@kickstartds.com
             </a>
           </li>
@@ -61,7 +61,7 @@ export const Footer = () => (
           <img src="/logo.svg" />
         </a>
         <p>
-          © 2021 kickstartDS
+          © 2021 ruhmesmeile GmbH
         </p>
       </div>
 
