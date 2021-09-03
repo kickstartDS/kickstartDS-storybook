@@ -6,6 +6,8 @@ import { unpackDecorator } from '@kickstartds/core/lib/storybook/helpers';
 import '@kickstartds/base/lib/global/base.js';
 import '@kickstartds/base/lib/global/base.css';
 import '../static/index.css';
+import { HeadlineProvider } from '../src/headline/HeadlineComponent';
+import { SectionProvider } from '../src/section/SectionComponent';
 
 const myActions = actions('radio');
 window.rm.radio.on('*', myActions.radio);
@@ -25,4 +27,13 @@ export const parameters = {
   },
 }
 
-export const decorators = [unpackDecorator];
+export const decorators = [
+  unpackDecorator,
+  (Story) => (
+    <HeadlineProvider>
+      <SectionProvider>
+        <Story />
+      </SectionProvider>
+    </HeadlineProvider>
+  ),
+];
