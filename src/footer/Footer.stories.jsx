@@ -1,4 +1,4 @@
-import { Footer } from "./Footer";
+import { Footer } from "./FooterComponent";
 
 const Template = (args) => <Footer {...args} />;
 

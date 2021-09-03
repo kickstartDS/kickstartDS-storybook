@@ -20,7 +20,7 @@ export default {
 };
 
 import { Header } from "../header/HeaderComponent";
-import { Footer } from "../footer/Footer";
+import { Footer } from "../footer/FooterComponent";
 
 const Page = () => (
   <>
