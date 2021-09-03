@@ -1,0 +1,39 @@
+@use '@kickstartds/core/source/core/breakpoint';
+
+.kds-footer-nav {
+
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(8em,1fr));
+  grid-gap: var(--spacing-l);
+  
+  @include breakpoint.media("≥s") {
+    flex-direction: row;
+  }
+  
+  &_headline {
+    font-weight: var(--font-weight-bold);
+    margin-top: unset;
+    margin-bottom: var(--spacing-s);
+  }
+  
+  &_list {
+    padding: unset;
+    margin: unset;
+    
+    &_item {
+      list-style: none;
+      margin-bottom: var(--spacing-xs);
+      
+      &_link, a {
+        color: var(--c-footer-color);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--color-black);
+          background: 0;
+        }
+      }
+    }
+  }
+}

@@ -20,6 +20,7 @@ export default {
 };
 
 import { Header } from "../header/HeaderComponent";
+import { Footer } from "../footer/Footer";
 
 const Page = () => (
   <>
@@ -228,6 +229,7 @@ you can plug it onto every digital touch point you own.'
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
       />
     </Section>
+    <Footer/>
   </>
 );
 
