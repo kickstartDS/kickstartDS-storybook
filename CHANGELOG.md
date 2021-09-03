@@ -1,3 +1,15 @@
+# v1.1.14 (Fri Sep 03 2021)
+
+#### ⚠️ Pushed to `master`
+
+- chore: adjust kickstartDS usage ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.13 (Fri Sep 03 2021)
 
 #### ⚠️ Pushed to `master`
