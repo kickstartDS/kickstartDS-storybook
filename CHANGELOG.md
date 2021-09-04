@@ -1,3 +1,16 @@
+# v1.1.15 (Sat Sep 04 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: use className, not class, in FooterComponent ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.14 (Fri Sep 03 2021)
 
 #### ⚠️ Pushed to `master`
