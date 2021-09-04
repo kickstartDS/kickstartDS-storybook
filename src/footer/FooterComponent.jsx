@@ -39,7 +39,7 @@ export const Footer = () => (
             </a>
           </li>
           <li className="kds-footer-nav_list_item">
-            <a className="kds-footer-nav_list_item_link">
+            <a href="https://wa.me/491752131879?text=Hi!%20I%20am%20interested%20to%20know%20more%20about%20kickstart%20DS." className="kds-footer-nav_list_item_link">
               WhatApp us
             </a>
           </li>
