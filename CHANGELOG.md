@@ -1,3 +1,15 @@
+# v1.1.16 (Sat Sep 04 2021)
+
+#### 🐛 Bug Fix
+
+- fix: try explicitly providing correct headline in section [#9](https://github.com/kickstartDS/kickstartDS-storybook/pull/9) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.15 (Sat Sep 04 2021)
 
 #### ⚠️ Pushed to `master`
