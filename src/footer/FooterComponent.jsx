@@ -13,43 +13,43 @@ export const Footer = () => (
       spaceBefore="default"
       className="kds-footer-main"
     >
-      <nav class="kds-footer-nav">
-        <ul class="kds-footer-nav_list">
-          <p class="kds-footer-nav_headline">
+      <nav className="kds-footer-nav">
+        <ul className="kds-footer-nav_list">
+          <p className="kds-footer-nav_headline">
             Links
           </p>
-          <li class="kds-footer-nav_list_item">
-            <a href="/privacy" class="kds-footer-nav_list_item_link">
+          <li className="kds-footer-nav_list_item">
+            <a href="/privacy" className="kds-footer-nav_list_item_link">
               Privacy
             </a>
           </li>
-          <li class="kds-footer-nav_list_item">
-            <a href="/legal" class="kds-footer-nav_list_item_link">
+          <li className="kds-footer-nav_list_item">
+            <a href="/legal" className="kds-footer-nav_list_item_link">
               Legal notice
             </a>
           </li>
         </ul>
-        <ul class="kds-footer-nav_list">
-          <p class="kds-footer-nav_headline">
+        <ul className="kds-footer-nav_list">
+          <p className="kds-footer-nav_headline">
             Get in touch
           </p>
-          <li class="kds-footer-nav_list_item">
-            <a href="https://twitter.com/kickstartDS" class="kds-footer-nav_list_item_link">
+          <li className="kds-footer-nav_list_item">
+            <a href="https://twitter.com/kickstartDS" className="kds-footer-nav_list_item_link">
               Twitter
             </a>
           </li>
-          <li class="kds-footer-nav_list_item">
-            <a class="kds-footer-nav_list_item_link">
+          <li className="kds-footer-nav_list_item">
+            <a className="kds-footer-nav_list_item_link">
               WhatApp us
             </a>
           </li>
         </ul>
-        <ul class="kds-footer-nav_list">
-          <p class="kds-footer-nav_headline">
+        <ul className="kds-footer-nav_list">
+          <p className="kds-footer-nav_headline">
             Contact us
           </p>
-          <li class="kds-footer-nav_list_item">
-            <a href="mailto:hello@kickstartds.com"class="kds-footer-nav_list_item_link">
+          <li className="kds-footer-nav_list_item">
+            <a href="mailto:hello@kickstartds.com" className="kds-footer-nav_list_item_link">
               hello@kickstartds.com
             </a>
           </li>
