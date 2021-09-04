@@ -1,3 +1,15 @@
+# v1.1.17 (Sat Sep 04 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: update whatsapp link in footer ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.16 (Sat Sep 04 2021)
 
 #### 🐛 Bug Fix
