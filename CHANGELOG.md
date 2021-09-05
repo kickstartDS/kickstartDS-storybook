@@ -1,3 +1,15 @@
+# v1.1.27 (Sun Sep 05 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: one more cookiepro button ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.26 (Sun Sep 05 2021)
 
 #### ⚠️ Pushed to `master`
