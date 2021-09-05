@@ -1,3 +1,15 @@
+# v1.1.24 (Sun Sep 05 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: update cookiepro styling ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.23 (Sun Sep 05 2021)
 
 #### ⚠️ Pushed to `master`
