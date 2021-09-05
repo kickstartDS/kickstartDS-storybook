@@ -9,3 +9,11 @@
 .c-visual__box.c-visual__box--transparent {
   overflow: unset;
 }
+
+.c-visual--full {
+  height: calc(100vh - var(--g-header-height) - 30vh);
+}
+
+.c-visual__image img {
+  object-fit: contain;
+}

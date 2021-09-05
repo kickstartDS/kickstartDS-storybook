@@ -924,6 +924,14 @@
   overflow: unset;
 }
 
+.c-visual--full {
+  height: calc(100vh - var(--g-header-height) - 30vh);
+}
+
+.c-visual__image img {
+  object-fit: contain;
+}
+
 .c-slider {
   --c-slider-nav--margin: var(--spacing-m);
 }
