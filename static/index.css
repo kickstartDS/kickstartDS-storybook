@@ -453,6 +453,30 @@
   --c-button--font: var(--font-ui-s);
 }
 
+#onetrust-banner-sdk .ot-sdk-container, #onetrust-pc-sdk .ot-sdk-container, #ot-sdk-cookie-policy .ot-sdk-container {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  padding-top: 30px;
+}
+
+#onetrust-consent-sdk #onetrust-pc-sdk {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+#onetrust-pc-sdk .ot-pc-header {
+  background-color: white;
+}
+
+#onetrust-pc-sdk .ot-accordion-layout h4 ~ .ot-tgl, #onetrust-pc-sdk .ot-accordion-layout h4 ~ .ot-always-active,
+#onetrust-pc-sdk .ot-accordion-layout .ot-cat-header + .ot-arw-cntr .ot-arw {
+  color: white;
+}
+
+#onetrust-banner-sdk #onetrust-reject-all-handler {
+  background-color: transparent;
+  border-color: #06566a;
+  color: #06566a;
+}
+
 .c-count-up {
   --c-count-up_text--font: var(--font-copy-s);
 }
