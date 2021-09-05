@@ -1,3 +1,15 @@
+# v1.1.19 (Sun Sep 05 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add some visual styling ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.18 (Sun Sep 05 2021)
 
 #### ⚠️ Pushed to `master`
