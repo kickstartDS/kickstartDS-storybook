@@ -459,26 +459,28 @@
   }
 }
 #onetrust-banner-sdk .ot-sdk-container, #onetrust-pc-sdk .ot-sdk-container, #ot-sdk-cookie-policy .ot-sdk-container {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 #onetrust-consent-sdk #onetrust-pc-sdk {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 #onetrust-pc-sdk .ot-pc-header {
-  background-color: white;
+  background-color: white !important;
 }
 
 #onetrust-pc-sdk .ot-accordion-layout h4 ~ .ot-tgl, #onetrust-pc-sdk .ot-accordion-layout h4 ~ .ot-always-active,
-#onetrust-pc-sdk .ot-accordion-layout .ot-cat-header + .ot-arw-cntr .ot-arw {
-  color: white;
+#onetrust-pc-sdk .ot-accordion-layout .ot-cat-header + .ot-arw-cntr .ot-arw,
+#onetrust-pc-sdk .ot-accordion-layout .ot-cat-header + .ot-arw-cntr .ot-arw,
+#onetrust-pc-sdk .ot-accordion-layout .ot-arw {
+  color: white !important;
 }
 
 #onetrust-banner-sdk #onetrust-reject-all-handler {
-  background-color: transparent;
-  border-color: #06566a;
-  color: #06566a;
+  background-color: transparent !important;
+  border-color: #ecff00 !important;
+  color: #ecff00 !important;
 }
 
 .c-count-up {
