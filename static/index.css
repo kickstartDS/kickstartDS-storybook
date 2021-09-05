@@ -453,9 +453,13 @@
   --c-button--font: var(--font-ui-s);
 }
 
+@media (min-width: 40em) {
+  #onetrust-banner-sdk .ot-sdk-container, #onetrust-pc-sdk .ot-sdk-container, #ot-sdk-cookie-policy .ot-sdk-container {
+    padding-top: 30px !important;
+  }
+}
 #onetrust-banner-sdk .ot-sdk-container, #onetrust-pc-sdk .ot-sdk-container, #ot-sdk-cookie-policy .ot-sdk-container {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  padding-top: 30px;
 }
 
 #onetrust-consent-sdk #onetrust-pc-sdk {
