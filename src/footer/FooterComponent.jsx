@@ -45,7 +45,7 @@ export const Footer = () => (
           </li>
           <li className="kds-footer-nav_list_item">
             <a href="mailto:hello@kickstartds.com" className="kds-footer-nav_list_item_link">
-              hello@kickstartds.com
+              Send a Mail
             </a>
           </li>
         </ul>
@@ -75,12 +75,6 @@ export const Footer = () => (
         <a href="/" className="kds-footer__logo">
           <img src="/logo.svg" />
         </a>
-        <p>
-          Write us:&nbsp;
-          <a href="mailto:hello@kickstartds.com" className="kds-footer-nav_list_item_link">
-            hello@kickstartds.com
-          </a>
-        </p>
       </div>
 
     </Section>
