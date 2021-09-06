@@ -24,8 +24,8 @@ export const Footer = () => (
             </a>
           </li>
           <li className="kds-footer-nav_list_item">
-            <a href="/legal" className="kds-footer-nav_list_item_link">
-              Legal notice
+            <a href="/storybook" className="kds-footer-nav_list_item_link">
+              Storybook
             </a>
           </li>
         </ul>
@@ -43,6 +43,11 @@ export const Footer = () => (
               WhatApp us
             </a>
           </li>
+          <li className="kds-footer-nav_list_item">
+            <a href="mailto:hello@kickstartds.com" className="kds-footer-nav_list_item_link">
+              hello@kickstartds.com
+            </a>
+          </li>
         </ul>
         <ul className="kds-footer-nav_list">
           <p className="kds-footer-nav_headline">
@@ -56,6 +61,11 @@ export const Footer = () => (
           <li className="kds-footer-nav_list_item">
             <a href="/cookies" className="kds-footer-nav_list_item_link">
               Cookie List
+            </a>
+          </li>
+          <li className="kds-footer-nav_list_item">
+            <a href="/legal" className="kds-footer-nav_list_item_link">
+              Legal notice
             </a>
           </li>
         </ul>
