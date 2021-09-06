@@ -1,3 +1,15 @@
+# v1.1.28 (Mon Sep 06 2021)
+
+#### 🐛 Bug Fix
+
+- add custom storybook theme [#11](https://github.com/kickstartDS/kickstartDS-storybook/pull/11) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.1.27 (Sun Sep 05 2021)
 
 #### ⚠️ Pushed to `master`
