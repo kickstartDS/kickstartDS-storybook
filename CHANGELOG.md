@@ -1,3 +1,15 @@
+# v1.1.31 (Mon Sep 06 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: update footer once more ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.1.30 (Mon Sep 06 2021)
 
 #### ⚠️ Pushed to `master`
