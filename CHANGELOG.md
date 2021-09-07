@@ -1,3 +1,17 @@
+# v1.1.32 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add favicon files ([@fleven-kds](https://github.com/fleven-kds))
+- feat: improve kontrast on subheadline dark ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add multiple section functionalities ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.1.31 (Mon Sep 06 2021)
 
 #### ⚠️ Pushed to `master`
