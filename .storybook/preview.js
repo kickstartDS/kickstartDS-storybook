@@ -5,6 +5,7 @@ import { unpackDecorator } from '@kickstartds/core/lib/storybook/helpers';
 
 import '@kickstartds/base/lib/global/base.js';
 import '@kickstartds/base/lib/global/base.css';
+import '../src/index.js';
 import '../static/index.css';
 import { HeadlineProvider } from '../src/headline/HeadlineComponent';
 import { SectionProvider } from '../src/section/SectionComponent';

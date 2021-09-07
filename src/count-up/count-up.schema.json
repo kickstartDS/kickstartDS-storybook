@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/count-up.schema.json",
+  "title": "Count Up",
+  "allOf": [
+    {
+      "$ref": "http://frontend.ruhmesmeile.com/content/content/count-up.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "graphic": {
+          "type": "string",
+          "enum": ["none", "mustache"],
+          "default": "none"
+        }
+      }
+    }
+  ]
+}
