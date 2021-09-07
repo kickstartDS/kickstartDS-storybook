@@ -1,5 +1,12 @@
 @use './section-tokens';
 
+:root {
+  --l-section--corner-top-left-height: var(--spacing-l);
+  --l-section--corner-top-right-height: 0;
+  --l-section--corner-bottom-left-height: var(--spacing-m);
+  --l-section--corner-bottom-right-height: var(--spacing-xxl);
+}
+
 .l-section {
   margin: auto;
 
@@ -26,6 +33,9 @@
 
   &--outer-width-max {
     max-width: calc(100% - calc(var(--g-content-padding) * 2));
+    @media(min-width: 1955px) {
+      max-width: calc( 1920px - calc(var(--g-content-padding) * 2));
+    }
   }
 
   &--outer-width-full {
@@ -129,20 +139,56 @@
   &--deko {
     clip-path: polygon(
       /* Corner Top Left */
-      0% var(--spacing-l),
+      0% var(--l-section--corner-top-left-height),
       var(--spacing-xl) 0%,
 
       /* Corner Top Right */
       100% 0,
 
       /* Corner Bottom Right */
-      100% calc(100% - var(--spacing-xxl)),
-      calc(100% - var(--spacing-xxl)) 100%,
+      100% calc(100% - var(--l-section--corner-bottom-right-height)),
+      calc(100% - var(--l-section--space)) 100%,
 
       /* Corner Bottom Left */
       var(--spacing-m) 100%,
-      0 calc(100% - var(--spacing-m))
+      0 calc(100% - var(--l-section--corner-bottom-left-height))
     );
+
+    &.l-section--outer-width-narrow + .l-section--dark,
+    &.l-section--outer-width-default + .l-section--dark,
+    &.l-section--outer-width-wide + .l-section--dark,
+    &.l-section--outer-width-max + .l-section--dark,
+  
+    &.l-section--outer-width-narrow + .l-section--accent,
+    &.l-section--outer-width-default + .l-section--accent,
+    &.l-section--outer-width-wide + .l-section--accent,
+    &.l-section--outer-width-max + .l-section--accent {
+      margin-top: var(--l-section--space);
+    }
+
+    &.l-section--outer-width-narrow + .l-section--dark.l-section--space-after-small,
+    &.l-section--outer-width-default + .l-section--dark.l-section--space-after-small,
+    &.l-section--outer-width-wide + .l-section--dark.l-section--space-after-small,
+    &.l-section--outer-width-max + .l-section--dark.l-section--space-after-small,
+  
+    &.l-section--outer-width-narrow + .l-section--accent.l-section--space-after-small,
+    &.l-section--outer-width-default + .l-section--accent.l-section--space-after-small,
+    &.l-section--outer-width-wide + .l-section--accent.l-section--space-after-small,
+    &.l-section--outer-width-max + .l-section--accent {
+      margin-top: var(--l-section--space-small);
+    }
+
+    &.l-section--outer-width-full {
+      z-index: 1;
+      + .l-section--accent {
+        padding-top: calc(var(--l-section--corner-bottom-right-height) + var(--l-section--space));
+        margin-top: calc(var(--l-section--corner-bottom-right-height) * -1);
+      }
+      + .l-section--accent.l-section--space-before-small {
+        padding-top: calc(var(--l-section--corner-bottom-right-height) + var(--l-section--space-small));
+        margin-top: calc(var(--l-section--corner-bottom-right-height) * -1);
+      }
+    }
   }
 
   &--dark {
@@ -156,16 +202,40 @@
       }
     }
 
-    .c-button--fill-animation:focus, .c-button--fill-animation:hover {
+    .c-button--fill-animation:focus,
+    .c-button--fill-animation:hover {
       * {
         color: var(--c-button_fill-animation--color-hover);
       }
     }
 
-    .c-button, .c-button--solid, .c-button--solid-inverted, .c-button---outline, .c-button---outline-inverted {
+    .c-button,
+    .c-button--solid,
+    .c-button--solid-inverted,
+    .c-button---outline,
+    .c-button---outline-inverted {
       * {
         color: var(--c-button--color);
       }
     }
    }
+  }
+
+  .l-section--accent, .l-section--dark {
+    + .l-section--deko.l-section--outer-width-narrow,
+    + .l-section--deko.l-section--outer-width-default,
+    + .l-section--deko.l-section--outer-width-wide,
+    + .l-section--deko.l-section--outer-width-max {
+      margin-top: var(--l-section--space);
+    }
+    + .l-section--deko.l-section--outer-width-narrow.l-section--space-after-small,
+    + .l-section--deko.l-section--outer-width-default.l-section--space-after-small,
+    + .l-section--deko.l-section--outer-width-wide.l-section--space-after-small,
+    + .l-section--deko.l-section--outer-width-max.l-section--space-after-small {
+      margin-top: var(--l-section--space-small);
+    }
+
+    + .l-section--deko.l-section--outer-width-full {
+      margin-top: calc(var(--l-section--corner-top-left-height) * -1);
+    }
   }
