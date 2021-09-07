@@ -168,7 +168,7 @@
   --g-content-width-default: 62rem;
   --g-content-width-narrow: 46.5rem;
   --g-content-width-wide: 75rem;
-  --g-content-width-max: 120rem;
+  --g-content-width-max: 96rem;
   --g-content-padding: var(--spacing-m);
   --section-dark-color: var(--color-white-alpha-9);
 }

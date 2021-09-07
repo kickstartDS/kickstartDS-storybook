@@ -10,6 +10,15 @@
 .l-section {
   margin: auto;
 
+  &__container {
+    &--max {
+      max-width: var(--g-content-width-max);
+    }
+    &--full {
+      max-width: var(--g-content-width-max);
+    }
+  }
+
   &--outer-width-default {
     max-width: calc(100% - calc(var(--g-content-padding) * 2));
     @media(min-width: 1235px) {
@@ -34,7 +43,7 @@
   &--outer-width-max {
     max-width: calc(100% - calc(var(--g-content-padding) * 2));
     @media(min-width: 1955px) {
-      max-width: calc( 1920px - calc(var(--g-content-padding) * 2));
+      max-width: calc( var(--g-content-width-max) - calc(var(--g-content-padding) * 2));
     }
   }
 

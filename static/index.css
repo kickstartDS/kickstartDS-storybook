@@ -172,7 +172,7 @@
   --g-content-width-default: 62rem;
   --g-content-width-narrow: 46.5rem;
   --g-content-width-wide: 75rem;
-  --g-content-width-max: 120rem;
+  --g-content-width-max: 96rem;
   --g-content-padding: var(--spacing-m);
   --section-dark-color: var(--color-white-alpha-9);
 }
@@ -775,6 +775,12 @@
 .l-section {
   margin: auto;
 }
+.l-section__container--max {
+  max-width: var(--g-content-width-max);
+}
+.l-section__container--full {
+  max-width: var(--g-content-width-max);
+}
 .l-section--outer-width-default {
   max-width: calc(100% - calc(var(--g-content-padding) * 2));
 }
@@ -804,7 +810,7 @@
 }
 @media (min-width: 1955px) {
   .l-section--outer-width-max {
-    max-width: calc( 1920px - calc(var(--g-content-padding) * 2));
+    max-width: calc( var(--g-content-width-max) - calc(var(--g-content-padding) * 2));
   }
 }
 .l-section--outer-width-full {
