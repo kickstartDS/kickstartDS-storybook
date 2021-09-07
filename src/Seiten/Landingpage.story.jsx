@@ -102,9 +102,10 @@ const Page = () => (
         spaceAfter: "none",
       }}
       mode="tile"
-      spaceAfter="default"
+      spaceAfter="small"
       spaceBefore="default"
       width="default"
+      background="accent"
     >
       <ContentBox
         image="img/icons/Button.svg"
@@ -134,11 +135,13 @@ const Page = () => (
       }}
       mode="list"
       deko={true}
-      className="l-section--outer-width-wide" /* Background Weite */
+      className="l-section--outer-width-max" /* Background Weite */
       pattern="1"
       width="narrow" /* Content Weite */
       background="dark"
       align="center"
+      spaceAfter="small"
+      spaceBefore="small"
     >
       <TextMedia
         mediaAlignment="above-center"
@@ -155,7 +158,12 @@ you can plug it onto every digital touch point you own."
         variant="solid-inverted"
       />
     </Section>
-    <Section pattern="1">
+    <Section 
+    background="accent"
+
+    spaceAfter="small"
+    spaceBefore="small"
+    >
       <Quote
         image="https://picsum.photos/seed/kdsquote/300/300"
         source="Max Mustermann, ABC GmbH"
@@ -178,6 +186,7 @@ you can plug it onto every digital touch point you own."
       spaceAfter="default"
       spaceBefore="default"
       width="default"
+      background="accent"
     >
       <TeaserBox
         image="img/icons/Headline.svg"
@@ -207,6 +216,8 @@ you can plug it onto every digital touch point you own."
         pageHeader: false,
         spaceAfter: "none",
       }}
+      deko={true}
+      className="l-section--outer-width-wide"
       mode="tile"
       spaceAfter="default"
       spaceBefore="default"
