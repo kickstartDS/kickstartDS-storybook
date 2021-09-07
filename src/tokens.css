@@ -221,7 +221,7 @@
   --c-button--padding: var(--spacing-xs) var(--spacing-s);
 }
 
-.c-button.c-button--outline {
+.c-button.c-button--outline, .c-button.c-button--outline-inverted {
   --c-button--border-width: 2px;
 }
 

@@ -225,7 +225,7 @@
   --c-button--padding: var(--spacing-xs) var(--spacing-s);
 }
 
-.c-button.c-button--outline {
+.c-button.c-button--outline, .c-button.c-button--outline-inverted {
   --c-button--border-width: 2px;
 }
 
@@ -1087,6 +1087,10 @@
 
 .c-quote__source {
   color: var(--c-quote_source--color);
+}
+
+iframe#launcher {
+  filter: drop-shadow(3px 0px 0px rgba(255, 255, 255, 0.15)) drop-shadow(-3px 0px 0px rgba(255, 255, 255, 0.15)) drop-shadow(0px 3px 0px rgba(255, 255, 255, 0.15)) drop-shadow(0px -3px 0px rgba(255, 255, 255, 0.15));
 }
 
 /*# sourceMappingURL=index.css.map */

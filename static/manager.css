@@ -172,7 +172,7 @@
   --g-content-width-default: 62rem;
   --g-content-width-narrow: 46.5rem;
   --g-content-width-wide: 75rem;
-  --g-content-width-max: 120rem;
+  --g-content-width-max: 96rem;
   --g-content-padding: var(--spacing-m);
   --section-dark-color: var(--color-white-alpha-9);
 }
@@ -225,7 +225,7 @@
   --c-button--padding: var(--spacing-xs) var(--spacing-s);
 }
 
-.c-button.c-button--outline {
+.c-button.c-button--outline, .c-button.c-button--outline-inverted {
   --c-button--border-width: 2px;
 }
 
