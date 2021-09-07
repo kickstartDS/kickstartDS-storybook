@@ -1,3 +1,15 @@
+# v1.2.0 (Tue Sep 07 2021)
+
+#### 🚀 Enhancement
+
+- add IconSpriteComponent [#13](https://github.com/kickstartDS/kickstartDS-storybook/pull/13) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.1.32 (Tue Sep 07 2021)
 
 #### ⚠️ Pushed to `master`
