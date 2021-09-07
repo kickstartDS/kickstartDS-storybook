@@ -301,6 +301,19 @@
   --c-teaser_text--spacing: var(--spacing-s);
 }
 
+@media (min-width: 40em) { 
+  .c-visual__box{
+    --c-visual_box--max-width: 70%;
+  }
+}
+
+@media (min-width: 60em) { 
+  .c-visual__box{
+    --c-visual_box--max-width: 50%;
+  }
+}
+
+
 .l-section--dark {
   --c-rich-text--color: var(--section-dark-color);
   --g-headline--color: var(--section-dark-color);
