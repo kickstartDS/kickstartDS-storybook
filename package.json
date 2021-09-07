@@ -1,6 +1,6 @@
 {
   "name": "@kickstartds/design-system",
-  "version": "1.1.32",
+  "version": "1.2.0",
   "author": "ruhmesmeile GmbH <mail@ruhmesmeile.com> (https://ruhmesmeile.com)",
   "homepage": "https://ruhmesmeile.com",
   "license": "SEE LICENSE IN LICENSE",
@@ -14,7 +14,7 @@
     "dist:js": "esbuild index=src/dist.js --outdir=dist --format=esm --bundle --minify --splitting",
     "dist:sass": "sass --load-path=node_modules src/dist.scss dist/index.css",
     "off:components": "node scripts/bundleComponents.js",
-    "dist:components": "esbuild src/header/HeaderComponent.jsx src/footer/FooterComponent.jsx src/section/SectionComponent.jsx src/headline/HeadlineComponent.jsx --outdir=dist/components --format=esm --bundle --inject:./utils/react-shim.js --external:react",
+    "dist:components": "esbuild src/header/HeaderComponent.jsx src/footer/FooterComponent.jsx src/section/SectionComponent.jsx src/headline/HeadlineComponent.jsx src/icon-sprite/IconSpriteComponent.jsx --outdir=dist/components --format=esm --bundle --inject:./utils/react-shim.js --external:react",
     "dist:schema": "yarn schema && node scripts/copySchema.js",
     "dist:images": "cp -r static/img static/patterns static/logo.svg dist/",
     "prepublishOnly": "rm -rf dist && mkdir -p dist && run-p dist:*",

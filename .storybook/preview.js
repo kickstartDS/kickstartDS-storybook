@@ -8,6 +8,7 @@ import '@kickstartds/base/lib/global/base.css';
 import '../static/index.css';
 import { HeadlineProvider } from '../src/headline/HeadlineComponent';
 import { SectionProvider } from '../src/section/SectionComponent';
+import { IconSprite } from '../src/icon-sprite/IconSpriteComponent';
 
 const myActions = actions('radio');
 window.rm.radio.on('*', myActions.radio);
@@ -30,10 +31,13 @@ export const parameters = {
 export const decorators = [
   unpackDecorator,
   (Story) => (
+    <>
+    <IconSprite />
     <HeadlineProvider>
       <SectionProvider>
         <Story />
       </SectionProvider>
     </HeadlineProvider>
+    </>
   ),
 ];
