@@ -1,3 +1,16 @@
+# v1.2.1 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: adjust section max width behaviours ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.2.0 (Tue Sep 07 2021)
 
 #### 🚀 Enhancement
