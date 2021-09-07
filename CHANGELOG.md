@@ -1,3 +1,15 @@
+# v1.2.3 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: re-add base styles & scripts to dist ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.2 (Tue Sep 07 2021)
 
 #### ⚠️ Pushed to `master`
