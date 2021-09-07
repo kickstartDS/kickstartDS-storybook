@@ -1,3 +1,15 @@
+# v1.2.5 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add more inline css ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.4 (Tue Sep 07 2021)
 
 #### ⚠️ Pushed to `master`
