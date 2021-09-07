@@ -1,3 +1,15 @@
+# v1.2.2 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: remove kickstartds scripts & styles from dist ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.1 (Tue Sep 07 2021)
 
 #### ⚠️ Pushed to `master`
