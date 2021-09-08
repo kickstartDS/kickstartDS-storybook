@@ -1,3 +1,52 @@
+# v1.2.7 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add custom favicon ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.2.6 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: re-add full css & js bundle ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.2.5 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add more inline css ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.2.4 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add drop shadow filter to iframe ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.2.3 (Tue Sep 07 2021)
 
 #### ⚠️ Pushed to `master`
