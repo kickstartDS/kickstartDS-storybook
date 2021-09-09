@@ -1,8 +1,14 @@
-.c-count-up {
-  --c-count-up_text--font: var(--font-copy-s);
+.kds-count-up {
+  --c-count-up_icon--size: 200px;
 }
 
-.l-section--dark .c-count-up {
-  --c-count-up_topic--color: var(--color-white);
-  --c-count-up_number--color: var(--color-white);
+.c-count-up {
+  --c-count-up_text--font: var(--font-copy-s);
+  --c-count-up_number--font: var(--font-copy-xxl);
+  --c-count-up_number--font-weight: var(--font-weight-light);
+
+  .l-section--dark & {
+    --c-count-up_topic--color: var(--color-secondary);
+    --c-count-up_number--color: var(--color-white);
+  }
 }
