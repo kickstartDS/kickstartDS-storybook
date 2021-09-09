@@ -1,3 +1,16 @@
+# v1.3.2 (Thu Sep 09 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: add CountUp to built components ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.1 (Thu Sep 09 2021)
 
 #### 🐛 Bug Fix
