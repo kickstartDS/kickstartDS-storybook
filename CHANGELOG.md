@@ -1,3 +1,15 @@
+# v1.4.0 (Thu Sep 09 2021)
+
+#### 🚀 Enhancement
+
+- feature: add Link component to Header and Footer [#18](https://github.com/kickstartDS/kickstartDS-storybook/pull/18) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.2 (Thu Sep 09 2021)
 
 #### ⚠️ Pushed to `master`
