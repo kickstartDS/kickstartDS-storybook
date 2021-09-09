@@ -1,3 +1,15 @@
+# v1.3.1 (Thu Sep 09 2021)
+
+#### 🐛 Bug Fix
+
+- fix: small typo in JSON schema of Count Up [#16](https://github.com/kickstartDS/kickstartDS-storybook/pull/16) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.0 (Thu Sep 09 2021)
 
 #### 🚀 Enhancement
