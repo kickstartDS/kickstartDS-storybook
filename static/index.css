@@ -727,6 +727,8 @@
   display: block;
   background-size: 175px 175px;
   background-position: 10px 10px;
+  position: relative;
+  z-index: 1;
 }
 .kds-count-up--properties .kds-count-up__fill.active::before {
   background-image: url(/img/icons/count_properties.svg);
@@ -747,6 +749,7 @@
   background-color: var(--l-section--background, white);
   border-radius: 35%;
   animation: spin 4s ease-out forwards;
+  z-index: 1;
 }
 
 .c-count-up__number {
