@@ -683,19 +683,6 @@
   --c-headline--color: var(--color-secondary);
 }
 
-.c-headline > :not(.c-headline__subheadline) {
-  color: var(--c-headline--color);
-  font: var(--g-headline--font);
-  font-weight: var(--c-headline--font-weight);
-  margin: 0;
-}
-.c-headline > :first-child.c-headline__subheadline {
-  color: var(--c-headline_subheadline--color);
-  font: var(--c-headline_subheadline--font);
-  font-weight: var(--c-headline_subheadline--font-weight);
-  margin: var(--c-headline_subheadline--margin);
-}
-
 .kds-nav-main {
   width: auto;
   white-space: nowrap;

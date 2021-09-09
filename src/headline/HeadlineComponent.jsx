@@ -22,10 +22,10 @@ export const Headline = ({
   return (
     <header
       className={classnames(
-        'c-headline',
+        "c-headline",
         align && `c-headline--align-${align}`,
         spaceAfter && `c-headline--space-after-${spaceAfter}`,
-        { 'c-headline--page-header': pageHeader },
+        { "c-headline--page-header": pageHeader },
         className
       )}
       {...props}
@@ -37,7 +37,8 @@ export const Headline = ({
       )}
       <TagName
         className={classnames(
-          styleAs !== 'none' && styleAs !== level && `c-headline__${styleAs}`
+          "c-headline__headline",
+          styleAs !== "none" && styleAs !== level && `c-headline__${styleAs}`
         )}
       >
         {renderContent(content)}
@@ -54,4 +55,3 @@ export const Headline = ({
 export const HeadlineProvider = (props) => (
   <HeadlineContext.Provider value={Headline} {...props} />
 );
-  
