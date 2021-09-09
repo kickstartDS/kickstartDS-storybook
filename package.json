@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build-storybook": "run-p sass sass-manager schema token && build-storybook -s static",
-    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --build-script-name 'build-storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes --exit-once-uploaded",
+    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --build-script-name 'build-storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes --exit-once-uploaded --output-dir storybook-static",
     "dist:js": "esbuild index=src/dist.js --outdir=dist --format=esm --bundle --minify --splitting",
     "dist:sass": "sass --load-path=node_modules src/dist.scss dist/index.css",
     "off:components": "node scripts/bundleComponents.js",
@@ -63,6 +63,7 @@
     "json-schema-merge-allof": "^0.8.1",
     "json-schema-ref-parser": "^9.0.9",
     "lazysizes": "^5.3.2",
+    "netlify-cli": "^6.8.11",
     "npm-run-all": "^4.1.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
