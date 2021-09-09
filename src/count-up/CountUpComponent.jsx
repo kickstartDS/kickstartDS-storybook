@@ -8,10 +8,12 @@ export const CountUp = (props) => (
   <div
     className={classnames(
       "kds-count-up ",
-      props.graphic && props.graphic !== "none" && `kds-count-up--${props.graphic}`
+      props.graphic &&
+        props.graphic !== "none" &&
+        `kds-count-up--${props.graphic}`
     )}
   >
-    {props.graphic && (
+    {props.graphic !== "none" && (
       <>
         <svg
           className="kds-count-up__progress"
