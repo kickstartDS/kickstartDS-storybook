@@ -1,3 +1,27 @@
+# v1.2.8 (Thu Sep 09 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: update kickstartDS ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.2.7 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add custom favicon ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.6 (Tue Sep 07 2021)
 
 #### ⚠️ Pushed to `master`
