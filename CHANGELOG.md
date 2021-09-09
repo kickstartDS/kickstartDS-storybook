@@ -1,3 +1,15 @@
+# v1.3.0 (Thu Sep 09 2021)
+
+#### 🚀 Enhancement
+
+- add count-up svg animation [#14](https://github.com/kickstartDS/kickstartDS-storybook/pull/14) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.9 (Thu Sep 09 2021)
 
 #### ⚠️ Pushed to `master`
