@@ -495,7 +495,7 @@
   width: 315px !important;
 }
 
-.kds-count-up--mustache {
+.kds-count-up {
   --c-count-up_icon--size: 200px;
 }
 
@@ -534,6 +534,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+.kds-count-up--tokens .kds-count-up__fill {
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 99%, 0 13%);
+}
+.kds-count-up--components .kds-count-up__fill {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 100%, 0 93%);
+}
+.kds-count-up--properties .kds-count-up__fill {
+  clip-path: polygon(0 0, 80% 0, 100% 13%, 100% 100%, 14% 100%, 0 93%);
+}
 .kds-count-up__fill .bubbles {
   position: absolute;
   width: 100%;
@@ -541,15 +550,19 @@
   overflow: hidden;
   top: 0;
   left: 0;
+  visibility: hidden;
+}
+.kds-count-up__fill.active .bubbles {
+  visibility: visible;
 }
 .kds-count-up__fill .bubble {
   position: absolute;
   bottom: -100px;
   width: 20px;
   height: 20px;
-  background: var(--l-section--background, white);
+  background: white;
   border-radius: 50%;
-  opacity: 0.5;
+  opacity: 0.75;
   animation: rise 10s infinite ease-in;
 }
 .kds-count-up__fill .bubble:nth-child(1) {
@@ -712,11 +725,17 @@
   width: 100%;
   background-repeat: no-repeat;
   display: block;
-}
-.kds-count-up--mustache .kds-count-up__fill.active::before {
   background-size: 175px 175px;
-  background-image: url(/img/icons/Mustache.svg);
   background-position: 10px 10px;
+}
+.kds-count-up--properties .kds-count-up__fill.active::before {
+  background-image: url(/img/icons/count_properties.svg);
+}
+.kds-count-up--tokens .kds-count-up__fill.active::before {
+  background-image: url(/img/icons/count_tokens.svg);
+}
+.kds-count-up--components .kds-count-up__fill.active::before {
+  background-image: url(/img/icons/count_components.svg);
 }
 .kds-count-up__fill.active::after {
   content: "";

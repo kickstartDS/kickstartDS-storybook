@@ -21,7 +21,7 @@ export default {
 export const Components = Template.bind({});
 Components.args = pack({
   to: 41,
-  graphic: "mustache",
+  graphic: "components",
   topic: "Components",
   text: `
 Use our components as **solid building blocks**, adapt and improve them as you need. From quickly adding design tokens to full customization. Utilizing all existing best practices!
@@ -33,7 +33,7 @@ Benefit from **15+ years of frontend experience!**
 export const Properties = Template.bind({});
 Properties.args = pack({
   to: 1255,
-  graphic: "mustache",
+  graphic: "properties",
   topic: "Properties",
   text: `
 Every propertys' existence is **rooted in a real-world** decision; solving everyday problems for content creators.
@@ -45,7 +45,7 @@ Quick discovery through Storybooks' rich interface, combined with **kickstartDS*
 export const Tokens = Template.bind({});
 Tokens.args = pack({
   to: 695,
-  graphic: "mustache",
+  graphic: "tokens",
   topic: "Tokens",
   text: `
 Obviously we have **design tokens** – colors, fonts, sizes, iconography.

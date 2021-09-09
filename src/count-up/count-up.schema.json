@@ -11,7 +11,7 @@
       "properties": {
         "graphic": {
           "type": "string",
-          "enum": ["none", "mustache"],
+          "enum": ["none", "tokens", "components", "properties"],
           "default": "none"
         }
       }
