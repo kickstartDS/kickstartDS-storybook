@@ -4,7 +4,7 @@
   "title": "Count Up",
   "allOf": [
     {
-      "$ref": "http://frontend.ruhmesmeile.com/content/content/count-up.schema.json"
+      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/count-up.schema.json"
     },
     {
       "type": "object",
