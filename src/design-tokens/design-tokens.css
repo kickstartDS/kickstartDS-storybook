@@ -1,0 +1,112 @@
+:root {
+  /*!
+   * @tokens Colors: Brand
+   * @presenter Color
+   */
+  --color-primary: #06566a;
+  --color-secondary: #ecff00;
+
+  /*!
+   * @tokens Colors: Primary Shades
+   * @presenter Color
+   */
+  --color-primary-alpha-1: rgba(6, 86, 106, 0.1);
+  --color-primary-alpha-2: rgba(6, 86, 106, 0.2);
+  --color-primary-alpha-3: rgba(6, 86, 106, 0.3);
+  --color-primary-alpha-4: rgba(6, 86, 106, 0.4);
+  --color-primary-alpha-5: rgba(6, 86, 106, 0.5);
+  --color-primary-alpha-6: rgba(6, 86, 106, 0.6);
+  --color-primary-alpha-7: rgba(6, 86, 106, 0.7);
+  --color-primary-alpha-8: rgba(6, 86, 106, 0.8);
+  --color-primary-alpha-9: rgba(6, 86, 106, 0.9);
+
+  /*!
+   * @tokens Colors: White Shades
+   * @presenter Color
+   */
+  --color-white: #fff;
+  --color-white-alpha-1: hsla(0, 0%, 100%, 0.1);
+  --color-white-alpha-2: hsla(0, 0%, 100%, 0.2);
+  --color-white-alpha-3: hsla(0, 0%, 100%, 0.3);
+  --color-white-alpha-4: hsla(0, 0%, 100%, 0.4);
+  --color-white-alpha-5: hsla(0, 0%, 100%, 0.5);
+  --color-white-alpha-6: hsla(0, 0%, 100%, 0.6);
+  --color-white-alpha-7: hsla(0, 0%, 100%, 0.7);
+  --color-white-alpha-8: hsla(0, 0%, 100%, 0.8);
+  --color-white-alpha-9: hsla(0, 0%, 100%, 0.95);
+
+  /*!
+   * @tokens Colors: Black Shades
+   * @presenter Color
+   */
+  --color-black: #050505;
+  --color-black-alpha-1: rgba(5, 5, 5, 0.1);
+  --color-black-alpha-2: rgba(5, 5, 5, 0.2);
+  --color-black-alpha-3: rgba(5, 5, 5, 0.3);
+  --color-black-alpha-4: rgba(5, 5, 5, 0.4);
+  --color-black-alpha-5: rgba(5, 5, 5, 0.5);
+  --color-black-alpha-6: rgba(5, 5, 5, 0.6);
+  --color-black-alpha-7: rgba(5, 5, 5, 0.7);
+  --color-black-alpha-8: rgba(5, 5, 5, 0.8);
+  --color-black-alpha-9: rgba(5, 5, 5, 0.9);
+
+  /*!
+   * @tokens Colors: Semantic
+   * @presenter Color
+   */
+  --color-info: #3ca8ff;
+  --color-success: #8dc63f;
+  --color-warning: #ffc103;
+  --color-error: #e60201;
+
+  /*!
+  * @tokens Spacing
+  * @presenter Spacing
+  */
+  --spacing-xxs: 0.3rem;
+  --spacing-xs: 0.4rem;
+  --spacing-s: 0.75rem;
+  --spacing-m: 1.2rem;
+  --spacing-l: 2.2rem;
+  --spacing-xl: 4rem;
+  --spacing-xxl: 5rem;
+
+  /*!
+  * @tokens Font Weights
+  * @presenter FontWeight
+  */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 500;
+  --font-weight-bold: 700;
+
+  /*!
+  * @tokens Font Sizes
+  * @presenter FontSize
+  */
+  --font-size-xs: 0.7rem;
+  --font-size-s: 0.9375rem;
+  --font-size-m: 1.125rem;
+  --font-size-l: 1.3125rem;
+  --font-size-xl: 1.75rem;
+  --font-size-xxl: 2.25rem;
+
+  /*!
+  * @tokens Line Heights
+  * @presenter LineHeight
+  */
+  --line-height-xs: 1rem;
+  --line-height-s: 1.45rem;
+  --line-height-m: 1.75rem;
+  --line-height-l: 2rem;
+  --line-height-xl: 2.5rem;
+  --line-height-xxl: 3rem;
+
+  /*!
+  * @tokens Font Families
+  * @presenter FontFamily
+  */
+  --font-family-display: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-family-copy: var(--font-family-display);
+  --font-family-ui: var(--font-family-display);
+}
