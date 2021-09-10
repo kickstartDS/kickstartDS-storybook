@@ -1,3 +1,15 @@
+# v1.4.2 (Fri Sep 10 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: exclude kickstartds from bundle ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.4.1 (Fri Sep 10 2021)
 
 #### ⚠️ Pushed to `master`
