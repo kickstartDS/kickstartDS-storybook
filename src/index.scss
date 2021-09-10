@@ -24,3 +24,12 @@ iframe#launcher {
     drop-shadow(0px -3px 0px rgba(255,255,255,0.15)) 
     ;
   }
+
+.c-post-head {
+position: relative;
+
+  &__meta {
+    position: absolute;
+    top: 1rem;
+  }
+}

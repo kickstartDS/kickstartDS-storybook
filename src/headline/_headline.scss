@@ -4,9 +4,9 @@
 // just quickly overwrote those values copied from the browser
 .c-headline {
   > :not(.c-headline__subheadline) {
-    color: var(--c-headline--color);
+    color: var(--g-headline--color);
     font: var(--g-headline--font);
-    font-weight: var(--c-headline--font-weight);
+    font-weight: var(--g-headline--font-weight);
     margin: 0
   }
 

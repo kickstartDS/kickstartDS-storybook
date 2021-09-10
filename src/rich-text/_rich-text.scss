@@ -1,5 +1,19 @@
 @use './rich-text-tokens';
 
+.c-rich-text {
+  .has-large-font-size {
+    color: var(--g-headline--color);
+    font: var(--font-ui-l);
+    font-weight: var(--g-headline--font-weight);
+  
+    margin-top: var(--spacing-xl);
+    
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
 .c-rich-text a, .c-rich-text.c-visual__text a {
     text-decoration: none;
     color: var(--g-link--color);
