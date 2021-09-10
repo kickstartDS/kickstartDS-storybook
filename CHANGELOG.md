@@ -1,3 +1,18 @@
+# v1.4.4 (Fri Sep 10 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add blog styling ([@fleven-kds](https://github.com/fleven-kds))
+- feat: adjust visual box max width ([@fleven-kds](https://github.com/fleven-kds))
+- feat: adjust fullscreen visual on 4k ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.4.3 (Fri Sep 10 2021)
 
 #### ⚠️ Pushed to `master`
