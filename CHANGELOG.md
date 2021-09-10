@@ -1,3 +1,15 @@
+# v1.4.1 (Fri Sep 10 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: don't access `window` in ssg ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.4.0 (Thu Sep 09 2021)
 
 #### 🚀 Enhancement
