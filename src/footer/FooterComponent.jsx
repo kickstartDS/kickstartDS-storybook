@@ -1,7 +1,5 @@
-import { Icon } from "@kickstartds/base/lib/icon";
+import { Link } from '@kickstartds/base/lib/link';
 import { Section } from "@kickstartds/base/lib/section";
-import { Button } from "@kickstartds/base/lib/button";
-import { ContentBox } from "@kickstartds/base/lib/content-box";
 
 export const Footer = () => (
   <footer className="kds-footer">
@@ -19,14 +17,14 @@ export const Footer = () => (
             Links
           </p>
           <li className="kds-footer-nav_list_item">
-            <a href="/blog" className="kds-footer-nav_list_item_link">
+            <Link href="/blog" className="kds-footer-nav_list_item_link">
               Blog
-            </a>
+            </Link>
           </li>
           <li className="kds-footer-nav_list_item">
-            <a href="/storybook" className="kds-footer-nav_list_item_link">
+            <Link href="/storybook" className="kds-footer-nav_list_item_link">
               Storybook
-            </a>
+            </Link>
           </li>
         </ul>
         <ul className="kds-footer-nav_list">
@@ -34,19 +32,19 @@ export const Footer = () => (
             Get in touch
           </p>
           <li className="kds-footer-nav_list_item">
-            <a href="https://twitter.com/kickstartDS" className="kds-footer-nav_list_item_link">
+            <Link href="https://twitter.com/kickstartDS" className="kds-footer-nav_list_item_link">
               Twitter
-            </a>
+            </Link>
           </li>
           <li className="kds-footer-nav_list_item">
-            <a href="https://wa.me/491752131879?text=Hi!%20I%20am%20interested%20to%20know%20more%20about%20kickstart%20DS." className="kds-footer-nav_list_item_link">
+            <Link href="https://wa.me/491752131879?text=Hi!%20I%20am%20interested%20to%20know%20more%20about%20kickstartDS." className="kds-footer-nav_list_item_link">
               WhatsApp us
-            </a>
+            </Link>
           </li>
           <li className="kds-footer-nav_list_item">
-            <a href="mailto:hello@kickstartds.com" className="kds-footer-nav_list_item_link">
+            <Link href="mailto:hello@kickstartds.com" className="kds-footer-nav_list_item_link">
               Send a Mail
-            </a>
+            </Link>
           </li>
         </ul>
         <ul className="kds-footer-nav_list">
@@ -54,27 +52,27 @@ export const Footer = () => (
             Data &amp; Compliance
           </p>
           <li className="kds-footer-nav_list_item">
-            <a href="/privacy" className="kds-footer-nav_list_item_link">
+            <Link href="/privacy" className="kds-footer-nav_list_item_link">
               Privacy
-            </a>
+            </Link>
           </li>
           <li className="kds-footer-nav_list_item">
-            <a href="/cookies" className="kds-footer-nav_list_item_link">
+            <Link href="/cookies" className="kds-footer-nav_list_item_link">
               Cookie List
-            </a>
+            </Link>
           </li>
           <li className="kds-footer-nav_list_item">
-            <a href="/legal" className="kds-footer-nav_list_item_link">
+            <Link href="/legal" className="kds-footer-nav_list_item_link">
               Legal notice
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
 
       <div className="kds-footer__logo-wrap">
-        <a href="/" className="kds-footer__logo">
+        <Link href="/" className="kds-footer__logo">
           <img src="/logo.svg" />
-        </a>
+        </Link>
       </div>
 
     </Section>

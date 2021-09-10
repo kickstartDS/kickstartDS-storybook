@@ -1,3 +1,112 @@
+# v1.4.3 (Fri Sep 10 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add design-token stories ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.4.2 (Fri Sep 10 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: exclude kickstartds from bundle ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.4.1 (Fri Sep 10 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: don't access `window` in ssg ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.4.0 (Thu Sep 09 2021)
+
+#### 🚀 Enhancement
+
+- feature: add Link component to Header and Footer [#18](https://github.com/kickstartDS/kickstartDS-storybook/pull/18) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.3.2 (Thu Sep 09 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: add CountUp to built components ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.3.1 (Thu Sep 09 2021)
+
+#### 🐛 Bug Fix
+
+- fix: small typo in JSON schema of Count Up [#16](https://github.com/kickstartDS/kickstartDS-storybook/pull/16) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.3.0 (Thu Sep 09 2021)
+
+#### 🚀 Enhancement
+
+- add count-up svg animation [#14](https://github.com/kickstartDS/kickstartDS-storybook/pull/14) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.2.9 (Thu Sep 09 2021)
+
+#### ⚠️ Pushed to `master`
+
+- ci: deploy to netlify ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.2.8 (Thu Sep 09 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: update kickstartDS ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.7 (Tue Sep 07 2021)
 
 #### ⚠️ Pushed to `master`

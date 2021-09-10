@@ -60,6 +60,18 @@ jobs:
           name: Deploy Storybook
           command: yarn chromatic
 
+  chromatic_and_netlify:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache: *restore-cache-node
+      - run:
+          name: Deploy Storybook
+          command: yarn chromatic
+      - run:
+          name: Deploy Netlify
+          command: yarn netlify deploy --prod --dir=storybook-static
+
   update_website:
     docker:
       - image: cimg/base:stable
@@ -92,5 +104,15 @@ workflows:
             - release
 
       - chromatic:
+          filters:
+            branches:
+              ignore: master
+          requires:
+            - install
+
+      - chromatic_and_netlify:
+          filters:
+            branches:
+              only: master
           requires:
             - install
