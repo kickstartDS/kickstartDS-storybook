@@ -27,6 +27,17 @@ export const parameters = {
       tabWidth: 4,
     },
   },
+  options: {
+    storySort(a, b) {
+      // welcome page to top!
+      if (a[0].includes('welcome')) {
+        return -1;
+      }
+
+      // alphabetically
+      return a[1].kind === b[1].kind ? 0 : a[1].id.localeCompare(b[1].id, undefined, { numeric: true });
+    }
+  },
 }
 
 export const decorators = [
