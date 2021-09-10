@@ -169,6 +169,9 @@
   --g-link--backround-hover: var(--color-primary-alpha-1);
   --g-topic--color: var(--c-rich-text--color);
   --g-header-height: 0px;
+  --g-headline--color: var(--color-black);
+  --g-headline--font: var(--font-display-xxl);
+  --g-headline--font-weight: var(--font-weight-bold);
   --g-content-width-default: 62rem;
   --g-content-width-narrow: 46.5rem;
   --g-content-width-wide: 75rem;
@@ -189,7 +192,7 @@
     --font-size-xs: 0.7rem;
     --font-size-s: 0.9375rem;
     --font-size-m: 1.125rem;
-    --font-size-l: 1.3125rem;
+    --font-size-l: 1.5rem;
     --font-size-xl: 1.75rem;
     --font-size-xxl: 2.25rem;
     --line-height-s: 1.45rem;
@@ -215,7 +218,7 @@
 @media (min-width: 75em) {
   :root {
     --spacing-s: 0.7rem;
-    --spacing-m: 1.75rem;
+    --spacing-m: 1.5rem;
     --spacing-l: 2.5rem;
     --spacing-xl: 4.5rem;
     --spacing-xxl: 7rem;
@@ -302,6 +305,16 @@
   --c-teaser_text--spacing: var(--spacing-s);
 }
 
+@media (min-width: 40em) {
+  .c-visual__box {
+    --c-visual_box--max-width: 70%;
+  }
+}
+@media (min-width: 60em) {
+  .c-visual__box {
+    --c-visual_box--max-width: 50%;
+  }
+}
 .l-section--dark {
   --c-rich-text--color: var(--section-dark-color);
   --g-headline--color: var(--section-dark-color);

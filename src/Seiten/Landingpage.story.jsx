@@ -25,47 +25,53 @@ import { Footer } from "../footer/FooterComponent";
 const Page = () => (
   <>
     <Header />
-    <Visual
-      box={{
-        background: "transparent",
-        enabled: true,
-        headline: {
-          content:
-            "Building a design system for all your digital touch points feels now like squeezing a lemon",
-        },
-        horizontal: "left",
-        indent: false,
-        link: {
-          className: "c-button--main",
+    <Section
+      width="full"
+      spaceBefore="none"
+      spaceAfter="none"
+    >
+      <Visual
+        box={{
+          background: "transparent",
           enabled: true,
-          fillAnimation: false,
-          href: "https://example.com",
-          iconAfter: true,
-          iconAnimation: false,
-          iconBefore: false,
-          icon: {
-            icon: "chevron-right",
+          headline: {
+            content:
+              "Building a design system for all your digital touch points feels now like squeezing a lemon",
           },
-          label: "Request a guided demo",
-          newTab: false,
-          size: "medium",
-          variant: "solid",
-        },
-        text:
-          "[kickstartDS](http://example.com/) is the comprehensive pattern library and **design system**, that **helps** web development **teams to create** consistent and brand compliant web **frontends super efficiently**.",
-        vertical: "center",
-      }}
-      height="default"
-      media={{
-        image: {
-          indent: "none",
-          srcDesktop: "img/visual/visual_lemon.png",
-          srcMobile: "img/visual/visual_lemon-m.png",
-          srcTablet: "img/visual/visual_lemon.png",
-        },
-        mode: "image",
-      }}
-    />
+          horizontal: "left",
+          indent: false,
+          link: {
+            className: "c-button--main",
+            enabled: true,
+            fillAnimation: false,
+            href: "https://example.com",
+            iconAfter: true,
+            iconAnimation: false,
+            iconBefore: false,
+            icon: {
+              icon: "chevron-right",
+            },
+            label: "Request a guided demo",
+            newTab: false,
+            size: "medium",
+            variant: "solid",
+          },
+          text:
+            "[kickstartDS](http://example.com/) is the comprehensive pattern library and **design system**, that **helps** web development **teams to create** consistent and brand compliant web **frontends super efficiently**.",
+          vertical: "center",
+        }}
+        height="fullScreen"
+        media={{
+          image: {
+            indent: "none",
+            srcDesktop: "img/visual/visual_lemon.png",
+            srcMobile: "img/visual/visual_lemon-m.png",
+            srcTablet: "img/visual/visual_lemon.png",
+          },
+          mode: "image",
+        }}
+      />
+    </Section>
     <Section width="wide" spaceBefore="small" spaceAfter="small">
       <LogoTiles
         logos={[

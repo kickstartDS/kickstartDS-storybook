@@ -12,6 +12,10 @@
 
 .c-visual--full {
   height: calc(100vh - var(--g-header-height) - 30vh);
+  
+  @media(min-width:1920px) {
+    height: calc(100vh - var(--g-header-height) - 50vh);
+  }
 }
 
 .c-visual__image img {
