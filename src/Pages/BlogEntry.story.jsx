@@ -1,4 +1,8 @@
-export const Blog = () => (
+export default {
+  title: "Blog Entry",
+};
+
+const Page = () => (
   <>
     <div class="l-section l-section--space-before-small">
       <div class="l-section__container l-section__container--narrow l-section__container--list">
@@ -55,3 +59,6 @@ export const Blog = () => (
         </div></div></div>
   </>
 );
+
+const Template = (args) => <Page {...args} />;
+export const BlogEntry = Template.bind({});
