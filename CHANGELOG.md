@@ -1,3 +1,16 @@
+# v1.5.2 (Sat Sep 11 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: add zendesk options ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.1 (Sat Sep 11 2021)
 
 #### ⚠️ Pushed to `master`
