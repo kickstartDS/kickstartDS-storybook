@@ -1,16 +1,16 @@
 import { LinkContext } from "@kickstartds/base/lib/link";
 import LinkTo from "@storybook/addon-links/react";
 
-const SeitenLink = ({ href, ...props }) => (
-  <LinkTo kind="seiten" story={href} {...props} />
+const PagesLink = ({ href, ...props }) => (
+  <LinkTo kind="pages" story={href} {...props} />
 );
 
 const LinkProvider = (props) => (
-  <LinkContext.Provider value={SeitenLink} {...props} />
+  <LinkContext.Provider value={PagesLink} {...props} />
 );
 
 export default {
-  title: "Seiten",
+  title: "Pages",
   parameters: {
     layout: "fullscreen",
     previewTabs: {

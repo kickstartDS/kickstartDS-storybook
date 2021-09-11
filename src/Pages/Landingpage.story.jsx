@@ -76,22 +76,22 @@ const Page = () => (
       <LogoTiles
         logos={[
           {
-            alt: "Erfolgsfaktor Familie",
+            alt: "Shopify",
             src:
               "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/640px-Shopify_logo_2018.svg.png",
           },
           {
-            alt: "Familienfreundliches Unternehmen",
+            alt: "Contentful",
             src:
               "https://d21buns5ku92am.cloudfront.net/41748/images/177922-logo-d8345a-large-1441290673.png",
           },
           {
-            alt: "Kooperationspartner der FHDW",
+            alt: "Gatsby",
             src:
               "https://timotheebinet.com/static/fa38ab30a9b8abb4a1ff8c0b7fb86cef/00d43/gatsby.png",
           },
           {
-            alt: "Kooperationspartner von it´s owl",
+            alt: "Bigcommerce",
             src:
               "https://www-cdn.bigcommerce.com/assets/mediakit/logo-plain.png",
           },
