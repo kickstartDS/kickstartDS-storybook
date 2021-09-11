@@ -1,3 +1,16 @@
+# v1.5.0 (Sat Sep 11 2021)
+
+#### 🚀 Enhancement
+
+- feature: add landing page [#19](https://github.com/kickstartDS/kickstartDS-storybook/pull/19) ([@lmestel](https://github.com/lmestel) [@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.4.5 (Fri Sep 10 2021)
 
 #### ⚠️ Pushed to `master`
