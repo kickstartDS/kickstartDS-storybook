@@ -1,3 +1,15 @@
+# v1.5.3 (Sat Sep 11 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: use / at the end of storybook link ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.2 (Sat Sep 11 2021)
 
 #### ⚠️ Pushed to `master`
