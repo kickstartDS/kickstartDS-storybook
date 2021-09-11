@@ -22,7 +22,7 @@ export const Footer = () => (
             </Link>
           </li>
           <li className="kds-footer-nav_list_item">
-            <Link href="/storybook" className="kds-footer-nav_list_item_link">
+            <Link href="/storybook/" className="kds-footer-nav_list_item_link">
               Storybook
             </Link>
           </li>
