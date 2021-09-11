@@ -1,3 +1,15 @@
+# v1.5.1 (Sat Sep 11 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: scripts ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.0 (Sat Sep 11 2021)
 
 #### 🚀 Enhancement
