@@ -1,3 +1,15 @@
+# v1.4.5 (Fri Sep 10 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: update kickstartds ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.4.4 (Fri Sep 10 2021)
 
 #### ⚠️ Pushed to `master`

@@ -1901,14 +1901,14 @@
   resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
   integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
 
-"@kickstartds/base@1.4.0", "@kickstartds/base@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-1.4.0.tgz#2b34797dd79584cfc55a03e21fc536f78d3c25e6"
-  integrity sha512-0MeaXXZeexpaCDby64CNsbOrZ/Tb5jwm3qVccxSWQdbt3u/P70XuwT4A8qy8LPXpqMh/eY5r7Ek2GBfRQMbD3w==
+"@kickstartds/base@1.4.1-next.0", "@kickstartds/base@^1.4.1-next.0":
+  version "1.4.1-next.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-1.4.1-next.0.tgz#b4e656a355be0e005cada1b64bd55fe13468ff42"
+  integrity sha512-pAmsXuTj3uFZhf/otEp03put78fa3i4BXtAH85W3oRCGnIoh34GZVPAdbiy1usRai6z5egnZStswBiesyPOnmg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@glidejs/glide" "git://github.com/glidejs/glide.git#master"
-    "@kickstartds/core" "^1.4.0"
+    "@kickstartds/core" "^1.4.1-next.0"
     classnames "^2.2.6"
     css-element-queries "^1.2.3"
     date-fns "^2.23.0"
@@ -1922,34 +1922,34 @@
     simplebar "^5.3.5"
     stickybits "^3.7.0"
 
-"@kickstartds/blog@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-1.4.0.tgz#800f94ca48d6689da971034f14c8d6f401b66815"
-  integrity sha512-B+TFnCsZsl4hX90FMzMw420RB6ECU701aQ0u7u7f1CzrqHA7ZOIrMPcj1png2bGy99GhZb3FzZMsjGTqHhycmA==
+"@kickstartds/blog@1.4.1-next.0":
+  version "1.4.1-next.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-1.4.1-next.0.tgz#b151411c166730be55dac5d35eae733f5c49bed0"
+  integrity sha512-oG/iILzCqb/2gl2VJ+riqfUR/a/WO18IUCvG8FjfKKyELUc1a9Ws+RNTLtxKe+x9p/5Vd0s8KjuGDkefO5pSDw==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "@kickstartds/base" "^1.4.0"
-    "@kickstartds/core" "^1.4.0"
+    "@kickstartds/base" "^1.4.1-next.0"
+    "@kickstartds/core" "^1.4.1-next.0"
     classnames "^2.2.6"
     date-fns "^2.23.0"
 
-"@kickstartds/content@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-1.4.0.tgz#deabc72d1c880f5c9796a952191afd1af18e036f"
-  integrity sha512-bpKgBuMqsBPcoddgcTqlpq5P8on9nQSTOQoF2J5W76eDz2DkfmT/USxNn00qL00w2PmVtjuwmfq/XMXES5a3cw==
+"@kickstartds/content@1.4.1-next.0":
+  version "1.4.1-next.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-1.4.1-next.0.tgz#08faa9871d59566c8b81dc1b7537b2ed3514b411"
+  integrity sha512-ihvqdh6oR7viJ9pjH6mEvfOSgJgP6NZTlYMeUPq1ijsi7o9+YLF/LFyFxV83bsiROZj7A66qN3cc3tLjrcM+hg==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "@kickstartds/base" "^1.4.0"
-    "@kickstartds/core" "^1.4.0"
+    "@kickstartds/base" "^1.4.1-next.0"
+    "@kickstartds/core" "^1.4.1-next.0"
     classnames "^2.2.6"
     countup.js "^2.0.8"
     date-fns "^2.23.0"
     objectFitPolyfill "^2.3.0"
 
-"@kickstartds/core@1.4.0", "@kickstartds/core@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-1.4.0.tgz#627eb66182c7ba13a6c9517f01fb44699b6fb0f7"
-  integrity sha512-E7yLytHcq6m8QXK5NGndhRVklN9cu3tomAJi8Epb+GI5pEN31QVev9uNnlgiBEuoQWBm9lqv0swWf8xnxBJPnA==
+"@kickstartds/core@1.4.1-next.0", "@kickstartds/core@^1.4.1-next.0":
+  version "1.4.1-next.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-1.4.1-next.0.tgz#bac45a2118140c785aa66635cd2c3106ded3f1e4"
+  integrity sha512-B2QDnB/ulMyhyn50fpVdYuvcvDbiDl1TvNPe3Af0tChUn8QKkrnW+r2QLSw3P6x6Rte+YfWx3BEe+iJV7IdzWA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     bourbon "^7.0.0"
@@ -1965,14 +1965,14 @@
     sass "^1.39.0"
     vhtml "^2.2.0"
 
-"@kickstartds/form@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-1.4.0.tgz#16c3e7788623d69d765c246616345013161d5a18"
-  integrity sha512-9SQ1F4WMsW1GctlFAufOkym7F/wICCCNWPO3AyDWNWa77BuehKvbWggYcNxSqMz7cg0ykFnowx9VLZVTBZNcsw==
+"@kickstartds/form@1.4.1-next.0":
+  version "1.4.1-next.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-1.4.1-next.0.tgz#4e16f7ba4bd9c530c1d38285fc15fb3ea0642b13"
+  integrity sha512-cWskga5l+IdCrY/pDPsgm07wfcuVqGHPcTJrjOF8IBmnxUzUhxyLpbZo8ZfJpVTtNKxjHaUWxnOZ8+zGBHc6BA==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "@kickstartds/base" "^1.4.0"
-    "@kickstartds/core" "^1.4.0"
+    "@kickstartds/base" "^1.4.1-next.0"
+    "@kickstartds/core" "^1.4.1-next.0"
     classnames "^2.2.6"
 
 "@kickstartds/storybook-addon-component-tokens@^0.1.4":

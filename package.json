@@ -1,6 +1,6 @@
 {
   "name": "@kickstartds/design-system",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "author": "ruhmesmeile GmbH <mail@ruhmesmeile.com> (https://ruhmesmeile.com)",
   "homepage": "https://ruhmesmeile.com",
   "license": "SEE LICENSE IN LICENSE",
@@ -31,11 +31,11 @@
   },
   "keywords": [],
   "dependencies": {
-    "@kickstartds/base": "1.4.0",
-    "@kickstartds/blog": "1.4.0",
-    "@kickstartds/content": "1.4.0",
-    "@kickstartds/core": "1.4.0",
-    "@kickstartds/form": "1.4.0",
+    "@kickstartds/base": "1.4.1-next.0",
+    "@kickstartds/blog": "1.4.1-next.0",
+    "@kickstartds/content": "1.4.1-next.0",
+    "@kickstartds/core": "1.4.1-next.0",
+    "@kickstartds/form": "1.4.1-next.0",
     "classnames": "^2.3.1"
   },
   "devDependencies": {
