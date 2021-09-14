@@ -1,3 +1,15 @@
+# v1.5.5 (Tue Sep 14 2021)
+
+#### 🐛 Bug Fix
+
+- fix internal storybook links [#21](https://github.com/kickstartDS/kickstartDS-storybook/pull/21) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.5.4 (Tue Sep 14 2021)
 
 #### ⚠️ Pushed to `master`
