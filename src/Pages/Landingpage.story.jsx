@@ -14,6 +14,7 @@ import {
   Quote,
   LogoTiles,
 } from "@kickstartds/content";
+import FooterStories from '../footer/Footer.stories';
 
 export default {
   title: "Landingpage",
@@ -25,11 +26,7 @@ import { Footer } from "../footer/FooterComponent";
 const Page = () => (
   <>
     <Header />
-    <Section
-      width="full"
-      spaceBefore="none"
-      spaceAfter="none"
-    >
+    <Section width="full" spaceBefore="none" spaceAfter="none">
       <Visual
         box={{
           background: "transparent",
@@ -164,12 +161,7 @@ you can plug it onto every digital touch point you own."
         variant="solid-inverted"
       />
     </Section>
-    <Section 
-    background="accent"
-
-    spaceAfter="small"
-    spaceBefore="small"
-    >
+    <Section background="accent" spaceAfter="small" spaceBefore="small">
       <Quote
         image="https://picsum.photos/seed/kdsquote/300/300"
         source="Max Mustermann, ABC GmbH"
@@ -248,7 +240,7 @@ you can plug it onto every digital touch point you own."
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
       />
     </Section>
-    <Footer/>
+    <Footer {...FooterStories.args} />
   </>
 );
 
