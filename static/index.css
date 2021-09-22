@@ -368,7 +368,7 @@
 
 .c-button--main.c-button {
   clip-path: polygon(0 0, calc(100% - 35px) 0, 100% 30px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 15px 100%, 0 50%);
-  transition: none;
+  transition: 150ms all;
 }
 @keyframes button-hover {
   0% {
@@ -387,6 +387,10 @@
 
 .c-button--solid, .c-button--solid-inverted, .c-button--clear {
   clip-path: polygon(0 0.3em, 0.3em 0, calc(100% - .4em) 0, 100% calc(100% - .3em), calc(100% - .3em) 100%, 0.4em 100%);
+  transition-property: all;
+}
+.c-button--solid:hover, .c-button--solid-inverted:hover, .c-button--clear:hover {
+  clip-path: polygon(0.2em 0.3em, 0.5em 0, calc(100% - 0.7em) 0, calc(100% - 0.4em) calc(100% - 0.3em), calc(100% - 0.7em) 100%, 0.5em 100%);
 }
 
 .c-button--clear {
@@ -1016,7 +1020,6 @@
   color: var(--g-link--color);
   font-weight: var(--font-weight-bold);
   padding: 2px;
-  border-radius: 3px;
 }
 .c-rich-text a:hover, .c-rich-text.c-visual__text a:hover {
   background: var(--g-link--backround-hover);

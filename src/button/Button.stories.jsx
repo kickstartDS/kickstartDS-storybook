@@ -13,16 +13,24 @@ export default {
   },
 };
 
-export const Default = Template.bind({});
-Default.args = pack({
+export const Solid = Template.bind({});
+Solid.args = pack({
   variant: "solid",
   href: "#",
   label: "mehr erfahren",
 });
 
+export const SolidMain = Template.bind({});
+SolidMain.args = pack({
+  className: "c-button--main",
+  variant: "solid",
+  href: "#",
+  label: "Request a guided demo",
+});
+
 export const MitIcon = Template.bind({});
 MitIcon.args = pack({
-  ...Default.args,
+  ...Solid.args,
   iconAfter: true,
   icon: {
     icon: "chevron-right",
@@ -31,7 +39,7 @@ MitIcon.args = pack({
 
 export const Inverted = Template.bind({});
 Inverted.args = pack({
-  ...Default.args,
+  ...Solid.args,
   variant: "solid-inverted",
   href: "#",
 });
@@ -41,13 +49,13 @@ Inverted.parameters = {
 
 export const Outline = Template.bind({});
 Outline.args = pack({
-  ...Default.args,
+  ...Solid.args,
   variant: "outline",
 });
 
 export const OutlineInverted = Template.bind({});
 OutlineInverted.args = pack({
-  ...Default.args,
+  ...Solid.args,
   variant: "outline-inverted",
 });
 OutlineInverted.parameters = {
@@ -56,6 +64,6 @@ OutlineInverted.parameters = {
 
 export const Ghost = Template.bind({});
 Ghost.args = pack({
-  ...Default.args,
+  ...Solid.args,
   variant: "clear",
 });

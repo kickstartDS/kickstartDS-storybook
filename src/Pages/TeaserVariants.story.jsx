@@ -39,7 +39,7 @@ const Page = () => (
         topic="Lorem Ipsum"
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
         link={{
-          fillAnimation: true,
+          fillAnimation: false,
           href: 'https://example.com',
           iconAfter: false,
           iconAnimation: false,
@@ -55,7 +55,7 @@ const Page = () => (
         topic="Accessibility baked in"
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
         link={{
-          fillAnimation: true,
+          fillAnimation: false,
           href: 'https://example.com',
           iconAfter: false,
           iconAnimation: false,
@@ -71,7 +71,7 @@ const Page = () => (
         topic="Powerful theming tools"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
         link={{
-          fillAnimation: true,
+          fillAnimation: false,
           href: 'https://example.com',
           iconAfter: false,
           iconAnimation: false,
