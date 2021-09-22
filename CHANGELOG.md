@@ -1,3 +1,15 @@
+# v1.5.6 (Wed Sep 22 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add button hover ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.5.5 (Tue Sep 14 2021)
 
 #### 🐛 Bug Fix
