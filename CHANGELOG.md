@@ -1,3 +1,15 @@
+# v1.5.7 (Fri Sep 24 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: design adjustments ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.5.6 (Wed Sep 22 2021)
 
 #### ⚠️ Pushed to `master`
