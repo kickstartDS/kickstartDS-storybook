@@ -1,18 +1,15 @@
 @use './visual-tokens';
 
-.c-visual {
-  &__link {
-    filter: drop-shadow(5px 5px 0px rgba(236,255,0));
-  }
-}
-
 .c-visual__box.c-visual__box--transparent {
   overflow: unset;
 }
 
 .c-visual--full {
-  height: calc(100vh - var(--g-header-height) - 30vh);
   
+  @media(min-width:40em) {
+    height: calc(100vh - var(--g-header-height) - 30vh);
+  }
+
   @media(min-width:1920px) {
     height: calc(100vh - var(--g-header-height) - 50vh);
   }

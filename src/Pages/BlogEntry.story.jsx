@@ -26,19 +26,19 @@ const Page = () => (
             </div>
           </div>
           <header class="c-headline c-headline--align-left c-headline--space-after-none">
-            <h1 class="">
+            <h1 class="c-headline__headline">
               Why we created kickstartDS</h1>
             <p class="c-headline__subheadline">
               published by: Daniel Ley</p>
           </header>
           <div class="c-post-head__image c-post-head__image--undefined">
-            <noscript>
-              <img src="/static/fdf05ba44fd43a30f6bb53e907fdb3a3/why-kickstart-Design-System.svg" />
-            </noscript>
+            
+              <img src="/img/why-kickstart-Design-System.svg" />
+            
           </div>
         </div>
         <div class="c-html c-rich-text">
-          <p><em>#tldr:</em> We want to support you to create one library of components, patterns and tokens to be used in any frontend you need to give your digital touch points a consistent interface. Even shorter: we want to <strong>kickstart your design system</strong> implementation. 😎</p>
+          <p class="has-large-font-size"><em>#tldr:</em> We want to support you to create one library of components, patterns and tokens to be used in any frontend you need to give your digital touch points a consistent interface. Even shorter: we want to <strong>kickstart your design system</strong> implementation. 😎</p>
           <p class="has-large-font-size"><strong>Now you might wonder if or why you need that.</strong></p>          <p>Let me provide some background. Jonas, founder of kickstartDS, and I have been working in the digital business all our professional life. We both have made our careers acting in different leading roles during the last two decades. Jonas from a development and tech perspective and I am from UX designers point of view. We both designed or coded patterns for the same things over and over again. Surely, we did rely on different frameworks in the past years. But never ever they met all our needs. </p>
           <p>In the last years, when I was working for a huge software corporation I was involved in their design system initiative to help creating a unified library at scale, serving hundreds of interfaces. There was quite an energetic and enthusiastic team working on it and after a while we could proudly say that it was adapted globally. In the years before, any other attempt building a pattern library or design system language failed awfully. Mostly because of technical reasons, silo-thinking and poor possibilities to adapt into existing environments. And I heard about the same problems from a lot of people from my network.</p>
           <p>Jonas on the other hand developed tons of websites and online shops served equally by dozens of different backend solutions, as you can imagine. In most cases the frontend parts were not quite re-usable for the next job. That already made him and the Ruhmesmeile team develop a pattern library which filled that gap being the base for new frontend projects. </p>

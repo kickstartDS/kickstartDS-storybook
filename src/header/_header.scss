@@ -64,15 +64,15 @@
     }
 
     img {
-      height: 2.2em;
+      height: 1.7em;
       width: auto;
       
       @include breakpoint.media("≥s") {
-        height: 3em;
+        height: 2.5em;
       }
       
       @media (min-width: 90em) { 
-        height: 4em;
+        height: 3.25em;
       }
     }
   }

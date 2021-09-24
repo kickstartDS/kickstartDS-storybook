@@ -102,7 +102,8 @@ const Page = () => (
       gutter="default"
       headline={{
         align: "center",
-        content: "Features",
+        content: "Frontend first approach",
+        subheadline:"... a holistic view of components; unifying content creators, developers, designers and stakeholders under one roof",
         level: "h2",
         pageHeader: false,
         spaceAfter: "none",
@@ -111,21 +112,27 @@ const Page = () => (
       spaceAfter="small"
       spaceBefore="default"
       width="default"
-      background="accent"
+      gutter="large"
+      background="dark"
     >
       <ContentBox
-        image="img/icons/Button.svg"
-        topic="Use with any framework"
-        text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
+        image="img/design-system_framework_agnostic.svg"
+        topic="Rely on any framework you want"
+        text="Built for maximum performance. The kickstartDS components runtime, design token system and CSS framework is as lightweight as you need it to be."
       />
       <ContentBox
-        image="img/icons/Storytelling.svg"
-        topic="Accessibility baked in"
+        image="img/design-system_UX-candy.svg"
+        topic="Quality user experience"
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
       />
       <ContentBox
-        image="img/icons/TextMedia.svg"
-        topic="Powerful theming tools"
+        image="img/design-system_performant.svg"
+        topic="Best in class performance"
+        text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
+      />
+      <ContentBox
+        image="img/design-system_A11Y_accessibility.svg"
+        topic="Accessible by default"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
       />
     </Section>
