@@ -1,3 +1,15 @@
+# v1.6.0 (Sun Sep 26 2021)
+
+#### 🚀 Enhancement
+
+- make footer nav configurable [#22](https://github.com/kickstartDS/kickstartDS-storybook/pull/22) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.5.7 (Fri Sep 24 2021)
 
 #### ⚠️ Pushed to `master`
