@@ -17,6 +17,7 @@
     "dist:components": "esbuild src/header/HeaderComponent.jsx src/footer/FooterComponent.jsx src/section/SectionComponent.jsx src/headline/HeadlineComponent.jsx src/icon-sprite/IconSpriteComponent.jsx src/count-up/CountUpComponent.jsx --outdir=dist/components --format=esm --bundle --inject:./utils/react-shim.js --external:react --external:@kickstartds/core --external:@kickstartds/base --external:@kickstartds/content",
     "dist:schema": "yarn schema && node scripts/copySchema.js",
     "dist:images": "cp -r static/img static/patterns static/logo.svg dist/",
+    "dist:favicons": "cp -r static/favicon dist/",
     "prepublishOnly": "rm -rf dist && mkdir -p dist && run-p dist:*",
     "sass": "sass --load-path=node_modules src/index.scss static/index.css",
     "sass-manager": "sass --load-path=node_modules .storybook/manager.scss static/manager.css",
