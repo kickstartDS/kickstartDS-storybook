@@ -1,3 +1,15 @@
+# v1.6.1 (Sun Sep 26 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feature: bundle favicons into release ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.6.0 (Sun Sep 26 2021)
 
 #### 🚀 Enhancement
