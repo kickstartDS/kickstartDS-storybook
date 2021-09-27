@@ -1,3 +1,18 @@
+# v1.6.2 (Mon Sep 27 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: design adjustments ([@fleven-kds](https://github.com/fleven-kds))
+- fix: fix footer markup ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- [@fleven-kds](https://github.com/fleven-kds)
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.6.1 (Sun Sep 26 2021)
 
 #### ⚠️ Pushed to `master`
