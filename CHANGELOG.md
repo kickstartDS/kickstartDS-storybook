@@ -1,3 +1,16 @@
+# v1.6.4 (Mon Sep 27 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: fix component token parser ([@lmestel](https://github.com/lmestel))
+- build: update kickstartDS ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.6.3 (Mon Sep 27 2021)
 
 #### ⚠️ Pushed to `master`
