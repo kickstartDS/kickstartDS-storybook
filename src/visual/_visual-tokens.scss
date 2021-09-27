@@ -5,7 +5,12 @@
 
   @include breakpoint.media("≥s") {
     --c-visual--min-height: 60vh;
+    
+    @media (orientation: portrait) {
+      --c-visual--min-height: 35rem;
+    }
   }
+
 
   @include breakpoint.media("<s") {
     &--full {

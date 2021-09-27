@@ -1280,6 +1280,11 @@
     --c-visual--min-height: 60vh;
   }
 }
+@media (min-width: 40em) and (orientation: portrait) {
+  .c-visual {
+    --c-visual--min-height: 35rem;
+  }
+}
 @media (max-width: 39.99em) {
   .c-visual--full {
     height: unset;
