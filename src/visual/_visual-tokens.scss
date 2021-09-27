@@ -1,32 +1,29 @@
-@use '@kickstartds/core/source/core/breakpoint';
-
 .c-visual {
   --c-visual--min-height: 35vh;
 
-  @include breakpoint.media("≥s") {
+  @media (min-width: 40em) {
     --c-visual--min-height: 60vh;
-    
+
     @media (orientation: portrait) {
       --c-visual--min-height: 35rem;
     }
   }
 
-
-  @include breakpoint.media("<s") {
+  @media (max-width: 39.99em) {
     &--full {
-        height: unset;
-      }
+      height: unset;
     }
+  }
 
   &__box {
-    @media (min-width: 40em) { 
-        --c-visual_box--max-width: 70%;
+    @media (min-width: 40em) {
+      --c-visual_box--max-width: 70%;
     }
-    @media (min-width: 80em) { 
+    @media (min-width: 80em) {
       --c-visual_box--max-width: 60%;
     }
-    
-    @media (min-width: 1920px) { 
+
+    @media (min-width: 1920px) {
       --c-visual_box--max-width: 50%;
     }
 
