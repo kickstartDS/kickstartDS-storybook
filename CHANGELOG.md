@@ -1,3 +1,15 @@
+# v1.6.5 (Mon Sep 27 2021)
+
+#### ⚠️ Pushed to `master`
+
+- docs: add context provider to html plugin ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.6.4 (Mon Sep 27 2021)
 
 #### ⚠️ Pushed to `master`
