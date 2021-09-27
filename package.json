@@ -51,7 +51,7 @@
     "@storybook/addons": "^6.3.8",
     "@storybook/react": "^6.3.8",
     "@storybook/theming": "^6.3.8",
-    "@whitespace/storybook-addon-html": "git+https://github.com/lmestel/storybook-addon-html.git#v5.2.0",
+    "@whitespace/storybook-addon-html": "git+https://github.com/lmestel/storybook-addon-html.git#v5.3.0",
     "auto": "^10.29.3",
     "babel-loader": "^8.2.2",
     "chokidar-cli": "^3.0.0",

@@ -22,6 +22,14 @@ const tokenFiles = tokenContext
 const myActions = actions('radio');
 window.rm.radio.on('*', myActions.radio);
 
+const providerDecorator = (Story, context) => (
+  <HeadlineProvider>
+    <SectionProvider>
+      <Story {...context} />
+    </SectionProvider>
+  </HeadlineProvider>
+);
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -34,6 +42,7 @@ export const parameters = {
     prettier: {
       tabWidth: 4,
     },
+    decorator: providerDecorator,
   },
   options: {
     storySort(a, b) {
@@ -53,14 +62,11 @@ export const parameters = {
 
 export const decorators = [
   unpackDecorator,
+  providerDecorator,
   (Story) => (
     <>
-    <IconSprite />
-    <HeadlineProvider>
-      <SectionProvider>
-        <Story />
-      </SectionProvider>
-    </HeadlineProvider>
+      <IconSprite />
+      <Story />
     </>
   ),
 ];
