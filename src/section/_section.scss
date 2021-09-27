@@ -7,6 +7,18 @@
   --l-section--corner-bottom-right-height: var(--spacing-xxl);
 }
 
+.l-section--dark {
+  --c-rich-text--color: var(--section-dark-color);
+  --g-headline--color: var(--section-dark-color);
+
+  --color-info: #007eb4;
+  --color-success: #008300;
+  --color-warning: #b85b00;
+  --color-error: #cc0000;
+}
+
+
+
 .l-section {
   margin: auto;
 

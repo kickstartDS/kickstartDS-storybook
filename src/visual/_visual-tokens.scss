@@ -1,16 +1,34 @@
-@media (min-width: 64em) {
-  .c-visual {
-      --c-visual--min-height: 24rem;
-  }
-}
-@media (min-width: 90em) {
-  .c-visual {
-      --c-visual--min-height: 32rem;
-  }
-}
+@use '@kickstartds/core/source/core/breakpoint';
 
-.c-visual__box--transparent {
-  --c-visual_box--background: transparent;
-  --c-visual_headline--color: var(--color-black);
-  --c-visual_box--color: var(--c-rich-text--color);
+.c-visual {
+  --c-visual--min-height: 35vh;
+
+  @include breakpoint.media("≥s") {
+    --c-visual--min-height: 60vh;
+  }
+
+  @include breakpoint.media("<s") {
+    &--full {
+        height: unset;
+      }
+    }
+
+  &__box {
+    @media (min-width: 40em) { 
+        --c-visual_box--max-width: 70%;
+    }
+    @media (min-width: 80em) { 
+      --c-visual_box--max-width: 60%;
+    }
+    
+    @media (min-width: 1920px) { 
+      --c-visual_box--max-width: 50%;
+    }
+
+    &--transparent {
+      --c-visual_box--background: transparent;
+      --c-visual_headline--color: var(--color-black);
+      --c-visual_box--color: var(--c-rich-text--color);
+    }
+  }
 }

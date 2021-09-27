@@ -1,20 +1,9 @@
 @use './visual-tokens';
 @use '@kickstartds/core/source/core/breakpoint';
 
-.c-visual {
-  --c-visual--min-height: 35vh;
-
-  @include breakpoint.media("≥s") {
-    --c-visual--min-height: 60vh;
-  }
-
-  @include breakpoint.media("<s") {
-  &--full {
-      height: unset;
-    }
-  }
+.c-visual .c-headline__subheadline {
+  --c-headline_subheadline--color: var(--color-primary);
 }
-
 
 .c-visual__box.c-visual__box--transparent {
   overflow: unset;

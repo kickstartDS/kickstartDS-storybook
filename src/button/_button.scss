@@ -1,5 +1,15 @@
 @use './button-tokens';
 
+
+.c-button.c-button--small {
+  --c-button--padding: var(--spacing-xs) var(--spacing-s);
+}
+
+.c-button.c-button--outline, .c-button.c-button--outline-inverted {
+  --c-button--border-width: 2px;
+}
+
+
 .c-button--main.c-button {
   clip-path: polygon(0 0, calc(100% - 35px) 0, 100% 30px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 15px 100%, 0 50%);
   transition: 150ms all;
