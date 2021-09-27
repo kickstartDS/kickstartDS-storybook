@@ -1,8 +1,15 @@
 @use '@kickstartds/core/source/core/breakpoint';
 
 :root {
+  --g-logo-height: 1.7rem;
+  --g-header-height: calc(var(--g-logo-height) + calc(var(--spacing-m) * 2));
+  
   @include breakpoint.media("≥s") {
-    --g-header-height: 3.5rem;
+    --g-logo-height: 2.5rem;
+  }
+  
+  @media (min-width: 90em) { 
+    --g-logo-height: 3rem;
   }
 }
 
@@ -35,45 +42,38 @@
     }
   }
 
-  &__inner {
-    display: flex;
-    max-width: var(--g-content-width-max);
-    margin: auto;
-    padding: 0.5rem 0;
+  display: flex;
+  max-width: var(--g-content-width-max);
+  margin: auto;
+  padding:  var(--spacing-m) var(--g-content-padding);
 
-    @include breakpoint.media("≥s") {
-      padding: 0.5rem var(--g-content-padding);
-    }
-
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-
-      @include breakpoint.media("≥s") {
-        padding: 1.5rem var(--g-content-padding);
-      }
-  }
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 
   &__logo {
     --g-link--background-hover: none;
 
-    padding: 0 var(--g-content-padding);
 
     @include breakpoint.media("≥s") {
       padding: 0;
     }
 
     img {
-      height: 1.7em;
+      height: var(--g-logo-height);
       width: auto;
       
       @include breakpoint.media("≥s") {
-        height: 2.5em;
+        height: 2.5rem;
       }
       
       @media (min-width: 90em) { 
-        height: 3.25em;
+        height: 3rem;
       }
     }
+  }
+
+  &__item {
+    list-style: none;
   }
 }

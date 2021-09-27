@@ -1,17 +1,30 @@
 @use './visual-tokens';
+@use '@kickstartds/core/source/core/breakpoint';
+
+.c-visual {
+  --c-visual--min-height: 35vh;
+
+  @include breakpoint.media("≥s") {
+    --c-visual--min-height: 60vh;
+  }
+
+  @include breakpoint.media("<s") {
+  &--full {
+      height: unset;
+    }
+  }
+}
+
 
 .c-visual__box.c-visual__box--transparent {
   overflow: unset;
 }
 
-.c-visual--full {
-  
-  @media(min-width:40em) {
-    height: calc(100vh - var(--g-header-height) - 30vh);
-  }
-
-  @media(min-width:1920px) {
-    height: calc(100vh - var(--g-header-height) - 50vh);
+.main-header-spacer {
+  + .c-visual--full, + .l-section .c-visual--full {
+    @include breakpoint.media("≥s") {
+      height: calc(100vh - var(--g-header-height));
+    }
   }
 }
 

@@ -1,0 +1,42 @@
+<svg width="1440" height="492" viewBox="0 0 1440 492" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path opacity="0.2" d="M51 378L43.5 366.5L51 325.5L91.5 294.5L204.5 303V353L161.5 386.5L51 378Z" fill="#065669" fill-opacity="0.2"/>
+<path d="M0 230V165.5H93.5L132 216.5L112.5 300.5L75.5 327L0 230Z" fill="#ECFF00" fill-opacity="0.4"/>
+<path d="M1284.25 32.2505H938.25V114.25L1056.75 232.75H1331.25V79.2505L1284.25 32.2505Z" fill="#ECFF00" fill-opacity="0.2"/>
+<ellipse opacity="0.2" cx="1156.5" cy="237.5" rx="240.5" ry="237.5" fill="url(#paint0_radial)"/>
+<path d="M1323 110H1333L1380.5 62.5V16.5L1368 4L1305.5 66.5V92.5L1323 110Z" fill="#06708A"/>
+<path d="M1301.5 112H1246.5L1209 73L1224 56H1246.5L1310.5 103L1301.5 112Z" fill="#06708A"/>
+<path opacity="0.2" d="M788.75 302.75L749.25 259.75L749.25 114.75L858.75 -0.750204H972.25L988.75 14.7498L988.75 96.2557L788.75 302.75Z" fill="#065669" fill-opacity="0.4"/>
+<path d="M1349.25 117.25H1289.75L1217.75 189.75V324.75L1246.25 353.25H1361.25L1389.75 324.75V157.75L1349.25 117.25Z" fill="#ECFF00"/>
+<circle cx="1245.25" cy="299.25" r="3" fill="white"/>
+<circle cx="1302.75" cy="334.75" r="2.5" fill="white"/>
+<circle cx="1312.25" cy="256.25" r="2" fill="white"/>
+<circle cx="1276.25" cy="233.25" r="3" fill="white"/>
+<circle cx="1311.25" cy="302.25" r="2" fill="white"/>
+<circle cx="1290.25" cy="275.25" r="2" fill="white"/>
+<circle cx="1316.25" cy="297.25" r="2" fill="white"/>
+<circle cx="1268.25" cy="286.25" r="2" fill="white"/>
+<circle cx="1263.25" cy="290.25" r="2" fill="white"/>
+<circle cx="1251.25" cy="278.25" r="2" fill="white"/>
+<path d="M1265.25 131.25L1213.25 183.25V325.75L1252.25 364.25L1342.75 377.75L1376.25 345.25L1383.75 160.75L1349.75 127.25L1265.25 131.25Z" stroke="#065669" stroke-opacity="0.4" stroke-width="2"/>
+<circle cx="1260.25" cy="257.25" r="6" fill="white"/>
+<circle cx="1254.25" cy="221.25" r="2" fill="white"/>
+<circle cx="1252.25" cy="318.25" r="5" fill="white"/>
+<circle cx="1282.25" cy="296.25" r="3" fill="white"/>
+<circle cx="1246.25" cy="239.25" r="3" fill="white"/>
+<circle cx="1237.25" cy="280.25" r="3" fill="white"/>
+<circle cx="1273.75" cy="324.75" r="2.5" fill="white"/>
+<circle cx="1306.25" cy="277.25" r="3" fill="white"/>
+<circle cx="1309.25" cy="266.25" r="3" fill="white"/>
+<circle cx="1299.25" cy="259.25" r="4" fill="white"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1156.5 237.5) rotate(90) scale(237.5 240.5)">
+<stop offset="0.333333" stop-color="#ECFF00"/>
+<stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0">
+<rect width="1440" height="492" fill="white"/>
+</clipPath>
+</defs>
+</svg>

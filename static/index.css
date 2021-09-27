@@ -310,12 +310,12 @@
     --c-visual_box--max-width: 70%;
   }
 }
-@media (min-width: 60em) {
+@media (min-width: 80em) {
   .c-visual__box {
     --c-visual_box--max-width: 60%;
   }
 }
-@media (min-width: 80em) {
+@media (min-width: 1920px) {
   .c-visual__box {
     --c-visual_box--max-width: 50%;
   }
@@ -373,13 +373,6 @@
   --c-button--color-hover: var(--color-primary);
   --c-button--background-color: var(--color-secondary);
   --c-button--background-color-hover: var(--color-secondary-darker-1);
-}
-
-.c-button-wrap {
-  filter: drop-shadow(5px 5px 0px #ecff00);
-  display: inline-block;
-  width: fit-content;
-  margin: auto;
 }
 
 .c-button--main.c-button {
@@ -893,12 +886,30 @@
   background: 0;
 }
 
+:root {
+  --g-logo-height: 1.7rem;
+  --g-header-height: calc(var(--g-logo-height) + calc(var(--spacing-m) * 2));
+}
 @media (min-width: 40em) {
   :root {
-    --g-header-height: 3.5rem;
+    --g-logo-height: 2.5rem;
+  }
+}
+@media (min-width: 90em) {
+  :root {
+    --g-logo-height: 3rem;
   }
 }
 
+.kds-header {
+  display: flex;
+  max-width: var(--g-content-width-max);
+  margin: auto;
+  padding: var(--spacing-m) var(--g-content-padding);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .kds-header a {
   --g-link--text-decoration: none;
   --g-link--background-hover: none;
@@ -923,28 +934,8 @@
     display: none;
   }
 }
-.kds-header__inner {
-  display: flex;
-  max-width: var(--g-content-width-max);
-  margin: auto;
-  padding: 0.5rem 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (min-width: 40em) {
-  .kds-header__inner {
-    padding: 0.5rem var(--g-content-padding);
-  }
-}
-@media (min-width: 40em) {
-  .kds-header__inner {
-    padding: 1.5rem var(--g-content-padding);
-  }
-}
 .kds-header__logo {
   --g-link--background-hover: none;
-  padding: 0 var(--g-content-padding);
 }
 @media (min-width: 40em) {
   .kds-header__logo {
@@ -952,18 +943,21 @@
   }
 }
 .kds-header__logo img {
-  height: 1.7em;
+  height: var(--g-logo-height);
   width: auto;
 }
 @media (min-width: 40em) {
   .kds-header__logo img {
-    height: 2.5em;
+    height: 2.5rem;
   }
 }
 @media (min-width: 90em) {
   .kds-header__logo img {
-    height: 3.25em;
+    height: 3rem;
   }
+}
+.kds-header__item {
+  list-style: none;
 }
 
 .c-headline__subheadline {
@@ -977,43 +971,6 @@
 
 .l-section--dark .c-headline {
   --c-headline--color: var(--color-secondary);
-}
-
-.kds-nav-main {
-  width: auto;
-  white-space: nowrap;
-  z-index: 2;
-}
-.kds-nav-main a {
-  --g-link--text-decoration: none;
-  --g-link--background-hover: none;
-  display: block;
-}
-.kds-nav-main ul,
-.kds-nav-main dl {
-  list-style: none;
-}
-.kds-nav-main dd {
-  margin-left: 0;
-}
-@media (min-width: 40em) {
-  .kds-nav-main {
-    display: block;
-  }
-}
-.kds-nav-main__list {
-  padding: 0 var(--g-content-padding) 0 0;
-}
-.kds-nav-main__item {
-  position: relative;
-}
-.kds-nav-main__link {
-  display: inline-flex;
-  align-items: center;
-  font: var(--font-ui-xs);
-  font-weight: var(--font-weight-bold);
-  width: auto;
-  justify-content: space-between;
 }
 
 :root {
@@ -1047,6 +1004,16 @@
 }
 .l-section--dark .c-rich-text a:hover {
   background: var(--color-secondary-alpha-1);
+}
+
+.c-logo-tiles img {
+  height: 100%;
+}
+@media (min-width: 60em) {
+  .c-logo-tiles img {
+    max-height: 90%;
+    max-width: 90%;
+  }
 }
 
 .l-section--accent {
@@ -1336,18 +1303,27 @@
   --c-visual_box--color: var(--c-rich-text--color);
 }
 
+.c-visual {
+  --c-visual--min-height: 35vh;
+}
+@media (min-width: 40em) {
+  .c-visual {
+    --c-visual--min-height: 60vh;
+  }
+}
+@media (max-width: 39.99em) {
+  .c-visual--full {
+    height: unset;
+  }
+}
+
 .c-visual__box.c-visual__box--transparent {
   overflow: unset;
 }
 
 @media (min-width: 40em) {
-  .c-visual--full {
-    height: calc(100vh - var(--g-header-height) - 30vh);
-  }
-}
-@media (min-width: 1920px) {
-  .c-visual--full {
-    height: calc(100vh - var(--g-header-height) - 50vh);
+  .main-header-spacer + .c-visual--full, .main-header-spacer + .l-section .c-visual--full {
+    height: calc(100vh - var(--g-header-height));
   }
 }
 
@@ -1386,6 +1362,10 @@
 
 iframe#launcher {
   filter: drop-shadow(3px 0px 0px rgba(255, 255, 255, 0.15)) drop-shadow(-3px 0px 0px rgba(255, 255, 255, 0.15)) drop-shadow(0px 3px 0px rgba(255, 255, 255, 0.15)) drop-shadow(0px -3px 0px rgba(255, 255, 255, 0.15));
+}
+
+main {
+  outline: none !important;
 }
 
 .c-post-head {

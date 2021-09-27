@@ -13,6 +13,7 @@ import {
   Contact,
   Quote,
   LogoTiles,
+  CountUp,
 } from "@kickstartds/content";
 import FooterStories from '../footer/Footer.stories';
 
@@ -26,14 +27,14 @@ import { Footer } from "../footer/FooterComponent";
 const Page = () => (
   <>
     <Header />
-    <Section width="full" spaceBefore="none" spaceAfter="none">
+    <Section width="full" spaceBefore="none" spaceAfter="small">
       <Visual
         box={{
           background: "transparent",
           enabled: true,
           headline: {
             content:
-              "Building a design system for all your digital touch points feels now like squeezing a lemon",
+              "kickstartDS is the frontend first framework, a comprehensive component and pattern library",
           },
           horizontal: "left",
           indent: false,
@@ -54,14 +55,16 @@ const Page = () => (
             variant: "solid",
           },
           text:
-            "[kickstartDS](http://example.com/) is the comprehensive pattern library and **design system**, that **helps** web development **teams to create** consistent and brand compliant web **frontends super efficiently**.",
+            `**helping** web development **teams to create** consistent and brand compliant web **frontends** super **efficiently**.\
+            \
+            So, building your **design system** for all your digital touch points feels now easy like squeeeeezing a lemon.`,
           vertical: "center",
         }}
-        height="fullScreen"
+        height="default"
         media={{
           image: {
             indent: "none",
-            srcDesktop: "img/visual/visual_lemon.png",
+            srcDesktop: "img/visual/bg-hero-lemon-desktop.svg",
             srcMobile: "img/visual/visual_lemon-m.png",
             srcTablet: "img/visual/visual_lemon.png",
           },
@@ -69,28 +72,110 @@ const Page = () => (
         }}
       />
     </Section>
-    <Section width="wide" spaceBefore="small" spaceAfter="small">
+    <Section
+    background="dark"
+    headline={{
+      align: "center",
+      content: "kickstartDS' full flexibility in numbers",
+      subheadline:"The foundation to scale your design system across all your platforms and website",
+      level: "h2",
+      pageHeader: false,
+      spaceAfter: "none",
+    }}
+    className="l-section--outer-width-wide"
+    pattern="2"
+    width="default"
+    deko
+    spaceAfter="small"
+    spaceBefore="small"
+    >
+      <CountUp
+        graphic="components"
+        icon={[]}
+        link={[
+
+        ]}
+        text="
+      Use our components as **solid building blocks**, adapt and improve them as you need. From quickly adding design tokens to full customization. Utilizing all existing best practices!
+
+      Benefit from **15+ years of frontend experience!**
+      "
+        to={41}
+        topic="Components"
+      />
+      <CountUp
+        graphic="properties"
+        icon={[]}
+        link={[
+
+        ]}
+        text="
+      Every propertys' existence is **rooted in a real-world** decision; solving everyday problems for content creators.
+
+      Quick discovery through Storybooks' rich interface, combined with **kickstartDS** rigorous JSON schema underneath.
+      "
+        to={1255}
+        topic="Properties"
+      />
+      <CountUp
+        graphic="tokens"
+        icon={[]}
+        link={[
+
+        ]}
+        text="
+      Obviously we have **design tokens** – colors, fonts, sizes, iconography.
+
+      Additionally every components has several layers of component tokens, encoding a solid base layer for you to depend upon. And for all the exciting cases: re-use the general tokens for **automatic brand compliance!**
+      "
+        to={695}
+        topic="Tokens"
+      />
+    </Section>
+    <Section
+      width="wide"
+      background="accent"
+
+      headline={{
+        align: "center",
+        content: "Leverage rich integrations with modern web technology, refocus on what really matters!",
+        subheadline:"Out-of-the-box kickstartDS let's you connect your interfaces to:",
+        level: "h2",
+        pageHeader: false,
+        spaceAfter: "none",
+      }}
+    >
       <LogoTiles
         logos={[
           {
             alt: "Shopify",
             src:
-              "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/640px-Shopify_logo_2018.svg.png",
+              "/logos/logo_contentful.svg",
           },
           {
             alt: "Contentful",
             src:
-              "https://d21buns5ku92am.cloudfront.net/41748/images/177922-logo-d8345a-large-1441290673.png",
+              "/logos/logo_gatsby.svg",
           },
           {
             alt: "Gatsby",
             src:
-              "https://timotheebinet.com/static/fa38ab30a9b8abb4a1ff8c0b7fb86cef/00d43/gatsby.png",
+              "/logos/logo_netlify.svg",
           },
           {
             alt: "Bigcommerce",
             src:
-              "https://www-cdn.bigcommerce.com/assets/mediakit/logo-plain.png",
+              "/logos/logo_nextjs.svg",
+          },
+          {
+            alt: "Gatsby",
+            src:
+              "/logos/logo_react.svg",
+          },
+          {
+            alt: "Bigcommerce",
+            src:
+              "/logos/logo_wordpress.svg",
           },
         ]}
       />

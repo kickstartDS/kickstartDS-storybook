@@ -1,0 +1,12 @@
+@use '@kickstartds/core/source/core/breakpoint';
+
+.c-logo-tiles {
+  img {
+    height: 100%;
+
+    @include breakpoint.media("≥m") {
+      max-height: 90%;
+      max-width: 90%;
+    }
+  }
+}

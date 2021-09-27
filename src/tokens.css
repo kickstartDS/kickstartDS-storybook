@@ -310,13 +310,14 @@
   }
 }
 
-@media (min-width: 60em) { 
+
+@media (min-width: 80em) { 
   .c-visual__box {
     --c-visual_box--max-width: 60%;
   }
 }
 
-@media (min-width: 80em) { 
+@media (min-width: 1920px) { 
   .c-visual__box {
     --c-visual_box--max-width: 50%;
   }
