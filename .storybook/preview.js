@@ -10,6 +10,7 @@ import '../static/index.css';
 import { HeadlineProvider } from '../src/headline/HeadlineComponent';
 import { SectionProvider } from '../src/section/SectionComponent';
 import { IconSprite } from '../src/icon-sprite/IconSpriteComponent';
+import { CountUpProvider } from '../src/count-up/CountUpComponent';
 
 const tokenContext = require.context("!!raw-loader!../src/design-tokens", false, /design-tokens\.css$/);
 const tokenFiles = tokenContext
@@ -25,7 +26,9 @@ window.rm.radio.on('*', myActions.radio);
 const providerDecorator = (Story, context) => (
   <HeadlineProvider>
     <SectionProvider>
-      <Story {...context} />
+      <CountUpProvider>
+        <Story {...context} />
+      </CountUpProvider>
     </SectionProvider>
   </HeadlineProvider>
 );

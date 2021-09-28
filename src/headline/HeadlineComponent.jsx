@@ -4,7 +4,7 @@ import {
 import classnames from "classnames";
 import { defaultRenderFn } from '@kickstartds/core/lib/core';
 
-export const Headline = ({
+const Headline = ({
   content,
   level = 'h2',
   styleAs = 'none',
