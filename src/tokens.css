@@ -1,5 +1,6 @@
 :root {
   font-size: 20px;
+
   --color-primary-r: 6;
   --color-primary-g: 86;
   --color-primary-b: 106;
@@ -21,6 +22,7 @@
   --color-primary-lighter-6: #eceff3;
   --color-primary-darker-1: #012F3A;
   --color-primary-darker-2: #03303B;
+
   --color-secondary: #ecff00;
   --color-secondary-alpha-1: rgba(236, 255, 0, 0.1);
   --color-secondary-alpha-2: rgba(236, 255, 0, 0.2);
@@ -35,6 +37,7 @@
   --color-secondary-lighter-2: #fdffe6;
   --color-secondary-darker-1: #e0f000;
   --color-secondary-darker-2: #cddb00;
+  
   --color-white-r: 255;
   --color-white-g: 255;
   --color-white-b: 255;
@@ -48,6 +51,7 @@
   --color-white-alpha-7: hsla(0, 0%, 100%, 0.7);
   --color-white-alpha-8: hsla(0, 0%, 100%, 0.8);
   --color-white-alpha-9: hsla(0, 0%, 100%, 0.95);
+  
   --color-black-r: 5;
   --color-black-g: 5;
   --color-black-b: 5;
@@ -61,6 +65,7 @@
   --color-black-alpha-7: rgba(5, 5, 5, 0.7);
   --color-black-alpha-8: rgba(5, 5, 5, 0.8);
   --color-black-alpha-9: rgba(5, 5, 5, 0.9);
+  
   --color-grey-1: #e6e6e6;
   --color-grey-2: #cdcdcd;
   --color-grey-3: #b4b4b4;
@@ -70,10 +75,11 @@
   --color-grey-7: #444f52;
   --color-grey-8: #373737;
   --color-grey-9: #1e1e1e;
-  --color-info: #0294c1;
-  --color-success: #00f218;
-  --color-warning: #ff7d00;
-  --color-error: #ff009d;
+  
+  --color-info: #007eb4;
+  --color-success: #008300;
+  --color-warning: #b85b00;
+  --color-error: #cc0000;
 
   --spacing-xxs: 0.118rem;
   --spacing-xs: 0.25rem;
@@ -87,12 +93,15 @@
   --font-weight-regular: 400;
   --font-weight-semi-bold: 500;
   --font-weight-bold: 700;
+
   --font-family-display: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   --font-family-copy: var(--font-family-display);
   --font-family-ui: var(--font-family-display);
+
   --line-height-factor-display: 1;
   --line-height-factor-copy: 1;
   --line-height-factor-ui: 1;
+
   --font-size-xs: 0.6rem;   /* Copy XS */
   --font-size-s: 0.8rem;   /* Copy S */
   --font-size-m: 0.9rem;    /* Copy, Subheadline */
@@ -105,6 +114,7 @@
   --line-height-l: 1.5rem;
   --line-height-xl: 2rem;
   --line-height-xxl: 2.25rem;
+
   --font-display-xs: var(--font-size-xs) /
     calc(var(--line-height-xs) * var(--line-height-factor-display))
     var(--font-family-display);
@@ -159,6 +169,7 @@
   --font-ui-xxl: var(--font-size-xxl) /
     calc(var(--line-height-xxl) * var(--line-height-factor-ui))
     var(--font-family-ui);
+    
   --g-headline--color: var(--color-black);
   --g-link--color: var(--color-primary);
   --g-link--color-hover: var(--color-primary);
