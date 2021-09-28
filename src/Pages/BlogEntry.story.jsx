@@ -2,12 +2,15 @@ import {
   PostHead,
 } from "@kickstartds/blog";
 
+import { Header } from "../header/HeaderComponent";
+
 export default {
   title: "Blog Entry",
 };
 
 const Page = () => (
   <>
+  <Header />
     <div class="l-section l-section--space-before-small">
       <div class="l-section__container l-section__container--narrow l-section__container--list">
       <PostHead
