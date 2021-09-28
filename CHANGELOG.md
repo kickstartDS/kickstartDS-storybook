@@ -1,3 +1,15 @@
+# v1.6.10 (Tue Sep 28 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: remove hotjar integration in storybook ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.6.9 (Tue Sep 28 2021)
 
 #### ⚠️ Pushed to `master`
