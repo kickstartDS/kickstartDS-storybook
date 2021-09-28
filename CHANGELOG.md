@@ -1,3 +1,15 @@
+# v1.6.8 (Tue Sep 28 2021)
+
+#### 🐛 Bug Fix
+
+- exclude deps from bundle [#26](https://github.com/kickstartDS/kickstartDS-storybook/pull/26) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.6.7 (Tue Sep 28 2021)
 
 #### ⚠️ Pushed to `master`
