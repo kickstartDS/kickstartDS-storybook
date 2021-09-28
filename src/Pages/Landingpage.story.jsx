@@ -35,11 +35,9 @@ const Page = () => (
           headline: {
             content:
               "kickstartDS is the frontend first framework, a comprehensive component and pattern library",
-            subheadline:
-              "kickstartDS is the frontend first framework, a comprehensive component and pattern library",
           },
           horizontal: "left",
-          indent: false,
+          indent: true,
           link: {
             className: "c-button--main",
             enabled: true,

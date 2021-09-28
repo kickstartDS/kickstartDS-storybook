@@ -1,3 +1,7 @@
+import {
+  PostHead,
+} from "@kickstartds/blog";
+
 export default {
   title: "Blog Entry",
 };
@@ -6,37 +10,25 @@ const Page = () => (
   <>
     <div class="l-section l-section--space-before-small">
       <div class="l-section__container l-section__container--narrow l-section__container--list">
-        <div class="c-post-head">
-          <div class="c-post-head__meta">
-            <time datetime="2021-09-01" class="c-post-head__date">
-              01.09.2021</time>
-            <div class="tag-label-container">
-              <div>
-                <div class="c-tag-label c-tag-label--s">
-                  <span class="c-tag-label__content">
-                    About kickstartDS</span>
-                </div>
-              </div>
-              <div>
-                <div class="c-tag-label c-tag-label--s">
-                  <span class="c-tag-label__content">
-                    Background</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <header class="c-headline c-headline--align-left c-headline--space-after-none">
-            <h1 class="c-headline__headline">
-              Why we created kickstartDS</h1>
-            <p class="c-headline__subheadline">
-              published by: Daniel Ley</p>
-          </header>
-          <div class="c-post-head__image c-post-head__image--undefined">
-            
-              <img src="/img/why-kickstart-Design-System.svg" />
-            
-          </div>
-        </div>
+      <PostHead
+        date="2021-09-01"
+        categories={[
+          {
+            label:"About kickstartDS",
+          },
+          {
+            label:"Background",
+          }
+        ]}
+        headline={{
+          content: "Why we are creating kickstartDS",
+          subheadline: "published by: Daniel Ley",
+          level: "h1",
+          pageHeader: false,
+          spaceAfter: "none",
+        }}
+
+      />
         <div class="c-html c-rich-text">
           <p class="has-large-font-size"><em>#tldr:</em> We want to support you to create one library of components, patterns and tokens to be used in any frontend you need to give your digital touch points a consistent interface. Even shorter: we want to <strong>kickstart your design system</strong> implementation. 😎</p>
           <p class="has-large-font-size"><strong>Now you might wonder if or why you need that.</strong></p>          <p>Let me provide some background. Jonas, founder of kickstartDS, and I have been working in the digital business all our professional life. We both have made our careers acting in different leading roles during the last two decades. Jonas from a development and tech perspective and I am from UX designers point of view. We both designed or coded patterns for the same things over and over again. Surely, we did rely on different frameworks in the past years. But never ever they met all our needs. </p>
@@ -56,7 +48,9 @@ const Page = () => (
           <p>Therefore we need your feedback and support!  Use this blog, our <a rel="noreferrer noopener" href="http://www.kickstartds.com" target="_blank">website</a> or grow into our <a rel="noreferrer noopener" href="https://discord.gg/mwKzD5gejY" target="_blank">discord community </a>to start the conversation. We are eager to know what you think, take your wishes or to discuss anything else. </p>
           <p>Thank you! 🙏🏼 </p>
           <p></p>
-        </div></div></div>
+        </div>
+      </div>
+    </div>
   </>
 );
 
