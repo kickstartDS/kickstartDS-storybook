@@ -1,3 +1,16 @@
+# v1.6.7 (Tue Sep 28 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: format tokens ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.6.6 (Tue Sep 28 2021)
 
 #### ⚠️ Pushed to `master`
