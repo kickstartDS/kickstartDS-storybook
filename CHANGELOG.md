@@ -1,3 +1,15 @@
+# v1.6.9 (Tue Sep 28 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: fix key in footer markup ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.6.8 (Tue Sep 28 2021)
 
 #### 🐛 Bug Fix
