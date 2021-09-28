@@ -13,9 +13,9 @@ export const Footer = ({ nav }) => (
     >
       <nav className="kds-footer-nav">
         {nav.map(({ headline, items }, navKey) => (
-          <div>
+          <div key={navKey}>
             <p className="kds-footer-nav_headline">{headline}</p>
-            <ul className="kds-footer-nav_list" key={navKey}>
+            <ul className="kds-footer-nav_list">
               {items.map(({ label, ...props }, itemKey) => (
                 <li className="kds-footer-nav_list_item" key={itemKey}>
                   <Link {...props} className="kds-footer-nav_list_item_link">
