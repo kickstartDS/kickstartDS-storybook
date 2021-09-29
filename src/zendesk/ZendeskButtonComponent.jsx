@@ -1,4 +1,5 @@
 import { createElement, useEffect } from "react";
+import { inBrowser } from "@kickstartds/core/lib/core";
 import { Button } from "@kickstartds/base/lib/button";
 import { zESettings } from "./zESettings";
 
@@ -44,9 +45,9 @@ const labels = {
 
 export const ZendeskButton = () => {
   const language =
-    window && window.navigator.language.includes("de") ? "de" : "en";
+    inBrowser && window.navigator.language.includes("de") ? "de" : "en";
   useEffect(() => {
-    if (window) {
+    if (inBrowser) {
       window.zESettings = zESettings;
       const rIC = window.requestIdleCallback || setTimeout;
       rIC(waitForZendesk);
