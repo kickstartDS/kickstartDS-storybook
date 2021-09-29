@@ -1,3 +1,15 @@
+# v1.7.6 (Wed Sep 29 2021)
+
+#### 🐛 Bug Fix
+
+- load zendesk after 10s [#28](https://github.com/kickstartDS/kickstartDS-storybook/pull/28) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.7.5 (Wed Sep 29 2021)
 
 #### ⚠️ Pushed to `master`
