@@ -37,7 +37,8 @@ const waitForZendesk = () => {
   return promise;
 };
 
-const onClick = () => waitForZendesk().then((zE) => zE.activate());
+const activate = () => window.zE.activate();
+const onClick = () => waitForZendesk().then((zE) => zE(activate));
 const labels = {
   de: "Mehr erfahren",
   en: "Learn more",
@@ -49,8 +50,7 @@ export const ZendeskButton = () => {
   useEffect(() => {
     if (inBrowser) {
       window.zESettings = zESettings;
-      const rIC = window.requestIdleCallback || setTimeout;
-      rIC(waitForZendesk);
+      setTimeout(waitForZendesk, 10000);
     }
   }, []);
   return createElement(Button, {
