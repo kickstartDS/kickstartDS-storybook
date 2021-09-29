@@ -1,0 +1,13 @@
+#launcher {
+  display: none;
+}
+
+#zendesk-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font: var(--font-ui-xs);
+  font-weight: var(--font-weight-bold);
+  border-radius: 1rem;
+  cursor: pointer;
+}
