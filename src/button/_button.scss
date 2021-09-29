@@ -40,6 +40,10 @@
   position: relative;
   z-index: 1;
   filter: drop-shadow(0.3em 0.3em 0px var(--color-secondary));
+  
+  &.c-button--solid-inverted {
+    filter: drop-shadow(0.3em 0.3em 0px var(--color-black));
+  }
     &::after {
       transition: var(--c-button-transition);
       content: '';

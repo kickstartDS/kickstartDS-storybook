@@ -30,6 +30,9 @@ const Page = () => (
           pageHeader: false,
           spaceAfter: "none",
         }}
+        image={{
+          src:"/img/why-kickstart-Design-System.svg",
+        }}
 
       />
         <div class="c-html c-rich-text">

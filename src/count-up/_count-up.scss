@@ -1,4 +1,4 @@
-@use './count-up-tokens';
+@use "./count-up-tokens";
 
 .kds-count-up {
   position: relative;
@@ -57,149 +57,10 @@
       bottom: -100px;
       width: 20px;
       height: 20px;
-      background: white;
+      background: var(--color-primary-alpha-4);
       border-radius: 50%;
       opacity: 0.75;
       animation: rise 10s infinite ease-in;
-
-      &:nth-child(1) {
-        width: 20px;
-        height: 20px;
-        left: 10%;
-        animation-duration: 8s;
-      }
-      &:nth-child(2) {
-        width: 10px;
-        height: 10px;
-        left: 20%;
-        animation-duration: 5s;
-        animation-delay: 1s;
-      }
-      &:nth-child(3) {
-        width: 25px;
-        height: 25px;
-        left: 35%;
-        animation-duration: 7s;
-        animation-delay: 2s;
-      }
-      &:nth-child(4) {
-        width: 40px;
-        height: 40px;
-        left: 50%;
-        animation-duration: 11s;
-        animation-delay: 0s;
-      }
-      &:nth-child(5) {
-        width: 17px;
-        height: 17px;
-        left: 55%;
-        animation-duration: 6s;
-        animation-delay: 1s;
-      }
-      &:nth-child(6) {
-        width: 22px;
-        height: 22px;
-        left: 65%;
-        animation-duration: 8s;
-        animation-delay: 3s;
-      }
-      &:nth-child(7) {
-        width: 45px;
-        height: 45px;
-        left: 70%;
-        animation-duration: 12s;
-        animation-delay: 2s;
-      }
-      &:nth-child(8) {
-        width: 12px;
-        height: 12px;
-        left: 80%;
-        animation-duration: 6s;
-        animation-delay: 2s;
-      }
-      &:nth-child(9) {
-        width: 7px;
-        height: 7px;
-        left: 70%;
-        animation-duration: 5s;
-        animation-delay: 1s;
-      }
-      &:nth-child(10) {
-        width: 45px;
-        height: 45px;
-        left: 25%;
-        animation-duration: 10s;
-        animation-delay: 4s;
-      }
-      &:nth-child(11) {
-        width: 15px;
-        height: 15px;
-        left: 0%;
-        animation-duration: 8s;
-      }
-      &:nth-child(12) {
-        width: 10px;
-        height: 10px;
-        left: 60%;
-        animation-duration: 6s;
-        animation-delay: 2s;
-      }
-      &:nth-child(13) {
-        width: 12px;
-        height: 12px;
-        left: 15%;
-        animation-duration: 10s;
-        animation-delay: 1s;
-      }
-      &:nth-child(14) {
-        width: 15px;
-        height: 15px;
-        left: 25%;
-        animation-duration: 9s;
-        animation-delay: 2s;
-      }
-      &:nth-child(15) {
-        width: 10px;
-        height: 10px;
-        left: 15%;
-        animation-duration: 9s;
-        animation-delay: 2s;
-      }
-      &:nth-child(16) {
-        width: 27px;
-        height: 27px;
-        left: 55%;
-        animation-duration: 7s;
-        animation-delay: 4s;
-      }
-      &:nth-child(17) {
-        width: 45px;
-        height: 45px;
-        left: 5%;
-        animation-duration: 10s;
-        animation-delay: 4s;
-      }
-      &:nth-child(18) {
-        width: 12px;
-        height: 12px;
-        left: 50%;
-        animation-duration: 9s;
-        animation-delay: 4s;
-      }
-      &:nth-child(19) {
-        width: 20px;
-        height: 20px;
-        left: 35%;
-        animation-duration: 6s;
-        animation-delay: 2s;
-      }
-      &:nth-child(20) {
-        width: 20px;
-        height: 20px;
-        left: 15%;
-        animation-duration: 12s;
-        animation-delay: 2s;
-      }
     }
 
     @keyframes rise {
@@ -252,11 +113,34 @@
         width: 200%;
         background-color: var(--l-section--background, white);
         border-radius: 35%; // Smooth edges to appear like liquid
-        animation: spin 4s ease-out forwards; // Set to forwards to freeze on last frame
+        animation: spin 3s ease-out forwards; // Set to forwards to freeze on last frame
         z-index: 1;
       }
     }
   }
+
+  &:nth-child(1) {
+    .kds-count-up__fill.active {
+      &::after {
+        animation-delay: 0s;
+      }
+    }
+  }
+  &:nth-child(2) {
+    .kds-count-up__fill.active {
+      &::after {
+        animation-delay: 300ms;
+      }
+    }
+  }
+  &:nth-child(3) {
+    .kds-count-up__fill.active {
+      &::after {
+        animation-delay: 600ms;
+      }
+    }
+  }
+
 }
 
 .c-count-up {

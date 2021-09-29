@@ -225,7 +225,7 @@
   }
 }
 .no-stretch {
-  display: block;
+  /* display: block; */
   width: fit-content;
   text-align: center;
   margin: auto;
