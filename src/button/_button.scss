@@ -24,20 +24,28 @@
 
 .c-button {
   &--solid, &--solid-inverted, &--clear {
-    clip-path: polygon(0 .3em, .3em 0, calc(100% - .4em) 0, 100% calc(100% - .3em), calc(100% - .3em) 100%, .4em 100%);
-    transition-property: all;
-    
-    &:hover {      
-      clip-path: polygon(
-        0.2em 0.3em,
-        0.5em 0,
-        calc(100% - 0.7em) 0,
-        calc(100% - 0.4em) calc(100% - 0.3em),
-        calc(100% - 0.7em) 100%,
-        0.5em 100%);
+    clip-path: polygon(
+      0 .3em,
+      .3em 0,
+      calc(100% - .4em) 0,
+      100% calc(100% - .3em),
+      calc(100% - .3em) 100%,
+      .4em 100%
+      );
+      transition-property: all;
+      
+      &:hover {      
+        clip-path: polygon(
+          0.2em 0.3em,
+          0.5em 0,
+          calc(100% - 0.7em) 0,
+          calc(100% - 0.4em) calc(100% - 0.3em),
+          calc(100% - 0.7em) 100%,
+          0.5em 100%
+          );
+        }
+      }
     }
-  }
-}
 
 .c-button--clear {
   clip-path: polygon(0 0, 0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);

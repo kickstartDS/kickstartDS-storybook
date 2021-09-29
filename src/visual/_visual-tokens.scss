@@ -9,6 +9,10 @@
     }
   }
 
+  @media (min-height: 70em) {
+    --c-visual--min-height: 35rem;
+  }
+
   @media (max-width: 39.99em) {
     &--full {
       height: unset;
