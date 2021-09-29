@@ -1,3 +1,16 @@
+# v1.7.2 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: fix markup errors ([@lmestel](https://github.com/lmestel))
+- fix: fix zendesk button ssr ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.7.1 (Wed Sep 29 2021)
 
 #### ⚠️ Pushed to `master`
