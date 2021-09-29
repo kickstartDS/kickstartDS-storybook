@@ -7,11 +7,11 @@ export const Header = () => (
         <Link className="kds-header__logo" href="/">
           <img src="/logo.svg" />
         </Link>
-        <li className="kds-header__item">
+        <div className="kds-header__item">
           <Link className="kds-header__link c-button c-button--small c-button--outline" href="/blog">
             Blog
           </Link>
-        </li>
+        </div>
       </div>
     </header>
     <div className="main-header-spacer"></div>
