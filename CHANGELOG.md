@@ -1,3 +1,15 @@
+# v1.7.0 (Wed Sep 29 2021)
+
+#### 🚀 Enhancement
+
+- lazy zendesk [#27](https://github.com/kickstartDS/kickstartDS-storybook/pull/27) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.6.15 (Wed Sep 29 2021)
 
 #### ⚠️ Pushed to `master`
