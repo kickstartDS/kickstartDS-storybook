@@ -1,5 +1,6 @@
 import { createElement, useEffect } from "react";
 import { Button } from "@kickstartds/base/lib/button";
+import { zESettings } from "./zESettings";
 
 const { defineProperty } = Object;
 const waitForZendesk = () => {
@@ -35,7 +36,11 @@ const waitForZendesk = () => {
   return promise;
 };
 
-const onClick = () => waitForZendesk().then((zE) => zE.activate());
+const onClick = () =>
+  waitForZendesk().then((zE) => {
+    zE("webWidget", "reset");
+    zE.activate();
+  });
 const labels = {
   de: "Mehr erfahren",
   en: "Learn more",
@@ -46,6 +51,7 @@ export const ZendeskButton = () => {
     window && window.navigator.language.includes("de") ? "de" : "en";
   useEffect(() => {
     if (window) {
+      window.zESettings = zESettings;
       const rIC = window.requestIdleCallback || setTimeout;
       rIC(waitForZendesk);
     }
