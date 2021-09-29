@@ -1,3 +1,15 @@
+# v1.7.4 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: fix markup errors ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.7.3 (Wed Sep 29 2021)
 
 #### ⚠️ Pushed to `master`
