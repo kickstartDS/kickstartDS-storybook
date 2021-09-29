@@ -12,7 +12,7 @@ export const Welcome = () => (
           background: "transparent",
           enabled: true,
           headline: {
-            content: "Welcome to the kickstartDS Design System",
+            content: "Welcome and get started with the kickstartDS Design System",
           },
           horizontal: "left",
           indent: false,
@@ -33,10 +33,10 @@ export const Welcome = () => (
             variant: "solid",
           },
           text:
-            "Explore our component library, backing our landing page, blog and glossary. Explore our design and component tokens, interact with controls, or explore sample pages we've assembled.",
-          vertical: "center",
+            "Explore the frontend first framework and all the comprehensive components backing our landing page, our Wordpress blog and the glossary. Get a deeper look onto our design and component tokens, interact with the Storybook controls, or preview sample pages we've assembled.",
+          vertical: "top",
         }}
-        height="fullScreen"
+        height="fullImage"
         media={{
           image: {
             indent: "none",
@@ -53,7 +53,7 @@ export const Welcome = () => (
       gutter="default"
       headline={{
         align: "center",
-        content: "Explore",
+        content: "Getting started with ...",
         level: "h2",
         pageHeader: false,
         spaceAfter: "none",
@@ -65,7 +65,7 @@ export const Welcome = () => (
     >
       <TeaserBox
         topic="Design Tokens"
-        text="Design Tokens encode your main brand identity, including colors, fonts and typography. Explore all defined values, ready to be copied and used!"
+        text="Design Tokens encode your main brand identity, including colors, fonts and typography. Explore all defined values, ready to be copied and used."
         link={{
           fillAnimation: true,
           href: "sb:design-tokens-colors:page",
