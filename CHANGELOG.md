@@ -1,3 +1,16 @@
+# v1.6.12 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: fix content box topic bug ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.6.11 (Wed Sep 29 2021)
 
 #### ⚠️ Pushed to `master`
