@@ -163,12 +163,12 @@
   --font-ui-xxl: var(--font-size-xxl) /
     calc(var(--line-height-xxl) * var(--line-height-factor-ui))
     var(--font-family-ui);
-  --g-headline--color: var(--color-black);
   --g-link--color: var(--color-primary);
   --g-link--color-hover: var(--color-primary);
   --g-link--backround-hover: var(--color-primary-alpha-1);
   --g-topic--color: var(--c-rich-text--color);
   --g-header-height: 0px;
+  --g-headline--color: var(--color-black);
   --g-headline--color: var(--color-black);
   --g-headline--font: var(--font-display-xxl);
   --g-headline--font-weight: var(--font-weight-bold);
@@ -177,7 +177,7 @@
   --g-content-width-wide: 70rem;
   --g-content-width-max: 96rem;
   --g-content-padding: var(--spacing-l);
-  --section-dark-color: var(--color-white-alpha-9);
+  --l-section-dark-color: var(--color-white-alpha-9);
 }
 
 @media (min-width: 40em) {
@@ -188,7 +188,7 @@
     --spacing-m: 1rem;
     --spacing-l: 1.5rem;
     --spacing-xl: 3.5rem;
-    --spacing-xxl: 4.5rem;
+    --spacing-xxl: 4.25rem;
     --font-size-xs: 0.7rem;
     --font-size-s: 0.9375rem;
     --font-size-m: 1.125rem;
