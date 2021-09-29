@@ -4,7 +4,7 @@ import {
   CountUpContextDefault,
 } from "@kickstartds/content/lib/count-up";
 
-export const CountUp = (props) => (
+const CountUp = (props) => (
   <div
     className={classnames(
       "kds-count-up ",

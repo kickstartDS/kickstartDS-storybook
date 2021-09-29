@@ -1,5 +1,5 @@
-import { Section } from "@kickstartds/base";
-import { CountUp } from "../count-up/CountUpComponent";
+import { Section } from "@kickstartds/base/lib/section";
+import { CountUp } from "@kickstartds/content/lib/count-up";
 import { Components, Properties, Tokens } from "../count-up/CountUp.stories";
 
 export default {

@@ -1,6 +1,6 @@
 {
   "name": "@kickstartds/design-system",
-  "version": "1.6.6",
+  "version": "1.6.10",
   "author": "ruhmesmeile GmbH <mail@ruhmesmeile.com> (https://ruhmesmeile.com)",
   "homepage": "https://ruhmesmeile.com",
   "license": "SEE LICENSE IN LICENSE",
@@ -13,8 +13,7 @@
     "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --build-script-name 'build-storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes --exit-once-uploaded --output-dir storybook-static",
     "dist:js": "esbuild index=src/dist.js --outdir=dist --format=esm --bundle --minify --splitting",
     "dist:sass": "sass --load-path=node_modules src/dist.scss dist/index.css",
-    "off:components": "node scripts/bundleComponents.js",
-    "dist:components": "esbuild src/header/HeaderComponent.jsx src/footer/FooterComponent.jsx src/section/SectionComponent.jsx src/headline/HeadlineComponent.jsx src/icon-sprite/IconSpriteComponent.jsx src/count-up/CountUpComponent.jsx --outdir=dist/components --format=esm --bundle --inject:./utils/react-shim.js --external:react --external:@kickstartds/core --external:@kickstartds/base --external:@kickstartds/content",
+    "dist:components": "node scripts/bundleComponents.js",
     "dist:schema": "yarn schema && node scripts/copySchema.js",
     "dist:images": "cp -r static/img static/patterns static/logo.svg dist/",
     "dist:favicons": "cp -r static/favicon dist/",

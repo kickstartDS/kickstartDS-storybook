@@ -1,11 +1,9 @@
 import merge from "deepmerge";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
-import countUpStories from "@kickstartds/content/lib/count-up/count-up.stories";
+import countUpStories, { Template } from "@kickstartds/content/lib/count-up/count-up.stories";
 import tokens from "./count-up-tokens.json";
-import { CountUp } from "./CountUpComponent";
 import schema from "./count-up.schema.dereffed.json";
 
-const Template = (args) => <CountUp {...args} />;
 const { defaultArgs: args, argTypes } = getArgsShared(schema);
 
 export default {
@@ -13,7 +11,6 @@ export default {
   parameters: {
     cssprops: merge(countUpStories.parameters.cssprops, tokens),
   },
-  component: CountUp,
   args,
   argTypes,
 };
