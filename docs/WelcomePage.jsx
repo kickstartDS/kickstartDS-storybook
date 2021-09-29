@@ -118,7 +118,7 @@ export const Welcome = () => (
         level: "h2",
         pageHeader: false,
         spaceAfter: "none",
-        subheadline: "Proven content components to serve your headless landscapes. It works with React (for the start) and comes with in-built styleguide and documentation.";
+        subheadline: "Proven content components to serve your headless landscapes. It works with React (for the start) and comes with in-built styleguide and documentation.",
       }}
       mode="list"
       spaceAfter="small"
@@ -153,7 +153,7 @@ export const Welcome = () => (
       width="narrow"
     >
       <LinkButton
-        className: "c-button--main",        
+        className="c-button--main"
         fillAnimation
         href="https://kickstartds.com"
         label="Learn more on our website"
