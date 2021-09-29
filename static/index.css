@@ -1361,8 +1361,18 @@
   color: var(--c-quote_source--color);
 }
 
-iframe#launcher {
-  filter: drop-shadow(3px 0px 0px rgba(255, 255, 255, 0.15)) drop-shadow(-3px 0px 0px rgba(255, 255, 255, 0.15)) drop-shadow(0px 3px 0px rgba(255, 255, 255, 0.15)) drop-shadow(0px -3px 0px rgba(255, 255, 255, 0.15));
+#launcher {
+  display: none;
+}
+
+#zendesk-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font: var(--font-ui-xs);
+  font-weight: var(--font-weight-bold);
+  border-radius: 1rem;
+  cursor: pointer;
 }
 
 main {
