@@ -1,3 +1,15 @@
+# v1.7.1 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Update WelcomePage.jsx ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+#### Authors: 1
+
+- [@DanielLeyUX](https://github.com/DanielLeyUX)
+
+---
+
 # v1.7.0 (Wed Sep 29 2021)
 
 #### 🚀 Enhancement
