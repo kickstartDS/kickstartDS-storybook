@@ -1,3 +1,16 @@
+# v1.7.5 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: various design adjustments ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.7.4 (Wed Sep 29 2021)
 
 #### ⚠️ Pushed to `master`
