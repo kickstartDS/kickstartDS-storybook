@@ -1,3 +1,15 @@
+# v1.7.9 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add some changes to welcome page ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.7.8 (Wed Sep 29 2021)
 
 #### ⚠️ Pushed to `master`
