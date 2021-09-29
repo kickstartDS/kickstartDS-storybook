@@ -1,3 +1,16 @@
+# v1.7.7 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add transition to visual link deko ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.7.6 (Wed Sep 29 2021)
 
 #### 🐛 Bug Fix
