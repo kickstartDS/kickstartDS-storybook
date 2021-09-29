@@ -1,3 +1,17 @@
+# v1.6.11 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: adjust tokens ([@fleven-kds](https://github.com/fleven-kds))
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add header to Blog Entry template ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.6.10 (Tue Sep 28 2021)
 
 #### ⚠️ Pushed to `master`
