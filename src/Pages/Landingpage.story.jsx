@@ -36,6 +36,8 @@ const Page = () => (
           headline: {
             content:
               "kickstartDS is the frontend first framework, a comprehensive component and pattern library",
+            level: "h1",
+            styleAs: "h1",
           },
           horizontal: "left",
           indent: true,
@@ -80,6 +82,7 @@ const Page = () => (
       content: "kickstartDS' full flexibility in numbers",
       subheadline:"The foundation to scale your design system across all your platforms and website",
       level: "h2",
+      styleAs: "h1",
       pageHeader: false,
       spaceAfter: "none",
     }}
@@ -142,6 +145,7 @@ const Page = () => (
         content: "Leverage rich integrations with modern web technology, refocus on what really matters!",
         subheadline:"Out-of-the-box kickstartDS let's you connect your interfaces to:",
         level: "h2",
+        styleAs: "h1",
         pageHeader: false,
         spaceAfter: "none",
       }}
@@ -188,6 +192,7 @@ const Page = () => (
         content: "Frontend first approach",
         subheadline:"... a holistic view of components; unifying content creators, developers, designers and stakeholders under one roof",
         level: "h2",
+        styleAs: "h1",
         pageHeader: false,
         spaceAfter: "none",
       }}
@@ -226,6 +231,7 @@ const Page = () => (
         subheadline:
           "Make the most out of your frontends by unifying their core utilizing component and design tokens",
         level: "h2",
+        styleAs: "h1",
         pageHeader: false,
         spaceAfter: "none",
       }}
@@ -270,9 +276,11 @@ you can plug it onto every digital touch point you own."
         subheadline:
           "kickstartDS comes accessibility baked in and provides support",
         level: "h2",
+        styleAs: "h1",
         pageHeader: false,
         spaceAfter: "none",
       }}
+      pattern="2"
       mode="tile"
       spaceAfter="default"
       spaceBefore="default"
@@ -304,6 +312,7 @@ you can plug it onto every digital touch point you own."
         align: "center",
         content: "What kickstartDS can do for you?",
         level: "h2",
+        styleAs: "h1",
         pageHeader: false,
         spaceAfter: "none",
       }}

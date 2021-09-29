@@ -1,4 +1,5 @@
 @use "./count-up-tokens";
+@use '@kickstartds/core/source/core/breakpoint';
 
 .kds-count-up {
   position: relative;
@@ -118,29 +119,30 @@
       }
     }
   }
-
-  &:nth-child(1) {
-    .kds-count-up__fill.active {
-      &::after {
-        animation-delay: 0s;
+  
+  @include breakpoint.media("≥m") {
+    &:nth-child(1) {
+      .kds-count-up__fill.active {
+        &::after {
+          animation-delay: 0s;
+        }
+      }
+    }
+    &:nth-child(2) {
+      .kds-count-up__fill.active {
+        &::after {
+          animation-delay: 300ms;
+        }
+      }
+    }
+    &:nth-child(3) {
+      .kds-count-up__fill.active {
+        &::after {
+          animation-delay: 600ms;
+        }
       }
     }
   }
-  &:nth-child(2) {
-    .kds-count-up__fill.active {
-      &::after {
-        animation-delay: 300ms;
-      }
-    }
-  }
-  &:nth-child(3) {
-    .kds-count-up__fill.active {
-      &::after {
-        animation-delay: 600ms;
-      }
-    }
-  }
-
 }
 
 .c-count-up {

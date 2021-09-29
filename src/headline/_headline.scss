@@ -1,1 +1,10 @@
 @use './headline-tokens';
+
+.c-headline {
+    @media (min-width: 40em) {
+        max-width: 100%;
+    }
+    @media (min-width: 80em) {
+        max-width: 90%;
+    }
+}

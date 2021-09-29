@@ -42,7 +42,7 @@
   filter: drop-shadow(0.3em 0.3em 0px var(--color-secondary));
   
   &.c-button--solid-inverted {
-    filter: drop-shadow(0.3em 0.3em 0px var(--color-black));
+    filter: drop-shadow(0.3em 0.3em 0px var(--color-black-alpha-5));
   }
     &::after {
       transition: var(--c-button-transition);

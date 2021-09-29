@@ -25,25 +25,37 @@
       &:hover {
         &::before, &::after {
           transform: rotate(10deg);
+          opacity: 1;
         }
       }
 
       &::before, &::after {
         position: absolute;
-        z-index: 2;
-        transform: scale(0.8);
+        transform: scale(0.85);
         pointer-events: none;
         transition: var(--c-button-transition);
+        opacity: 0.4;
+        z-index: 2;
+
+        @include breakpoint.media("≥s") {
+          z-index: 2;
+        }
       }
     
       &::before {
         content: url(/patterns/button_before.svg);
+        bottom: -30%;
         left: -2em;
+
+        @include breakpoint.media("≥s") {
+          left: -2em;
+        }
       }
     
       &::after {
         content: url(/patterns/button_after.svg);
-        right: -2em;
+        right: -2.25em;
+        top: 0;
       }
     }
   }

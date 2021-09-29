@@ -93,6 +93,10 @@
           top: 4em;
           left: -3em;
         }
+
+        @media (min-width: 130em) {
+          left: 15%;
+        }
       }
 
       &::after {
@@ -100,6 +104,10 @@
         right: -1.5em;
         @media (min-width: 40em) {
           right: 20px;
+        }
+
+        @media (min-width: 130em) {
+          right: 15%;
         }
       }
 
@@ -126,6 +134,10 @@
 
       &::before {
         left: -5em;
+
+        @media (min-width: 130em) {
+          left: 15%;
+        }
       }
 
       &::after {
@@ -134,6 +146,10 @@
 
         @media (min-width: 40em) {
           right: -2em;
+        }
+
+        @media (min-width: 130em) {
+          right: 15%;
         }
       }
 
