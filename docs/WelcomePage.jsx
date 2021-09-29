@@ -118,7 +118,7 @@ export const Welcome = () => (
         level: "h2",
         pageHeader: false,
         spaceAfter: "none",
-        subheadline: "Proven content components to serve your headless landscapes. It works with React (for the start) and comes with in-built styleguide and documentation.",
+        subheadline: "Proven content components to serve your headless landscapes. It works with React (for the start) and comes with in-built styleguide and documentation.";
       }}
       mode="list"
       spaceAfter="small"
@@ -129,8 +129,19 @@ export const Welcome = () => (
       pattern="1"
     >
       <TeaserBox
-        topic="Test"
-        text="TBT"
+        topic="Interested and want to know more?"
+        text="We call kickstartDS a frontend first framework. And is made for productivity. And so are we! Start the conversation today and tell us what you think and let's discuss together if kickstartDS could be a real option for your next project."
+        link={{
+          fillAnimation: true,
+          href: "mailto:hello@kickstartds.com",
+          iconAfter: false,
+          iconAnimation: false,
+          iconBefore: false,
+          label: "Send us an email",
+          newTab: true,
+          size: "small",
+          variant: "outline",
+        }}
       />
     </Section>
 
@@ -142,7 +153,7 @@ export const Welcome = () => (
       width="narrow"
     >
       <LinkButton
-        className="c-button--main"
+        className: "c-button--main",        
         fillAnimation
         href="https://kickstartds.com"
         label="Learn more on our website"
