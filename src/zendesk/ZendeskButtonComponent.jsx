@@ -36,11 +36,7 @@ const waitForZendesk = () => {
   return promise;
 };
 
-const onClick = () =>
-  waitForZendesk().then((zE) => {
-    zE("webWidget", "reset");
-    zE.activate();
-  });
+const onClick = () => waitForZendesk().then((zE) => zE.activate());
 const labels = {
   de: "Mehr erfahren",
   en: "Learn more",
