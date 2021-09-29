@@ -17,6 +17,36 @@
     overflow: unset;
   }
   
+  &--deko {
+    .c-visual__link {
+      width: fit-content;
+      position: relative;
+
+      &:hover {
+        &::before, &::after {
+          transform: rotate(10deg);
+        }
+      }
+
+      &::before, &::after {
+        position: absolute;
+        z-index: 2;
+        transform: scale(0.8);
+        pointer-events: none;
+      }
+    
+      &::before {
+        content: url(/patterns/button_before.svg);
+        left: -2em;
+      }
+    
+      &::after {
+        content: url(/patterns/button_after.svg);
+        right: -2em;
+      }
+    }
+  }
+
   .main-header-spacer {
     + .c-visual--full, + .l-section .c-visual--full {
       @include breakpoint.media("≥s") {

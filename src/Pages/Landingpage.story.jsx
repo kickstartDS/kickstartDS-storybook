@@ -29,6 +29,7 @@ const Page = () => (
     <Header />
     <Section width="full" spaceBefore="none" spaceAfter="small">
       <Visual
+        className="c-visual--deko"
         box={{
           background: "transparent",
           enabled: true,
