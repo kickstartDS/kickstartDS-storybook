@@ -1,3 +1,89 @@
+# v1.7.4 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: fix markup errors ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.7.3 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Create WelcomePage.jsx ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+#### Authors: 1
+
+- [@DanielLeyUX](https://github.com/DanielLeyUX)
+
+---
+
+# v1.7.2 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: fix markup errors ([@lmestel](https://github.com/lmestel))
+- fix: fix zendesk button ssr ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.7.1 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Update WelcomePage.jsx ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+#### Authors: 1
+
+- [@DanielLeyUX](https://github.com/DanielLeyUX)
+
+---
+
+# v1.7.0 (Wed Sep 29 2021)
+
+#### 🚀 Enhancement
+
+- lazy zendesk [#27](https://github.com/kickstartDS/kickstartDS-storybook/pull/27) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.6.15 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Update WelcomePage.jsx ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+#### Authors: 1
+
+- [@DanielLeyUX](https://github.com/DanielLeyUX)
+
+---
+
+# v1.6.14 (Wed Sep 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: oerhaul buttom--main styling ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.6.13 (Wed Sep 29 2021)
 
 #### ⚠️ Pushed to `master`
