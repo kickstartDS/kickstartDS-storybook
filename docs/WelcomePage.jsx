@@ -12,7 +12,10 @@ export const Welcome = () => (
           background: "transparent",
           enabled: true,
           headline: {
-            content: "Welcome and get started with the kickstartDS Design System",
+            level: "h1",
+            styleAs: "h1",
+            content: "Welcome 👋",
+            subheadline: "Get started with the kickstartDS Design System!",
           },
           horizontal: "left",
           indent: false,
@@ -33,7 +36,7 @@ export const Welcome = () => (
             variant: "solid",
           },
           text:
-            "Explore the frontend first framework and all the comprehensive components backing our landing page, our Wordpress blog and the glossary. Get a deeper look onto our design and component tokens, interact with the Storybook controls, or preview sample pages we've assembled.",
+            "Explore our frontend first framework, and all of its comprehensive components backing our landing page, our Wordpress blog and the glossary. Take a deeper look at our design and component tokens, interact with the Storybook controls, or preview some sample pages we've assembled.",
           vertical: "top",
         }}
         height="fullImage"
@@ -65,7 +68,7 @@ export const Welcome = () => (
     >
       <TeaserBox
         topic="Design Tokens"
-        text="Design Tokens encode your main brand identity, including colors, fonts and typography. Explore all defined values, ready to be copied and used."
+        text="Design Tokens encode your main brand identity, including colors, fonts and typography. Explore all defined values, ready to be copied and used in your project."
         link={{
           fillAnimation: true,
           href: "sb:design-tokens-colors:page",
@@ -95,7 +98,7 @@ export const Welcome = () => (
       />
       <TeaserBox
         topic="Pages"
-        text="Pages show the potential to quickly prototype views independently, and early in your development cycle. Test your assumptions, before expensively implementing!"
+        text="Pages show the potential to quickly prototype views independently, and early, in your development cycle. Test your assumptions, before implementing!"
         link={{
           fillAnimation: true,
           href: "sb:pages:landingpage",
@@ -108,9 +111,24 @@ export const Welcome = () => (
           variant: "outline",
         }}
       />
+      <TeaserBox
+        topic="Blog"
+        text="Learn about the newest developments, or explore background articles about our architectural choices, and the rationale behind our decisions!"
+        link={{
+          fillAnimation: true,
+          href: "https://kickstartds.com/blog",
+          iconAfter: false,
+          iconAnimation: false,
+          iconBefore: false,
+          label: "Read more",
+          newTab: false,
+          size: "small",
+          variant: "outline",
+        }}
+      />
     </Section>
 
-<Section
+    <Section
       gutter="default"
       headline={{
         align: "left",
@@ -118,7 +136,7 @@ export const Welcome = () => (
         level: "h2",
         pageHeader: false,
         spaceAfter: "none",
-        subheadline: "Proven content components to serve your headless landscapes. It works with React (for the start) and comes with in-built styleguide and documentation.",
+        subheadline: "Proven content components to serve your frontend needs. It works for either explicit HTML integration or direct usage in React (for the start) and comes with built-in styleguide and documentation.",
       }}
       mode="list"
       spaceAfter="small"
@@ -130,7 +148,8 @@ export const Welcome = () => (
     >
       <TeaserBox
         topic="Interested and want to know more?"
-        text="We call kickstartDS a frontend first framework. And is made for productivity. And so are we! Start the conversation today and tell us what you think and let's discuss together if kickstartDS could be a real option for your next project."
+        darkStyle
+        text="**kickstartDS** is made for productivity. And so are we! Start the conversation today, tell us what you think and let's discuss if kickstartDS could be a real option for your next project."
         link={{
           fillAnimation: true,
           href: "mailto:hello@kickstartds.com",
@@ -140,7 +159,7 @@ export const Welcome = () => (
           label: "Send us an email",
           newTab: true,
           size: "small",
-          variant: "outline",
+          variant: "solid-inverted",
         }}
       />
     </Section>
@@ -156,8 +175,8 @@ export const Welcome = () => (
         className="c-button--main"
         fillAnimation
         href="https://kickstartds.com"
-        label="Learn more on our website"
-        size="large"
+        label="... or learn more on our website"
+        size="default"
         type="button"
         variant="solid"
       />
