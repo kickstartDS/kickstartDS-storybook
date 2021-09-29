@@ -110,6 +110,30 @@ export const Welcome = () => (
       />
     </Section>
 
+<Section
+      gutter="default"
+      headline={{
+        align: "left",
+        content: "Frontend first framework",
+        level: "h2",
+        pageHeader: false,
+        spaceAfter: "none",
+        subheadline: "Proven content components to serve your headless landscapes. It works with React (for the start) and comes with in-built styleguide and documentation.";
+      }}
+      mode="list"
+      spaceAfter="small"
+      spaceBefore="small"
+      width="max"
+      background="dark"
+      deko="true"
+      pattern="1"
+    >
+      <TeaserBox
+        topic="Test"
+        text="TBT"
+      />
+    </Section>
+
     <Section
       gutter="default"
       mode="list"
@@ -118,6 +142,7 @@ export const Welcome = () => (
       width="narrow"
     >
       <LinkButton
+        className: "c-button--main",        
         fillAnimation
         href="https://kickstartds.com"
         label="Learn more on our website"
