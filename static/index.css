@@ -1639,6 +1639,7 @@
   z-index: 2;
   transform: scale(0.8);
   pointer-events: none;
+  transition: var(--c-button-transition);
 }
 .c-visual--deko .c-visual__link::before {
   content: url(/patterns/button_before.svg);
