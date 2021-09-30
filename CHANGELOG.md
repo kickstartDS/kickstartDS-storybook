@@ -1,3 +1,15 @@
+# v1.7.10 (Thu Sep 30 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: adjust section container spacing on tablet ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.7.9 (Wed Sep 29 2021)
 
 #### ⚠️ Pushed to `master`
