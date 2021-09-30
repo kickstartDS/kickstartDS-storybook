@@ -1,4 +1,5 @@
 @use './section-tokens';
+@use '@kickstartds/core/source/core/breakpoint';
 
 :root {
   --l-section--corner-top-left-height: var(--spacing-l);
@@ -17,7 +18,13 @@
   --color-error: #cc0000;
 }
 
-
+.l-section__container {
+  --l-section_col--min-width: 13rem;
+  
+  @include breakpoint.media("≥m") {
+    --l-section_col--min-width: 18rem;
+  }
+}
 
 .l-section {
   margin: auto;
