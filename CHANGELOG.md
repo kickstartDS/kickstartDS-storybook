@@ -1,3 +1,20 @@
+# v1.7.12 (Thu Sep 30 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartds-storybook ([@lmestel](https://github.com/lmestel))
+- feat: hide pseudo-zendesk button when loaded ([@lmestel](https://github.com/lmestel))
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: fix welcome page bugs ([@fleven-kds](https://github.com/fleven-kds))
+- chore: update kds ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- [@fleven-kds](https://github.com/fleven-kds)
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.7.11 (Thu Sep 30 2021)
 
 #### ⚠️ Pushed to `master`
