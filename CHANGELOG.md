@@ -1,3 +1,15 @@
+# v1.7.14 (Thu Sep 30 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add custom section column class ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.7.13 (Thu Sep 30 2021)
 
 #### ⚠️ Pushed to `master`
