@@ -4,17 +4,22 @@
   fill: #ffffff !important;
   padding: 13px 22px;
   border-radius: 999rem;
-  letter-spacing: 0.6;
+  letter-spacing: 0.6px;
   font-size: 15px;
   line-height: 20px;
   position: fixed;
-  bottom: 1.5rem;
+  bottom: 0.7rem;
   right: 1.6rem;
   font-weight: 700;
   cursor: pointer;
   z-index: 1;
-
+  
+  span {
+    line-height: normal !important;
+  }
   .icon {
     margin-right: 8px;
+    height: 20px;
+    width: 20px;
   }
 }

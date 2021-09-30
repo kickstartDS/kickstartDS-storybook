@@ -85,7 +85,7 @@
   --font-weight-regular: 400;
   --font-weight-semi-bold: 500;
   --font-weight-bold: 700;
-  --font-family-display: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-family-display: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
   --font-family-copy: var(--font-family-display);
   --font-family-ui: var(--font-family-display);
   --line-height-factor-display: 1;
@@ -1267,12 +1267,12 @@
   --color-error: #cc0000;
 }
 
-.l-section__container {
-  --l-section_col--min-width: 13rem;
+.custom-col .l-section__container {
+  --l-section_col--min-width: 12rem;
 }
-@media (min-width: 60em) {
-  .l-section__container {
-    --l-section_col--min-width: 18rem;
+@media (min-width: 1260px) {
+  .custom-col .l-section__container {
+    --l-section_col--min-width: 17rem;
   }
 }
 
@@ -1766,18 +1766,23 @@
   fill: #ffffff !important;
   padding: 13px 22px;
   border-radius: 999rem;
-  letter-spacing: 0.6;
+  letter-spacing: 0.6px;
   font-size: 15px;
   line-height: 20px;
   position: fixed;
-  bottom: 1.5rem;
+  bottom: 0.7rem;
   right: 1.6rem;
   font-weight: 700;
   cursor: pointer;
   z-index: 1;
 }
+#zendesk-button span {
+  line-height: normal !important;
+}
 #zendesk-button .icon {
   margin-right: 8px;
+  height: 20px;
+  width: 20px;
 }
 
 main {

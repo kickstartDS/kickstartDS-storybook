@@ -86,7 +86,7 @@ const Page = () => (
       pageHeader: false,
       spaceAfter: "none",
     }}
-    className="l-section--outer-width-wide"
+    className="l-section--outer-width-wide custom-col"
     pattern="2"
     width="default"
     deko

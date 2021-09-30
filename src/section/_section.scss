@@ -18,11 +18,13 @@
   --color-error: #cc0000;
 }
 
-.l-section__container {
-  --l-section_col--min-width: 13rem;
-  
-  @include breakpoint.media("≥m") {
-    --l-section_col--min-width: 18rem;
+.custom-col {
+  .l-section__container {
+    --l-section_col--min-width: 12rem;
+    
+    @media(min-width:1260px) {
+      --l-section_col--min-width: 17rem;
+    }
   }
 }
 

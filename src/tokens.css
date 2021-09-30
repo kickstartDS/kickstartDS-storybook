@@ -94,7 +94,7 @@
   --font-weight-semi-bold: 500;
   --font-weight-bold: 700;
 
-  --font-family-display: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-family-display: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
   --font-family-copy: var(--font-family-display);
   --font-family-ui: var(--font-family-display);
 
