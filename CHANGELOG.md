@@ -1,3 +1,16 @@
+# v1.7.15 (Thu Sep 30 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: adjust custom class name ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.7.14 (Thu Sep 30 2021)
 
 #### ⚠️ Pushed to `master`
