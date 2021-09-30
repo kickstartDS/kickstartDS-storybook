@@ -73,10 +73,11 @@
   }
 
   &--welcome {
-
+    @include breakpoint.media("≥s") {
+      --c-visual--min-height: 10rem;
+      
     .c-visual__box {
-      @include breakpoint.media("≥s") {
-        --c-visual_box--max-width: 80%;
+        --c-visual_box--max-width: 25rem;
       }
     }
   }

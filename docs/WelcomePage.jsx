@@ -78,7 +78,6 @@ export const Welcome = () => (
           iconBefore: false,
           label: "View Tokens",
           newTab: false,
-          size: "small",
           variant: "outline",
         }}
       />
@@ -93,7 +92,6 @@ export const Welcome = () => (
           iconBefore: false,
           label: "Show controls",
           newTab: false,
-          size: "small",
           variant: "outline",
         }}
       />
@@ -108,7 +106,6 @@ export const Welcome = () => (
           iconBefore: false,
           label: "Explore pages",
           newTab: false,
-          size: "small",
           variant: "outline",
         }}
       />
@@ -123,7 +120,6 @@ export const Welcome = () => (
           iconBefore: false,
           label: "Read more",
           newTab: false,
-          size: "small",
           variant: "outline",
         }}
       />

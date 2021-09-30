@@ -119,6 +119,9 @@
 
     --c-button--font: var(--font-ui-s);
   }
+  .c-button.c-button--small {
+    --c-button--font: var(--font-ui-xs);
+  }
 }
 
 .c-teaser__body[min-width~="400px"] {
@@ -132,5 +135,8 @@
 
   .c-button {
     --c-button--font: var(--font-ui-s);
+  }
+  .c-button.c-button--small {
+    --c-button--font: var(--font-ui-xs);
   }
 }
