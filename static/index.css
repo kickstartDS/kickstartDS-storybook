@@ -1760,19 +1760,24 @@
   color: var(--c-quote_source--color);
 }
 
-#launcher {
-  display: none;
-}
-
 #zendesk-button {
+  background-color: #06566a !important;
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  padding: 13px 22px;
+  border-radius: 999rem;
+  letter-spacing: 0.6;
+  font-size: 15px;
+  line-height: 20px;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  font: var(--font-ui-xs);
-  font-weight: var(--font-weight-bold);
-  border-radius: 1rem;
+  bottom: 1.5rem;
+  right: 1.6rem;
+  font-weight: 700;
   cursor: pointer;
   z-index: 1;
+}
+#zendesk-button .icon {
+  margin-right: 8px;
 }
 
 main {

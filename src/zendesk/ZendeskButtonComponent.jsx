@@ -1,4 +1,4 @@
-import { createElement, useEffect } from "react";
+import { createElement, useEffect, useState } from "react";
 import { inBrowser } from "@kickstartds/core/lib/core";
 import { Button } from "@kickstartds/base/lib/button";
 import { zESettings } from "./zESettings";
@@ -38,28 +38,36 @@ const waitForZendesk = () => {
 };
 
 const activate = () => window.zE.activate();
-const onClick = () => waitForZendesk().then((zE) => zE(activate));
 const labels = {
   de: "Mehr erfahren",
   en: "Learn more",
 };
 
 export const ZendeskButton = () => {
+  const [isVisible, setVisibility] = useState(true);
+  const load = waitForZendesk().then((zE) => {
+    setVisibility(false);
+    return zE;
+  });
+  const onClick = () => load().then((zE) => zE(activate));
   const language =
     inBrowser && window.navigator.language.includes("de") ? "de" : "en";
   useEffect(() => {
     if (inBrowser) {
       window.zESettings = zESettings;
-      setTimeout(waitForZendesk, 10000);
+      setTimeout(load, 10000);
     }
   }, []);
-  return createElement(Button, {
-    icon: { icon: "help" },
-    iconBefore: true,
-    label: labels[language],
-    onClick,
-    id: "zendesk-button",
-    size: "small",
-    variant: "solid",
-  });
+  return (
+    isVisible &&
+    createElement(Button, {
+      icon: { icon: "help" },
+      iconBefore: true,
+      label: labels[language],
+      onClick,
+      id: "zendesk-button",
+      size: "small",
+      variant: "none",
+    })
+  );
 };

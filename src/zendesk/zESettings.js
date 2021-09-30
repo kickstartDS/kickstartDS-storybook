@@ -1,5 +1,6 @@
 export const zESettings = {
   webWidget: {
+    offset: { horizontal: '10px', vertical: '16px' },
     launcher: {
       label: {
         'en-gb': 'Learn more',
