@@ -71,4 +71,14 @@
   &__image img {
     object-fit: contain;
   }
+
+  &--welcome {
+    @include breakpoint.media("≥s") {
+      --c-visual--min-height: 10rem;
+      
+    .c-visual__box {
+        --c-visual_box--max-width: 25rem;
+      }
+    }
+  }
 }

@@ -1,3 +1,15 @@
+# v1.7.11 (Thu Sep 30 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: fix welcome page bugs ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.7.10 (Thu Sep 30 2021)
 
 #### ⚠️ Pushed to `master`

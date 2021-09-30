@@ -8,6 +8,7 @@ export const Welcome = () => (
   <LinkProvider>
     <Section width="full" spaceBefore="none" spaceAfter="none">
       <Visual
+      className="c-visual--welcome"
         box={{
           background: "transparent",
           enabled: true,
@@ -39,7 +40,7 @@ export const Welcome = () => (
             "Explore our frontend first framework, and all of its comprehensive components backing our landing page, our Wordpress blog and the glossary. Take a deeper look at our design and component tokens, interact with the Storybook controls, or preview some sample pages we've assembled.",
           vertical: "top",
         }}
-        height="fullImage"
+        height="small"
         media={{
           image: {
             indent: "none",
@@ -77,7 +78,6 @@ export const Welcome = () => (
           iconBefore: false,
           label: "View Tokens",
           newTab: false,
-          size: "small",
           variant: "outline",
         }}
       />
@@ -92,7 +92,6 @@ export const Welcome = () => (
           iconBefore: false,
           label: "Show controls",
           newTab: false,
-          size: "small",
           variant: "outline",
         }}
       />
@@ -107,7 +106,6 @@ export const Welcome = () => (
           iconBefore: false,
           label: "Explore pages",
           newTab: false,
-          size: "small",
           variant: "outline",
         }}
       />
@@ -122,7 +120,6 @@ export const Welcome = () => (
           iconBefore: false,
           label: "Read more",
           newTab: false,
-          size: "small",
           variant: "outline",
         }}
       />
@@ -151,14 +148,12 @@ export const Welcome = () => (
         darkStyle
         text="**kickstartDS** is made for productivity. And so are we! Start the conversation today, tell us what you think and let's discuss if kickstartDS could be a real option for your next project."
         link={{
-          fillAnimation: true,
           href: "mailto:hello@kickstartds.com",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
           label: "Send us an email",
           newTab: true,
-          size: "small",
           variant: "solid-inverted",
         }}
       />
@@ -173,7 +168,6 @@ export const Welcome = () => (
     >
       <LinkButton
         className="c-button--main"
-        fillAnimation
         href="https://kickstartds.com"
         label="... or learn more on our website"
         size="default"
