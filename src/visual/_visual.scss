@@ -71,4 +71,13 @@
   &__image img {
     object-fit: contain;
   }
+
+  &--welcome {
+
+    .c-visual__box {
+      @include breakpoint.media("≥s") {
+        --c-visual_box--max-width: 80%;
+      }
+    }
+  }
 }

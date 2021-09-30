@@ -1716,6 +1716,11 @@
 .c-visual__image img {
   object-fit: contain;
 }
+@media (min-width: 40em) {
+  .c-visual--welcome .c-visual__box {
+    --c-visual_box--max-width: 80%;
+  }
+}
 
 .c-quote {
   --c-quote--align: top;
