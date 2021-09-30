@@ -1267,11 +1267,11 @@
   --color-error: #cc0000;
 }
 
-.custom-col .l-section__container {
+.triple-col .l-section__container {
   --l-section_col--min-width: 12rem;
 }
 @media (min-width: 1260px) {
-  .custom-col .l-section__container {
+  .triple-col .l-section__container {
     --l-section_col--min-width: 17rem;
   }
 }
