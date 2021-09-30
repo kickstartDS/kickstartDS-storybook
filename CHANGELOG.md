@@ -1,3 +1,16 @@
+# v1.7.16 (Thu Sep 30 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: another small window case ([@julrich](https://github.com/julrich))
+- fix: attempt to fix window issue ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.7.15 (Thu Sep 30 2021)
 
 #### ⚠️ Pushed to `master`
