@@ -42,7 +42,7 @@ const waitForZendesk = () => {
   return Promise.resolve();
 };
 
-const activate = () => window.zE.activate();
+const activate = () => inBrowser && window.zE.activate();
 const labels = {
   de: "Mehr erfahren",
   en: "Learn more",
