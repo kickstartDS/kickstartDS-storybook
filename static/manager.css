@@ -233,31 +233,6 @@
   margin: auto;
 }
 
-#zendesk-button {
-  background-color: #06566a !important;
-  color: #ffffff !important;
-  fill: #ffffff !important;
-  padding: 13px 22px;
-  border-radius: 999rem;
-  letter-spacing: 0.6px;
-  font-size: 15px;
-  line-height: 20px;
-  position: fixed;
-  bottom: 0.7rem;
-  right: 1.6rem;
-  font-weight: 700;
-  cursor: pointer;
-  z-index: 1;
-}
-#zendesk-button span {
-  line-height: normal !important;
-}
-#zendesk-button .icon {
-  margin-right: 8px;
-  height: 20px;
-  width: 20px;
-}
-
 .sidebar-item svg {
   color: inherit;
 }
