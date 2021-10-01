@@ -1,3 +1,15 @@
+# v1.8.2 (Fri Oct 01 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: change to production domain ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.8.1 (Fri Oct 01 2021)
 
 #### ⚠️ Pushed to `master`
