@@ -1,3 +1,16 @@
+# v1.8.4 (Fri Oct 01 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: update CookiePro script ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.8.3 (Fri Oct 01 2021)
 
 #### ⚠️ Pushed to `master`
