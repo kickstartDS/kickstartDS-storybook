@@ -1,3 +1,15 @@
+# v1.8.0 (Fri Oct 01 2021)
+
+#### 🚀 Enhancement
+
+- remove custom zendesk button [#29](https://github.com/kickstartDS/kickstartDS-storybook/pull/29) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.7.16 (Thu Sep 30 2021)
 
 #### ⚠️ Pushed to `master`
