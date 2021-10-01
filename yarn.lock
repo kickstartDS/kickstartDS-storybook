@@ -1901,14 +1901,14 @@
   resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
   integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
 
-"@kickstartds/base@1.5.0-next.3", "@kickstartds/base@^1.5.0-next.3":
-  version "1.5.0-next.3"
-  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-1.5.0-next.3.tgz#dcabec28b8e230568cf4bac9442bbec809778aa7"
-  integrity sha512-zB1iImcyV5i40x4oSdqtrjalBcKzEMuAGh5Y0ci/CYFAJotXhwUNuI7wWyIMs5i/b0QRLn4KfmtOiLpF67cBUA==
+"@kickstartds/base@1.5.0-next.4", "@kickstartds/base@^1.5.0-next.4":
+  version "1.5.0-next.4"
+  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-1.5.0-next.4.tgz#1a91a3bd37093b35c63d2912fa5d4d6958204e35"
+  integrity sha512-0OgYZcC+BBpX80PkagryTrErkSmbiEJ1Nvjl/xE/n1SX3usQt9XQ9giHKee958nqllrk5S5lo0rSbrs9LZ2FTA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@glidejs/glide" "git://github.com/glidejs/glide.git#master"
-    "@kickstartds/core" "^1.5.0-next.3"
+    "@kickstartds/core" "^1.4.0"
     classnames "^2.2.6"
     css-element-queries "^1.2.3"
     date-fns "^2.24.0"
@@ -1922,31 +1922,31 @@
     simplebar "^5.3.6"
     stickybits "^3.7.0"
 
-"@kickstartds/blog@1.5.0-next.3":
-  version "1.5.0-next.3"
-  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-1.5.0-next.3.tgz#21c6243978709d493dbcd4b2d5e55d3437b2637a"
-  integrity sha512-Bak9Ckjbdv6+5BNOIT42x4EFpzPz2aUhgiOUux8VX9WfwHKKfvT+qAQTJRdybbMooSq63ZPJEhojDSjNN4debw==
+"@kickstartds/blog@1.5.0-next.4":
+  version "1.5.0-next.4"
+  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-1.5.0-next.4.tgz#d86de92d6adde1373f3ffce7d4a56b691fe18057"
+  integrity sha512-HDpCEQTEf9ZAg3w2LZ4qCKNwhU0zKPvbmSpXZmWcauJVkuzvxYwW+SzJ+w0j1BOzbAiEIT0L2c09OCIziS89uw==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "@kickstartds/base" "^1.5.0-next.3"
-    "@kickstartds/core" "^1.5.0-next.3"
+    "@kickstartds/base" "^1.5.0-next.4"
+    "@kickstartds/core" "^1.4.0"
     classnames "^2.2.6"
     date-fns "^2.24.0"
 
-"@kickstartds/content@1.5.0-next.3":
-  version "1.5.0-next.3"
-  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-1.5.0-next.3.tgz#11a26a19a958e49dda41766cd332aebbd4d4c6db"
-  integrity sha512-1VXGpZtAtxywHpd0DU4TLYUHK2sW5ddBribk22L+O4vULzy7QZgVTc46ysR0hHsFUPDXn0qCGOt72CJp91kC7g==
+"@kickstartds/content@1.5.0-next.4":
+  version "1.5.0-next.4"
+  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-1.5.0-next.4.tgz#1db25ba5f112ced7709d8ff5ae6674b5835965e7"
+  integrity sha512-WPXiF7Opv6tqwHNYkuJiRbtVEkEdcnlqiGARmw0EuN/06NNw06xd7IuH74QiP24RD5ryb51jLf5TxNdvwqQqMw==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "@kickstartds/base" "^1.5.0-next.3"
-    "@kickstartds/core" "^1.5.0-next.3"
+    "@kickstartds/base" "^1.5.0-next.4"
+    "@kickstartds/core" "^1.4.0"
     classnames "^2.2.6"
     countup.js "^2.0.8"
     date-fns "^2.24.0"
     objectFitPolyfill "^2.3.0"
 
-"@kickstartds/core@1.5.0-next.3", "@kickstartds/core@^1.5.0-next.3":
+"@kickstartds/core@1.5.0-next.3":
   version "1.5.0-next.3"
   resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-1.5.0-next.3.tgz#63b34e852a8ec3389a8558bf9d37f41e43e46fbc"
   integrity sha512-EknFwnOfSI/er37sbhtsMIMECdVymYpOPzHD9lXuXaL/0+kRbJ3qAZTQLywhZg4BWw1t3qIGOvafojX4UWbeEw==
@@ -1965,14 +1965,33 @@
     sass "^1.42.1"
     vhtml "^2.2.0"
 
-"@kickstartds/form@1.5.0-next.3":
-  version "1.5.0-next.3"
-  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-1.5.0-next.3.tgz#8c8a9b4a28b36a2bc1320b144567ba1afc112a97"
-  integrity sha512-TBZKE7Em9IS2KpCupmDkj1Q7UXTje+NI3+6Pwlm8s+3vJL8u+lV/+7z1arroftGI7xCc4axThvRbmllaNTm/Yw==
+"@kickstartds/core@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-1.4.0.tgz#627eb66182c7ba13a6c9517f01fb44699b6fb0f7"
+  integrity sha512-E7yLytHcq6m8QXK5NGndhRVklN9cu3tomAJi8Epb+GI5pEN31QVev9uNnlgiBEuoQWBm9lqv0swWf8xnxBJPnA==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "@kickstartds/base" "^1.5.0-next.3"
-    "@kickstartds/core" "^1.5.0-next.3"
+    bourbon "^7.0.0"
+    del "^6.0.0"
+    dependency-graph "^0.11.0"
+    esbuild "^0.12.25"
+    fast-glob "^3.2.7"
+    fs-extra "^10.0.0"
+    htm "^3.1.0"
+    lazysizes "^5.3.2"
+    lodash-es "^4.17.21"
+    pubsub-js "^1.9.3"
+    sass "^1.39.0"
+    vhtml "^2.2.0"
+
+"@kickstartds/form@1.5.0-next.4":
+  version "1.5.0-next.4"
+  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-1.5.0-next.4.tgz#bc010ceee82cb8ca0c9a193f51ff2b96dcfd57fa"
+  integrity sha512-fD8F9tKHOHJ2C6RbqM4WKIaDTJjDI6H+xj0uRx5/W5U1ACpVvBkryCDAcsQifBcn1PKagRJ7PhitF3Eaqzfo0A==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "@kickstartds/base" "^1.5.0-next.4"
+    "@kickstartds/core" "^1.4.0"
     classnames "^2.2.6"
 
 "@kickstartds/storybook-addon-component-tokens@^0.1.4":
@@ -7592,6 +7611,11 @@ esbuild@^0.12.23:
   version "0.12.23"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.23.tgz#fd40d70d3ec5e7893d8c5be655e3e38d096dd882"
   integrity sha512-qvS4aKnmKikoWGscd5lVAzgobMovlH/JhaWitRiQ8xJx0x1Fym0pqVjMFs43Nvff8WpibeWm+fWoLK88T1U0Xw==
+
+esbuild@^0.12.25:
+  version "0.12.29"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.29.tgz#be602db7c4dc78944a9dbde0d1ea19d36c1f882d"
+  integrity sha512-w/XuoBCSwepyiZtIRsKsetiLDUVGPVw1E/R3VTFSecIy8UR7Cq3SOtwKHJMFoVqqVG36aGkzh4e8BvpO1Fdc7g==
 
 esbuild@^0.13.3:
   version "0.13.3"
@@ -14226,7 +14250,7 @@ sass@^1.34.1:
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
-sass@^1.42.1:
+sass@^1.39.0, sass@^1.42.1:
   version "1.42.1"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.42.1.tgz#5ab17bebc1cb1881ad2e0c9a932c66ad64e441e2"
   integrity sha512-/zvGoN8B7dspKc5mC6HlaygyCBRvnyzzgD5khiaCfglWztY99cYoiTUksVx11NlnemrcfH5CEaCpsUKoW0cQqg==
