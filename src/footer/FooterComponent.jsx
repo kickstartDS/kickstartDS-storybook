@@ -30,7 +30,7 @@ export const Footer = ({ nav }) => (
 
       <div className="kds-footer__logo-wrap">
         <Link href="/" className="kds-footer__logo">
-          <img src="/logo.svg" />
+          <img alt="kickstartDS Logo" src="/logo.svg" />
         </Link>
       </div>
     </Section>
