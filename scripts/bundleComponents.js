@@ -10,15 +10,26 @@ const makeAllPackagesExternalPlugin = {
   },
 };
 
+const sharedConfig = {
+  format: "esm",
+  bundle: true,
+  plugins: [makeAllPackagesExternalPlugin],
+};
+
 
 (async () => {
   const entryPoints = await fg("src/**/*Component.jsx");
-  esbuild.build({
-    entryPoints,
-    outdir: "dist/components",
-    format: "esm",
-    bundle: true,
-    inject: ['./utils/react-shim.js'],
-    plugins: [makeAllPackagesExternalPlugin],
-  })
+  await Promise.all([
+    esbuild.build({
+      entryPoints,
+      outdir: "dist/components",
+      inject: ['./utils/react-shim.js'],
+      ...sharedConfig,
+    }),
+    esbuild.build({
+      entryPoints: ["src/zendesk/zendesk.js"],
+      outdir: "dist",
+      ...sharedConfig,
+    })
+  ]);
 })();
