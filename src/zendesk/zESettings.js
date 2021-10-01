@@ -63,7 +63,7 @@ export const zESettings = {
         enabled: ['kickstartDS']
       },
       concierge: {
-        avatarPath: 'https://kickstartds.com/images/kickstartds-some_640x640.png',
+        avatarPath: 'https://www.kickstartds.com/images/kickstartds-some_640x640.png',
         name: 'kickstartDS Team',
         title: {
           'en-gb': '... connect with us 😊',

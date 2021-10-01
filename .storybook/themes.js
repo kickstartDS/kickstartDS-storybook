@@ -31,7 +31,7 @@ export const light = create({
   inputTextColor: themes.light.inputTextColor,
   inputBorderRadius: themes.light.inputBorderRadius,
 
-  brandTitle: 'kickstartDS storybook',
-  brandUrl: 'https://kickstartds.com',
+  brandTitle: 'kickstartDS Storybook',
+  brandUrl: 'https://www.kickstartds.com',
   brandImage: '/logo.svg',
 });

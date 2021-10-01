@@ -114,7 +114,7 @@ export const Welcome = () => (
         text="Learn about the newest developments, or explore background articles about our architectural choices, and the rationale behind our decisions!"
         link={{
           fillAnimation: true,
-          href: "https://kickstartds.com/blog",
+          href: "https://www.kickstartds.com/blog",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
@@ -168,7 +168,7 @@ export const Welcome = () => (
     >
       <LinkButton
         className="c-button--main"
-        href="https://kickstartds.com"
+        href="https://www.kickstartds.com"
         label="... or learn more on our website"
         size="default"
         type="button"
