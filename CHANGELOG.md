@@ -1,3 +1,15 @@
+# v1.8.6 (Fri Oct 01 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add alt to footer logo ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.8.5 (Fri Oct 01 2021)
 
 #### ⚠️ Pushed to `master`
