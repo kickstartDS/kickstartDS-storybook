@@ -1901,10 +1901,10 @@
   resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
   integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
 
-"@kickstartds/base@1.5.0-next.4", "@kickstartds/base@^1.5.0-next.4":
-  version "1.5.0-next.4"
-  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-1.5.0-next.4.tgz#1a91a3bd37093b35c63d2912fa5d4d6958204e35"
-  integrity sha512-0OgYZcC+BBpX80PkagryTrErkSmbiEJ1Nvjl/xE/n1SX3usQt9XQ9giHKee958nqllrk5S5lo0rSbrs9LZ2FTA==
+"@kickstartds/base@1.5.0-next.6", "@kickstartds/base@^1.5.0-next.6":
+  version "1.5.0-next.6"
+  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-1.5.0-next.6.tgz#c61c0c054734a6aa3ce713cfa80addbc319f2c87"
+  integrity sha512-SqxLnL0aUiEe8SfWO+nl1J2sPvCi9qiRRrNVmJ41FQq4iiFPVW7YATS8bMjPaIhpIAMgFgBDh9MIXpigjTy9Xw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@glidejs/glide" "git://github.com/glidejs/glide.git#master"
@@ -1922,28 +1922,27 @@
     simplebar "^5.3.6"
     stickybits "^3.7.0"
 
-"@kickstartds/blog@1.5.0-next.4":
-  version "1.5.0-next.4"
-  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-1.5.0-next.4.tgz#d86de92d6adde1373f3ffce7d4a56b691fe18057"
-  integrity sha512-HDpCEQTEf9ZAg3w2LZ4qCKNwhU0zKPvbmSpXZmWcauJVkuzvxYwW+SzJ+w0j1BOzbAiEIT0L2c09OCIziS89uw==
+"@kickstartds/blog@1.5.0-next.6":
+  version "1.5.0-next.6"
+  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-1.5.0-next.6.tgz#a71a88271d35f1cec63650c86d3532bfe47ce783"
+  integrity sha512-jgFEzjjPgB00zygkoWP5dCRZ/SZq+WwPjoiPa/NyesDgPdkq0h9Y4rU+IauR8snTnrpbDeysrBs8LlxsPXsjog==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "@kickstartds/base" "^1.5.0-next.4"
+    "@kickstartds/base" "^1.5.0-next.6"
     "@kickstartds/core" "^1.4.0"
     classnames "^2.2.6"
     date-fns "^2.24.0"
 
-"@kickstartds/content@1.5.0-next.4":
-  version "1.5.0-next.4"
-  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-1.5.0-next.4.tgz#1db25ba5f112ced7709d8ff5ae6674b5835965e7"
-  integrity sha512-WPXiF7Opv6tqwHNYkuJiRbtVEkEdcnlqiGARmw0EuN/06NNw06xd7IuH74QiP24RD5ryb51jLf5TxNdvwqQqMw==
+"@kickstartds/content@1.5.0-next.6":
+  version "1.5.0-next.6"
+  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-1.5.0-next.6.tgz#601e3e5812de5a77a88d31ea5f5ccc8c73d46a6c"
+  integrity sha512-9axWRp2Pm2ySx3SsCafx7PHbh4hdg6WAAbqfWYk5RVuXqnm/91d1yO3oadpV3L2rlb3f7zCD1vlmghxeuP2BFA==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "@kickstartds/base" "^1.5.0-next.4"
+    "@kickstartds/base" "^1.5.0-next.6"
     "@kickstartds/core" "^1.4.0"
     classnames "^2.2.6"
     countup.js "^2.0.8"
-    date-fns "^2.24.0"
     objectFitPolyfill "^2.3.0"
 
 "@kickstartds/core@1.5.0-next.3":
@@ -1984,13 +1983,13 @@
     sass "^1.39.0"
     vhtml "^2.2.0"
 
-"@kickstartds/form@1.5.0-next.4":
-  version "1.5.0-next.4"
-  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-1.5.0-next.4.tgz#bc010ceee82cb8ca0c9a193f51ff2b96dcfd57fa"
-  integrity sha512-fD8F9tKHOHJ2C6RbqM4WKIaDTJjDI6H+xj0uRx5/W5U1ACpVvBkryCDAcsQifBcn1PKagRJ7PhitF3Eaqzfo0A==
+"@kickstartds/form@1.5.0-next.6":
+  version "1.5.0-next.6"
+  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-1.5.0-next.6.tgz#50c1d1a6c55e02dcf539fa7bdcc13451877f0ef6"
+  integrity sha512-jE7+Su9eY6wxvARM2r108Tbsxtfz/mPrW3ivncyrRZHZO5ptr30EX532Z+MIj1Ac4DfbzVuVdK9oY6G3EI1/hg==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "@kickstartds/base" "^1.5.0-next.4"
+    "@kickstartds/base" "^1.5.0-next.6"
     "@kickstartds/core" "^1.4.0"
     classnames "^2.2.6"
 
