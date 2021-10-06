@@ -1,3 +1,15 @@
+# v1.8.7 (Wed Oct 06 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: update kickstartDS ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.8.6 (Fri Oct 01 2021)
 
 #### ⚠️ Pushed to `master`
