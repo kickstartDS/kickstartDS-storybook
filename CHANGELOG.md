@@ -1,3 +1,15 @@
+# v1.8.8 (Tue Oct 12 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: blog template adjustment ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.8.7 (Wed Oct 06 2021)
 
 #### ⚠️ Pushed to `master`
