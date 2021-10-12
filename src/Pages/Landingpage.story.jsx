@@ -12,6 +12,7 @@ import {
   CollapsibleBox,
   Contact,
   Quote,
+  QuotesSlider,
   LogoTiles,
   CountUp,
 } from "@kickstartds/content";
@@ -35,9 +36,11 @@ const Page = () => (
           enabled: true,
           headline: {
             content:
-              "kickstartDS is the frontend first framework, a comprehensive component and pattern library",
+              "kickstartDS is a comprehensive component and pattern library",
             level: "h1",
             styleAs: "h1",
+            subheadline:"The frontend first framework!",
+            switchOrder: true,
           },
           horizontal: "left",
           indent: true,
@@ -58,9 +61,7 @@ const Page = () => (
             variant: "solid",
           },
           text:
-            `**helping** web development **teams to create** consistent and brand compliant web **frontends** super **efficiently**.\
-            \
-            So, building your **design system** for all your digital touch points feels now easy like squeeeeezing a lemon.`,
+            `We **enable** web development **teams to create** consistent and brand compliant web **frontends** super **efficiently.** With a **built-in Design System** to serve all your digital touch points. Easy like squeeeeezing a lemon.`,
           vertical: "center",
         }}
         height="default"
@@ -227,37 +228,38 @@ const Page = () => (
     <Section
       headline={{
         align: "center",
-        content: "Great components",
-        subheadline:
-          "Make the most out of your frontends by unifying their core utilizing component and design tokens",
+        content: "What our customers say",
         level: "h2",
-        styleAs: "h1",
+        styleAs: "h2",
+        align: "left",
         pageHeader: false,
         spaceAfter: "none",
       }}
       mode="list"
       deko={true}
-      className="l-section--outer-width-max" /* Background Weite */
+      className="l-section--outer-width-wide" /* Background Weite */
       pattern="1"
-      width="narrow" /* Content Weite */
+      width="default" /* Content Weite */
       background="dark"
-      align="center"
-      spaceAfter="small"
-      spaceBefore="small"
+      spaceAfter="default"
+      spaceBefore="default"
     >
-      <TextMedia
-        mediaAlignment="above-center"
-        text="kickstartDS is the foundation for your **design system** with reusable components and tools, guided by clear standards, that can be assembled together to **build digital** products: fast, flexible, responsive, accessible, xxx, yyy, zzz and the best of all:
-
-you can plug it onto every digital touch point you own."
-      />
-      <Button
-        className="c-button--main no-stretch"
-        href="#"
-        label="mehr erfahren"
-        size="medium"
-        type="button"
-        variant="solid-inverted"
+      <QuotesSlider
+        slides={[
+          {
+            source:"Max Mustermann, ABC GmbH",
+            text:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+            byline:"CEO",
+          },
+          {
+            source:"Max Mustermann, ABC GmbH",
+            text:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          },
+          {
+            source:"Max Mustermann, ABC GmbH",
+            text:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          }
+        ]}
       />
     </Section>
     <Section background="accent" spaceAfter="small" spaceBefore="small">

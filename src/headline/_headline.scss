@@ -8,3 +8,7 @@
         max-width: 90%;
     }
 }
+
+.c-post-head__meta + .c-headline {
+    margin-top: 0 !important;
+}

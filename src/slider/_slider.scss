@@ -4,4 +4,15 @@
   &-nav {
     margin-top: var(--c-slider-nav--margin);
   }
+
+  &__arrow {
+    [data-slider-arrows=outer] & {
+      &--prev {
+        // margin-left: 3px;
+      }
+      &--next {
+        // margin-right: 3px;
+      }
+    }
+  }
 }

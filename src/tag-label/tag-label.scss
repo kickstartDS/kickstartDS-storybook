@@ -1,0 +1,6 @@
+@use './tag-label-tokens';
+.tag-label {
+    &-container {
+        min-width: unset;
+    }
+}

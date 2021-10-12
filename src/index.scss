@@ -1,4 +1,5 @@
 @use './tokens.css';
+@use 'post/post.scss';
 @use 'button/button.scss';
 @use 'content-box/content-box.scss';
 @use 'cookiepro/theming.scss';
@@ -12,6 +13,7 @@
 @use 'logo-tiles/logo-tiles.scss';
 @use 'section/section.scss';
 @use 'slider/slider.scss';
+@use 'tag-label/tag-label.scss';
 @use 'teaser-box/teaser-box.scss';
 @use 'storytelling/storytelling.scss';
 @use 'visual/visual.scss';

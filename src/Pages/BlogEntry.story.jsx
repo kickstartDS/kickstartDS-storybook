@@ -12,30 +12,32 @@ const Page = () => (
   <>
   <Header />
     <div class="l-section l-section--space-before-small">
-      <div class="l-section__container l-section__container--narrow l-section__container--list">
-      <PostHead
-        date="2021-09-01"
-        categories={[
-          {
-            label:"About kickstartDS",
-          },
-          {
-            label:"Background",
-          }
-        ]}
-        headline={{
-          content: "Why we are creating kickstartDS",
-          subheadline: "published by: Daniel Ley",
-          level: "h1",
-          pageHeader: false,
-          spaceAfter: "none",
-        }}
-        image={{
-          src:"/img/why-kickstart-Design-System.svg",
-        }}
+      <div class="l-section__container l-section__container--wide l-section__container--list">
+        <PostHead
+          date="2021-09-01"
+          categories={[
+            {
+              label:"About kickstartDS",
+            },
+            {
+              label:"Background",
+            }
+          ]}
+          headline={{
+            content: "Why we are creating kickstartDS",
+            subheadline: "published by: Daniel Ley",
+            level: "h1",
+            pageHeader: false,
+            spaceAfter: "none",
+          }}
+          image={{
+            src:"/img/why-kickstart-Design-System.svg",
+          }}
 
-      />
-        <div class="c-html c-rich-text">
+        />
+      </div>
+      <div class="l-section__container l-section__container--wide l-section__container--list">
+        <div class="c-html c-rich-text c-post-text">
           <p class="has-large-font-size"><em>#tldr:</em> We want to support you to create one library of components, patterns and tokens to be used in any frontend you need to give your digital touch points a consistent interface. Even shorter: we want to <strong>kickstart your design system</strong> implementation. 😎</p>
           <p class="has-large-font-size"><strong>Now you might wonder if or why you need that.</strong></p>          <p>Let me provide some background. Jonas, founder of kickstartDS, and I have been working in the digital business all our professional life. We both have made our careers acting in different leading roles during the last two decades. Jonas from a development and tech perspective and I am from UX designers point of view. We both designed or coded patterns for the same things over and over again. Surely, we did rely on different frameworks in the past years. But never ever they met all our needs. </p>
           <p>In the last years, when I was working for a huge software corporation I was involved in their design system initiative to help creating a unified library at scale, serving hundreds of interfaces. There was quite an energetic and enthusiastic team working on it and after a while we could proudly say that it was adapted globally. In the years before, any other attempt building a pattern library or design system language failed awfully. Mostly because of technical reasons, silo-thinking and poor possibilities to adapt into existing environments. And I heard about the same problems from a lot of people from my network.</p>
