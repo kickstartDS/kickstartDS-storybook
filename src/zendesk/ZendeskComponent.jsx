@@ -2,7 +2,7 @@ import { useEffect, useRef, createContext } from "react";
 import { inBrowser } from "@kickstartds/core/lib/core";
 import { waitForZendesk, storageKey } from "./zELoader";
 
-const ZendeskContext = createContext();
+export const ZendeskContext = createContext();
 
 export const ZendeskProvider = (props) => {
   const timeoutRef = useRef();
