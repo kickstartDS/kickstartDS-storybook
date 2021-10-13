@@ -19,17 +19,10 @@ const sharedConfig = {
 
 (async () => {
   const entryPoints = await fg("src/**/*Component.jsx");
-  await Promise.all([
-    esbuild.build({
-      entryPoints,
-      outdir: "dist/components",
-      inject: ['./utils/react-shim.js'],
-      ...sharedConfig,
-    }),
-    esbuild.build({
-      entryPoints: ["src/zendesk/zendesk.js"],
-      outdir: "dist",
-      ...sharedConfig,
-    })
-  ]);
+  await esbuild.build({
+    entryPoints,
+    outdir: "dist/components",
+    inject: ['./utils/react-shim.js'],
+    ...sharedConfig,
+  });
 })();
