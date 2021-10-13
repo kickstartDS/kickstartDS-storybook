@@ -1,3 +1,15 @@
+# v1.9.0 (Wed Oct 13 2021)
+
+#### 🚀 Enhancement
+
+- add zendesk provider [#30](https://github.com/kickstartDS/kickstartDS-storybook/pull/30) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.8.8 (Tue Oct 12 2021)
 
 #### ⚠️ Pushed to `master`
