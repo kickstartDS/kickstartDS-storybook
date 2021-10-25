@@ -9,11 +9,4 @@
       margin-bottom: var(--spacing-xs);
     }
   }
-
-  &-text {
-    @include breakpoint.media("≥s") {
-      max-width: var(--g-content-width-narrow);
-      padding-right: calc(var(--g-content-padding) * 2);
-    }
-  }
 }

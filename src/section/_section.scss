@@ -72,6 +72,14 @@
     max-width: var(--g-content-width-full);
   }
 
+
+  &--content-width-narrow {
+    .l-section__container > * {
+      max-width: var(--g-content-width-narrow);
+      max-width: calc(var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2));
+    }
+  }
+
   &__pattern {
     position: relative;
     overflow: hidden;

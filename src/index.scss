@@ -7,10 +7,12 @@
 @use 'count-up/bubble-delay.scss';
 @use 'footer/footer.scss';
 @use 'footer/footer-nav.scss';
+@use 'glossary/glossary.scss';
 @use 'header/header.scss';
 @use 'headline/headline.scss';
 @use 'rich-text/rich-text.scss';
 @use 'logo-tiles/logo-tiles.scss';
+@use 'page-nav/page-nav.scss';
 @use 'section/section.scss';
 @use 'slider/slider.scss';
 @use 'tag-label/tag-label.scss';
@@ -18,6 +20,8 @@
 @use 'storytelling/storytelling.scss';
 @use 'visual/visual.scss';
 @use 'zitat/zitat.scss';
+
+@use '@kickstartds/core/source/core/breakpoint';
 
 main {
   outline: none !important;
@@ -30,4 +34,46 @@ main {
     position: absolute;
     top: 1rem;
   }
+}
+
+
+.template {
+  position: relative;
+  margin: auto;
+  gap: var(--spacing-xl);
+  padding: 0 var(--g-content-padding);
+  
+  @include breakpoint.media(">s") {
+    display: flex;
+  }
+
+  .l-section {
+    margin: unset;
+    &__container {
+      padding: 0;
+    }
+  }
+
+  &--wide {
+    max-width: var(--g-content-width-wide);
+    @include breakpoint.media(">s") {
+      max-width: calc(100% - calc(var(--g-content-padding) * 2));
+    }
+    @media(min-width: 1500px) {
+      max-width: var(--g-content-width-wide);
+    }
+  }
+
+  &__main {
+    @include breakpoint.media(">s") {
+      width: 70%;
+    }
+  }
+
+  &__side {
+    @include breakpoint.media(">s") {
+      width: 30%;
+    }
+  }
+
 }
