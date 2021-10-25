@@ -1,3 +1,15 @@
+# v1.9.1 (Mon Oct 25 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add glossary entry page ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.9.0 (Wed Oct 13 2021)
 
 #### 🚀 Enhancement
