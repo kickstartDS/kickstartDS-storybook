@@ -1,3 +1,15 @@
+# v1.9.2 (Wed Oct 27 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: adjust naming ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.9.1 (Mon Oct 25 2021)
 
 #### ⚠️ Pushed to `master`
