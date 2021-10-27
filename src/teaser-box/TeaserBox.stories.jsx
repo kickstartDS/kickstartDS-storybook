@@ -3,8 +3,8 @@ import teaserBoxStories, {Template} from "@kickstartds/base/lib/teaser-box/tease
 
 export default teaserBoxStories;
 
-export const Klickbar = Template.bind({});
-Klickbar.args = pack({
+export const Linked = Template.bind({});
+Linked.args = pack({
   ratio: "16:9",
   topic: "Lorem Ipsum",
   text:
@@ -16,9 +16,9 @@ Klickbar.args = pack({
     },
 });
 
-export const MitButton = Template.bind({});
-MitButton.args = pack({
-  ...Klickbar.args,
+export const Button = Template.bind({});
+Button.args = pack({
+  ...Linked.args,
   link: {
     variant: "solid",
     label: "mehr erfahren",
@@ -28,7 +28,7 @@ MitButton.args = pack({
 
 export const Dark = Template.bind({});
 Dark.args = pack({
-  ...Klickbar.args,
+  ...Linked.args,
   link: {
     variant: "solid-inverted",
     label: "mehr erfahren",

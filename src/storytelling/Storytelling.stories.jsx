@@ -11,10 +11,10 @@ export default {
   },
 };
 
-export const Bild16zu9 = Template.bind({});
-Bild16zu9.args = pack({
+export const Image = Template.bind({});
+Image.args = pack({
   image: {
-    source: "visual/visual_lemon.png",
+    source: "img/lemon.svg",
   },
   box: {
     headline: {

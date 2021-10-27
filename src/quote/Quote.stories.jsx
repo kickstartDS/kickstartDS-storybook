@@ -8,22 +8,22 @@ import tokens from "./quote-tokens.json";
 
 export default {
   ...quoteStories,
-  title: "Content/Zitat",
+  title: "Content/Quote",
   parameters: {
     cssprops: merge(quoteStories.parameters.cssprops, tokens),
   },
 };
 
-export const MitBild = Template.bind({});
-MitBild.args = pack({
+export const Image = Template.bind({});
+Image.args = pack({
   text:
     "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
   source: "Max Mustermann, ABC GmbH",
   date: undefined,
 });
 
-export const OhneBild = Template.bind({});
-OhneBild.args = pack({
+export const NoImage = Template.bind({});
+NoImage.args = pack({
   text:
     "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
   source: "Max Mustermann, ABC GmbH",

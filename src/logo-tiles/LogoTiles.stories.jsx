@@ -40,4 +40,4 @@ export default {
   }),
 };
 
-export const Default = Template.bind({});
+export const FourRow = Template.bind({});

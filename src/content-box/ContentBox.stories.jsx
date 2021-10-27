@@ -7,26 +7,26 @@ import tokens from "./content-box-tokens.json";
 
 export default {
   ...contentBoxStories,
-  title: "Base/Inhaltsbox",
+  title: "Base/Content Box",
   parameters: {
     cssprops: merge(contentBoxStories.parameters.cssprops, tokens),
   },
 };
 
-export const Default = Template.bind({});
-Default.args = pack({
+export const Image = Template.bind({});
+Image.args = pack({
   ratio: "16:9",
   topic: "Lorem Ipsum",
   text:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ispum dolor distinctio minima unde voluptatum aut. Lorem ipsum dolor sit amet.",
 });
 
-export const MitLink = Template.bind({});
-MitLink.args = pack({
-  ...Default.args,
+export const ImageLink = Template.bind({});
+ImageLink.args = pack({
+  ...Image.args,
   link: {
     enabled: true,
-    variant: "outline",
+    variant: "solid",
     href: "#",
     label: "Mehr erfahren",
   },

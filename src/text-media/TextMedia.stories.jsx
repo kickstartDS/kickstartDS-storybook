@@ -4,8 +4,8 @@ import textMediaStories, {
 
 export default textMediaStories;
 
-export const BildUeberText = Template.bind({});
-BildUeberText.args = {
+export const ImageAbove = Template.bind({});
+ImageAbove.args = {
   media: [
     {
       image: {
@@ -22,8 +22,8 @@ Suscipit quos rem suscipit culpa. Et distinctio et veritatis consectetur quae do
 `,
 };
 
-export const VideoUeberText = Template.bind({});
-VideoUeberText.args = {
+export const VideoAbove = Template.bind({});
+VideoAbove.args = {
   media: [
     {
       video: {
@@ -38,9 +38,9 @@ Suscipit quos rem suscipit culpa. Et distinctio et veritatis consectetur quae do
     `,
 };
 
-export const BildInText = Template.bind({});
-BildInText.args = {
-  ...BildUeberText.args,
+export const ImageIntext = Template.bind({});
+ImageIntext.args = {
+  ...ImageAbove.args,
   mediaAlignment: "intext-left",
   text: `
 Consequuntur est quia atque eum ducimus. Consequatur fugiat hic eos perferendis. Libero unde omnis dolorem maxime occaecati sapiente distinctio. Consectetur non placeat dolorem est animi.
@@ -52,9 +52,9 @@ Suscipit quos rem suscipit culpa. Et distinctio et veritatis consectetur quae do
   `,
 };
 
-export const BildNebenText = Template.bind({});
-BildNebenText.args = {
-  ...BildUeberText.args,
+export const ImageBeside = Template.bind({});
+ImageBeside.args = {
+  ...ImageAbove.args,
   mediaAlignment: "beside-left",
   text: `
 Consequuntur est quia atque eum ducimus. Consequatur fugiat hic eos perferendis. Libero unde omnis dolorem maxime occaecati sapiente distinctio. Consectetur non placeat dolorem est animi.

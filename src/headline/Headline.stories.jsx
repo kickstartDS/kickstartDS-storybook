@@ -46,14 +46,14 @@ H4.args = pack({
   align: "left",
 });
 
-export const MitSubheadline = Template.bind({});
-MitSubheadline.args = pack({
+export const Subheadline = Template.bind({});
+Subheadline.args = pack({
   ...H2.args,
   subheadline: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
 });
 
-export const MitSubheadlineGetauscht = Template.bind({});
-MitSubheadlineGetauscht.args = pack({
+export const SubheadlineOrderSwapped = Template.bind({});
+SubheadlineOrderSwapped.args = pack({
   ...H2.args,
   subheadline: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   switchOrder: true,

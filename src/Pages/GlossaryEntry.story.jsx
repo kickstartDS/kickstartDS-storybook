@@ -25,7 +25,7 @@ import {
 
 
 export default {
-  title: "Glossary",
+  title: "Glossary Entry",
 };
 
 import { Header } from "../header/HeaderComponent";
@@ -121,4 +121,4 @@ const Page = () => (
 );
 
 const Template = (args) => <Page {...args} />;
-export const Glossary = Template.bind({});
+export const GlossaryEntry = Template.bind({});

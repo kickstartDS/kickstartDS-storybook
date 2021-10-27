@@ -1,9 +1,9 @@
 <svg width="1440" height="492" viewBox="0 0 1440 492" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
+<g clip-path="url(#clip0_10:108)">
 <path opacity="0.2" d="M51 378L43.5 366.5L51 325.5L91.5 294.5L204.5 303V353L161.5 386.5L51 378Z" fill="#065669" fill-opacity="0.2"/>
 <path d="M0 230V165.5H93.5L132 216.5L112.5 300.5L75.5 327L0 230Z" fill="#ECFF00" fill-opacity="0.4"/>
 <path d="M1284.25 32.2505H938.25V114.25L1056.75 232.75H1331.25V79.2505L1284.25 32.2505Z" fill="#ECFF00" fill-opacity="0.2"/>
-<ellipse opacity="0.2" cx="1156.5" cy="237.5" rx="240.5" ry="237.5" fill="url(#paint0_radial)"/>
+<ellipse opacity="0.2" cx="1156.5" cy="237.5" rx="240.5" ry="237.5" fill="url(#paint0_radial_10:108)"/>
 <path d="M1323 110H1333L1380.5 62.5V16.5L1368 4L1305.5 66.5V92.5L1323 110Z" fill="#06708A"/>
 <path d="M1301.5 112H1246.5L1209 73L1224 56H1246.5L1310.5 103L1301.5 112Z" fill="#06708A"/>
 <path opacity="0.2" d="M788.75 302.75L749.25 259.75L749.25 114.75L858.75 -0.750204H972.25L988.75 14.7498L988.75 96.2557L788.75 302.75Z" fill="#065669" fill-opacity="0.4"/>
@@ -31,11 +31,11 @@
 <circle cx="1299.25" cy="259.25" r="4" fill="white"/>
 </g>
 <defs>
-<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1156.5 237.5) rotate(90) scale(237.5 240.5)">
+<radialGradient id="paint0_radial_10:108" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1156.5 237.5) rotate(90) scale(237.5 240.5)">
 <stop offset="0.333333" stop-color="#ECFF00"/>
 <stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
 </radialGradient>
-<clipPath id="clip0">
+<clipPath id="clip0_10:108">
 <rect width="1440" height="492" fill="white"/>
 </clipPath>
 </defs>

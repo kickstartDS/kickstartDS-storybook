@@ -33,4 +33,4 @@ export { Landingpage } from "./Landingpage.story";
 export { TeaserVariants } from "./TeaserVariants.story";
 export { CountUpVariants } from "./CountUpVariants.story";
 export { BlogEntry } from "./BlogEntry.story";
-export { Glossary } from "./Glossary.story";
+export { GlossaryEntry } from "./GlossaryEntry.story";

@@ -1302,6 +1302,35 @@
   background: 0;
 }
 
+.c-quote {
+  --c-quote--align: top;
+}
+
+.c-quote__text {
+  --c-quote__text--margin: var(--spacing-s);
+}
+
+.c-quote__source {
+  --c-quote_source--font: var(--font-ui-s);
+}
+
+.l-section--dark .c-quote__source {
+  --c-quote_source--font: var(--font-ui-s);
+  --c-quote_source--color: var(--color-white);
+}
+
+.l-section--dark .c-quote__content {
+  --c-quote_icon--color: var(--l-section-dark-color);
+}
+
+.c-quote__text {
+  margin-bottom: var(--c-quote__text--margin);
+}
+
+.c-quote__source {
+  color: var(--c-quote_source--color);
+}
+
 .l-section--accent {
   --l-section--background: #eceff3;
 }
@@ -1557,6 +1586,13 @@
   margin-top: var(--c-slider-nav--margin);
 }
 
+.c-storytelling[data-bg] .c-headline > :first-child, .c-storytelling[data-bg] .c-rich-text {
+  color: var(--l-section-dark-color);
+}
+.c-storytelling[data-bg] .c-headline__subheadline {
+  color: var(--color-primary-lighter-4);
+}
+
 .c-tag-label__content {
   --c-tag-label--vertical-padding: var(--spacing-xs);
 }
@@ -1691,13 +1727,6 @@
   --c-button--font: var(--font-ui-xs);
 }
 
-.c-storytelling[data-bg] .c-headline > :first-child, .c-storytelling[data-bg] .c-rich-text {
-  color: var(--l-section-dark-color);
-}
-.c-storytelling[data-bg] .c-headline__subheadline {
-  color: var(--color-primary-lighter-4);
-}
-
 .c-visual {
   --c-visual--min-height: 35vh;
 }
@@ -1800,35 +1829,6 @@
   .c-visual--welcome .c-visual__box {
     --c-visual_box--max-width: 25rem;
   }
-}
-
-.c-quote {
-  --c-quote--align: top;
-}
-
-.c-quote__text {
-  --c-quote__text--margin: var(--spacing-s);
-}
-
-.c-quote__source {
-  --c-quote_source--font: var(--font-ui-s);
-}
-
-.l-section--dark .c-quote__source {
-  --c-quote_source--font: var(--font-ui-s);
-  --c-quote_source--color: var(--color-white);
-}
-
-.l-section--dark .c-quote__content {
-  --c-quote_icon--color: var(--l-section-dark-color);
-}
-
-.c-quote__text {
-  margin-bottom: var(--c-quote__text--margin);
-}
-
-.c-quote__source {
-  color: var(--c-quote_source--color);
 }
 
 main {

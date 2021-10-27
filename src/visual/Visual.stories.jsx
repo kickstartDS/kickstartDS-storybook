@@ -12,8 +12,10 @@ export default {
   },
 };
 
-export const BoxHell = Template.bind({});
-BoxHell.args = pack({
+export const BoxLight = Template.bind({});
+BoxLight.args = pack({
+  backgroundColor: "transparent",
+  height:"fullImage",
   box: {
     background: "light",
     link: {
@@ -22,5 +24,13 @@ BoxHell.args = pack({
   },
 });
 
-export const BoxDunkel = Template.bind({});
-BoxDunkel.args = pack({});
+export const BoxDark = Template.bind({});
+BoxDark.args = pack({
+  backgroundColor: "transparent",
+  height: "fullImage",
+  box: {
+    link: {
+      variant: "solid-inverted"
+    }
+  }
+});
