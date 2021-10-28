@@ -1,20 +1,11 @@
 .c-quote {
   --c-quote--align: top;
-}
-
-.c-quote__text {
   --c-quote__text--margin: var(--spacing-s);
-}
-
-.c-quote__source {
   --c-quote_source--font: var(--font-ui-s);
-}
 
-.l-section--dark .c-quote__source {
-  --c-quote_source--font: var(--font-ui-s);
-  --c-quote_source--color: var(--color-white);
-}
-
-.l-section--dark .c-quote__content {
-  --c-quote_icon--color: var(--l-section-dark-color);
+  .l-section--dark & {
+    --c-quote_source--font: var(--font-ui-s);
+    --c-quote_source--color: var(--color-white);
+    --c-quote_icon--color: var(--l-section-dark-color);
+  }
 }

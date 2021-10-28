@@ -9,6 +9,7 @@ import {
 } from "@kickstartds/base";
 import { Button } from "@kickstartds/base/lib/button";
 import {
+  Storytelling,
   Visual,
   CollapsibleBox,
   Contact,
@@ -30,38 +31,19 @@ export default {
 
 import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
+import { isUndefined } from "lodash";
 
 const Page = () => (
   <>
     <Header />
-    <div className="template template--wide">
-
-      <div className="template__main">
 
         <Section
           width="narrow"
-          className="l-section--outer-width-full"
           mode="list"
-          spaceBefore="small"
+          spaceBefore="default"
         >
           <div className="c-glossary">
             <div className="c-glossary-head">
-              <div className="c-glossary-head__meta">
-                <div className="tag-label-container">
-                  <div>
-                    <TagLabel
-                      label="Decision"
-                      size="s"
-                      />
-                  </div>
-                  <div>
-                    <TagLabel
-                      label="kickstartDS"
-                      size="s"
-                    />
-                  </div>
-                </div>
-              </div>
               <Headline
                 content="CSS3"
                 level="h1"
@@ -88,34 +70,131 @@ const Page = () => (
         }
           />
         </div>
-      </Section>
-
-    </div>
-    <div className="template__side">
-      <Section spaceBefore="small">
-        <div className="kds-page-nav">
-          <ul>
-            <h3>Related</h3>
-            <li>
-              <a href="#">
-                SASS
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Test
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Lorem ipsum
-              </a>
-            </li>
-          </ul>
+        <div className="tag-label-container">
+          <div>
+            <TagLabel
+              label="Decision"
+              size="s"
+              />
+          </div>
+          <div>
+            <TagLabel
+              label="kickstartDS"
+              size="s"
+            />
+          </div>
         </div>
       </Section>
-    </div>
-  </div>
+
+      <Section
+        spaceBefore="none"
+        spaceAfter="default"
+        width="narrow"
+        background="default"
+      >
+        <div className="cta">
+          <Headline
+            content="Anything on your mind?"
+            styleAs="h1"
+          />
+          <Storytelling
+            box={{
+              text:"Read more, or discuss this decision with us, on StackShare.io",
+              vAlign: "top",
+              link:{
+                label:"Lets have a chat",
+                variant:"solid",
+                iconAfter: true,
+                icon:{
+                  icon:"person",
+                }
+              },
+            }}
+            full
+            image={{
+              source:"img/contact.svg",
+              vAlign: "top",
+              order:{
+                desktopImageLast: true,
+              },
+            }}
+          />
+        </div>
+      </Section>
+
+      <Section
+        headline={{
+          content:"Related"
+        }}
+        spaceBefore="default"
+        background="accent"
+        width="narrow"
+        mode="list"
+      >
+      <div className="related-post">
+        <Headline
+          content="SASS"
+          level="h3"
+        />
+        <TextMedia
+          text={`
+Sass is the CSS extension language of our choice for the additional constructs it offers when creating modularized and DRY styles for components in a Design System.
+
+Key feature for us would be the support for nested declarations. Being able to write composable styles in a concise manner enables the creation of maintainable Design Systems, even if the number of components begins to scale up. In combination with BEM as a convention, it automatically forces developers to think in well defined, maintainable structures when creating additional components`}
+          media={[
+            {
+              image: {
+                src: 'img/glossary/Sass.svg',
+                height: 100,
+                width: 100
+              }
+            }
+          ]}
+          mediaAlignment="intext-left"
+        />
+        <Button
+          label="Keep reading"
+          variant="clear"
+          iconAfter
+          icon={{
+            icon:"chevron-right"
+          }}
+        />
+      </div>
+      
+      <div className="related-post">
+        <Headline
+          content="Typescript"
+          level="h3"
+        />
+        <TextMedia
+          text={`
+In addition to using ES6 as a specific flavor, on top of JavaScript, as a technology, we're using TypeScript for it's additional type safety and resulting confidence when developing long lasting, well-rounded frontend solutions like a component library.
+
+One additional feature of TypeScript we're relying heavily on is the ability to generate types for publishing packages. We use this to generate all component typings automatically, based on shared JSON Schema definitions, enabling auto-complete for properties defined in the context of the component... based on the generated types.`}
+          media={[
+            {
+              image: {
+                src: 'img/glossary/Typescript.svg',
+                height: 100,
+                width: 100
+              }
+            }
+          ]}
+          mediaAlignment="intext-left"
+        />
+        <Button
+          label="Keep reading"
+          variant="clear"
+          iconAfter
+          icon={{
+            icon:"chevron-right"
+          }}
+        />
+      </div>
+
+      </Section>
+
   <Footer {...FooterStories.args} />
   </>
 );

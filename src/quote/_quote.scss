@@ -1,9 +1,13 @@
 @use './quote-tokens';
 
-.c-quote__text {
-  margin-bottom: var(--c-quote__text--margin);
-}
+.c-quote {
+  &__text {
+    margin-bottom: var(--c-quote__text--margin);
+  }
 
-.c-quote__source {
-  color: var(--c-quote_source--color);
-}
+  &__source, &__byline {
+    color: var(--c-quote_source--color);
+  }
+}  
+
+

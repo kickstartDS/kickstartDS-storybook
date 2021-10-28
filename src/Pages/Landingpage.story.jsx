@@ -68,9 +68,9 @@ const Page = () => (
         media={{
           image: {
             indent: "none",
-            srcDesktop: "img/visual/bg-hero-lemon-desktop.svg",
-            srcMobile: "img/visual/visual_lemon-m.png",
-            srcTablet: "img/visual/visual_lemon.png",
+            srcDesktop: "img/banner/bg-hero-lemon-desktop.svg",
+            srcMobile: "img/lemon.svg",
+            srcTablet: "img/lemon.svg",
           },
           mode: "image",
         }}

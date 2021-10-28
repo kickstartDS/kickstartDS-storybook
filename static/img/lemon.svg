@@ -1,34 +1,29 @@
 <svg width="481" height="475" viewBox="0 0 481 475" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path opacity="0.2" d="M8 380L0.5 368.5L8 327.5L48.5 296.5L161.5 305V355L118.5 388.5L8 380Z" fill="#065669" fill-opacity="0.2"/>
-<ellipse opacity="0.2" cx="240.5" cy="237.5" rx="240.5" ry="237.5" fill="url(#paint0_radial_150:196)"/>
-<path d="M261 129H271L318.5 81.5V35.5L306 23L243.5 85.5V111.5L261 129Z" fill="#06708A"/>
-<path d="M239.5 131H184.5L147 92L162 75H184.5L248.5 122L239.5 131Z" fill="#06708A"/>
-<path d="M287.25 136.25H227.75L155.75 208.75V343.75L184.25 372.25H299.25L327.75 343.75V176.75L287.25 136.25Z" fill="#ECFF00"/>
-<circle cx="183.25" cy="318.25" r="3" fill="white"/>
-<circle cx="240.75" cy="353.75" r="2.5" fill="white"/>
-<circle cx="250.25" cy="275.25" r="2" fill="white"/>
-<circle cx="214.25" cy="252.25" r="3" fill="white"/>
-<circle cx="249.25" cy="321.25" r="2" fill="white"/>
-<circle cx="228.25" cy="294.25" r="2" fill="white"/>
-<circle cx="254.25" cy="316.25" r="2" fill="white"/>
-<circle cx="206.25" cy="305.25" r="2" fill="white"/>
-<circle cx="201.25" cy="309.25" r="2" fill="white"/>
-<circle cx="189.25" cy="297.25" r="2" fill="white"/>
-<path d="M203.25 150.25L151.25 202.25V344.75L190.25 383.25L280.75 396.75L314.25 364.25L321.75 179.75L287.75 146.25L203.25 150.25Z" stroke="#065669" stroke-opacity="0.4" stroke-width="2"/>
-<circle cx="198.25" cy="276.25" r="6" fill="white"/>
-<circle cx="192.25" cy="240.25" r="2" fill="white"/>
-<circle cx="190.25" cy="337.25" r="5" fill="white"/>
-<circle cx="220.25" cy="315.25" r="3" fill="white"/>
-<circle cx="184.25" cy="258.25" r="3" fill="white"/>
-<circle cx="175.25" cy="299.25" r="3" fill="white"/>
-<circle cx="211.75" cy="343.75" r="2.5" fill="white"/>
-<circle cx="244.25" cy="296.25" r="3" fill="white"/>
-<circle cx="247.25" cy="285.25" r="3" fill="white"/>
-<circle cx="237.25" cy="278.25" r="4" fill="white"/>
-<defs>
-<radialGradient id="paint0_radial_150:196" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(240.5 237.5) rotate(90) scale(237.5 240.5)">
-<stop offset="0.333333" stop-color="#ECFF00"/>
-<stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
-</radialGradient>
-</defs>
+<path opacity="0.5" d="M21.5 380L14 368.5L21.5 327.5L62 296.5L175 305V355L132 388.5L21.5 380Z" fill="#065669" fill-opacity="0.1"/>
+<path d="M292.348 312.719L263.472 281.285L263.472 175.285L343.52 90.8508L426.492 90.8508L438.554 102.182L438.554 161.765L292.348 312.719Z" fill="#065669" fill-opacity="0.1"/>
+<path d="M34.1478 110.334L37.803 92.9714L69.5544 76.2856V84.6855L147.46 84.6852L242.953 182.068L197.262 227.758L127.356 219.077L34.1478 110.334Z" fill="#ECFF00" fill-opacity="0.2"/>
+<path d="M264 157H274L321.5 109.5V63.5L309 51L246.5 113.5V139.5L264 157Z" fill="#06708A"/>
+<path d="M242.5 159H187.5L150 120L165 103H187.5L251.5 150L242.5 159Z" fill="#06708A"/>
+<path d="M290.25 164.25H230.75L158.75 236.75V371.75L187.25 400.25H302.25L330.75 371.75V204.75L290.25 164.25Z" fill="#ECFF00"/>
+<circle cx="186.25" cy="346.25" r="3" fill="white"/>
+<circle cx="243.75" cy="381.75" r="2.5" fill="white"/>
+<circle cx="253.25" cy="303.25" r="2" fill="white"/>
+<circle cx="217.25" cy="280.25" r="3" fill="white"/>
+<circle cx="252.25" cy="349.25" r="2" fill="white"/>
+<circle cx="231.25" cy="322.25" r="2" fill="white"/>
+<circle cx="257.25" cy="344.25" r="2" fill="white"/>
+<circle cx="209.25" cy="333.25" r="2" fill="white"/>
+<circle cx="204.25" cy="337.25" r="2" fill="white"/>
+<circle cx="192.25" cy="325.25" r="2" fill="white"/>
+<path d="M206.25 178.25L154.25 230.25V372.75L193.25 411.25L283.75 424.75L317.25 392.25L324.75 207.75L290.75 174.25L206.25 178.25Z" stroke="#065669" stroke-opacity="0.4" stroke-width="2"/>
+<circle cx="201.25" cy="304.25" r="6" fill="white"/>
+<circle cx="195.25" cy="268.25" r="2" fill="white"/>
+<circle cx="193.25" cy="365.25" r="5" fill="white"/>
+<circle cx="223.25" cy="343.25" r="3" fill="white"/>
+<circle cx="187.25" cy="286.25" r="3" fill="white"/>
+<circle cx="178.25" cy="327.25" r="3" fill="white"/>
+<circle cx="214.75" cy="371.75" r="2.5" fill="white"/>
+<circle cx="247.25" cy="324.25" r="3" fill="white"/>
+<circle cx="250.25" cy="313.25" r="3" fill="white"/>
+<circle cx="240.25" cy="306.25" r="4" fill="white"/>
 </svg>

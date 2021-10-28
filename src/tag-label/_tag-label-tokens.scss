@@ -1,6 +1,12 @@
 .c-tag-label {
+  --c-tag-label--background-color: var(--color-primary-alpha-1);
 
-  &__content {
-    --c-tag-label--vertical-padding: var(--spacing-xs);
-  }
+  --tag-label--border: solid 2px var(--color-primary-alpha-0);
+  --c-tag-label--border-radius: 0;
+
+  --c-tag-label--color: var(--color-primary);
+
+  --c-tag-label--font-weight: var(--font-weight-semi-bold);
+
+  --c-tag-label--vertical-padding: var(--spacing-xs);
 }

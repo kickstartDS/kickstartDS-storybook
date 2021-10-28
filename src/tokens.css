@@ -176,7 +176,7 @@
   --g-link--color-hover: var(--color-primary);
   --g-link--backround-hover: var(--color-primary-alpha-1);
 
-  --g-topic--color: var(--c-rich-text--color);
+  --g-topic--color: var(--color-black);
 
   --g-header-height: 0px;
 

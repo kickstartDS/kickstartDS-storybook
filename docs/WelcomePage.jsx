@@ -44,9 +44,9 @@ export const Welcome = () => (
         media={{
           image: {
             indent: "none",
-            srcDesktop: "img/visual/visual_lemon.png",
-            srcMobile: "img/visual/visual_lemon-m.png",
-            srcTablet: "img/visual/visual_lemon.png",
+            srcDesktop: "img/banner/visual_lemon.png",
+            srcMobile: "img/lemon.svg",
+            srcTablet: "img/banner/visual_lemon.png",
           },
           mode: "image",
         }}
