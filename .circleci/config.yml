@@ -69,8 +69,16 @@ jobs:
           name: Deploy Storybook
           command: yarn chromatic
       - run:
+          name: Rename dist folder
+          command: mv storybook-static storybook
+      - run:
+          name: Zip dist folder
+          command: tar -czf storybook.tar.gz storybook
+      - store_artifacts:
+          path: storybook.tar.gz
+      - run:
           name: Deploy Netlify
-          command: yarn netlify deploy --prod --dir=storybook-static
+          command: yarn netlify deploy --prod --dir=storybook
 
   update_website:
     docker:
