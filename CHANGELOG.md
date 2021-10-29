@@ -1,3 +1,16 @@
+# v1.9.5 (Fri Oct 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartds-storybook ([@lmestel](https://github.com/lmestel))
+- build(circleci): remove netlify deployment ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.9.4 (Thu Oct 28 2021)
 
 #### ⚠️ Pushed to `master`
