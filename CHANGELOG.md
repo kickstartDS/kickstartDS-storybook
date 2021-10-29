@@ -1,3 +1,19 @@
+# v1.10.0 (Fri Oct 29 2021)
+
+#### 🚀 Enhancement
+
+- feature: refactor glossary into its own component [#33](https://github.com/kickstartDS/kickstartDS-storybook/pull/33) ([@julrich](https://github.com/julrich))
+
+#### ⚠️ Pushed to `master`
+
+- fix: update kickstartDS, add JSON schema addon ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.9.10 (Fri Oct 29 2021)
 
 #### ⚠️ Pushed to `master`
