@@ -18,7 +18,13 @@
   --color-error: #cc0000;
 }
 
-.triple-col {
+.two-col {
+  .l-section__container {
+    --l-section_col--min-width: 21rem;
+  }
+}
+
+.three-col {
   .l-section__container {
     --l-section_col--min-width: 12rem;
     

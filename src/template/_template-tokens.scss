@@ -1,0 +1,70 @@
+@use "@kickstartds/core/source/core/breakpoint";
+
+.template {
+  &__side {
+    @include breakpoint.media(">s") {
+      :root & {
+        --font-size-xs: 0.6rem;
+        --font-size-s: 0.8rem;
+        --font-size-m: 0.9rem;
+        --font-size-l: 1.125rem;
+        --font-size-xl: 1.35rem;
+        --font-size-xxl: 1.75rem;
+
+        --line-height-xs: 1rem;
+        --line-height-s: 1.3rem;
+        --line-height-m: 1.4rem;
+        --line-height-l: 1.5rem;
+        --line-height-xl: 1.75rem;
+        --line-height-xxl: 2.15rem;
+
+        --spacing-xxs: 0.118rem;
+        --spacing-xs: 0.25rem;
+        --spacing-s: 0.65rem;
+        --spacing-m: 0.85rem;
+        --spacing-l: 1.25rem;
+        --spacing-xl: 1.9rem;
+        --spacing-xxl: 2.1179rem;
+
+        --font-display-xs: var(--font-size-xs) / calc(var(--line-height-xs) * var(--line-height-factor-display))
+          var(--font-family-display);
+        --font-display-s: var(--font-size-s) / calc(var(--line-height-s) * var(--line-height-factor-display))
+          var(--font-family-display);
+        --font-display-l: var(--font-size-l) / calc(var(--line-height-l) * var(--line-height-factor-display))
+          var(--font-family-display);
+        --font-display-m: var(--font-size-m) / calc(var(--line-height-m) * var(--line-height-factor-display))
+          var(--font-family-display);
+        --font-display-xl: var(--font-size-xl) / calc(var(--line-height-xl) * var(--line-height-factor-display))
+          var(--font-family-display);
+        --font-display-xxl: var(--font-size-xxl) / calc(var(--line-height-xxl) * var(--line-height-factor-display))
+          var(--font-family-display);
+
+        --font-copy-xs: var(--font-size-xs) / calc(var(--line-height-xs) * var(--line-height-factor-copy))
+          var(--font-family-copy);
+        --font-copy-s: var(--font-size-s) / calc(var(--line-height-s) * var(--line-height-factor-copy))
+          var(--font-family-copy);
+        --font-copy-l: var(--font-size-l) / calc(var(--line-height-l) * var(--line-height-factor-copy))
+          var(--font-family-copy);
+        --font-copy-m: var(--font-size-m) / calc(var(--line-height-m) * var(--line-height-factor-copy))
+          var(--font-family-copy);
+        --font-copy-xl: var(--font-size-xl) / calc(var(--line-height-xl) * var(--line-height-factor-copy))
+          var(--font-family-copy);
+        --font-copy-xxl: var(--font-size-xxl) / calc(var(--line-height-xxl) * var(--line-height-factor-copy))
+          var(--font-family-copy);
+
+        --font-ui-xs: var(--font-size-xs) / calc(var(--line-height-xs) * var(--line-height-factor-ui))
+          var(--font-family-ui);
+        --font-ui-s: var(--font-size-s) / calc(var(--line-height-s) * var(--line-height-factor-ui))
+          var(--font-family-ui);
+        --font-ui-l: var(--font-size-l) / calc(var(--line-height-l) * var(--line-height-factor-ui))
+          var(--font-family-ui);
+        --font-ui-m: var(--font-size-m) / calc(var(--line-height-m) * var(--line-height-factor-ui))
+          var(--font-family-ui);
+        --font-ui-xl: var(--font-size-xl) / calc(var(--line-height-xl) * var(--line-height-factor-ui))
+          var(--font-family-ui);
+        --font-ui-xxl: var(--font-size-xxl) / calc(var(--line-height-xxl) * var(--line-height-factor-ui))
+          var(--font-family-ui);
+      }
+    }
+  }
+}

@@ -102,8 +102,8 @@
   --line-height-factor-copy: 1;
   --line-height-factor-ui: 1;
 
-  --font-size-xs: 0.6rem;   /* Copy XS */
-  --font-size-s: 0.8rem;   /* Copy S */
+  --font-size-xs: 0.6rem;
+  --font-size-s: 0.8rem;
   --font-size-m: 0.9rem;    /* Copy, Subheadline */
   --font-size-l: 1.125rem;  /* h3 */
   --font-size-xl: 1.35rem;  /* h2 */

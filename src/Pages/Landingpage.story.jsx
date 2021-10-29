@@ -87,7 +87,7 @@ const Page = () => (
       pageHeader: false,
       spaceAfter: "none",
     }}
-    className="l-section--outer-width-wide triple-col"
+    className="l-section--outer-width-wide three-col"
     pattern="2"
     width="default"
     deko

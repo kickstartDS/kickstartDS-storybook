@@ -1,0 +1,37 @@
+@use './template-tokens';
+@use '@kickstartds/core/source/core/breakpoint';
+
+
+.template {
+  position: relative;
+  margin: auto;
+  gap: var(--spacing-xl);
+  padding: 0 var(--g-content-padding);
+  
+  @include breakpoint.media(">s") {
+    display: flex;
+  }
+
+  .l-section {
+    margin: unset;
+    &__container {
+      padding: 0;
+    }
+  }
+
+  &--wide {
+    max-width: var(--g-content-width-wide);
+  }
+
+  &__main {
+    @include breakpoint.media(">s") {
+      width: 70%;
+    }
+  }
+
+  &__side {
+    @include breakpoint.media(">s") {
+      width: 30%;
+    }
+  }
+}

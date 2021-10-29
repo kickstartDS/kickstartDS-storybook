@@ -10,6 +10,10 @@
   --c-button--padding: var(--spacing-xs) var(--spacing-s);
 }
 
+.c-button--large {
+  --c-button--font: var(--font-ui-m) !important;
+}
+
 .c-button--solid {
   --c-button--color: var(--color-secondary);
   --c-button--color-hover: var(--color-secondary-lighter-1);
