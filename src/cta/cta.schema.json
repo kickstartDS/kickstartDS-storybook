@@ -4,12 +4,44 @@
   "title": "cta",
   "type": "object",
   "properties": {
-    "headline":{
-      "$ref": "http://frontend.ruhmesmeile.com/base/molecules/headline.schema.json"
+    "headline": {
+      "allOf": [
+        {
+          "properties": {
+            "align": {
+              "default": "left"
+            }
+          }
+        },
+        {
+          "$ref": "http://frontend.ruhmesmeile.com/base/molecules/headline.schema.json"
+        }
+      ]
     },
-    "storytelling":{
-      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/storytelling.schema.json"
+    "storytelling": {
+      "allOf": [
+        {
+          "properties": {
+            "image": {
+              "properties": {
+                "order": {
+                  "properties": {
+                    "desktopImageLast": {
+                      "default": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "$ref": "http://frontend.ruhmesmeile.com/content/molecules/storytelling.schema.json"
+        }
+      ]
+    },
+    "button": {
+      "$ref": "http://frontend.ruhmesmeile.com/base/atoms/link-button.schema.json"
     }
   }
 }
-  
