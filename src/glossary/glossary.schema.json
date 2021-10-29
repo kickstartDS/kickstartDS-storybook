@@ -26,7 +26,7 @@
           "title": "Url for the main image",
           "type": "string",
           "format": "image",
-          "default": "https://picsum.photos/seed/glossary/300/300",
+          "default": "https://picsum.photos/seed/glossary-cover/300/300",
           "description": "Select an image to display inside the content box, at the top"
         },
         "caption": {
@@ -50,7 +50,7 @@
             "title": "Url for the media asset",
             "type": "string",
             "format": "image",
-            "default": "https://picsum.photos/seed/glossary-media-01/640/480",
+            "default": "https://picsum.photos/seed/glossary-media/640/480",
             "description": "Select a media asset for this glossary entry"
           },
           "caption": {
@@ -85,17 +85,20 @@
           "title": {
             "title": "Title",
             "type": "string",
-            "description": "Title of the related term"
+            "description": "Title of the related term",
+            "default": "Design token"
           },
           "excerpt": {
             "title": "Excerpt",
             "type": "string",
-            "description": "Excerpt for the related term"
+            "description": "Excerpt for the related term",
+            "default": "Sass is the CSS extension language of our choice for the additional constructs it offers when creating modularized and DRY styles for components in a Design System."
           },
-          "link": {
-            "title": "Link",
+          "url": {
+            "title": "Url",
             "type": "string",
-            "description": "Url for the related term"
+            "description": "Url for the related term",
+            "default": "https://picsum.photos/seed/glossary-related-media/640/480"
           }
         }
       }
@@ -104,7 +107,7 @@
       "title": "StackShare Url",
       "type": "string",
       "description": "Link to the related StacKShare discussion",
-      "default": "https://stackshare.io/julrich/decisions/107141518451318934"
+      "default": "https://stackshare.io/julrich/decisions/107141570573419830"
     }
   },
   "required": ["term"]

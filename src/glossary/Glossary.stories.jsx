@@ -11,7 +11,7 @@ const { defaultArgs: args, argTypes } = getArgsShared(schema);
 const Template = (args) => <Glossary {...args} />;
 
 export default {
-  title: "Base/Glossary",
+  title: "Content/Glossary",
   component: Glossary,
   args,
   argTypes,
