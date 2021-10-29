@@ -1,3 +1,15 @@
+# v1.9.4 (Thu Oct 28 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build(circleci): create artefact ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.9.3 (Thu Oct 28 2021)
 
 #### ⚠️ Pushed to `master`
