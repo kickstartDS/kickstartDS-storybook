@@ -1,3 +1,16 @@
+# v1.9.7 (Fri Oct 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartds-storybook ([@lmestel](https://github.com/lmestel))
+- feat: set default props for cta component ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.9.6 (Fri Oct 29 2021)
 
 #### ⚠️ Pushed to `master`
