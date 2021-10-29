@@ -1,3 +1,29 @@
+# v1.9.9 (Fri Oct 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: remove netlify dependency ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.9.8 (Fri Oct 29 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartds-storybook ([@lmestel](https://github.com/lmestel))
+- build: exit on error in schema dereference ([@lmestel](https://github.com/lmestel))
+- build: fix custom property extract ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.9.7 (Fri Oct 29 2021)
 
 #### ⚠️ Pushed to `master`
