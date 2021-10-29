@@ -5,10 +5,10 @@
 .template {
   position: relative;
   margin: auto;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-l);
   padding: 0 var(--g-content-padding);
   
-  @include breakpoint.media(">s") {
+  @include breakpoint.media(">m") {
     display: flex;
   }
 
@@ -24,13 +24,13 @@
   }
 
   &__main {
-    @include breakpoint.media(">s") {
+    @include breakpoint.media(">m") {
       width: 70%;
     }
   }
 
   &__side {
-    @include breakpoint.media(">s") {
+    @include breakpoint.media(">m") {
       width: 30%;
     }
   }

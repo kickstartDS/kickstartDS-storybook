@@ -36,3 +36,11 @@ main {
     top: 1rem;
   }
 }
+
+.pswp__button {
+  &--arrow {
+    &--right, &--left {
+      background-image: none !important;
+    }
+  }
+}

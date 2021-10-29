@@ -5,17 +5,17 @@ import {
   getArgsShared,
 } from "@kickstartds/core/lib/storybook/helpers";
 import sectionStories from "@kickstartds/base/lib/section/section.stories";
-import { MitLink as ContentBoxWithLink } from "../content-box/ContentBox.stories";
+import { ImageLink } from "../content-box/ContentBox.stories";
 import schema from "./section.schema.dereffed.json";
 import tokens from "./section-tokens.json";
 
 const Section = sectionStories.component;
-ContentBoxWithLink.displayName = "ContentBox";
+ImageLink.displayName = "ContentBox";
 const Template = (args) => (
   <Section {...args}>
-    <ContentBoxWithLink {...unpack(ContentBoxWithLink.args)} />
-    <ContentBoxWithLink {...unpack(ContentBoxWithLink.args)} />
-    <ContentBoxWithLink {...unpack(ContentBoxWithLink.args)} />
+    <ImageLink {...unpack(ImageLink.args)} />
+    <ImageLink {...unpack(ImageLink.args)} />
+    <ImageLink {...unpack(ImageLink.args)} />
   </Section>
 );
 

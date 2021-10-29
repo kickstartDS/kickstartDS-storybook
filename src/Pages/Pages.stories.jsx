@@ -20,13 +20,13 @@ export default {
     },
     controls: { disabled: true },
   },
-  decorators: [
-    (Story) => (
-      <LinkProvider>
-        <Story />
-      </LinkProvider>
-    ),
-  ],
+  // decorators: [
+  //   (Story) => (
+  //     <LinkProvider>
+  //       <Story />
+  //     </LinkProvider>
+  //   ),
+  // ],
 };
 
 export { Landingpage } from "./Landingpage.story";

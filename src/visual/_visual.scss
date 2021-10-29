@@ -58,6 +58,13 @@
         top: 0;
       }
     }
+
+    .c-visual__content--center {
+      .c-visual__link {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 
   .main-header-spacer {

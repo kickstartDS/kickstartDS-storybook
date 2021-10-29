@@ -176,6 +176,7 @@
   --g-content-width-max: 96rem;
   --g-content-padding: var(--spacing-m);
   --l-section-dark-color: var(--color-white-alpha-9);
+  --pswp--assets-path: url("img/lightbox/default-skin.svg");
 }
 
 @media (min-width: 40em) {
@@ -1044,7 +1045,6 @@
   background: var(--color-primary-lighter-6);
   padding: var(--spacing-xl) var(--spacing-xl);
   transition: 300ms all cubic-bezier(0.1, 0.9, 0.3, 1.5);
-  cursor: pointer;
   clip-path: polygon(0% var(--spacing-m), var(--spacing-m) 0%, 100% 0, 100% 0, 100% calc(100% - var(--spacing-xxl)), calc(100% - var(--l-section--space)) 100%, var(--spacing-m) 100%, 0 calc(100% - var(--spacing-m)));
 }
 .cta .c-headline {
@@ -1058,7 +1058,17 @@
   gap: var(--spacing-s);
 }
 .template__side .cta .c-storytelling {
-  flex-direction: column-reverse;
+  flex-direction: column;
+}
+@media (min-width: 40.01em) {
+  .template__side .cta .c-storytelling {
+    flex-direction: row;
+  }
+}
+@media (min-width: 60.01em) {
+  .template__side .cta .c-storytelling {
+    flex-direction: column-reverse;
+  }
 }
 .cta .c-storytelling__box {
   padding: 0 !important;
@@ -1176,14 +1186,6 @@
   }
 }
 
-.c-glossary-head__meta {
-  position: relative;
-  top: unset;
-  margin-bottom: var(--spacing-xs);
-}
-.c-glossary-head__meta + .c-headline {
-  margin-top: 0 !important;
-}
 .c-glossary--text-media.text-media--intext .text-media__gallery {
   float: left;
   padding-right: var(--spacing-m);
@@ -1831,10 +1833,10 @@
 .template {
   position: relative;
   margin: auto;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-l);
   padding: 0 var(--g-content-padding);
 }
-@media (min-width: 40.01em) {
+@media (min-width: 60.01em) {
   .template {
     display: flex;
   }
@@ -1848,12 +1850,12 @@
 .template--wide {
   max-width: var(--g-content-width-wide);
 }
-@media (min-width: 40.01em) {
+@media (min-width: 60.01em) {
   .template__main {
     width: 70%;
   }
 }
-@media (min-width: 40.01em) {
+@media (min-width: 60.01em) {
   .template__side {
     width: 30%;
   }
@@ -1946,6 +1948,10 @@
   right: -2.25em;
   top: 0;
 }
+.c-visual--deko .c-visual__content--center .c-visual__link {
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (min-width: 40em) {
   .c-visual .main-header-spacer + .c-visual--full, .c-visual .main-header-spacer + .l-section .c-visual--full {
     height: calc(100vh - var(--g-header-height));
@@ -1973,6 +1979,10 @@ main {
 .c-post-head__meta {
   position: absolute;
   top: 1rem;
+}
+
+.pswp__button--arrow--right, .pswp__button--arrow--left {
+  background-image: none !important;
 }
 
 /*# sourceMappingURL=index.css.map */

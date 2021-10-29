@@ -40,20 +40,24 @@ import { isUndefined } from "lodash";
 const Page = () => (
   <>
     <Header />
+    <Section
+      width="wide"
+      spaceBefore="small"
+      spaceAfter="none"
+      headline={{
+        content:"CSS3",
+        level:"h1",
+      }}
+    ></Section>
     <div className="template template--wide">
       <div className="template__main">
         <Section
           width="narrow"
           mode="list"
-          spaceBefore="small"
+          spaceBefore="none"
+          spaceAfter="default"
         >
           <div className="c-glossary">
-            <div className="c-glossary-head">
-              <Headline
-                content="CSS3"
-                level="h1"
-              />
-            </div>
             <TextMedia
               className="c-glossary--text-media"
               media={[
@@ -93,23 +97,18 @@ const Page = () => (
       </div>
       <div className="template__side">
         <Section
-          spaceBefore="default"
+          spaceBefore="none"
           spaceAfter="default"
           width="narrow"
           background="default"
         >
-          {/* <Cta
-          headline={{
-            content:"Anything on your mind?"
-          }}
-          /> */}
-          <div className="cta">
-            <Headline
-              content="Anything on your mind?"
-              styleAs="h1"
-            />
-            <Storytelling
-              box={{
+          <Cta
+            headline={{
+              content: "Anything on your mind?",
+              styleAs: "h1",
+            }}
+            storytelling={{
+              box: {
                 text: "Read more, or discuss this decision with us, on StackShare.io",
                 vAlign: "top",
                 link: {
@@ -120,58 +119,122 @@ const Page = () => (
                     icon: "person",
                   }
                 },
-              }}
-              full
-              image={{
+              },
+              full: true,
+              image: {
                 source: "img/contact.svg",
                 vAlign: "top",
                 order: {
                   desktopImageLast: true,
                 },
-              }}
-            />
-          </div>
+              },
+
+            }}
+            button={{
+              href: "#",
+              label: "mehr erfahren",
+              size: "medium",
+              type: "button",
+              variant: "solid",
+
+              iconAfter: true,
+              icon:{
+                icon:"chevron-right"
+              }
+            }}
+          />
         </Section>
       </div>
     </div>
+
     <Section
       width="wide"
+      spaceBefore="none"
+      spaceAfter="none"
       className="img-grid"
       headline={{
-        content:"Media files",
+        content: "Media files",
       }}
     >
       <TextMedia
         media={[
           {
-            image: {
-              src: 'https://www.kickstartds.com/static/29fe689e24e44e20c1d4fc4f2eca07fe/2643c/2021-10-23_17-18.webp',
+            lightboxImage: {
+              image: 'https://www.kickstartds.com/static/29fe689e24e44e20c1d4fc4f2eca07fe/2643c/2021-10-23_17-18.webp',
+              thumb: 'https://www.kickstartds.com/static/29fe689e24e44e20c1d4fc4f2eca07fe/2643c/2021-10-23_17-18.webp',
               height: 853,
               width: 1280,
+              zoomIcon: true,
+              gallery: "Media files",
             },
-            caption:"Excerpt of the TypeScript typings we auto-generate for all components. Generation happens based on our JSON Schema definitions (per component), and enables auto-complete when using components from our component library / Design System in your project.",
+            caption: "Excerpt of the TypeScript typings we auto-generate for all components. Generation happens based on our JSON Schema definitions (per component), and enables auto-complete when using components from our component library / Design System in your project.",
           }
         ]}
       />
       <TextMedia
         media={[
           {
-            image: {
-              src: 'https://www.kickstartds.com/static/7b42c45763d3911d61fa5e06a28133be/8be91/2021-10-23_17-17.webp',
+            lightboxImage: {
+              image: 'https://www.kickstartds.com/static/7b42c45763d3911d61fa5e06a28133be/8be91/2021-10-23_17-17.webp',
+              thumb: 'https://www.kickstartds.com/static/7b42c45763d3911d61fa5e06a28133be/8be91/2021-10-23_17-17.webp',
               height: 853,
               width: 1280,
+              zoomIcon: true,
+              gallery: "Media files",
             },
             caption: "Shows the source code of the kickstartDS Visual component, as an example of TypeScript use in our codebase.",
           }
         ]}
       />
     </Section>
+
+    <Section
+      spaceBefore="none"
+      spaceAfter="none"
+      width="wide"
+      align="left"
+    >
+
+      <Visual
+        className="c-visual--deko c-visual--custom"
+        box={{
+          background: "transparent",
+          enabled: true,
+          headline: {
+            content:
+              "Read more, or discuss this decision with us on StackShare.io",
+            level: "h2",
+          },
+          horizontal: "center",
+          indent: true,
+          link: {
+            className: "c-button--main",
+            enabled: true,
+            fillAnimation: false,
+            href: "https://example.com",
+            iconAfter: true,
+            iconAnimation: false,
+            iconBefore: false,
+            icon: {
+              icon: "stackshare",
+            },
+            label: "Go to StackShare.io",
+            newTab: false,
+            size: "medium",
+            variant: "solid",
+          },
+          vertical: "center",
+        }}
+      />
+    </Section>
+
     <Section
       headline={{
         content: "Related"
       }}
       className="two-col"
       spaceBefore="default"
+      spaceAfter="small"
       background="accent"
       width="wide"
       mode="tile"
@@ -182,12 +245,12 @@ const Page = () => (
         className="related-post"
         link={{
           enabled: true,
-          label:"Keep reading",
-          variant:"clear",
-          size:"large",
+          label: "Keep reading",
+          variant: "clear",
+          size: "large",
           iconAfter: true,
-          icon:{
-            icon:"chevron-right",
+          icon: {
+            icon: "chevron-right",
           }
         }}
         text="Sass is the CSS extension language of our choice for the additional constructs it offers when creating modularized and DRY styles for components in a Design System. Language of our choice for the additional constructs..."
@@ -200,12 +263,12 @@ const Page = () => (
         className="related-post"
         link={{
           enabled: true,
-          label:"Keep reading",
-          variant:"clear",
-          size:"large",
+          label: "Keep reading",
+          variant: "clear",
+          size: "large",
           iconAfter: true,
-          icon:{
-            icon:"chevron-right",
+          icon: {
+            icon: "chevron-right",
           }
         }}
         text="In addition to using ES6 as a specific flavor, on top of JavaScript, as a technology, we're using TypeScript for it's additional type safety and resulting confidence when developing long lasting, well-rounded frontend solutions..."

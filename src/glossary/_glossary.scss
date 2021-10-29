@@ -10,21 +10,7 @@
 }
 
 .c-glossary {
-
-  &-head {
-    &__meta {
-      position: relative;
-      top: unset;
-      margin-bottom: var(--spacing-xs);
-  
-       + .c-headline {
-        margin-top: 0 !important;
-      }
-    }
-  }
-
   &--text-media {
-
     &.text-media--intext .text-media__gallery {
       float: left;
       padding-right: var(--spacing-m);

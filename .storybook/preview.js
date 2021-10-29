@@ -12,6 +12,8 @@ import { SectionProvider } from '../src/section/SectionComponent';
 import { IconSprite } from '../src/icon-sprite/IconSpriteComponent';
 import { CountUpProvider } from '../src/count-up/CountUpComponent';
 
+import { LightBox } from "@kickstartds/base/lib/lightbox";
+
 const tokenContext = require.context("!!raw-loader!../src/design-tokens", false, /design-tokens\.css$/);
 const tokenFiles = tokenContext
   .keys()
@@ -70,6 +72,7 @@ export const decorators = [
     <>
       <IconSprite />
       <Story />
+      <LightBox />
     </>
   ),
 ];
