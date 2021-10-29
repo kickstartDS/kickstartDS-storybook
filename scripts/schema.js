@@ -4,21 +4,31 @@ const fg = require("fast-glob");
 const { dereference } = require("./schemaParser");
 
 const processSchema = async (schemaPath) => {
-  const dirname = path.dirname(schemaPath);
-  const basename = path.basename(schemaPath, ".json");
-  const dereffed = await dereference(schemaPath);
-  return fs.outputJson(`${dirname}/${basename}.dereffed.json`, dereffed, {
-    spaces: 2,
-  });
+  try {
+    const dirname = path.dirname(schemaPath);
+    const basename = path.basename(schemaPath, ".json");
+    const dereffed = await dereference(schemaPath);
+    return fs.outputJson(`${dirname}/${basename}.dereffed.json`, dereffed, {
+      spaces: 2,
+    });
+  } catch (e) {
+    console.error(schemaPath);
+    console.error(e);
+    throw e;
+  }
 };
 
 (async () => {
   const [, , schemaPath] = process.argv;
 
-  if (schemaPath) {
-    return processSchema(schemaPath);
-  }
+  try {
+    if (schemaPath) {
+      return processSchema(schemaPath);
+    }
 
-  const schemaPaths = await fg("src/**/*.schema.json");
-  return schemaPaths.map(processSchema);
+    const schemaPaths = await fg("src/**/*.schema.json");
+    return schemaPaths.map(processSchema);
+  } catch (e) {
+    process.exit(1);
+  }
 })();
