@@ -15,7 +15,6 @@ aliases:
     keys:
       - yarn-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
       - yarn-{{ checksum "yarn.lock" }}
-      - yarn-
   - &save-cache-node
     key: node-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
     paths:
@@ -34,9 +33,6 @@ jobs:
       - restore_cache: *restore-cache-yarn
       - restore_cache: *restore-cache-node
       - run:
-          name: Set Yarn Cache Directory
-          command: yarn config set cache-folder /mnt/ramdisk/.yarn-cache
-      - run:
           name: Install Dependencies
           command: yarn install --frozen-lockfile --cache-folder /mnt/ramdisk/.yarn-cache
       - save_cache: *save-cache-yarn
@@ -51,34 +47,34 @@ jobs:
           name: Create Release
           command: yarn auto shipit
 
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache: *restore-cache-node
+      - run:
+          name: Build Storybook
+          command: yarn build-storybook
+      - persist_to_workspace:
+          root: .
+          paths:
+            - storybook
+      - run:
+          name: Compress storybook folder
+          command: tar -czf storybook.tar.gz storybook
+      - store_artifacts:
+          path: storybook.tar.gz
+
   chromatic:
     <<: *defaults
     steps:
       - checkout
       - restore_cache: *restore-cache-node
+      - attach_workspace:
+          at: .
       - run:
           name: Deploy Storybook
           command: yarn chromatic
-
-  chromatic_and_netlify:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache: *restore-cache-node
-      - run:
-          name: Deploy Storybook
-          command: yarn chromatic
-      - run:
-          name: Rename dist folder
-          command: mv storybook-static storybook
-      - run:
-          name: Zip dist folder
-          command: tar -czf storybook.tar.gz storybook
-      - store_artifacts:
-          path: storybook.tar.gz
-      - run:
-          name: Deploy Netlify
-          command: yarn netlify deploy --prod --dir=storybook
 
   update_website:
     docker:
@@ -90,7 +86,7 @@ jobs:
             curl --request POST \
               --url https://circleci.com/api/v2/project/gh/kickstartDS/website/pipeline \
               --header "Circle-Token: ${CIRCLE_CI_WEBSITE_BUILD_TOKEN}" \
-              --header 'content-type: application/json' \
+              --header "content-type: application/json" \
               --data '{"branch":"master","parameters":{"run_workflow_update":true}}'
 
 workflows:
@@ -103,24 +99,18 @@ workflows:
           requires:
             - install
 
+      - build:
+          requires:
+            - install
+
       - update_website:
           context: kickstartDS
           filters:
             branches:
               only: master
           requires:
-            - release
+            - build
 
       - chromatic:
-          filters:
-            branches:
-              ignore: master
           requires:
-            - install
-
-      - chromatic_and_netlify:
-          filters:
-            branches:
-              only: master
-          requires:
-            - install
+            - build
