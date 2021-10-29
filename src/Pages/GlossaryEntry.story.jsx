@@ -1,33 +1,14 @@
 import {
   TextMedia,
-  Headline,
   ContentBox,
-  TeaserBox,
-  Divider,
   Section,
   TagLabel,
 } from "@kickstartds/base";
 import { Button } from "@kickstartds/base/lib/button";
-import {
-  Storytelling,
-  Visual,
-  CollapsibleBox,
-  Contact,
-  Quote,
-  QuotesSlider,
-  LogoTiles,
-  CountUp,
-} from "@kickstartds/content";
-
-import { Picture } from '@kickstartds/base/lib/picture';
+import { Visual } from "@kickstartds/content";
 
 import FooterStories from '../footer/Footer.stories';
 import { Cta } from '../cta/CtaComponent.jsx';
-
-import {
-  PostHead,
-} from "@kickstartds/blog";
-
 
 export default {
   title: "Glossary Entry",
@@ -35,7 +16,6 @@ export default {
 
 import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
-import { isUndefined } from "lodash";
 
 const Page = () => (
   <>
