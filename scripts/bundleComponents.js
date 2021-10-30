@@ -1,5 +1,6 @@
 const esbuild = require('esbuild');
 const fg = require("fast-glob");
+const fs = require('fs-extra');
 
 // https://github.com/evanw/esbuild/issues/619#issuecomment-751995294
 const makeAllPackagesExternalPlugin = {
@@ -19,6 +20,16 @@ const sharedConfig = {
 
 (async () => {
   const entryPoints = await fg("src/**/*Component.jsx");
+
+  await fs.writeJSON(
+    'dist/exports.json',
+    entryPoints.reduce((map, entryPoint) => {
+      map[entryPoint.split('/')[1]] = [entryPoint.split('/')[2].split('.')[0].replace('Component', '')];
+      return map;
+    }, {}),
+    { spaces: 2 }
+  );
+
   await esbuild.build({
     entryPoints,
     outdir: "dist/components",

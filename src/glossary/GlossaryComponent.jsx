@@ -16,10 +16,7 @@ export const Glossary = ({
   tags,
   related,
   stackshare,
-}) => {
-  console.log('Glossary', term, definition, cover, media, tags, related, stackshare);
-
-  return (
+}) => (
     <>
       <Section
         width="wide"
@@ -221,5 +218,4 @@ export const Glossary = ({
         ))}
       </Section>
     </>
-  );
-};
+);
