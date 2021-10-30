@@ -27,7 +27,7 @@
           "type": "string",
           "format": "image",
           "default": "https://picsum.photos/seed/glossary-cover/300/300",
-          "description": "Select an image to display inside the content box, at the top"
+          "description": "Url to main image for this glossary entry"
         },
         "caption": {
           "title": "Caption for the main image",
