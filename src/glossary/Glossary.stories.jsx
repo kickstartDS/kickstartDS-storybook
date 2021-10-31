@@ -1,7 +1,5 @@
 import { Glossary } from "./GlossaryComponent";
-import merge from "deepmerge";
 import {
-  pack,
   getArgsShared,
 } from "@kickstartds/core/lib/storybook/helpers";
 import schema from "./glossary.schema.dereffed.json";
