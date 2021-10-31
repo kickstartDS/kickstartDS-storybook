@@ -73,12 +73,12 @@ export const Glossary = ({
           >
             <Cta
               headline={{
-                content: "Anything on your mind?",
+                content: "Questions still remain?",
                 styleAs: "h1",
               }}
               storytelling={{
                 box: {
-                  text: "Learn more about kickstartDS, and how it can help you create consistent frontend interfaces",
+                  text: "Read more, or chat with us, to learn how this helps create consistent frontend interfaces",
                   vAlign: "top",
                   link: {
                     label: "Lets have a chat",
@@ -101,7 +101,7 @@ export const Glossary = ({
               }}
               button={{
                 href: "https://www.kickstartDS.com/",
-                label: "Learn more",
+                label: "About kickstartDS",
                 size: "medium",
                 type: "button",
                 variant: "solid",
@@ -122,7 +122,7 @@ export const Glossary = ({
         spaceAfter="none"
         className="img-grid"
         headline={{
-          content: "Media files",
+          content: "Take a closer look 🧐",
         }}
       >
         {media?.map((item, i) => (
@@ -135,7 +135,7 @@ export const Glossary = ({
                   height: 853,
                   width: 1280,
                   zoomIcon: true,
-                  gallery: "Media files",
+                  gallery: "closer-look",
                 },
                 caption: item.caption,
               }
