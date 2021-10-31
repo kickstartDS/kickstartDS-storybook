@@ -101,7 +101,7 @@ export const Glossary = ({
               }}
               button={{
                 href: "https://www.kickstartDS.com/",
-                label: "mehr erfahren",
+                label: "Learn more",
                 size: "medium",
                 type: "button",
                 variant: "solid",
