@@ -1,3 +1,15 @@
+# v1.10.2 (Sun Oct 31 2021)
+
+#### 🐛 Bug Fix
+
+- fix: image in related glossary term [#35](https://github.com/kickstartDS/kickstartDS-storybook/pull/35) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.10.1 (Sat Oct 30 2021)
 
 #### 🐛 Bug Fix
