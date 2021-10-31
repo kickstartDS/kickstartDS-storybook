@@ -16,6 +16,7 @@ export const Glossary = ({
   tags,
   related,
   stackshare,
+  cta,
 }) => (
     <>
       <Section
@@ -71,7 +72,8 @@ export const Glossary = ({
             width="narrow"
             background="default"
           >
-            <Cta
+            <Cta {...cta} />
+            {/* <Cta
               headline={{
                 content: "Questions still remain?",
                 styleAs: "h1",
@@ -111,7 +113,7 @@ export const Glossary = ({
                   icon:"chevron-right"
                 }
               }}
-            />
+            /> */}
           </Section>
         </div>
       </div>

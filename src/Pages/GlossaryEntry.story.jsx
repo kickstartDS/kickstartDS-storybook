@@ -39,6 +39,47 @@ const Page = () => (
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
       }]}
       stackshare="https://stackshare.io/julrich/decisions/107140151808024329"
+      cta={{
+        headline: {
+          content: "Questions still remain?",
+          styleAs: "h1",
+        },
+        storytelling: {
+          box: {
+            text: "Read more, or chat with us, to learn how this helps create consistent frontend interfaces",
+            vAlign: "top",
+            link: {
+              label: "Lets have a chat",
+              variant: "solid",
+              iconAfter: true,
+              icon: {
+                icon: "person",
+              }
+            },
+          },
+          full: true,
+          image: {
+            source: "img/contact.svg",
+            vAlign: "top",
+            order: {
+              desktopImageLast: true,
+            },
+          },
+        },
+        button: {
+          href: "https://www.kickstartDS.com/",
+          label: "About kickstartDS",
+          size: "medium",
+          type: "button",
+          variant: "solid",
+
+          iconAfter: true,
+          icon:{
+            icon:"chevron-right"
+          }
+        }
+      }}
+      
     />
     <Footer {...FooterStories.args} />
   </>

@@ -115,6 +115,9 @@
       "type": "string",
       "description": "Link to the related StacKShare discussion",
       "default": "https://stackshare.io/julrich/decisions/107141570573419830"
+    },
+    "cta": {
+      "$ref": "http://kickstartds.com/cta.schema.json"
     }
   },
   "required": ["term"]
