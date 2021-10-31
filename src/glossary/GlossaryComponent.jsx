@@ -37,20 +37,25 @@ export const Glossary = ({
             spaceAfter="default"
           >
             <div className="c-glossary">
-              <TextMedia
-                className="c-glossary--text-media"
-                media={[
-                  {
-                    image: {
-                      src: cover.src,
-                      height: 100,
-                      width: 100
-                    }
-                  }
-                ]}
-                mediaAlignment="intext-left"
-                text={definition}
-              />
+              {cover && cover.src
+                ? <TextMedia
+                    className="c-glossary--text-media"
+                    media={[{
+                      image: {
+                        src: cover.src,
+                        height: 100,
+                        width: 100
+                      }
+                    }]} 
+                    mediaAlignment="intext-left"
+                    text={definition}
+                  />
+                : <TextMedia
+                    className="c-glossary--text-media"
+                    media={[]}
+                    mediaAlignment="intext-left"
+                    text={definition}
+                  />}
             </div>
             {tags && tags.length > 0 &&
             <div className="tag-label-container">
