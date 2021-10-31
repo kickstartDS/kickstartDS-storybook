@@ -1,3 +1,15 @@
+# v1.10.6 (Sun Oct 31 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: glossary without cover ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.10.5 (Sun Oct 31 2021)
 
 #### ⚠️ Pushed to `master`
