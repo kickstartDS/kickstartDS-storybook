@@ -98,7 +98,14 @@
             "title": "Url",
             "type": "string",
             "description": "Url for the related term",
-            "default": "https://picsum.photos/seed/glossary-related-media/640/480"
+            "default": "/glossary/design-token/"
+          },
+          "image": {
+            "title": "Image",
+            "type": "string",
+            "format": "image",
+            "default": "https://picsum.photos/seed/glossary-related-media-01/640/480",
+            "description": "Image for the related term"
           }
         }
       }

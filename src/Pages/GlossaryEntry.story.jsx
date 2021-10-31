@@ -30,11 +30,13 @@ const Page = () => (
       related={[{
         title: "ECMAScript 6 (ES6)",
         excerpt: "ES6 is the specific flavour of JavaScript we're writing for it's much improved module support, making 100% vanilla JavaScript solutions a reality. It is also much more terse and expressive in its syntax (iterators, destructuring, arrow functions, etc).",
-        url: "https://www.kickstartds.com/glossary/es6/"
+        url: "https://www.kickstartds.com/glossary/es6/",
+        image: "https://raw.githubusercontent.com/github/explore/e4270e345b968ae626310bc86e339a2ae80c6ae4/topics/ecmascript/ecmascript.png"
       }, {
         title: "JavaScript",
         excerpt: "JavaScript for us has two uses. On the one hand it is the foundation for progressively layered interactivity on a website / interface built with kickstartDS, and on the other hand it's at the core of the engine powering quality and developer experience in modern web frameworks: build tooling, bundling, semantic versioning, testing, etc.",
-        url: "https://www.kickstartds.com/glossary/javascript/"
+        url: "https://www.kickstartds.com/glossary/javascript/",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
       }]}
       stackshare="https://stackshare.io/julrich/decisions/107140151808024329"
     />
