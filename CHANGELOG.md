@@ -1,3 +1,15 @@
+# v1.10.4 (Sun Oct 31 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: make cta for glossary explicit ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.10.3 (Sun Oct 31 2021)
 
 #### ⚠️ Pushed to `master`
