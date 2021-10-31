@@ -41,7 +41,7 @@ const Page = () => (
       stackshare="https://stackshare.io/julrich/decisions/107140151808024329"
       cta={{
         headline: {
-          content: "Questions still remain?",
+          content: "Why we care?",
           styleAs: "h1",
         },
         storytelling: {

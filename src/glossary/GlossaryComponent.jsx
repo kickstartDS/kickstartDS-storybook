@@ -52,6 +52,7 @@ export const Glossary = ({
                 text={definition}
               />
             </div>
+            {tags && tags.length > 0 &&
             <div className="tag-label-container">
               {tags?.map((tag, i) => (
               <div>
@@ -63,6 +64,7 @@ export const Glossary = ({
               </div>
               ))}
             </div>
+            }
           </Section>
         </div>
         <div className="template__side">
@@ -73,51 +75,11 @@ export const Glossary = ({
             background="default"
           >
             <Cta {...cta} />
-            {/* <Cta
-              headline={{
-                content: "Questions still remain?",
-                styleAs: "h1",
-              }}
-              storytelling={{
-                box: {
-                  text: "Read more, or chat with us, to learn how this helps create consistent frontend interfaces",
-                  vAlign: "top",
-                  link: {
-                    label: "Lets have a chat",
-                    variant: "solid",
-                    iconAfter: true,
-                    icon: {
-                      icon: "person",
-                    }
-                  },
-                },
-                full: true,
-                image: {
-                  source: "img/contact.svg",
-                  vAlign: "top",
-                  order: {
-                    desktopImageLast: true,
-                  },
-                },
-
-              }}
-              button={{
-                href: "https://www.kickstartDS.com/",
-                label: "About kickstartDS",
-                size: "medium",
-                type: "button",
-                variant: "solid",
-
-                iconAfter: true,
-                icon:{
-                  icon:"chevron-right"
-                }
-              }}
-            /> */}
           </Section>
         </div>
       </div>
 
+      {media && media.length > 0 &&
       <Section
         width="wide"
         spaceBefore="none"
@@ -146,6 +108,7 @@ export const Glossary = ({
           />
         ))}
       </Section>
+      }
 
       <Section
         spaceBefore="none"
@@ -187,6 +150,7 @@ export const Glossary = ({
         />
       </Section>
 
+      {related && related.length > 0 &&
       <Section
         headline={{
           content: "Related"
@@ -220,5 +184,6 @@ export const Glossary = ({
           />
         ))}
       </Section>
+      }
     </>
 );
