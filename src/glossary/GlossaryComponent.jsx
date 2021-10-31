@@ -199,9 +199,10 @@ export const Glossary = ({
         {related?.map((item, i) => (
           <ContentBox
             alignement="left"
-            image={item.url}
+            image={item.image}
             className="related-post"
             link={{
+              href: item.url,
               enabled: true,
               label: "Keep reading",
               variant: "clear",
