@@ -1,3 +1,16 @@
+# v1.10.3 (Sun Oct 31 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: update glossary wording ([@julrich](https://github.com/julrich))
+- fix: button label in glossary ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.10.2 (Sun Oct 31 2021)
 
 #### 🐛 Bug Fix
