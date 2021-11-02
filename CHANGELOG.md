@@ -1,3 +1,15 @@
+# v1.10.7 (Tue Nov 02 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: update kickstartds ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.10.6 (Sun Oct 31 2021)
 
 #### ⚠️ Pushed to `master`
