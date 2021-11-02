@@ -176,6 +176,7 @@
   --g-content-width-max: 96rem;
   --g-content-padding: var(--spacing-m);
   --l-section-dark-color: var(--color-white-alpha-9);
+  --pswp--assets-path: url("img/lightbox/default-skin.svg");
 }
 
 @media (min-width: 40em) {
