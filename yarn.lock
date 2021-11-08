@@ -1184,7 +1184,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.15.4", "@babel/runtime@^7.16.0":
+"@babel/runtime@^7.16.0":
   version "7.16.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.0.tgz#e27b977f2e2088ba24748bf99b5e1dece64e4f0b"
   integrity sha512-Nht8L0O8YCktmsDV6FqFue7vQLRx3Hb0B37lS5y0jDRqRxlBG4wIJHnf9/bgSE2UyipKFA01YtS+npRdTWBUyw==
@@ -1438,14 +1438,14 @@
   resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
   integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
 
-"@kickstartds/base@1.5.0-next.12", "@kickstartds/base@^1.5.0-next.12":
-  version "1.5.0-next.12"
-  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-1.5.0-next.12.tgz#51a6a39192ab1aa557d3e0510e7cdccd49e9631c"
-  integrity sha512-fSTI4avCo2FqkIR6DIPVEWXfAQakiU6MVRh4QmeYFtR4br1rTYG6ygq14Dz45LS/mPzjPnfN96oQ0s808Q2k1Q==
+"@kickstartds/base@1.5.0", "@kickstartds/base@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-1.5.0.tgz#60d362e721f6f494e02dfd6287a663b66031de56"
+  integrity sha512-Z+9iCl9LCehO6RjOVcOzg5FDeGaFpm6qv/5HempCZODcVWKddO6GfNGPV33t3hWumwTeJK7WWplG8XOCd02o0Q==
   dependencies:
     "@babel/runtime" "^7.16.0"
     "@glidejs/glide" "git://github.com/glidejs/glide.git#master"
-    "@kickstartds/core" "^1.4.0"
+    "@kickstartds/core" "^1.5.0"
     classnames "^2.2.6"
     css-element-queries "^1.2.3"
     date-fns "^2.25.0"
@@ -1459,33 +1459,33 @@
     simplebar "^5.3.6"
     stickybits "^3.7.0"
 
-"@kickstartds/blog@1.5.0-next.12":
-  version "1.5.0-next.12"
-  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-1.5.0-next.12.tgz#9c9c360eaa711ac18b5a201356d22d8cb591cb85"
-  integrity sha512-NfCKj9LSXUWjKxI6i8zHHpLFQL9KCX56VOmnqJdYxNyPAIdX2LE+7w81j7w397hE6Qf6MiAYoQHv1RnufH6/mA==
+"@kickstartds/blog@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-1.5.0.tgz#e31d36d0de6e811f7ed3a5305a6fd7ac7633c09c"
+  integrity sha512-7JtN13Ilz9CSRHl+LV8ji1/UKSR5pgwzsYKVyTLjooGZyKJM1X+/puOXj4xphtaijSZZ6dWmetQDw+zM8SRpvQ==
   dependencies:
     "@babel/runtime" "^7.16.0"
-    "@kickstartds/base" "^1.5.0-next.12"
-    "@kickstartds/core" "^1.4.0"
+    "@kickstartds/base" "^1.5.0"
+    "@kickstartds/core" "^1.5.0"
     classnames "^2.2.6"
     date-fns "^2.25.0"
 
-"@kickstartds/content@1.5.0-next.12":
-  version "1.5.0-next.12"
-  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-1.5.0-next.12.tgz#dbcf17b9cb6751184d414cd1661686aec40772b0"
-  integrity sha512-JSROwSseoYk5gJrGSVRAO+KGrymWKdEG2uD+0ZPuW8Q7T0JxxTAKZbU1p+gLofkwdiqNWoAvZSQe5BA9oHRPww==
+"@kickstartds/content@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-1.5.0.tgz#af4e332156557f62ddcd044961b26dc70c92f250"
+  integrity sha512-Tv1NSClUJW8+TVs2CxZJvqTWQll5K2O5Y7KuwDNMJ5JG7q0NaGTlFo+FncYBy9Y9FYdkDdhMiYAidkiogTwoVg==
   dependencies:
     "@babel/runtime" "^7.16.0"
-    "@kickstartds/base" "^1.5.0-next.12"
-    "@kickstartds/core" "^1.4.0"
+    "@kickstartds/base" "^1.5.0"
+    "@kickstartds/core" "^1.5.0"
     classnames "^2.2.6"
     countup.js "^2.0.8"
     objectFitPolyfill "^2.3.0"
 
-"@kickstartds/core@1.5.0-next.8":
-  version "1.5.0-next.8"
-  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-1.5.0-next.8.tgz#aef73247e283d1af6978f62446f0b06ce7beb1e3"
-  integrity sha512-eDdQYTyMIcR3yRm+uvQcK5Vgw9UxwMwDDFnWp59ZbmQcQM0FW3zMMuFbHtLW03J2oueWwJ/bZ7jxkdvO1WZoiw==
+"@kickstartds/core@1.5.0", "@kickstartds/core@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-1.5.0.tgz#3ed5fcd0ec4939197ac35b05cd0dc9b4fa9434f3"
+  integrity sha512-8tHOVGLH8lELYyVJ/EleCtLtxsKq1EUC9pqBA3GW8B3kR9SXJ6ty9JgaWRxHkzfmnjVRxfGoEsHSMslGWZILJQ==
   dependencies:
     "@babel/runtime" "^7.16.0"
     bourbon "^7.0.0"
@@ -1501,33 +1501,14 @@
     sass "^1.43.4"
     vhtml "^2.2.0"
 
-"@kickstartds/core@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-1.4.0.tgz#627eb66182c7ba13a6c9517f01fb44699b6fb0f7"
-  integrity sha512-E7yLytHcq6m8QXK5NGndhRVklN9cu3tomAJi8Epb+GI5pEN31QVev9uNnlgiBEuoQWBm9lqv0swWf8xnxBJPnA==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    bourbon "^7.0.0"
-    del "^6.0.0"
-    dependency-graph "^0.11.0"
-    esbuild "^0.12.25"
-    fast-glob "^3.2.7"
-    fs-extra "^10.0.0"
-    htm "^3.1.0"
-    lazysizes "^5.3.2"
-    lodash-es "^4.17.21"
-    pubsub-js "^1.9.3"
-    sass "^1.39.0"
-    vhtml "^2.2.0"
-
-"@kickstartds/form@1.5.0-next.12":
-  version "1.5.0-next.12"
-  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-1.5.0-next.12.tgz#94748e751de51a3829ea7446f0d1e2b595bb35cd"
-  integrity sha512-vtP4ouftpZIwFdhnv9P+V0VYsNX5aK+B3zxQdN37ax0A8G/pLcu42PZQ3+yGYtX/9XSsxvTzPeLgBGIlR4Fe5g==
+"@kickstartds/form@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-1.5.0.tgz#797f2960628963cc897d62a365fdac437234dc3b"
+  integrity sha512-9ptUQQMstLDAhKqDs7x65loKvwod8PFMsNivUkP1RbWp6twthSzQc/obhKuMzI1jd9gnBPVYGXuVorLF3M/KuQ==
   dependencies:
     "@babel/runtime" "^7.16.0"
-    "@kickstartds/base" "^1.5.0-next.12"
-    "@kickstartds/core" "^1.4.0"
+    "@kickstartds/base" "^1.5.0"
+    "@kickstartds/core" "^1.5.0"
     classnames "^2.2.6"
 
 "@kickstartds/storybook-addon-component-tokens@^0.1.4":
@@ -5638,11 +5619,6 @@ esbuild@^0.12.23:
   version "0.12.23"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.23.tgz#fd40d70d3ec5e7893d8c5be655e3e38d096dd882"
   integrity sha512-qvS4aKnmKikoWGscd5lVAzgobMovlH/JhaWitRiQ8xJx0x1Fym0pqVjMFs43Nvff8WpibeWm+fWoLK88T1U0Xw==
-
-esbuild@^0.12.25:
-  version "0.12.29"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.29.tgz#be602db7c4dc78944a9dbde0d1ea19d36c1f882d"
-  integrity sha512-w/XuoBCSwepyiZtIRsKsetiLDUVGPVw1E/R3VTFSecIy8UR7Cq3SOtwKHJMFoVqqVG36aGkzh4e8BvpO1Fdc7g==
 
 esbuild@^0.13.12:
   version "0.13.12"
@@ -10680,7 +10656,7 @@ sass@^1.34.1:
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
-sass@^1.39.0, sass@^1.43.4:
+sass@^1.43.4:
   version "1.43.4"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.43.4.tgz#68c7d6a1b004bef49af0d9caf750e9b252105d1f"
   integrity sha512-/ptG7KE9lxpGSYiXn7Ar+lKOv37xfWsZRtFYal2QHNigyVQDx685VFT/h7ejVr+R8w7H4tmUgtulsKl5YpveOg==
