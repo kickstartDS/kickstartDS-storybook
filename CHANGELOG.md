@@ -1,3 +1,21 @@
+# v1.10.9 (Mon Nov 08 2021)
+
+#### ⚠️ Pushed to `master`
+
+- build: update kickstartds ([@lmestel](https://github.com/lmestel))
+
+#### 🔩 Dependency Updates
+
+- build(deps): bump tar from 6.1.0 to 6.1.11 [#38](https://github.com/kickstartDS/kickstartDS-storybook/pull/38) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps): bump nth-check from 2.0.0 to 2.0.1 [#39](https://github.com/kickstartDS/kickstartDS-storybook/pull/39) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.10.8 (Mon Nov 08 2021)
 
 #### ⚠️ Pushed to `master`
