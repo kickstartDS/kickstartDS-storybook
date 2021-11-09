@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/contact.schema.json",
+  "title": "Contact",
+  "allOf": [
+    {
+      "properties": {
+        "twitter": {
+          "title": "Twitter handle",
+          "type": "string",
+          "default": "kickstartds"
+        },
+        "phone": {
+          "const": "",
+          "default": ""
+        }
+      }
+    },
+    {
+      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/contact.schema.json"
+    }
+  ]
+}
