@@ -1,3 +1,20 @@
+# v1.10.10 (Tue Nov 09 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feat: individualize contact component ([@lmestel](https://github.com/lmestel))
+
+#### 🔩 Dependency Updates
+
+- build(deps): bump tmpl from 1.0.4 to 1.0.5 [#37](https://github.com/kickstartDS/kickstartDS-storybook/pull/37) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.10.9 (Mon Nov 08 2021)
 
 #### ⚠️ Pushed to `master`
