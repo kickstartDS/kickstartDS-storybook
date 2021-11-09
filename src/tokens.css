@@ -174,7 +174,9 @@
     
   --g-link--color: var(--color-primary);
   --g-link--color-hover: var(--color-primary);
-  --g-link--backround-hover: var(--color-primary-alpha-1);
+  --g-link--background-hover: var(--color-primary-alpha-1);
+  --g-link--font-weight: var(--font-weight-bold);
+  --g-link--text-decoration: none;
 
   --g-topic--color: var(--color-black);
 

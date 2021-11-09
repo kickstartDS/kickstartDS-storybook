@@ -17,19 +17,6 @@
 }
 
 .c-rich-text a, .c-rich-text.c-visual__text a {
-    text-decoration: none;
-    color: var(--g-link--color);
-    font-weight: var(--font-weight-bold);
     padding: 2px;
-    &:hover {
-      background: var(--g-link--backround-hover);
-      color: var(--g-link--color-hover);
-    }
   }
 
-  .l-section--dark .c-rich-text a {
-    color: var(--color-secondary);
-    &:hover {
-      background: var(--color-secondary-alpha-1);
-    }
-  }

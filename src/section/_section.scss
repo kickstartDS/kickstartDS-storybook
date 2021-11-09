@@ -11,6 +11,10 @@
 .l-section--dark {
   --c-rich-text--color: var(--l-section-dark-color);
   --g-headline--color: var(--l-section-dark-color);
+  
+  --g-link--color: var(--color-secondary);
+  --g-link--color-hover: var(--color-secondary);
+  --g-link--background-hover: var(--color-secondary-alpha-1);
 
   --color-info: #007eb4;
   --color-success: #008300;

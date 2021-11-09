@@ -163,7 +163,9 @@
     var(--font-family-ui);
   --g-link--color: var(--color-primary);
   --g-link--color-hover: var(--color-primary);
-  --g-link--backround-hover: var(--color-primary-alpha-1);
+  --g-link--background-hover: var(--color-primary-alpha-1);
+  --g-link--font-weight: var(--font-weight-bold);
+  --g-link--text-decoration: none;
   --g-topic--color: var(--color-black);
   --g-header-height: 0px;
   --g-headline--color: var(--color-black);
@@ -355,6 +357,21 @@
 
 .c-button .icon {
   margin: var(--c-button--icon-margin);
+}
+
+.c-contact {
+  --icon-opacity: 0.5;
+  --icon-size: 1.4em;
+}
+
+.c-contact__links {
+  color: var(--g-link--color);
+}
+.c-contact__links .icon {
+  opacity: var(--icon-opacity);
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-right: 0.35em;
 }
 
 .c-content-box__text {
@@ -1171,6 +1188,7 @@
 .kds-footer-nav_list_item_link, .kds-footer-nav_list_item a {
   color: var(--c-footer-color);
   text-decoration: none;
+  font-weight: var(--font-weight-semi-bold);
 }
 .kds-footer-nav_list_item_link:hover, .kds-footer-nav_list_item a:hover {
   color: var(--color-black);
@@ -1320,21 +1338,7 @@
 }
 
 .c-rich-text a, .c-rich-text.c-visual__text a {
-  text-decoration: none;
-  color: var(--g-link--color);
-  font-weight: var(--font-weight-bold);
   padding: 2px;
-}
-.c-rich-text a:hover, .c-rich-text.c-visual__text a:hover {
-  background: var(--g-link--backround-hover);
-  color: var(--g-link--color-hover);
-}
-
-.l-section--dark .c-rich-text a {
-  color: var(--color-secondary);
-}
-.l-section--dark .c-rich-text a:hover {
-  background: var(--color-secondary-alpha-1);
 }
 
 .c-logo-tiles img {
@@ -1383,6 +1387,9 @@
 .l-section--dark {
   --c-rich-text--color: var(--l-section-dark-color);
   --g-headline--color: var(--l-section-dark-color);
+  --g-link--color: var(--color-secondary);
+  --g-link--color-hover: var(--color-secondary);
+  --g-link--background-hover: var(--color-secondary-alpha-1);
   --color-info: #007eb4;
   --color-success: #008300;
   --color-warning: #b85b00;

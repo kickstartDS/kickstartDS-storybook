@@ -28,6 +28,7 @@
       &_link, a {
         color: var(--c-footer-color);
         text-decoration: none;
+        font-weight: var(--font-weight-semi-bold);
 
         &:hover {
           color: var(--color-black);
