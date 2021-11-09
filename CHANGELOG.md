@@ -1,3 +1,15 @@
+# v1.10.13 (Tue Nov 09 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: update kDS deps ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.10.12 (Tue Nov 09 2021)
 
 #### ⚠️ Pushed to `master`
