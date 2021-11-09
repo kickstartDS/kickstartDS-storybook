@@ -1,3 +1,15 @@
+# v1.10.14 (Tue Nov 09 2021)
+
+#### ⚠️ Pushed to `master`
+
+- chore: add profile images to repo ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.10.13 (Tue Nov 09 2021)
 
 #### ⚠️ Pushed to `master`
