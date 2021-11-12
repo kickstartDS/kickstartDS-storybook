@@ -4,6 +4,7 @@
   "title": "Contact",
   "allOf": [
     {
+      "type": "object",
       "properties": {
         "twitter": {
           "title": "Twitter handle",
