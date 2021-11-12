@@ -1,3 +1,15 @@
+# v1.10.15 (Fri Nov 12 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add object type to contact allOf ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.10.14 (Tue Nov 09 2021)
 
 #### ⚠️ Pushed to `master`
