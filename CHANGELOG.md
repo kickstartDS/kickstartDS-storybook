@@ -1,3 +1,18 @@
+# v1.10.17 (Sun Dec 12 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- feature: add all available json schemas ([@julrich](https://github.com/julrich))
+- chore: update storybook ([@julrich](https://github.com/julrich))
+- fix: storybook-addon-jsonschema ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.10.16 (Sun Dec 12 2021)
 
 #### ⚠️ Pushed to `master`
