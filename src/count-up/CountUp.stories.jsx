@@ -10,6 +10,7 @@ export default {
   ...countUpStories,
   parameters: {
     cssprops: merge(countUpStories.parameters.cssprops, tokens),
+    jsonschema: schema,
   },
   args,
   argTypes,

@@ -1,8 +1,14 @@
 import textMediaStories, {
   Template,
 } from "@kickstartds/base/lib/text-media/text-media.stories";
+import schema from "@kickstartds/base/lib/text-media/text-media.schema.dereffed.json";
 
-export default textMediaStories;
+export default {
+  ...textMediaStories,
+  parameters: {
+    jsonschema: schema,
+  },
+};
 
 export const ImageAbove = Template.bind({});
 ImageAbove.args = {

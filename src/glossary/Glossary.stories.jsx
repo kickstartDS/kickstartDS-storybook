@@ -1,7 +1,5 @@
 import { Glossary } from "./GlossaryComponent";
-import merge from "deepmerge";
 import {
-  pack,
   getArgsShared,
 } from "@kickstartds/core/lib/storybook/helpers";
 import schema from "./glossary.schema.dereffed.json";
@@ -15,6 +13,10 @@ export default {
   component: Glossary,
   args,
   argTypes,
+  parameters: {
+    cssprops: tokens,
+    jsonschema: schema,
+  }
 };
 
 export const Default = Template.bind({});

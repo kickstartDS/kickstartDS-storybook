@@ -2,6 +2,7 @@ import { pack } from "@kickstartds/core/lib/storybook/helpers";
 import logoTilesStories, {
   Template,
 } from "@kickstartds/content/lib/logo-tiles/logo-tiles.stories";
+import schema from "@kickstartds/content/lib/logo-tiles/logo-tiles.schema.dereffed.json";
 
 // fix storybook controls
 const { argTypes } = logoTilesStories;
@@ -38,6 +39,9 @@ export default {
       },
     ],
   }),
+  parameters: {
+    jsonschema: schema,
+  }
 };
 
 export const FourRow = Template.bind({});

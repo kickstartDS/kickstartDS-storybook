@@ -10,6 +10,9 @@ export default {
   ...contactStories,
   args,
   argTypes,
+  parameters: {
+    jsonschema: schema,
+  },
 };
 
 export const Default = Template.bind({});

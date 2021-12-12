@@ -4,12 +4,14 @@ import contentBoxStories, {
   Template,
 } from "@kickstartds/base/lib/content-box/content-box.stories";
 import tokens from "./content-box-tokens.json";
+import schema from "@kickstartds/base/lib/content-box/content-box.schema.dereffed.json";
 
 export default {
   ...contentBoxStories,
   title: "Base/Content Box",
   parameters: {
     cssprops: merge(contentBoxStories.parameters.cssprops, tokens),
+    jsonschema: schema,
   },
 };
 

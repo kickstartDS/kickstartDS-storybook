@@ -5,12 +5,14 @@ import quoteStories, {
   Template,
 } from "@kickstartds/content/lib/quote/quote.stories";
 import tokens from "./quote-tokens.json";
+import schema from "@kickstartds/content/lib/quotes-slider/quotes-slider.schema.dereffed.json";
 
 export default {
   ...quoteStories,
   title: "Content/Quote",
   parameters: {
     cssprops: merge(quoteStories.parameters.cssprops, tokens),
+    jsonschema: schema,
   },
 };
 

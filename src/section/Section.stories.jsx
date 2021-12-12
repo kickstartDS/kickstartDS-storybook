@@ -27,6 +27,7 @@ export default {
   argTypes,
   parameters: {
     cssprops: merge(sectionStories.parameters.cssprops, tokens),
+    jsonschema: schema,
   },
 };
 

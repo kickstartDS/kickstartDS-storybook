@@ -15,6 +15,7 @@ export default {
   argTypes,
   parameters: {
     cssprops: merge(headlineStories.parameters.cssprops, tokens),
+    jsonschema: schema,
   },
 };
 

@@ -4,11 +4,13 @@ import visualStories, {
   Template,
 } from "@kickstartds/content/lib/visual/visual.stories";
 import tokens from "./visual-tokens.json";
+import schema from "@kickstartds/content/lib/visual/visual.schema.dereffed.json";
 
 export default {
   ...visualStories,
   parameters: {
     cssprops: merge(visualStories.parameters.cssprops, tokens),
+    jsonschema: schema,
   },
 };
 

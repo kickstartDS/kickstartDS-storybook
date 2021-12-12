@@ -3,11 +3,13 @@ import storytellingStories, {
   Template,
 } from "@kickstartds/content/lib/storytelling/storytelling.stories";
 import cssprops from "./storytelling-tokens.json";
+import schema from "@kickstartds/content/lib/storytelling/storytelling.schema.dereffed.json";
 
 export default {
   ...storytellingStories,
   parameters: {
     cssprops,
+    jsonschema: schema,
   },
 };
 
