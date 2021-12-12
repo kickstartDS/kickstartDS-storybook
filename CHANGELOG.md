@@ -1,3 +1,15 @@
+# v1.10.16 (Sun Dec 12 2021)
+
+#### ⚠️ Pushed to `master`
+
+- feature: update json-schema-viewer, try to load button ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.10.15 (Fri Nov 12 2021)
 
 #### ⚠️ Pushed to `master`
