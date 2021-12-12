@@ -1972,10 +1972,10 @@
   resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-component-tokens/-/storybook-addon-component-tokens-0.1.4.tgz#04466725f7b87f1829b41c8f01873a4ee2aaa1e4"
   integrity sha512-NmSlWZ4q5zAuhhESpTAhcJshbbZrOoMpyPwUKX/rq2mn3f/W5SmMqC7iUWxjqfcawkLUMpddjKZj1XndNLoTOQ==
 
-"@kickstartds/storybook-addon-jsonschema@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-1.0.0.tgz#920e7157de5a660a99a54f0ee2a0a2d9308bd3a1"
-  integrity sha512-Ggjdt/6ezj8DiS6Nf61CzbvUHkUjNz3b11N7ctHf4V8jiOtkgSUnBtBbU2AgaIy9IDD2A1485tiyaQZgGYbZTQ==
+"@kickstartds/storybook-addon-jsonschema@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-1.0.2.tgz#8d6703202398b726164c48524c5c0f33cb487b3a"
+  integrity sha512-s+rxfmb0zW15GHSG4TIK/7GHK5x2jBp+qGcxIHuenaTLm7eAH/5TgMVebKIpD8ryE76fNMaSq1NvRXxZ6nNpiQ==
   dependencies:
     "@kickstartds/json-schema-viewer" "^1.1.0"
     "@monaco-editor/react" "^4.3.1"
