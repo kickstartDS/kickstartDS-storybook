@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "jsx": "preserve"
+  },
+  "include": ["src/types.ts", "src/glossary/**/*"],
+  "exclude": ["node_modules"]
+}

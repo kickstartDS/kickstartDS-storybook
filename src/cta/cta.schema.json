@@ -43,5 +43,6 @@
     "button": {
       "$ref": "http://frontend.ruhmesmeile.com/base/atoms/link-button.schema.json"
     }
-  }
+  },
+  "required": ["headline", "storytelling", "button"]
 }

@@ -1,5 +1,5 @@
 import FooterStories from '../footer/Footer.stories';
-import { Glossary } from '../glossary/GlossaryComponent.jsx';
+import { Glossary } from '../glossary/GlossaryComponent.tsx';
 
 export default {
   title: "Glossary Entry",
