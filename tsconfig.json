@@ -2,8 +2,10 @@
   "compilerOptions": {
     "emitDeclarationOnly": true,
     "declaration": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "outFile": "dist/types.d.ts",
+    "strict": false
   },
-  "include": ["src/types.ts", "src/glossary/**/*"],
+  "include": ["src/types.ts"],
   "exclude": ["node_modules"]
 }

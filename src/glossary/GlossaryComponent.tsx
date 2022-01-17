@@ -11,7 +11,7 @@ import { ContentBox } from "@kickstartds/base/lib/content-box";
 import { Visual } from "@kickstartds/content/lib/visual";
 
 import { GlossaryProps } from "./GlossaryProps";
-import { Cta } from '../cta/CtaComponent.jsx';
+import { Cta } from '../cta/CtaComponent';
 
 export const Glossary: FunctionComponent<GlossaryProps & HTMLAttributes<HTMLDivElement>> = ({
   term,
