@@ -1,3 +1,8 @@
+import {
+  FunctionComponent,
+  HTMLAttributes,
+} from 'react';
+
 import { ContactContext } from "@kickstartds/content/lib/contact";
 import classnames from "classnames";
 import { Picture } from "@kickstartds/base/lib/picture";
@@ -5,7 +10,11 @@ import { Headline } from "@kickstartds/base/lib/headline";
 import { RichText } from "@kickstartds/base/lib/rich-text";
 import { Icon } from "@kickstartds/base/lib/icon";
 
-const Contact = ({
+import { ContactProps } from "./ContactProps";
+
+const Contact: FunctionComponent<
+  ContactProps & HTMLAttributes<HTMLElement>
+> = ({
   image,
   title,
   subtitle,

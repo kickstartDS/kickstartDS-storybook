@@ -1,4 +1,4 @@
-import { Glossary } from "./GlossaryComponent.tsx";
+import { Glossary } from "./GlossaryComponent";
 import {
   getArgsShared,
 } from "@kickstartds/core/lib/storybook/helpers";
