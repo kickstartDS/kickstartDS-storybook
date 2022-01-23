@@ -3,7 +3,7 @@
     "emitDeclarationOnly": true,
     "declaration": true,
     "jsx": "preserve",
-    "outFile": "dist/types.d.ts",
+    "outDir": "dist/types",
     "strict": false
   },
   "include": ["src/types.ts"],

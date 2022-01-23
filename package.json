@@ -5,7 +5,7 @@
   "homepage": "https://ruhmesmeile.com",
   "license": "SEE LICENSE IN LICENSE",
   "main": "dist/index.js",
-  "types": "dist/types.d.ts",
+  "types": "dist/types/types.d.ts",
   "files": [
     "dist"
   ],
