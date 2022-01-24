@@ -1,14 +1,19 @@
 import {
-  TextMedia,
-  Section,
-  TagLabel,
-  ContentBox,
-} from "@kickstartds/base";
-import { Visual } from "@kickstartds/content";
+  FunctionComponent,
+  HTMLAttributes,
+} from 'react';
 
-import { Cta } from '../cta/CtaComponent.jsx';
+import { TextMedia } from "@kickstartds/base/lib/text-media";
+import { TagLabel } from "@kickstartds/base/lib/tag-label";
+import { Section } from "@kickstartds/base/lib/section";
+import { ContentBox } from "@kickstartds/base/lib/content-box";
 
-export const Glossary = ({
+import { Visual } from "@kickstartds/content/lib/visual";
+
+import { GlossaryProps } from "./GlossaryProps";
+import { Cta } from '../cta/CtaComponent';
+
+export const Glossary: FunctionComponent<GlossaryProps & HTMLAttributes<HTMLDivElement>> = ({
   term,
   definition,
   cover,
@@ -17,13 +22,16 @@ export const Glossary = ({
   related,
   stackshare,
   cta,
+  ...props
 }) => (
-    <>
+    <div {...props}>
       <Section
         width="wide"
         spaceBefore="small"
         spaceAfter="none"
         headline={{
+          align: "left",
+          spaceAfter: "none",
           content: term,
           level:"h1",
         }}
@@ -91,6 +99,9 @@ export const Glossary = ({
         spaceAfter="none"
         className="img-grid"
         headline={{
+          level: "h3",
+          align: "left",
+          spaceAfter: "none",
           content: "Take a closer look 🧐",
         }}
       >
@@ -110,6 +121,8 @@ export const Glossary = ({
               }
             ]}
             key={i}
+            text=""
+            mediaAlignment="above-center"
           />
         ))}
       </Section>
@@ -131,6 +144,8 @@ export const Glossary = ({
               content:
                 "Read more, or discuss this decision with us on StackShare.io",
               level: "h2",
+              align: "left",
+              spaceAfter: "none",
             },
             horizontal: "center",
             indent: true,
@@ -158,7 +173,10 @@ export const Glossary = ({
       {related && related.length > 0 &&
       <Section
         headline={{
-          content: "Related"
+          content: "Related",
+          level: "h3",
+          align: "left",
+          spaceAfter: "none",
         }}
         className="two-col"
         spaceBefore="default"
@@ -169,6 +187,7 @@ export const Glossary = ({
       >
         {related?.map((item, i) => (
           <ContentBox
+            ratio="16:9"
             alignement="left"
             image={item.image}
             className="related-post"
@@ -190,5 +209,5 @@ export const Glossary = ({
         ))}
       </Section>
       }
-    </>
+    </div>
 );

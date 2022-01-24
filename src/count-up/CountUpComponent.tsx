@@ -1,10 +1,30 @@
+import {
+  FunctionComponent,
+  HTMLAttributes,
+} from 'react';
+
 import classnames from "classnames";
 import {
   CountUpContext,
   CountUpContextDefault,
 } from "@kickstartds/content/lib/count-up";
+import {
+  renderFn,
+  renderTextFn,
+} from '@kickstartds/core/lib/core';
 
-const CountUp = (props) => (
+import { CountUpProps } from "./CountUpProps";
+
+interface RenderFunctions {
+  renderTo?: renderFn;
+  renderTopic?: renderFn;
+  renderText?: renderTextFn;
+  renderLinkLabel?: renderFn;
+}
+
+const CountUp: FunctionComponent<
+  CountUpProps & RenderFunctions & HTMLAttributes<HTMLDivElement>
+> = (props) => (
   <div
     className={classnames(
       "kds-count-up ",
@@ -32,7 +52,7 @@ const CountUp = (props) => (
             rotate={90}
             strokeWidth={10}
             strokeDashoffset={1600}
-            strokeDasharray={(0, 1600)}
+            strokeDasharray={"(0, 1600)"}
             fill="transparent"
           ></rect>
         </svg>

@@ -1,10 +1,19 @@
 import {
+  FunctionComponent,
+  HTMLAttributes,
+} from 'react';
+
+import {
   SectionContextDefault,
   SectionContext,
 } from "@kickstartds/base/lib/section";
 import classnames from "classnames";
 
-const Section = ({
+import { SectionProps } from "./SectionProps";
+
+const Section: FunctionComponent<
+  SectionProps & HTMLAttributes<HTMLDivElement>
+> = ({
   pattern,
   background,
   deko,
