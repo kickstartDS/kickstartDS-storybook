@@ -1,3 +1,15 @@
+# v1.11.0 (Mon Jan 24 2022)
+
+#### 🚀 Enhancement
+
+- Add types for components [#41](https://github.com/kickstartDS/kickstartDS-storybook/pull/41) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.10.17 (Sun Dec 12 2021)
 
 #### ⚠️ Pushed to `master`
