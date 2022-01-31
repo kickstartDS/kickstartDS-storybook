@@ -1,0 +1,23 @@
+.c-share-bar {
+    .c-headline {
+        margin-bottom: 0;
+    }
+
+    &__icon {
+        padding: 0.35em;
+
+
+        &:hover {
+            padding: 0.35em;
+        }
+
+        clip-path: none !important;
+        --c-button--color: var(--color-primary-alpha-5);
+        --c-button--color-hover: var(--color-primary);
+        --c-button--background-color-hover: transparent;
+
+        &:first-of-type {
+            padding-left: 0;
+        }
+    }
+}

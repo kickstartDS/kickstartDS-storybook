@@ -1,6 +1,8 @@
 @use './contact-tokens';
 
 .c-contact {
+  height: fit-content;
+  
   &__links {
     color: var(--g-link--color);
 

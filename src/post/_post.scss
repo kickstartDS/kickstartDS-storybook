@@ -1,12 +1,98 @@
-@use './post-tokens';
-@use '@kickstartds/core/source/core/breakpoint';
+@use "./post-tokens";
+@use "@kickstartds/core/source/core/breakpoint";
 
 .c-post {
   &-head {
+    // margin: auto;
+
+    &__image {
+    }
+
     &__meta {
       position: relative !important;
       top: unset !important;
       margin-bottom: var(--spacing-xs);
+    }
+  }
+
+  &-text {
+    > p {
+      max-width: var(--g-content-width-narrow);
+      margin: auto;
+      margin-bottom: var(--c-rich-text--vertical-spacing);
+      margin-top: var(--c-rich-text--vertical-spacing);
+    }
+
+    > .wp-block-video,
+    > .wp-block-pullquote,
+    > .wp-block-image {
+      max-width: calc(var(--g-content-width-narrow) + calc(var(--spacing-xl) * 2));
+      margin: auto;
+      margin-top: var(--spacing-xl);
+      margin-bottom: var(--spacing-xl);
+    }
+  }
+}
+
+.l-section--blog {
+  .l-section__container {
+    display: flex;
+    gap: var(--spacing-xxl);
+    .c-post__info {
+      width: 30%;
+      position: sticky;
+      top: 0;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-m);
+
+      .c-form-field {
+        &__input {
+          font: var(--font-copy-s);
+        }
+      }
+
+      .c-contact {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+        gap: var(--spacing-s);
+        --icon-size: 1.2em;
+
+        > * {
+          margin: 0;
+        }
+
+        .c-contact__image {
+          max-width: 4rem;
+        }
+
+        .c-contact__links {
+          .c-contact__link {
+            margin: 0;
+            font-size: var(--font-size-xs);
+            line-height: var(--line-height-xs);
+          }
+        }
+      }
+
+      .c-headline {
+        margin-bottom: var(--spacing-xs);
+
+        &__headline {
+          font-size: var(--font-size-m);
+          line-height: var(--line-height-m);
+        }
+        &__subheadline {
+          font-size: var(--font-size-s);
+          line-height: var(--line-height-s);
+        }
+      }
+
+      .c-rich-text {
+        font: var(--font-copy-s);
+      }
     }
   }
 }

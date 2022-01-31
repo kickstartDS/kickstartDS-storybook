@@ -1,4 +1,9 @@
 :root {
   --c-rich-text--color: var(--color-grey-7);
   --c-rich-text--vertical-spacing: var(--spacing-m);
+
+  .c-rich-text blockquote p {
+    --c-rich-text_blockquote--font: var(--font-copy-xl);
+    --c-rich-text_blockquote--color: var(--color-primary-lighter-3);
+  }
 }

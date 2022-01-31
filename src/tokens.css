@@ -188,7 +188,7 @@
   --g-headline--font-weight: var(--font-weight-bold);
 
   --g-content-width-default: 62rem;
-  --g-content-width-narrow: 46.5rem;
+  --g-content-width-narrow: 38rem;
   --g-content-width-wide: 70rem;
   --g-content-width-max: 96rem;
   --g-content-padding: var(--spacing-m);

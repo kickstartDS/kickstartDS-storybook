@@ -1,12 +1,12 @@
-@use './rich-text-tokens';
+@use "./rich-text-tokens";
 
 .c-rich-text {
   .has-large-font-size {
     color: var(--g-headline--color);
     font: var(--font-ui-l);
-  
+
     margin-top: var(--spacing-xl);
-    
+
     &:first-child {
       margin-top: 0;
     }
@@ -14,9 +14,33 @@
   strong {
     font-weight: var(--font-weight-bold);
   }
+
+  blockquote {
+    border-left: none;
+
+    p {
+      font: var(--c-rich-text_blockquote--font);
+      color: var(--c-rich-text_blockquote--color);
+      font-style: italic;
+      position: relative;
+
+      &::after {
+        content: "";
+        background-image: url("icon-quote.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        top: -20%;
+        width: 7rem;
+        height: 7rem;
+        z-index: -1;
+      }
+    }
+  }
 }
 
-.c-rich-text a, .c-rich-text.c-visual__text a {
-    padding: 2px;
-  }
-
+.c-rich-text a,
+.c-rich-text.c-visual__text a {
+  padding: 2px;
+}
