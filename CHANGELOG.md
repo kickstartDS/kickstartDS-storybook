@@ -1,3 +1,15 @@
+# v1.11.1 (Mon Jan 31 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: blog overhaul ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.11.0 (Mon Jan 24 2022)
 
 #### 🚀 Enhancement
