@@ -26,7 +26,7 @@
     > .wp-block-video,
     > .wp-block-pullquote,
     > .wp-block-image {
-      max-width: calc(var(--g-content-width-narrow) + calc(var(--spacing-xl) * 2));
+      max-width: calc(var(--g-content-width-default) + calc(var(--g-content-padding) * 2));
       margin: auto;
       margin-top: var(--spacing-xl);
       margin-bottom: var(--spacing-xl);
@@ -46,16 +46,17 @@
       display: flex;
       flex-direction: column;
       gap: var(--spacing-m);
+      padding-top: var(--spacing-m);
+      margin-top: calc(var(--spacing-m) * -1);
 
       .c-form-field {
         &__input {
-          font: var(--font-copy-s);
+          font: var(--font-copy-xs);
         }
       }
 
       .c-contact {
         display: flex;
-        flex-wrap: nowrap;
         margin: 0;
         gap: var(--spacing-s);
         --icon-size: 1.2em;
@@ -81,17 +82,52 @@
         margin-bottom: var(--spacing-xs);
 
         &__headline {
-          font-size: var(--font-size-m);
-          line-height: var(--line-height-m);
-        }
-        &__subheadline {
           font-size: var(--font-size-s);
           line-height: var(--line-height-s);
+        }
+        &__subheadline {
+          font-size: var(--font-size-xs);
+          line-height: var(--line-height-xs);
         }
       }
 
       .c-rich-text {
-        font: var(--font-copy-s);
+        font: var(--font-copy-xs);
+      }
+
+      .cta {
+        cursor: pointer;
+        padding: var(--spacing-m) var(--spacing-m);
+        clip-path: polygon(
+          /* Corner Top Left */ 0% var(--spacing-m),
+          var(--spacing-m) 0%,
+          /* Corner Top Right */ 100% 0,
+          100% 0,
+          /* Corner Bottom Right */ 100% calc(100% - var(--spacing-m)),
+          calc(100% - var(--spacing-m)) 100%,
+          /* Corner Bottom Left */ var(--spacing-m) 100%,
+          0 calc(100% - var(--spacing-m))
+        );
+
+        &:hover {
+          clip-path: polygon(
+            /* Corner Top Left */ 0% 0%,
+            0% 0%,
+            /* Corner Top Right */ calc(100% - var(--spacing-m)) 0,
+            100% var(--spacing-m),
+            /* Corner Bottom Right */ 100% calc(100% - var(--spacing-s)),
+            calc(100% - var(--spacing-s)) 100%,
+            /* Corner Bottom Left */ var(--spacing-m) 100%,
+            0 calc(100% - var(--spacing-m))
+          );
+        }
+        .c-storytelling {
+          flex-direction: column-reverse;
+        }
+
+        .c-button {
+          width: 100%;
+        }
       }
     }
   }

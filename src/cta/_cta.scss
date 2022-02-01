@@ -1,5 +1,4 @@
-@use '@kickstartds/core/source/core/breakpoint';
-
+@use "@kickstartds/core/source/core/breakpoint";
 
 .cta {
   background: var(--color-primary-lighter-6);
@@ -40,45 +39,25 @@
   }
 
   clip-path: polygon(
-    /* Corner Top Left */
-    0% var(--spacing-m),
+    /* Corner Top Left */ 0% var(--spacing-m),
     var(--spacing-m) 0%,
-
-    /* Corner Top Right */
+    /* Corner Top Right */ 100% 0,
     100% 0,
-    100% 0,
-    
-    /* Corner Bottom Right */
-    100% calc(100% - var(--spacing-xxl)),
+    /* Corner Bottom Right */ 100% calc(100% - var(--spacing-xxl)),
     calc(100% - var(--l-section--space)) 100%,
-
-    /* Corner Bottom Left */
-    var(--spacing-m) 100%,
+    /* Corner Bottom Left */ var(--spacing-m) 100%,
     0 calc(100% - var(--spacing-m))
   );
 
   &:hover {
-    transform: scale(1.01)
-    translateZ(0)
-    perspective(1px);
-    backface-visibility: hidden;
-    -webkit-font-smoothing: subpixel-antialiased;
-    
     clip-path: polygon(
-      /* Corner Top Left */
+      /* Corner Top Left */ 0% 0%,
       0% 0%,
-      0% 0%,
-  
-      /* Corner Top Right */
-      calc(100% - var(--spacing-l)) 0,
+      /* Corner Top Right */ calc(100% - var(--spacing-l)) 0,
       100% var(--spacing-l),
-  
-      /* Corner Bottom Right */
-      100% calc(100% - var(--spacing-xl)),
+      /* Corner Bottom Right */ 100% calc(100% - var(--spacing-xl)),
       calc(100% - var(--spacing-xl)) 100%,
-  
-      /* Corner Bottom Left */
-      var(--spacing-l) 100%,
+      /* Corner Bottom Left */ var(--spacing-l) 100%,
       0 calc(100% - var(--spacing-l))
     );
   }

@@ -1,5 +1,16 @@
 .c-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: var(--spacing-s);
+    align-items: flex-end;
+
+    .c-form-field {
+        &__label {
+            padding-top: 0;
+        }
+    }
+
+    .c-button {
+        height: fit-content;
+    }
 }

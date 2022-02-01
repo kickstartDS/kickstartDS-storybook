@@ -10,6 +10,7 @@ export const Footer = ({ nav }) => (
       spaceAfter="default"
       spaceBefore="default"
       className="kds-footer-main"
+      width="wide"
     >
       <nav className="kds-footer-nav">
         {nav.map(({ headline, items }, navKey) => (

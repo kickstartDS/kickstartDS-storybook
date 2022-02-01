@@ -1,0 +1,7 @@
+@use "form-field-tokens";
+
+.c-form-field {
+  &__label {
+    color: var(--c-rich-text--color);
+  }
+}

@@ -11,6 +11,7 @@ import {
   TeaserBox,
   ContentBox,
   Button,
+  Divider,
 } from "@kickstartds/base";
 
 import {
@@ -19,11 +20,12 @@ import {
 
 import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
+import { Cta } from "../cta/CtaComponent";
 import FooterStories from '../footer/Footer.stories';
 import { Headline } from "@kickstartds/base/lib/headline";
 
 export default {
-  title: "Blog Entry",
+  title: "Blog Post",
 };
 
 const Page = () => (
@@ -31,6 +33,7 @@ const Page = () => (
     <Header />
     <Section
       spaceBefore="default"
+      spaceAfter="default"
       width="wide"
       className="l-section--blog"
     >
@@ -96,75 +99,50 @@ const Page = () => (
           }}
           title="Daniel Ley"
           subtitle="Co-Founder + UX Strategist with heart & soul"
-        // twitter="DLey_de"
-        // email="daniel.ley@kickstartds.com"
-        //         copy={
-        //           `More than 20 years agi I started creating user interfaces and web style guides, corporate design manuals and in the oast years the first digital Design Systems.
-
-        // After working in a large tech corporation for a long time I very well know todays problems in gaining and maintaining consistency in UIs.`}
+          twitter="DLey_de"
+          email="daniel.ley@kickstartds.com"
+        //                 copy={
+        // `More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the last years the first digital Design Systems.`}
         />
-        <div className="c-share-bar">
-          <Headline
-            content="Share this article"
-          />
-          <Button
-            className="c-share-bar__icon"
-            variant="clear"
-            size="default"
-            iconAfter
-            icon={{
-              icon: "twitter",
-            }}
-          />
-          <Button
-            className="c-share-bar__icon"
-            variant="clear"
-            size="default"
-            iconAfter
-            icon={{
-              icon: "facebook",
-            }}
-          />
-          <Button
-            className="c-share-bar__icon"
-            variant="clear"
-            size="default"
-            iconAfter
-            icon={{
-              icon: "xing",
-            }}
-          />
-          <Button
-            className="c-share-bar__icon"
-            variant="clear"
-            size="default"
-            iconAfter
-            icon={{
-              icon: "email",
-            }}
-          />
-        </div>
-        <div>
-          <div className="c-form">
-            <TextField
-              label="Subscribe to our newsletter"
-              placeholder="Enter your email"
-            />
-            <Button
-              label="subscribe"
-              size="small"
-            />
-          </div>
-        </div>
+
+        <Cta
+          headline={{
+            content: "Find out if kickstartDS suits your project",
+          }}
+          storytelling={{
+            image: {
+              order: {
+                desktopImageLast: true,
+                mobileImageLast: true,
+              },
+              source: "img/contact.svg",
+            },
+            box: {
+              // text: "lorem",
+            }
+          }}
+
+          button={{
+            label: "Talk to us now",
+            variant: "solid",
+            size: "small",
+            iconAfter: true,
+            icon: {
+              icon: "chevron-right"
+            }
+          }}
+        />
       </div>
     </Section>
 
     <Section
       background="accent"
-      spaceAfter="none"
-      spaceBefore="small"
+      spaceAfter="small"
+      spaceBefore="default"
+      width="wide"
       headline={{
         content: "Dig deeper ⛏️",
+        align:"center"
       }}
     >
       <TeaserBox
@@ -201,9 +179,35 @@ const Page = () => (
         }}
       />
     </Section>
+    <Section
+      spaceBefore="none"
+      spaceAfter="none"
+      width="narrow"
+      mode="list"
+      background="accent"
+      headline={{
+        content:"Subscribe to our newsletter",
+        level:"h3",
+        styleAs:"h3",
+        align:"center",
+        subheadline:"Stay up to date"
+      }}
+    >
+
+      <div className="c-form">
+        <TextField
+          placeholder="Enter your email"
+        />
+        <Button
+          label="subscribe"
+          size="default"
+        />
+      </div>
+    </Section>
+
     <Footer {...FooterStories.args} />
   </>
 );
 
 const Template = (args) => <Page {...args} />;
-export const BlogEntry = Template.bind({});
+export const BlogPost = Template.bind({});
