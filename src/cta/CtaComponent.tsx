@@ -15,12 +15,11 @@ export const Cta: FunctionComponent<CtaProps & HTMLAttributes<HTMLDivElement>> =
   button,
 }) => {
   const { box, image, ...storytelling } = storytellingProps;
-  const { headline, link, ...customBox } = box;
+  const { ...customBox } = box;
   const { order, ...customImage } = image;
   const { desktopImageLast, ...customOrder } = customImage;
   return (
     <div className="cta">
-      <Headline {...headlineProps} align={headlineProps.align || "left"} />
       <Storytelling
         {...storytelling}
         box={customBox}
@@ -29,7 +28,6 @@ export const Cta: FunctionComponent<CtaProps & HTMLAttributes<HTMLDivElement>> =
           order: { ...customOrder, desktopImageLast: (desktopImageLast as boolean) || true },
         }}
       />
-      <LinkButton {...button} />
     </div>
   );
 };

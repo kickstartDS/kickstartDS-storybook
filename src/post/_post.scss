@@ -2,10 +2,94 @@
 @use "@kickstartds/core/source/core/breakpoint";
 
 .c-post {
-  &-head {
-    // margin: auto;
+  &__content {
+    max-width: calc(var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2));
+    width: 100%;
+  }
 
-    &__image {
+  &__info {
+    gap: var(--c-post_info-spacing);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint.media(">m") {
+      position: sticky;
+      top: 0;
+      padding-top: var(--c-post_info-spacing);
+      margin-top: calc(var(--c-post_info-spacing) * -1);
+      margin-left: var(--spacing-l);
+
+      .c-form-field {
+        &__input {
+          font: var(--c-post_info-font-copy);
+        }
+      }
+
+      .c-share-bar__icon {
+        --c-button--icon-size: 1.2em;
+      }
+    }
+
+    .c-headline {
+      @include breakpoint.media(">m") {
+        margin-bottom: var(--spacing-xs);
+        &__headline {
+          font: var(--c-post_info-font-headline);
+          font-weight: var(--c-headline--font-weight);
+        }
+        &__subheadline {
+          font: var(--c-post_info-font-copy);
+        }
+      }
+    }
+    @include breakpoint.media(">m") {
+      .c-rich-text {
+        font: var(--c-post_info-font-copy);
+      }
+    }
+    .cta {
+      cursor: pointer;
+      padding: var(--spacing-m) var(--spacing-m);
+      clip-path: polygon(
+        /* Corner Top Left */ 0% var(--spacing-m),
+        var(--spacing-m) 0%,
+        /* Corner Top Right */ 100% 0,
+        100% 0,
+        /* Corner Bottom Right */ 100% calc(100% - var(--spacing-m)),
+        calc(100% - var(--spacing-m)) 100%,
+        /* Corner Bottom Left */ var(--spacing-m) 100%,
+        0 calc(100% - var(--spacing-m))
+      );
+
+      &:hover {
+        clip-path: polygon(
+          /* Corner Top Left */ 0% 0%,
+          0% 0%,
+          /* Corner Top Right */ calc(100% - var(--spacing-m)) 0,
+          100% var(--spacing-m),
+          /* Corner Bottom Right */ 100% calc(100% - var(--spacing-s)),
+          calc(100% - var(--spacing-s)) 100%,
+          /* Corner Bottom Left */ var(--spacing-m) 100%,
+          0 calc(100% - var(--spacing-m))
+        );
+      }
+      .c-storytelling {
+        flex-direction: column-reverse;
+      }
+
+      .c-button {
+        width: 100%;
+      }
+    }
+  }
+
+  &-head {
+    &--bottom {
+      .c-post-head__meta,
+      .c-headline {
+        display: none;
+      }
     }
 
     &__meta {
@@ -17,7 +101,7 @@
 
   &-text {
     > p {
-      max-width: var(--g-content-width-narrow);
+      max-width: calc(var(--g-content-width-narrow) - calc(var(--g-content-padding) * 4));
       margin: auto;
       margin-bottom: var(--c-rich-text--vertical-spacing);
       margin-top: var(--c-rich-text--vertical-spacing);
@@ -26,109 +110,60 @@
     > .wp-block-video,
     > .wp-block-pullquote,
     > .wp-block-image {
-      max-width: calc(var(--g-content-width-default) + calc(var(--g-content-padding) * 2));
+      width: 100%;
       margin: auto;
       margin-top: var(--spacing-xl);
       margin-bottom: var(--spacing-xl);
+    }
+  }
+
+  &__author {
+    display: none;
+    @include breakpoint.media(">m") {
+      display: block;
+    }
+
+    .c-contact {
+      display: flex;
+      margin: 0;
+      gap: var(--spacing-s);
+      --icon-size: 1.2em;
+      padding-bottom: var(--spacing-m);
+
+      > * {
+        margin: 0;
+      }
+      @include breakpoint.media(">m") {
+        .c-headline {
+          &__headline {
+            font: var(--c-post_info-font-copy);
+            font-weight: var(--c-headline--font-weight);
+            color: var(--c-rich-text--color);
+          }
+        }
+      }
+
+      .c-contact__image {
+        max-width: 4rem;
+      }
+      @include breakpoint.media(">m") {
+        .c-contact__links {
+          .c-contact__link {
+            margin: 0;
+            font: var(--c-post_info-font-copy);
+            font-weight: var(--g-link--font-weight);
+          }
+        }
+      }
     }
   }
 }
 
 .l-section--blog {
   .l-section__container {
-    display: flex;
-    gap: var(--spacing-xxl);
-    .c-post__info {
-      width: 30%;
-      position: sticky;
-      top: 0;
-      height: fit-content;
+    @include breakpoint.media(">m") {
       display: flex;
-      flex-direction: column;
-      gap: var(--spacing-m);
-      padding-top: var(--spacing-m);
-      margin-top: calc(var(--spacing-m) * -1);
-
-      .c-form-field {
-        &__input {
-          font: var(--font-copy-xs);
-        }
-      }
-
-      .c-contact {
-        display: flex;
-        margin: 0;
-        gap: var(--spacing-s);
-        --icon-size: 1.2em;
-
-        > * {
-          margin: 0;
-        }
-
-        .c-contact__image {
-          max-width: 4rem;
-        }
-
-        .c-contact__links {
-          .c-contact__link {
-            margin: 0;
-            font-size: var(--font-size-xs);
-            line-height: var(--line-height-xs);
-          }
-        }
-      }
-
-      .c-headline {
-        margin-bottom: var(--spacing-xs);
-
-        &__headline {
-          font-size: var(--font-size-s);
-          line-height: var(--line-height-s);
-        }
-        &__subheadline {
-          font-size: var(--font-size-xs);
-          line-height: var(--line-height-xs);
-        }
-      }
-
-      .c-rich-text {
-        font: var(--font-copy-xs);
-      }
-
-      .cta {
-        cursor: pointer;
-        padding: var(--spacing-m) var(--spacing-m);
-        clip-path: polygon(
-          /* Corner Top Left */ 0% var(--spacing-m),
-          var(--spacing-m) 0%,
-          /* Corner Top Right */ 100% 0,
-          100% 0,
-          /* Corner Bottom Right */ 100% calc(100% - var(--spacing-m)),
-          calc(100% - var(--spacing-m)) 100%,
-          /* Corner Bottom Left */ var(--spacing-m) 100%,
-          0 calc(100% - var(--spacing-m))
-        );
-
-        &:hover {
-          clip-path: polygon(
-            /* Corner Top Left */ 0% 0%,
-            0% 0%,
-            /* Corner Top Right */ calc(100% - var(--spacing-m)) 0,
-            100% var(--spacing-m),
-            /* Corner Bottom Right */ 100% calc(100% - var(--spacing-s)),
-            calc(100% - var(--spacing-s)) 100%,
-            /* Corner Bottom Left */ var(--spacing-m) 100%,
-            0 calc(100% - var(--spacing-m))
-          );
-        }
-        .c-storytelling {
-          flex-direction: column-reverse;
-        }
-
-        .c-button {
-          width: 100%;
-        }
-      }
+      justify-content: space-between;
     }
   }
 }

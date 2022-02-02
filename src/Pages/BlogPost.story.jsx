@@ -32,14 +32,40 @@ const Page = () => (
   <>
     <Header />
     <Section
-      spaceBefore="default"
+      width="wide"
+      className="l-section--content-width-narrow"
+      spaceAfter="none"
+      deko
+      pattern="3"
+    >
+      <PostHead
+        className="c-post-head--top"
+        categories={[
+          {
+            label: "About kickstartDS",
+          },
+          {
+            label: "Background",
+          }
+        ]}
+        headline={{
+          content: "Why we are creating kickstartDS",
+          level: "h1",
+          pageHeader: false,
+          spaceAfter: "none",
+        }}
+      />
+    </Section>
+    <Section
+      spaceBefore="none"
       spaceAfter="default"
+      mode="list"
       width="wide"
       className="l-section--blog"
     >
-      <div>
+      <div className="c-post__content">
         <PostHead
-          date="2021-09-01"
+          className="c-post-head--bottom"
           categories={[
             {
               label: "About kickstartDS",
@@ -48,13 +74,6 @@ const Page = () => (
               label: "Background",
             }
           ]}
-          headline={{
-            content: "Why we are creating kickstartDS",
-            subheadline: "published by: Daniel Ley",
-            level: "h1",
-            pageHeader: false,
-            spaceAfter: "none",
-          }}
           image={{
             src: "/img/why-kickstart-Design-System.svg",
           }}
@@ -91,48 +110,138 @@ const Page = () => (
       </div>
 
       <div className="c-post__info">
-        <Contact
-          image={{
-            src: "/img/blog/web_profile_images.png",
-            width: "250",
-            height: "250",
-          }}
-          title="Daniel Ley"
-          subtitle="Co-Founder + UX Strategist with heart & soul"
-          twitter="DLey_de"
-          email="daniel.ley@kickstartds.com"
-        //                 copy={
-        // `More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the last years the first digital Design Systems.`}
-        />
-
-        <Cta
-          headline={{
-            content: "Find out if kickstartDS suits your project",
-          }}
-          storytelling={{
-            image: {
-              order: {
-                desktopImageLast: true,
-                mobileImageLast: true,
-              },
-              source: "img/contact.svg",
-            },
-            box: {
-              // text: "lorem",
-            }
-          }}
-
-          button={{
-            label: "Talk to us now",
-            variant: "solid",
-            size: "small",
-            iconAfter: true,
-            icon: {
-              icon: "chevron-right"
-            }
-          }}
-        />
+        <div className="c-post__author">
+          <Headline
+            content="Published by"
+          />
+          <Contact
+            image={{
+              src: "/img/blog/web_profile_images.png",
+              width: "250",
+              height: "250",
+            }}
+            title="Daniel Ley"
+            subtitle="12.10.2021"
+            twitter="DLey_de"
+            email="daniel.ley@kickstartds.com"
+            copy={
+              `Co-Founder + UX Strategist with heart & soul`}
+          />
+          <Divider />
+        </div>
+        <div className="c-share-bar">
+          <Headline
+            content="Share this article"
+            level="h3"
+          />
+          <Button
+            className="c-share-bar__icon"
+            variant="clear"
+            size="default"
+            iconAfter
+            icon={{
+              icon: "twitter",
+            }}
+          />
+          <Button
+            className="c-share-bar__icon"
+            variant="clear"
+            size="default"
+            iconAfter
+            icon={{
+              icon: "facebook",
+            }}
+          />
+          <Button
+            className="c-share-bar__icon"
+            variant="clear"
+            size="default"
+            iconAfter
+            icon={{
+              icon: "xing",
+            }}
+          />
+          <Button
+            className="c-share-bar__icon"
+            variant="clear"
+            size="default"
+            iconAfter
+            icon={{
+              icon: "email",
+            }}
+          />
+        </div>
       </div>
+    </Section>
+    <Section
+      width="wide"
+      spaceBefore="none"
+      spaceAfter="none"
+    >
+      <Divider />
+    </Section>
+    <Section
+      width="narrow"
+      mode="list"
+      spaceBefore="default"
+      spaceAfter="small"
+      gutter="large"
+      headline={{
+        content: "Get to know us",
+        align: "center",
+      }}
+    >
+      <Cta
+        headline={{
+          content: "Find out if kickstartDS suits your project",
+        }}
+        storytelling={{
+          image: {
+            order: {
+              desktopImageLast: true,
+              mobileImageLast: true,
+            },
+            source: "img/contact.svg",
+          },
+          box: {
+            headline: {
+              content: "Find out if kickstartDS suits your project",
+              level: "h2",
+            },
+            text: "Get in contact with our team",
+
+            link: {
+              label: "Talk to us now",
+              variant: "solid",
+              size: "default",
+              iconAfter: true,
+              icon: {
+                icon: "chevron-right"
+              }
+            }
+          }
+        }}
+      />
+    </Section>
+    <Section
+      width="narrow"
+      spaceBefore="small"
+    >
+      <Contact
+        image={{
+          src: "/img/blog/web_profile_images.png",
+          width: "250",
+          height: "250",
+        }}
+        title="Daniel Ley"
+        subtitle="Co-Founder + UX Strategist with heart & soul"
+        twitter="DLey_de"
+        email="daniel.ley@kickstartds.com"
+        copy={
+          `More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the past years the first digital Design Systems.
+
+After working in a large tech corporation for a long time I very well know todays problems in gaining and maintaining consistency in UIs.`}
+      />
     </Section>
 
     <Section
@@ -142,7 +251,7 @@ const Page = () => (
       width="wide"
       headline={{
         content: "Dig deeper ⛏️",
-        align:"center"
+        align: "center"
       }}
     >
       <TeaserBox
@@ -186,11 +295,11 @@ const Page = () => (
       mode="list"
       background="accent"
       headline={{
-        content:"Subscribe to our newsletter",
-        level:"h3",
-        styleAs:"h3",
-        align:"center",
-        subheadline:"Stay up to date"
+        content: "Subscribe to our newsletter",
+        level: "h3",
+        styleAs: "h3",
+        align: "center",
+        subheadline: "Stay up to date"
       }}
     >
 

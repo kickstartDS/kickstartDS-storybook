@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: row;
     gap: var(--spacing-s);
-    align-items: flex-end;
+    max-width: calc(var(--g-content-width-narrow) * 0.65);
+    width: 100%;
+    margin: auto;
 
     .c-form-field {
         &__label {
-            padding-top: 0;
+            display: none;
         }
     }
 

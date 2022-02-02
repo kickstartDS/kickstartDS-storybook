@@ -17,11 +17,11 @@
 
   blockquote {
     border-left: none;
+    padding: 0;
 
     p {
       font: var(--c-rich-text_blockquote--font);
       color: var(--c-rich-text_blockquote--color);
-      font-style: italic;
       position: relative;
 
       &::after {
