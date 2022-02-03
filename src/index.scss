@@ -1,5 +1,4 @@
 @use './tokens.css';
-@use 'post/post.scss';
 @use 'button/button.scss';
 @use 'contact/contact.scss';
 @use 'content-box/content-box.scss';
@@ -16,6 +15,8 @@
 @use 'headline/headline.scss';
 @use 'rich-text/rich-text.scss';
 @use 'logo-tiles/logo-tiles.scss';
+@use 'post/post.scss';
+@use 'post-teaser/post-teaser.scss';
 @use 'quote/quote.scss';
 @use 'share-bar/share-bar.scss';
 @use 'section/section.scss';
