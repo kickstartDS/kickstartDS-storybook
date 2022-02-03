@@ -35,7 +35,6 @@ const Page = () => (
       width="wide"
       className="l-section--content-width-narrow"
       spaceAfter="none"
-      deko
       pattern="3"
     >
       <PostHead

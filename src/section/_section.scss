@@ -206,32 +206,33 @@
     }
     &-3 {
       &::after {
-        bottom: 30%;
-        right: -6em;
-        transform: scale(1.2);
-
+        top: 0;
+        right: 0;
+        transform: scale(0.5) translate(60%, -50%);
+        
         @media (min-width: 40em) {
-          right: 20em;
+          transform: scale(0.7);
+          right: 0;
+        }
+        
+        
+        @media (min-width: 80em) {
+          transform: scale(1);
+          right: 20%;
         }
 
         @media (min-width: 130em) {
-          right: 15%;
+          right: 30%;
         }
       }
 
       &--dark {
-        &::before {
-          // content: url(/patterns/pattern_3.svg);
-        }
         &::after {
           content: url(/patterns/pattern_3.svg);
         }
       }
 
       &--light {
-        &::before {
-          // content: url(/patterns/pattern_3.svg);
-        }
         &::after {
           content: url(/patterns/pattern_3.svg);
         }

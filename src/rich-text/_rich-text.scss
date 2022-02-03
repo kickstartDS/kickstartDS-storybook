@@ -26,14 +26,14 @@
 
       &::after {
         content: "";
-        background-image: url("icon-quote.svg");
+        background-image: url("img/icon-quote.svg");
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
         right: 0;
-        top: -20%;
-        width: 7rem;
-        height: 7rem;
+        top: -30%;
+        width: 7.5rem;
+        height: 7.5rem;
         z-index: -1;
       }
     }

@@ -1500,14 +1500,14 @@
 }
 .c-rich-text blockquote p::after {
   content: "";
-  background-image: url("icon-quote.svg");
+  background-image: url("img/icon-quote.svg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   right: 0;
-  top: -20%;
-  width: 7rem;
-  height: 7rem;
+  top: -30%;
+  width: 7.5rem;
+  height: 7.5rem;
   z-index: -1;
 }
 
@@ -1751,18 +1751,25 @@
   content: url(/patterns/pattern_2-light--2.svg);
 }
 .l-section__pattern-3::after {
-  bottom: 30%;
-  right: -6em;
-  transform: scale(1.2);
+  top: 0;
+  right: 0;
+  transform: scale(0.5) translate(60%, -50%);
 }
 @media (min-width: 40em) {
   .l-section__pattern-3::after {
-    right: 20em;
+    transform: scale(0.7);
+    right: 0;
+  }
+}
+@media (min-width: 80em) {
+  .l-section__pattern-3::after {
+    transform: scale(1);
+    right: 20%;
   }
 }
 @media (min-width: 130em) {
   .l-section__pattern-3::after {
-    right: 15%;
+    right: 30%;
   }
 }
 .l-section__pattern-3--dark::after {
