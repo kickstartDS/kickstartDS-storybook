@@ -51,7 +51,7 @@
     "@auto-it/released": "^10.29.3",
     "@babel/core": "^7.14.3",
     "@kickstartds/storybook-addon-component-tokens": "^0.1.5",
-    "@kickstartds/storybook-addon-jsonschema": "^1.0.4",
+    "@kickstartds/storybook-addon-jsonschema": "^1.0.5",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-docs": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
