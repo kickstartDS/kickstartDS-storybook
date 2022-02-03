@@ -1,3 +1,15 @@
+# v1.11.4 (Thu Feb 03 2022)
+
+#### ⚠️ Pushed to `master`
+
+- build: update jsonschema addon ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.11.3 (Wed Feb 02 2022)
 
 #### ⚠️ Pushed to `master`
