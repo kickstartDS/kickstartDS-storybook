@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "build-storybook": "run-p sass sass-manager schema token && build-storybook --static-dir static --output-dir storybook",
+    "build-storybook": "run-p sass sass-manager schema token && build-storybook --output-dir storybook",
     "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --storybook-build-dir 'storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes --exit-once-uploaded",
     "dist:js": "esbuild index=src/dist.js --outdir=dist --format=esm --bundle --minify --splitting",
     "dist:sass": "sass --load-path=node_modules src/dist.scss dist/index.css",
@@ -30,7 +30,7 @@
     "watch:token": "yarn token && chokidar \"src/**/*-tokens.scss\" -c \"yarn token {path}\"",
     "schema": "node scripts/schema.js",
     "start": "run-p watch:* storybook",
-    "storybook": "start-storybook -p 6006 -s static"
+    "storybook": "start-storybook -p 6006"
   },
   "keywords": [],
   "dependencies": {
@@ -52,13 +52,13 @@
     "@babel/core": "^7.14.3",
     "@kickstartds/storybook-addon-component-tokens": "^0.1.5",
     "@kickstartds/storybook-addon-jsonschema": "^1.0.5",
-    "@storybook/addon-actions": "^6.4.9",
-    "@storybook/addon-docs": "^6.4.9",
-    "@storybook/addon-essentials": "^6.4.9",
-    "@storybook/addon-links": "^6.4.9",
-    "@storybook/addons": "^6.4.9",
-    "@storybook/react": "^6.4.9",
-    "@storybook/theming": "^6.4.9",
+    "@storybook/addon-actions": "^6.4.18",
+    "@storybook/addon-docs": "^6.4.18",
+    "@storybook/addon-essentials": "^6.4.18",
+    "@storybook/addon-links": "^6.4.18",
+    "@storybook/addons": "^6.4.18",
+    "@storybook/react": "^6.4.18",
+    "@storybook/theming": "^6.4.18",
     "@whitespace/storybook-addon-html": "git+https://github.com/lmestel/storybook-addon-html.git#v5.3.0",
     "auto": "^10.29.3",
     "babel-loader": "^8.2.2",
