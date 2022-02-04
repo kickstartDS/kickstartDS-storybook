@@ -1,3 +1,15 @@
+# v1.11.8 (Fri Feb 04 2022)
+
+#### ⚠️ Pushed to `master`
+
+- build: update storybook ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.11.7 (Thu Feb 03 2022)
 
 #### ⚠️ Pushed to `master`
