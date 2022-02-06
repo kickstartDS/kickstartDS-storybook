@@ -1,6 +1,4 @@
-import {
-  ListHead, PostTeaser,
-} from "@kickstartds/blog";
+import { PostTeaser } from "@kickstartds/blog/lib/post-teaser";
 
 import {
   Contact,
