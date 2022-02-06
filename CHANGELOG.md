@@ -1,3 +1,15 @@
+# v1.11.9 (Sun Feb 06 2022)
+
+#### ⚠️ Pushed to `master`
+
+- fix: wrong import ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.11.8 (Fri Feb 04 2022)
 
 #### ⚠️ Pushed to `master`
