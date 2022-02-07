@@ -23,6 +23,7 @@ import { Footer } from "../footer/FooterComponent";
 import { Cta } from "../cta/CtaComponent";
 import FooterStories from '../footer/Footer.stories';
 import { Headline } from "@kickstartds/base/lib/headline";
+import { PostMeta } from "../post/post-meta/PostMetaComponent";
 
 export default {
   title: "Blog Post",
@@ -32,31 +33,7 @@ const Page = () => (
   <>
     <Header />
     <Section
-      width="wide"
-      className="l-section--content-width-narrow"
-      spaceAfter="none"
-      pattern="3"
-    >
-      <PostHead
-        className="c-post-head--top"
-        categories={[
-          {
-            label: "About kickstartDS",
-          },
-          {
-            label: "Background",
-          }
-        ]}
-        headline={{
-          content: "Why we are creating kickstartDS",
-          level: "h1",
-          pageHeader: false,
-          spaceAfter: "none",
-        }}
-      />
-    </Section>
-    <Section
-      spaceBefore="none"
+      spaceBefore="default"
       spaceAfter="default"
       mode="list"
       width="wide"
@@ -64,7 +41,6 @@ const Page = () => (
     >
       <div className="c-post__content">
         <PostHead
-          className="c-post-head--bottom"
           categories={[
             {
               label: "About kickstartDS",
@@ -73,6 +49,12 @@ const Page = () => (
               label: "Background",
             }
           ]}
+          headline={{
+            content: "Why we are creating kickstartDS",
+            level: "h1",
+            pageHeader: false,
+            spaceAfter: "none",
+          }}
           image={{
             src: "/img/why-kickstart-Design-System.svg",
           }}
@@ -108,7 +90,7 @@ const Page = () => (
         </div>
       </div>
 
-      <div className="c-post__info">
+      <div className="c-post__context">
         <div className="c-post__author">
           <Headline
             content="Published by"
@@ -120,14 +102,15 @@ const Page = () => (
               height: "250",
             }}
             title="Daniel Ley"
-            subtitle="12.10.2021"
             twitter="DLey_de"
             email="daniel.ley@kickstartds.com"
             copy={
               `Co-Founder + UX Strategist with heart & soul`}
           />
-          <Divider />
         </div>
+        <Divider />
+          <PostMeta />
+        <Divider />
         <div className="c-share-bar">
           <Headline
             content="Share this article"

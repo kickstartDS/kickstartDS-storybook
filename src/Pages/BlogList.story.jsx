@@ -1,4 +1,5 @@
 import { PostTeaser } from "@kickstartds/blog/lib/post-teaser";
+import { Picture } from "@kickstartds/base/lib/picture";
 
 import {
   Contact,
@@ -19,6 +20,7 @@ import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
 import FooterStories from '../footer/Footer.stories';
 import { Headline } from "@kickstartds/base/lib/headline";
+import { PostMeta } from "../post/post-meta/PostMetaComponent";
 
 export default {
   title: "Blog List",
@@ -33,94 +35,38 @@ const Page = () => (
       mode="list"
       gutter="large"
     >
-      <PostTeaser
-        title="Why we are creating kickstartDS"
-        body="#tldr: We want to support you to create one library of components, patterns and tokens to be used in any frontend you need to give your digital touch points a consistent interface. Even shorter: we want to kickstart your design system implementation. 😎 Now you might wonder if or why you need that. Let me… Continue reading Why we are creating kickstartDS"
-        categories={[
-          {
-            label: "About kickstartDS",
-          },
-          {
-            label: "Background",
-          },
-        ]}
-        date="2021-03-29"
-        image={{
-          src: "img/blog/Blog-Post01-5.webp",
-        }}
-        link={{
-          label: "read more...",
-        }}
-        variant="image-first"
-      />
-      <PostTeaser
-        title="Great components inside kickstartDS"
-        body="#tldr: in this post I’ll try to provide some background info on the power of kickstartDS components. They are especially powerful once customized to your brands corporate design. They come with lots of options, so you don’t need to either invent or deal with limitless variants like in other frameworks. You can even specify or limit design variations based on different token sets or across multiple brands or layers."
-        categories={[
-          {
-            label: "Components",
-          },
-        ]}
-        date="2021-03-29"
-        image={{
-          src: "img/blog/Blog-Post_great-components-1.webp",
-        }}
-        link={{
-          label: "read more...",
-        }}
-        variant="image-first"
-      />
-      <PostTeaser
-        title="Great components inside kickstartDS"
-        body="#tldr: in this post I’ll try to provide some background info on the power of kickstartDS components. They are especially powerful once customized to your brands corporate design. They come with lots of options, so you don’t need to either invent or deal with limitless variants like in other frameworks. You can even specify or limit design variations based on different token sets or across multiple brands or layers."
-        categories={[
-          {
-            label: "Components",
-          },
-        ]}
-        date="2021-03-29"
-        image={{
-          src: "https://picsum.photos/seed/kdsnewslatest/900/380",
-        }}
-        link={{
-          label: "read more...",
-        }}
-        variant="image-first"
-      />
-      <PostTeaser
-        title="Great components inside kickstartDS"
-        body="#tldr: in this post I’ll try to provide some background info on the power of kickstartDS components. They are especially powerful once customized to your brands corporate design. They come with lots of options, so you don’t need to either invent or deal with limitless variants like in other frameworks. You can even specify or limit design variations based on different token sets or across multiple brands or layers."
-        categories={[
-          {
-            label: "Components",
-          },
-        ]}
-        date="2021-03-29"
-        image={{
-          src: "img/blog/Blog-Post_great-components-1.webp",
-        }}
-        link={{
-          label: "read more...",
-        }}
-        variant="image-first"
-      />
-      <PostTeaser
-        title="Great components inside kickstartDS"
-        body="#tldr: in this post I’ll try to provide some background info on the power of kickstartDS components. They are especially powerful once customized to your brands corporate design. They come with lots of options, so you don’t need to either invent or deal with limitless variants like in other frameworks. You can even specify or limit design variations based on different token sets or across multiple brands or layers."
-        categories={[
-          {
-            label: "Components",
-          },
-        ]}
-        date="2021-03-29"
-        image={{
-          src: "https://picsum.photos/seed/kdsnewslatest/900/380",
-        }}
-        link={{
-          label: "read more...",
-        }}
-        variant="image-first"
-      />
+      <article class="c-post-teaser">
+        <div class="c-post-teaser__body">
+          <div class="c-tag-label--container">
+            <div class="c-tag-label c-tag-label--s">
+              <span class="c-tag-label__content">
+                About kickstartDS
+              </span>
+            </div>
+            <div class="c-tag-label c-tag-label--s">
+              <span class="c-tag-label__content">
+                Background
+              </span>
+            </div>
+          </div>
+          <div class="c-post-teaser__content">
+            <h2 class="c-post-teaser__headline" id="news-header-undefined">
+              Why we are creating kickstartDS
+            </h2>
+            <div class="c-rich-text">
+              <p>
+                #tldr: We want to support you to create one library of components, patterns and tokens to be used in any frontend you need to give your digital touch points a consistent interface...
+              </p>
+            </div>
+          </div>
+          <PostMeta />
+        </div>
+        <div class="c-post-teaser__image">
+          <Picture src="img/blog/Blog-Post01-5.webp" />
+        </div>
+      </article>
+
+
     </Section>
     <Footer {...FooterStories.args} />
   </>

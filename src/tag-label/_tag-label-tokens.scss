@@ -1,12 +1,17 @@
-.c-tag-label {
-  --c-tag-label--background-color: var(--color-primary-alpha-1);
+:root {
+  .c-tag-label {
+    --c-tag-label--background-color: var(--color-primary-alpha-1);
 
-  --tag-label--border: solid 2px var(--color-primary-alpha-0);
-  --c-tag-label--border-radius: 0;
+    --tag-label--border: solid 2px var(--color-primary-alpha-0);
+    --c-tag-label--border-radius: 0;
 
-  --c-tag-label--color: var(--color-primary);
+    --c-tag-label--color: var(--color-primary);
+    --c-tag-label--font-weight: var(--font-weight-semi-bold);
 
-  --c-tag-label--font-weight: var(--font-weight-semi-bold);
-
-  --c-tag-label--vertical-padding: var(--spacing-xs);
+    &--s {
+      --c-tag-label--font: var(--font-ui-xs);
+      --c-tag-label--horizontal-padding: 0.5rem;
+      --c-tag-label--vertical-padding: 0.3rem;
+    }
+  }
 }

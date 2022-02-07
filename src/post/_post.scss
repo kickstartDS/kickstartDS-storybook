@@ -7,8 +7,12 @@
     width: 100%;
   }
 
-  &__info {
-    gap: var(--c-post_info-spacing);
+  &__context {
+    .c-post-meta__author {
+      display: none;
+    }
+
+    gap: var(--c-post_context-spacing);
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -16,13 +20,13 @@
     @include breakpoint.media(">m") {
       position: sticky;
       top: 0;
-      padding-top: var(--c-post_info-spacing);
-      margin-top: calc(var(--c-post_info-spacing) * -1);
+      padding-top: var(--c-post_context-spacing);
+      margin-top: calc(var(--c-post_context-spacing) * -1);
       margin-left: var(--spacing-l);
 
       .c-form-field {
         &__input {
-          font: var(--c-post_info-font-copy);
+          font: var(--c-post_context-font-copy);
         }
       }
 
@@ -35,17 +39,17 @@
       @include breakpoint.media(">m") {
         margin-bottom: var(--spacing-xs);
         &__headline {
-          font: var(--c-post_info-font-headline);
+          font: var(--c-post_context-font-headline);
           font-weight: var(--c-headline--font-weight);
         }
         &__subheadline {
-          font: var(--c-post_info-font-copy);
+          font: var(--c-post_context-font-copy);
         }
       }
     }
     @include breakpoint.media(">m") {
       .c-rich-text {
-        font: var(--c-post_info-font-copy);
+        font: var(--c-post_context-font-copy);
       }
     }
     .cta {
@@ -85,13 +89,6 @@
   }
 
   &-head {
-    &--bottom {
-      .c-post-head__meta,
-      .c-headline {
-        display: none;
-      }
-    }
-
     &__meta {
       position: relative !important;
       top: unset !important;
@@ -124,11 +121,20 @@
     }
 
     .c-contact {
+      --icon-size: 1rem;
+
       display: flex;
       margin: 0;
       gap: var(--spacing-s);
-      --icon-size: 1.2em;
-      padding-bottom: var(--spacing-m);
+
+      &__body {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+        > * {
+          margin: 0;
+        }
+      }
 
       > * {
         margin: 0;
@@ -136,7 +142,7 @@
       @include breakpoint.media(">m") {
         .c-headline {
           &__headline {
-            font: var(--c-post_info-font-copy);
+            font: var(--c-post_context-font-copy);
             font-weight: var(--c-headline--font-weight);
             color: var(--c-rich-text--color);
           }
@@ -148,10 +154,18 @@
       }
       @include breakpoint.media(">m") {
         .c-contact__links {
+          font: var(--font-ui-xs);
+          .icon {
+            margin-right: 0.2rem;
+          }
           .c-contact__link {
-            margin: 0;
-            font: var(--c-post_info-font-copy);
+            margin-bottom: 0;
+            font: var(--c-post_context-font-copy);
             font-weight: var(--g-link--font-weight);
+          }
+
+          li {
+            margin-bottom: 0.2rem;
           }
         }
       }
