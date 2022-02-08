@@ -5,7 +5,8 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-s);
-  
+  flex-wrap: wrap;
+
   span,
   time {
     font: var(--font-ui-xs);
@@ -14,11 +15,11 @@
     display: flex;
     align-items: center;
   }
-  
+
   img {
     width: 1.75rem;
   }
-  
+
   .icon {
     height: 1.15rem;
     aspect-ratio: 1 / 1;
@@ -31,7 +32,7 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
-    
+
     span {
       color: var(--color-grey-7);
       font-weight: var(--font-weight-bold);

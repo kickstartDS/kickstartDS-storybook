@@ -1,8 +1,11 @@
 @use "./post-teaser-tokens";
 @use "@kickstartds/core/source/core/breakpoint";
 
-.c-post-teaser {
+:root {
   --tag-label-height: calc(var(--line-height-xs) + calc(var(--spacing-xs) * 2) + var(--spacing-s));
+}
+
+.c-post-teaser {
   --g-headline--margin: var(--spacing-m) 0 var(--spacing-s);
 
   margin: 0;
@@ -17,7 +20,7 @@
     }
   }
 
-  .c-tag-label--container {
+  .tag-label-container {
     position: absolute;
     transform: translateY(calc(-100% - var(--spacing-s)));
   }

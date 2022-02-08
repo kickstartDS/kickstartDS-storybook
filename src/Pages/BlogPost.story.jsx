@@ -2,6 +2,8 @@ import {
   PostHead,
 } from "@kickstartds/blog";
 
+import { Picture } from "@kickstartds/base/lib/picture";
+
 import {
   Contact,
 } from "@kickstartds/content";
@@ -63,10 +65,11 @@ const Page = () => (
           <p class="has-large-font-size"><em>#tldr:</em> We want to support you to create one library of components, patterns and tokens to be used in any frontend you need to give your digital touch points a consistent interface. Even shorter: we want to <strong>kickstart your design system</strong> implementation. 😎</p>
           <p class="has-large-font-size"><strong>Now you might wonder if or why you need that.</strong></p>
 
-          <figure class="wp-block-video alignwide"><figcaption>Storybook Controls panel in action</figcaption>
-            <ContentBox
-              image="https://picsum.photos/seed/kdscontentbox/500/300"
+          <figure class="wp-block-video alignwide">
+            <Picture
+              src="https://picsum.photos/seed/kdscontentbox/500/300"
             />
+            <figcaption>Storybook Controls panel in action</figcaption>
           </figure>
 
           <p>Let me provide some background. Jonas, founder of kickstartDS, and I have been working in the digital business all our professional life. We both have made our careers acting in different leading roles during the last two decades. Jonas from a development and tech perspective and I am from UX designers point of view. We both designed or coded patterns for the same things over and over again. Surely, we did rely on different frameworks in the past years. But never ever they met all our needs. </p>
@@ -109,7 +112,7 @@ const Page = () => (
           />
         </div>
         <Divider />
-          <PostMeta />
+        <PostMeta />
         <Divider />
         <div className="c-share-bar">
           <Headline

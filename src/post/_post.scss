@@ -20,7 +20,7 @@
     @include breakpoint.media(">m") {
       position: sticky;
       top: 0;
-      padding-top: var(--c-post_context-spacing);
+      padding-top: calc(var(--tag-label-height) + var(--spacing-s));
       margin-top: calc(var(--c-post_context-spacing) * -1);
       margin-left: var(--spacing-l);
 

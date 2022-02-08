@@ -30,6 +30,19 @@ const Page = () => (
   <>
     <Header />
     <Section
+      headline={{
+        content: "Welcome to the kickstartDS Blog",
+        level:"h1",
+        subheadline: "Here we keep you up to date on releases, updates and background info",
+        align:"center",
+      }}
+      width="wide"
+      pattern="3"
+      spaceAfter="none"
+    >
+
+    </Section>
+    <Section
       spaceBefore="default"
       width="narrow"
       mode="list"
@@ -37,7 +50,7 @@ const Page = () => (
     >
       <article class="c-post-teaser">
         <div class="c-post-teaser__body">
-          <div class="c-tag-label--container">
+          <div class="tag-label-container">
             <div class="c-tag-label c-tag-label--s">
               <span class="c-tag-label__content">
                 About kickstartDS
