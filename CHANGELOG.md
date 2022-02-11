@@ -1,3 +1,15 @@
+# v1.11.12 (Fri Feb 11 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat(post-meta): accesibility style adjustment ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.11.11 (Tue Feb 08 2022)
 
 #### ⚠️ Pushed to `master`
