@@ -4,13 +4,13 @@
 .c-post-meta {
   display: flex;
   align-items: center;
-  gap: var(--spacing-s);
+  gap: var(--spacing-m);
   flex-wrap: wrap;
 
   span,
   time {
     font: var(--font-ui-xs);
-    color: var(--color-grey-4);
+    color: var(--color-grey-6);
 
     display: flex;
     align-items: center;
