@@ -112,7 +112,14 @@ const Page = () => (
           />
         </div>
         <Divider />
-        <PostMeta />
+        <PostMeta
+          author="Daniel Ley"
+          avatar={{
+            src: "img/blog/web_profile_images-teaser.png",
+          }}
+          date="2022-02-10"
+          readingTime="5 min read"
+        />
         <Divider />
         <div className="c-share-bar">
           <Headline
