@@ -66,10 +66,10 @@ const Page = () => (
             </div>
           </div>
           <PostMeta
-            avatar={{src: "img/blog/web_profile_images-teaser.png"}}
+            avatar={{ src: "img/blog/web_profile_images-teaser.png" }}
             author="Daniel Ley"
             date="2021-03-29"
-            readingTime="readingTime"
+            readingTime="5 min read"
           />
         </div>
         <div class="c-post-teaser__image">
