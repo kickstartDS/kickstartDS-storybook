@@ -11,7 +11,6 @@ import { HeadlineProvider } from '../src/headline/HeadlineComponent';
 import { SectionProvider } from '../src/section/SectionComponent';
 import { IconSprite } from '../src/icon-sprite/IconSpriteComponent';
 import { CountUpProvider } from '../src/count-up/CountUpComponent';
-import { ContactProvider } from '../src/contact/ContactComponent';
 
 import { LightBox } from "@kickstartds/base/lib/lightbox";
 
@@ -30,9 +29,7 @@ const providerDecorator = (Story, context) => (
   <HeadlineProvider>
     <SectionProvider>
       <CountUpProvider>
-        <ContactProvider>
-          <Story {...context} />
-        </ContactProvider>
+        <Story {...context} />
       </CountUpProvider>
     </SectionProvider>
   </HeadlineProvider>

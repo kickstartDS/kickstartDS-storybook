@@ -1,0 +1,96 @@
+@use "@kickstartds/core/source/core/breakpoint";
+
+.c-post-aside {
+  --c-post-aside--gap: calc(var(--spacing-s) * 1.25);
+  --c-post-aside_author--headline-spacing: var(--spacing-xs);
+  --c-post-aside_meta--gap: var(--spacing-m);
+  --c-post-aside_meta-item--font: var(--font-ui-xs);
+  --c-post-aside_meta-item--color: var(--color-grey-6);
+  --c-post-aside_meta-item--icon-size: 1.15rem;
+  --c-post-aside_meta-item--icon-spacing: 0.25em;
+  --c-post-aside_share-bar--padding: 0.35em;
+  --c-post-aside_share-bar--icon-size: 2em;
+
+  height: fit-content;
+
+  @include breakpoint.media("≥m") {
+    --c-post-aside_share-bar--icon-size: 1.35em;
+
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--tag-label-height) + var(--spacing-s));
+    margin-top: calc(-1 * var(--c-post-aside--gap));
+    margin-left: var(--spacing-l);
+  }
+
+  @include breakpoint.media("≥m") {
+    .c-headline__headline {
+      font: var(--font-display-s);
+      font-weight: var(--c-headline--font-weight);
+    }
+  }
+
+  &__author {
+    display: none;
+
+    @include breakpoint.media("≥m") {
+      display: block;
+    }
+
+    .c-contact {
+      --icon-size: 1rem;
+
+      margin: 0;
+      gap: var(--spacing-s);
+
+      > * {
+        margin: 0;
+      }
+
+      &__body {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+
+        > * {
+          margin: 0;
+        }
+
+        @include breakpoint.media("≥m") {
+          .c-headline__headline {
+            font: var(--font-copy-xs);
+            font-weight: var(--c-headline--font-weight);
+            color: var(--c-rich-text--color);
+          }
+        }
+      }
+
+      &__image {
+        max-width: 4rem;
+      }
+
+      &__links {
+        font: var(--font-ui-xs);
+      }
+    }
+
+    .c-rich-text {
+      font: var(--font-copy-xs);
+    }
+  }
+
+  &__meta {
+    .icon {
+      opacity: 0.5;
+    }
+  }
+
+  &__share-link {
+    --g-link--background-hover: transparent;
+    --g-link--color: var(--color-primary-alpha-5);
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+  }
+}
