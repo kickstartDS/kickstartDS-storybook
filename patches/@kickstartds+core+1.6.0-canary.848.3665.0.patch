@@ -1,0 +1,36 @@
+diff --git a/node_modules/@kickstartds/core/lib/_shared/createProvider-67c18e50.d.ts b/node_modules/@kickstartds/core/lib/_shared/createProvider-67c18e50.d.ts
+index 01cb3c5..7c87921 100644
+--- a/node_modules/@kickstartds/core/lib/_shared/createProvider-67c18e50.d.ts
++++ b/node_modules/@kickstartds/core/lib/_shared/createProvider-67c18e50.d.ts
+@@ -1,4 +1,4 @@
+ /// <reference types="react" />
+-import { FunctionComponentElement, Context, ProviderProps } from "../react/index";
++import { FunctionComponentElement, Context, ProviderProps } from "react";
+ declare const createProvider: <V>(context: Context<V>, value: V) => (props: ProviderProps<V>) => FunctionComponentElement<ProviderProps<V>>;
+ export { createProvider };
+diff --git a/node_modules/@kickstartds/core/lib/_shared/renderFunctions-55b9fda5.d.ts b/node_modules/@kickstartds/core/lib/_shared/renderFunctions-55b9fda5.d.ts
+index b6ef838..18afe6a 100644
+--- a/node_modules/@kickstartds/core/lib/_shared/renderFunctions-55b9fda5.d.ts
++++ b/node_modules/@kickstartds/core/lib/_shared/renderFunctions-55b9fda5.d.ts
+@@ -1,5 +1,5 @@
+ /// <reference types="react" />
+-import { ReactNode } from "../react/index";
++import { ReactNode } from "react";
+ type renderFn = (t: ReactNode) => ReactNode;
+ type renderTextFn = (t: string) => ReactNode;
+ declare const defaultRenderFn: renderFn;
+diff --git a/node_modules/@kickstartds/core/lib/core/index.d.ts b/node_modules/@kickstartds/core/lib/core/index.d.ts
+index cd9ae24..86c00ea 100644
+--- a/node_modules/@kickstartds/core/lib/core/index.d.ts
++++ b/node_modules/@kickstartds/core/lib/core/index.d.ts
+@@ -1,7 +1,7 @@
+ export { domLoaded, inBrowser } from './domLoaded.js';
+ export { render } from './html.js';
+-export { uid } from './component/uid.js';
+-export { define } from './component/define.js';
+-export { Component } from './component/Component.js';
++export { uid } from '../component/uid.js';
++export { define } from '../component/define.js';
++export { Component } from '../component/Component.js';
+ export * from "../_shared/renderFunctions-55b9fda5";
+ export { events, lazyChildrenLoaded } from './lazysizes.js';

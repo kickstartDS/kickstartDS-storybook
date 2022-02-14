@@ -1,4 +1,3 @@
-export * from './contact/ContactComponent';
 export * from './count-up/CountUpComponent';
 export * from './cta/CtaComponent';
 export * from './glossary/GlossaryComponent';
