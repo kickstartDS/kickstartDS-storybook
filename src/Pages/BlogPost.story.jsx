@@ -19,7 +19,6 @@ import { Footer } from "../footer/FooterComponent";
 import { Cta } from "../cta/CtaComponent";
 import FooterStories from "../footer/Footer.stories";
 import { Headline } from "@kickstartds/base/lib/headline";
-import { PostMeta } from "../post/post-meta/PostMetaComponent";
 
 export default {
   title: "Blog Post",

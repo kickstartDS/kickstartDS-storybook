@@ -32,34 +32,25 @@ const Page = () => (
     <Section
       headline={{
         content: "Welcome to the kickstartDS Blog",
-        level:"h1",
-        subheadline: "Here we keep you up to date on releases, updates and background info",
-        align:"center",
+        level: "h1",
+        subheadline:
+          "Here we keep you up to date on releases, updates and background info",
+        align: "center",
       }}
       width="wide"
       pattern="3"
       spaceAfter="none"
-    >
+    />
 
-    </Section>
-    <Section
-      spaceBefore="default"
-      width="narrow"
-      mode="list"
-      gutter="large"
-    >
+    <Section spaceBefore="default" width="narrow" mode="list" gutter="large">
       <article class="c-post-teaser">
         <div class="c-post-teaser__body">
           <div class="tag-label-container">
             <div class="c-tag-label c-tag-label--s">
-              <span class="c-tag-label__content">
-                About kickstartDS
-              </span>
+              <span class="c-tag-label__content">About kickstartDS</span>
             </div>
             <div class="c-tag-label c-tag-label--s">
-              <span class="c-tag-label__content">
-                Background
-              </span>
+              <span class="c-tag-label__content">Background</span>
             </div>
           </div>
           <div class="c-post-teaser__content">
@@ -68,18 +59,23 @@ const Page = () => (
             </h2>
             <div class="c-rich-text">
               <p>
-                #tldr: We want to support you to create one library of components, patterns and tokens to be used in any frontend you need to give your digital touch points a consistent interface...
+                #tldr: We want to support you to create one library of
+                components, patterns and tokens to be used in any frontend you
+                need to give your digital touch points a consistent interface...
               </p>
             </div>
           </div>
-          <PostMeta />
+          <PostMeta
+            avatar={{src: "img/blog/web_profile_images-teaser.png"}}
+            author="Daniel Ley"
+            date="2021-03-29"
+            readingTime="readingTime"
+          />
         </div>
         <div class="c-post-teaser__image">
           <Picture src="img/blog/Blog-Post01-5.webp" />
         </div>
       </article>
-
-
     </Section>
     <Footer {...FooterStories.args} />
   </>
