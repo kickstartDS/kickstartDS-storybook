@@ -1542,11 +1542,18 @@
   --c-post-aside_meta-item--icon-spacing: 0.25em;
   --c-post-aside_share-bar--padding: 0.35em;
   --c-post-aside_share-bar--icon-size: 2em;
-  height: fit-content;
 }
 @media (min-width: 60em) {
   .c-post-aside {
     --c-post-aside_share-bar--icon-size: 1.35em;
+  }
+}
+
+.c-post-aside {
+  height: fit-content;
+}
+@media (min-width: 60em) {
+  .c-post-aside {
     position: sticky;
     top: 0;
     padding-top: calc(var(--tag-label-height) + var(--spacing-s));
