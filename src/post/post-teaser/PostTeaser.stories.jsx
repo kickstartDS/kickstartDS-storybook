@@ -3,7 +3,7 @@ import { PostTeaser } from "./PostTeaserComponent";
 const Template = (args) => <PostTeaser {...args} />;
 
 export default {
-  title: "Blog/PostTeaser",
+  title: "Blog/Post Teaser",
   component: PostTeaser,
 };
 

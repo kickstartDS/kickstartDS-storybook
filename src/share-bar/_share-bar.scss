@@ -1,6 +1,12 @@
 .c-share-bar {
     .c-headline {
-        margin-bottom: 0;
+        margin-bottom: var(--spacing-s);
+    }
+
+    &__list {
+        display: flex;
+        gap: var(--spacing-s);
+        flex-wrap: wrap;
     }
 
     &__icon {
@@ -17,7 +23,7 @@
         --c-button--background-color-hover: transparent;
 
         &:first-of-type {
-            padding-left: 0;
+            margin-left: -0.35em;
         }
     }
 }

@@ -1,0 +1,116 @@
+@use "./post-aside-tokens";
+@use "@kickstartds/core/source/core/breakpoint";
+
+.c-post {
+  &-aside {
+    .c-post-meta__author {
+      display: none;
+    }
+
+    gap: var(--c-post-aside-spacing);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    .c-share-bar__icon {
+      --c-button--icon-size: 1.5em;
+    }
+
+    @include breakpoint.media(">m") {
+      position: sticky;
+      top: 0;
+      padding-top: calc(var(--tag-label-height) + var(--spacing-s));
+      margin-top: calc(var(--c-post-aside-spacing) * -1);
+      margin-left: var(--spacing-l);
+
+      .c-form-field {
+        &__input {
+          font: var(--c-post-aside-font-copy);
+        }
+      }
+
+      .c-share-bar__icon {
+        --c-button--icon-size: 1.2em;
+      }
+    }
+
+    .c-headline {
+      &__headline {
+        font: var(--c-post-aside-font-headline);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-grey-7);
+      }
+    }
+
+    .c-rich-text {
+      font: var(--c-post-aside-font-copy);
+    }
+
+    .l-section--blog & {
+      @include breakpoint.media("<m") {
+        .c-post-aside__author > .c-headline,
+        .c-contact__links,
+        .c-share-bar,
+        .c-divider {
+          display: none;
+        }
+
+        .c-contact {
+          flex-wrap: nowrap;
+
+          .c-contact__image {
+            flex: none;
+          }
+          img {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+
+    &__author {
+      .c-contact {
+        --icon-size: 1rem;
+
+        display: flex;
+        margin: 0;
+        gap: var(--spacing-s);
+
+        &__body {
+          display: flex;
+          flex-direction: column;
+          > * {
+            margin: 0;
+          }
+        }
+
+        > * {
+          margin: 0;
+        }
+        .c-headline {
+          &__headline {
+            color: var(--c-rich-text--color);
+            font: var(--c-post-aside-font-headline);
+            font-weight: var(--c-headline--font-weight);
+          }
+        }
+
+        .c-contact__image {
+          max-width: 4rem;
+        }
+        .c-contact__links {
+          font: var(--font-ui-xs);
+          .icon {
+            margin-right: 0.2rem;
+          }
+          .c-contact__link {
+            margin-bottom: 0;
+            font: var(--c-post-aside-font-copy);
+            font-weight: var(--g-link--font-weight);
+          }
+        }
+      }
+    }
+  }
+}

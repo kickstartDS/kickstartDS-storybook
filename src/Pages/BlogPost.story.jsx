@@ -6,10 +6,20 @@ import {
   Divider,
 } from "@kickstartds/base";
 
+import {
+  TextField,
+} from "@kickstartds/form";
+
+import {
+  Contact,
+} from "@kickstartds/content";
+
+
 import { Header } from "../header/HeaderComponent";
+import { Post } from "../post/PostComponent";
+import { Cta } from "../cta/CtaComponent";
 import { Footer } from "../footer/FooterComponent";
 import FooterStories from '../footer/Footer.stories';
-import { Post } from "../post/PostComponent";
 
 export default {
   title: "Blog Post",
@@ -19,6 +29,140 @@ const Page = () => (
   <>
     <Header />
     <Post />
+    <Section
+      width="narrow"
+      mode="list"
+      spaceBefore="default"
+      spaceAfter="small"
+      gutter="large"
+      headline={{
+        content: "Get to know us",
+        align: "center",
+      }}
+    >
+      <Cta
+        headline={{
+          content: "Find out if kickstartDS suits your project",
+        }}
+        storytelling={{
+          image: {
+            order: {
+              desktopImageLast: true,
+              mobileImageLast: true,
+            },
+            source: "img/contact.svg",
+          },
+          box: {
+            headline: {
+              content: "Find out if kickstartDS suits your project",
+              level: "h2",
+            },
+            text: "Get in contact with our team",
+
+            link: {
+              label: "Talk to us now",
+              variant: "solid",
+              size: "default",
+              iconAfter: true,
+              icon: {
+                icon: "chevron-right"
+              }
+            }
+          }
+        }}
+      />
+    </Section>
+    <Section
+      width="narrow"
+      spaceBefore="small"
+    >
+      <Contact
+        image={{
+          src: "/img/blog/web_profile_images.png",
+          width: "250",
+          height: "250",
+        }}
+        title="Daniel Ley"
+        subtitle="Co-Founder + UX Strategist with heart & soul"
+        twitter="DLey_de"
+        email="daniel.ley@kickstartds.com"
+        copy={
+          `More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the past years the first digital Design Systems.
+
+After working in a large tech corporation for a long time I very well know todays problems in gaining and maintaining consistency in UIs.`}
+      />
+    </Section>
+
+    <Section
+      background="accent"
+      spaceAfter="small"
+      spaceBefore="default"
+      className="col-three"
+      width="wide"
+      headline={{
+        content: "Dig deeper ⛏️",
+        align: "center"
+      }}
+    >
+      <TeaserBox
+        topic="Back to blog"
+        text="Have a look through our blog posts about all aspects kickstartDS, technical or not."
+        image="/img/blog/back-to-blog.svg"
+        imageSpacing
+        link={{
+          label: "Read more",
+          variant: "outline",
+          size: "small",
+        }}
+      />
+      <TeaserBox
+        topic="kickstartDS"
+        text="Explore kickstartDS, and how it can help yout team create consistent interfaces super fast."
+        image="/img/blog/kds.svg"
+        imageSpacing
+        link={{
+          label: "Learn more",
+          variant: "outline",
+          size: "small",
+        }}
+      />
+      <TeaserBox
+        topic="Storybook"
+        text="Discover all the different components included with kickstartDS, especially their controls and tokens."
+        image="/img/blog/storybook.svg"
+        imageSpacing
+        link={{
+          label: "Explore components",
+          variant: "outline",
+          size: "small",
+        }}
+      />
+    </Section>
+    <Section
+      spaceBefore="none"
+      spaceAfter="none"
+      width="narrow"
+      mode="list"
+      background="accent"
+      headline={{
+        content: "Subscribe to our newsletter",
+        level: "h3",
+        styleAs: "h3",
+        align: "center",
+        subheadline: "Stay up to date"
+      }}
+    >
+
+      <div className="c-form">
+        <TextField
+          placeholder="Enter your email"
+        />
+        <Button
+          label="subscribe"
+          size="default"
+        />
+      </div>
+    </Section>
     <Footer {...FooterStories.args} />
   </>
 );
