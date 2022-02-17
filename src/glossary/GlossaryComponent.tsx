@@ -183,11 +183,10 @@ export const Glossary: FunctionComponent<GlossaryProps & HTMLAttributes<HTMLDivE
         spaceAfter="small"
         background="accent"
         width="wide"
-        mode="tile"
       >
         {related?.map((item, i) => (
           <ContentBox
-            ratio="16:9"
+            ratio="1:1"
             alignement="left"
             image={item.image}
             className="related-post"

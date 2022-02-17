@@ -13,17 +13,18 @@
     padding: var(--spacing-m);
     background: var(--color-white);
 
-    clip-path: polygon(
-      calc(100% - var(--spacing-l)) 0%,
-      100% var(--spacing-l),
-      100% 100%,
-      0 100%,
-      0 0);
+    clip-path: polygon(calc(100% - var(--spacing-l)) 0%, 100% var(--spacing-l), 100% 100%, 0 100%, 0 0);
 
     .c-content-box {
       &__image {
-        max-width: var(--spacing-xl);
-        min-width: 0;
+        width: 35%;
+        height: auto;
+        padding-bottom: 0;
+
+        img {
+          position: relative;
+          aspect-ratio: 1 / 1;
+        }
       }
 
       &__text {
@@ -33,7 +34,7 @@
           position: absolute;
           width: 100%;
           height: var(--line-height-m);
-          background: linear-gradient(0deg, var(--color-white) 20%, transparent);
+          background: linear-gradient(0deg, var(--color-white) 20%, rgba(255, 255, 255, 0));
           bottom: 0;
           pointer-events: none;
         }
@@ -45,7 +46,7 @@
       }
 
       &__image {
-        margin-bottom: var(--spacing-m);
+        // margin-bottom: var(--spacing-m);
       }
     }
   }
