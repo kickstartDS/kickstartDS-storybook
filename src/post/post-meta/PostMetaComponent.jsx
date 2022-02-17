@@ -12,7 +12,6 @@ export const PostMeta = () => (
           Daniel Ley
         </span>
       </div>
-      {/* <div className="c-post-meta--divider"></div> */}
       <time datetime="2021-03-29">
         <Icon
           icon="date"
@@ -20,7 +19,6 @@ export const PostMeta = () => (
         />
         29.03.2021
       </time>
-      {/* <div className="c-post-meta--divider"></div> */}
       <span>
         <Icon
           icon="time"

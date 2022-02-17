@@ -87,7 +87,7 @@
   --spacing-m: 0.85rem;
   --spacing-l: 1.25rem;
   --spacing-xl: 1.9rem;
-  --spacing-xxl: 2.1179rem;
+  --spacing-xxl: 3rem;
 
   --font-weight-light: 300;
   --font-weight-regular: 400;
@@ -192,16 +192,20 @@
   --g-content-width-default: 62rem;
   --g-content-width-wide: 70rem;
   --g-content-width-max: 96rem;
-  --g-content-padding: var(--spacing-m);
+  --g-content-padding: var(--spacing-l);
 
   --l-section-dark-color: var(--color-white-alpha-9);
 
   --pswp--assets-path: url('img/lightbox/default-skin.svg');
 }
+@media (min-width: 30em) {
+  :root {
+    --g-content-padding: var(--spacing-xxl);
+  }
+}
 @media (min-width: 40em) {
   :root {
-    --g-content-padding: var(--spacing-l);
-
+    --g-content-padding: var(--spacing-xl);
     --spacing-xxs: 0.3rem;
     --spacing-xs: 0.4rem;
     --spacing-s: 0.75rem;

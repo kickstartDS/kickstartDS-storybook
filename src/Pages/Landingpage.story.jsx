@@ -39,7 +39,7 @@ const Page = () => (
               "kickstartDS is a comprehensive component and pattern library",
             level: "h1",
             styleAs: "h1",
-            subheadline:"The frontend first framework!",
+            subheadline: "The frontend first framework!",
             switchOrder: true,
           },
           horizontal: "left",
@@ -77,22 +77,21 @@ const Page = () => (
       />
     </Section>
     <Section
-    background="dark"
-    headline={{
-      align: "center",
-      content: "kickstartDS' full flexibility in numbers",
-      subheadline:"The foundation to scale your design system across all your platforms and website",
-      level: "h2",
-      styleAs: "h1",
-      pageHeader: false,
-      spaceAfter: "none",
-    }}
-    className="l-section--outer-width-wide three-col"
-    pattern="2"
-    width="default"
-    deko
-    spaceAfter="small"
-    spaceBefore="small"
+      background="dark"
+      headline={{
+        align: "center",
+        content: "kickstartDS' full flexibility in numbers",
+        subheadline: "The foundation to scale your design system across all your platforms and website",
+        level: "h2",
+        pageHeader: false,
+        spaceAfter: "none",
+      }}
+      className="l-section--outer-width-wide"
+      pattern="2"
+      width="default"
+      deko
+      spaceAfter="small"
+      spaceBefore="small"
     >
       <CountUp
         graphic="components"
@@ -100,12 +99,12 @@ const Page = () => (
         link={[
 
         ]}
-        text="
-      Use our components as **solid building blocks**, adapt and improve them as you need. From quickly adding design tokens to full customization. Utilizing all existing best practices!
+        text={`
+Use our components as **solid building blocks**, adapt and improve them as needed. From tokens to full customization.
 
-      Benefit from **15+ years of frontend experience!**
-      "
-        to={41}
+Benefit from **15+ years of frontend experience!**
+      `}
+        to={33}
         topic="Components"
       />
       <CountUp
@@ -114,12 +113,12 @@ const Page = () => (
         link={[
 
         ]}
-        text="
-      Every propertys' existence is **rooted in a real-world** decision; solving everyday problems for content creators.
+        text={`
+Component properties encode decisions, **rooted in reality**, pre-solving everyday problems for you.
 
-      Quick discovery through Storybooks' rich interface, combined with **kickstartDS** rigorous JSON schema underneath.
-      "
-        to={1255}
+Directly engage with components through **Storybooks** rich interface.
+      `}
+        to={580}
         topic="Properties"
       />
       <CountUp
@@ -128,12 +127,12 @@ const Page = () => (
         link={[
 
         ]}
-        text="
-      Obviously we have **design tokens** – colors, fonts, sizes, iconography.
+        text={`
+Of course we have **design tokens** – colors, fonts, sizes and iconography.
 
-      Additionally every components has several layers of component tokens, encoding a solid base layer for you to depend upon. And for all the exciting cases: re-use the general tokens for **automatic brand compliance!**
-      "
-        to={695}
+Additionally, **component tokens** provide a solid base layer of defaults for you to mutate.
+`}
+        to={793}
         topic="Tokens"
       />
     </Section>
@@ -144,9 +143,8 @@ const Page = () => (
       headline={{
         align: "center",
         content: "Leverage rich integrations with modern web technology, refocus on what really matters!",
-        subheadline:"Out-of-the-box kickstartDS let's you connect your interfaces to:",
+        subheadline: "Out-of-the-box kickstartDS let's you connect your interfaces to:",
         level: "h2",
-        styleAs: "h1",
         pageHeader: false,
         spaceAfter: "none",
       }}
@@ -183,6 +181,26 @@ const Page = () => (
             src:
               "/logos/logo_wordpress.svg",
           },
+          {
+            alt: "Shopify",
+            src:
+              "/logos/logo_contentful.svg",
+          },
+          {
+            alt: "Contentful",
+            src:
+              "/logos/logo_gatsby.svg",
+          },
+          {
+            alt: "Gatsby",
+            src:
+              "/logos/logo_netlify.svg",
+          },
+          {
+            alt: "Bigcommerce",
+            src:
+              "/logos/logo_nextjs.svg",
+          },
         ]}
       />
     </Section>
@@ -191,18 +209,17 @@ const Page = () => (
       headline={{
         align: "center",
         content: "Frontend first approach",
-        subheadline:"... a holistic view of components; unifying content creators, developers, designers and stakeholders under one roof",
+        subheadline: "... a holistic view of components; unifying content creators, developers, designers and stakeholders under one roof",
         level: "h2",
-        styleAs: "h1",
         pageHeader: false,
         spaceAfter: "none",
       }}
-      mode="tile"
-      spaceAfter="small"
+      spaceAfter="default"
       spaceBefore="default"
       width="default"
       gutter="large"
       background="dark"
+      pattern="1"
     >
       <ContentBox
         image="img/design-system_framework_agnostic.svg"
@@ -239,7 +256,7 @@ const Page = () => (
       deko={true}
       className="l-section--outer-width-wide" /* Background Weite */
       pattern="1"
-      width="default" /* Content Weite */
+      width="wide" /* Content Weite */
       background="dark"
       spaceAfter="default"
       spaceBefore="default"
@@ -247,17 +264,17 @@ const Page = () => (
       <QuotesSlider
         slides={[
           {
-            source:"Max Mustermann, ABC GmbH",
-            text:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-            byline:"CEO",
+            source: "Max Mustermann, ABC GmbH",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+            byline: "CEO",
           },
           {
-            source:"Max Mustermann, ABC GmbH",
-            text:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+            source: "Max Mustermann, ABC GmbH",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
           },
           {
-            source:"Max Mustermann, ABC GmbH",
-            text:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+            source: "Max Mustermann, ABC GmbH",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
           }
         ]}
       />
@@ -283,10 +300,9 @@ const Page = () => (
         spaceAfter: "none",
       }}
       pattern="2"
-      mode="tile"
       spaceAfter="default"
       spaceBefore="default"
-      width="default"
+      width="wide"
       background="accent"
     >
       <TeaserBox
@@ -320,7 +336,6 @@ const Page = () => (
       }}
       deko={true}
       className="l-section--outer-width-wide"
-      mode="tile"
       spaceAfter="default"
       spaceBefore="default"
       width="default"
