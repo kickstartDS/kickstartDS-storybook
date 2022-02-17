@@ -1,3 +1,15 @@
+# v1.11.13 (Thu Feb 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: blog revision + mobile spacing adjustments ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.11.12 (Fri Feb 11 2022)
 
 #### ⚠️ Pushed to `master`
