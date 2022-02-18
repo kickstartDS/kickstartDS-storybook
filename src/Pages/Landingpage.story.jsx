@@ -38,7 +38,6 @@ const Page = () => (
             content:
               "kickstartDS is a comprehensive component and pattern library",
             level: "h1",
-            styleAs: "h1",
             subheadline: "The frontend first framework!",
             switchOrder: true,
           },
@@ -279,7 +278,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         ]}
       />
     </Section>
-    <Section background="accent" spaceAfter="small" spaceBefore="small">
+    <Section background="default" spaceAfter="small" spaceBefore="small">
       <Quote
         image="https://picsum.photos/seed/kdsquote/300/300"
         source="Max Mustermann, ABC GmbH"
@@ -290,30 +289,62 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
     <Section
       gutter="default"
       headline={{
-        align: "center",
-        content: "What kickstartDS can do for you?",
+        align: "left",
+        content: "Just ask us what kickstartDS can do for you, specifically ...",
         subheadline:
           "kickstartDS comes accessibility baked in and provides support",
         level: "h2",
-        styleAs: "h1",
         pageHeader: false,
         spaceAfter: "none",
       }}
       pattern="2"
       spaceAfter="default"
       spaceBefore="default"
-      width="wide"
-      background="accent"
+      width="default"
+      background="default"
+    >
+      <TeaserBox
+        topic="Lorem Ipsum"
+        link={{
+          label: "Get in touch",
+        }}
+        text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
+      />
+      <TeaserBox
+        topic="Accessibility baked in"
+        link={{
+          label: "Get in touch",
+        }}
+        text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
+      />
+    </Section>
+    <Section
+      gutter="default"
+      headline={{
+        align: "left",
+        content: "Just ask us what kickstartDS can do for you, specifically ...",
+        subheadline:
+          "kickstartDS comes accessibility baked in and provides support",
+        level: "h2",
+        pageHeader: false,
+        spaceAfter: "none",
+      }}
+      pattern="2"
+      spaceAfter="default"
+      spaceBefore="default"
+      width="default"
+      background="default"
+      className="col-three"
     >
       <TeaserBox
         image="img/icons/Headline.svg"
         topic="Lorem Ipsum"
-        text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
+        text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all."
       />
       <TeaserBox
         image="img/icons/Quote.svg"
         topic="Accessibility baked in"
-        text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
+        text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components."
       />
       <TeaserBox
         image="img/icons/Slider.svg"
@@ -326,11 +357,11 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       background="dark"
       pattern="2"
       gutter="default"
+      mode="list"
       headline={{
         align: "center",
         content: "What kickstartDS can do for you?",
         level: "h2",
-        styleAs: "h1",
         pageHeader: false,
         spaceAfter: "none",
       }}
@@ -338,25 +369,47 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       className="l-section--outer-width-wide"
       spaceAfter="default"
       spaceBefore="default"
-      width="default"
+      width="narrow"
+      gutter="large"
     >
-      <ContentBox
-        image="https://picsum.photos/seed/kdsteaserbox/500/300"
-        ratio="16:9"
-        topic="Lorem Ipsum"
-        text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
+      <Quote
+        byline="CEO"
+        image="/img/blog/web_profile_images.png"
+        source="Daniel Ley, Co-Founder + UX Strategist with heart & soul"
+        text={
+          `More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the past years the first digital Design Systems.
+
+After working in a large tech corporation for a long time I very well know todays problems in gaining and maintaining consistency in UIs.`}
       />
-      <ContentBox
-        image="https://picsum.photos/seed/kdsteaserbox/500/300"
-        ratio="16:9"
-        topic="Accessibility baked in"
-        text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
+      <Quote
+        byline="CEO"
+        image="/img/blog/web_profile_images.png"
+        source="Daniel Ley, Co-Founder + UX Strategist with heart & soul"
+        text={
+          `More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the past years the first digital Design Systems.
+
+After working in a large tech corporation for a long time I very well know todays problems in gaining and maintaining consistency in UIs.`}
       />
-      <ContentBox
-        image="https://picsum.photos/seed/kdsteaserbox/500/300"
-        ratio="16:9"
-        topic="Powerful theming tools"
-        text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
+    </Section>
+    <Section
+      headline={{
+        content: "Get in contact!",
+        subheadline: "We would love to hear from you! Every bit and piece of feedback is welcome as we want to learn from you, get to know you better, to evolve kickstartDS to meet your needs.",
+        align: "center",
+      }}
+      width="wide"
+    >
+      <Button
+        variant="outline"
+        label="WhatsApp us!"
+      />
+      <Button
+        variant="outline"
+        label="Join our Discord community!"
+      />
+      <Button
+        variant="outline"
+        label="Follow us in Twitter!"
       />
     </Section>
     <Footer {...FooterStories.args} />

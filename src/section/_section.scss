@@ -12,7 +12,8 @@
   }
 }
 
-.l-section--dark {
+.l-section--dark,
+.l-section--dark-accent {
   --c-rich-text--color: var(--l-section-dark-color);
   --g-headline--color: var(--l-section-dark-color);
 

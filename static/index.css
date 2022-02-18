@@ -202,7 +202,7 @@
     --font-size-l: 1.5rem;
     --font-size-xl: 1.75rem;
     --font-size-xxl: 2.25rem;
-    --line-height-xs: 1.25rem;
+    --line-height-xs: 1.15rem;
     --line-height-s: 1.45rem;
     --line-height-m: 1.75rem;
     --line-height-l: 2rem;
@@ -1729,6 +1729,10 @@
   --l-section--background: var(--color-primary-lighter-6);
 }
 
+.l-section--dark-accent {
+  --l-section--background: var(--color-primary-lighter-1);
+}
+
 .l-section--dark {
   --l-section--background: var(--color-primary);
 }
@@ -1745,7 +1749,8 @@
   }
 }
 
-.l-section--dark {
+.l-section--dark,
+.l-section--dark-accent {
   --c-rich-text--color: var(--l-section-dark-color);
   --g-headline--color: var(--l-section-dark-color);
   --g-link--color: var(--color-secondary);
