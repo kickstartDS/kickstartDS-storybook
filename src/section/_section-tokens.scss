@@ -30,6 +30,10 @@
   }
 }
 
+.l-section {
+  --l-section--background: var(--color-white);
+}
+
 .l-section--accent {
   --l-section--background: var(--color-primary-lighter-6);
 }

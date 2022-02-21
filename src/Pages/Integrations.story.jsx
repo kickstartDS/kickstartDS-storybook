@@ -32,9 +32,10 @@ const Page = () => (
     <Section
       width="default"
       spaceBefore="default"
-      spaceAfter="small"
+      spaceAfter="default"
       background="accent"
-      pattern="1"
+      className="l-section-transition l-section-transition--head"
+      // pattern="1"
       headline={{
         content: "Backend integration with kickstartDS",
         level: "h2",
@@ -58,13 +59,15 @@ const Page = () => (
     <Section
       mode="list"
       width="wide"
-      spaceBefore="none"
+      spaceBefore="default"
       gutter="none"
+      className="l-section-transition l-section-transition--body"
+      spaceBefore="none"
     >
       <Storytelling
         box={{
-          link:{
-            label:"read more"
+          link: {
+            label: "read more"
           },
           headline: {
             content: "Lorem Ipsum dolor"
@@ -80,8 +83,8 @@ const Page = () => (
       />
       <Storytelling
         box={{
-          link:{
-            label:"read more"
+          link: {
+            label: "read more"
           },
           headline: {
             content: "Lorem Ipsum dolor"
@@ -97,8 +100,8 @@ const Page = () => (
       />
       <Storytelling
         box={{
-          link:{
-            label:"read more"
+          link: {
+            label: "read more"
           },
           headline: {
             content: "Lorem Ipsum dolor"
@@ -116,9 +119,10 @@ const Page = () => (
     <Section
       width="default"
       spaceBefore="default"
-      spaceAfter="small"
+      spaceAfter="default"
+      className="l-section-transition l-section-transition--head"
       background="dark"
-      pattern="2"
+      // pattern="2"
       headline={{
         content: "Generators with kickstartDS",
         level: "h2",
@@ -142,15 +146,17 @@ const Page = () => (
     <Section
       mode="list"
       width="wide"
-      spaceBefore="none"
+      spaceBefore="default"
       gutter="none"
       background="dark-accent"
+      className="l-section-transition l-section-transition--body"
+      spaceBefore="none"
     >
       <Storytelling
         box={{
-          link:{
-            label:"read more",
-            variant:"solid-inverted",
+          link: {
+            label: "read more",
+            variant: "solid-inverted",
           },
           headline: {
             content: "Lorem Ipsum dolor"
@@ -166,9 +172,9 @@ const Page = () => (
       />
       <Storytelling
         box={{
-          link:{
-            label:"read more",
-            variant:"solid-inverted",
+          link: {
+            label: "read more",
+            variant: "solid-inverted",
           },
           headline: {
             content: "Lorem Ipsum dolor"
@@ -184,9 +190,9 @@ const Page = () => (
       />
       <Storytelling
         box={{
-          link:{
-            label:"read more",
-            variant:"solid-inverted",
+          link: {
+            label: "read more",
+            variant: "solid-inverted",
           },
           headline: {
             content: "Lorem Ipsum dolor"
@@ -204,9 +210,10 @@ const Page = () => (
     <Section
       width="wide"
       spaceBefore="default"
-      spaceAfter="small"
+      spaceAfter="defaultz"
       background="accent"
-      pattern="1"
+      className="l-section-transition l-section-transition--head"
+      // pattern="1"
       headline={{
         content: "Design tooling with kickstartDS",
         level: "h2",
@@ -230,13 +237,15 @@ const Page = () => (
     <Section
       mode="list"
       width="wide"
+      spaceBefore="default"
+      className="l-section-transition l-section-transition--body"
       spaceBefore="none"
       gutter="none"
     >
       <Storytelling
         box={{
-          link:{
-            label:"read more"
+          link: {
+            label: "read more"
           },
           headline: {
             content: "Lorem Ipsum dolor"
@@ -252,8 +261,8 @@ const Page = () => (
       />
       <Storytelling
         box={{
-          link:{
-            label:"read more"
+          link: {
+            label: "read more"
           },
           headline: {
             content: "Lorem Ipsum dolor"
@@ -269,8 +278,8 @@ const Page = () => (
       />
       <Storytelling
         box={{
-          link:{
-            label:"read more"
+          link: {
+            label: "read more"
           },
           headline: {
             content: "Lorem Ipsum dolor"
@@ -286,8 +295,8 @@ const Page = () => (
       />
       <Storytelling
         box={{
-          link:{
-            label:"read more"
+          link: {
+            label: "read more"
           },
           headline: {
             content: "Lorem Ipsum dolor"
@@ -308,6 +317,8 @@ const Page = () => (
         content: "Integration with",
         align: "center",
       }}
+      className="l-section-transition l-section-transition--body"
+      spaceBefore="default"
       background="accent"
       spaceAfter="none"
       align="center"
@@ -346,15 +357,16 @@ const Page = () => (
     <Section
       width="default"
       spaceBefore="default"
-      spaceAfter="small"
+      spaceAfter="defaultz"
       background="dark"
-      pattern="3"
+      className="l-section-transition l-section-transition--head"
+      // pattern="3"
       headline={{
         content: "Derivatives with kickstartDS",
         level: "h2",
         styleAs: "h1",
         align: "center",
-        spaceAfter: "small",
+        spaceAfter: "none",
       }}
     >
       <TextMedia
@@ -372,14 +384,16 @@ const Page = () => (
     <Section
       mode="list"
       width="wide"
+      spaceBefore="default"
+      className="l-section-transition l-section-transition--body"
       spaceBefore="none"
       gutter="none"
       background="dark-accent"
     >
       <Storytelling
         box={{
-          link:{
-            label:"read more",
+          link: {
+            label: "read more",
             variant: "solid-inverted"
           },
           headline: {
@@ -396,8 +410,8 @@ const Page = () => (
       />
       <Storytelling
         box={{
-          link:{
-            label:"read more",
+          link: {
+            label: "read more",
             variant: "solid-inverted"
           },
           headline: {
