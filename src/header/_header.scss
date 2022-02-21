@@ -3,18 +3,17 @@
 :root {
   --g-logo-height: 1.7rem;
   --g-header-height: calc(var(--g-logo-height) + calc(var(--spacing-m) * 2));
-  
+
   @include breakpoint.media("≥s") {
     --g-logo-height: 2.5rem;
   }
-  
-  @media (min-width: 90em) { 
+
+  @media (min-width: 90em) {
     --g-logo-height: 3rem;
   }
 }
 
 .kds-header {
-
   a {
     --g-link--text-decoration: none;
     --g-link--background-hover: none;
@@ -45,7 +44,7 @@
   display: flex;
   max-width: var(--g-content-width-wide);
   margin: auto;
-  padding:  var(--spacing-m) var(--g-content-padding);
+  padding: var(--spacing-m) var(--g-content-padding);
 
   flex-wrap: wrap;
   justify-content: space-between;
@@ -54,7 +53,6 @@
   &__logo {
     --g-link--background-hover: none;
 
-
     @include breakpoint.media("≥s") {
       padding: 0;
     }
@@ -62,12 +60,12 @@
     img {
       height: var(--g-logo-height);
       width: auto;
-      
+
       @include breakpoint.media("≥s") {
         height: 2.5rem;
       }
-      
-      @media (min-width: 90em) { 
+
+      @media (min-width: 90em) {
         height: 3rem;
       }
     }

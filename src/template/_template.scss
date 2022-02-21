@@ -1,13 +1,12 @@
 @use './template-tokens';
 @use '@kickstartds/core/source/core/breakpoint';
 
-
 .template {
   position: relative;
   margin: auto;
   gap: var(--spacing-l);
   padding: 0 var(--g-content-padding);
-  
+
   @include breakpoint.media(">m") {
     display: flex;
   }

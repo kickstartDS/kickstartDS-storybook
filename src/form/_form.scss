@@ -1,18 +1,18 @@
 .c-form {
-    display: flex;
-    flex-direction: row;
-    gap: var(--spacing-s);
-    max-width: calc(var(--g-content-width-narrow) * 0.65);
-    width: 100%;
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-s);
+  max-width: calc(var(--g-content-width-narrow) * 0.65);
+  width: 100%;
+  margin: auto;
 
-    .c-form-field {
-        &__label {
-            display: none;
-        }
+  .c-form-field {
+    &__label {
+      display: none;
     }
+  }
 
-    .c-button {
-        height: fit-content;
-    }
+  .c-button {
+    height: fit-content;
+  }
 }

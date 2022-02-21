@@ -1,6 +1,7 @@
 .c-storytelling {
   &[data-bg] {
-    .c-headline>:first-child, .c-rich-text {
+    .c-headline > :first-child,
+    .c-rich-text {
       color: var(--l-section-dark-color);
     }
 

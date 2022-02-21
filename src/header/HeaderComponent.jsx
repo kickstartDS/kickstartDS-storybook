@@ -1,4 +1,4 @@
-import { Link } from '@kickstartds/base/lib/link';
+import { Link } from "@kickstartds/base/lib/link";
 
 export const Header = () => (
   <>
@@ -8,7 +8,10 @@ export const Header = () => (
           <img src="/logo.svg" alt="kickstartDS Logo" />
         </Link>
         <div className="kds-header__item">
-          <Link className="kds-header__link c-button c-button--small c-button--outline" href="/blog">
+          <Link
+            className="kds-header__link c-button c-button--small c-button--outline"
+            href="/blog"
+          >
             Blog
           </Link>
         </div>

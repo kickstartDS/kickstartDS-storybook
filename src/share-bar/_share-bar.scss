@@ -1,0 +1,11 @@
+.c-share-bar {
+  --c-post-aside_share-bar--icon-size: 2em;
+
+  .c-headline {
+    --c-headline--margin-bottom: var(--spacing-s);
+  }
+
+  .c-post-aside__share-link {
+    padding: 0.35em;
+  }
+}

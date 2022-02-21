@@ -1,9 +1,8 @@
 import merge from "deepmerge";
-import {
-  pack,
-  getArgsShared,
-} from "@kickstartds/core/lib/storybook/helpers";
-import headlineStories, { Template } from "@kickstartds/base/lib/headline/headline.stories";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
+import headlineStories, {
+  Template,
+} from "@kickstartds/base/lib/headline/headline.stories";
 import schema from "./headline.schema.dereffed.json";
 import tokens from "./headline-tokens.json";
 

@@ -119,7 +119,7 @@
       }
     }
   }
-  
+
   @include breakpoint.media("≥m") {
     &:nth-child(1) {
       .kds-count-up__fill.active {

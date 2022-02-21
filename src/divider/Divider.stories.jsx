@@ -5,5 +5,5 @@ export default {
   ...dividerStories,
   parameters: {
     jsonschema: schema,
-  }
+  },
 };

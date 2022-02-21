@@ -3,7 +3,7 @@
 
 :root {
   --c-glossary--img-size: 5.5rem;
-  
+
   @include breakpoint.media(">s") {
     --c-glossary--img-size: 10rem;
   }

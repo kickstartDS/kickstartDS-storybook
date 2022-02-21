@@ -1,12 +1,16 @@
 @use '@kickstartds/core/source/core/breakpoint';
 
 @include breakpoint.media("≥s") {
-  #onetrust-banner-sdk .ot-sdk-container, #onetrust-pc-sdk .ot-sdk-container, #ot-sdk-cookie-policy .ot-sdk-container {
+  #onetrust-banner-sdk .ot-sdk-container,
+  #onetrust-pc-sdk .ot-sdk-container,
+  #ot-sdk-cookie-policy .ot-sdk-container {
     padding-top: 30px !important;
   }
 }
 
-#onetrust-banner-sdk .ot-sdk-container, #onetrust-pc-sdk .ot-sdk-container, #ot-sdk-cookie-policy .ot-sdk-container {
+#onetrust-banner-sdk .ot-sdk-container,
+#onetrust-pc-sdk .ot-sdk-container,
+#ot-sdk-cookie-policy .ot-sdk-container {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
@@ -18,9 +22,10 @@
   background-color: white !important;
 }
 
-#onetrust-pc-sdk .ot-accordion-layout h4 ~ .ot-tgl, #onetrust-pc-sdk .ot-accordion-layout h4 ~ .ot-always-active,
+#onetrust-pc-sdk .ot-accordion-layout h4 ~ .ot-tgl,
+#onetrust-pc-sdk .ot-accordion-layout h4 ~ .ot-always-active,
 #onetrust-pc-sdk .ot-accordion-layout .ot-cat-header + .ot-arw-cntr .ot-arw,
-#onetrust-pc-sdk .ot-accordion-layout .ot-cat-header+.ot-arw-cntr .ot-arw,
+#onetrust-pc-sdk .ot-accordion-layout .ot-cat-header + .ot-arw-cntr .ot-arw,
 #onetrust-pc-sdk .ot-accordion-layout .ot-arw {
   color: white !important;
 }
@@ -32,7 +37,7 @@
 }
 
 #ot-sdk-btn.ot-sdk-show-settings {
-  color:  #ecff00 !important;
+  color: #ecff00 !important;
   font-weight: bold !important;
   width: 315px !important;
 }

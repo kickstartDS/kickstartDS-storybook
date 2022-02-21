@@ -1,7 +1,5 @@
 import { Cta } from "./CtaComponent";
-import {
-  getArgsShared,
-} from "@kickstartds/core/lib/storybook/helpers";
+import { getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
 import schema from "./cta.schema.dereffed.json";
 import tokens from "./cta-tokens.json";
 
@@ -16,7 +14,7 @@ export default {
   parameters: {
     cssprops: tokens,
     jsonschema: schema,
-  }
+  },
 };
 
 export const Default = Template.bind({});

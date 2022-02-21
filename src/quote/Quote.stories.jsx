@@ -18,16 +18,14 @@ export default {
 
 export const Image = Template.bind({});
 Image.args = pack({
-  text:
-    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+  text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
   source: "Max Mustermann, ABC GmbH",
   date: undefined,
 });
 
 export const NoImage = Template.bind({});
 NoImage.args = pack({
-  text:
-    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+  text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
   source: "Max Mustermann, ABC GmbH",
   image: undefined,
   date: undefined,
@@ -39,18 +37,15 @@ Slider.args = pack({
   slides: [
     {
       source: "Max Muster, Key Account Manager Strategic Account Business",
-      text:
-        "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
+      text: "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
     },
     {
       source: "Max Muster, Key Account Manager Strategic Account Business",
-      text:
-        "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
+      text: "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
     },
     {
       source: "Max Muster, Key Account Manager Strategic Account Business",
-      text:
-        "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
+      text: "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
     },
   ],
 });

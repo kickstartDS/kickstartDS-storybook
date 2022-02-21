@@ -5,9 +5,7 @@
   --c-footer-color: var(--c-rich-text--color);
 }
 
-
 .kds-footer {
- 
   &-main {
     .l-section__container {
       display: flex;
@@ -24,7 +22,6 @@
   color: var(--c-footer-color);
 
   &__logo-wrap {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,8 +29,8 @@
     border-top: 1px solid var(--color-black-alpha-1);
     margin: var(--spacing-l) 0 0 0;
     padding: var(--spacing-l) 0 0 0;
-   
-    @include breakpoint.media("≥m") {      
+
+    @include breakpoint.media("≥m") {
       margin: 0 0 0 var(--spacing-l);
       padding: 0 0 0 var(--spacing-l);
       border-left: 1px solid var(--color-black-alpha-1);
@@ -46,7 +43,8 @@
     }
   }
 
-  &__logo, a {
+  &__logo,
+  a {
     display: inline-block;
     width: fit-content;
 
@@ -56,12 +54,12 @@
 
     img {
       height: var(--spacing-xl);
-      
-      @include breakpoint.media("≥s") {      
+
+      @include breakpoint.media("≥s") {
         height: 3rem;
       }
-            
-      @include breakpoint.media("≥xl") {      
+
+      @include breakpoint.media("≥xl") {
         height: 3rem;
       }
     }

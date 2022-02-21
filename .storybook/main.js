@@ -1,16 +1,14 @@
 module.exports = {
-  "stories": [
+  stories: [
     "../docs/**/*.story.mdx",
     "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    "../src/**/*.stories.@(js|jsx|ts|tsx)",
   ],
-  "addons": [
+  addons: [
     "@storybook/addon-essentials",
     "@kickstartds/storybook-addon-component-tokens",
     "@whitespace/storybook-addon-html",
-    "@kickstartds/storybook-addon-jsonschema"
+    "@kickstartds/storybook-addon-jsonschema",
   ],
-  "staticDirs": [
-    "../static"
-  ],
-}
+  staticDirs: ["../static"],
+};

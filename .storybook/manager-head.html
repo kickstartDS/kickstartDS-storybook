@@ -1,5 +1,10 @@
-<link rel="shortcut icon" href="/favicon/favicon.ico">
-<link rel="icon" type="image/png" href="/favicon/favicon-192-192.png" sizes="192x192">
+<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link
+  rel="icon"
+  type="image/png"
+  href="/favicon/favicon-192-192.png"
+  sizes="192x192"
+/>
 <link rel="stylesheet" href="manager.css" />
 
 <!-- Redirect hack, see https://answers.netlify.com/t/bug-in-non-trailing-slash-rewrite/452 -->
@@ -10,20 +15,52 @@
 </script>
 
 <!-- CookiePro -->
-<script type="text/javascript" src="https://cookie-cdn.cookiepro.com/consent/037cd65b-d4b3-4faf-8f04-576ca8b3c66e/OtAutoBlock.js" ></script>
-<script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js" data-language="en" type="text/javascript" charset="UTF-8" data-domain-script="037cd65b-d4b3-4faf-8f04-576ca8b3c66e"></script>
-<script type="text/javascript">function OptanonWrapper() { };</script>
+<script
+  type="text/javascript"
+  src="https://cookie-cdn.cookiepro.com/consent/037cd65b-d4b3-4faf-8f04-576ca8b3c66e/OtAutoBlock.js"
+></script>
+<script
+  src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js"
+  data-language="en"
+  type="text/javascript"
+  charset="UTF-8"
+  data-domain-script="037cd65b-d4b3-4faf-8f04-576ca8b3c66e"
+></script>
+<script type="text/javascript">
+  function OptanonWrapper() {}
+</script>
 
 <!-- Google Tag Manager / Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GTP95B7SBV"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-GTP95B7SBV"
+></script>
 <script>
-  window.excludeGtagPaths=[/^(?:\/preview\/(?:(?!(?:\/|^)\.).)*?)$/,/^(?:\/do\-not\-track\/me\/too\/)$/];
-  function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='G-GTP95B7SBV',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
-  if(!(navigator.doNotTrack == "1" || window.doNotTrack == "1")) {
+  window.excludeGtagPaths = [
+    /^(?:\/preview\/(?:(?!(?:\/|^)\.).)*?)$/,
+    /^(?:\/do\-not\-track\/me\/too\/)$/,
+  ];
+  function gaOptout() {
+    (document.cookie =
+      disableStr + "=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/"),
+      (window[disableStr] = !0);
+  }
+  var gaProperty = "G-GTP95B7SBV",
+    disableStr = "ga-disable-" + gaProperty;
+  document.cookie.indexOf(disableStr + "=true") > -1 &&
+    (window[disableStr] = !0);
+  if (!(navigator.doNotTrack == "1" || window.doNotTrack == "1")) {
     window.dataLayer = window.dataLayer || [];
-    function gtag(){window.dataLayer && window.dataLayer.push(arguments);}
-    gtag('js', new Date());
+    function gtag() {
+      window.dataLayer && window.dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-GTP95B7SBV', {"optimize_id":"OPT_CONTAINER_ID","anonymize_ip":true,"cookie_expires":0,"send_page_view":false});
+    gtag("config", "G-GTP95B7SBV", {
+      optimize_id: "OPT_CONTAINER_ID",
+      anonymize_ip: true,
+      cookie_expires: 0,
+      send_page_view: false,
+    });
   }
 </script>

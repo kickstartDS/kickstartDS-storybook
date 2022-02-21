@@ -1,17 +1,11 @@
-import {
-  FunctionComponent,
-  HTMLAttributes,
-} from 'react';
+import { FunctionComponent, HTMLAttributes } from "react";
 
 import classnames from "classnames";
 import {
   CountUpContext,
   CountUpContextDefault,
 } from "@kickstartds/content/lib/count-up";
-import {
-  renderFn,
-  renderTextFn,
-} from '@kickstartds/core/lib/core';
+import { renderFn, renderTextFn } from "@kickstartds/core/lib/core";
 
 import { CountUpProps } from "./CountUpProps";
 

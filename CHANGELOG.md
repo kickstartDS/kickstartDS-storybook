@@ -1,3 +1,65 @@
+# v1.11.17 (Mon Feb 21 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add section transitions ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.11.16 (Fri Feb 18 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add integrations page ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.11.15 (Thu Feb 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- glossary bugfixes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.11.14 (Thu Feb 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: blog revision ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.11.13 (Thu Feb 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: blog revision + mobile spacing adjustments ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.11.12 (Fri Feb 11 2022)
 
 #### ⚠️ Pushed to `master`
@@ -2248,8 +2310,6 @@
 ---
 
 # v1.0.20 (Thu Jul 15 2021)
-
-
 
 ---
 

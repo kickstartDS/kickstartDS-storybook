@@ -1,7 +1,5 @@
 import { Glossary } from "./GlossaryComponent";
-import {
-  getArgsShared,
-} from "@kickstartds/core/lib/storybook/helpers";
+import { getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
 import schema from "./glossary.schema.dereffed.json";
 import tokens from "./glossary-tokens.json";
 
@@ -16,7 +14,7 @@ export default {
   parameters: {
     cssprops: tokens,
     jsonschema: schema,
-  }
+  },
 };
 
 export const Default = Template.bind({});

@@ -1,5 +1,7 @@
 import { pack } from "@kickstartds/core/lib/storybook/helpers";
-import teaserBoxStories, {Template} from "@kickstartds/base/lib/teaser-box/teaser-box.stories";
+import teaserBoxStories, {
+  Template,
+} from "@kickstartds/base/lib/teaser-box/teaser-box.stories";
 import schema from "@kickstartds/base/lib/teaser-box/teaser-box.schema.dereffed.json";
 
 export default {
@@ -13,8 +15,7 @@ export const Linked = Template.bind({});
 Linked.args = pack({
   ratio: "16:9",
   topic: "Lorem Ipsum",
-  text:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ispum dolor distinctio minima unde voluptatum aut. Lorem ipsum dolor sit amet.",
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ispum dolor distinctio minima unde voluptatum aut. Lorem ipsum dolor sit amet.",
   link: {
     variant: "solid",
     label: "Mehr erfahren",

@@ -20,18 +20,15 @@ export default {
     logos: [
       {
         alt: "Erfolgsfaktor Familie",
-        src:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/640px-Shopify_logo_2018.svg.png",
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/640px-Shopify_logo_2018.svg.png",
       },
       {
         alt: "Familienfreundliches Unternehmen",
-        src:
-          "https://d21buns5ku92am.cloudfront.net/41748/images/177922-logo-d8345a-large-1441290673.png",
+        src: "https://d21buns5ku92am.cloudfront.net/41748/images/177922-logo-d8345a-large-1441290673.png",
       },
       {
         alt: "Kooperationspartner der FHDW",
-        src:
-          "https://timotheebinet.com/static/fa38ab30a9b8abb4a1ff8c0b7fb86cef/00d43/gatsby.png",
+        src: "https://timotheebinet.com/static/fa38ab30a9b8abb4a1ff8c0b7fb86cef/00d43/gatsby.png",
       },
       {
         alt: "Kooperationspartner von it´s owl",
@@ -41,7 +38,7 @@ export default {
   }),
   parameters: {
     jsonschema: schema,
-  }
+  },
 };
 
 export const FourRow = Template.bind({});

@@ -56,11 +56,21 @@ export type ImageAspectRatio = "4:3" | "3:2" | "16:9" | "1:1" | "none";
 /**
  * Select a vertical alignment for the image
  */
-export type ImageVerticalAlignment = "center" | "top" | "top-edge" | "bottom" | "bottom-edge";
+export type ImageVerticalAlignment =
+  | "center"
+  | "top"
+  | "top-edge"
+  | "bottom"
+  | "bottom-edge";
 /**
  * Select a horizontal alignment for the image
  */
-export type ImageHorizontalAlignment = "center" | "left" | "left-edge" | "right" | "right-edge";
+export type ImageHorizontalAlignment =
+  | "center"
+  | "left"
+  | "left-edge"
+  | "right"
+  | "right-edge";
 /**
  * Background image for the whole element
  */
@@ -132,7 +142,13 @@ export type Label = string;
 /**
  * Choose one of the styles from the list
  */
-export type ButtonStyle = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
+export type ButtonStyle =
+  | "solid"
+  | "solid-inverted"
+  | "clear"
+  | "clear-inverted"
+  | "outline"
+  | "outline-inverted";
 /**
  * Choose a size between small, medium and large
  */
@@ -183,7 +199,13 @@ export type Label1 = string;
 /**
  * Choose one of the styles from the list
  */
-export type ButtonStyle1 = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
+export type ButtonStyle1 =
+  | "solid"
+  | "solid-inverted"
+  | "clear"
+  | "clear-inverted"
+  | "outline"
+  | "outline-inverted";
 /**
  * Choose a size between small, medium and large
  */

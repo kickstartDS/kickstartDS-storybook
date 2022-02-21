@@ -17,7 +17,7 @@ export default {
 export const BoxLight = Template.bind({});
 BoxLight.args = pack({
   backgroundColor: "transparent",
-  height:"fullImage",
+  height: "fullImage",
   box: {
     background: "light",
     link: {
@@ -32,7 +32,7 @@ BoxDark.args = pack({
   height: "fullImage",
   box: {
     link: {
-      variant: "solid-inverted"
-    }
-  }
+      variant: "solid-inverted",
+    },
+  },
 });
