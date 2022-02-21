@@ -31,13 +31,7 @@ export type Label = string;
 /**
  * Choose one of the styles from the list
  */
-export type ButtonStyle =
-  | "solid"
-  | "solid-inverted"
-  | "clear"
-  | "clear-inverted"
-  | "outline"
-  | "outline-inverted";
+export type ButtonStyle = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
 /**
  * Choose a size between small, medium and large
  */

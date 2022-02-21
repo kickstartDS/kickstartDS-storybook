@@ -27,6 +27,10 @@
   }
 
   &__author {
+    > .c-headline {
+      display: none;
+    }
+
     .c-contact {
       --icon-size: 1rem;
 
