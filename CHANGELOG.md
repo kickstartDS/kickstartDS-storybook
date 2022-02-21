@@ -1,3 +1,15 @@
+# v1.11.17 (Mon Feb 21 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add section transitions ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.11.16 (Fri Feb 18 2022)
 
 #### ⚠️ Pushed to `master`
