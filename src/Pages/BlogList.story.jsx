@@ -1,4 +1,6 @@
+import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 import { PostTeaser } from "../post-teaser/PostTeaserComponent";
+import { Default as PostTeaserStory } from "../post-teaser/PostTeaser.stories";
 
 import { Section, TeaserBox } from "@kickstartds/base";
 
@@ -27,10 +29,10 @@ const Page = () => (
     />
 
     <Section spaceBefore="default" width="narrow" mode="list" gutter="large">
-      <PostTeaser />
-      <PostTeaser />
-      <PostTeaser />
-      <PostTeaser />
+      <PostTeaser {...unpack(PostTeaserStory.args)} />
+      <PostTeaser {...unpack(PostTeaserStory.args)} />
+      <PostTeaser {...unpack(PostTeaserStory.args)} />
+      <PostTeaser {...unpack(PostTeaserStory.args)} />
     </Section>
     <Section
       background="accent"
