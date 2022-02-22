@@ -1,3 +1,16 @@
+# v1.12.0 (Tue Feb 22 2022)
+
+#### 🚀 Enhancement
+
+- feature: refactor blog components [#43](https://github.com/kickstartDS/kickstartDS-storybook/pull/43) ([@julrich](https://github.com/julrich) [@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.11.17 (Mon Feb 21 2022)
 
 #### ⚠️ Pushed to `master`
