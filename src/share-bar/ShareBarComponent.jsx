@@ -1,46 +1,26 @@
-import {
-  Headline,
-  Button,
-  Icon,
-  RichText,
-} from "@kickstartds/base";
+import { Headline } from "@kickstartds/base/lib/headline";
+import { Link } from "@kickstartds/base/lib/link";
+import { Icon } from "@kickstartds/base/lib/icon";
 
-export const ShareBar = () => (
-  <>
-    <div className="c-share-bar">
-      <Headline
-        content="Share this article"
-        level="h3"
-      />
-      <div className="c-share-bar__list">
-        <Button
-          className="c-share-bar__icon"
-          variant="clear"
-          size="default"
-          iconAfter
-          icon={{
-            icon: "twitter",
-          }}
-        />
-        <Button
-          className="c-share-bar__icon"
-          variant="clear"
-          size="default"
-          iconAfter
-          icon={{
-            icon: "linkedin",
-          }}
-        />
-        <Button
-          className="c-share-bar__icon"
-          variant="clear"
-          size="default"
-          iconAfter
-          icon={{
-            icon: "email",
-          }}
-        />
-      </div>
-    </div>
-  </>
+const ShareBarLink = ({ icon, newTab, ...props }) => (
+  <Link
+    className="c-post-aside__share-link"
+    {...(newTab ? { target: "_blank", rel: "noopener" } : {})}
+    {...props}
+  >
+    <Icon icon={icon} />
+  </Link>
+);
+
+export const ShareBar = ({
+  links = [],
+  headline = "Share this article",
+  headlineLevel = "h3",
+}) => (
+  <div className="c-share-bar c-post-aside__share-bar">
+    <Headline content={headline} level={headlineLevel} />
+    {links.length
+      ? links.map((link, i) => <ShareBarLink {...link} key={i} />)
+      : ""}
+  </div>
 );

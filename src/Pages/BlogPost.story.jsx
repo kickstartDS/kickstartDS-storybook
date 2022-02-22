@@ -1,25 +1,16 @@
-import {
-  Section,
-  TeaserBox,
-  ContentBox,
-  Button,
-  Divider,
-} from "@kickstartds/base";
-
-import {
-  TextField,
-} from "@kickstartds/form";
-
-import {
-  Contact,
-} from "@kickstartds/content";
-
+import { unpack } from "@kickstartds/core/lib/storybook/helpers";
+import { Section } from "@kickstartds/base/lib/section";
+import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
+import { Button } from "@kickstartds/base/lib/button";
+import { Contact } from "@kickstartds/content/lib/contact";
+import { TextField } from "@kickstartds/form/lib/text-field";
 
 import { Header } from "../header/HeaderComponent";
 import { Post } from "../post/PostComponent";
+import { Default as PostStory } from "../post/Post.stories";
 import { Cta } from "../cta/CtaComponent";
 import { Footer } from "../footer/FooterComponent";
-import FooterStories from '../footer/Footer.stories';
+import FooterStories from "../footer/Footer.stories";
 
 export default {
   title: "Blog Post",
@@ -28,7 +19,7 @@ export default {
 const Page = () => (
   <>
     <Header />
-    <Post />
+    <Post {...unpack(PostStory.args)} />
     <Section
       width="narrow"
       mode="list"
@@ -65,17 +56,14 @@ const Page = () => (
               size: "default",
               iconAfter: true,
               icon: {
-                icon: "chevron-right"
-              }
-            }
-          }
+                icon: "chevron-right",
+              },
+            },
+          },
         }}
       />
     </Section>
-    <Section
-      width="narrow"
-      spaceBefore="small"
-    >
+    <Section width="narrow" spaceBefore="small">
       <Contact
         image={{
           src: "/img/blog/web_profile_images.png",
@@ -84,10 +72,19 @@ const Page = () => (
         }}
         title="Daniel Ley"
         subtitle="Co-Founder + UX Strategist with heart & soul"
-        twitter="DLey_de"
-        email="daniel.ley@kickstartds.com"
-        copy={
-          `More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the past years the first digital Design Systems.
+        links={[
+          {
+            icon: "twitter",
+            label: "@DLey_de",
+            href: "https://twitter.com/DLey_de",
+          },
+          {
+            icon: "email",
+            label: "daniel.ley@kickstartds.com",
+            href: "mailto:daniel.ley@kickstartds.com",
+          },
+        ]}
+        copy={`More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the past years the first digital Design Systems.
 
 After working in a large tech corporation for a long time I very well know todays problems in gaining and maintaining consistency in UIs.`}
       />
@@ -101,7 +98,7 @@ After working in a large tech corporation for a long time I very well know today
       width="wide"
       headline={{
         content: "Dig deeper ⛏️",
-        align: "center"
+        align: "center",
       }}
     >
       <TeaserBox
@@ -149,18 +146,12 @@ After working in a large tech corporation for a long time I very well know today
         level: "h3",
         styleAs: "h3",
         align: "center",
-        subheadline: "Stay up to date"
+        subheadline: "Stay up to date",
       }}
     >
-
       <div className="c-form">
-        <TextField
-          placeholder="Enter your email"
-        />
-        <Button
-          label="subscribe"
-          size="default"
-        />
+        <TextField placeholder="Enter your email" />
+        <Button label="subscribe" size="default" />
       </div>
     </Section>
     <Footer {...FooterStories.args} />

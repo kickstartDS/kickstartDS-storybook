@@ -5,20 +5,10 @@
  * and run `yarn run schema` to regenerate this file.
  */
 
-export type TwitterHandle = string;
-export type PhoneNumber = "";
 /**
  * Picture source
  */
 export type Source = string;
-/**
- * Use a srcSet to display picture
- */
-export type PictureSourceset = string;
-/**
- * Alt text to display for picture
- */
-export type AltText = string;
 /**
  * Width of the picture
  */
@@ -27,6 +17,14 @@ export type Width = number;
  * Height of the picture
  */
 export type Height = number;
+/**
+ * Use a srcSet to display picture
+ */
+export type PictureSourceset = string;
+/**
+ * Alt text to display for picture
+ */
+export type AltText = string;
 /**
  * Add additional css classes that should be applied to the button
  */
@@ -43,10 +41,6 @@ export type ItempropAttribute = string;
  * Define a style attribute for the picture
  */
 export type StyleAttribute = string;
-/**
- * Select a value for the picture object fit
- */
-export type ObjectFit = "contain" | "cover" | "fill" | "none" | "scale-down";
 /**
  * Render noscript fallback
  */
@@ -81,32 +75,23 @@ export type Sources = {
  */
 export type ClassAttribute = string;
 /**
- * Name, company name, etc.
+ * Date for news item
  */
-export type Title = string;
+export type Date = string;
 /**
- * Position, profession, department, location, etc.
+ * Author of the blog entry
  */
-export type Subtitle = string;
-export type EmailAddress = string;
-export type CopyText = string;
+export type Author = string;
 /**
- * Additional css classes attached to the wrapping element
+ * Reading time for the blog entry
  */
-export type Class = string;
+export type ReadingTime = string;
 
-/**
- * Component to show contact information
- */
-export interface ContactProps {
-  twitter?: TwitterHandle;
-  phone?: PhoneNumber;
-  image?: Picture;
-  title?: Title;
-  subtitle?: Subtitle;
-  email?: EmailAddress;
-  copy?: CopyText;
-  className?: Class;
+export interface PostMetaProps {
+  avatar?: Picture;
+  date: Date;
+  author: Author;
+  readingTime?: ReadingTime;
   [k: string]: unknown;
 }
 /**
@@ -114,15 +99,14 @@ export interface ContactProps {
  */
 export interface Picture {
   src?: Source;
-  srcSet?: PictureSourceset;
-  alt?: AltText;
   width?: Width;
   height?: Height;
+  srcSet?: PictureSourceset;
+  alt?: AltText;
   className?: AdditionalClasses;
   id?: Id;
   itemProp?: ItempropAttribute;
   style?: StyleAttribute;
-  objectFit?: ObjectFit;
   noscript?: Noscript;
   lazy?: Lazy;
   sources?: Sources;

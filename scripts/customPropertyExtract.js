@@ -1,21 +1,27 @@
-const fs = require('fs-extra');
+const fs = require("fs-extra");
 const fg = require("fast-glob");
-const { extract } = require('custom-property-extract');
-const sass = require('sass');
+const { extract } = require("custom-property-extract");
+const sass = require("sass");
 
 const createTokens = (scssPath) => {
   try {
     const result = sass.renderSync({
       file: scssPath,
-      includePaths: ['node_modules'],
+      includePaths: ["node_modules"],
     });
-    const dest = scssPath.replace(/(.*\/)_?(.*)-tokens\.scss/, "$1$2-tokens.json");
-    const tokens = extract(result.css.toString(), { source: 'content', mode: 'full' });
+    const dest = scssPath.replace(
+      /(.*\/)_?(.*)-tokens\.scss/,
+      "$1$2-tokens.json"
+    );
+    const tokens = extract(result.css.toString(), {
+      source: "content",
+      mode: "full",
+    });
     return fs.outputJson(dest, tokens, { spaces: 2 });
   } catch (e) {
     console.error(scssPath);
     console.error(e);
-    throw e
+    throw e;
   }
 };
 

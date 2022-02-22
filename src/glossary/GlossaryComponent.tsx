@@ -1,7 +1,4 @@
-import {
-  FunctionComponent,
-  HTMLAttributes,
-} from 'react';
+import { FunctionComponent, HTMLAttributes } from "react";
 
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
@@ -11,9 +8,11 @@ import { ContentBox } from "@kickstartds/base/lib/content-box";
 import { Visual } from "@kickstartds/content/lib/visual";
 
 import { GlossaryProps } from "./GlossaryProps";
-import { Cta } from '../cta/CtaComponent';
+import { Cta } from "../cta/CtaComponent";
 
-export const Glossary: FunctionComponent<GlossaryProps & HTMLAttributes<HTMLDivElement>> = ({
+export const Glossary: FunctionComponent<
+  GlossaryProps & HTMLAttributes<HTMLDivElement>
+> = ({
   term,
   definition,
   cover,
@@ -24,75 +23,75 @@ export const Glossary: FunctionComponent<GlossaryProps & HTMLAttributes<HTMLDivE
   cta,
   ...props
 }) => (
-    <div {...props}>
-      <Section
-        width="wide"
-        spaceBefore="small"
-        spaceAfter="none"
-        headline={{
-          align: "left",
-          spaceAfter: "none",
-          content: term,
-          level:"h1",
-        }}
-      ></Section>
-      <div className="template template--wide">
-        <div className="template__main">
-          <Section
-            width="narrow"
-            mode="list"
-            spaceBefore="none"
-            spaceAfter="default"
-          >
-            <div className="c-glossary">
-              {cover && cover.src
-                ? <TextMedia
-                    className="c-glossary--text-media"
-                    media={[{
-                      image: {
-                        src: cover.src,
-                        height: 100,
-                        width: 100
-                      }
-                    }]} 
-                    mediaAlignment="intext-left"
-                    text={definition}
-                  />
-                : <TextMedia
-                    className="c-glossary--text-media"
-                    media={[]}
-                    mediaAlignment="intext-left"
-                    text={definition}
-                  />}
-            </div>
-            {tags && tags.length > 0 &&
+  <div {...props}>
+    <Section
+      width="wide"
+      spaceBefore="small"
+      spaceAfter="none"
+      headline={{
+        align: "left",
+        spaceAfter: "none",
+        content: term,
+        level: "h1",
+      }}
+    ></Section>
+    <div className="template template--wide">
+      <div className="template__main">
+        <Section
+          width="narrow"
+          mode="list"
+          spaceBefore="none"
+          spaceAfter="default"
+        >
+          <div className="c-glossary">
+            {cover && cover.src ? (
+              <TextMedia
+                className="c-glossary--text-media"
+                media={[
+                  {
+                    image: {
+                      src: cover.src,
+                      height: 100,
+                      width: 100,
+                    },
+                  },
+                ]}
+                mediaAlignment="intext-left"
+                text={definition}
+              />
+            ) : (
+              <TextMedia
+                className="c-glossary--text-media"
+                media={[]}
+                mediaAlignment="intext-left"
+                text={definition}
+              />
+            )}
+          </div>
+          {tags && tags.length > 0 && (
             <div className="tag-label-container">
               {tags?.map((tag, i) => (
-              <div>
-                <TagLabel
-                  label={tag}
-                  size="s"
-                  key={i}
-                />
-              </div>
+                <div>
+                  <TagLabel label={tag} size="s" key={i} />
+                </div>
               ))}
             </div>
-            }
-          </Section>
-        </div>
-        <div className="template__side">
-          <Section
-            spaceBefore="none"
-            spaceAfter="default"
-            width="narrow"
-            background="default"
-          >
-            <Cta {...cta} />
-          </Section>
-        </div>
+          )}
+        </Section>
       </div>
+      <div className="template__side">
+        <Section
+          spaceBefore="none"
+          spaceAfter="default"
+          width="narrow"
+          background="default"
+        >
+          <Cta {...cta} />
+        </Section>
+      </div>
+    </div>
 
-      {media && media.length > 0 &&
+    {media && media.length > 0 && (
       <Section
         width="wide"
         spaceBefore="none"
@@ -118,7 +117,7 @@ export const Glossary: FunctionComponent<GlossaryProps & HTMLAttributes<HTMLDivE
                   gallery: "closer-look",
                 },
                 caption: item.caption,
-              }
+              },
             ]}
             key={i}
             text=""
@@ -126,51 +125,45 @@ export const Glossary: FunctionComponent<GlossaryProps & HTMLAttributes<HTMLDivE
           />
         ))}
       </Section>
-      }
+    )}
 
-      <Section
-        spaceBefore="none"
-        spaceAfter="none"
-        width="wide"
-        align="left"
-      >
-
-        <Visual
-          className="c-visual--deko c-visual--custom"
-          box={{
-            background: "transparent",
+    <Section spaceBefore="none" spaceAfter="none" width="wide" align="left">
+      <Visual
+        className="c-visual--deko c-visual--custom"
+        box={{
+          background: "transparent",
+          enabled: true,
+          headline: {
+            content:
+              "Read more, or discuss this decision with us on StackShare.io",
+            level: "h2",
+            align: "left",
+            spaceAfter: "none",
+          },
+          horizontal: "center",
+          indent: true,
+          link: {
+            className: "c-button--main",
             enabled: true,
-            headline: {
-              content:
-                "Read more, or discuss this decision with us on StackShare.io",
-              level: "h2",
-              align: "left",
-              spaceAfter: "none",
+            fillAnimation: false,
+            href: stackshare,
+            iconAfter: true,
+            iconAnimation: false,
+            iconBefore: false,
+            icon: {
+              icon: "stackshare",
             },
-            horizontal: "center",
-            indent: true,
-            link: {
-              className: "c-button--main",
-              enabled: true,
-              fillAnimation: false,
-              href: stackshare,
-              iconAfter: true,
-              iconAnimation: false,
-              iconBefore: false,
-              icon: {
-                icon: "stackshare",
-              },
-              label: "Go to StackShare.io",
-              newTab: false,
-              size: "medium",
-              variant: "solid",
-            },
-            vertical: "center",
-          }}
-        />
-      </Section>
+            label: "Go to StackShare.io",
+            newTab: false,
+            size: "medium",
+            variant: "solid",
+          },
+          vertical: "center",
+        }}
+      />
+    </Section>
 
-      {related && related.length > 0 &&
+    {related && related.length > 0 && (
       <Section
         headline={{
           content: "Related",
@@ -199,7 +192,7 @@ export const Glossary: FunctionComponent<GlossaryProps & HTMLAttributes<HTMLDivE
               iconAfter: true,
               icon: {
                 icon: "chevron-right",
-              }
+              },
             }}
             text={item.excerpt}
             topic={item.title}
@@ -207,6 +200,6 @@ export const Glossary: FunctionComponent<GlossaryProps & HTMLAttributes<HTMLDivE
           />
         ))}
       </Section>
-      }
-    </div>
+    )}
+  </div>
 );

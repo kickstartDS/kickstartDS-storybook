@@ -1,15 +1,11 @@
-import { pack, getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
+import { pack } from "@kickstartds/core/lib/storybook/helpers";
 import contactStories, {
   Template,
 } from "@kickstartds/content/lib/contact/contact.stories";
-import schema from "./contact.schema.dereffed.json";
-
-const { defaultArgs: args, argTypes } = getArgsShared(schema);
+import schema from "@kickstartds/content/lib/contact/contact.schema.dereffed.json";
 
 export default {
   ...contactStories,
-  args,
-  argTypes,
   parameters: {
     jsonschema: schema,
   },
@@ -19,8 +15,18 @@ export const Default = Template.bind({});
 Default.args = pack({
   title: "Max Mütze",
   subtitle: "CEO",
-  twitter: "kickstartds",
-  mail: "mail@example.com",
+  links: [
+    {
+      icon: "twitter",
+      label: "@kickstartds",
+      href: "https://twitter.com/kickstartds",
+    },
+    {
+      icon: "email",
+      label: "mail@example.com",
+      href: "mailto:mail@example.com",
+    },
+  ],
   copy: `
 Sed enim dolore cumque voluptatibus quis. Soluta quia aspernatur sit eius aut eligendi.
 

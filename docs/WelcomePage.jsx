@@ -2,13 +2,13 @@ import { Section } from "@kickstartds/base/lib/section";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { LinkButton } from "@kickstartds/base/lib/link-button";
 import { Visual } from "@kickstartds/content/lib/visual";
-import { LinkProvider } from './LinkProvider';
+import { LinkProvider } from "./LinkProvider";
 
 export const Welcome = () => (
   <LinkProvider>
     <Section width="full" spaceBefore="none" spaceAfter="none">
       <Visual
-      className="c-visual--welcome"
+        className="c-visual--welcome"
         box={{
           background: "transparent",
           enabled: true,
@@ -36,8 +36,7 @@ export const Welcome = () => (
             size: "medium",
             variant: "solid",
           },
-          text:
-            "Explore our frontend first framework, and all of its comprehensive components backing our landing page, our Wordpress blog and the glossary. Take a deeper look at our design and component tokens, interact with the Storybook controls, or preview some sample pages we've assembled.",
+          text: "Explore our frontend first framework, and all of its comprehensive components backing our landing page, our Wordpress blog and the glossary. Take a deeper look at our design and component tokens, interact with the Storybook controls, or preview some sample pages we've assembled.",
           vertical: "top",
         }}
         height="small"
@@ -133,7 +132,8 @@ export const Welcome = () => (
         level: "h2",
         pageHeader: false,
         spaceAfter: "none",
-        subheadline: "Proven content components to serve your frontend needs. It works for either explicit HTML integration or direct usage in React (for the start) and comes with built-in styleguide and documentation.",
+        subheadline:
+          "Proven content components to serve your frontend needs. It works for either explicit HTML integration or direct usage in React (for the start) and comes with built-in styleguide and documentation.",
       }}
       mode="list"
       spaceAfter="small"

@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/post-meta.schema.json",
+  "title": "PostMeta",
+  "type": "object",
+  "properties": {
+    "avatar": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "http://frontend.ruhmesmeile.com/base/atoms/picture.definitions.json"
+        }
+      ],
+      "properties": {
+        "src": {
+          "default": "https://picsum.photos/seed/kdsauthoravatar/112/112"
+        },
+        "width": {
+          "default": 112
+        },
+        "height": {
+          "default": 112
+        }
+      }
+    },
+    "date": {
+      "$ref": "http://frontend.ruhmesmeile.com/blog/molecules/news-item.definitions.json#/definitions/date"
+    },
+    "author": {
+      "title": "Author",
+      "description": "Author of the blog entry",
+      "type": "string"
+    },
+    "readingTime": {
+      "title": "Reading Time",
+      "description": "Reading time for the blog entry",
+      "type": "string"
+    }
+  },
+  "required": ["author", "date"]
+}

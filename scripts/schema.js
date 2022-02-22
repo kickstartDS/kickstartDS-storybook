@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs-extra");
 const fg = require("fast-glob");
 const { dereference } = require("./schemaParser");
-const { createTypes } = require('./schemaToTypescript');
+const { createTypes } = require("./schemaToTypescript");
 
 const processSchema = async (schemaPath) => {
   try {
@@ -10,7 +10,7 @@ const processSchema = async (schemaPath) => {
     const basename = path.basename(schemaPath, ".json");
     const dereffed = await dereference(schemaPath);
     await createTypes(dereffed, schemaPath);
-    
+
     return fs.outputJson(`${dirname}/${basename}.dereffed.json`, dereffed, {
       spaces: 2,
     });

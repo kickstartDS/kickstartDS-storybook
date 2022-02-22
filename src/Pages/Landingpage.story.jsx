@@ -16,7 +16,7 @@ import {
   LogoTiles,
   CountUp,
 } from "@kickstartds/content";
-import FooterStories from '../footer/Footer.stories';
+import FooterStories from "../footer/Footer.stories";
 
 export default {
   title: "Landingpage",
@@ -59,8 +59,7 @@ const Page = () => (
             size: "medium",
             variant: "solid",
           },
-          text:
-            `We **enable** web development **teams to create** consistent and brand compliant web **frontends** super **efficiently.** With a **built-in Design System** to serve all your digital touch points. Easy like squeeeeezing a lemon.`,
+          text: `We **enable** web development **teams to create** consistent and brand compliant web **frontends** super **efficiently.** With a **built-in Design System** to serve all your digital touch points. Easy like squeeeeezing a lemon.`,
           vertical: "center",
         }}
         height="default"
@@ -80,7 +79,8 @@ const Page = () => (
       headline={{
         align: "center",
         content: "kickstartDS' full flexibility in numbers",
-        subheadline: "The foundation to scale your design system across all your platforms and website",
+        subheadline:
+          "The foundation to scale your design system across all your platforms and website",
         level: "h2",
         pageHeader: false,
         spaceAfter: "none",
@@ -95,9 +95,7 @@ const Page = () => (
       <CountUp
         graphic="components"
         icon={[]}
-        link={[
-
-        ]}
+        link={[]}
         text={`
 Use our components as **solid building blocks**, adapt and improve them as needed. From tokens to full customization.
 
@@ -109,9 +107,7 @@ Benefit from **15+ years of frontend experience!**
       <CountUp
         graphic="properties"
         icon={[]}
-        link={[
-
-        ]}
+        link={[]}
         text={`
 Component properties encode decisions, **rooted in reality**, pre-solving everyday problems for you.
 
@@ -123,9 +119,7 @@ Directly engage with components through **Storybooks** rich interface.
       <CountUp
         graphic="tokens"
         icon={[]}
-        link={[
-
-        ]}
+        link={[]}
         text={`
 Of course we have **design tokens** – colors, fonts, sizes and iconography.
 
@@ -138,11 +132,12 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
     <Section
       width="wide"
       background="accent"
-
       headline={{
         align: "center",
-        content: "Leverage rich integrations with modern web technology, refocus on what really matters!",
-        subheadline: "Out-of-the-box kickstartDS let's you connect your interfaces to:",
+        content:
+          "Leverage rich integrations with modern web technology, refocus on what really matters!",
+        subheadline:
+          "Out-of-the-box kickstartDS let's you connect your interfaces to:",
         level: "h2",
         pageHeader: false,
         spaceAfter: "none",
@@ -152,53 +147,43 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         logos={[
           {
             alt: "Shopify",
-            src:
-              "/logos/logo_contentful.svg",
+            src: "/logos/logo_contentful.svg",
           },
           {
             alt: "Contentful",
-            src:
-              "/logos/logo_gatsby.svg",
+            src: "/logos/logo_gatsby.svg",
           },
           {
             alt: "Gatsby",
-            src:
-              "/logos/logo_netlify.svg",
+            src: "/logos/logo_netlify.svg",
           },
           {
             alt: "Bigcommerce",
-            src:
-              "/logos/logo_nextjs.svg",
+            src: "/logos/logo_nextjs.svg",
           },
           {
             alt: "Gatsby",
-            src:
-              "/logos/logo_react.svg",
+            src: "/logos/logo_react.svg",
           },
           {
             alt: "Bigcommerce",
-            src:
-              "/logos/logo_wordpress.svg",
+            src: "/logos/logo_wordpress.svg",
           },
           {
             alt: "Shopify",
-            src:
-              "/logos/logo_contentful.svg",
+            src: "/logos/logo_contentful.svg",
           },
           {
             alt: "Contentful",
-            src:
-              "/logos/logo_gatsby.svg",
+            src: "/logos/logo_gatsby.svg",
           },
           {
             alt: "Gatsby",
-            src:
-              "/logos/logo_netlify.svg",
+            src: "/logos/logo_netlify.svg",
           },
           {
             alt: "Bigcommerce",
-            src:
-              "/logos/logo_nextjs.svg",
+            src: "/logos/logo_nextjs.svg",
           },
         ]}
       />
@@ -208,7 +193,8 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       headline={{
         align: "center",
         content: "Frontend first approach",
-        subheadline: "... a holistic view of components; unifying content creators, developers, designers and stakeholders under one roof",
+        subheadline:
+          "... a holistic view of components; unifying content creators, developers, designers and stakeholders under one roof",
         level: "h2",
         pageHeader: false,
         spaceAfter: "none",
@@ -274,7 +260,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           {
             source: "Max Mustermann, ABC GmbH",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-          }
+          },
         ]}
       />
     </Section>
@@ -290,7 +276,8 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       gutter="default"
       headline={{
         align: "left",
-        content: "Just ask us what kickstartDS can do for you, specifically ...",
+        content:
+          "Just ask us what kickstartDS can do for you, specifically ...",
         subheadline:
           "kickstartDS comes accessibility baked in and provides support",
         level: "h2",
@@ -322,7 +309,8 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       gutter="default"
       headline={{
         align: "left",
-        content: "Just ask us what kickstartDS can do for you, specifically ...",
+        content:
+          "Just ask us what kickstartDS can do for you, specifically ...",
         subheadline:
           "kickstartDS comes accessibility baked in and provides support",
         level: "h2",
@@ -376,8 +364,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         byline="CEO"
         image="/img/blog/web_profile_images.png"
         source="Daniel Ley, Co-Founder + UX Strategist with heart & soul"
-        text={
-          `More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the past years the first digital Design Systems.
+        text={`More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the past years the first digital Design Systems.
 
 After working in a large tech corporation for a long time I very well know todays problems in gaining and maintaining consistency in UIs.`}
       />
@@ -385,8 +372,7 @@ After working in a large tech corporation for a long time I very well know today
         byline="CEO"
         image="/img/blog/web_profile_images.png"
         source="Daniel Ley, Co-Founder + UX Strategist with heart & soul"
-        text={
-          `More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the past years the first digital Design Systems.
+        text={`More than 20 years ago I started creating user interfaces and web style guides, corporate design manuals and in the past years the first digital Design Systems.
 
 After working in a large tech corporation for a long time I very well know todays problems in gaining and maintaining consistency in UIs.`}
       />
@@ -394,23 +380,15 @@ After working in a large tech corporation for a long time I very well know today
     <Section
       headline={{
         content: "Get in contact!",
-        subheadline: "We would love to hear from you! Every bit and piece of feedback is welcome as we want to learn from you, get to know you better, to evolve kickstartDS to meet your needs.",
+        subheadline:
+          "We would love to hear from you! Every bit and piece of feedback is welcome as we want to learn from you, get to know you better, to evolve kickstartDS to meet your needs.",
         align: "center",
       }}
       width="wide"
     >
-      <Button
-        variant="outline"
-        label="WhatsApp us!"
-      />
-      <Button
-        variant="outline"
-        label="Join our Discord community!"
-      />
-      <Button
-        variant="outline"
-        label="Follow us in Twitter!"
-      />
+      <Button variant="outline" label="WhatsApp us!" />
+      <Button variant="outline" label="Join our Discord community!" />
+      <Button variant="outline" label="Follow us in Twitter!" />
     </Section>
     <Footer {...FooterStories.args} />
   </>

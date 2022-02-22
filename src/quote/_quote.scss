@@ -5,9 +5,8 @@
     margin-bottom: var(--c-quote__text--margin);
   }
 
-  &__source, &__byline {
+  &__source,
+  &__byline {
     color: var(--c-quote_source--color);
   }
-}  
-
-
+}

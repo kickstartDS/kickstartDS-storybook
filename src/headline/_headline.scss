@@ -1,14 +1,14 @@
 @use './headline-tokens';
 
 .c-headline {
-    @media (min-width: 40em) {
-        max-width: 100%;
-    }
-    @media (min-width: 80em) {
-        max-width: 90%;
-    }
+  @media (min-width: 40em) {
+    max-width: 100%;
+  }
+  @media (min-width: 80em) {
+    max-width: 90%;
+  }
 }
 
 .c-post-head__meta + .c-headline {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }

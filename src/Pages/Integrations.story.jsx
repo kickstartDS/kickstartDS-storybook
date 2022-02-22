@@ -17,7 +17,7 @@ import {
   CountUp,
   Storytelling,
 } from "@kickstartds/content";
-import FooterStories from '../footer/Footer.stories';
+import FooterStories from "../footer/Footer.stories";
 
 export default {
   title: "Integrations",
@@ -50,9 +50,9 @@ const Page = () => (
             image: {
               height: 853,
               src: "img/integration/backend/backend.png",
-              width: 1280
-            }
-          }
+              width: 1280,
+            },
+          },
         ]}
       />
     </Section>
@@ -67,12 +67,12 @@ const Page = () => (
       <Storytelling
         box={{
           link: {
-            label: "read more"
+            label: "read more",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/backend/sanity.png",
@@ -84,12 +84,12 @@ const Page = () => (
       <Storytelling
         box={{
           link: {
-            label: "read more"
+            label: "read more",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/backend/wordpress.png",
@@ -101,12 +101,12 @@ const Page = () => (
       <Storytelling
         box={{
           link: {
-            label: "read more"
+            label: "read more",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/backend/contentful.png",
@@ -137,9 +137,9 @@ const Page = () => (
             image: {
               height: 853,
               src: "img/integration/generatoren/generatoren.png",
-              width: 1280
-            }
-          }
+              width: 1280,
+            },
+          },
         ]}
       />
     </Section>
@@ -159,9 +159,9 @@ const Page = () => (
             variant: "solid-inverted",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/generatoren/nextjs.png",
@@ -177,9 +177,9 @@ const Page = () => (
             variant: "solid-inverted",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/generatoren/gatsby.png",
@@ -195,9 +195,9 @@ const Page = () => (
             variant: "solid-inverted",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/generatoren/graphql.png",
@@ -228,9 +228,9 @@ const Page = () => (
             image: {
               height: 853,
               src: "img/integration/design-tooling/design-tooling.png",
-              width: 1280
-            }
-          }
+              width: 1280,
+            },
+          },
         ]}
       />
     </Section>
@@ -245,12 +245,12 @@ const Page = () => (
       <Storytelling
         box={{
           link: {
-            label: "read more"
+            label: "read more",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/design-tooling/styledictionary.png",
@@ -262,12 +262,12 @@ const Page = () => (
       <Storytelling
         box={{
           link: {
-            label: "read more"
+            label: "read more",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/design-tooling/figma.png",
@@ -279,12 +279,12 @@ const Page = () => (
       <Storytelling
         box={{
           link: {
-            label: "read more"
+            label: "read more",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/design-tooling/uxpin.png",
@@ -296,12 +296,12 @@ const Page = () => (
       <Storytelling
         box={{
           link: {
-            label: "read more"
+            label: "read more",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/design-tooling/backlight.png",
@@ -323,16 +323,10 @@ const Page = () => (
       spaceAfter="none"
       align="center"
     >
-      <ContentBox
-        image="/logos/logo_storybook.svg"
-      />
+      <ContentBox image="/logos/logo_storybook.svg" />
     </Section>
 
-    <Section
-      background="accent"
-      spaceBefore="small"
-      width="wide"
-    >
+    <Section background="accent" spaceBefore="small" width="wide">
       <ContentBox
         image="/img/integration/storybook/storybook_controls.svg"
         topic="Controls"
@@ -375,9 +369,9 @@ const Page = () => (
             image: {
               height: 853,
               src: "img/integration/derivatives/derivatives.png",
-              width: 1280
-            }
-          }
+              width: 1280,
+            },
+          },
         ]}
       />
     </Section>
@@ -394,12 +388,12 @@ const Page = () => (
         box={{
           link: {
             label: "read more",
-            variant: "solid-inverted"
+            variant: "solid-inverted",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/derivatives/bootstrap.png",
@@ -412,12 +406,12 @@ const Page = () => (
         box={{
           link: {
             label: "read more",
-            variant: "solid-inverted"
+            variant: "solid-inverted",
           },
           headline: {
-            content: "Lorem Ipsum dolor"
+            content: "Lorem Ipsum dolor",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products."
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
         image={{
           source: "img/integration/derivatives/materialui.png",

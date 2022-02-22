@@ -3,11 +3,11 @@
 }
 
 .tag-label-container {
-    display: flex;
-    gap: var(--spacing-xs);
-    flex-wrap: wrap;
-    margin: 0 !important;
-    > * {
-        padding: 0 !important;
-    }
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-wrap: wrap;
+  margin: 0 !important;
+  > * {
+    padding: 0 !important;
+  }
 }

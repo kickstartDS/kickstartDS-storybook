@@ -1,13 +1,8 @@
-import {
-  FunctionComponent,
-  HTMLAttributes,
-} from 'react';
+import { FunctionComponent, HTMLAttributes } from "react";
 
-import {
-  HeadlineContext,
-} from "@kickstartds/base/lib/headline";
+import { HeadlineContext } from "@kickstartds/base/lib/headline";
 import classnames from "classnames";
-import { renderFn, defaultRenderFn } from '@kickstartds/core/lib/core';
+import { renderFn, defaultRenderFn } from "@kickstartds/core/lib/core";
 
 import { HeadlineProps } from "./HeadlineProps";
 
@@ -20,12 +15,12 @@ const Headline: FunctionComponent<
   HeadlineProps & RenderFunctions & HTMLAttributes<HTMLElement>
 > = ({
   content,
-  level = 'h2',
-  styleAs = 'none',
-  align = 'left',
+  level = "h2",
+  styleAs = "none",
+  align = "left",
   pageHeader,
   subheadline,
-  spaceAfter = 'none',
+  spaceAfter = "none",
   renderContent = defaultRenderFn,
   renderSubheadline = defaultRenderFn,
   className,

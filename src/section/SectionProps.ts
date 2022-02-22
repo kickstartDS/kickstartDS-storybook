@@ -77,22 +77,6 @@ export type ButtonHref = string;
  */
 export type OpenLinkInNewTab = boolean;
 /**
- * Input id
- */
-export type ID = string;
-/**
- * Name
- */
-export type Name = string;
-/**
- * Toggle is checked
- */
-export type Checked = boolean;
-/**
- * Toggle is disabled
- */
-export type Disabled = boolean;
-/**
  * Text used on button
  */
 export type Label1 = string;
@@ -566,10 +550,6 @@ export type ItempropAttribute = string;
  */
 export type StyleAttribute = string;
 /**
- * Select a value for the picture object fit
- */
-export type ObjectFit = "contain" | "cover" | "fill" | "none" | "scale-down";
-/**
  * Render noscript fallback
  */
 export type Noscript = boolean;
@@ -610,8 +590,10 @@ export type Title = string;
  * Position, profession, department, location, etc.
  */
 export type Subtitle = string;
-export type PhoneNumber = string;
-export type EmailAddress = string;
+/**
+ * Open link in new Tab
+ */
+export type OpenLinkInNewTab3 = boolean;
 export type CopyText = string;
 /**
  * Additional css classes attached to the wrapping element
@@ -751,7 +733,7 @@ export type ButtonHref3 = string;
 /**
  * Open link in new Tab
  */
-export type OpenLinkInNewTab3 = boolean;
+export type OpenLinkInNewTab4 = boolean;
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -833,7 +815,7 @@ export type ButtonHref4 = string;
 /**
  * Open link in new Tab
  */
-export type OpenLinkInNewTab4 = boolean;
+export type OpenLinkInNewTab5 = boolean;
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -908,7 +890,7 @@ export type ButtonHref5 = string;
 /**
  * Open link in new Tab
  */
-export type OpenLinkInNewTab5 = boolean;
+export type OpenLinkInNewTab6 = boolean;
 /**
  * Add additional css classes that should be applied to the content box
  */
@@ -1028,10 +1010,6 @@ export type ItempropAttribute1 = string;
  */
 export type StyleAttribute1 = string;
 /**
- * Select a value for the picture object fit
- */
-export type ObjectFit1 = "contain" | "cover" | "fill" | "none" | "scale-down";
-/**
  * Render noscript fallback
  */
 export type Noscript1 = boolean;
@@ -1107,7 +1085,7 @@ export type GalleryIdentifier = string;
 /**
  * ID
  */
-export type ID1 = string;
+export type ID = string;
 /**
  * Additional Class
  */
@@ -1190,7 +1168,7 @@ export type ButtonHref6 = string;
 /**
  * Open link in new Tab
  */
-export type OpenLinkInNewTab6 = boolean;
+export type OpenLinkInNewTab7 = boolean;
 /**
  * Hides the link. The box as a whole keeps being clickable
  */
@@ -1247,10 +1225,6 @@ export type ItempropAttribute2 = string;
  * Define a style attribute for the picture
  */
 export type StyleAttribute2 = string;
-/**
- * Select a value for the picture object fit
- */
-export type ObjectFit2 = "contain" | "cover" | "fill" | "none" | "scale-down";
 /**
  * Render noscript fallback
  */
@@ -1347,7 +1321,7 @@ export type ButtonHref7 = string;
 /**
  * Open link in new Tab
  */
-export type OpenLinkInNewTab7 = boolean;
+export type OpenLinkInNewTab8 = boolean;
 /**
  * Hides the link. The box as a whole keeps being clickable
  */
@@ -1400,7 +1374,6 @@ export interface SectionProps {
   content?: (
     | QuotesSlider
     | LinkButton
-    | ToggleSwitch
     | Button
     | TagLabel
     | Visual
@@ -1466,16 +1439,6 @@ export interface Icon {
   icon?: IconIdentifier;
   role?: AriaRole;
   className?: AdditionalClass;
-  [k: string]: unknown;
-}
-/**
- * Toggle Switch
- */
-export interface ToggleSwitch {
-  id: ID;
-  name: Name;
-  checked: Checked;
-  disabled: Disabled;
   [k: string]: unknown;
 }
 /**
@@ -1736,8 +1699,13 @@ export interface Contact {
   image?: Picture;
   title?: Title;
   subtitle?: Subtitle;
-  phone?: PhoneNumber;
-  email?: EmailAddress;
+  links?: {
+    icon?: string;
+    label?: string;
+    href?: string;
+    newTab?: OpenLinkInNewTab3;
+    [k: string]: unknown;
+  }[];
   copy?: CopyText;
   className?: Class4;
   [k: string]: unknown;
@@ -1755,7 +1723,6 @@ export interface Picture {
   id?: Id;
   itemProp?: ItempropAttribute;
   style?: StyleAttribute;
-  objectFit?: ObjectFit;
   noscript?: Noscript;
   lazy?: Lazy;
   sources?: Sources;
@@ -1835,7 +1802,7 @@ export interface LinkButton1 {
   fillAnimation?: FillAnimation4;
   iconAnimation?: IconAnimation4;
   href: ButtonHref3;
-  newTab?: OpenLinkInNewTab3;
+  newTab?: OpenLinkInNewTab4;
 }
 /**
  * Icon
@@ -1895,7 +1862,7 @@ export interface Link2 {
   fillAnimation?: FillAnimation5;
   iconAnimation?: IconAnimation5;
   href: ButtonHref4;
-  newTab?: OpenLinkInNewTab4;
+  newTab?: OpenLinkInNewTab5;
 }
 /**
  * Icon
@@ -1934,7 +1901,7 @@ export interface Link3 {
   fillAnimation?: FillAnimation6;
   iconAnimation?: IconAnimation6;
   href: ButtonHref5;
-  newTab?: OpenLinkInNewTab5;
+  newTab?: OpenLinkInNewTab6;
 }
 /**
  * Icon
@@ -2004,7 +1971,6 @@ export interface Picture1 {
   id?: Id1;
   itemProp?: ItempropAttribute1;
   style?: StyleAttribute1;
-  objectFit?: ObjectFit1;
   noscript?: Noscript1;
   lazy?: Lazy1;
   sources?: Sources1;
@@ -2029,7 +1995,7 @@ export interface LazyLightboxImage {
   caption?: Caption2;
   hideCaption?: HideCaptionVisually;
   gallery?: GalleryIdentifier;
-  id?: ID1;
+  id?: ID;
   className?: AdditionalClass8;
   captionClassName?: AdditionalCaptionClass;
   [k: string]: unknown;
@@ -2062,7 +2028,7 @@ export interface LinkButton2 {
   fillAnimation?: FillAnimation7;
   iconAnimation?: IconAnimation7;
   href: ButtonHref6;
-  newTab?: OpenLinkInNewTab6;
+  newTab?: OpenLinkInNewTab7;
   hidden?: HideLink;
 }
 /**
@@ -2095,7 +2061,6 @@ export interface Picture2 {
   id?: Id2;
   itemProp?: ItempropAttribute2;
   style?: StyleAttribute2;
-  objectFit?: ObjectFit2;
   noscript?: Noscript2;
   lazy?: Lazy2;
   sources?: Sources2;
@@ -2127,7 +2092,7 @@ export interface LinkButton3 {
   fillAnimation?: FillAnimation8;
   iconAnimation?: IconAnimation8;
   href: ButtonHref7;
-  newTab?: OpenLinkInNewTab7;
+  newTab?: OpenLinkInNewTab8;
   hidden?: HideLink1;
 }
 /**

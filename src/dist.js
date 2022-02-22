@@ -12,4 +12,4 @@ import "@kickstartds/content/lib/count-up/CountUp";
 import "@kickstartds/content/lib/quotes-slider/QuotesSlider";
 // import "@kickstartds/content/lib/visual/Visual";
 
-import './index';
+import "./index";

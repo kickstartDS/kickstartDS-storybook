@@ -29,8 +29,7 @@ export default {
           },
           {
             label: "WhatsApp us",
-            href:
-              "https://wa.me/491752131879?text=Hi!%20I%20am%20interested%20to%20know%20more%20about%20kickstartDS.",
+            href: "https://wa.me/491752131879?text=Hi!%20I%20am%20interested%20to%20know%20more%20about%20kickstartDS.",
           },
           {
             label: "Send a Mail",

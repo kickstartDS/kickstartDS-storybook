@@ -1,29 +1,11 @@
 .c-share-bar {
-    .c-headline {
-        margin-bottom: var(--spacing-s);
-    }
+  --c-post-aside_share-bar--icon-size: 2em;
 
-    &__list {
-        display: flex;
-        gap: var(--spacing-s);
-        flex-wrap: wrap;
-    }
+  .c-headline {
+    --c-headline--margin-bottom: var(--spacing-s);
+  }
 
-    &__icon {
-        --c-button--icon-size: 2em;
-        padding: 0.35em;
-
-        &:hover {
-            padding: 0.35em;
-        }
-
-        clip-path: none !important;
-        --c-button--color: var(--color-primary-alpha-5);
-        --c-button--color-hover: var(--color-primary);
-        --c-button--background-color-hover: transparent;
-
-        &:first-of-type {
-            margin-left: -0.35em;
-        }
-    }
+  .c-post-aside__share-link {
+    padding: 0.35em;
+  }
 }

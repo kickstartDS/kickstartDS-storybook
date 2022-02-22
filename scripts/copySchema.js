@@ -3,10 +3,10 @@ const fg = require("fast-glob");
 
 (async () => {
   const schemaPaths = await fg("src/**/*.schema.(?:dereffed.)?json");
-  return Promise.all(schemaPaths.map(
-    (schemaPath) => {
-      const dest = schemaPath.replace("src/", "dist/components/")
-      return fs.copy(schemaPath, dest)
-    }
-  ));
+  return Promise.all(
+    schemaPaths.map((schemaPath) => {
+      const dest = schemaPath.replace("src/", "dist/components/");
+      return fs.copy(schemaPath, dest);
+    })
+  );
 })();

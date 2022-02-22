@@ -19,8 +19,7 @@ export const Image = Template.bind({});
 Image.args = pack({
   ratio: "16:9",
   topic: "Lorem Ipsum",
-  text:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ispum dolor distinctio minima unde voluptatum aut. Lorem ipsum dolor sit amet.",
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ispum dolor distinctio minima unde voluptatum aut. Lorem ipsum dolor sit amet.",
 });
 
 export const ImageLink = Template.bind({});

@@ -12,24 +12,26 @@
       padding-bottom: var(--spacing-xl);
     }
   }
-  
+
   &__box.c-visual__box--transparent {
     overflow: unset;
   }
-  
+
   &--deko {
     .c-visual__link {
       width: fit-content;
       position: relative;
 
       &:hover {
-        &::before, &::after {
+        &::before,
+        &::after {
           transform: rotate(10deg);
           opacity: 1;
         }
       }
 
-      &::before, &::after {
+      &::before,
+      &::after {
         position: absolute;
         transform: scale(0.85);
         pointer-events: none;
@@ -41,7 +43,7 @@
           z-index: 2;
         }
       }
-    
+
       &::before {
         content: url(/patterns/button_before.svg);
         bottom: -30%;
@@ -51,7 +53,7 @@
           left: -2em;
         }
       }
-    
+
       &::after {
         content: url(/patterns/button_after.svg);
         right: -2.25em;
@@ -68,13 +70,14 @@
   }
 
   .main-header-spacer {
-    + .c-visual--full, + .l-section .c-visual--full {
+    + .c-visual--full,
+    + .l-section .c-visual--full {
       @include breakpoint.media("≥s") {
         height: calc(100vh - var(--g-header-height));
       }
     }
   }
-  
+
   &__image img {
     object-fit: contain;
   }
@@ -82,8 +85,8 @@
   &--welcome {
     @include breakpoint.media("≥s") {
       --c-visual--min-height: 10rem;
-      
-    .c-visual__box {
+
+      .c-visual__box {
         --c-visual_box--max-width: 25rem;
       }
     }

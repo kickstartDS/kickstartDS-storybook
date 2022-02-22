@@ -1,0 +1,17 @@
+@use "@kickstartds/core/source/core/breakpoint";
+
+.c-post-aside {
+  --c-post-aside--gap: calc(var(--spacing-s) * 1.25);
+  --c-post-aside_author--headline-spacing: var(--spacing-xs);
+  --c-post-aside_meta--gap: var(--spacing-m);
+  --c-post-aside_meta-item--font: var(--font-ui-xs);
+  --c-post-aside_meta-item--color: var(--color-grey-6);
+  --c-post-aside_meta-item--icon-size: 1.15rem;
+  --c-post-aside_meta-item--icon-spacing: 0.25em;
+  --c-post-aside_share-bar--padding: 0.35em;
+  --c-post-aside_share-bar--icon-size: 2em;
+
+  @include breakpoint.media("≥m") {
+    --c-post-aside_share-bar--icon-size: 1.35em;
+  }
+}

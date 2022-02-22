@@ -1,13 +1,12 @@
-import { PostTeaser } from "../post/post-teaser/PostTeaserComponent";
+import { unpack } from "@kickstartds/core/lib/storybook/helpers";
+import { PostTeaser } from "../post-teaser/PostTeaserComponent";
+import { Default as PostTeaserStory } from "../post-teaser/PostTeaser.stories";
 
-import {
-  Section,
-  TeaserBox,
-} from "@kickstartds/base";
+import { Section, TeaserBox } from "@kickstartds/base";
 
 import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
-import FooterStories from '../footer/Footer.stories';
+import FooterStories from "../footer/Footer.stories";
 
 export default {
   title: "Blog List",
@@ -20,25 +19,20 @@ const Page = () => (
       headline={{
         content: "Welcome to the kickstartDS Blog",
         level: "h1",
-        subheadline: "Here we keep you up to date on releases, updates and background info",
+        subheadline:
+          "Here we keep you up to date on releases, updates and background info",
         align: "center",
       }}
       width="wide"
       pattern="3"
       spaceAfter="none"
-    >
+    />
 
-    </Section>
-    <Section
-      spaceBefore="default"
-      width="narrow"
-      mode="list"
-      gutter="large"
-    >
-      <PostTeaser />
-      <PostTeaser />
-      <PostTeaser />
-      <PostTeaser />
+    <Section spaceBefore="default" width="narrow" mode="list" gutter="large">
+      <PostTeaser {...unpack(PostTeaserStory.args)} />
+      <PostTeaser {...unpack(PostTeaserStory.args)} />
+      <PostTeaser {...unpack(PostTeaserStory.args)} />
+      <PostTeaser {...unpack(PostTeaserStory.args)} />
     </Section>
     <Section
       background="accent"
