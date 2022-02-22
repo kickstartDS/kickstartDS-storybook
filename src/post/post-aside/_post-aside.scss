@@ -95,6 +95,13 @@
     }
   }
 
+  &__share-bar {
+    .c-headline {
+      --c-headline--margin-bottom: var(--spacing-s);
+      --c-headline--color: var(--color-grey-7);
+    }
+  }
+
   &__share-link {
     --g-link--background-hover: transparent;
     --g-link--color: var(--color-primary-alpha-5);
