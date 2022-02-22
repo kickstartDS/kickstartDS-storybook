@@ -1,14 +1,12 @@
-import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 import { Picture } from "@kickstartds/base/lib/picture";
 import { Divider } from "@kickstartds/base/lib/divider";
 import { Section } from "@kickstartds/base/lib/section";
 import { PostHead } from "@kickstartds/blog/lib/post-head";
 import { PostAside } from "@kickstartds/blog/lib/post-aside";
 
-import { Default as PostAsideDefaultStory } from "../post-aside/PostAside.stories";
 import { ShareBar } from "../share-bar/ShareBarComponent";
 
-export const Post = () => (
+export const Post = ({ aside = {} }) => (
   <>
     <Section
       spaceBefore="small"
@@ -17,7 +15,7 @@ export const Post = () => (
       width="wide"
       className="l-section--blog"
     >
-      <PostAside {...unpack(PostAsideDefaultStory.args)} />
+      <PostAside {...aside} />
 
       <div className="c-post__content">
         <PostHead

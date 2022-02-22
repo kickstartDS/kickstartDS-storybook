@@ -1,3 +1,4 @@
+import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 import { Section } from "@kickstartds/base/lib/section";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { Button } from "@kickstartds/base/lib/button";
@@ -6,6 +7,7 @@ import { TextField } from "@kickstartds/form/lib/text-field";
 
 import { Header } from "../header/HeaderComponent";
 import { Post } from "../post/PostComponent";
+import { Default as PostStory } from "../post/Post.stories";
 import { Cta } from "../cta/CtaComponent";
 import { Footer } from "../footer/FooterComponent";
 import FooterStories from "../footer/Footer.stories";
@@ -17,7 +19,7 @@ export default {
 const Page = () => (
   <>
     <Header />
-    <Post />
+    <Post {...unpack(PostStory.args)} />
     <Section
       width="narrow"
       mode="list"
