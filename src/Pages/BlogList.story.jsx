@@ -1,4 +1,4 @@
-import { PostTeaser } from "../post/post-teaser/PostTeaserComponent";
+import { PostTeaser } from "../post-teaser/PostTeaserComponent";
 
 import { Section, TeaserBox } from "@kickstartds/base";
 
