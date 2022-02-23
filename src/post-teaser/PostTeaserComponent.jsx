@@ -1,6 +1,6 @@
 import { Picture } from "@kickstartds/base/lib/picture";
 import { RichText } from "@kickstartds/base/lib/rich-text";
-import { TagLabel } from "@kickstartds/base/lib/tag-label"
+import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { PostMeta } from "../post-meta/PostMetaComponent";
 
 export const PostTeaser = ({ tags = [], headline, content, meta }) => (
@@ -16,9 +16,7 @@ export const PostTeaser = ({ tags = [], headline, content, meta }) => (
         ""
       )}
       <div className="c-post-teaser__content">
-        <h2 className="c-post-teaser__headline">
-          {headline}
-        </h2>
+        <h2 className="c-post-teaser__headline">{headline}</h2>
         <RichText text={content} />
       </div>
       <PostMeta {...meta} />
