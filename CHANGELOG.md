@@ -1,3 +1,15 @@
+# v1.12.1 (Wed Feb 23 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: make post component configurable ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.12.0 (Tue Feb 22 2022)
 
 #### 🚀 Enhancement
