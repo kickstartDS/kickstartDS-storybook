@@ -8,7 +8,7 @@
     );
     width: 100%;
 
-    .c-share-bar {
+    .c-post-share-bar {
       padding-top: var(--spacing-s);
       @include breakpoint.media(">m") {
         display: none;

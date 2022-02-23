@@ -1,51 +1,7 @@
-@use "../post/post-tokens";
-@use "@kickstartds/core/source/core/breakpoint";
+@use "./post-meta-tokens";
 
 .c-post-meta {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-m);
-  flex-wrap: wrap;
-
-  span,
-  time {
-    font: var(--font-ui-xs);
-    color: var(--color-grey-6);
-
-    display: flex;
-    align-items: center;
-  }
-
-  img {
-    width: 1.75rem;
-  }
-
   .icon {
-    height: 1.15rem;
-    aspect-ratio: 1 / 1;
-    width: auto;
-    margin-right: 0.25em;
     opacity: 0.5;
-  }
-
-  &__author {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-xs);
-
-    span {
-      color: var(--color-grey-7);
-      font-weight: var(--font-weight-bold);
-    }
-
-    &__image {
-      max-width: 1.75rem;
-    }
-
-    &__name {
-      font: var(--font-ui-xs);
-      font-weight: var(--font-weight-bold);
-      color: var(--color-grey-7);
-    }
   }
 }

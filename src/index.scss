@@ -19,6 +19,7 @@
 @use 'post-aside/post-aside.scss';
 @use 'post-teaser/post-teaser.scss';
 @use 'post-meta/post-meta.scss';
+@use 'post-share-bar/post-share-bar';
 @use 'quote/quote.scss';
 @use 'section/section.scss';
 @use 'slider/slider.scss';
@@ -27,7 +28,6 @@
 @use 'teaser-box/teaser-box.scss';
 @use 'template/template.scss';
 @use 'visual/visual.scss';
-@use 'share-bar/share-bar';
 
 @use '@kickstartds/core/source/core/breakpoint';
 

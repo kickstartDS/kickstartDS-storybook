@@ -1,28 +1,53 @@
+import merge from "deepmerge";
 import { pack } from "@kickstartds/core/lib/storybook/helpers";
-import { PostTeaser } from "./PostTeaserComponent";
-
-const Template = (args) => <PostTeaser {...args} />;
+import PostTeaserStories, {
+  Template,
+} from "@kickstartds/blog/lib/post-teaser/post-teaser.stories";
+import tokens from "./post-teaser-tokens.json";
+import schema from "@kickstartds/blog/lib/post-teaser/post-teaser.schema.dereffed.json";
 
 export default {
+  ...PostTeaserStories,
   title: "Blog/Post Teaser",
-  component: PostTeaser,
+  parameters: {
+    cssprops: merge(PostTeaserStories.parameters.cssprops, tokens),
+    jsonschema: schema,
+  },
+  args: {},
 };
 
 export const Default = Template.bind({});
 Default.args = pack({
-  headline: "Why we are creating kickstartDS",
-  content: `
+  image: {
+    src: "img/blog/Blog-Post01-5.webp",
+  },
+  title: "Why we are creating kickstartDS",
+  body: `
 #tldr: We want to support you to create one library of components,
 patterns and tokens to be used in any frontend you need to give your
 digital touch points a consistent interface...
   `,
-  tags: ["About kickstartDS", "Background"],
+  link: {
+    href: "#",
+    label: "Read more"
+  },
+  categories: [{ label: "About kickstartDS" }, { label: "Background" }],
   meta: {
-    avatar: {
-      src: "img/blog/web_profile_images-teaser.png",
+    author: {
+      name: "Daniel Ley",
+      image: {
+        src: "img/blog/web_profile_images-teaser.png",
+      },
     },
-    author: "Daniel Ley",
-    date: "2021-03-29",
-    readingTime: "5 min read",
+    items: [
+      {
+        icon: "date",
+        text: "29.03.2021",
+      },
+      {
+        icon: "time",
+        text: "5 min read",
+      },
+    ],
   },
 });

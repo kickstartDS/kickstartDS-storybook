@@ -1,0 +1,17 @@
+@use "./post-share-bar-tokens";
+
+.c-post-share-bar {
+  --g-link--background-hover: transparent;
+  --g-link--color: var(--color-primary-alpha-5);
+
+  .c-headline {
+    --c-headline--margin-bottom: 0;
+    --c-headline--color: var(--color-grey-7);
+  }
+
+  &__link {
+    &:first-of-type {
+      padding-left: 0;
+    }
+  }
+}

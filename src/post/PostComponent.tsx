@@ -3,9 +3,9 @@ import { Divider } from "@kickstartds/base/lib/divider";
 import { Section } from "@kickstartds/base/lib/section";
 import { PostHead } from "@kickstartds/blog/lib/post-head";
 import { PostAside } from "@kickstartds/blog/lib/post-aside";
+import { PostShareBar } from "@kickstartds/blog/lib/post-share-bar";
 
 import { PostProps } from "./PostProps";
-import { ShareBar } from "../share-bar/ShareBarComponent";
 
 export const Post: FunctionComponent<PostProps> = ({
   aside,
@@ -26,7 +26,7 @@ export const Post: FunctionComponent<PostProps> = ({
       <div className="c-post__content">
         {head && <PostHead {...head} />}
         <div className="c-html c-rich-text c-post-text">{children}</div>
-        {shareBar && <ShareBar {...shareBar} />}
+        {shareBar && <PostShareBar {...shareBar} />}
       </div>
     </Section>
     <Section width="wide" spaceBefore="none" spaceAfter="none" align="center">

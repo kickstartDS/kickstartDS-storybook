@@ -1852,14 +1852,14 @@
   resolved "https://registry.yarnpkg.com/@jsdevtools/ono/-/ono-7.1.3.tgz#9df03bbd7c696a5c58885c34aa06da41c8543796"
   integrity sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==
 
-"@kickstartds/base@^1.6.0-next.9":
-  version "1.6.0-next.9"
-  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-1.6.0-next.9.tgz#6814e6fdc9641014ce6813c7bc9932a2408234cd"
-  integrity sha512-aPWbsMJBLaKOMslMCSI9Jl+UkZy2cOdG6T8Sg4WHy093oei4c29LLAPm8VVdS7CH08eOZ3OcugOadYyxqLch1w==
+"@kickstartds/base@1.6.0-canary.875.3796.0":
+  version "1.6.0-canary.875.3796.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-1.6.0-canary.875.3796.0.tgz#64f02c86cb3dec77436bf8b7993258765b4cd177"
+  integrity sha512-p6tu2035EQk7zbhF7Ss4bXP5+PeW2nfQ1Ct7FTY6maKARdYEh9iUTs45gPIxCKpgUhWTY0Dp85HQwnFP8sLTdQ==
   dependencies:
     "@babel/runtime" "^7.17.2"
     "@glidejs/glide" "^3.5.2"
-    "@kickstartds/core" "^1.6.0-next.9"
+    "@kickstartds/core" "1.6.0-canary.875.3796.0"
     classnames "^2.2.6"
     date-fns "^2.28.0"
     focus-visible "^5.0.2"
@@ -1868,54 +1868,54 @@
     react-markdown "^8.0.0"
     vhtml "^2.2.0"
 
-"@kickstartds/blog@^1.6.0-next.9":
-  version "1.6.0-next.9"
-  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-1.6.0-next.9.tgz#e3594d6ba7263b4a941f109e561aa58808193f77"
-  integrity sha512-FMQmDHW3ddlkU9JnwxZeUpLOcNjU+pQCqkEa8h0SfFsthYEvQwTE3/fzNaYNvFs2OtHdGIeTChGMA4Op8uAlBQ==
+"@kickstartds/blog@1.6.0-canary.875.3796.0":
+  version "1.6.0-canary.875.3796.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-1.6.0-canary.875.3796.0.tgz#09cec46f8a9ea511b542d16b0244f7c56f46dd5a"
+  integrity sha512-gxVhG4Pr3jkfU/7yO1dgsajEviI/dEi3lqqTuZ+eDVspEFv+qi5zYPZOyY/TGOJ5oOXrnXzz/6DggXc8JkFL0Q==
   dependencies:
     "@babel/runtime" "^7.17.2"
-    "@kickstartds/base" "^1.6.0-next.9"
-    "@kickstartds/content" "^1.6.0-next.9"
-    "@kickstartds/core" "^1.6.0-next.9"
+    "@kickstartds/base" "1.6.0-canary.875.3796.0"
+    "@kickstartds/content" "1.6.0-canary.875.3796.0"
+    "@kickstartds/core" "1.6.0-canary.875.3796.0"
     classnames "^2.2.6"
     date-fns "^2.28.0"
 
-"@kickstartds/content@^1.6.0-next.9":
-  version "1.6.0-next.9"
-  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-1.6.0-next.9.tgz#d49d424b0b9f1e5606fa0adba7864fcf81a2d50c"
-  integrity sha512-KteFhJKtRqQxeZA/H+eSpab9yeNnrL0a/jOUQWDiEIiDborT9DNe0HWxt8plVXuH6K7gTBfIrMSUB1JidPgMUQ==
+"@kickstartds/content@1.6.0-canary.875.3796.0":
+  version "1.6.0-canary.875.3796.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-1.6.0-canary.875.3796.0.tgz#a49057333454b14f0582020690765515c0f7caa5"
+  integrity sha512-9+1DgMUmo6zpP/ggtuLTS/uEmAeQ9p6CnqS2j4/kNu3J8Qw2w8Z8rHAX1D1BXgw1NJNXkxulbcjyQ4sy+PpwWw==
   dependencies:
     "@babel/runtime" "^7.17.2"
-    "@kickstartds/base" "^1.6.0-next.9"
-    "@kickstartds/core" "^1.6.0-next.9"
+    "@kickstartds/base" "1.6.0-canary.875.3796.0"
+    "@kickstartds/core" "1.6.0-canary.875.3796.0"
     classnames "^2.2.6"
     countup.js "^2.0.8"
 
-"@kickstartds/core@^1.6.0-next.9":
-  version "1.6.0-next.9"
-  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-1.6.0-next.9.tgz#fc8d9605e75f16aa594496e39acc3a2ffec8168c"
-  integrity sha512-zYdVMZiJcwTcUzyAt08lNcjlYgttcGxVrY7aUv6ZZEE7flAbH4k5qREx6xS/qYC0Ni4GX8vw2k0OwmNlYwCHiQ==
+"@kickstartds/core@1.6.0-canary.875.3796.0":
+  version "1.6.0-canary.875.3796.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-1.6.0-canary.875.3796.0.tgz#57613bc1807ac83065f8295a3590554bbf7ecaa3"
+  integrity sha512-k7IB8hU8YMngjqJXmmQn0ELpshXNt3lSDwiGHFoPyq+uKZveMzmTWfJuwJOa6nklV9e0ehmHV9uZ9aEOKToyaA==
   dependencies:
     "@babel/runtime" "^7.17.2"
-    bourbon "^7.0.0"
+    bourbon "^7.2.0"
     del "^6.0.0"
     dependency-graph "^0.11.0"
-    esbuild "^0.14.22"
+    esbuild "^0.14.23"
     fast-glob "^3.2.11"
-    fs-extra "^10.0.0"
+    fs-extra "^10.0.1"
     lazysizes "^5.3.2"
     lodash-es "^4.17.21"
     pubsub-js "^1.9.4"
     sass "^1.49.8"
 
-"@kickstartds/form@^1.6.0-next.9":
-  version "1.6.0-next.9"
-  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-1.6.0-next.9.tgz#9e04365784eeaa962df52d9c16c8a9372fe3ca89"
-  integrity sha512-TnrCS7xF3gCB6BnhJSuwSBBntQIlDmJs/CFDmTThIL+bXX+Dzn7lu7eWtfd/G9OAN+mPhgtxQXWqV4rqyicytw==
+"@kickstartds/form@1.6.0-canary.875.3796.0":
+  version "1.6.0-canary.875.3796.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-1.6.0-canary.875.3796.0.tgz#038043ccb257dc151a0a3054af5878e8974d9773"
+  integrity sha512-oSxbUY8XO43bgLFTkB7EdnLJcJchh+fXMck8wKG9Qya0mU4CtHWptiFUfgD6g34BACD8pPM6HGzLho9d3x9OXw==
   dependencies:
     "@babel/runtime" "^7.17.2"
-    "@kickstartds/base" "^1.6.0-next.9"
-    "@kickstartds/core" "^1.6.0-next.9"
+    "@kickstartds/base" "1.6.0-canary.875.3796.0"
+    "@kickstartds/core" "1.6.0-canary.875.3796.0"
     classnames "^2.2.6"
 
 "@kickstartds/json-schema-viewer@^1.1.0":
@@ -4584,10 +4584,10 @@ bottleneck@^2.15.3:
   resolved "https://registry.yarnpkg.com/bottleneck/-/bottleneck-2.19.5.tgz#5df0b90f59fd47656ebe63c78a98419205cadd91"
   integrity sha512-VHiNCbI1lKdl44tGrhNfU3lup0Tj/ZBMJB5/2ZbNXRCPuRCO7ed2mgcK4r17y+KB2EfuYuRaVlwNbAeaWGSpbw==
 
-bourbon@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/bourbon/-/bourbon-7.0.0.tgz#42c0b691e99cb1f7616aad2a11b17ab88bbc4918"
-  integrity sha512-49kyBY+4gwnEvnez8H0TzFjfNZpUVdCmmS873S9nQ6YUuh2+qesbOh8lA+9gAuWlqtYlF+/3Etxm/13RhceOrg==
+bourbon@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/bourbon/-/bourbon-7.2.0.tgz#32bc40fd368383e4b7b82bb832c34c67584282bd"
+  integrity sha512-Zx/lY/YzMkSyFC7yYPp9QcI2OCWnUHQdSrXvRtfnaUGT/edKNh44mVPYkP7QEyk6yQOLCJottsuTnidqKcpbNg==
 
 boxen@^5.1.2:
   version "5.1.2"
@@ -6420,9 +6420,9 @@ esbuild@^0.12.23:
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.23.tgz#fd40d70d3ec5e7893d8c5be655e3e38d096dd882"
   integrity sha512-qvS4aKnmKikoWGscd5lVAzgobMovlH/JhaWitRiQ8xJx0x1Fym0pqVjMFs43Nvff8WpibeWm+fWoLK88T1U0Xw==
 
-esbuild@^0.14.22:
+esbuild@^0.14.23:
   version "0.14.23"
-  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.14.23.tgz#95e842cb22bc0c7d82c140adc16788aac91469fe"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.14.23.tgz#95e842cb22bc0c7d82c140adc16788aac91469fe"
   integrity sha512-XjnIcZ9KB6lfonCa+jRguXyRYcldmkyZ99ieDksqW/C8bnyEX299yA4QH2XcgijCgaddEZePPTgvx/2imsq7Ig==
   optionalDependencies:
     esbuild-android-arm64 "0.14.23"
@@ -7109,6 +7109,15 @@ fs-extra@^10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.0.0.tgz#9ff61b655dde53fb34a82df84bb214ce802e17c1"
   integrity sha512-C5owb14u9eJwizKGdchcDUQeFtlSHHthBk8pbX9Vc1PFZrLombudjDnNns88aYslCyF6IY5SUw3Roz6xShcEIQ==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
+fs-extra@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.0.1.tgz#27de43b4320e833f6867cc044bfce29fdf0ef3b8"
+  integrity sha512-NbdoVMZso2Lsrn/QwLXOy6rm0ufY2zEOKCDzJR/0kBsb0E6qed0P3iYK+Ath3BfvXEeu4JhEtXLgILx5psUfag==
   dependencies:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
