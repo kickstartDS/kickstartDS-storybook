@@ -16,14 +16,6 @@
     }
   }
 
-  &-head {
-    &__meta {
-      position: relative !important;
-      top: unset !important;
-      margin-bottom: var(--spacing-xs);
-    }
-  }
-
   &-text {
     > p {
       max-width: calc(

@@ -2,6 +2,10 @@
 @use "./post-aside-tokens";
 
 .c-post-aside {
+  --tag-label-height: calc(
+    var(--line-height-xs) + calc(var(--spacing-xs) * 2) + var(--spacing-s)
+  );
+
   height: fit-content;
 
   @include breakpoint.media("<m") {

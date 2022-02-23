@@ -1,0 +1,13 @@
+@use "./post-head-tokens";
+
+.c-post-head {
+  &__meta {
+    position: relative !important;
+    top: unset !important;
+    margin-bottom: var(--spacing-xs);
+
+    + .c-headline {
+      margin-top: 0 !important;
+    }
+  }
+}

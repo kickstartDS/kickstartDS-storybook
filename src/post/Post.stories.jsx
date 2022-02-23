@@ -1,5 +1,6 @@
 import { pack } from "@kickstartds/core/lib/storybook/helpers";
 import { Default as PostAsideStory } from "../post-aside/PostAside.stories";
+import { Default as PostHeadStory } from "../post-head/PostHead.stories";
 import { Post } from "./PostComponent";
 import { SamplePost } from "./SamplePost";
 
@@ -13,25 +14,7 @@ export default {
 export const Default = Template.bind({});
 Default.args = pack({
   aside: PostAsideStory.args,
-  head: {
-    categories: [
-      {
-        label: "About kickstartDS",
-      },
-      {
-        label: "Background",
-      },
-    ],
-    headline: {
-      content: "Why we are creating kickstartDS",
-      level: "h1",
-      pageHeader: false,
-      spaceAfter: "none",
-    },
-    image: {
-      src: "/img/why-kickstart-Design-System.svg",
-    },
-  },
+  head: PostHeadStory.args,
   shareBar: {
     headline: "Share this article",
     headlineLevel: "h3",
