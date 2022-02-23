@@ -1,13 +1,10 @@
-import { FunctionComponent } from "react";
 import { Divider } from "@kickstartds/base/lib/divider";
 import { Section } from "@kickstartds/base/lib/section";
 import { PostHead } from "@kickstartds/blog/lib/post-head";
 import { PostAside } from "@kickstartds/blog/lib/post-aside";
 import { PostShareBar } from "@kickstartds/blog/lib/post-share-bar";
 
-import { PostProps } from "./PostProps";
-
-export const Post: FunctionComponent<PostProps> = ({
+export const Post = ({
   aside,
   head,
   shareBar,
