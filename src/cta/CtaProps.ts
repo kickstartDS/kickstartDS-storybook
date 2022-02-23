@@ -6,38 +6,6 @@
  */
 
 /**
- * Choose an alignment for the headline
- */
-export type Alignment = "left" | "center" | "right";
-/**
- * Select the headline level to use, or p alternatively
- */
-export type Level = "h1" | "h2" | "h3" | "h4" | "h5" | "p";
-/**
- * Select the headline style to use
- */
-export type Style = "none" | "h1" | "h2" | "h3" | "h4" | "h5" | "p";
-/**
- * Text content for the headline
- */
-export type Text = string;
-/**
- * Text content for the optional subheadline
- */
-export type Subheadline = string;
-/**
- * Add additional spacing to the bottom of the headline
- */
-export type BottomSpacing = "none" | "small" | "large";
-/**
- * Set the headline as a page header, triggering special css treatment
- */
-export type PageHeader = boolean;
-/**
- * Add additional css classes that should be applied to the headline
- */
-export type AdditionalClasses = string;
-/**
  * Switch to displaying the image after the text on desktop
  */
 export type DesktopImageAfterText = boolean;
@@ -76,39 +44,39 @@ export type FullSizeImage = boolean;
 /**
  * Select the headline level to use, or p alternatively
  */
-export type Level1 = "h1" | "h2" | "h3" | "h4" | "h5" | "p";
+export type Level = "h1" | "h2" | "h3" | "h4" | "h5" | "p";
 /**
  * Select the headline style to use
  */
-export type Style1 = "none" | "h1" | "h2" | "h3" | "h4" | "h5" | "p";
+export type Style = "none" | "h1" | "h2" | "h3" | "h4" | "h5" | "p";
 /**
  * Choose an alignment for the headline
  */
-export type Alignment1 = "left" | "center" | "right";
+export type Alignment = "left" | "center" | "right";
 /**
  * Text content for the headline
  */
-export type Text1 = string;
+export type Text = string;
 /**
  * Text content for the optional subheadline
  */
-export type Subheadline1 = string;
+export type Subheadline = string;
 /**
  * Add additional spacing to the bottom of the headline
  */
-export type BottomSpacing1 = "none" | "small" | "large";
+export type BottomSpacing = "none" | "small" | "large";
 /**
  * Set the headline as a page header, triggering special css treatment
  */
-export type PageHeader1 = boolean;
+export type PageHeader = boolean;
 /**
  * Add additional css classes that should be applied to the headline
  */
-export type AdditionalClasses1 = string;
+export type AdditionalClasses = string;
 /**
  * Text content to display inside the element
  */
-export type Text2 = string;
+export type Text1 = string;
 /**
  * Switch text alignment between left and center
  */
@@ -140,7 +108,7 @@ export type ButtonSize = "small" | "medium" | "large";
 /**
  * Add additional css classes that should be applied to the button
  */
-export type AdditionalClasses2 = string;
+export type AdditionalClasses1 = string;
 export type IconIdentifier = string;
 export type AriaRole = string;
 export type AdditionalClass = string;
@@ -176,78 +144,11 @@ export type OpenLinkInNewTab = boolean;
  * Additional css classes attached to the wrapping element
  */
 export type Class = string;
-/**
- * Text used on button
- */
-export type Label1 = string;
-/**
- * Choose one of the styles from the list
- */
-export type ButtonStyle1 = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
-/**
- * Choose a size between small, medium and large
- */
-export type ButtonSize1 = "small" | "medium" | "large";
-/**
- * Add additional css classes that should be applied to the button
- */
-export type AdditionalClasses3 = string;
-export type IconIdentifier1 = string;
-export type AriaRole1 = string;
-export type AdditionalClass1 = string;
-/**
- * Display icon before the button text
- */
-export type IconBeforeButton1 = boolean;
-/**
- * Display icon after the button text
- */
-export type IconAfterButton1 = boolean;
-/**
- * Overwrite the data-component to use for rendering
- */
-export type DataComponentAttribute1 = string;
-/**
- * Add fill animation on hover
- */
-export type FillAnimation1 = boolean;
-/**
- * Add icon animation on hover
- */
-export type IconAnimation1 = boolean;
-/**
- * Link used for button
- */
-export type ButtonHref1 = string;
-/**
- * Open link in new Tab
- */
-export type OpenLinkInNewTab1 = boolean;
 
-export interface CtaProps {
-  headline: Headline;
-  storytelling: Storytelling;
-  button: LinkButton1;
-  [k: string]: unknown;
-}
-/**
- * Headline
- */
-export interface Headline {
-  align: Alignment;
-  level: Level;
-  styleAs?: Style;
-  content?: Text;
-  subheadline?: Subheadline;
-  spaceAfter: BottomSpacing;
-  pageHeader?: PageHeader;
-  className?: AdditionalClasses;
-  [k: string]: unknown;
-}
 /**
  * Component to present rich combinations of text and media, best used sequentially
  */
-export interface Storytelling {
+export interface CtaProps {
   image: Image;
   backgroundImage?: BackgroundImage;
   backgroundColor?: BackgroundColor;
@@ -279,8 +180,8 @@ export interface Order {
  * Text content to display
  */
 export interface TextBox {
-  headline?: Headline1;
-  text?: Text2;
+  headline?: Headline;
+  text?: Text1;
   textAlign?: TextAlignment;
   textColor?: TextColor;
   vAlign?: BoxVerticalAlignment;
@@ -291,15 +192,15 @@ export interface TextBox {
 /**
  * Headline for the box
  */
-export interface Headline1 {
-  level: Level1;
-  styleAs?: Style1;
-  align: Alignment1;
-  content?: Text1;
-  subheadline?: Subheadline1;
-  spaceAfter: BottomSpacing1;
-  pageHeader?: PageHeader1;
-  className?: AdditionalClasses1;
+export interface Headline {
+  level: Level;
+  styleAs?: Style;
+  align: Alignment;
+  content?: Text;
+  subheadline?: Subheadline;
+  spaceAfter: BottomSpacing;
+  pageHeader?: PageHeader;
+  className?: AdditionalClasses;
   [k: string]: unknown;
 }
 /**
@@ -309,7 +210,7 @@ export interface LinkButton {
   label: Label;
   variant: ButtonStyle;
   size: ButtonSize;
-  className?: AdditionalClasses2;
+  className?: AdditionalClasses1;
   icon?: Icon;
   iconBefore?: IconBeforeButton;
   iconAfter?: IconAfterButton;
@@ -326,31 +227,5 @@ export interface Icon {
   icon?: IconIdentifier;
   role?: AriaRole;
   className?: AdditionalClass;
-  [k: string]: unknown;
-}
-/**
- * link-button
- */
-export interface LinkButton1 {
-  label: Label1;
-  variant: ButtonStyle1;
-  size: ButtonSize1;
-  className?: AdditionalClasses3;
-  icon?: Icon1;
-  iconBefore?: IconBeforeButton1;
-  iconAfter?: IconAfterButton1;
-  dataComponent?: DataComponentAttribute1;
-  fillAnimation?: FillAnimation1;
-  iconAnimation?: IconAnimation1;
-  href: ButtonHref1;
-  newTab?: OpenLinkInNewTab1;
-}
-/**
- * Icon
- */
-export interface Icon1 {
-  icon?: IconIdentifier1;
-  role?: AriaRole1;
-  className?: AdditionalClass1;
   [k: string]: unknown;
 }

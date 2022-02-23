@@ -52,42 +52,28 @@ const Page = () => (
       ]}
       stackshare="https://stackshare.io/julrich/decisions/107140151808024329"
       cta={{
-        headline: {
-          content: "Why we care?",
-          styleAs: "h1",
-        },
-        storytelling: {
-          box: {
-            text: "Read more, or chat with us, to learn how this helps create consistent frontend interfaces",
-            vAlign: "top",
-            link: {
-              label: "Lets have a chat",
-              variant: "solid",
-              iconAfter: true,
-              icon: {
-                icon: "person",
-              },
-            },
+        box: {
+          headline: {
+            content: "Why we care?",
+            styleAs: "h1",
           },
-          full: true,
-          image: {
-            source: "img/contact.svg",
-            vAlign: "top",
-            order: {
-              desktopImageLast: true,
+          text: "Read more, or chat with us, to learn how this helps create consistent frontend interfaces",
+          vAlign: "top",
+          link: {
+            label: "Lets have a chat",
+            variant: "solid",
+            iconAfter: true,
+            icon: {
+              icon: "person",
             },
           },
         },
-        button: {
-          href: "https://www.kickstartDS.com/",
-          label: "About kickstartDS",
-          size: "medium",
-          type: "button",
-          variant: "solid",
-
-          iconAfter: true,
-          icon: {
-            icon: "chevron-right",
+        full: true,
+        image: {
+          source: "img/contact.svg",
+          vAlign: "top",
+          order: {
+            desktopImageLast: true,
           },
         },
       }}
