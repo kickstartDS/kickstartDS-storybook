@@ -4,40 +4,7 @@
   background: var(--color-primary-lighter-6);
   padding: var(--spacing-xl) var(--spacing-xl);
   transition: 300ms all cubic-bezier(0.1, 0.9, 0.3, 1.5);
-
-  .c-headline {
-    max-width: 100%;
-
-    &__headline {
-      color: var(--color-primary);
-    }
-  }
-
-  .c-storytelling {
-    padding: 0;
-    gap: var(--spacing-s);
-
-    .template__side & {
-      flex-direction: column;
-
-      @include breakpoint.media(">s") {
-        flex-direction: row;
-      }
-      @include breakpoint.media(">m") {
-        flex-direction: column-reverse;
-      }
-    }
-
-    &__box {
-      padding: 0 !important;
-    }
-  }
-
-  .c-rich-text {
-    font: var(--font-ui-m);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
-  }
+  gap: var(--spacing-s);
 
   clip-path: polygon(
     /* Corner Top Left */ 0% var(--spacing-m),
@@ -61,5 +28,34 @@
       /* Corner Bottom Left */ var(--spacing-l) 100%,
       0 calc(100% - var(--spacing-l))
     );
+  }
+
+  .template__side & {
+    flex-direction: column;
+
+    @include breakpoint.media(">s") {
+      flex-direction: row;
+    }
+    @include breakpoint.media(">m") {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .c-headline {
+    max-width: 100%;
+
+    &__headline {
+      color: var(--color-primary);
+    }
+  }
+
+  .c-storytelling__box {
+    padding: 0 !important;
+  }
+
+  .c-rich-text {
+    font: var(--font-ui-m);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
   }
 }

@@ -32,32 +32,26 @@ const Page = () => (
       }}
     >
       <Cta
-        headline={{
-          content: "Find out if kickstartDS suits your project",
-        }}
-        storytelling={{
-          image: {
-            order: {
-              desktopImageLast: true,
-              mobileImageLast: true,
-            },
-            source: "img/contact.svg",
+        image={{
+          order: {
+            desktopImageLast: true,
+            mobileImageLast: true,
           },
-          box: {
-            headline: {
-              content: "Find out if kickstartDS suits your project",
-              level: "h2",
-            },
-            text: "Get in contact with our team",
-
-            link: {
-              label: "Talk to us now",
-              variant: "solid",
-              size: "default",
-              iconAfter: true,
-              icon: {
-                icon: "chevron-right",
-              },
+          source: "img/contact.svg",
+        }}
+        box={{
+          headline: {
+            content: "Find out if kickstartDS suits your project",
+            level: "h2",
+          },
+          text: "Get in contact with our team",
+          link: {
+            label: "Talk to us now",
+            variant: "solid",
+            size: "default",
+            iconAfter: true,
+            icon: {
+              icon: "chevron-right",
             },
           },
         }}

@@ -3,46 +3,24 @@
   "$id": "http://kickstartds.com/cta.schema.json",
   "title": "cta",
   "type": "object",
-  "properties": {
-    "headline": {
-      "allOf": [
-        {
+  "allOf": [
+    {
+      "properties": {
+        "image": {
           "properties": {
-            "align": {
-              "default": "left"
-            }
-          }
-        },
-        {
-          "$ref": "http://frontend.ruhmesmeile.com/base/molecules/headline.schema.json"
-        }
-      ]
-    },
-    "storytelling": {
-      "allOf": [
-        {
-          "properties": {
-            "image": {
+            "order": {
               "properties": {
-                "order": {
-                  "properties": {
-                    "desktopImageLast": {
-                      "default": true
-                    }
-                  }
+                "desktopImageLast": {
+                  "default": true
                 }
               }
             }
           }
-        },
-        {
-          "$ref": "http://frontend.ruhmesmeile.com/content/molecules/storytelling.schema.json"
         }
-      ]
+      }
     },
-    "button": {
-      "$ref": "http://frontend.ruhmesmeile.com/base/atoms/link-button.schema.json"
+    {
+      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/storytelling.schema.json"
     }
-  },
-  "required": ["headline", "storytelling", "button"]
+  ]
 }
