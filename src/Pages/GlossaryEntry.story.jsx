@@ -53,10 +53,6 @@ const Page = () => (
       stackshare="https://stackshare.io/julrich/decisions/107140151808024329"
       cta={{
         box: {
-          headline: {
-            content: "Why we care?",
-            styleAs: "h1",
-          },
           text: "Read more, or chat with us, to learn how this helps create consistent frontend interfaces",
           vAlign: "top",
           link: {
