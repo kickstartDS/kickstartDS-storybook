@@ -40,3 +40,11 @@
   --c-button--background-color: var(--color-secondary);
   --c-button--background-color-hover: var(--color-secondary-darker-1);
 }
+
+.c-button--outline {
+  --c-button--background-color-hover: var(--color-secondary);
+}
+
+.c-button--outline-inverted {
+  // --c-button--background-color-hover: var(--color-primary);
+}

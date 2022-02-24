@@ -1,0 +1,125 @@
+@use "@kickstartds/core/source/core/breakpoint";
+
+.c-button--outline,
+.c-button--outline-inverted {
+  --border: 2px;
+  --corner-height: 40%;
+
+  position: relative;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  z-index: 2;
+  background: none !important;
+
+  &:hover {
+    &::after {
+      opacity: 1;
+      left: 4px;
+      bottom: -4px;
+    }
+  }
+
+  &::after {
+    --corner-height: 9px;
+    content: "";
+    position: absolute;
+    transition: var(--c-button-transition);
+    opacity: 0;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-button--background-color-hover);
+    clip-path: polygon(
+      0% var(--corner-height),
+      var(--corner-height) 0,
+      100% 0,
+      100% calc(100% - calc(var(--corner-height) * 2)),
+      calc(100% - var(--corner-height) * 2) 100%,
+      0 100%
+    );
+  }
+
+  .c-button__content {
+    padding: var(--c-button--padding);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: var(--c-button--border-color);
+      width: var(--border);
+    }
+
+    &::before {
+      height: 85%;
+      left: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      height: 70%;
+      right: 1px;
+      top: 0;
+    }
+  }
+
+  .c-button__border {
+    border-bottom-width: 0;
+    border-top-width: 0;
+    mask-image: linear-gradient(17deg, #000, #000 100%, transparent 0, transparent 0);
+    right: calc(var(--border) / 2) !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+
+    &::before,
+    &::after {
+      position: absolute;
+      width: calc(100% - var(--border));
+      content: "";
+    }
+
+    &::before {
+      border: var(--border) solid var(--c-button--border-color);
+      border-width: var(--border) 0 0 calc(var(--border) * 1.5);
+      top: 0;
+      height: calc(var(--corner-height) / 2);
+      left: -3px;
+
+      transform: skew(-45deg);
+      transform-origin: right bottom;
+    }
+
+    &::after {
+      border: var(--border) solid var(--c-button--border-color);
+      border-width: 0 calc(var(--border) * 1.5) var(--border) 0;
+      bottom: 0;
+      height: var(--corner-height);
+      left: -12px;
+
+      @include breakpoint.media(">s") {
+        left: -14px;
+      }
+
+      transform: skew(-45deg);
+      transform-origin: right bottom;
+    }
+  }
+
+  &.c-button--small {
+    .c-button__border {
+      &::after {
+        left: -7px;
+
+        @include breakpoint.media(">s") {
+          left: -10px;
+        }
+      }
+    }
+  }
+}

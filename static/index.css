@@ -241,6 +241,118 @@
   margin: auto;
 }
 
+.c-button--outline,
+.c-button--outline-inverted {
+  --border: 2px;
+  --corner-height: 40%;
+  position: relative;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  z-index: 2;
+  background: none !important;
+}
+.c-button--outline:hover::after,
+.c-button--outline-inverted:hover::after {
+  opacity: 1;
+  left: 4px;
+  bottom: -4px;
+}
+.c-button--outline::after,
+.c-button--outline-inverted::after {
+  --corner-height: 9px;
+  content: "";
+  position: absolute;
+  transition: var(--c-button-transition);
+  opacity: 0;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--c-button--background-color-hover);
+  clip-path: polygon(0% var(--corner-height), var(--corner-height) 0, 100% 0, 100% calc(100% - calc(var(--corner-height) * 2)), calc(100% - var(--corner-height) * 2) 100%, 0 100%);
+}
+.c-button--outline .c-button__content,
+.c-button--outline-inverted .c-button__content {
+  padding: var(--c-button--padding);
+}
+.c-button--outline .c-button__content::before, .c-button--outline .c-button__content::after,
+.c-button--outline-inverted .c-button__content::before,
+.c-button--outline-inverted .c-button__content::after {
+  content: "";
+  position: absolute;
+  background-color: var(--c-button--border-color);
+  width: var(--border);
+}
+.c-button--outline .c-button__content::before,
+.c-button--outline-inverted .c-button__content::before {
+  height: 85%;
+  left: 0;
+  bottom: 0;
+}
+.c-button--outline .c-button__content::after,
+.c-button--outline-inverted .c-button__content::after {
+  height: 70%;
+  right: 1px;
+  top: 0;
+}
+.c-button--outline .c-button__border,
+.c-button--outline-inverted .c-button__border {
+  border-bottom-width: 0;
+  border-top-width: 0;
+  mask-image: linear-gradient(17deg, #000, #000 100%, transparent 0, transparent 0);
+  right: calc(var(--border) / 2) !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+.c-button--outline .c-button__border::before, .c-button--outline .c-button__border::after,
+.c-button--outline-inverted .c-button__border::before,
+.c-button--outline-inverted .c-button__border::after {
+  position: absolute;
+  width: calc(100% - var(--border));
+  content: "";
+}
+.c-button--outline .c-button__border::before,
+.c-button--outline-inverted .c-button__border::before {
+  border: var(--border) solid var(--c-button--border-color);
+  border-width: var(--border) 0 0 calc(var(--border) * 1.5);
+  top: 0;
+  height: calc(var(--corner-height) / 2);
+  left: -3px;
+  transform: skew(-45deg);
+  transform-origin: right bottom;
+}
+.c-button--outline .c-button__border::after,
+.c-button--outline-inverted .c-button__border::after {
+  border: var(--border) solid var(--c-button--border-color);
+  border-width: 0 calc(var(--border) * 1.5) var(--border) 0;
+  bottom: 0;
+  height: var(--corner-height);
+  left: -12px;
+  transform: skew(-45deg);
+  transform-origin: right bottom;
+}
+@media (min-width: 40.01em) {
+  .c-button--outline .c-button__border::after,
+.c-button--outline-inverted .c-button__border::after {
+    left: -14px;
+  }
+}
+.c-button--outline.c-button--small .c-button__border::after,
+.c-button--outline-inverted.c-button--small .c-button__border::after {
+  left: -7px;
+}
+@media (min-width: 40.01em) {
+  .c-button--outline.c-button--small .c-button__border::after,
+.c-button--outline-inverted.c-button--small .c-button__border::after {
+    left: -10px;
+  }
+}
+
 .c-button {
   --c-button--border-radius: 0;
   --c-button--font-weight: var(--font-weight-semi-bold);
@@ -284,66 +396,69 @@
   --c-button--background-color-hover: var(--color-secondary-darker-1);
 }
 
+.c-button--outline {
+  --c-button--background-color-hover: var(--color-secondary);
+}
+
 :root {
+  --corner-height: 9px;
   --c-button-clip-path: polygon(
-    0 0.3em,
-    0.3em 0,
-    calc(100% - 0.4em) 0,
-    100% calc(100% - 0.3em),
-    calc(100% - 0.3em) 100%,
-    0.4em 100%
-  );
-  --c-button-clip-path-hover: polygon(
-    0.2em calc(100% - 0.3em),
-    0.5em 0,
-    calc(100% - 0.7em) 0,
-    calc(100% - 0.4em) 0.3em,
-    calc(100% - 0.7em) 100%,
-    0.5em 100%
+    0% var(--corner-height),
+    var(--corner-height) 0,
+    100% 0,
+    100% calc(100% - calc(var(--corner-height) * 2)),
+    calc(100% - var(--corner-height) * 2) 100%,
+    0 100%
   );
   --c-button-transition: 200ms all cubic-bezier(0.17, 0.88, 0.27, 1.225);
 }
 
+.c-button {
+  width: fit-content;
+  height: fit-content;
+}
 .c-button.c-button--small {
   --c-button--padding: var(--spacing-xs) var(--spacing-s);
 }
-
-.c-button.c-button--outline,
-.c-button.c-button--outline-inverted {
-  --c-button--border-width: 2px;
+.c-button.c-button--main {
+  filter: drop-shadow(0.25em 0.25em 0px var(--color-secondary));
+}
+.c-button.c-button--main::after {
+  clip-path: polygon(0em 20%, 1em 0, calc(100% - 0.3em) 0, 100% 80%, calc(100% - 0.6em) 100%, 0.4em 100%);
+}
+.c-button.c-button--main:hover::after {
+  clip-path: polygon(0em 40%, 0.3em 0, calc(100% - 0.9em) 0, 100% 35%, calc(100% - 0.4em) 100%, 0.9em 100%);
 }
 
-.c-button--main.c-button {
-  background: none !important;
-  clip-path: none !important;
+.c-button--solid,
+.c-button--solid-inverted {
   position: relative;
+  background: none !important;
+  transition: var(--c-button-transition);
+}
+.c-button--solid span,
+.c-button--solid .icon,
+.c-button--solid-inverted span,
+.c-button--solid-inverted .icon {
   z-index: 1;
+}
+.c-button--solid:hover,
+.c-button--solid-inverted:hover {
   filter: drop-shadow(0.3em 0.3em 0px var(--color-secondary));
 }
-.c-button--main.c-button.c-button--solid-inverted {
-  filter: drop-shadow(0.3em 0.3em 0px var(--color-black-alpha-5));
+.c-button--solid:hover::after,
+.c-button--solid-inverted:hover::after {
+  background-color: var(--c-button--background-color-hover);
 }
-.c-button--main.c-button::after {
+.c-button--solid::after,
+.c-button--solid-inverted::after {
   transition: var(--c-button-transition);
   content: "";
-  z-index: -1;
   background-color: var(--c-button--background-color);
   position: absolute;
   width: 100%;
   height: 100%;
-  clip-path: polygon(0em 20%, 1em 0, calc(100% - 0.3em) 0, 100% 80%, calc(100% - 0.6em) 100%, 0.4em 100%);
-}
-.c-button--main.c-button:hover::after {
-  clip-path: polygon(0em 40%, 0.3em 0, calc(100% - 0.9em) 0, 100% 35%, calc(100% - 0.4em) 100%, 0.9em 100%);
-  background-color: var(--c-button--background-color-hover);
-}
-
-.c-button--solid, .c-button--solid-inverted, .c-button--clear {
-  transition: var(--c-button-transition);
   clip-path: var(--c-button-clip-path);
-}
-.c-button--solid:hover, .c-button--solid-inverted:hover, .c-button--clear:hover {
-  clip-path: var(--c-button-clip-path-hover);
 }
 
 .c-button--clear {
