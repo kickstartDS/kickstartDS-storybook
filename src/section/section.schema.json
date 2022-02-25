@@ -14,9 +14,10 @@
           "enum": ["none", "1", "2"],
           "default": "none"
         },
-        "deko": {
-          "type": "boolean",
-          "default": false
+        "variant": {
+          "type": "string",
+          "enum": ["none", "head", "body", "highlight"],
+          "default": "none"
         }
       }
     }

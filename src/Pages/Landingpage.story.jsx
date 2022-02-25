@@ -85,7 +85,8 @@ const Page = () => (
         pageHeader: false,
         spaceAfter: "none",
       }}
-      className="l-section--outer-width-wide l-section-style--highlight"
+      className="l-section--outer-width-wide"
+      variant="highlight"
       pattern="2"
       width="default"
       spaceAfter="small"
@@ -237,7 +238,8 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         spaceAfter: "none",
       }}
       mode="list"
-      className="l-section-style--highlight l-section--outer-width-wide" /* Background Weite */
+      className="l-section--outer-width-wide" /* Background Weite */
+      variant="highlight"
       pattern="1"
       width="wide" /* Content Weite */
       background="dark"
@@ -351,7 +353,8 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         pageHeader: false,
         spaceAfter: "none",
       }}
-      className="l-section--outer-width-wide l-section-style--highlight"
+      className="l-section--outer-width-wide"
+      variant="highlight"
       spaceAfter="default"
       spaceBefore="default"
       width="narrow"

@@ -34,7 +34,7 @@ const Page = () => (
       spaceBefore="default"
       spaceAfter="default"
       background="accent"
-      className="l-section-style--head"
+      variant="head"
       // pattern="1"
       headline={{
         content: "Backend integration with kickstartDS",
@@ -61,7 +61,7 @@ const Page = () => (
       width="wide"
       spaceBefore="default"
       gutter="none"
-      className="l-section-style--body"
+      variant="body"
       spaceBefore="none"
     >
       <Storytelling
@@ -120,7 +120,7 @@ const Page = () => (
       width="default"
       spaceBefore="default"
       spaceAfter="default"
-      className="l-section-style--head"
+      variant="head"
       background="dark"
       // pattern="2"
       headline={{
@@ -149,7 +149,7 @@ const Page = () => (
       spaceBefore="default"
       gutter="none"
       background="dark-accent"
-      className="l-section-style--body"
+      variant="body"
       spaceBefore="none"
     >
       <Storytelling
@@ -212,7 +212,7 @@ const Page = () => (
       spaceBefore="default"
       spaceAfter="defaultz"
       background="accent"
-      className="l-section-style--head"
+      variant="head"
       // pattern="1"
       headline={{
         content: "Design tooling with kickstartDS",
@@ -238,7 +238,7 @@ const Page = () => (
       mode="list"
       width="wide"
       spaceBefore="default"
-      className="l-section-style--body"
+      variant="body"
       spaceBefore="none"
       gutter="none"
     >
@@ -317,7 +317,7 @@ const Page = () => (
         content: "Integration with",
         align: "center",
       }}
-      className="l-section-style--body"
+      variant="body"
       spaceBefore="default"
       background="accent"
       spaceAfter="none"
@@ -353,7 +353,7 @@ const Page = () => (
       spaceBefore="default"
       spaceAfter="defaultz"
       background="dark"
-      className="l-section-style--head"
+      variant="head"
       // pattern="3"
       headline={{
         content: "Derivatives with kickstartDS",
@@ -379,7 +379,7 @@ const Page = () => (
       mode="list"
       width="wide"
       spaceBefore="default"
-      className="l-section-style--body"
+      variant="body"
       spaceBefore="none"
       gutter="none"
       background="dark-accent"
