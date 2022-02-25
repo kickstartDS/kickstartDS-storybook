@@ -1,3 +1,15 @@
+# v1.12.6 (Fri Feb 25 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add `variant` to section schema ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.12.5 (Fri Feb 25 2022)
 
 #### ⚠️ Pushed to `master`
