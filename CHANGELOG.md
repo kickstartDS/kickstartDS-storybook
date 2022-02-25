@@ -1,3 +1,15 @@
+# v1.12.3 (Fri Feb 25 2022)
+
+#### ⚠️ Pushed to `master`
+
+- clean up section styles ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.12.2 (Wed Feb 23 2022)
 
 #### 🐛 Bug Fix
