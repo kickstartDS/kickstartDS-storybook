@@ -237,8 +237,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         spaceAfter: "none",
       }}
       mode="list"
-      deko={true}
-      className="l-section--outer-width-wide" /* Background Weite */
+      className="l-section-style--highlight l-section--outer-width-wide" /* Background Weite */
       pattern="1"
       width="wide" /* Content Weite */
       background="dark"
@@ -352,8 +351,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         pageHeader: false,
         spaceAfter: "none",
       }}
-      deko={true}
-      className="l-section--outer-width-wide"
+      className="l-section--outer-width-wide l-section-style--highlight"
       spaceAfter="default"
       spaceBefore="default"
       width="narrow"
