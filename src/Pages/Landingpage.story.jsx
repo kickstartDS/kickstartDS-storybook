@@ -85,10 +85,9 @@ const Page = () => (
         pageHeader: false,
         spaceAfter: "none",
       }}
-      className="l-section--outer-width-wide"
+      className="l-section--outer-width-wide l-section-style--highlight"
       pattern="2"
       width="default"
-      deko
       spaceAfter="small"
       spaceBefore="small"
     >
