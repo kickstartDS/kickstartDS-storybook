@@ -1,3 +1,15 @@
+# v1.12.7 (Tue Mar 01 2022)
+
+#### ⚠️ Pushed to `master`
+
+- swap image ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.12.6 (Fri Feb 25 2022)
 
 #### ⚠️ Pushed to `master`
