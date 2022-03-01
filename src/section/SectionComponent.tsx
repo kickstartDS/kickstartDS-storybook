@@ -10,7 +10,7 @@ import { SectionProps } from "./SectionProps";
 
 const Section: FunctionComponent<
   SectionProps & HTMLAttributes<HTMLDivElement>
-> = ({ pattern, background, deko, className, ...props }) => (
+> = ({ pattern, background, variant, className, ...props }) => (
   <SectionContextDefault
     className={classnames(
       className,
@@ -19,7 +19,7 @@ const Section: FunctionComponent<
         `l-section__pattern l-section__pattern-${pattern} l-section__pattern-${pattern}--${
           background === "dark" ? "dark" : "light"
         }`,
-      deko && "l-section--deko"
+      variant && variant !== "none" && `l-section-style--${variant}`
     )}
     background={background}
     {...props}

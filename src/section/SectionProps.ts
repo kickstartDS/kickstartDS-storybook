@@ -1396,7 +1396,7 @@ export interface SectionProps {
   headline?: Headline4;
   className?: AdditionalClass11;
   pattern?: "none" | "1" | "2";
-  deko?: boolean;
+  variant?: "none" | "head" | "body" | "highlight";
   [k: string]: unknown;
 }
 export interface QuotesSlider {

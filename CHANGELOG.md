@@ -1,3 +1,65 @@
+# v1.12.7 (Tue Mar 01 2022)
+
+#### ⚠️ Pushed to `master`
+
+- swap image ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.12.6 (Fri Feb 25 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add `variant` to section schema ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.12.5 (Fri Feb 25 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- setcion style bugfix ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.12.4 (Fri Feb 25 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- swap out images ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.12.3 (Fri Feb 25 2022)
+
+#### ⚠️ Pushed to `master`
+
+- clean up section styles ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.12.2 (Wed Feb 23 2022)
 
 #### 🐛 Bug Fix

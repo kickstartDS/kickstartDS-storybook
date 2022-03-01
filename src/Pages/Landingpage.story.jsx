@@ -86,9 +86,9 @@ const Page = () => (
         spaceAfter: "none",
       }}
       className="l-section--outer-width-wide"
+      variant="highlight"
       pattern="2"
       width="default"
-      deko
       spaceAfter="small"
       spaceBefore="small"
     >
@@ -238,8 +238,8 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         spaceAfter: "none",
       }}
       mode="list"
-      deko={true}
       className="l-section--outer-width-wide" /* Background Weite */
+      variant="highlight"
       pattern="1"
       width="wide" /* Content Weite */
       background="dark"
@@ -353,8 +353,8 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         pageHeader: false,
         spaceAfter: "none",
       }}
-      deko={true}
       className="l-section--outer-width-wide"
+      variant="highlight"
       spaceAfter="default"
       spaceBefore="default"
       width="narrow"
