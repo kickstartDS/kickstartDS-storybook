@@ -31,9 +31,26 @@ const Page = () => (
 
     <Section spaceBefore="default" width="narrow" mode="list" gutter="large">
       <PostTeaser {...unpack(PostTeaserStory.args)} />
+      <PostTeaser {...unpack(PostTeaserStory.args)}
+        meta={{
+          author: {
+            name: "Jonas Ulrich",
+            image: {
+              src: "img/author_images_julrich.png",
+            },
+          }
+        }}
+      />
       <PostTeaser {...unpack(PostTeaserStory.args)} />
-      <PostTeaser {...unpack(PostTeaserStory.args)} />
-      <PostTeaser {...unpack(PostTeaserStory.args)} />
+      <PostTeaser {...unpack(PostTeaserStory.args)}
+        meta={{
+          author: {
+            name: "Jonas Ulrich",
+            image: {
+              src: "img/author_images_julrich.png",
+            },
+          }
+        }} />
     </Section>
     <Section
       background="accent"
