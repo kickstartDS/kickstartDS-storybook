@@ -1,0 +1,129 @@
+@use "sass:math";
+@use "bourbon/core/bourbon";
+@use "@kickstartds/core/source/core/breakpoint";
+// @use '../var';
+
+html.overlay-open {
+  overflow: hidden;
+}
+
+button.nav-toggle {
+  $ease: ease;
+  $duration: 300ms;
+
+  /* critical:start */
+  position: relative;
+  top: var(--spacing-s);
+  right: 0;
+  box-sizing: content-box;
+  transition: top 0.15s;
+  height: fit-content;
+  z-index: 1;
+  padding: 0 var(--g-header-padding-h);
+  transform: translateX(var(--g-header-padding-h));
+
+  /* critical:end */
+
+  @include breakpoint.media("≥m") {
+    /* critical:start */
+    display: none;
+    /* critical:end */
+  }
+
+  .nav-toggle__label {
+    /* critical:start */
+    @include bourbon.hide-visually;
+    /* critical:end */
+  }
+
+  .nav-toggle__icon {
+    /* critical:start */
+    position: relative;
+    cursor: pointer;
+    height: 36px;
+    width: 30px;
+    transform: scale(0.7);
+    transition: inherit;
+    color: var(--color-primary);
+
+    .kds-header--light & {
+      color: var(--color-white);
+    }
+
+    .overlay-open &,
+    .overlay-open .header-is-scrolling & {
+      color: var(--color-white);
+    }
+
+    .header-is-scrolling-up & {
+      color: var(--color-primary);
+    }
+
+    /* critical:end */
+
+    @include breakpoint.media("≥s") {
+      /* critical:start */
+      transform: scale(0.85);
+      /* critical:end */
+    }
+
+    &::before,
+    &::after {
+      /* critical:start */
+      content: "";
+      /* critical:end */
+    }
+
+    .nav-toggle__icon__middle,
+    &::before,
+    &::after {
+      /* critical:start */
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: currentColor;
+      /* critical:end */
+    }
+
+    .nav-toggle__icon__middle {
+      /* critical:start */
+      top: 50%;
+      margin-top: -1.5px;
+      /* critical:end */
+    }
+
+    &::before {
+      /* critical:start */
+      top: 6px;
+      /* critical:end */
+      transition: top math.div($duration, 2) $ease math.div($duration, 2), transform $ease math.div($duration, 2);
+    }
+
+    &::after {
+      /* critical:start */
+      bottom: 6px;
+      /* critical:end */
+      transition: bottom math.div($duration, 2) $ease math.div($duration, 2), transform $ease math.div($duration, 2);
+    }
+  }
+
+  &[aria-expanded="true"] {
+    .nav-toggle__icon {
+      &__middle {
+        display: none;
+      }
+
+      &::before {
+        top: 17px;
+        transition: top $ease math.div($duration, 2), transform math.div($duration, 2) $ease math.div($duration, 2);
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        bottom: 16px;
+        transition: bottom $ease math.div($duration, 2), transform math.div($duration, 2) $ease math.div($duration, 2);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

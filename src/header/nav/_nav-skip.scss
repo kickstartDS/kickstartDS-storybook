@@ -1,0 +1,29 @@
+.nav-skip {
+  /* critical:start */
+  height: 0;
+  /* critical:end */
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    /* critical:start */
+    position: absolute;
+    top: -999em;
+    right: 0;
+    left: 0;
+    /* critical:end */
+    z-index: 1;
+    padding: 0.5em 1em;
+    text-align: center;
+
+    &:focus {
+      top: 0;
+      z-index: 2960;
+      background-color: var(--color-white);
+    }
+  }
+}

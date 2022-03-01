@@ -12,8 +12,12 @@
 @use 'form-field/form-field.scss';
 @use 'glossary/glossary.scss';
 @use 'header/header.scss';
+@use "header/nav/nav-main";
+@use "header/nav/nav-skip";
+@use "header/nav/nav-toggle";
 @use 'headline/headline.scss';
 @use 'rich-text/rich-text.scss';
+@use 'logo/logo.scss';
 @use 'logo-tiles/logo-tiles.scss';
 @use 'post/post.scss';
 @use 'post-aside/post-aside.scss';
