@@ -7,7 +7,8 @@ import { TextField } from "@kickstartds/form/lib/text-field";
 
 import { Header } from "../header/HeaderComponent";
 import { SamplePost } from "../post/SamplePost";
-import { Default as PostStory } from "../post/Post.stories";
+import { Default as PostAsideStory } from "../post-aside/PostAside.stories";
+import { Default as PostHeadStory } from "../post-head/PostHead.stories";
 import { Cta } from "../cta/CtaComponent";
 import { Footer } from "../footer/FooterComponent";
 import FooterStories from "../footer/Footer.stories";
@@ -19,7 +20,10 @@ export default {
 const Page = () => (
   <>
     <Header />
-    <SamplePost {...unpack(PostStory.args)} />
+    <SamplePost
+      aside={unpack(PostAsideStory.args)}
+      head={unpack(PostHeadStory.args)}
+    />
     <Section
       width="narrow"
       mode="list"

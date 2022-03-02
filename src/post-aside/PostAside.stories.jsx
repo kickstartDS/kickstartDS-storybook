@@ -41,6 +41,7 @@ Default.args = pack({
     copy: "Co-Founder + UX Strategist with heart & soul",
   },
   meta: {
+    author: null,
     items: [
       {
         icon: "date",
@@ -53,8 +54,10 @@ Default.args = pack({
     ],
   },
   shareBar: {
-    headline: "Share this article",
-    headlineLevel: "h3",
+    headline: {
+      content: "Share this article",
+      level: "h3",
+    },
     links: [
       {
         icon: "twitter",

@@ -1,9 +1,10 @@
 import { unpack } from "@kickstartds/core/lib/storybook/helpers";
-import { PostTeaser } from "../post-teaser/PostTeaserComponent";
+
+import { Section } from "@kickstartds/base/lib/section";
+import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
+import { PostTeaser } from "@kickstartds/blog/lib/post-teaser";
+
 import { Default as PostTeaserStory } from "../post-teaser/PostTeaser.stories";
-
-import { Section, TeaserBox } from "@kickstartds/base";
-
 import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
 import FooterStories from "../footer/Footer.stories";
@@ -30,9 +31,26 @@ const Page = () => (
 
     <Section spaceBefore="default" width="narrow" mode="list" gutter="large">
       <PostTeaser {...unpack(PostTeaserStory.args)} />
+      <PostTeaser {...unpack(PostTeaserStory.args)}
+        meta={{
+          author: {
+            name: "Jonas Ulrich",
+            image: {
+              src: "img/author_images_julrich.png",
+            },
+          }
+        }}
+      />
       <PostTeaser {...unpack(PostTeaserStory.args)} />
-      <PostTeaser {...unpack(PostTeaserStory.args)} />
-      <PostTeaser {...unpack(PostTeaserStory.args)} />
+      <PostTeaser {...unpack(PostTeaserStory.args)}
+        meta={{
+          author: {
+            name: "Jonas Ulrich",
+            image: {
+              src: "img/author_images_julrich.png",
+            },
+          }
+        }} />
     </Section>
     <Section
       background="accent"

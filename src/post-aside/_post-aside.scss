@@ -2,11 +2,15 @@
 @use "./post-aside-tokens";
 
 .c-post-aside {
+  --tag-label-height: calc(
+    var(--line-height-xs) + calc(var(--spacing-xs) * 2) + var(--spacing-s)
+  );
+
   height: fit-content;
 
   @include breakpoint.media("<m") {
     &__author .c-contact__links,
-    & &__share-bar,
+    .c-post-share-bar,
     .c-headline,
     .c-divider {
       display: none;
@@ -89,25 +93,7 @@
     }
   }
 
-  &__meta {
-    .icon {
-      opacity: 0.5;
-    }
-  }
-
-  &__share-bar {
-    .c-headline {
-      --c-headline--margin-bottom: var(--spacing-s);
-      --c-headline--color: var(--color-grey-7);
-    }
-  }
-
-  &__share-link {
-    --g-link--background-hover: transparent;
-    --g-link--color: var(--color-primary-alpha-5);
-
-    &:first-of-type {
-      padding-left: 0;
-    }
+  .c-post-share-bar {
+    --c-post-share-bar_link--icon-size: 1.35em;
   }
 }

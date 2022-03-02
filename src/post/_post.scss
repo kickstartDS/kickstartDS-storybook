@@ -1,4 +1,3 @@
-@use "./post-tokens";
 @use "@kickstartds/core/source/core/breakpoint";
 
 .c-post {
@@ -8,19 +7,11 @@
     );
     width: 100%;
 
-    .c-share-bar {
+    .c-post-share-bar {
       padding-top: var(--spacing-s);
       @include breakpoint.media(">m") {
         display: none;
       }
-    }
-  }
-
-  &-head {
-    &__meta {
-      position: relative !important;
-      top: unset !important;
-      margin-bottom: var(--spacing-xs);
     }
   }
 
