@@ -1,3 +1,17 @@
+# v1.13.0 (Wed Mar 02 2022)
+
+#### 🚀 Enhancement
+
+- replace share-bar, meta & post teaser with kds components [#54](https://github.com/kickstartDS/kickstartDS-storybook/pull/54) ([@lmestel](https://github.com/lmestel) [@fleven-kds](https://github.com/fleven-kds) [@julrich](https://github.com/julrich))
+
+#### Authors: 3
+
+- [@fleven-kds](https://github.com/fleven-kds)
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.12.7 (Tue Mar 01 2022)
 
 #### ⚠️ Pushed to `master`
