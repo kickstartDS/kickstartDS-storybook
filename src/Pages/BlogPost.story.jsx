@@ -6,6 +6,7 @@ import { Contact } from "@kickstartds/content/lib/contact";
 import { TextField } from "@kickstartds/form/lib/text-field";
 
 import { Header } from "../header/HeaderComponent";
+import HeaderStories from "../header/Header.stories";
 import { SamplePost } from "../post/SamplePost";
 import { Default as PostStory } from "../post/Post.stories";
 import { Cta } from "../cta/CtaComponent";
@@ -18,7 +19,7 @@ export default {
 
 const Page = () => (
   <>
-    <Header />
+    <Header {...HeaderStories.args} />
     <SamplePost {...unpack(PostStory.args)} />
     <Section
       width="narrow"

@@ -69,7 +69,7 @@
     }
   }
 
-  .main-header-spacer {
+  .kds-header--spacer {
     + .c-visual--full,
     + .l-section .c-visual--full {
       @include breakpoint.media("≥s") {

@@ -4,7 +4,7 @@ export const Logo = () => (
   <Link className="kds-logo" href="/">
     <img
       className="kds-logo__img kds-logo__img--light"
-      src="/logo-dark.svg"
+      src="/logo-light.svg"
       alt="kdsore Logo"
       width={284}
       height={56}

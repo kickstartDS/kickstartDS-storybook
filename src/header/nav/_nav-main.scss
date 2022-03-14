@@ -18,7 +18,7 @@
   --c-nav-main_item--padding: var(--spacing-s) var(--g-header-spacing-h);
 
   @include breakpoint.media("≥m") {
-    --c-nav-main_item--font: var(--font-ui-xs);
+    --c-nav-main_item--font: var(--font-ui-s);
 
     --c-nav-main_item--color: var(--color-primary);
     --c-nav-main_item--color-active: var(--color-primary-lighter-3);
@@ -32,18 +32,8 @@
 
     .kds-header--light {
       --c-nav-main_item--color: var(--color-white);
+      --c-nav-main_item--color-hover: var(--color-secondary);
     }
-
-    // .header-is-scrolling.header-is-scrolling-up {
-    //   .kds-header {
-    //     --c-nav-main_item--color: var(--color-primary-lighter-4);
-    //     --c-nav-main_item--color-hover: var(--color-primary);
-    //     --c-nav-main_item--color-active: var(--color-primary);
-
-    //     --c-nav-main_item--border-color-active: var(--color-primary-lighter-6);
-    //     --c-nav-main_item--border-color-hover: var(--color-primary-lighter-8);
-    //   }
-    // }
   }
 }
 
@@ -122,7 +112,7 @@
     }
 
     > .kds-logo {
-      padding: var(--g-header-spacing);
+      margin: var(--g-header-spacing);
 
       &-dark {
         opacity: 1 !important;
@@ -133,9 +123,8 @@
     }
 
     ul.nav-main__list {
-      padding-top: var(--g-header-spacing-v);
+      padding-top: calc(var(--g-header-spacing-v) - var(--spacing-s));
       position: relative;
-      top: var(--g-header-height);
 
       .nav-main--contact-button {
         margin-left: var(--g-header-spacing-h);

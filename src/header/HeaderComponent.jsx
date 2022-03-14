@@ -10,7 +10,7 @@ export const Header = ({ light, nav, cta, activeNavId }) => (
       <div className={`kds-header ${light ? "kds-header--light" : ""}`}>
         <Logo />
         {nav && nav.enabled && (
-          <NavMain navEntries={nav.items} active={activeNavId} cta={cta} />
+          <NavMain light={light} navEntries={nav.items} active={activeNavId} cta={cta} />
         )}
       </div>
     </header>

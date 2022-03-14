@@ -16,18 +16,19 @@ import {
   LogoTiles,
   CountUp,
 } from "@kickstartds/content";
-import FooterStories from "../footer/Footer.stories";
 
 export default {
   title: "Landingpage",
 };
 
 import { Header } from "../header/HeaderComponent";
+import HeaderStories from "../header/Header.stories";
 import { Footer } from "../footer/FooterComponent";
+import FooterStories from "../footer/Footer.stories";
 
 const Page = () => (
   <>
-    <Header />
+    <Header {...HeaderStories.args} />
     <Section width="full" spaceBefore="none" spaceAfter="small">
       <Visual
         className="c-visual--deko"

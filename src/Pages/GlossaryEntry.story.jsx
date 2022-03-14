@@ -6,11 +6,12 @@ export default {
 };
 
 import { Header } from "../header/HeaderComponent";
+import HeaderStories from "../header/Header.stories";
 import { Footer } from "../footer/FooterComponent";
 
 const Page = () => (
   <>
-    <Header />
+    <Header {...HeaderStories.args} />
     <Glossary
       term="TypeScript"
       definition="In addition to using ES6 as a specific flavor, on top of JavaScript, as a technology, we're using TypeScript for it's additional type safety and resulting confidence when developing long lasting, well-rounded frontend solutions like a component library.

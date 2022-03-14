@@ -24,11 +24,12 @@ export default {
 };
 
 import { Header } from "../header/HeaderComponent";
+import HeaderStories from "../header/Header.stories";
 import { Footer } from "../footer/FooterComponent";
 
 const Page = () => (
   <>
-    <Header />
+    <Header {...HeaderStories.args} />
     <Section
       width="default"
       spaceBefore="default"

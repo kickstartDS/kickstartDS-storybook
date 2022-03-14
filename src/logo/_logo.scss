@@ -4,10 +4,8 @@
 .kds-logo {
   --g-link--background-hover: none;
   position: relative;
-  z-index: 2;
 
   &__img {
-    transform: translateY(10%);
     position: relative;
     display: block;
     height: var(--g-logo-height);
@@ -18,42 +16,16 @@
       padding: 0;
     }
 
-    @include breakpoint.media("≥m") {
-      .header-is-scrolling-up & {
-        height: calc(var(--g-logo-height) - var(--spacing-s));
-      }
-    }
-
     &--dark {
       position: absolute;
       top: 0;
-
-      .overlay-open & {
-        opacity: 1 !important;
-      }
-
-      .kds-header--light & {
-        opacity: 0;
-
-        .header-is-scrolling-up & {
-          opacity: 1;
-        }
-      }
     }
 
     &--light {
       opacity: 0;
 
-      .overlay-open & {
-        opacity: 0 !important;
-      }
-
       .kds-header--light & {
         opacity: 1;
-
-        .header-is-scrolling-up & {
-          opacity: 0;
-        }
       }
     }
   }
