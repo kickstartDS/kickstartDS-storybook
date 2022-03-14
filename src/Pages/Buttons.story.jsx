@@ -13,22 +13,22 @@ const Page = () => (
       width="narrow"
     >
       <button class="c-button c-button--large c-button--outline">
-        <div class="c-button__content">
+        <span class="c-button__content">
           <span>Button Large</span>
-        </div>
-        <div class="c-button__border"></div>
+        </span>
+        <span class="c-button__border"></span>
       </button>
       <button class="c-button c-button--outline">
-        <div class="c-button__content">
+        <span class="c-button__content">
           <span>Button Medium</span>
-        </div>
-        <div class="c-button__border"></div>
+        </span>
+        <span class="c-button__border"></span>
       </button>
       <button class="c-button c-button--small c-button--outline">
-        <div class="c-button__content">
+        <span class="c-button__content">
           <span>Button Small</span>
-        </div>
-        <div class="c-button__border"></div>
+        </span>
+        <span class="c-button__border"></span>
       </button>
     </Section >
     <Section
@@ -36,22 +36,22 @@ const Page = () => (
       background="dark"
     >
       <button class="c-button c-button--large c-button--outline-inverted">
-        <div class="c-button__content">
+        <span class="c-button__content">
           <span>Button Large</span>
-        </div>
-        <div class="c-button__border"></div>
+        </span>
+        <span class="c-button__border"></span>
       </button>
       <button class="c-button c-button--outline-inverted">
-        <div class="c-button__content">
+        <span class="c-button__content">
           <span>Button Medium</span>
-        </div>
-        <div class="c-button__border"></div>
+        </span>
+        <span class="c-button__border"></span>
       </button>
       <button class="c-button c-button--small c-button--outline-inverted">
-        <div class="c-button__content">
+        <span class="c-button__content">
           <span>Button Small</span>
-        </div>
-        <div class="c-button__border"></div>
+        </span>
+        <span class="c-button__border"></span>
       </button>
     </Section >
     <Section
