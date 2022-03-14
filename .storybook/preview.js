@@ -11,6 +11,8 @@ import { HeadlineProvider } from "../src/headline/HeadlineComponent";
 import { SectionProvider } from "../src/section/SectionComponent";
 import { IconSprite } from "../src/icon-sprite/IconSpriteComponent";
 import { CountUpProvider } from "../src/count-up/CountUpComponent";
+import { ButtonProvider } from "../src/button/ButtonComponent";
+import { LinkButtonProvider } from "../src/link-button/LinkButtonComponent";
 
 import { LightBox } from "@kickstartds/base/lib/lightbox";
 
@@ -29,11 +31,15 @@ window.rm.radio.on("*", myActions.radio);
 
 const providerDecorator = (Story, context) => (
   <HeadlineProvider>
-    <SectionProvider>
-      <CountUpProvider>
-        <Story {...context} />
-      </CountUpProvider>
-    </SectionProvider>
+    <ButtonProvider>
+      <LinkButtonProvider>
+        <SectionProvider>
+          <CountUpProvider>
+            <Story {...context} />
+          </CountUpProvider>
+        </SectionProvider>
+      </LinkButtonProvider>
+    </ButtonProvider>
   </HeadlineProvider>
 );
 
