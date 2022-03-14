@@ -9,7 +9,7 @@ import {
 import classnames from "classnames";
 import { Icon } from "@kickstartds/base/lib/icon";
 import { ButtonProps } from "./ButtonProps";
-import { ButtonContext} from "@kickstartds/base/lib/button";
+import { ButtonContext } from "@kickstartds/base/lib/button";
 
 const ButtonComponent: ForwardRefRenderFunction<
   HTMLButtonElement,

@@ -1,18 +1,18 @@
 .c-button {
   --c-button--border-radius: 0;
   --c-button--font-weight: var(--font-weight-semi-bold);
-  --c-button--padding: 0.4rem 1.5rem;
+  --c-button--padding: 0.4rem 1rem;
   --c-button-icon--margin: 0;
 }
 
 .c-button--small {
   --c-button--font: var(--font-ui-xs);
-  --c-button--padding: 0.3rem 0.75rem;
+  --c-button--padding: 0.3rem 0.6rem;
 }
 
 .c-button--large {
   --c-button--font: var(--font-ui-l);
-  --c-button--padding: 0.5rem 1.75rem;
+  --c-button--padding: 0.5rem 1.25rem;
 }
 
 .c-button--solid {
