@@ -2,9 +2,9 @@ export const IconSprite = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    hidden=""
-    height="0"
-    width="0"
+    hidden
+    height={0}
+    width={0}
   >
     <symbol id="icon-arrow-down" viewBox="0 0 24 24">
       <title>icon-arrow-down</title>
