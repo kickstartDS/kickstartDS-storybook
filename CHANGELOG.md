@@ -1,3 +1,16 @@
+# v1.13.2 (Tue Mar 15 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add sanity page ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.13.1 (Tue Mar 15 2022)
 
 #### ⚠️ Pushed to `master`
