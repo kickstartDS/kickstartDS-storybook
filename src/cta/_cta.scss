@@ -17,19 +17,6 @@
     0 calc(100% - var(--spacing-m))
   );
 
-  &:hover {
-    clip-path: polygon(
-      /* Corner Top Left */ 0% 0%,
-      0% 0%,
-      /* Corner Top Right */ calc(100% - var(--spacing-l)) 0,
-      100% var(--spacing-l),
-      /* Corner Bottom Right */ 100% calc(100% - var(--spacing-xl)),
-      calc(100% - var(--spacing-xl)) 100%,
-      /* Corner Bottom Left */ var(--spacing-l) 100%,
-      0 calc(100% - var(--spacing-l))
-    );
-  }
-
   .template__side & {
     flex-direction: column;
 

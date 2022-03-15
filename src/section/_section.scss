@@ -25,6 +25,10 @@
   --color-success: #008300;
   --color-warning: #b85b00;
   --color-error: #cc0000;
+
+  .c-content-box {
+    --c-content-box_topic--color: var(--l-section-dark-color);
+  }
 }
 
 .l-section {
@@ -424,6 +428,26 @@
 
       @include breakpoint.media(">m") {
         --l-section_container--gutter: var(--spacing-m);
+      }
+    }
+  }
+
+  &.progress {
+    .l-section__container {
+      --l-section_container--gutter: var(--spacing-xl);
+
+      @include breakpoint.media(">s") {
+      }
+      
+      @media (min-width: 712px) {
+        --l-section_col--min-width: 18rem;
+        --l-section_col--max-width: 27.5rem;
+      }
+      
+      @media (min-width: 900px) {
+        --l-section_container--gutter: var(--spacing-xs);
+        --l-section_col--min-width: 9rem;
+        --l-section_col--max-width: 1fr;
       }
     }
   }

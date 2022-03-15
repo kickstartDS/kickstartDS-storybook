@@ -13,7 +13,7 @@
   --color-primary-alpha-7: rgba(6, 86, 106, 0.7);
   --color-primary-alpha-8: rgba(6, 86, 106, 0.8);
   --color-primary-alpha-9: rgba(6, 86, 106, 0.9);
-  --color-primary-lighter-1: #06708a;
+  --color-primary-lighter-1: #056a83;
   --color-primary-lighter-2: #116c81;
   --color-primary-lighter-3: #2c7c8f;
   --color-primary-lighter-4: #74b2c1;
@@ -385,14 +385,6 @@
   --c-content-box_topic--font-s: var(--font-copy-s);
   --c-content-box_topic--font-m: var(--font-copy-m);
   --c-content-box_topic--margin: 0 0 var(--spacing-xs) 0;
-}
-
-.l-section--dark {
-  --c-content-box_topic--color: var(--l-section-dark-color);
-}
-
-.l-section--dark .c-content-box {
-  --c-content-box_topic--color: var(--l-section-dark-color);
 }
 
 .c-content-box {
@@ -1061,9 +1053,6 @@
   gap: var(--spacing-s);
   clip-path: polygon(0% var(--spacing-m), var(--spacing-m) 0%, 100% 0, 100% 0, 100% calc(100% - var(--spacing-xxl)), calc(100% - var(--l-section--space)) 100%, var(--spacing-m) 100%, 0 calc(100% - var(--spacing-m)));
 }
-.cta:hover {
-  clip-path: polygon(0% 0%, 0% 0%, calc(100% - var(--spacing-l)) 0, 100% var(--spacing-l), 100% calc(100% - var(--spacing-xl)), calc(100% - var(--spacing-xl)) 100%, var(--spacing-l) 100%, 0 calc(100% - var(--spacing-l)));
-}
 .template__side .cta {
   flex-direction: column;
 }
@@ -1339,6 +1328,13 @@
   .c-headline {
     max-width: 90%;
   }
+}
+.c-headline h1 + .c-headline__subheadline,
+.c-headline .c-headline__h1 + .c-headline__subheadline {
+  --c-headline_subheadline--font: var(--font-display-l);
+}
+.c-headline h1.c-headline__h2 + .c-headline__subheadline {
+  --c-headline_subheadline--font: var(--font-display-m);
 }
 
 :root {
@@ -1683,6 +1679,10 @@
   --color-warning: #b85b00;
   --color-error: #cc0000;
 }
+.l-section--dark .c-content-box,
+.l-section--dark-accent .c-content-box {
+  --c-content-box_topic--color: var(--l-section-dark-color);
+}
 
 .l-section {
   margin: auto;
@@ -1995,6 +1995,22 @@
     --l-section_container--gutter: var(--spacing-m);
   }
 }
+.l-section.progress .l-section__container {
+  --l-section_container--gutter: var(--spacing-xl);
+}
+@media (min-width: 712px) {
+  .l-section.progress .l-section__container {
+    --l-section_col--min-width: 18rem;
+    --l-section_col--max-width: 27.5rem;
+  }
+}
+@media (min-width: 900px) {
+  .l-section.progress .l-section__container {
+    --l-section_container--gutter: var(--spacing-xs);
+    --l-section_col--min-width: 9rem;
+    --l-section_col--max-width: 1fr;
+  }
+}
 
 .main-header-spacer + .l-section-style--head,
 .main-header-spacer + .l-section-style--body {
@@ -2043,6 +2059,10 @@
   margin-top: var(--c-slider-nav--margin);
 }
 
+.c-storytelling {
+  --c-storytelling--horizontal-padding: 0;
+}
+
 .c-storytelling[data-bg] .c-headline > :first-child,
 .c-storytelling[data-bg] .c-rich-text {
   color: var(--l-section-dark-color);
@@ -2072,6 +2092,10 @@
 }
 .tag-label-container > * {
   padding: 0 !important;
+}
+
+.text-media--highlight .c-rich-text {
+  font: var(--font-ui-l);
 }
 
 .c-teaser {

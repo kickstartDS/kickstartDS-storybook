@@ -35,7 +35,6 @@ const Page = () => (
       spaceAfter="default"
       background="accent"
       variant="head"
-      // pattern="1"
       headline={{
         content: "Backend integration with kickstartDS",
         level: "h2",
@@ -62,7 +61,6 @@ const Page = () => (
       spaceBefore="default"
       gutter="none"
       variant="body"
-      spaceBefore="none"
     >
       <Storytelling
         box={{
@@ -150,7 +148,6 @@ const Page = () => (
       gutter="none"
       background="dark-accent"
       variant="body"
-      spaceBefore="none"
     >
       <Storytelling
         box={{
@@ -239,7 +236,6 @@ const Page = () => (
       width="wide"
       spaceBefore="default"
       variant="body"
-      spaceBefore="none"
       gutter="none"
     >
       <Storytelling
@@ -354,7 +350,6 @@ const Page = () => (
       spaceAfter="defaultz"
       background="dark"
       variant="head"
-      // pattern="3"
       headline={{
         content: "Derivatives with kickstartDS",
         level: "h2",
@@ -380,7 +375,6 @@ const Page = () => (
       width="wide"
       spaceBefore="default"
       variant="body"
-      spaceBefore="none"
       gutter="none"
       background="dark-accent"
     >

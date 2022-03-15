@@ -1,3 +1,5 @@
+@use './storytelling-tokens';
+
 .c-storytelling {
   &[data-bg] {
     .c-headline > :first-child,

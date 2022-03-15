@@ -31,6 +31,7 @@ export default {
 
 export { Landingpage } from "./Landingpage.story";
 export { Integrations } from "./Integrations.story";
+export { Sanity } from "./Sanity.story";
 export { BlogPost } from "./BlogPost.story";
 export { BlogList } from "./BlogList.story";
 export { GlossaryEntry } from "./GlossaryEntry.story";

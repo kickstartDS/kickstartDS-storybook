@@ -1,4 +1,4 @@
-@use './headline-tokens';
+@use "./headline-tokens";
 
 .c-headline {
   @media (min-width: 40em) {
@@ -7,5 +7,14 @@
   @media (min-width: 80em) {
     max-width: 90%;
   }
-}
 
+  h1 + .c-headline__subheadline,
+  .c-headline__h1 + .c-headline__subheadline {
+    --c-headline_subheadline--font: var(--font-display-l);
+
+  }
+
+  h1.c-headline__h2 + .c-headline__subheadline {
+    --c-headline_subheadline--font: var(--font-display-m);
+  }
+}

@@ -189,7 +189,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       />
     </Section>
     <Section
-      gutter="default"
+      gutter="large"
       headline={{
         align: "center",
         content: "Frontend first approach",
@@ -202,7 +202,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       spaceAfter="default"
       spaceBefore="default"
       width="default"
-      gutter="large"
       background="dark"
       pattern="1"
     >
@@ -358,7 +357,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       spaceAfter="default"
       spaceBefore="default"
       width="narrow"
-      gutter="large"
     >
       <Quote
         byline="CEO"
