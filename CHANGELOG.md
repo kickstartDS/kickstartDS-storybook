@@ -1,3 +1,15 @@
+# v1.13.1 (Tue Mar 15 2022)
+
+#### ⚠️ Pushed to `master`
+
+- fix: remove icon sprite spacing ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.13.0 (Wed Mar 02 2022)
 
 #### 🚀 Enhancement
