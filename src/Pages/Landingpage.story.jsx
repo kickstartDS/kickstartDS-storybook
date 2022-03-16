@@ -15,6 +15,7 @@ import {
   QuotesSlider,
   LogoTiles,
   CountUp,
+  Storytelling,
 } from "@kickstartds/content";
 import FooterStories from "../footer/Footer.stories";
 
@@ -224,6 +225,75 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         image="img/design-system_A11Y_accessibility.svg"
         topic="Accessible by default"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
+      />
+    </Section>
+    <Section
+      mode="list"
+      width="max"
+      spaceBefore="default"
+      gutter="large"
+      headline={{
+        content: "Easy peasy lemon squeezy",
+        subheadline: "5 reasons why you should start with kickstartDS today!",
+        align: "center",
+        level: "h2",
+        styleAs: "h1",
+      }}
+    >
+      <Storytelling
+        full
+        box={{
+          link: {
+            label: "read more",
+          },
+          headline: {
+            content: "Lorem Ipsum dolor",
+          },
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
+        }}
+        image={{
+          source: "img/landingpage/design-system-great_components.jpeg",
+          order: {
+            desktopImageLast: false,
+          },
+        }}
+      />
+      <Storytelling
+        full
+        // backgroundColor="#eceff3"
+        box={{
+          link: {
+            label: "read more",
+          },
+          headline: {
+            content: "Lorem Ipsum dolor",
+          },
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
+        }}
+        image={{
+          source: "img/landingpage/storybook.png",
+          order: {
+            desktopImageLast: true,
+          },
+        }}
+      />
+      <Storytelling
+        full
+        box={{
+          link: {
+            label: "read more",
+          },
+          headline: {
+            content: "Lorem Ipsum dolor",
+          },
+          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
+        }}
+        image={{
+          source: "img/landingpage/backend.png",
+          order: {
+            desktopImageLast: false,
+          },
+        }}
       />
     </Section>
     <Section

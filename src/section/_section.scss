@@ -436,18 +436,23 @@
     .l-section__container {
       --l-section_container--gutter: var(--spacing-xl);
 
-      @include breakpoint.media(">s") {
-      }
-      
       @media (min-width: 712px) {
         --l-section_col--min-width: 18rem;
         --l-section_col--max-width: 27.5rem;
       }
-      
+
       @media (min-width: 900px) {
-        --l-section_container--gutter: var(--spacing-xs);
+        --l-section_container--gutter: var(--spacing-s);
         --l-section_col--min-width: 9rem;
         --l-section_col--max-width: 1fr;
+      }
+
+      @include breakpoint.media(">m") {
+        --l-section_container--gutter: var(--spacing-m);
+      }
+
+      @include breakpoint.media(">l") {
+        --l-section_container--gutter: var(--spacing-l);
       }
     }
   }
