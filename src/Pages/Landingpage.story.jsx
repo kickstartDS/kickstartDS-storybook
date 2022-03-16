@@ -18,6 +18,9 @@ import {
 } from "@kickstartds/content";
 import FooterStories from "../footer/Footer.stories";
 
+import traverse from "traverse";
+import yaml from "js-yaml";
+
 export default {
   title: "Landingpage",
 };
@@ -393,6 +396,86 @@ After working in a large tech corporation for a long time I very well know today
     <Footer {...FooterStories.args} />
   </>
 );
+
+/**
+ * TODO:
+ * - `Header` has `nav` props?
+ * - maybe `Footer` has something, too?
+ */
+
+const pageInstance = Page();
+const kebabize = (str) => str.replace(/[A-Z]+(?![a-z])|[A-Z]/g, ($, ofs) => (ofs ? "-" : "") + $.toLowerCase())
+const extractJson = (pageComponent) => {
+  const pageJson = {};
+
+  traverse(pageComponent.props).forEach(function (x) {
+    if (this.level === 0) { /* do nothing for now */ }
+
+    if (this.level === 1) {
+      console.log('level 1', x);
+      pageJson.sections = [];
+    }
+
+    if (this.level === 2) {
+      console.log('level 2', x);
+      if (typeof x.type === 'function') {
+        if (x.type.name === 'Header') {
+          pageJson.header = {
+            type: 'header',
+          }
+        }
+        if (x.type.name === 'Footer') {
+          pageJson.footer = {
+            type: 'footer',
+          }
+        }
+      } else {
+        if (x?.type?.name === 'm') {
+          const { children, headline, ...section } = x.props;
+          section.type = 'section';
+          section.content = [];
+
+          section.headline = {
+            type: 'headline',
+            content: '',
+            level: 'h2',
+            align: 'left',
+            ...headline
+          }
+          
+          pageJson.sections.push(section);
+        }
+      }
+    }
+
+    if (this.level === 3) { /* do nothing for now */ }
+
+    if (this.level === 4) {
+      if (Array.isArray(x)) {
+        x.forEach((component) => {
+          if (component?.type?.displayName) {
+            pageJson.sections[this.path[1] - 1].content.push({
+              type: kebabize(component.type.displayName),
+              ...component.props,
+            });
+          }
+        });
+      }
+
+      if (x?.type?.displayName) {
+        pageJson.sections[this.path[1] - 1].content.push({
+          type: kebabize(x.type.displayName),
+          ...x.props,
+        });
+      }
+    }
+  });
+
+  console.log('extractJson', pageJson);
+  console.log('extractJson', yaml.dump(pageJson));
+};
+
+setTimeout(() => extractJson(pageInstance), 1);
 
 const Template = (args) => <Page {...args} />;
 export const Landingpage = Template.bind({});

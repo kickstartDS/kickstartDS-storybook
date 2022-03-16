@@ -19,6 +19,9 @@ import {
 } from "@kickstartds/content";
 import FooterStories from "../footer/Footer.stories";
 
+import traverse from "traverse";
+import yaml from "js-yaml";
+
 export default {
   title: "Integrations",
 };
@@ -323,28 +326,24 @@ const Page = () => (
       spaceAfter="none"
       align="center"
     >
-      <ContentBox image="/logos/logo_storybook.svg" />
+      <ContentBox topic="TODO missing image" />
     </Section>
 
     <Section background="accent" spaceBefore="small" width="wide">
       <ContentBox
-        image="/img/integration/storybook/storybook_controls.svg"
-        topic="Controls"
+        topic="TODO missing image: Controls"
         text="kickstart DS is the foundation for your design system with reusable components and tools."
       />
       <ContentBox
-        image="/img/integration/storybook/storybook_tokens.svg"
-        topic="Tokens"
+        topic="TODO missing image: Tokens"
         text="kickstart DS is the foundation for your design system with reusable components and tools."
       />
       <ContentBox
-        image="/img/integration/storybook/storybook_composition.svg"
-        topic="Composition"
+        topic="TODO missing image: Composition"
         text="kickstart DS is the foundation for your design system with reusable components and tools."
       />
       <ContentBox
-        image="/img/integration/storybook/storybook_json-schema.svg"
-        topic="Json Schema"
+        topic="TODO missing image: JSON Schema"
         text="kickstart DS is the foundation for your design system with reusable components and tools."
       />
     </Section>
