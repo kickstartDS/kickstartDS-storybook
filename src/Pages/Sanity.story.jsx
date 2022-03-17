@@ -36,19 +36,22 @@ const Page = () => (
       spaceBefore="default"
       spaceAfter="default"
       gutter="none"
+      pattern="graphics"
     >
       <Storytelling
         full
+        // backgroundImage="img/sanity/sanity_hero-bg.png"
         box={{
-          link: {
-            label: "read more",
-          },
           headline: {
             content: "Lorem Ipsum dolor",
             level: "h1",
-            styleAs: "h2",
+            styleAs: "h1",
             subheadline: "kickstart DS is the foundation for your design system with reusable components and tools",
           },
+          link: {
+            label: "lorem ipsum",
+          },
+          // text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut."
         }}
         image={{
           source: "img/integration/backend/sanity.png",
@@ -58,29 +61,40 @@ const Page = () => (
         }}
       />
     </Section>
+
     <Section
-      mode="list"
       width="narrow"
+      align="center"
+      spaceBefore="none"
+      headline={{
+        content: "Backend integration with kickstartDS",
+        // subheadline: "Lorem ipsum dolor sit amet, consetetur sadipscing",
+        level: "h2",
+        styleAs: "h1",
+        align: "center",
+      }}
+    >
+      <TextMedia
+        className="text-media--highlight"
+        text={`
+Component properties encode decisions, **rooted in reality**, pre-solving everyday problems for you Component properties encode decisions,.
+
+Directly engage with components through **Storybooks** rich interface.
+      `}
+      />
+    </Section>
+
+
+    <Section
+      width="wide"
       spaceBefore="default"
-      gutter="none"
+      background="dark"
+      gutter="large"
       headline={{
         content: "Why kickstartDS works so well with sanity",
         align: "center",
       }}
-      background="dark"
       variant="head"
-    >
-      <TextMedia
-        className="text-media--highlight"
-        text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-              sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut."
-      />
-    </Section>
-    <Section
-      background="dark-accent"
-      variant="body"
-      gutter="large"
-      width="default"
     >
       <ContentBox
         image="img/design-system_framework_agnostic.svg"
@@ -121,7 +135,8 @@ const Page = () => (
       }}
       width="max"
       gutter="large"
-      background="dark"
+      background="dark-accent"
+      variant="body"
       className="progress"
     >
       <ContentBox
@@ -145,11 +160,10 @@ const Page = () => (
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support."
       />
     </Section>
+
     <Section
       gutter="default"
       mode="list"
-      variant="head"
-      className="l-section--outer-width-wide"
       headline={{
         align: "center",
         content: "What our customers say",
@@ -157,18 +171,10 @@ const Page = () => (
         pageHeader: false,
         spaceAfter: "none",
       }}
-      spaceAfter="none"
-      width="narrow"
-    >
-    </Section>
-    <Section
-      gutter="default"
-      mode="list"
-      variant="head"
-      spaceBefore="small"
-      spaceAfter="small"
-      width="narrow"
       pattern="3"
+      spaceAfter="none"
+      variant="head"
+      width="narrow"
     >
       <Quote
         byline="CEO"

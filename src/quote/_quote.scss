@@ -1,6 +1,22 @@
-@use './quote-tokens';
+@use "@kickstartds/core/source/core/breakpoint";
+@use "./quote-tokens";
 
 .c-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-s);
+  
+  @include breakpoint.media(">s") {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  &__image-wrap {
+    margin: unset;
+  }
+
   &__text {
     margin-bottom: var(--c-quote__text--margin);
   }

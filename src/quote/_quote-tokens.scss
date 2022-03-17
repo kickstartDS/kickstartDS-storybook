@@ -2,6 +2,7 @@
   --c-quote--align: top;
   --c-quote__text--margin: var(--spacing-s);
   --c-quote_source--font: var(--font-ui-s);
+  --c-quote_image--max-width: 30%;
 
   .l-section--dark & {
     --c-quote_source--font: var(--font-ui-s);
