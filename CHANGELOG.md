@@ -1,3 +1,15 @@
+# v1.13.4 (Thu Mar 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- develop sanity page ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.13.3 (Wed Mar 16 2022)
 
 #### ⚠️ Pushed to `master`
