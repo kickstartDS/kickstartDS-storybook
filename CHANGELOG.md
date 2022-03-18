@@ -1,3 +1,15 @@
+# v1.13.9 (Fri Mar 18 2022)
+
+#### ⚠️ Pushed to `master`
+
+- fix: restrict glob to single folder ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.13.8 (Fri Mar 18 2022)
 
 #### ⚠️ Pushed to `master`
