@@ -1,3 +1,15 @@
+# v1.13.7 (Fri Mar 18 2022)
+
+#### ⚠️ Pushed to `master`
+
+- fix: wrap $ref in button in allOf ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.13.6 (Fri Mar 18 2022)
 
 #### ⚠️ Pushed to `master`
