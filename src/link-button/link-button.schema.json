@@ -2,5 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://kickstartds.com/link-button.schema.json",
   "title": "Link Button",
-  "$ref": "http://frontend.ruhmesmeile.com/base/atoms/link-button.schema.json"
+  "allOf": [{
+    "$ref": "http://frontend.ruhmesmeile.com/base/atoms/link-button.schema.json"
+  }]
 }
