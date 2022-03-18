@@ -21,7 +21,7 @@ const sharedConfig = {
 };
 
 (async () => {
-  const entryPoints = await fg("src/**/*Component.(jsx|tsx)");
+  const entryPoints = await fg("src/*/*Component.(jsx|tsx)");
 
   await fs.writeJSON(
     "dist/exports.json",
