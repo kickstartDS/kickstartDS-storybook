@@ -31,7 +31,7 @@ export const NavMain = ({ active, navEntries = [], cta, light }) => (
               icon: "contact",
             }}
             {...cta}
-            variant={light?"solid-inverted":cta.variant}
+            variant={light?"outline-inverted":"outline"}
           />
         )}
       </ul>
