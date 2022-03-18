@@ -1,3 +1,20 @@
+# v1.13.5 (Fri Mar 18 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'feature/button-overhaul' ([@fleven-kds](https://github.com/fleven-kds))
+- feat: bugfixing ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add individual button & link-button components ([@lmestel](https://github.com/lmestel))
+- feat: adjust button template ([@fleven-kds](https://github.com/fleven-kds))
+- feat: button overhaul ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 2
+
+- [@fleven-kds](https://github.com/fleven-kds)
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.13.4 (Thu Mar 17 2022)
 
 #### ⚠️ Pushed to `master`
