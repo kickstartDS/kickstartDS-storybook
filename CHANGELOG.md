@@ -1,3 +1,18 @@
+# v1.13.6 (Fri Mar 18 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'feature/main-nav' ([@fleven-kds](https://github.com/fleven-kds))
+- feat: change button in nav template ([@fleven-kds](https://github.com/fleven-kds))
+- feat: nav adjustments ([@fleven-kds](https://github.com/fleven-kds))
+- feat: create nav-main ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.13.5 (Fri Mar 18 2022)
 
 #### ⚠️ Pushed to `master`
