@@ -1,106 +1,283 @@
-@use './button-tokens';
+@use "@kickstartds/core/source/core/breakpoint";
+@use "./button-tokens";
 
 :root {
-  --c-button-clip-path: polygon(
-    0 0.3em,
-    0.3em 0,
-    calc(100% - 0.4em) 0,
-    100% calc(100% - 0.3em),
-    calc(100% - 0.3em) 100%,
-    0.4em 100%
+  --c-button-transition: 250ms all cubic-bezier(0.17, 0.88, 0.27, 1.225);
+  --corner-height: 9px;
+  --clip-path: polygon(
+    0% var(--corner-height),
+    var(--corner-height) 0,
+    100% 0,
+    100% calc(100% - calc(var(--corner-height) * 2)),
+    calc(100% - var(--corner-height) * 2) 100%,
+    0 100%
   );
 
-  --c-button-clip-path-hover: polygon(
-    0.2em calc(100% - 0.3em),
-    0.5em 0,
-    calc(100% - 0.7em) 0,
-    calc(100% - 0.4em) 0.3em,
-    calc(100% - 0.7em) 100%,
-    0.5em 100%
-  );
-
-  --c-button-transition: 200ms all cubic-bezier(0.17, 0.88, 0.27, 1.225);
-}
-
-.c-button.c-button--small {
-  --c-button--padding: var(--spacing-xs) var(--spacing-s);
-}
-
-.c-button.c-button--outline,
-.c-button.c-button--outline-inverted {
-  --c-button--border-width: 2px;
-}
-
-.c-button--main.c-button {
-  background: none !important;
-  clip-path: none !important;
-  position: relative;
-  z-index: 1;
-  filter: drop-shadow(0.3em 0.3em 0px var(--color-secondary));
-
-  &.c-button--solid-inverted {
-    filter: drop-shadow(0.3em 0.3em 0px var(--color-black-alpha-5));
-  }
-  &::after {
-    transition: var(--c-button-transition);
-    content: "";
-    z-index: -1;
-    background-color: var(--c-button--background-color);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(
-      0em 20%,
-      1em 0,
-      calc(100% - 0.3em) 0,
-      100% 80%,
-      calc(100% - 0.6em) 100%,
-      0.4em 100%
+  .c-button.c-button--small {
+    --corner-height: 5px;
+    --clip-path: polygon(
+      0% var(--corner-height),
+      var(--corner-height) 0,
+      100% 0,
+      100% calc(100% - calc(var(--corner-height) * 2)),
+      calc(100% - var(--corner-height) * 2) 100%,
+      0 100%
     );
-  }
-
-  &:hover {
-    &::after {
-      clip-path: polygon(
-        0em 40%,
-        0.3em 0,
-        calc(100% - 0.9em) 0,
-        100% 35%,
-        calc(100% - 0.4em) 100%,
-        0.9em 100%
-      );
-      background-color: var(--c-button--background-color-hover);
-    }
   }
 }
 
 .c-button {
-  &--solid,
-  &--solid-inverted,
-  &--clear {
-    transition: var(--c-button-transition);
+  height: fit-content;
+  // width: fit-content;
 
-    clip-path: var(--c-button-clip-path);
+  span,
+  .icon {
+    // white-space: nowrap;
+    z-index: 2;
+  }
+
+  &.c-button--large {
+    &:hover {
+      &::after {
+        opacity: 1;
+        left: 6px;
+        bottom: -6px;
+      }
+    }
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+      left: 5px;
+      bottom: -5px;
+    }
+  }
+
+  &.c-button--small {
+    &:hover {
+      &::after {
+        opacity: 1;
+        left: 4px;
+        bottom: -4px;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    transition: var(--c-button-transition);
+    opacity: 0;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-button--shadow-color);
+    clip-path: var(--clip-path);
+  }
+}
+
+.c-button--solid,
+.c-button--solid-inverted,
+.c-button--clear {
+  position: relative;
+  transition: var(--c-button-transition);
+  background: none !important;
+
+  &::after {
+    clip-path: var(--clip-path);
+    left: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: var(--c-button--background-color);
+    width: 100%;
+    height: 100%;
+    clip-path: var(--clip-path);
+    z-index: 1;
+  }
+
+  &:hover {
+    &::before {
+      background: var(--c-button--background-color-hover);
+    }
+  }
+}
+
+.c-button--outline,
+.c-button--outline-inverted {
+  --border: 2px;
+  --border-corner-height: 40%;
+
+  position: relative;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none !important;
+
+  .c-button__content {
+    padding: var(--c-button--padding);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: var(--c-button--border-color);
+      width: var(--border);
+      z-index: 1;
+    }
+
+    &::before {
+      height: 85%;
+      left: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      height: 70%;
+      right: 1px;
+      top: 0;
+    }
+  }
+
+  .c-button__border {
+    border-bottom-width: 0;
+    border-top-width: 0;
+    mask-image: linear-gradient(17deg, #000, #000 100%, transparent 0, transparent 0);
+    right: calc(var(--border) / 2) !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      position: absolute;
+      width: calc(100% - var(--border));
+      content: "";
+    }
+
+    &::before {
+      border: var(--border) solid var(--c-button--border-color);
+      border-width: var(--border) 0 0 calc(var(--border) * 1.5);
+      top: 0;
+      height: calc(var(--border-corner-height) / 2);
+      left: -3px;
+
+      transform: skew(-45deg);
+      transform-origin: right bottom;
+    }
+
+    &::after {
+      border: var(--border) solid var(--c-button--border-color);
+      border-width: 0 calc(var(--border) * 1.5) var(--border) 0;
+      bottom: 0;
+      height: var(--border-corner-height);
+      left: -11px;
+
+      @include breakpoint.media(">s") {
+        left: -12px;
+      }
+
+      transform: skew(-45deg);
+      transform-origin: right bottom;
+    }
+  }
+
+  &.c-button--small {
+    .c-button__border {
+      &::before {
+        left: -2px;
+      }
+
+      &::after {
+        left: -7px;
+
+        @include breakpoint.media(">s") {
+          left: -8px;
+        }
+      }
+    }
+  }
+
+  &.c-button--large {
+    .c-button__border {
+      &::after {
+        left: -13px;
+
+        @include breakpoint.media(">s") {
+          left: -16px;
+        }
+      }
+    }
+  }
+}
+
+.c-button--main {
+  span {
+    white-space: unset;
+  }
+  &:hover {
+    --corner-height: 16px;
+    --clip-path: polygon(
+      0% var(--corner-height),
+      var(--corner-height) 0,
+      100% 0,
+      100% calc(100% - calc(var(--corner-height) * 2)),
+      calc(100% - var(--corner-height) * 2) 100%,
+      0 100%
+    );
+  }
+
+  &::before {
+    transition: var(--c-button-transition);
+  }
+
+  &::after {
+    opacity: 1;
+    left: 10px;
+    bottom: -10px;
+  }
+
+  &.c-button--large {
+    &::after {
+      left: 12px;
+      bottom: -12px;
+    }
+  }
+
+  &.c-button--small {
+    &::after {
+      left: 8px;
+      bottom: -8px;
+    }
 
     &:hover {
-      clip-path: var(--c-button-clip-path-hover);
+      --corner-height: 9px;
+      --clip-path: polygon(
+        0% var(--corner-height),
+        var(--corner-height) 0,
+        100% 0,
+        100% calc(100% - calc(var(--corner-height) * 2)),
+        calc(100% - var(--corner-height) * 2) 100%,
+        0 100%
+      );
     }
   }
 }
 
 .c-button--clear {
-  clip-path: polygon(0 0, 0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
   transition-property: all;
 
   &:hover {
-    clip-path: polygon(
-      0 0.3em,
-      0.3em 0,
-      calc(100% - 0.4em) 0,
-      100% calc(100% - 0.3em),
-      calc(100% - 0.3em) 100%,
-      0.4em 100%
-    );
     margin-left: 0;
   }
 }

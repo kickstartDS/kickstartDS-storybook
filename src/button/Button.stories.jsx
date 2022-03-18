@@ -4,7 +4,7 @@ import ButtonStories, {
   Template,
 } from "@kickstartds/base/lib/button/button.stories";
 import tokens from "./button-tokens.json";
-import schema from "@kickstartds/base/lib/button/button.schema.dereffed.json";
+import schema from "./button.schema.dereffed.json";
 
 export default {
   ...ButtonStories,

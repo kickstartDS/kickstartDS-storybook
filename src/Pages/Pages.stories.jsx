@@ -34,6 +34,7 @@ export { Integrations } from "./Integrations.story";
 export { Sanity } from "./Sanity.story";
 export { BlogPost } from "./BlogPost.story";
 export { BlogList } from "./BlogList.story";
+export { Buttons } from "./Buttons.story";
 export { GlossaryEntry } from "./GlossaryEntry.story";
 // export { CountUpVariants } from "./CountUpVariants.story";
 // export { TeaserVariants } from "./TeaserVariants.story";
