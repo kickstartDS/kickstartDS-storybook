@@ -17,18 +17,19 @@ import {
   CountUp,
   Storytelling,
 } from "@kickstartds/content";
-import FooterStories from "../footer/Footer.stories";
 
 export default {
   title: "Landingpage",
 };
 
 import { Header } from "../header/HeaderComponent";
+import HeaderStories from "../header/Header.stories";
 import { Footer } from "../footer/FooterComponent";
+import FooterStories from "../footer/Footer.stories";
 
 const Page = () => (
   <>
-    <Header />
+    <Header {...HeaderStories.args} />
     <Section width="full" spaceBefore="none" spaceAfter="small">
       <Visual
         className="c-visual--deko"
@@ -456,7 +457,7 @@ After working in a large tech corporation for a long time I very well know today
     >
       <Button variant="outline" label="WhatsApp us!" />
       <Button variant="outline" label="Join our Discord community!" />
-      <Button variant="outline" label="Follow us in Twitter!" />
+      <Button variant="outline" label="Follow us on Twitter!" />
     </Section>
     <Footer {...FooterStories.args} />
   </>

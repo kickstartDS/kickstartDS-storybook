@@ -2,13 +2,12 @@
 @use "./button-tokens";
 
 :root {
-  --c-button-transition: 250ms all cubic-bezier(0.17, 0.88, 0.27, 1.225);
   --corner-height: 9px;
   --clip-path: polygon(
     0% var(--corner-height),
     var(--corner-height) 0,
     100% 0,
-    100% calc(100% - calc(var(--corner-height) * 2)),
+    100% calc(100% - var(--corner-height) * 2),
     calc(100% - var(--corner-height) * 2) 100%,
     0 100%
   );
@@ -19,7 +18,7 @@
       0% var(--corner-height),
       var(--corner-height) 0,
       100% 0,
-      100% calc(100% - calc(var(--corner-height) * 2)),
+      100% calc(100% - var(--corner-height) * 2),
       calc(100% - var(--corner-height) * 2) 100%,
       0 100%
     );
@@ -231,7 +230,7 @@
       0% var(--corner-height),
       var(--corner-height) 0,
       100% 0,
-      100% calc(100% - calc(var(--corner-height) * 2)),
+      100% calc(100% - var(--corner-height) * 2),
       calc(100% - var(--corner-height) * 2) 100%,
       0 100%
     );
@@ -266,7 +265,7 @@
         0% var(--corner-height),
         var(--corner-height) 0,
         100% 0,
-        100% calc(100% - calc(var(--corner-height) * 2)),
+        100% calc(100% - var(--corner-height) * 2),
         calc(100% - var(--corner-height) * 2) 100%,
         0 100%
       );

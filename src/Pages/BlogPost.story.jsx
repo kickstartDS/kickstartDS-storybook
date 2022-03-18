@@ -6,6 +6,7 @@ import { Contact } from "@kickstartds/content/lib/contact";
 import { TextField } from "@kickstartds/form/lib/text-field";
 
 import { Header } from "../header/HeaderComponent";
+import HeaderStories from "../header/Header.stories";
 import { SamplePost } from "../post/SamplePost";
 import { Default as PostAsideStory } from "../post-aside/PostAside.stories";
 import { Default as PostHeadStory } from "../post-head/PostHead.stories";
@@ -19,11 +20,12 @@ export default {
 
 const Page = () => (
   <>
-    <Header />
+    <Header {...HeaderStories.args} />
     <SamplePost
       aside={unpack(PostAsideStory.args)}
       head={unpack(PostHeadStory.args)}
     />
+    {/* <SamplePost {...unpack(PostStory.args)} /> */}
     <Section
       width="narrow"
       mode="list"

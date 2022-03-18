@@ -1,22 +1,19 @@
-import { Link } from "@kickstartds/base/lib/link";
-import { Button } from "@kickstartds/base/lib/button";
+import { NavMain } from "./nav/NavMainComponent";
+import { NavSkip } from "./nav/NavSkipComponent";
+import { Logo } from "../logo/LogoComponent";
+import "./Header";
 
-export const Header = () => (
+export const Header = ({ light, nav, cta, activeNavId }) => (
   <>
+    <NavSkip />
     <header data-component="kds.header">
-      <div className="kds-header">
-        <Link className="kds-header__logo" href="/">
-          <img src="/logo.svg" alt="kickstartDS Logo" />
-        </Link>
-        <div className="kds-header__item">
-          <Button
-            variant="outline"
-            size="small"
-            label="Contact us"
-          />
-        </div>
+      <div className={`kds-header ${light ? "kds-header--light" : ""}`}>
+        <Logo />
+        {nav && nav.enabled && (
+          <NavMain light={light} navEntries={nav.items} active={activeNavId} cta={cta} />
+        )}
       </div>
     </header>
-    <div className="main-header-spacer"></div>
+    {!light && <div className="kds-header--spacer"></div>}
   </>
 );

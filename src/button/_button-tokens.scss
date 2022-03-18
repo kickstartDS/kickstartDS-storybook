@@ -3,6 +3,7 @@
   --c-button--font-weight: var(--font-weight-semi-bold);
   --c-button--padding: 0.4rem 1rem;
   --c-button-icon--margin: 0;
+  --c-button-transition: 250ms all;
 }
 
 .c-button--small {
@@ -39,4 +40,8 @@
 
 .c-button--outline-inverted {
   --c-button--shadow-color: var(--color-white-alpha-2);
+}
+
+.c-button--main {
+  --c-button-transition: 250ms all cubic-bezier(0.17, 0.88, 0.27, 1.225);
 }

@@ -1,0 +1,32 @@
+@use "logo-tokens";
+@use "@kickstartds/core/source/core/breakpoint";
+
+.kds-logo {
+  --g-link--background-hover: none;
+  position: relative;
+
+  &__img {
+    position: relative;
+    display: block;
+    height: var(--g-logo-height);
+    width: auto;
+    transition: height var(--g-transition-duration-s);
+
+    @include breakpoint.media("≥s") {
+      padding: 0;
+    }
+
+    &--dark {
+      position: absolute;
+      top: 0;
+    }
+
+    &--light {
+      opacity: 0;
+
+      .kds-header--light & {
+        opacity: 1;
+      }
+    }
+  }
+}

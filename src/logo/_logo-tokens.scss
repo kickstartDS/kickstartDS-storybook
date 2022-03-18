@@ -1,0 +1,18 @@
+@use "@kickstartds/core/source/core/breakpoint";
+
+:root {
+  --g-logo-height: 1.5rem;
+  --kds-header-spacing: var(--spacing-s);
+
+  @include breakpoint.media("≥s") {
+    --g-logo-height: 2.5rem;
+  }
+
+  @media (min-width: 90em) {
+    --g-logo-height: 2.75rem;
+  }
+
+  @media (min-width: 120em) {
+    --g-logo-height: 3rem;
+  }
+}
