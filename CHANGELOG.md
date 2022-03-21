@@ -1,3 +1,15 @@
+# v1.13.10 (Mon Mar 21 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: minor button bugfixes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.13.9 (Fri Mar 18 2022)
 
 #### ⚠️ Pushed to `master`
