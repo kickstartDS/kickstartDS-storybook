@@ -27,11 +27,9 @@
 
 .c-button {
   height: fit-content;
-  // width: fit-content;
 
   span,
   .icon {
-    // white-space: nowrap;
     z-index: 2;
   }
 
@@ -114,6 +112,20 @@
   --border: 2px;
   --border-corner-height: 40%;
 
+  --corner-bottom-left-height: 14px;
+
+  &.c-button--large {
+    .c-button__content:after {
+      --corner-bottom-left-height: 19px;
+    }
+  }
+
+  &.c-button--small {
+    .c-button__content:after {
+      --corner-bottom-left-height: 10px;
+    }
+  }
+
   position: relative;
   padding: 0;
   border: none;
@@ -139,7 +151,7 @@
     }
 
     &::after {
-      height: 70%;
+      height: calc(100% - var(--corner-bottom-left-height));
       right: 1px;
       top: 0;
     }
@@ -230,8 +242,8 @@
       0% var(--corner-height),
       var(--corner-height) 0,
       100% 0,
-      100% calc(100% - var(--corner-height) * 2),
-      calc(100% - var(--corner-height) * 2) 100%,
+      100% calc(100% - var(--corner-height) * 0.5),
+      calc(100% - var(--corner-height) * 0.5) 100%,
       0 100%
     );
   }
