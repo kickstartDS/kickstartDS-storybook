@@ -3,21 +3,13 @@ import {
   TeaserBox,
 } from "@kickstartds/base";
 
-import {
-  Visual,
-} from "@kickstartds/content";
-
 import { Button } from "@kickstartds/base/lib/button";
 import { LinkButton } from "@kickstartds/base/lib/link-button";
-import { LinkProvider } from "./LinkProvider";
+import { Visual } from "@kickstartds/content/lib/visual";
 
 export const Welcome = () => (
-  <LinkProvider>
-    <Section
-      width="full"
-      spaceBefore="none"
-      spaceAfter="none"
-    >
+  <>
+    <Section width="full" spaceBefore="none" spaceAfter="none">
       <Visual
         className="c-visual--welcome"
         box={{
@@ -87,20 +79,20 @@ export const Welcome = () => (
           iconBefore: false,
           label: "View Tokens",
           newTab: false,
-          variant: "clear",
+          variant: "outline",
         }}
       />
       <TeaserBox
         topic="Controls"
         text="Controls provide explorative access to our JSON Schema defined structural options, giving designers, developers and content editors all needed power!"
         link={{
-          href: "sb:content-visual:box-hell",
+          href: "sb:content-visual:box-light",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
           label: "Show controls",
           newTab: false,
-          variant: "clear",
+          variant: "outline",
         }}
       />
       <TeaserBox
@@ -113,7 +105,7 @@ export const Welcome = () => (
           iconBefore: false,
           label: "Explore pages",
           newTab: false,
-          variant: "clear",
+          variant: "outline",
         }}
       />
       <TeaserBox
@@ -126,7 +118,7 @@ export const Welcome = () => (
           iconBefore: false,
           label: "Read more",
           newTab: false,
-          variant: "clear",
+          variant: "outline",
         }}
       />
     </Section>
@@ -182,5 +174,5 @@ export const Welcome = () => (
         variant="solid"
       />
     </Section>
-  </LinkProvider>
+  </>
 );

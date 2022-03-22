@@ -1,3 +1,17 @@
+# v1.13.11 (Tue Mar 22 2022)
+
+#### ⚠️ Pushed to `master`
+
+- docs: fix broken link on welcome page ([@lmestel](https://github.com/lmestel))
+- docs: add providers to docs ([@lmestel](https://github.com/lmestel))
+- feat: subscribe to location event to close mobile nav on location change ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.13.10 (Mon Mar 21 2022)
 
 #### ⚠️ Pushed to `master`
