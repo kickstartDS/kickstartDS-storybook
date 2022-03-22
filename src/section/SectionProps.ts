@@ -1390,7 +1390,8 @@ export interface SectionProps {
     | LogoTiles
     | TeaserRow
   )[];
-  background?: "default" | "accent" | "dark";
+  background?: (("default" | "accent" | "dark" | "dark-accent") | ("default" | "accent" | "dark")) &
+    ("default" | "accent" | "dark");
   spaceBefore?: "default" | "small" | "none";
   spaceAfter?: "default" | "small" | "none";
   headline?: Headline4;
