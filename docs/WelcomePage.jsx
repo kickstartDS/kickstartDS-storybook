@@ -84,7 +84,7 @@ export const Welcome = () => (
         text="Controls provide explorative access to our JSON Schema defined structural options, giving designers, developers and content editors all needed power!"
         link={{
           fillAnimation: true,
-          href: "sb:content-visual:box-hell",
+          href: "sb:content-visual:box-light",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
