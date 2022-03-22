@@ -2,10 +2,9 @@ import { Section } from "@kickstartds/base/lib/section";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { LinkButton } from "@kickstartds/base/lib/link-button";
 import { Visual } from "@kickstartds/content/lib/visual";
-import { LinkProvider } from "./LinkProvider";
 
 export const Welcome = () => (
-  <LinkProvider>
+  <>
     <Section width="full" spaceBefore="none" spaceAfter="none">
       <Visual
         className="c-visual--welcome"
@@ -175,5 +174,5 @@ export const Welcome = () => (
         variant="solid"
       />
     </Section>
-  </LinkProvider>
+  </>
 );
