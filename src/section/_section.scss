@@ -498,6 +498,14 @@
     }
   }
 
+  &.col-four {
+    .l-section__container {
+      @include breakpoint.media(">s") {
+        --l-section_col--min-width: 16rem;
+      }
+    }
+  }
+
   &.progress {
     .l-section__container {
       --l-section_container--gutter: var(--spacing-xl);

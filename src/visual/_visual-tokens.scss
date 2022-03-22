@@ -1,5 +1,7 @@
 .c-visual {
   --c-visual--min-height: 35vh;
+  --c-visual_overlay--background: linear-gradient(90deg, var(--color-white), transparent);
+  --c-visual_overlay--background-size: cover;
 
   @media (min-width: 40em) {
     --c-visual--min-height: 60vh;

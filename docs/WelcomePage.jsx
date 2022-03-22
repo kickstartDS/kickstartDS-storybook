@@ -1,12 +1,23 @@
-import { Section } from "@kickstartds/base/lib/section";
-import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
+import {
+  Section,
+  TeaserBox,
+} from "@kickstartds/base";
+
+import {
+  Visual,
+} from "@kickstartds/content";
+
+import { Button } from "@kickstartds/base/lib/button";
 import { LinkButton } from "@kickstartds/base/lib/link-button";
-import { Visual } from "@kickstartds/content/lib/visual";
 import { LinkProvider } from "./LinkProvider";
 
 export const Welcome = () => (
   <LinkProvider>
-    <Section width="full" spaceBefore="none" spaceAfter="none">
+    <Section
+      width="full"
+      spaceBefore="none"
+      spaceAfter="none"
+    >
       <Visual
         className="c-visual--welcome"
         box={{
@@ -53,7 +64,6 @@ export const Welcome = () => (
     </Section>
 
     <Section
-      gutter="default"
       headline={{
         align: "center",
         content: "Getting started with ...",
@@ -61,6 +71,7 @@ export const Welcome = () => (
         pageHeader: false,
         spaceAfter: "none",
       }}
+      className="col-four"
       mode="tile"
       spaceAfter="small"
       spaceBefore="small"
@@ -70,56 +81,52 @@ export const Welcome = () => (
         topic="Design Tokens"
         text="Design Tokens encode your main brand identity, including colors, fonts and typography. Explore all defined values, ready to be copied and used in your project."
         link={{
-          fillAnimation: true,
           href: "sb:design-tokens-colors:page",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
           label: "View Tokens",
           newTab: false,
-          variant: "outline",
+          variant: "clear",
         }}
       />
       <TeaserBox
         topic="Controls"
         text="Controls provide explorative access to our JSON Schema defined structural options, giving designers, developers and content editors all needed power!"
         link={{
-          fillAnimation: true,
           href: "sb:content-visual:box-hell",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
           label: "Show controls",
           newTab: false,
-          variant: "outline",
+          variant: "clear",
         }}
       />
       <TeaserBox
         topic="Pages"
         text="Pages show the potential to quickly prototype views independently, and early, in your development cycle. Test your assumptions, before implementing!"
         link={{
-          fillAnimation: true,
           href: "sb:pages:landingpage",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
           label: "Explore pages",
           newTab: false,
-          variant: "outline",
+          variant: "clear",
         }}
       />
       <TeaserBox
         topic="Blog"
         text="Learn about the newest developments, or explore background articles about our architectural choices, and the rationale behind our decisions!"
         link={{
-          fillAnimation: true,
           href: "https://www.kickstartds.com/blog",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
           label: "Read more",
           newTab: false,
-          variant: "outline",
+          variant: "clear",
         }}
       />
     </Section>
@@ -161,13 +168,13 @@ export const Welcome = () => (
 
     <Section
       gutter="default"
-      mode="list"
       spaceAfter="small"
       spaceBefore="small"
       width="narrow"
+      align="center"
     >
       <LinkButton
-        className="c-button--main"
+        className="c-button--main no-stretch"
         href="https://www.kickstartds.com"
         label="... or learn more on our website"
         size="default"

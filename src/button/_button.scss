@@ -79,7 +79,8 @@
 
 .c-button--solid,
 .c-button--solid-inverted,
-.c-button--clear {
+.c-button--clear,
+.c-button--clear-inverted {
   position: relative;
   transition: var(--c-button-transition);
   background: none !important;
@@ -282,14 +283,6 @@
         0 100%
       );
     }
-  }
-}
-
-.c-button--clear {
-  transition-property: all;
-
-  &:hover {
-    margin-left: 0;
   }
 }
 

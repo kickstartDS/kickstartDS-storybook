@@ -18,7 +18,7 @@
   --color-primary-lighter-3: #2c7c8f;
   --color-primary-lighter-4: #74b2c1;
   --color-primary-lighter-5: #a3d4e0;
-  --color-primary-lighter-6: #eceff3;
+  --color-primary-lighter-6: #e4e8ec;
   --color-primary-darker-1: #012f3a;
   --color-primary-darker-2: #03303b;
   --color-secondary: #ecff00;
@@ -85,8 +85,8 @@
   --font-weight-regular: 400;
   --font-weight-semi-bold: 500;
   --font-weight-bold: 700;
-  --font-family-display: system-ui, -apple-system, system-ui, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  --font-family-display: "Helvetica Neue", Arial, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, system-ui, -apple-system, system-ui, sans-serif;
   --font-family-copy: var(--font-family-display);
   --font-family-ui: var(--font-family-display);
   --line-height-factor-display: 1;
@@ -235,7 +235,6 @@
   }
 }
 .no-stretch {
-  /* display: block; */
   width: fit-content;
   text-align: center;
   margin: auto;

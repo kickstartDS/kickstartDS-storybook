@@ -34,11 +34,9 @@ const Page = () => (
       width="default"
     >
       <TeaserBox
-        image="img/icons/Headline.svg"
         topic="Lorem Ipsum"
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
         link={{
-          fillAnimation: false,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -50,11 +48,9 @@ const Page = () => (
         }}
       />
       <TeaserBox
-        image="img/icons/Quote.svg"
         topic="Accessibility baked in"
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
         link={{
-          fillAnimation: false,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -66,11 +62,9 @@ const Page = () => (
         }}
       />
       <TeaserBox
-        image="img/icons/Slider.svg"
         topic="Powerful theming tools"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
         link={{
-          fillAnimation: false,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -98,11 +92,9 @@ const Page = () => (
       width="default"
     >
       <TeaserBox
-        image="img/icons/Headline.svg"
         topic="Lorem Ipsum"
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -114,11 +106,9 @@ const Page = () => (
         }}
       />
       <TeaserBox
-        image="img/icons/Quote.svg"
         topic="Accessibility baked in"
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -130,11 +120,9 @@ const Page = () => (
         }}
       />
       <TeaserBox
-        image="img/icons/Slider.svg"
         topic="Powerful theming tools"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -163,11 +151,9 @@ const Page = () => (
     >
       <TeaserBox
         darkStyle="true"
-        image="img/icons/Headline-dark.svg"
         topic="Lorem Ipsum"
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -180,11 +166,9 @@ const Page = () => (
       />
       <TeaserBox
         darkStyle="true"
-        image="img/icons/Quote-dark.svg"
         topic="Accessibility baked in"
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -197,11 +181,9 @@ const Page = () => (
       />
       <TeaserBox
         darkStyle="true"
-        image="img/icons/Slider-dark.svg"
         topic="Powerful theming tools"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -230,11 +212,9 @@ const Page = () => (
     >
       <TeaserBox
         darkStyle="true"
-        image="img/icons/Headline-dark.svg"
         topic="Lorem Ipsum"
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -247,11 +227,9 @@ const Page = () => (
       />
       <TeaserBox
         darkStyle="true"
-        image="img/icons/Quote-dark.svg"
         topic="Accessibility baked in"
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -264,11 +242,9 @@ const Page = () => (
       />
       <TeaserBox
         darkStyle="true"
-        image="img/icons/Slider-dark.svg"
         topic="Powerful theming tools"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -295,11 +271,9 @@ const Page = () => (
       width="default"
     >
       <TeaserBox
-        image="img/icons/Headline.svg"
         topic="Lorem Ipsum"
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -311,11 +285,9 @@ const Page = () => (
         }}
       />
       <TeaserBox
-        image="img/icons/Quote.svg"
         topic="Accessibility baked in"
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -327,11 +299,9 @@ const Page = () => (
         }}
       />
       <TeaserBox
-        image="img/icons/Slider.svg"
         topic="Powerful theming tools"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -358,11 +328,9 @@ const Page = () => (
     >
       <TeaserBox
         darkStyle="true"
-        image="img/icons/Headline.svg"
         topic="Lorem Ipsum"
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -375,11 +343,9 @@ const Page = () => (
       />
       <TeaserBox
         darkStyle="true"
-        image="img/icons/Quote.svg"
         topic="Accessibility baked in"
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
@@ -392,11 +358,9 @@ const Page = () => (
       />
       <TeaserBox
         darkStyle="true"
-        image="img/icons/Slider.svg"
         topic="Powerful theming tools"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
         link={{
-          fillAnimation: true,
           href: "https://example.com",
           iconAfter: false,
           iconAnimation: false,
