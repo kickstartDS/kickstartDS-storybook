@@ -184,10 +184,19 @@ Directly engage with components through **Storybooks** rich interface.
       />
     </Section>
     <Section
-      width="narrow"
+      width="full"
+      mode="list"
+      spaceBefore="default"
       spaceAfter="small"
+      className="l-section-style--highlight l-section--outer-width-narrow"
+      gutter="large"
+      headline={{
+        content: "Get to know us",
+        align: "center",
+      }}
     >
-      <Cta
+      <Storytelling
+        backgroundColor="#eceff3"
         image={{
           order: {
             desktopImageLast: true,

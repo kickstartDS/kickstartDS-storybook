@@ -19,7 +19,7 @@
   --color-primary-lighter-3: #2c7c8f;
   --color-primary-lighter-4: #74b2c1;
   --color-primary-lighter-5: #a3d4e0;
-  --color-primary-lighter-6: #e4e8ec;
+  --color-primary-lighter-6: #eceff3;
   --color-primary-darker-1: #012f3a;
   --color-primary-darker-2: #03303b;
 
@@ -218,14 +218,14 @@
     --font-size-xs: 0.7rem;
     --font-size-s: 0.9375rem;
     --font-size-m: 1.125rem;
-    --font-size-l: 1.5rem;
+    --font-size-l: 1.35rem;
     --font-size-xl: 1.75rem;
-    --font-size-xxl: 2.25rem;
+    --font-size-xxl: 2.4rem;
 
     --line-height-xs: 1.15rem;
     --line-height-s: 1.45rem;
     --line-height-m: 1.75rem;
-    --line-height-l: 2rem;
+    --line-height-l: 1.85rem;
     --line-height-xl: 2.5rem;
     --line-height-xxl: 3rem;
   }
@@ -238,9 +238,11 @@
     --spacing-xxl: 5rem;
 
     --font-size-s: 0.9375rem;
+    --font-size-l: 1.5rem;
     --font-size-xl: 2rem;
     --font-size-xxl: 2.65rem;
-
+    
+    --line-height-l: 2rem;
     --line-height-xl: 2.75rem;
     --line-height-xxl: 3.5rem;
   }

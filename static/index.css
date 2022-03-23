@@ -18,7 +18,7 @@
   --color-primary-lighter-3: #2c7c8f;
   --color-primary-lighter-4: #74b2c1;
   --color-primary-lighter-5: #a3d4e0;
-  --color-primary-lighter-6: #e4e8ec;
+  --color-primary-lighter-6: #eceff3;
   --color-primary-darker-1: #012f3a;
   --color-primary-darker-2: #03303b;
   --color-secondary: #ecff00;
@@ -200,13 +200,13 @@
     --font-size-xs: 0.7rem;
     --font-size-s: 0.9375rem;
     --font-size-m: 1.125rem;
-    --font-size-l: 1.5rem;
+    --font-size-l: 1.35rem;
     --font-size-xl: 1.75rem;
-    --font-size-xxl: 2.25rem;
+    --font-size-xxl: 2.4rem;
     --line-height-xs: 1.15rem;
     --line-height-s: 1.45rem;
     --line-height-m: 1.75rem;
-    --line-height-l: 2rem;
+    --line-height-l: 1.85rem;
     --line-height-xl: 2.5rem;
     --line-height-xxl: 3rem;
   }
@@ -218,8 +218,10 @@
     --spacing-xl: 4rem;
     --spacing-xxl: 5rem;
     --font-size-s: 0.9375rem;
+    --font-size-l: 1.5rem;
     --font-size-xl: 2rem;
     --font-size-xxl: 2.65rem;
+    --line-height-l: 2rem;
     --line-height-xl: 2.75rem;
     --line-height-xxl: 3.5rem;
   }
@@ -497,13 +499,7 @@
 }
 .c-button--outline.c-button--large .c-button__border::after,
 .c-button--outline-inverted.c-button--large .c-button__border::after {
-  left: -13px;
-}
-@media (min-width: 40.01em) {
-  .c-button--outline.c-button--large .c-button__border::after,
-.c-button--outline-inverted.c-button--large .c-button__border::after {
-    left: -16px;
-  }
+  left: -16px;
 }
 
 .c-button--main span {
@@ -1237,41 +1233,6 @@
   left: 15%;
   animation-duration: 12s;
   animation-delay: 2s;
-}
-
-.cta {
-  background: var(--color-primary-lighter-6);
-  padding: var(--spacing-xl) var(--spacing-xl);
-  transition: 300ms all cubic-bezier(0.1, 0.9, 0.3, 1.5);
-  gap: var(--spacing-s);
-  clip-path: polygon(0% var(--spacing-m), var(--spacing-m) 0%, 100% 0, 100% 0, 100% calc(100% - var(--spacing-xxl)), calc(100% - var(--l-section--space)) 100%, var(--spacing-m) 100%, 0 calc(100% - var(--spacing-m)));
-}
-.template__side .cta {
-  flex-direction: column;
-}
-@media (min-width: 40.01em) {
-  .template__side .cta {
-    flex-direction: row;
-  }
-}
-@media (min-width: 60.01em) {
-  .template__side .cta {
-    flex-direction: column-reverse;
-  }
-}
-.cta .c-headline {
-  max-width: 100%;
-}
-.cta .c-headline__headline {
-  color: var(--color-primary);
-}
-.cta .c-storytelling__box {
-  padding: 0 !important;
-}
-.cta .c-rich-text {
-  font: var(--font-ui-m);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-primary);
 }
 
 :root {
@@ -2759,12 +2720,50 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   margin-top: var(--c-slider-nav--margin);
 }
 
+:root .c-storytelling {
+  --c-storytelling--horizontal-padding: var(--spacing-l);
+}
+
 .c-storytelling[data-bg] .c-headline > :first-child,
 .c-storytelling[data-bg] .c-rich-text {
   color: var(--l-section-dark-color);
 }
 .c-storytelling[data-bg] .c-headline__subheadline {
   color: var(--color-primary-lighter-4);
+}
+.c-storytelling.cta {
+  background: var(--color-primary-lighter-6);
+  padding: var(--spacing-xl) var(--spacing-xl);
+  transition: 300ms all cubic-bezier(0.1, 0.9, 0.3, 1.5);
+  gap: var(--spacing-s);
+  clip-path: polygon(0% var(--spacing-m), var(--spacing-m) 0%, 100% 0, 100% 0, 100% calc(100% - var(--spacing-xxl)), calc(100% - var(--l-section--space)) 100%, var(--spacing-m) 100%, 0 calc(100% - var(--spacing-m)));
+}
+.template__side .c-storytelling.cta {
+  flex-direction: column;
+}
+@media (min-width: 40.01em) {
+  .template__side .c-storytelling.cta {
+    flex-direction: row;
+  }
+}
+@media (min-width: 60.01em) {
+  .template__side .c-storytelling.cta {
+    flex-direction: column-reverse;
+  }
+}
+.c-storytelling.cta .c-headline {
+  max-width: 100%;
+}
+.c-storytelling.cta .c-headline__headline {
+  color: var(--color-primary);
+}
+.c-storytelling.cta .c-storytelling__box {
+  padding: 0 !important;
+}
+.c-storytelling.cta .c-rich-text {
+  font: var(--font-ui-m);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
 }
 
 :root .c-tag-label {

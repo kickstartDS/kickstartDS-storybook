@@ -20,16 +20,10 @@ export const Image = Template.bind({});
 Image.args = pack({
   text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
   source: "Max Mustermann, ABC GmbH",
+  // image:"img/example/portrait.png",
   date: undefined,
 });
 
-export const NoImage = Template.bind({});
-NoImage.args = pack({
-  text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-  source: "Max Mustermann, ABC GmbH",
-  image: undefined,
-  date: undefined,
-});
 
 const SliderTemplate = (args) => <QuotesSlider {...args} />;
 export const Slider = SliderTemplate.bind({});
