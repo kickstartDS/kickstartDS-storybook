@@ -30,66 +30,6 @@ export type ImageVerticalAlignment = "center" | "top" | "top-edge" | "bottom" | 
  */
 export type ImageHorizontalAlignment = "center" | "left" | "left-edge" | "right" | "right-edge";
 /**
- * Background image for the whole element
- */
-export type BackgroundImage = string;
-/**
- * Background color for the whole element
- */
-export type BackgroundColor = string;
-/**
- * Display a full sized version of the image
- */
-export type FullSizeImage = boolean;
-/**
- * Select the headline level to use, or p alternatively
- */
-export type Level = "h1" | "h2" | "h3" | "h4" | "h5" | "p";
-/**
- * Select the headline style to use
- */
-export type Style = "none" | "h1" | "h2" | "h3" | "h4" | "h5" | "p";
-/**
- * Choose an alignment for the headline
- */
-export type Alignment = "left" | "center" | "right";
-/**
- * Text content for the headline
- */
-export type Text = string;
-/**
- * Text content for the optional subheadline
- */
-export type Subheadline = string;
-/**
- * Add additional spacing to the bottom of the headline
- */
-export type BottomSpacing = "none" | "small" | "large";
-/**
- * Set the headline as a page header, triggering special css treatment
- */
-export type PageHeader = boolean;
-/**
- * Add additional css classes that should be applied to the headline
- */
-export type AdditionalClasses = string;
-/**
- * Text content to display inside the element
- */
-export type Text1 = string;
-/**
- * Switch text alignment between left and center
- */
-export type TextAlignment = "left" | "center";
-/**
- * Select a vertical alignment for the box
- */
-export type BoxVerticalAlignment = "center" | "top" | "bottom";
-/**
- * Select a horizontal alignment for the box
- */
-export type BoxHorizontalAlignment = "center" | "left" | "right";
-/**
  * Text used on button
  */
 export type Label = string;
@@ -104,7 +44,7 @@ export type ButtonSize = "small" | "medium" | "large";
 /**
  * Add additional css classes that should be applied to the button
  */
-export type AdditionalClasses1 = string;
+export type AdditionalClasses = string;
 export type IconIdentifier = string;
 export type AriaRole = string;
 export type AdditionalClass = string;
@@ -137,6 +77,117 @@ export type ButtonHref = string;
  */
 export type OpenLinkInNewTab = boolean;
 /**
+ * Select the headline level to use, or p alternatively
+ */
+export type Level = "h1" | "h2" | "h3" | "h4" | "h5" | "p";
+/**
+ * Select the headline style to use
+ */
+export type Style = "none" | "h1" | "h2" | "h3" | "h4" | "h5" | "p";
+/**
+ * Choose an alignment for the headline
+ */
+export type Alignment = "left" | "center" | "right";
+/**
+ * Text content for the headline
+ */
+export type Text = string;
+/**
+ * Text content for the optional subheadline
+ */
+export type Subheadline = string;
+/**
+ * Add additional spacing to the bottom of the headline
+ */
+export type BottomSpacing = "none" | "small" | "large";
+/**
+ * Set the headline as a page header, triggering special css treatment
+ */
+export type PageHeader = boolean;
+/**
+ * Add additional css classes that should be applied to the headline
+ */
+export type AdditionalClasses1 = string;
+/**
+ * Text content to display inside the element
+ */
+export type Text1 = string;
+/**
+ * Switch text alignment between left and center
+ */
+export type TextAlignment = "left" | "center";
+/**
+ * Overwrite the color to use for the text content
+ */
+export type TextColor = string;
+/**
+ * Select a vertical alignment for the box
+ */
+export type BoxVerticalAlignment = "center" | "top" | "bottom";
+/**
+ * Select a horizontal alignment for the box
+ */
+export type BoxHorizontalAlignment = "center" | "left" | "right";
+/**
+ * Text used on button
+ */
+export type Label1 = string;
+/**
+ * Choose one of the styles from the list
+ */
+export type ButtonStyle1 = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
+/**
+ * Choose a size between small, medium and large
+ */
+export type ButtonSize1 = "small" | "medium" | "large";
+/**
+ * Add additional css classes that should be applied to the button
+ */
+export type AdditionalClasses2 = string;
+export type IconIdentifier1 = string;
+export type AriaRole1 = string;
+export type AdditionalClass1 = string;
+/**
+ * Display icon before the button text
+ */
+export type IconBeforeButton1 = boolean;
+/**
+ * Display icon after the button text
+ */
+export type IconAfterButton1 = boolean;
+/**
+ * Overwrite the data-component to use for rendering
+ */
+export type DataComponentAttribute1 = string;
+/**
+ * Add fill animation on hover
+ */
+export type FillAnimation1 = boolean;
+/**
+ * Add icon animation on hover
+ */
+export type IconAnimation1 = boolean;
+/**
+ * Link used for button
+ */
+export type ButtonHref1 = string;
+/**
+ * Open link in new Tab
+ */
+export type OpenLinkInNewTab1 = boolean;
+/**
+ * Background image for the whole element
+ */
+export type BackgroundImage = string;
+/**
+ * Background color for the whole element
+ */
+export type BackgroundColor = string;
+/**
+ * Display a full sized version of the image
+ */
+export type FullSizeImage = boolean;
+/**
  * Additional css classes attached to the wrapping element
  */
 export type Class = string;
@@ -145,11 +196,11 @@ export type Class = string;
  * Component to present rich combinations of text and media, best used sequentially
  */
 export interface CtaProps {
-  image?: Image;
+  image: Image;
+  box: TextBox;
   backgroundImage?: BackgroundImage;
   backgroundColor?: BackgroundColor;
   full?: FullSizeImage;
-  box: TextBox;
   className?: Class;
   [k: string]: unknown;
 }
@@ -176,26 +227,14 @@ export interface Order {
  * Text content to display
  */
 export interface TextBox {
+  links?: LinkButton[];
   headline?: Headline;
   text?: Text1;
   textAlign?: TextAlignment;
+  textColor?: TextColor;
   vAlign?: BoxVerticalAlignment;
   hAlign?: BoxHorizontalAlignment;
-  link?: LinkButton[];
-  [k: string]: unknown;
-}
-/**
- * Headline for the box
- */
-export interface Headline {
-  level: Level;
-  styleAs?: Style;
-  align: Alignment;
-  content?: Text;
-  subheadline?: Subheadline;
-  spaceAfter: BottomSpacing;
-  pageHeader?: PageHeader;
-  className?: AdditionalClasses;
+  link?: LinkButton1;
   [k: string]: unknown;
 }
 /**
@@ -205,7 +244,7 @@ export interface LinkButton {
   label: Label;
   variant: ButtonStyle;
   size: ButtonSize;
-  className?: AdditionalClasses1;
+  className?: AdditionalClasses;
   icon?: Icon;
   iconBefore?: IconBeforeButton;
   iconAfter?: IconAfterButton;
@@ -222,5 +261,45 @@ export interface Icon {
   icon?: IconIdentifier;
   role?: AriaRole;
   className?: AdditionalClass;
+  [k: string]: unknown;
+}
+/**
+ * Headline for the box
+ */
+export interface Headline {
+  level: Level;
+  styleAs?: Style;
+  align: Alignment;
+  content?: Text;
+  subheadline?: Subheadline;
+  spaceAfter: BottomSpacing;
+  pageHeader?: PageHeader;
+  className?: AdditionalClasses1;
+  [k: string]: unknown;
+}
+/**
+ * link-button
+ */
+export interface LinkButton1 {
+  label: Label1;
+  variant: ButtonStyle1;
+  size: ButtonSize1;
+  className?: AdditionalClasses2;
+  icon?: Icon1;
+  iconBefore?: IconBeforeButton1;
+  iconAfter?: IconAfterButton1;
+  dataComponent?: DataComponentAttribute1;
+  fillAnimation?: FillAnimation1;
+  iconAnimation?: IconAnimation1;
+  href: ButtonHref1;
+  newTab?: OpenLinkInNewTab1;
+}
+/**
+ * Icon
+ */
+export interface Icon1 {
+  icon?: IconIdentifier1;
+  role?: AriaRole1;
+  className?: AdditionalClass1;
   [k: string]: unknown;
 }

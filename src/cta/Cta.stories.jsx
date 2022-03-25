@@ -4,6 +4,12 @@ import schema from "./cta.schema.dereffed.json";
 import tokens from "./cta-tokens.json";
 
 const { defaultArgs: args, argTypes } = getArgsShared(schema);
+for (const prop in args) {
+  if (prop.startsWith("box.link.")) {
+    delete args[prop];
+    delete argTypes[prop];
+  }
+}
 const Template = (args) => <Cta {...args} />;
 
 export default {
@@ -18,20 +24,3 @@ export default {
 };
 
 export const Default = Template.bind({});
-Default.args = pack({
-  box: {
-    link: [
-      {
-        label: "Lorem Ipsum",
-        href: "#",
-        variant: "solid",
-      },
-      {
-        label: "",
-      },
-      {
-        label: "",
-      },
-    ],
-  },
-});

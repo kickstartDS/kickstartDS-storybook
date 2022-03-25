@@ -16,15 +16,19 @@ export const StorytellingProvider = ({ children }) => {
     ) : null;
 
   const StorytellingComponent = ({ box, ...props }) => {
-    const { link, ...boxRest } = box;
-    return (
-      <LinkButtonContext.Provider value={ButtonGroup}>
-        <Storytelling
-          box={{ ...boxRest, link: { buttons: link } }}
-          {...props}
-        />
-      </LinkButtonContext.Provider>
-    );
+    const { link, links, ...boxRest } = box;
+
+    if (links?.length) {
+      return (
+        <LinkButtonContext.Provider value={ButtonGroup}>
+          <Storytelling
+            box={{ ...boxRest, link: { buttons: links } }}
+            {...props}
+          />
+        </LinkButtonContext.Provider>
+      );
+    }
+    return <Storytelling box={{ ...boxRest, link }} {...props} />;
   };
 
   return (
