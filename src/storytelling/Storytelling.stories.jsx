@@ -18,7 +18,10 @@ export default {
 export const Image = Template.bind({});
 Image.args = pack({
   image: {
-    source: "img/lemon.svg",
+    source: "img/examples/toolbox.svg",
+    order: {
+      desktopImageLast: true,
+    },
   },
   box: {
     headline: {
@@ -27,7 +30,7 @@ Image.args = pack({
       subheadline:
         "Make the most out of your frontends by unifying their core utilizing component and design tokens",
     },
-    text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products: fast, flexible, responsive, accessible, xxx, yyy, zzz and the best of all: you can plug it onto every digital touch point you own.",
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
     link: [
       {
         label: "Request a guided demo",
@@ -74,5 +77,39 @@ ButtonGroup.args = pack({
       },
     ],
   },
+  full: false,
+});
+
+export const LargeScreenshot = Template.bind({});
+LargeScreenshot.args = pack({
+  backgroundColor: "#E6EEF0",
+  image: {
+    source: "img/examples/sanity.png",
+  },
+  box: {
+    headline: {
+      level: "h2",
+      content: "Lorem Ipsum",
+      subheadline:
+        "Sed diam nonumy eirmod tempor invidunt",
+    },
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    link: [
+      {
+        label: "Request a guided demo",
+        href: "#",
+        variant: "outline",
+      },
+      {
+        label: "",
+      },
+      {
+        label: "",
+      },
+    ],
+  },
   full: true,
 });
+LargeScreenshot.parameters = {
+  backgrounds: { default: "dark" },
+};

@@ -223,11 +223,7 @@
   &.c-button--large {
     .c-button__border {
       &::after {
-        left: -13px;
-
-        @include breakpoint.media(">s") {
-          left: -16px;
-        }
+        left: -16px;
       }
     }
   }
