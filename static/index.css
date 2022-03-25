@@ -1878,6 +1878,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   width: auto;
   transition: height var(--g-transition-duration-s);
 }
+.kds-logo__img img {
+  max-width: unset;
+}
 @media (min-width: 40em) {
   .kds-logo__img {
     padding: 0;
