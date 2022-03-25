@@ -15,11 +15,17 @@ export const VisualProvider = ({ children }) => {
       </>
     ) : null;
 
-  const VisualComponent = (props) => (
-    <LinkButtonContext.Provider value={ButtonGroup}>
-      <Visual {...props} />
-    </LinkButtonContext.Provider>
-  );
+  const VisualComponent = ({ box, ...props }) => {
+    const { link, links, ...boxRest } = box;
 
+    if (links?.length) {
+      return (
+        <LinkButtonContext.Provider value={ButtonGroup}>
+          <Visual box={{ ...boxRest, link: { buttons: links, enabled: true } }} {...props} />
+        </LinkButtonContext.Provider>
+      );
+    }
+    return <Visual box={{ ...boxRest, link }} {...props} />;
+  };
   return <VisualContext.Provider value={VisualComponent} children={children} />;
 };

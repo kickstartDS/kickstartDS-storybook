@@ -7,6 +7,12 @@ import tokens from "./visual-tokens.json";
 import schema from "./visual.schema.dereffed.json";
 
 const { defaultArgs: args, argTypes } = getArgsShared(schema);
+for (const prop in args) {
+  if (prop.startsWith("box.link.")) {
+    delete args[prop];
+    delete argTypes[prop];
+  }
+}
 
 export default {
   ...visualStories,
@@ -24,19 +30,11 @@ BoxLight.args = pack({
   height: "fullImage",
   box: {
     background: "light",
-    link: {
-      buttons: [
-        {
-          variant: "solid",
-        },
-        {
-          label: ""
-        },
-        {
-          label: ""
-        },
-      ],
-    },
+    links: [
+      {
+        variant: "solid",
+      },
+    ],
   },
 });
 
@@ -45,19 +43,15 @@ BoxDark.args = pack({
   backgroundColor: "transparent",
   height: "fullImage",
   box: {
-    link: {
-      buttons: [
-        {
-          variant: "solid-inverted",
-        },
-        {
-          variant: "outline-inverted",
-        },
-        {
-          label: "",
-        },
-      ],
-    },
+    links: [
+      {
+        variant: "solid-inverted",
+      },
+      {
+        label: "Lorem Ipsum",
+        variant: "outline-inverted",
+      },
+    ],
   },
 });
 
@@ -78,7 +72,7 @@ VideoWithLargeHeadline.args = pack({
   box: {
     headline: {
       content: "Hic maxime sed eos non. Consequatur ut qui amet.",
-      subheadline:"Hic maxime sed eos non. Consequatur ut qui amet.",
+      subheadline: "Hic maxime sed eos non. Consequatur ut qui amet.",
       level: "h1",
       styleAs: "h1",
     },
@@ -86,10 +80,7 @@ VideoWithLargeHeadline.args = pack({
     vertical: "top",
     background: "transparent",
     text: "",
-    link: {
-      enabled: false,
-      variant: "outline",
-    },
+    links: [{ label: ""}],
   },
 });
 
@@ -116,18 +107,10 @@ VideoWithOverlay.args = pack({
     vertical: "center",
     background: "transparent",
     text: "Hic maxime sed eos non. Consequatur ut qui amet accusantium nesciunt.",
-    link: {
-      buttons: [
-        {
-          variant: "outline",
-        },
-        {
-          label: "",
-        },
-        {
-          label: "",
-        },
-      ],
-    },
+    links: [
+      {
+        variant: "outline",
+      },
+    ],
   },
 });

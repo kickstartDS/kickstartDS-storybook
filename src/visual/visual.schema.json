@@ -1,45 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://kickstartds.com/visual.schema.json",
-  "title": "Visual",
-  "description": "Component to present rich combinations of text and media, best used sequentially",
-  "type": "object",
-  "properties": {
-    "height": {
-      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/height"
-    },
-    "media": {
-      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/media"
-    },
-    "overlay": {
-      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/overlay"
-    },
-    "box": {
-      "type": "object",
-      "title": "Text box",
-      "description": "Content and style configuration for the text box",
+  "allOf": [
+    {
       "properties": {
-        "enabled": {
-          "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/box/properties/enabled"
-        },
-        "headline": {
-          "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/box/properties/headline"
-        },
-        "text": {
-          "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/box/properties/text"
-        },
-        "link": {
-          "title": "Link",
-          "description": "Text box link configuration",
-          "type": "object",
+        "box": {
           "properties": {
-            "enabled": {
-              "title": "Display Link",
-              "description": "Toggles visibility of the link",
-              "type": "boolean",
-              "default": true
-            },
-            "buttons": {
+            "links": {
               "type": "array",
               "items": {
                 "allOf": [
@@ -55,33 +22,19 @@
                     "$ref": "http://frontend.ruhmesmeile.com/base/atoms/link-button.schema.json"
                   }
                 ]
-              }
+              },
+               "default": [
+                {
+                  "label": "Lorem Ipsum"
+                }
+              ]
             }
           }
-        },
-        "indent": {
-          "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/box/properties/indent"
-        },
-        "horizontal": {
-          "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/box/properties/horizontal"
-        },
-        "vertical": {
-          "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/box/properties/vertical"
-        },
-        "background": {
-          "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/box/properties/background"
         }
       }
     },
-    "inbox": {
-      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/inbox"
-    },
-    "skipButton": {
-      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/skipButton"
-    },
-    "className": {
-      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json#/properties/className"
+    {
+      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json"
     }
-  },
-  "required": ["box"]
+  ]
 }
