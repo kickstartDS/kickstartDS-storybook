@@ -2766,6 +2766,11 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 .c-storytelling[data-bg] .c-headline__subheadline {
   color: var(--color-primary-lighter-4);
 }
+.c-storytelling__action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-s);
+}
 
 :root .c-tag-label {
   --c-tag-label--background-color: var(--color-primary-alpha-1);

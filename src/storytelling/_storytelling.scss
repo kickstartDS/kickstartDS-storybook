@@ -11,4 +11,10 @@
       color: var(--color-primary-lighter-4);
     }
   }
+
+  &__action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-s);
+  }
 }

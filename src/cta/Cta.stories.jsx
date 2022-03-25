@@ -1,5 +1,5 @@
 import { Cta } from "./CtaComponent";
-import { getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
 import schema from "./cta.schema.dereffed.json";
 import tokens from "./cta-tokens.json";
 
@@ -18,3 +18,20 @@ export default {
 };
 
 export const Default = Template.bind({});
+Default.args = pack({
+  box: {
+    link: [
+      {
+        label: "Lorem Ipsum",
+        href: "#",
+        variant: "solid",
+      },
+      {
+        label: "",
+      },
+      {
+        label: "",
+      },
+    ],
+  },
+});

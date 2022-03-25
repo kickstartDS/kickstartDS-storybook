@@ -82,10 +82,6 @@ export type Text1 = string;
  */
 export type TextAlignment = "left" | "center";
 /**
- * Overwrite the color to use for the text content
- */
-export type TextColor = string;
-/**
  * Select a vertical alignment for the box
  */
 export type BoxVerticalAlignment = "center" | "top" | "bottom";
@@ -149,7 +145,7 @@ export type Class = string;
  * Component to present rich combinations of text and media, best used sequentially
  */
 export interface CtaProps {
-  image: Image;
+  image?: Image;
   backgroundImage?: BackgroundImage;
   backgroundColor?: BackgroundColor;
   full?: FullSizeImage;
@@ -183,10 +179,9 @@ export interface TextBox {
   headline?: Headline;
   text?: Text1;
   textAlign?: TextAlignment;
-  textColor?: TextColor;
   vAlign?: BoxVerticalAlignment;
   hAlign?: BoxHorizontalAlignment;
-  link?: LinkButton;
+  link?: LinkButton[];
   [k: string]: unknown;
 }
 /**

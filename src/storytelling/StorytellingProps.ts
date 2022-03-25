@@ -6,73 +6,17 @@
  */
 
 /**
- * Title of the term being defined
+ * Background image for the whole element
  */
-export type Term = string;
+export type BackgroundImage = string;
 /**
- * Select an image to display inside the content box, at the top
+ * Background color for the whole element
  */
-export type Definition = string;
+export type BackgroundColor = string;
 /**
- * Url to main image for this glossary entry
+ * Display a full sized version of the image
  */
-export type UrlForTheMainImage = string;
-/**
- * Title of the term being defined
- */
-export type CaptionForTheMainImage = string;
-/**
- * Select a media asset for this glossary entry
- */
-export type UrlForTheMediaAsset = string;
-/**
- * Title of the term being defined
- */
-export type CaptionForTheMainImage1 = string;
-/**
- * Media assets to display for this glossary entry
- */
-export type Media = MediaAsset[];
-/**
- * Name of the tag
- */
-export type Tag = string;
-/**
- * Tags for this glossary entry
- */
-export type Tags = Tag[];
-/**
- * Title of the related term
- */
-export type Title = string;
-/**
- * Excerpt for the related term
- */
-export type Excerpt = string;
-/**
- * Url for the related term
- */
-export type Url = string;
-/**
- * Image for the related term
- */
-export type Image = string;
-/**
- * Entries related to this glossary entry
- */
-export type RelatedEntries = RelatedEntry[];
-/**
- * Link to the related StacKShare discussion
- */
-export type StackShareUrl = string;
-/**
- * Switch to displaying the image after the text on desktop
- */
-export type DesktopImageAfterText = boolean;
-/**
- * Switch to displaying the image after the text on mobile
- */
-export type MobileImageAfterText = boolean;
+export type FullSizeImage = boolean;
 /**
  * Image source to use
  */
@@ -90,17 +34,13 @@ export type ImageVerticalAlignment = "center" | "top" | "top-edge" | "bottom" | 
  */
 export type ImageHorizontalAlignment = "center" | "left" | "left-edge" | "right" | "right-edge";
 /**
- * Background image for the whole element
+ * Switch to displaying the image after the text on mobile
  */
-export type BackgroundImage = string;
+export type MobileImageAfterText = boolean;
 /**
- * Background color for the whole element
+ * Switch to displaying the image after the text on desktop
  */
-export type BackgroundColor = string;
-/**
- * Display a full sized version of the image
- */
-export type FullSizeImage = boolean;
+export type DesktopImageAfterText = boolean;
 /**
  * Select the headline level to use, or p alternatively
  */
@@ -201,51 +141,14 @@ export type OpenLinkInNewTab = boolean;
  */
 export type Class = string;
 
-export interface GlossaryProps {
-  term: Term;
-  definition?: Definition;
-  cover?: CoverImage;
-  media?: Media;
-  tags?: Tags;
-  related?: RelatedEntries;
-  stackshare?: StackShareUrl;
-  cta?: Cta;
-  [k: string]: unknown;
-}
-/**
- * Add main image to represent this glossary entry
- */
-export interface CoverImage {
-  src?: UrlForTheMainImage;
-  caption?: CaptionForTheMainImage;
-  [k: string]: unknown;
-}
-/**
- * Single media asset
- */
-export interface MediaAsset {
-  src?: UrlForTheMediaAsset;
-  caption?: CaptionForTheMainImage1;
-  [k: string]: unknown;
-}
-/**
- * Single related entry
- */
-export interface RelatedEntry {
-  title?: Title;
-  excerpt?: Excerpt;
-  url?: Url;
-  image?: Image;
-  [k: string]: unknown;
-}
 /**
  * Component to present rich combinations of text and media, best used sequentially
  */
-export interface Cta {
-  image?: Image1;
+export interface StorytellingProps {
   backgroundImage?: BackgroundImage;
   backgroundColor?: BackgroundColor;
   full?: FullSizeImage;
+  image?: Image;
   box: TextBox;
   className?: Class;
   [k: string]: unknown;
@@ -253,20 +156,20 @@ export interface Cta {
 /**
  * Image displayed alongside the text content
  */
-export interface Image1 {
-  order?: Order;
+export interface Image {
   source?: ImageSource;
   ratio?: ImageAspectRatio;
   vAlign?: ImageVerticalAlignment;
   hAlign?: ImageHorizontalAlignment;
+  order?: Order;
   [k: string]: unknown;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
  */
 export interface Order {
-  desktopImageLast?: DesktopImageAfterText;
   mobileImageLast?: MobileImageAfterText;
+  desktopImageLast?: DesktopImageAfterText;
   [k: string]: unknown;
 }
 /**
