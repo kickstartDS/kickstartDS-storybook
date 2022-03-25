@@ -13,6 +13,12 @@
     }
   }
 
+  &__link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-s);
+  }
+
   &__box.c-visual__box--transparent {
     overflow: unset;
   }

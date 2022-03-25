@@ -1,13 +1,17 @@
 import merge from "deepmerge";
-import { pack } from "@kickstartds/core/lib/storybook/helpers";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
 import visualStories, {
   Template,
 } from "@kickstartds/content/lib/visual/visual.stories";
 import tokens from "./visual-tokens.json";
-import schema from "@kickstartds/content/lib/visual/visual.schema.dereffed.json";
+import schema from "./visual.schema.dereffed.json";
+
+const { defaultArgs: args, argTypes } = getArgsShared(schema);
 
 export default {
   ...visualStories,
+  args,
+  argTypes,
   parameters: {
     cssprops: merge(visualStories.parameters.cssprops, tokens),
     jsonschema: schema,
@@ -21,7 +25,17 @@ BoxLight.args = pack({
   box: {
     background: "light",
     link: {
-      variant: "solid",
+      buttons: [
+        {
+          variant: "solid",
+        },
+        {
+          label: ""
+        },
+        {
+          label: ""
+        },
+      ],
     },
   },
 });
@@ -32,7 +46,17 @@ BoxDark.args = pack({
   height: "fullImage",
   box: {
     link: {
-      variant: "solid-inverted",
+      buttons: [
+        {
+          variant: "solid-inverted",
+        },
+        {
+          variant: "outline-inverted",
+        },
+        {
+          label: "",
+        },
+      ],
     },
   },
 });
@@ -68,6 +92,7 @@ VideoWithLargeHeadline.args = pack({
     },
   },
 });
+
 export const VideoWithOverlay = Template.bind({});
 VideoWithOverlay.args = pack({
   backgroundColor: "transparent",
@@ -92,7 +117,17 @@ VideoWithOverlay.args = pack({
     background: "transparent",
     text: "Hic maxime sed eos non. Consequatur ut qui amet accusantium nesciunt.",
     link: {
-      variant: "outline",
+      buttons: [
+        {
+          variant: "outline",
+        },
+        {
+          label: "",
+        },
+        {
+          label: "",
+        },
+      ],
     },
   },
 });

@@ -4,6 +4,7 @@ import { LinkButtonProvider } from "./link-button/LinkButtonComponent";
 import { SectionProvider } from "./section/SectionComponent";
 import { CountUpProvider } from "./count-up/CountUpComponent";
 import { StorytellingProvider } from "./storytelling/StorytellingComponent";
+import { VisualProvider } from "./visual/VisualComponent";
 
 export default (props) => (
   <HeadlineProvider>
@@ -11,7 +12,9 @@ export default (props) => (
       <LinkButtonProvider>
         <SectionProvider>
           <StorytellingProvider>
-            <CountUpProvider {...props} />
+            <VisualProvider>
+              <CountUpProvider {...props} />
+            </VisualProvider>
           </StorytellingProvider>
         </SectionProvider>
       </LinkButtonProvider>

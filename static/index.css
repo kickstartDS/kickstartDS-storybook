@@ -3061,6 +3061,11 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
     padding-bottom: var(--spacing-l);
   }
 }
+.c-visual__link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-s);
+}
 .c-visual__box.c-visual__box--transparent {
   overflow: unset;
 }
