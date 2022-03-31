@@ -163,16 +163,22 @@ export const Welcome = () => (
       spaceAfter="small"
       spaceBefore="small"
       width="narrow"
-      align="center"
     >
-      <LinkButton
-        className="c-button--main no-stretch"
-        href="https://www.kickstartds.com"
-        label="... or learn more on our website"
-        size="default"
-        type="button"
-        variant="solid"
-      />
+      <div
+        align="center"
+      >
+
+        <LinkButton
+          className="c-button--main no-stretch"
+          href="https://www.kickstartds.com"
+          label="... or learn more on our website"
+          size="default"
+          type="button"
+          highlighted
+          deko
+          variant="solid"
+        />
+      </div>
     </Section>
   </>
 );

@@ -86,7 +86,8 @@
   --font-weight-semi-bold: 500;
   --font-weight-bold: 700;
   --font-family-display: "Helvetica Neue", Arial, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, system-ui, -apple-system, system-ui, sans-serif;
+    Oxygen-Sans, Ubuntu, Cantarell, system-ui, -apple-system, system-ui,
+    sans-serif;
   --font-family-copy: var(--font-family-display);
   --font-family-ui: var(--font-family-display);
   --line-height-factor-display: 1;
@@ -95,13 +96,9 @@
   --font-size-xs: 0.6rem;
   --font-size-s: 0.8rem;
   --font-size-m: 0.9rem;
-  /* Copy, Subheadline */
   --font-size-l: 1.125rem;
-  /* h3 */
   --font-size-xl: 1.35rem;
-  /* h2 */
   --font-size-xxl: 1.75rem;
-  /* h1 */
   --line-height-xs: 1rem;
   --line-height-s: 1.3rem;
   --line-height-m: 1.4rem;
@@ -178,6 +175,7 @@
   --g-content-width-wide: 70rem;
   --g-content-width-max: 96rem;
   --g-content-padding: var(--spacing-l);
+  --g-transition--bounce: 275ms all cubic-bezier(0.17, 1, 0.5, 1.5);
   --l-section-dark-color: var(--color-white-alpha-9);
   --pswp--assets-path: url("img/lightbox/default-skin.svg");
 }
@@ -247,7 +245,8 @@
   --c-button--font-weight: var(--font-weight-semi-bold);
   --c-button--padding: 0.4rem 1.25rem;
   --c-button-icon--margin: 0;
-  --c-button-transition: 250ms all;
+  --c-button--background-transition: 100ms all ease-out;
+  --c-button--shadow-transition: var(--g-transition--bounce);
 }
 
 .c-button--small {
@@ -285,7 +284,7 @@
 .c-button--outline-inverted {
   --c-button--color: var(--color-secondary);
   --c-button--color-hover: var(--color-secondary);
-  --c-button--shadow-color: var(--color-secondary-alpha-2);
+  --c-button--shadow-color: var(--color-white-alpha-2);
 }
 
 .c-button--clear-inverted {
@@ -294,8 +293,8 @@
   --c-button--background-color-hover: var(--color-secondary-alpha-2);
 }
 
-.c-button--main {
-  --c-button-transition: 250ms all cubic-bezier(0.17, 0.88, 0.27, 1.225);
+.c-button--highlighted {
+  --c-button-transition: 275ms all cubic-bezier(0.17, 1, 0.5, 1.5);
 }
 
 :root {
@@ -323,6 +322,10 @@
 
 .c-button {
   height: fit-content;
+  width: 100%;
+}
+.c-button--wrapper {
+  display: inline-block;
 }
 .c-button span,
 .c-button .icon {
@@ -347,7 +350,7 @@
   content: "";
   pointer-events: none;
   position: absolute;
-  transition: var(--c-button-transition);
+  transition: var(--c-button--shadow-transition);
   opacity: 0;
   z-index: 0;
   left: 0;
@@ -357,13 +360,52 @@
   background-color: var(--c-button--shadow-color);
   clip-path: var(--clip-path);
 }
+.c-button::before {
+  transition: var(--c-button--background-transition);
+}
+.c-button--deko-wrapper {
+  display: inline-block;
+  width: fit-content;
+  position: relative;
+}
+.c-button--deko-wrapper:hover::before, .c-button--deko-wrapper:hover::after {
+  transform: rotate(10deg);
+  opacity: 1;
+}
+.c-button--deko-wrapper::before, .c-button--deko-wrapper::after {
+  position: absolute;
+  transform: scale(0.85);
+  pointer-events: none;
+  transition: var(--g-transition--bounce);
+  opacity: 0.4;
+  z-index: 2;
+}
+@media (min-width: 40em) {
+  .c-button--deko-wrapper::before, .c-button--deko-wrapper::after {
+    z-index: 2;
+  }
+}
+.c-button--deko-wrapper::before {
+  content: url(/patterns/button_before.svg);
+  bottom: -30%;
+  left: -2em;
+}
+@media (min-width: 40em) {
+  .c-button--deko-wrapper::before {
+    left: -2em;
+  }
+}
+.c-button--deko-wrapper::after {
+  content: url(/patterns/button_after.svg);
+  right: -2.25em;
+  top: 0;
+}
 
 .c-button--solid,
 .c-button--solid-inverted,
 .c-button--clear,
 .c-button--clear-inverted {
   position: relative;
-  transition: var(--c-button-transition);
   background: none !important;
 }
 .c-button--solid::after,
@@ -502,10 +544,14 @@
   left: -16px;
 }
 
-.c-button--main span {
+.c-button--clear {
+  transition: var(--c-button--shadow-transition);
+}
+
+.c-button--highlighted span {
   white-space: unset;
 }
-.c-button--main:hover {
+.c-button--highlighted:hover.c-button--solid, .c-button--highlighted:hover.c-button--solid-inverted {
   --corner-height: 16px;
   --clip-path: polygon(
     0% var(--corner-height),
@@ -516,23 +562,23 @@
     0 100%
   );
 }
-.c-button--main::before {
-  transition: var(--c-button-transition);
+.c-button--highlighted::before {
+  transition: var(--c-button--shadow-transition);
 }
-.c-button--main::after {
+.c-button--highlighted::after {
   opacity: 1;
-  left: 10px;
-  bottom: -10px;
-}
-.c-button--main.c-button--large::after {
-  left: 12px;
-  bottom: -12px;
-}
-.c-button--main.c-button--small::after {
   left: 8px;
   bottom: -8px;
 }
-.c-button--main.c-button--small:hover {
+.c-button--highlighted.c-button--large::after {
+  left: 12px;
+  bottom: -12px;
+}
+.c-button--highlighted.c-button--small::after {
+  left: 8px;
+  bottom: -8px;
+}
+.c-button--highlighted.c-button--small:hover {
   --corner-height: 9px;
   --clip-path: polygon(
     0% var(--corner-height),
@@ -2994,46 +3040,6 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 }
 .c-visual__box.c-visual__box--transparent {
   overflow: unset;
-}
-.c-visual--deko .c-visual__link {
-  width: fit-content;
-  position: relative;
-}
-.c-visual--deko .c-visual__link:hover::before, .c-visual--deko .c-visual__link:hover::after {
-  transform: rotate(10deg);
-  opacity: 1;
-}
-.c-visual--deko .c-visual__link::before, .c-visual--deko .c-visual__link::after {
-  position: absolute;
-  transform: scale(0.85);
-  pointer-events: none;
-  transition: 250ms all cubic-bezier(0.17, 0.88, 0.27, 1.225);
-  opacity: 0.4;
-  z-index: 2;
-}
-@media (min-width: 40em) {
-  .c-visual--deko .c-visual__link::before, .c-visual--deko .c-visual__link::after {
-    z-index: 2;
-  }
-}
-.c-visual--deko .c-visual__link::before {
-  content: url(/patterns/button_before.svg);
-  bottom: -30%;
-  left: -2em;
-}
-@media (min-width: 40em) {
-  .c-visual--deko .c-visual__link::before {
-    left: -2em;
-  }
-}
-.c-visual--deko .c-visual__link::after {
-  content: url(/patterns/button_after.svg);
-  right: -2.25em;
-  top: 0;
-}
-.c-visual--deko .c-visual__content--center .c-visual__link {
-  margin-left: auto;
-  margin-right: auto;
 }
 @media (min-width: 40em) {
   .c-visual .kds-header--spacer + .c-visual--full,

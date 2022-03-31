@@ -27,6 +27,11 @@
 
 .c-button {
   height: fit-content;
+  width: 100%;
+
+  &--wrapper {
+    display: inline-block;
+  }
 
   span,
   .icon {
@@ -65,7 +70,7 @@
     content: "";
     pointer-events: none;
     position: absolute;
-    transition: var(--c-button-transition);
+    transition: var(--c-button--shadow-transition);
     opacity: 0;
     z-index: 0;
     left: 0;
@@ -75,6 +80,54 @@
     background-color: var(--c-button--shadow-color);
     clip-path: var(--clip-path);
   }
+
+  &::before {
+    transition: var(--c-button--background-transition);
+  }
+
+  &--deko-wrapper {
+    display: inline-block;
+    width: fit-content;
+    position: relative;
+
+    &:hover {
+      &::before,
+      &::after {
+        transform: rotate(10deg);
+        opacity: 1;
+      }
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      transform: scale(0.85);
+      pointer-events: none;
+      transition: var(--g-transition--bounce);
+      opacity: 0.4;
+      z-index: 2;
+
+      @include breakpoint.media("≥s") {
+        z-index: 2;
+      }
+    }
+
+    &::before {
+      content: url(/patterns/button_before.svg);
+      bottom: -30%;
+      left: -2em;
+
+      @include breakpoint.media("≥s") {
+        left: -2em;
+      }
+    }
+
+    &::after {
+      content: url(/patterns/button_after.svg);
+      right: -2.25em;
+      top: 0;
+    }
+  }
 }
 
 .c-button--solid,
@@ -82,7 +135,6 @@
 .c-button--clear,
 .c-button--clear-inverted {
   position: relative;
-  transition: var(--c-button-transition);
   background: none !important;
 
   &::after {
@@ -229,11 +281,16 @@
   }
 }
 
-.c-button--main {
+.c-button--clear {
+  transition: var(--c-button--shadow-transition);
+}
+
+.c-button--highlighted {
   span {
     white-space: unset;
   }
-  &:hover {
+  &:hover.c-button--solid,
+  &:hover.c-button--solid-inverted {
     --corner-height: 16px;
     --clip-path: polygon(
       0% var(--corner-height),
@@ -246,13 +303,13 @@
   }
 
   &::before {
-    transition: var(--c-button-transition);
+    transition: var(--c-button--shadow-transition);
   }
 
   &::after {
     opacity: 1;
-    left: 10px;
-    bottom: -10px;
+    left: 8px;
+    bottom: -8px;
   }
 
   &.c-button--large {

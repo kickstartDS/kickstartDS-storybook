@@ -27,42 +27,52 @@ const ButtonComponent: ForwardRefRenderFunction<
     icon,
     iconBefore,
     iconAfter,
+    highlighted,
+    deko,
     ...props
   },
   ref
 ) => (
-  <button
-    type={type}
+  <span
     className={classnames(
-      "c-button",
-      `c-button--${variant}`,
-      {
-        "c-button--small": size === "small",
-        "c-button--large": size === "large",
-        "c-button--fill-animation": fillAnimation,
-        "c-button--icon-animation": iconAnimation,
-      },
-      className
+      "c-button--wrapper",
+      deko && "c-button--deko-wrapper"
     )}
-    data-component={dataComponent}
-    ref={ref}
-    {...props}
   >
-    <span className="c-button__content">
-      {label ? (
-        <>
-          {icon && iconBefore && <Icon {...icon} />}
-          <span>{label}</span>
-          {icon && iconAfter && <Icon {...icon} />}
-        </>
-      ) : icon ? (
-        <Icon {...icon} />
-      ) : (
-        ""
+    <button
+      type={type}
+      className={classnames(
+        "c-button",
+        `c-button--${variant}`,
+        highlighted && "c-button--highlighted",
+        {
+          "c-button--small": size === "small",
+          "c-button--large": size === "large",
+          "c-button--fill-animation": fillAnimation,
+          "c-button--icon-animation": iconAnimation,
+        },
+        className
       )}
-      <span className="c-button__border" />
-    </span>
-  </button>
+      data-component={dataComponent}
+      ref={ref}
+      {...props}
+    >
+      <span className="c-button__content">
+        {label ? (
+          <>
+            {icon && iconBefore && <Icon {...icon} />}
+            <span>{label}</span>
+            {icon && iconAfter && <Icon {...icon} />}
+          </>
+        ) : icon ? (
+          <Icon {...icon} />
+        ) : (
+          ""
+        )}
+        <span className="c-button__border" />
+      </span>
+    </button>
+  </span>
 );
 
 const Button = forwardRef(ButtonComponent);
