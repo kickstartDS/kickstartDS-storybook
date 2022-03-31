@@ -29,7 +29,7 @@ import FooterStories from "../footer/Footer.stories";
 
 const Page = () => (
   <>
-    <Header {...HeaderStories.args} />
+    <Header {...HeaderStories.args} active="sanity" />
     <Section width="full" spaceBefore="none" spaceAfter="small">
       <Visual
         className="c-visual--deko"
