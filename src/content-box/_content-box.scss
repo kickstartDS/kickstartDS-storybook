@@ -67,20 +67,20 @@
       --c-content-box_topic--font: var(--c-content-box_topic--font-s);
       --c-rich-text--font: var(--c-content-box_rich-text--font-s);
 
-      .c-button {
-        @include breakpoint.media("≥m") {
-          --c-button--font: var(--font-ui-xs);
-        }
-      }
+      // .c-button {
+      //   @include breakpoint.media("≥m") {
+      //     --c-button--font: var(--font-ui-xs);
+      //   }
+      // }
     }
 
     &[min-width~="400"] {
       --c-content-box_topic--font: var(--c-content-box_topic--font-m);
       --c-rich-text--font: var(--c-content-box_rich-text--font-m);
 
-      .c-button {
-        --c-button--font: var(--font-ui-s);
-      }
+      // .c-button {
+      //   --c-button--font: var(--font-ui-s);
+      // }
     }
   }
 }

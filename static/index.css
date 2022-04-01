@@ -324,6 +324,14 @@
   height: fit-content;
   width: 100%;
 }
+.c-button:hover {
+  cursor: pointer;
+}
+.c-button:hover::after {
+  opacity: 1;
+  left: 5px;
+  bottom: -5px;
+}
 .c-button--wrapper {
   display: inline-block;
 }
@@ -335,11 +343,6 @@
   opacity: 1;
   left: 6px;
   bottom: -6px;
-}
-.c-button:hover::after {
-  opacity: 1;
-  left: 5px;
-  bottom: -5px;
 }
 .c-button.c-button--small:hover::after {
   opacity: 1;
@@ -667,17 +670,9 @@
   --c-content-box_topic--font: var(--c-content-box_topic--font-s);
   --c-rich-text--font: var(--c-content-box_rich-text--font-s);
 }
-@media (min-width: 60em) {
-  .c-content-box .c-content-box__body[min-width~="200"] .c-button {
-    --c-button--font: var(--font-ui-xs);
-  }
-}
 .c-content-box .c-content-box__body[min-width~="400"] {
   --c-content-box_topic--font: var(--c-content-box_topic--font-m);
   --c-rich-text--font: var(--c-content-box_rich-text--font-m);
-}
-.c-content-box .c-content-box__body[min-width~="400"] .c-button {
-  --c-button--font: var(--font-ui-s);
 }
 
 @media (min-width: 40em) {
@@ -1508,7 +1503,7 @@ header[data-component="kds.header"] {
   --c-nav-main_background-color: var(--color-white);
   --c-nav-main_item--color: var(--color-primary-darker-1);
   --c-nav-main_item--color-active: var(--color-primary);
-  --c-nav-main_item--color-hover: var(--color-primary);
+  --c-nav-main_item--color-hover: var(--color-primary-darker-1);
   --c-nav-main_item--font: var(--font-ui-l);
   --c-nav-main_item--font-weight: var(--font-weight-semi-bold);
   --c-nav-main_item--font-weight-active: var(--font-weight-bold);
@@ -1615,7 +1610,7 @@ header[data-component="kds.header"] {
   .nav-main > .kds-logo {
     display: none;
   }
-  .nav-main--contact-button {
+  .nav-main .c-button--wrapper {
     margin-left: var(--spacing-s);
   }
   .nav-main__list {
@@ -2152,10 +2147,18 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   background-size: cover;
   position: absolute;
   right: 0;
-  top: -30%;
-  height: 75%;
+  top: 0;
   aspect-ratio: 1/1;
-  z-index: -1;
+  transform: translateY(-30%);
+  height: 60%;
+  max-height: 6rem;
+  min-height: 4rem;
+}
+@media (min-width: 40.01em) {
+  .c-rich-text blockquote p::after {
+    transform: translateY(-50%);
+    max-height: 7rem;
+  }
 }
 
 .c-rich-text a,

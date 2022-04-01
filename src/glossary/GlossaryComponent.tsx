@@ -143,7 +143,8 @@ export const Glossary: FunctionComponent<
           horizontal: "center",
           indent: true,
           link: {
-            className: "c-button--main",
+            highlighted: true,
+            dedko: true,
             enabled: true,
             fillAnimation: false,
             href: stackshare,
@@ -188,7 +189,7 @@ export const Glossary: FunctionComponent<
               enabled: true,
               label: "Keep reading",
               variant: "clear",
-              size: "large",
+              size: "medium",
               iconAfter: true,
               icon: {
                 icon: "chevron-right",
