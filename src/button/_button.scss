@@ -87,10 +87,7 @@
   }
 
   &--deko-wrapper {
-    display: inline-block;
-    width: fit-content;
     position: relative;
-
     &:hover {
       &::before,
       &::after {

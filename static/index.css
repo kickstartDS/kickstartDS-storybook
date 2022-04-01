@@ -367,8 +367,6 @@
   transition: var(--c-button--background-transition);
 }
 .c-button--deko-wrapper {
-  display: inline-block;
-  width: fit-content;
   position: relative;
 }
 .c-button--deko-wrapper:hover::before, .c-button--deko-wrapper:hover::after {
