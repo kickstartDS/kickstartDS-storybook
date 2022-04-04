@@ -34,7 +34,8 @@ const ButtonComponent: ForwardRefRenderFunction<
   <span
     className={classnames(
       "c-button--wrapper",
-      deko && "c-button--deko-wrapper"
+      deko && "c-button--deko-wrapper",
+      className
     )}
   >
     <button
@@ -48,8 +49,7 @@ const ButtonComponent: ForwardRefRenderFunction<
           "c-button--large": size === "large",
           "c-button--fill-animation": fillAnimation,
           "c-button--icon-animation": iconAnimation,
-        },
-        className
+        }
       )}
       data-component={dataComponent}
       ref={ref}

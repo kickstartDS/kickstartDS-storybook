@@ -42,7 +42,8 @@ const LinkButtonComponent: ForwardRefRenderFunction<
   <span
     className={classnames(
       "c-button--wrapper",
-      deko && "c-button--deko-wrapper"
+      deko && "c-button--deko-wrapper",
+      className
     )}
   >
     <Link
@@ -56,8 +57,7 @@ const LinkButtonComponent: ForwardRefRenderFunction<
           "c-button--large": size === "large",
           "c-button--fill-animation": fillAnimation,
           "c-button--icon-animation": iconAnimation,
-        },
-        className
+        }
       )}
       data-component={dataComponent}
       {...(newTab ? { target: "_blank", rel: "noopener" } : {})}
