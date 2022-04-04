@@ -4,11 +4,10 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Section } from "@kickstartds/base/lib/section";
 import { ContentBox } from "@kickstartds/base/lib/content-box";
-
 import { Button } from "@kickstartds/base/lib/button";
+import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
 import { GlossaryProps } from "./GlossaryProps";
-import { Cta } from "../cta/CtaComponent";
 
 export const Glossary: FunctionComponent<
   GlossaryProps & HTMLAttributes<HTMLDivElement>
@@ -86,7 +85,7 @@ export const Glossary: FunctionComponent<
           width="narrow"
           background="default"
         >
-          <Cta {...cta} />
+          <Storytelling className="cta" {...cta} />
         </Section>
       </div>
     </div>

@@ -3,11 +3,7 @@ import {
   Section,
 } from "@kickstartds/base";
 
-export default {
-  title: "Card Grid",
-};
-
-const Page = () => (
+const Recipe = () => (
   <>
     <Section
       width="wide"
@@ -178,5 +174,4 @@ const Page = () => (
   </>
 );
 
-const Template = (args) => <Page {...args} />;
-export const TeaserGrid = Template.bind({});
+export const TeaserGrid = Recipe.bind({});

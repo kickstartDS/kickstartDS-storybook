@@ -1,13 +1,6 @@
-import {
-  TeaserBox,
-  Section,
-} from "@kickstartds/base";
+import { TeaserBox, Section } from "@kickstartds/base";
 
-export default {
-  title: "Teaser Switch",
-};
-
-const Page = () => (
+const Recipe = () => (
   <>
     <Section
       width="wide"
@@ -28,7 +21,7 @@ const Page = () => (
           iconAfter: true,
           icon: {
             icon: "chevron-right",
-          }
+          },
         }}
         imageSpacing
       />
@@ -43,7 +36,7 @@ const Page = () => (
           iconAfter: true,
           icon: {
             icon: "chevron-right",
-          }
+          },
         }}
         imageSpacing
       />
@@ -51,5 +44,4 @@ const Page = () => (
   </>
 );
 
-const Template = (args) => <Page {...args} />;
-export const TeaserSwitch = Template.bind({});
+export const TeaserSwitch = Recipe.bind({});

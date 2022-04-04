@@ -25,7 +25,6 @@ export default {
 
 import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
-import { Cta } from "../cta/CtaComponent";
 
 const Page = () => (
   <>
