@@ -29,10 +29,9 @@ import FooterStories from "../footer/Footer.stories";
 
 const Page = () => (
   <>
-    <Header {...HeaderStories.args} />
+    <Header {...HeaderStories.args} active="sanity" />
     <Section width="full" spaceBefore="none" spaceAfter="small">
       <Visual
-        className="c-visual--deko"
         box={{
           background: "transparent",
           enabled: true,
@@ -46,10 +45,11 @@ const Page = () => (
           horizontal: "left",
           indent: true,
           link: {
-            className: "c-button--main",
+            deko: true,
+            highlighted: true,
             enabled: true,
             fillAnimation: false,
-            href: "https://example.com",
+            href: "#",
             iconAfter: true,
             iconAnimation: false,
             iconBefore: false,

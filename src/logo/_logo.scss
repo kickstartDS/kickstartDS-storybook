@@ -12,6 +12,10 @@
     width: auto;
     transition: height var(--g-transition-duration-s);
 
+    img {
+      max-width: unset;
+    }
+
     @include breakpoint.media("≥s") {
       padding: 0;
     }
