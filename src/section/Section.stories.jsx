@@ -5,17 +5,25 @@ import {
   getArgsShared,
 } from "@kickstartds/core/lib/storybook/helpers";
 import sectionStories from "@kickstartds/base/lib/section/section.stories";
-import { ImageLink } from "../content-box/ContentBox.stories";
+import ContentBoxStory, {
+  ImageWithButton,
+} from "../content-box/ContentBox.stories";
 import schema from "./section.schema.dereffed.json";
 import tokens from "./section-tokens.json";
 
 const Section = sectionStories.component;
-ImageLink.displayName = "ContentBox";
+ImageWithButton.displayName = "ContentBox";
 const Template = (args) => (
   <Section {...args}>
-    <ImageLink {...unpack(ImageLink.args)} />
-    <ImageLink {...unpack(ImageLink.args)} />
-    <ImageLink {...unpack(ImageLink.args)} />
+    <ImageWithButton
+      {...merge(ContentBoxStory.args, unpack(ImageWithButton.args))}
+    />
+    <ImageWithButton
+      {...merge(ContentBoxStory.args, unpack(ImageWithButton.args))}
+    />
+    <ImageWithButton
+      {...merge(ContentBoxStory.args, unpack(ImageWithButton.args))}
+    />
   </Section>
 );
 
@@ -31,7 +39,7 @@ export default {
   },
 };
 
-export const Inhaltsboxen = Template.bind({});
-Inhaltsboxen.args = pack({
+export const ContentBoxes = Template.bind({});
+ContentBoxes.args = pack({
   mode: "tile",
 });
