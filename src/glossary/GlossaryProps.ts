@@ -246,7 +246,7 @@ export interface RelatedEntry {
  * Component to present rich combinations of text and media, best used sequentially
  */
 export interface Cta {
-  image: Image1;
+  image?: Image1;
   backgroundImage?: BackgroundImage;
   backgroundColor?: BackgroundColor;
   full?: FullSizeImage;
