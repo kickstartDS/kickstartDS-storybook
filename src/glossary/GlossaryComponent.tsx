@@ -89,7 +89,7 @@ export const Glossary: FunctionComponent<
           width="narrow"
           background="default"
         >
-          <Storytelling className="cta" {...cta} />
+          <Storytelling {...cta} className="cta" />
         </Section>
       </div>
     </div>
