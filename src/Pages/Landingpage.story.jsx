@@ -49,7 +49,7 @@ const Page = () => (
             highlighted: true,
             enabled: true,
             fillAnimation: false,
-            href: "https://example.com",
+            href: "#",
             iconAfter: true,
             iconAnimation: false,
             iconBefore: false,

@@ -28,13 +28,27 @@
 .c-button {
   height: fit-content;
   width: 100%;
+  transition: var(--g-transition--bounce);
+  transition: translateZ(0);
+  
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 
   &:hover {
     cursor: pointer;
+    transform: translateY(-2px);
     &::after {
       opacity: 1;
       left: 5px;
       bottom: -5px;
+    }
+  }
+  &:active:not(:disabled) {
+    transform: translateY(0);
+    &::after {
+      opacity: 1;
+      left: 3px;
+      bottom: -3px;
     }
   }
 
@@ -284,6 +298,11 @@
 }
 
 .c-button--highlighted {
+  &:hover {
+    cursor: pointer;
+    transform: scale(103%);
+  }
+
   span {
     white-space: unset;
   }
