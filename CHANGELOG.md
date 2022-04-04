@@ -1,3 +1,17 @@
+# v1.13.18 (Mon Apr 04 2022)
+
+#### ⚠️ Pushed to `master`
+
+- chore: update kickstartds ([@lmestel](https://github.com/lmestel))
+- chore: update storybook ([@lmestel](https://github.com/lmestel))
+- fix: apply additional classNames to button wrapper ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.13.17 (Mon Apr 04 2022)
 
 #### ⚠️ Pushed to `master`
