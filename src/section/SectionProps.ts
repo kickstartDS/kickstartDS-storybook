@@ -1736,7 +1736,7 @@ export interface Storytelling {
   backgroundImage?: BackgroundImage2;
   backgroundColor?: BackgroundColor;
   full?: FullSizeImage;
-  image: Image;
+  image?: Image;
   box: TextBox2;
   className?: Class5;
   [k: string]: unknown;

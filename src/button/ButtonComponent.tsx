@@ -1,10 +1,8 @@
 import {
   ForwardRefRenderFunction,
   ButtonHTMLAttributes,
+  FunctionComponent,
   forwardRef,
-  createElement,
-  createContext,
-  useContext,
 } from "react";
 import classnames from "classnames";
 import { Icon } from "@kickstartds/base/lib/icon";
@@ -27,46 +25,58 @@ const ButtonComponent: ForwardRefRenderFunction<
     icon,
     iconBefore,
     iconAfter,
+    highlighted,
+    deko,
     ...props
   },
   ref
 ) => (
-  <button
-    type={type}
+  <span
     className={classnames(
-      "c-button",
-      `c-button--${variant}`,
-      {
-        "c-button--small": size === "small",
-        "c-button--large": size === "large",
-        "c-button--fill-animation": fillAnimation,
-        "c-button--icon-animation": iconAnimation,
-      },
+      "c-button--wrapper",
+      deko && "c-button--deko-wrapper",
       className
     )}
-    data-component={dataComponent}
-    ref={ref}
-    {...props}
   >
-    <span className="c-button__content">
-      {label ? (
-        <>
-          {icon && iconBefore && <Icon {...icon} />}
-          <span>{label}</span>
-          {icon && iconAfter && <Icon {...icon} />}
-        </>
-      ) : icon ? (
-        <Icon {...icon} />
-      ) : (
-        ""
+    <button
+      type={type}
+      className={classnames(
+        "c-button",
+        `c-button--${variant}`,
+        highlighted && "c-button--highlighted",
+        {
+          "c-button--small": size === "small",
+          "c-button--large": size === "large",
+          "c-button--fill-animation": fillAnimation,
+          "c-button--icon-animation": iconAnimation,
+        }
       )}
-      <span className="c-button__border" />
-    </span>
-  </button>
+      data-component={dataComponent}
+      ref={ref}
+      {...props}
+    >
+      <span className="c-button__content">
+        {label ? (
+          <>
+            {icon && iconBefore && <Icon {...icon} />}
+            <span>{label}</span>
+            {icon && iconAfter && <Icon {...icon} />}
+          </>
+        ) : icon ? (
+          <Icon {...icon} />
+        ) : (
+          ""
+        )}
+        <span className="c-button__border" />
+      </span>
+    </button>
+  </span>
 );
 
 const Button = forwardRef(ButtonComponent);
 
-export const ButtonProvider = (props) => (
+export type TButton = typeof Button;
+
+export const ButtonProvider: FunctionComponent<unknown> = (props) => (
   <ButtonContext.Provider value={Button} {...props} />
 );

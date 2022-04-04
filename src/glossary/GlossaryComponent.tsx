@@ -4,11 +4,14 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Section } from "@kickstartds/base/lib/section";
 import { ContentBox } from "@kickstartds/base/lib/content-box";
-
-import { Visual } from "@kickstartds/content/lib/visual";
+import { LinkButton as KsLinkButton } from "@kickstartds/base/lib/link-button";
 
 import { GlossaryProps } from "./GlossaryProps";
 import { Cta } from "../cta/CtaComponent";
+import { TLinkButton } from "../link-button/LinkButtonComponent";
+
+// TODO: is there a better way to override types?
+const LinkButton = KsLinkButton as TLinkButton;
 
 export const Glossary: FunctionComponent<
   GlossaryProps & HTMLAttributes<HTMLDivElement>
@@ -127,40 +130,28 @@ export const Glossary: FunctionComponent<
       </Section>
     )}
 
-    <Section spaceBefore="none" spaceAfter="none" width="wide" align="left">
-      <Visual
-        className="c-visual--deko c-visual--custom"
-        box={{
-          background: "transparent",
-          enabled: true,
-          headline: {
-            content:
-              "Read more, or discuss this decision with us on StackShare.io",
-            level: "h2",
-            align: "left",
-            spaceAfter: "none",
-          },
-          horizontal: "center",
-          indent: true,
-          link: {
-            className: "c-button--main",
-            enabled: true,
-            fillAnimation: false,
-            href: stackshare,
-            iconAfter: true,
-            iconAnimation: false,
-            iconBefore: false,
-            icon: {
-              icon: "stackshare",
-            },
-            label: "Go to StackShare.io",
-            newTab: false,
-            size: "medium",
-            variant: "solid",
-          },
-          vertical: "center",
-        }}
-      />
+    <Section
+      align="center"
+      width="narrow"
+      headline={{
+        content: "Read more, or discuss this decision with us on StackShare.io",
+        align: "center",
+      }}
+    >
+      <div>
+        <LinkButton
+          label={"Go to StackShare.io"}
+          variant="solid"
+          size={"medium"}
+          deko
+          highlighted
+          href={stackshare}
+          iconAfter
+          icon={{
+            icon: "stackshare",
+          }}
+        />
+      </div>
     </Section>
 
     {related && related.length > 0 && (
@@ -171,6 +162,7 @@ export const Glossary: FunctionComponent<
           align: "left",
           spaceAfter: "none",
         }}
+        variant="head"
         className="two-col"
         spaceBefore="default"
         spaceAfter="small"
@@ -188,7 +180,7 @@ export const Glossary: FunctionComponent<
               enabled: true,
               label: "Keep reading",
               variant: "clear",
-              size: "large",
+              size: "medium",
               iconAfter: true,
               icon: {
                 icon: "chevron-right",

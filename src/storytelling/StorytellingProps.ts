@@ -200,7 +200,7 @@ export interface StorytellingProps {
   backgroundImage?: BackgroundImage;
   backgroundColor?: BackgroundColor;
   full?: FullSizeImage;
-  image: Image;
+  image?: Image;
   className?: Class;
   [k: string]: unknown;
 }

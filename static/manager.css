@@ -18,7 +18,7 @@
   --color-primary-lighter-3: #2c7c8f;
   --color-primary-lighter-4: #74b2c1;
   --color-primary-lighter-5: #a3d4e0;
-  --color-primary-lighter-6: #e4e8ec;
+  --color-primary-lighter-6: #eceff3;
   --color-primary-darker-1: #012f3a;
   --color-primary-darker-2: #03303b;
   --color-secondary: #ecff00;
@@ -86,7 +86,8 @@
   --font-weight-semi-bold: 500;
   --font-weight-bold: 700;
   --font-family-display: "Helvetica Neue", Arial, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, system-ui, -apple-system, system-ui, sans-serif;
+    Oxygen-Sans, Ubuntu, Cantarell, system-ui, -apple-system, system-ui,
+    sans-serif;
   --font-family-copy: var(--font-family-display);
   --font-family-ui: var(--font-family-display);
   --line-height-factor-display: 1;
@@ -95,13 +96,9 @@
   --font-size-xs: 0.6rem;
   --font-size-s: 0.8rem;
   --font-size-m: 0.9rem;
-  /* Copy, Subheadline */
   --font-size-l: 1.125rem;
-  /* h3 */
   --font-size-xl: 1.35rem;
-  /* h2 */
   --font-size-xxl: 1.75rem;
-  /* h1 */
   --line-height-xs: 1rem;
   --line-height-s: 1.3rem;
   --line-height-m: 1.4rem;
@@ -178,6 +175,7 @@
   --g-content-width-wide: 70rem;
   --g-content-width-max: 96rem;
   --g-content-padding: var(--spacing-l);
+  --g-transition--bounce: 275ms all cubic-bezier(0.17, 1, 0.5, 1.5);
   --l-section-dark-color: var(--color-white-alpha-9);
   --pswp--assets-path: url("img/lightbox/default-skin.svg");
 }

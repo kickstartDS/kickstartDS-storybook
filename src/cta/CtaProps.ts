@@ -196,7 +196,7 @@ export type Class = string;
  * Component to present rich combinations of text and media, best used sequentially
  */
 export interface CtaProps {
-  image: Image;
+  image?: Image;
   box: TextBox;
   backgroundImage?: BackgroundImage;
   backgroundColor?: BackgroundColor;

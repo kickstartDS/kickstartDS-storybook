@@ -1,14 +1,17 @@
 import merge from "deepmerge";
-import { pack } from "@kickstartds/core/lib/storybook/helpers";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
 import ButtonStories, {
   Template,
 } from "@kickstartds/base/lib/button/button.stories";
 import tokens from "./button-tokens.json";
 import schema from "./button.schema.dereffed.json";
+const { defaultArgs: args, argTypes } = getArgsShared(schema);
 
 export default {
   ...ButtonStories,
   title: "Base/Button",
+  args,
+  argTypes,
   parameters: {
     cssprops: merge(ButtonStories.parameters.cssprops, tokens),
     jsonschema: schema,
@@ -22,10 +25,11 @@ Solid.args = pack({
   label: "mehr erfahren",
 });
 
-export const SolidMain = Template.bind({});
-SolidMain.args = pack({
-  className: "c-button--main",
+export const Main = Template.bind({});
+Main.args = pack({
   variant: "solid",
+  highlighted: true,
+  deko: true,
   href: "#",
   label: "Request a guided demo",
 });
@@ -64,8 +68,8 @@ OutlineInverted.parameters = {
   backgrounds: { default: "dark" },
 };
 
-export const Ghost = Template.bind({});
-Ghost.args = pack({
+export const Clear = Template.bind({});
+Clear.args = pack({
   ...Solid.args,
   variant: "clear",
 });
