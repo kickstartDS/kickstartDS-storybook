@@ -1,6 +1,7 @@
 import {
   ForwardRefRenderFunction,
   AnchorHTMLAttributes,
+  FunctionComponent,
   forwardRef,
 } from "react";
 import classnames from "classnames";
@@ -83,6 +84,8 @@ const LinkButtonComponent: ForwardRefRenderFunction<
 
 const LinkButton = forwardRef(LinkButtonComponent);
 
-export const LinkButtonProvider = (props) => (
+export type TLinkButton = typeof LinkButton;
+
+export const LinkButtonProvider: FunctionComponent<unknown> = (props) => (
   <LinkButtonContext.Provider value={LinkButton} {...props} />
 );

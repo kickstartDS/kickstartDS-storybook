@@ -1,10 +1,8 @@
 import {
   ForwardRefRenderFunction,
   ButtonHTMLAttributes,
+  FunctionComponent,
   forwardRef,
-  createElement,
-  createContext,
-  useContext,
 } from "react";
 import classnames from "classnames";
 import { Icon } from "@kickstartds/base/lib/icon";
@@ -77,6 +75,8 @@ const ButtonComponent: ForwardRefRenderFunction<
 
 const Button = forwardRef(ButtonComponent);
 
-export const ButtonProvider = (props) => (
+export type TButton = typeof Button;
+
+export const ButtonProvider: FunctionComponent<unknown> = (props) => (
   <ButtonContext.Provider value={Button} {...props} />
 );
