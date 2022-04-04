@@ -249,7 +249,7 @@ export interface Storytelling {
   backgroundImage?: BackgroundImage;
   backgroundColor?: BackgroundColor;
   full?: FullSizeImage;
-  image: Image1;
+  image?: Image1;
   box: TextBox;
   className?: Class;
   [k: string]: unknown;
