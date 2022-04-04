@@ -1,3 +1,26 @@
+# v1.13.17 (Mon Apr 04 2022)
+
+#### ⚠️ Pushed to `master`
+
+- fix: override kds component types ([@lmestel](https://github.com/lmestel))
+- feat: add button hover + active animation ([@fleven-kds](https://github.com/fleven-kds))
+- feat: adjust glossary template ([@fleven-kds](https://github.com/fleven-kds))
+- feat: design adjustments ([@fleven-kds](https://github.com/fleven-kds))
+
+#### 🔩 Dependency Updates
+
+- build(deps): bump minimist from 1.2.5 to 1.2.6 [#58](https://github.com/kickstartDS/kickstartDS-storybook/pull/58) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps): bump nanoid from 3.1.25 to 3.3.1 [#56](https://github.com/kickstartDS/kickstartDS-storybook/pull/56) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps): bump follow-redirects from 1.14.1 to 1.14.8 [#44](https://github.com/kickstartDS/kickstartDS-storybook/pull/44) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- [@fleven-kds](https://github.com/fleven-kds)
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.13.16 (Thu Mar 31 2022)
 
 #### ⚠️ Pushed to `master`
