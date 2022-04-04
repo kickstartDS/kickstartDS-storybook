@@ -3,11 +3,6 @@ import { Storytelling } from "@kickstartds/content/lib/storytelling";
 const Recipe = () => (
   <Storytelling
     backgroundColor="#ffffff"
-    image={{
-      order: {
-        desktopImageLast: true,
-      },
-    }}
     box={{
       headline: {
         level: "h1",

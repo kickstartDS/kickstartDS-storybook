@@ -4,11 +4,6 @@ const Recipe = () => (
   <Storytelling
     backgroundColor="#06566A"
     backgroundImage="img/examples/graphics--bg.svg"
-    image={{
-      order: {
-        desktopImageLast: true,
-      },
-    }}
     box={{
       headline: {
         level: "h1",
