@@ -4,6 +4,7 @@ const Recipe = () => (
   <Storytelling
     backgroundColor="#ffffff"
     box={{
+      hAlign: "left",
       headline: {
         level: "h1",
         styleAs: "h1",
@@ -19,7 +20,6 @@ const Recipe = () => (
         size: "large",
       },
     }}
-    full
   />
 );
 

@@ -5,6 +5,7 @@ const Recipe = () => (
     backgroundColor="#06566A"
     backgroundImage="img/examples/graphics--bg.svg"
     box={{
+      hAlign: "left",
       headline: {
         level: "h1",
         styleAs: "h1",
@@ -20,7 +21,6 @@ const Recipe = () => (
         size: "large",
       },
     }}
-    full
   />
 );
 

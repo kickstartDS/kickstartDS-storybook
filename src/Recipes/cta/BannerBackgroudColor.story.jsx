@@ -4,6 +4,7 @@ const Recipe = () => (
   <Storytelling
     backgroundColor="#f0fa97"
     box={{
+      hAlign: "left",
       headline: {
         content: "Got any questions?",
         subheadline:
@@ -16,7 +17,6 @@ const Recipe = () => (
         variant: "solid",
       },
     }}
-    full
   />
 );
 
