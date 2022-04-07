@@ -13,6 +13,7 @@ import { Default as PostAsideStory } from "../post-aside/PostAside.stories";
 import { Default as PostHeadStory } from "../post-head/PostHead.stories";
 import { Footer } from "../footer/FooterComponent";
 import FooterStories from "../footer/Footer.stories";
+import { Subscription } from "../subscription/SubscriptionComponent";
 
 export default {
   title: "Blog Post",
@@ -150,10 +151,7 @@ After working in a large tech corporation for a long time I very well know today
         subheadline: "Stay up to date",
       }}
     >
-      <div className="c-form">
-        <TextField placeholder="Enter your email" />
-        <Button label="subscribe" size="default" />
-      </div>
+      <Subscription />
     </Section>
     <Footer {...FooterStories.args} />
   </>

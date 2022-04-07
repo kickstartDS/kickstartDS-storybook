@@ -2,17 +2,11 @@
   display: flex;
   flex-direction: row;
   gap: var(--spacing-s);
-  max-width: calc(var(--g-content-width-narrow) * 0.65);
-  width: 100%;
-  margin: auto;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 
   .c-form-field {
-    &__label {
-      display: none;
-    }
-  }
-
-  .c-button {
-    height: fit-content;
+    flex: 1 1 0%;
+    min-width: 14rem;
   }
 }
