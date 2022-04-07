@@ -1,3 +1,15 @@
+# v1.13.19 (Thu Apr 07 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add Subscription Form ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.13.18 (Mon Apr 04 2022)
 
 #### ⚠️ Pushed to `master`
