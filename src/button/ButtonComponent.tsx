@@ -1,5 +1,6 @@
 import {
-  ForwardRefRenderFunction,
+  ForwardRefExoticComponent,
+  RefAttributes,
   ButtonHTMLAttributes,
   FunctionComponent,
   forwardRef,
@@ -7,12 +8,15 @@ import {
 import classnames from "classnames";
 import { Icon } from "@kickstartds/base/lib/icon";
 import { ButtonProps } from "./ButtonProps";
-import { ButtonContext } from "@kickstartds/base/lib/button";
+import {
+  ButtonContext,
+  Button as KdsButton,
+} from "@kickstartds/base/lib/button";
 
-const ButtonComponent: ForwardRefRenderFunction<
-  HTMLButtonElement,
+const ButtonComponent: ForwardRefExoticComponent<
+  RefAttributes<HTMLButtonElement> &
   ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>
-> = (
+> = forwardRef((
   {
     label,
     type = "button",
@@ -71,12 +75,9 @@ const ButtonComponent: ForwardRefRenderFunction<
       </span>
     </button>
   </span>
-);
-
-const Button = forwardRef(ButtonComponent);
-
-export type TButton = typeof Button;
+));
 
 export const ButtonProvider: FunctionComponent<unknown> = (props) => (
-  <ButtonContext.Provider value={Button} {...props} />
+  <ButtonContext.Provider value={ButtonComponent} {...props} />
 );
+export const Button = KdsButton as typeof ButtonComponent;

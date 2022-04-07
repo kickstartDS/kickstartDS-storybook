@@ -4,14 +4,10 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Section } from "@kickstartds/base/lib/section";
 import { ContentBox } from "@kickstartds/base/lib/content-box";
-import { LinkButton as KsLinkButton } from "@kickstartds/base/lib/link-button";
 
 import { GlossaryProps } from "./GlossaryProps";
 import { Cta } from "../cta/CtaComponent";
-import { TLinkButton } from "../link-button/LinkButtonComponent";
-
-// TODO: is there a better way to override types?
-const LinkButton = KsLinkButton as TLinkButton;
+import { LinkButton } from "../link-button/LinkButtonComponent";
 
 export const Glossary: FunctionComponent<
   GlossaryProps & HTMLAttributes<HTMLDivElement>
