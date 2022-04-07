@@ -13,6 +13,12 @@
     }
   }
 
+  &__action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-s);
+  }
+
   &.cta {
     background: var(--color-primary-lighter-6);
     padding: var(--spacing-xl) var(--spacing-xl);

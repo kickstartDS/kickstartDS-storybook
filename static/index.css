@@ -2729,6 +2729,11 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 .c-storytelling[data-bg] .c-headline__subheadline {
   color: var(--color-primary-lighter-4);
 }
+.c-storytelling__action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-s);
+}
 .c-storytelling.cta {
   background: var(--color-primary-lighter-6);
   padding: var(--spacing-xl) var(--spacing-xl);
@@ -3052,6 +3057,11 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
     padding-top: var(--spacing-l);
     padding-bottom: var(--spacing-l);
   }
+}
+.c-visual__link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-s);
 }
 .c-visual__box.c-visual__box--transparent {
   overflow: unset;
