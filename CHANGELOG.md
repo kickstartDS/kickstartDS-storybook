@@ -1,3 +1,15 @@
+# v2.0.1 (Fri Apr 08 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: adjust cta recipes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.0.0 (Fri Apr 08 2022)
 
 #### 💥 Breaking Change
