@@ -1,3 +1,39 @@
+# v1.14.0 (Thu Apr 07 2022)
+
+#### 🚀 Enhancement
+
+- storytelling & visual button group [#59](https://github.com/kickstartDS/kickstartDS-storybook/pull/59) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.13.20 (Thu Apr 07 2022)
+
+#### ⚠️ Pushed to `master`
+
+- refactor: fix link button props ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.13.19 (Thu Apr 07 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add Subscription Form ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v1.13.18 (Mon Apr 04 2022)
 
 #### ⚠️ Pushed to `master`
