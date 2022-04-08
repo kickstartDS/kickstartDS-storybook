@@ -1,3 +1,16 @@
+# v2.0.0 (Fri Apr 08 2022)
+
+#### 💥 Breaking Change
+
+- recipes [#62](https://github.com/kickstartDS/kickstartDS-storybook/pull/62) ([@fleven-kds](https://github.com/fleven-kds) [@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- [@fleven-kds](https://github.com/fleven-kds)
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.14.0 (Thu Apr 07 2022)
 
 #### 🚀 Enhancement
