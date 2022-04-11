@@ -1,3 +1,16 @@
+# v2.0.2 (Mon Apr 11 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: adjust recipes ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add various recipes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.0.1 (Fri Apr 08 2022)
 
 #### ⚠️ Pushed to `master`
