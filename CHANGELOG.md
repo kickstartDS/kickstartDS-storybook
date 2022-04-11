@@ -1,3 +1,16 @@
+# v2.0.3 (Mon Apr 11 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add recipe teaser to welcome page ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.0.2 (Mon Apr 11 2022)
 
 #### ⚠️ Pushed to `master`
