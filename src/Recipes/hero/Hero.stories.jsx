@@ -8,5 +8,6 @@ export default {
 export { AngledImage } from "./AngledImage.story";
 export { LargeDevice } from "./LargeDevice.story";
 export { AtmosphericVideo } from "./AtmosphericVideo.story";
-export { Dark } from "./Dark.story";
+export { TextBesideProduct } from "./TextBesideProduct.story";
+export { TextOnProduct } from "./TextOnProduct.story";
 

@@ -3054,6 +3054,11 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   --c-visual_headline--color: var(--color-black);
   --c-visual_box--color: var(--c-rich-text--color);
 }
+.c-visual__box--transparent-dark {
+  --c-visual_box--background: transparent;
+  --c-visual_headline--color: var(--l-section-dark-color);
+  --c-visual_box--color: var(--l-section-dark-color);
+}
 
 .c-visual .c-headline__subheadline {
   --c-headline_subheadline--color: var(--color-primary);

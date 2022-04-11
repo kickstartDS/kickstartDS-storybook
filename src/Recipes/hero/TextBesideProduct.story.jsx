@@ -8,7 +8,7 @@ const Recipe = () => (
     spaceAfter="none"
   >
     <Storytelling
-      backgroundColor="#150925"
+      backgroundColor="#000000"
       backgroundImage="./"
       box={{
         headline: {
@@ -21,25 +21,12 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam voluptua. At v
 
 Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.`,
         vAlign: "center",
-
-        links: [
-          {
-            fillAnimation: false,
-            href: '#',
-            iconAfter: false,
-            iconAnimation: false,
-            iconBefore: false,
-            label: 'View product',
-            newTab: false,
-            size: 'medium',
-            variant: 'outline-inverted'
-          },
-        ],
+        align: "center",
       }}
       image={{
-        source: "img/recipes/469440.png",
+        source: "https://images.unsplash.com/photo-1631747206566-3cf2880892a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
         order: {
-          desktopImageLast: true,
+          desktopImageLast: false,
         },
       }}
       full
@@ -47,4 +34,4 @@ Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferend
   </Section>
 );
 
-export const Dark = Recipe.bind({});
+export const TextBesideProduct = Recipe.bind({});
