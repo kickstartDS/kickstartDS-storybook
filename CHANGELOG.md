@@ -1,3 +1,15 @@
+# v2.0.5 (Mon Apr 11 2022)
+
+#### ⚠️ Pushed to `master`
+
+- docs: fix internal storybook links ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.0.4 (Mon Apr 11 2022)
 
 #### ⚠️ Pushed to `master`
