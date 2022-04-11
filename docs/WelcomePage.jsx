@@ -145,7 +145,7 @@ export const Welcome = () => (
       </div>
       <TeaserBox
         topic="Recipes"
-        text="Explore the possibilities of the kickstartDS in our component-cookbook. It shows a variety of use cases, easy to recreate and play around with."
+        text="Explore the possibilities of kickstartDS in our component-cookbook. It shows a variety of use cases, easy for you to recreate and to play around with."
         link={{
           href: "sb:recipes-hero:angled-image",
           iconAfter: false,
