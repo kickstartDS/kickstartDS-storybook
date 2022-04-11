@@ -1,6 +1,8 @@
 import {
   Section,
   TeaserBox,
+  ContentBox,
+  Headline
 } from "@kickstartds/base";
 
 import { Button } from "@kickstartds/base/lib/button";
@@ -117,6 +119,39 @@ export const Welcome = () => (
           iconAnimation: false,
           iconBefore: false,
           label: "Read more",
+          newTab: false,
+          variant: "outline",
+        }}
+      />
+    </Section>
+    <Section
+      className="col-four"
+      mode="tile"
+      spaceAfter="small"
+      spaceBefore="small"
+      width="max"
+    >
+      <div>
+        <ContentBox
+          image="img/lightbulb.png"
+        />
+        <Headline
+          content="Need inspiration?"
+          styleAs="h2"
+          subheadline="Check out our Recipe catalouge"
+          align="center"
+          className="no-spacing"
+        />
+      </div>
+      <TeaserBox
+        topic="Recipes"
+        text="Explore the possibilities of the kickstartDS in our component-cookbook. It shows a variety of use cases, easy to recreate and play around with."
+        link={{
+          href: "sb:recipes-hero:angled-image",
+          iconAfter: false,
+          iconAnimation: false,
+          iconBefore: false,
+          label: "View Recipes",
           newTab: false,
           variant: "outline",
         }}

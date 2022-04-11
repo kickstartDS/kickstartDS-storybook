@@ -1862,11 +1862,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   position: relative;
   display: block;
   height: var(--g-logo-height);
-  width: auto;
   transition: height var(--g-transition-duration-s);
-}
-.kds-logo__img img {
-  max-width: unset;
 }
 @media (min-width: 40em) {
   .kds-logo__img {
@@ -3113,6 +3109,10 @@ main {
 
 #root > svg {
   position: absolute;
+}
+
+.no-spacing {
+  margin: 0 !important;
 }
 
 /*# sourceMappingURL=index.css.map */
