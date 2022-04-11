@@ -5,6 +5,6 @@ export default {
   parameters,
 };
 
-export { TeaserSwitch } from "./TeaserSwitch.story";
-export { TeaserGrid } from "./TeaserGrid.story";
+export { Switch } from "./Switch.story";
+export { Grid } from "./Grid.story";
 

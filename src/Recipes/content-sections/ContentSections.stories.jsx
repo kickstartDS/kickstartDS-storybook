@@ -6,4 +6,5 @@ export default {
 };
 
 export { Centered } from "./Centered.story";
-export { AlongHorizontalImage } from "./AlongHorizontalImage.story";
+export { ImageGallery } from "./ImageGallery.story";
+export { Mosaic } from "./Mosaic.story";

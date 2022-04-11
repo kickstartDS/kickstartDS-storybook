@@ -2,6 +2,16 @@
 @use "@kickstartds/core/source/core/breakpoint";
 
 .c-storytelling {
+  &__box {
+    &__content {
+      &--center {
+        .c-storytelling__action {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
   &[data-bg] {
     .c-headline > :first-child,
     .c-rich-text {

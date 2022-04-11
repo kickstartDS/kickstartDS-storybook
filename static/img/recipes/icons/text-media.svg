@@ -1,0 +1,13 @@
+<svg width="250" height="80" viewBox="0 0 250 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="250" height="80" fill="white"/>
+<rect width="80" height="80" fill="#06566A" fill-opacity="0.05"/>
+<rect x="43" y="16" width="27" height="6" fill="#06566A"/>
+<rect x="43" y="24" width="27" height="4" fill="#06566A" fill-opacity="0.25"/>
+<rect x="43" y="30" width="27" height="4" fill="#06566A" fill-opacity="0.25"/>
+<rect x="43" y="36" width="27" height="4" fill="#06566A" fill-opacity="0.25"/>
+<rect x="10" y="42" width="60" height="4" fill="#06566A" fill-opacity="0.25"/>
+<rect x="10" y="48" width="60" height="4" fill="#06566A" fill-opacity="0.25"/>
+<rect x="10" y="54" width="44" height="4" fill="#06566A" fill-opacity="0.25"/>
+<rect width="29" height="23" transform="translate(10 16)" fill="#06566A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.1375 24.9C18.318 24.9 19.275 24.027 19.275 22.95C19.275 21.873 18.318 21 17.1375 21C15.957 21 15 21.873 15 22.95C15 24.027 15.957 24.9 17.1375 24.9ZM26.3437 24.0333L33.7583 34L24.2683 34L18.9291 34L15 34L19.6341 27.9333L21.5634 30.459L26.3437 24.0333Z" fill="#ECFF00"/>
+</svg>

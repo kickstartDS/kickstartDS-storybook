@@ -25,7 +25,7 @@ export default {
 export const Image = Template.bind({});
 Image.args = pack({
   image: {
-    source: "img/examples/toolbox.svg",
+    source: "img/recipes/toolbox.svg",
     order: {
       desktopImageLast: true,
     },
@@ -34,8 +34,7 @@ Image.args = pack({
     headline: {
       level: "h2",
       content: "Great components",
-      subheadline:
-        "Make the most out of your frontends by unifying their core utilizing component and design tokens",
+      subheadline: "Sed diam nonumy eirmod tempor invidunt",
     },
     text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
     links: [
@@ -46,22 +45,24 @@ Image.args = pack({
       }
     ],
   },
-  full: true,
 });
 
-export const ButtonGroup = Template.bind({});
-ButtonGroup.args = pack({
+export const MultipleButtons = Template.bind({});
+MultipleButtons.args = pack({
   image: {
-    source: "img/lemon.svg",
+    source: "img/recipes/toolbox.svg",
+    order: {
+      desktopImageLast: true,
+    },
   },
   box: {
     headline: {
       level: "h2",
       content: "Great components",
       subheadline:
-        "Make the most out of your frontends by unifying their core utilizing component and design tokens",
+        "At vero eos et accusam et justo duo dolores",
     },
-    text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products: fast, flexible, responsive, accessible, xxx, yyy, zzz and the best of all: you can plug it onto every digital touch point you own.",
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
     links: [
       {
         label: "Request a guided demo",
@@ -78,11 +79,141 @@ ButtonGroup.args = pack({
   full: false,
 });
 
-export const LargeScreenshot = Template.bind({});
-LargeScreenshot.args = pack({
-  backgroundColor: "#E6EEF0",
+export const ImageFirst = Template.bind({});
+ImageFirst.args = pack({
   image: {
-    source: "img/examples/sanity.png",
+    source: "img/recipes/toolbox.svg",
+    order: {
+      desktopImageLast: false,
+    },
+  },
+  box: {
+    headline: {
+      level: "h2",
+      content: "Great components",
+      subheadline: "Sed diam nonumy eirmod tempor invidunt",
+    },
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    links: [
+      {
+        label: "Request a guided demo",
+        href: "#",
+        variant: "solid",
+      }
+    ],
+  },
+});
+
+export const CenteredText = Template.bind({});
+CenteredText.args = pack({
+  image: {
+    source: "img/recipes/toolbox.svg",
+    order: {
+      desktopImageLast: true,
+    },
+  },
+  box: {
+    textAlign: "center",
+    headline: {
+      level: "h2",
+      content: "Great components",
+      subheadline: "Sed diam nonumy eirmod tempor invidunt",
+    },
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    links: [
+      {
+        label: "Request a guided demo",
+        href: "#",
+        variant: "solid",
+      }
+    ],
+  },
+});
+
+export const OnlyCenteredText = Template.bind({});
+OnlyCenteredText.args = pack({
+  image: {
+    source: null,
+  },
+  box: {
+    textAlign: "center",
+    headline: {
+      level: "h2",
+      content: "Great components",
+      subheadline: "Sed diam nonumy eirmod tempor invidunt",
+    },
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    links: [
+      {
+        label: "Request a guided demo",
+        href: "#",
+        variant: "solid",
+      }
+    ],
+  },
+});
+
+export const BackgroundColor = Template.bind({});
+BackgroundColor.args = pack({
+  backgroundColor: "#eceff3",
+  image: {
+    source: "img/recipes/toolbox.svg",
+    order: {
+      desktopImageLast: true,
+    },
+  },
+  box: {
+    headline: {
+      level: "h2",
+      content: "Great components",
+      subheadline: "Sed diam nonumy eirmod tempor invidunt",
+    },
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    links: [
+      {
+        label: "Request a guided demo",
+        href: "#",
+        variant: "solid",
+      }
+    ],
+  },
+});
+
+export const BackgroundImage = Template.bind({});
+BackgroundImage.args = pack({
+  backgroundColor: "#06566A",
+  backgroundImage: "img/recipes/background-pattern-dark.svg",
+  image: {
+    source: "img/recipes/toolbox-dark.svg",
+    order: {
+      desktopImageLast: true,
+    },
+  },
+  box: {
+    headline: {
+      level: "h2",
+      content: "Great components",
+      subheadline: "Sed diam nonumy eirmod tempor invidunt",
+    },
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    links: [
+      {
+        label: "Request a guided demo",
+        href: "#",
+        variant: "solid-inverted",
+      }
+    ],
+  },
+});
+
+export const ImageFull = Template.bind({});
+ImageFull.args = pack({
+  backgroundColor: "#ffffff",
+  image: {
+    source: "img/recipes/storytelling-full.png",
+    order: {
+      desktopImageLast: true,
+    },
   },
   box: {
     headline: {
@@ -95,12 +226,65 @@ LargeScreenshot.args = pack({
       {
         label: "Request a guided demo",
         href: "#",
-        variant: "outline",
       },
     ],
   },
   full: true,
 });
-LargeScreenshot.parameters = {
+ImageFull.parameters = {
   backgrounds: { default: "dark" },
 };
+
+export const TextTop = Template.bind({});
+TextTop.args = pack({
+  image: {
+    source: "https://images.unsplash.com/photo-1554672408-730436b60dde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80",
+    order: {
+      desktopImageLast: true,
+    },
+  },
+  box: {
+    vAlign: "top",
+    headline: {
+      level: "h2",
+      content: "Lorem Ipsum",
+      subheadline: "Sed diam nonumy eirmod tempor invidunt",
+    },
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
+    links: [
+      {
+        label: "Request a guided demo",
+        href: "#",
+      },
+    ],
+  },
+});
+
+export const TextBottom = Template.bind({});
+TextBottom.args = pack({
+  image: {
+    source: "https://images.unsplash.com/photo-1554672408-730436b60dde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80",
+    order: {
+      desktopImageLast: true,
+    },
+  },
+  box: {
+    vAlign: "bottom",
+    headline: {
+      level: "h2",
+      content: "Lorem Ipsum",
+      subheadline: "Sed diam nonumy eirmod tempor invidunt",
+    },
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
+    links: [
+      {
+        label: "Request a guided demo",
+        href: "#",
+      },
+    ],
+  },
+});
+
+
+
+

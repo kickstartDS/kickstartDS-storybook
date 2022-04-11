@@ -30,25 +30,27 @@
   width: 100%;
   transition: var(--g-transition--bounce);
   transition: translateZ(0);
-  
+
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
 
-  &:hover {
-    cursor: pointer;
-    transform: translateY(-2px);
-    &::after {
-      opacity: 1;
-      left: 5px;
-      bottom: -5px;
+  &:not(.c-button--clear) {
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-2px);
+      &::after {
+        opacity: 1;
+        left: 5px;
+        bottom: -5px;
+      }
     }
-  }
-  &:active:not(:disabled) {
-    transform: translateY(0);
-    &::after {
-      opacity: 1;
-      left: 3px;
-      bottom: -3px;
+    &:active:not(:disabled) {
+      transform: translateY(0);
+      &::after {
+        opacity: 1;
+        left: 3px;
+        bottom: -3px;
+      }
     }
   }
 

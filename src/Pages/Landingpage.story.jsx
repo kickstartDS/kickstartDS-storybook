@@ -39,6 +39,7 @@ const Page = () => (
             content:
               "kickstartDS is a comprehensive component and pattern library",
             level: "h1",
+            styleAs: "h1",
             subheadline: "The frontend first framework!",
             switchOrder: true,
           },
