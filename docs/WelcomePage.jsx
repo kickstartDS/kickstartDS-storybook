@@ -138,7 +138,7 @@ export const Welcome = () => (
         <Headline
           content="Need inspiration?"
           styleAs="h2"
-          subheadline="Check out our Recipe catalouge"
+          subheadline="Check out our Recipe catalogue"
           align="center"
           className="no-spacing"
         />

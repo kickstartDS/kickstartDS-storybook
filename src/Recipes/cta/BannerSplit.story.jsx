@@ -17,7 +17,7 @@ const Recipe = () => (
         textAlign: "left",
         hAlign: "center",
         headline: {
-          content: "Contact our suppurt",
+          content: "Contact our support",
           subheadline:
             "Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.",
         },

@@ -7,6 +7,7 @@ export default {
 
 export { AngledImage } from "./AngledImage.story";
 export { LargeDevice } from "./LargeDevice.story";
+export { Screenshot } from "./Screenshot.story";
 export { AtmosphericVideo } from "./AtmosphericVideo.story";
 export { TextBesideProduct } from "./TextBesideProduct.story";
 export { TextOnProduct } from "./TextOnProduct.story";

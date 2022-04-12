@@ -12,7 +12,7 @@ const Recipe = () => (
       backgroundImage="./"
       box={{
         headline: {
-          content: "Cristall clear images",
+          content: "Crystal clear images",
           level: "h1",
           styleAs: "h1",
         },

@@ -9,7 +9,7 @@ const Recipe = () => (
       headline: {
         level: "h1",
         styleAs: "h1",
-        content: "Feeling intrested?",
+        content: "Feeling interested?",
         subheadline:
           "Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.",
       },
