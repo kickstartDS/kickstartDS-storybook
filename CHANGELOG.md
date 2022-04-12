@@ -1,3 +1,16 @@
+# v2.0.7 (Tue Apr 12 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: various tweaks ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.0.6 (Tue Apr 12 2022)
 
 #### ⚠️ Pushed to `master`
