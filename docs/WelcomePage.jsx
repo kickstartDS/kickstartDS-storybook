@@ -26,7 +26,6 @@ export const Welcome = () => (
           horizontal: "left",
           indent: false,
           link: {
-            className: "c-button--main",
             enabled: false,
             fillAnimation: false,
             href: "https://example.com",
@@ -204,7 +203,7 @@ export const Welcome = () => (
       >
 
         <LinkButton
-          className="c-button--main no-stretch"
+          className="no-stretch"
           href="https://www.kickstartds.com"
           label="... or learn more on our website"
           size="default"

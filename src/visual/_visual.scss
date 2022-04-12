@@ -11,6 +11,10 @@
   }
 
   &__content {
+    &--indent {
+      max-width: var(--g-content-width-wide);
+    }
+
     @include breakpoint.media("≥s") {
       padding-top: var(--spacing-l);
       padding-bottom: var(--spacing-l);

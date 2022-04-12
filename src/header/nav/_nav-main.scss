@@ -88,10 +88,13 @@
     ul.nav-main__list {
       padding-top: calc(var(--g-header-spacing-v) - var(--spacing-s));
 
-      .nav-main--contact-button.c-button.c-button--small {
+      .nav-main--contact-button {
         margin-left: var(--g-header-spacing-h);
         margin-top: var(--g-header-spacing-v);
-        font-size: var(--font-size-s);
+
+        .c-button.c-button--small {
+          font-size: var(--font-size-s);
+        }
 
         .c-button__content {
           --c-button--padding: 0.4rem 1rem;

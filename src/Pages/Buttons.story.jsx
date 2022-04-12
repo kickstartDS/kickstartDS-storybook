@@ -44,14 +44,19 @@ const Page = () => (
 
     <Section width="narrow">
       <Button
+        highlighted
         size="large"
-        className="c-button--main"
         label="Button Main Large"
+        className="no-stretch"
       />
-      <Button className="c-button--main" label="Button Main Medium" />
       <Button
+        highlighted
+        label="Button Main Medium"
+        className="no-stretch" />
+      <Button
+        className="no-stretch"
+        highlighted
         size="small"
-        className="c-button--main"
         label="Button Main Small"
       />
     </Section>

@@ -32,8 +32,8 @@ const Page = () => (
     <Section
       mode="list"
       width="wide"
-      spaceBefore="default"
-      spaceAfter="default"
+      spaceBefore="small"
+      spaceAfter="small"
       gutter="none"
       pattern="graphics"
     >

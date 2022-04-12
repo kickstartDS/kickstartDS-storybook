@@ -1462,7 +1462,7 @@ header[data-component="kds.header"] {
   margin: 0;
   padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
   width: 100%;
-  max-width: 70em;
+  max-width: var(--g-content-width-wide);
   gap: var(--spacing-s);
   align-items: flex-end;
   transition-duration: var(--g-transition-duration-s);
@@ -1497,9 +1497,7 @@ header[data-component="kds.header"] {
 }
 @media (min-width: 60em) {
   .kds-header {
-    padding: var(--g-header-spacing-v) calc(var(--g-header-spacing-h) / 2);
-    margin: 0 calc(var(--g-header-spacing-h) / 2);
-    top: calc(var(--g-header-spacing-v) / 2);
+    padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
     border-radius: var(--g-border-radius-m);
   }
 }
@@ -1605,12 +1603,14 @@ header[data-component="kds.header"] {
   .nav-main ul.nav-main__list {
     padding-top: calc(var(--g-header-spacing-v) - var(--spacing-s));
   }
-  .nav-main ul.nav-main__list .nav-main--contact-button.c-button.c-button--small {
+  .nav-main ul.nav-main__list .nav-main--contact-button {
     margin-left: var(--g-header-spacing-h);
     margin-top: var(--g-header-spacing-v);
+  }
+  .nav-main ul.nav-main__list .nav-main--contact-button .c-button.c-button--small {
     font-size: var(--font-size-s);
   }
-  .nav-main ul.nav-main__list .nav-main--contact-button.c-button.c-button--small .c-button__content {
+  .nav-main ul.nav-main__list .nav-main--contact-button .c-button__content {
     --c-button--padding: 0.4rem 1rem;
   }
 }
@@ -1862,6 +1862,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   position: relative;
   display: block;
   height: var(--g-logo-height);
+  width: fit-content;
   transition: height var(--g-transition-duration-s);
 }
 @media (min-width: 40em) {
@@ -3061,6 +3062,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 }
 .c-visual--full {
   height: 100vh;
+}
+.c-visual__content--indent {
+  max-width: var(--g-content-width-wide);
 }
 @media (min-width: 40em) {
   .c-visual__content {
