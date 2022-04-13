@@ -1,8 +1,15 @@
 @use "./storytelling-tokens";
 @use "@kickstartds/core/source/core/breakpoint";
+@import "../mixin.scss";
 
 .c-storytelling {
   &__box {
+    &--right.c-storytelling__box {
+      padding-right: 0;
+    }
+    &--left.c-storytelling__box {
+      padding-left: 0;
+    }
     &__content {
       &--center {
         .c-storytelling__action {

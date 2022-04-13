@@ -2,9 +2,7 @@
 @use "./post-aside-tokens";
 
 .c-post-aside {
-  --tag-label-height: calc(
-    var(--line-height-xs) + calc(var(--spacing-xs) * 2) + var(--spacing-s)
-  );
+  --tag-label-height: calc(var(--line-height-xs) + calc(var(--spacing-xs) * 2) + var(--spacing-s));
 
   height: fit-content;
 
@@ -22,7 +20,6 @@
     top: 0;
     padding-top: calc(var(--tag-label-height) + var(--spacing-s));
     margin-top: calc(-1 * var(--c-post-aside--gap));
-    margin-left: var(--spacing-l);
 
     .c-headline__headline {
       font: var(--font-display-s);

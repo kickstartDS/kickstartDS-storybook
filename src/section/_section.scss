@@ -133,6 +133,10 @@
     &--full {
       max-width: var(--g-content-width-max);
     }
+
+    &--slim {
+      max-width: var(--g-content-width-slim);
+    }
   }
 
   &--outer-width-default {

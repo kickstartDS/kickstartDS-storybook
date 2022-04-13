@@ -170,6 +170,7 @@
   --g-headline--color: var(--color-black);
   --g-headline--font: var(--font-display-xxl);
   --g-headline--font-weight: var(--font-weight-bold);
+  --g-content-width-slim: 40rem;
   --g-content-width-narrow: 50rem;
   --g-content-width-default: 62rem;
   --g-content-width-wide: 70rem;
@@ -1403,6 +1404,12 @@
   flex: 1 1 0%;
   min-width: 14rem;
 }
+.c-form .c-button--wrapper {
+  display: flex;
+}
+.c-form .c-button--wrapper .c-button {
+  height: unset;
+}
 
 .c-form-field {
   --c-form-field--border-radius: 0;
@@ -1892,7 +1899,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 }
 
 .c-post__content {
-  max-width: calc( var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2) );
+  max-width: calc(var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2));
   width: 100%;
 }
 .c-post__content .c-post-share-bar {
@@ -1904,7 +1911,8 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   }
 }
 .c-post-text > p {
-  max-width: calc( var(--g-content-width-narrow) - calc(var(--g-content-padding) * 4) );
+  max-width: var(--g-content-width-narrow);
+  padding: 0 var(--spacing-m);
   margin: auto;
   margin-bottom: var(--c-rich-text--vertical-spacing);
   margin-top: var(--c-rich-text--vertical-spacing);
@@ -1952,9 +1960,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 }
 
 .c-post-aside {
-  --tag-label-height: calc(
-    var(--line-height-xs) + calc(var(--spacing-xs) * 2) + var(--spacing-s)
-  );
+  --tag-label-height: calc(var(--line-height-xs) + calc(var(--spacing-xs) * 2) + var(--spacing-s));
   height: fit-content;
 }
 @media (max-width: 59.99em) {
@@ -1971,7 +1977,6 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
     top: 0;
     padding-top: calc(var(--tag-label-height) + var(--spacing-s));
     margin-top: calc(-1 * var(--c-post-aside--gap));
-    margin-left: var(--spacing-l);
   }
   .c-post-aside .c-headline__headline {
     font: var(--font-display-s);
@@ -2307,6 +2312,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 }
 .l-section__container--full {
   max-width: var(--g-content-width-max);
+}
+.l-section__container--slim {
+  max-width: var(--g-content-width-slim);
 }
 @media (min-width: 40em) {
   .l-section--outer-width-default {
@@ -2720,8 +2728,15 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 
 :root .c-storytelling {
   --c-storytelling--horizontal-padding: var(--spacing-l);
+  --c-storytelling--box-max-width: 36.85em;
 }
 
+.c-storytelling__box--right.c-storytelling__box {
+  padding-right: 0;
+}
+.c-storytelling__box--left.c-storytelling__box {
+  padding-left: 0;
+}
 .c-storytelling__box__content--center .c-storytelling__action {
   justify-content: center;
 }
