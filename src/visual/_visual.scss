@@ -6,80 +6,35 @@
     --c-headline_subheadline--color: var(--color-primary);
   }
 
+  &--full {
+    height: 100vh;
+  }
+
   &__content {
-    @include breakpoint.media("≥s") {
-      padding-top: var(--spacing-xl);
-      padding-bottom: var(--spacing-xl);
+    &--indent {
+      max-width: var(--g-content-width-wide);
     }
+
+    @include breakpoint.media("≥s") {
+      padding-top: var(--spacing-l);
+      padding-bottom: var(--spacing-l);
+    }
+
+    &--center {
+      .c-visual__link {
+        justify-content: center;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-s);
   }
 
   &__box.c-visual__box--transparent {
     overflow: unset;
-  }
-
-  &--deko {
-    .c-visual__link {
-      width: fit-content;
-      position: relative;
-
-      &:hover {
-        &::before,
-        &::after {
-          transform: rotate(10deg);
-          opacity: 1;
-        }
-      }
-
-      &::before,
-      &::after {
-        position: absolute;
-        transform: scale(0.85);
-        pointer-events: none;
-        transition: 250ms all cubic-bezier(0.17, 0.88, 0.27, 1.225);
-        opacity: 0.4;
-        z-index: 2;
-
-        @include breakpoint.media("≥s") {
-          z-index: 2;
-        }
-      }
-
-      &::before {
-        content: url(/patterns/button_before.svg);
-        bottom: -30%;
-        left: -2em;
-
-        @include breakpoint.media("≥s") {
-          left: -2em;
-        }
-      }
-
-      &::after {
-        content: url(/patterns/button_after.svg);
-        right: -2.25em;
-        top: 0;
-      }
-    }
-
-    .c-visual__content--center {
-      .c-visual__link {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-  }
-
-  .kds-header--spacer {
-    + .c-visual--full,
-    + .l-section .c-visual--full {
-      @include breakpoint.media("≥s") {
-        height: calc(100vh - var(--g-header-height));
-      }
-    }
-  }
-
-  &__image img {
-    object-fit: contain;
   }
 
   &--welcome {
@@ -89,6 +44,15 @@
       .c-visual__box {
         --c-visual_box--max-width: 25rem;
       }
+    }
+  }
+}
+
+.kds-header--spacer {
+  + .c-visual--full,
+  + .l-section .c-visual--full {
+    @include breakpoint.media("≥s") {
+      height: calc(100vh - var(--g-header-height));
     }
   }
 }

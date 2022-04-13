@@ -5,6 +5,8 @@
  * and run `yarn run schema` to regenerate this file.
  */
 
+export type ButtonHighlightedStyle = boolean;
+export type ButtonDekoStyle = boolean;
 /**
  * Text used on button
  */
@@ -57,6 +59,8 @@ export type OpenLinkInNewTab = boolean;
  * link-button
  */
 export interface LinkButtonProps {
+  highlighted?: ButtonHighlightedStyle;
+  deko?: ButtonDekoStyle;
   label: Label;
   variant: ButtonStyle;
   size: ButtonSize;

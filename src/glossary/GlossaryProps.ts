@@ -66,13 +66,17 @@ export type RelatedEntries = RelatedEntry[];
  */
 export type StackShareUrl = string;
 /**
- * Switch to displaying the image after the text on desktop
+ * Background image for the whole element
  */
-export type DesktopImageAfterText = boolean;
+export type BackgroundImage = string;
 /**
- * Switch to displaying the image after the text on mobile
+ * Background color for the whole element
  */
-export type MobileImageAfterText = boolean;
+export type BackgroundColor = string;
+/**
+ * Display a full sized version of the image
+ */
+export type FullSizeImage = boolean;
 /**
  * Image source to use
  */
@@ -90,17 +94,13 @@ export type ImageVerticalAlignment = "center" | "top" | "top-edge" | "bottom" | 
  */
 export type ImageHorizontalAlignment = "center" | "left" | "left-edge" | "right" | "right-edge";
 /**
- * Background image for the whole element
+ * Switch to displaying the image after the text on mobile
  */
-export type BackgroundImage = string;
+export type MobileImageAfterText = boolean;
 /**
- * Background color for the whole element
+ * Switch to displaying the image after the text on desktop
  */
-export type BackgroundColor = string;
-/**
- * Display a full sized version of the image
- */
-export type FullSizeImage = boolean;
+export type DesktopImageAfterText = boolean;
 /**
  * Select the headline level to use, or p alternatively
  */
@@ -213,7 +213,7 @@ export interface GlossaryProps {
   tags?: Tags;
   related?: RelatedEntries;
   stackshare?: StackShareUrl;
-  cta?: Cta;
+  cta?: Storytelling;
   [k: string]: unknown;
 }
 /**
@@ -245,11 +245,11 @@ export interface RelatedEntry {
 /**
  * Component to present rich combinations of text and media, best used sequentially
  */
-export interface Cta {
-  image: Image1;
+export interface Storytelling {
   backgroundImage?: BackgroundImage;
   backgroundColor?: BackgroundColor;
   full?: FullSizeImage;
+  image?: Image1;
   box: TextBox;
   className?: Class;
   [k: string]: unknown;
@@ -258,19 +258,19 @@ export interface Cta {
  * Image displayed alongside the text content
  */
 export interface Image1 {
-  order?: Order;
   source?: ImageSource;
   ratio?: ImageAspectRatio;
   vAlign?: ImageVerticalAlignment;
   hAlign?: ImageHorizontalAlignment;
+  order?: Order;
   [k: string]: unknown;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
  */
 export interface Order {
-  desktopImageLast?: DesktopImageAfterText;
   mobileImageLast?: MobileImageAfterText;
+  desktopImageLast?: DesktopImageAfterText;
   [k: string]: unknown;
 }
 /**

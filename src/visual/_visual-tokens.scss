@@ -1,5 +1,7 @@
 .c-visual {
   --c-visual--min-height: 35vh;
+  --c-visual_overlay--background: linear-gradient(90deg, var(--color-white), transparent);
+  --c-visual_overlay--background-size: cover;
 
   @media (min-width: 40em) {
     --c-visual--min-height: 60vh;
@@ -31,6 +33,12 @@
       --c-visual_box--background: transparent;
       --c-visual_headline--color: var(--color-black);
       --c-visual_box--color: var(--c-rich-text--color);
+
+      &-dark {
+        --c-visual_box--background: transparent;
+        --c-visual_headline--color: var(--l-section-dark-color);
+        --c-visual_box--color: var(--l-section-dark-color);
+      }
     }
   }
 }

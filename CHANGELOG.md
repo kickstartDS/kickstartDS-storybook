@@ -1,3 +1,254 @@
+# v2.0.7 (Tue Apr 12 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: various tweaks ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v2.0.6 (Tue Apr 12 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: correct typo + add screenshot recipe ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v2.0.5 (Mon Apr 11 2022)
+
+#### ⚠️ Pushed to `master`
+
+- docs: fix internal storybook links ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v2.0.4 (Mon Apr 11 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- correct spelling error ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v2.0.3 (Mon Apr 11 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add recipe teaser to welcome page ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v2.0.2 (Mon Apr 11 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: adjust recipes ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add various recipes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v2.0.1 (Fri Apr 08 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: adjust cta recipes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v2.0.0 (Fri Apr 08 2022)
+
+#### 💥 Breaking Change
+
+- recipes [#62](https://github.com/kickstartDS/kickstartDS-storybook/pull/62) ([@fleven-kds](https://github.com/fleven-kds) [@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- [@fleven-kds](https://github.com/fleven-kds)
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.14.0 (Thu Apr 07 2022)
+
+#### 🚀 Enhancement
+
+- storytelling & visual button group [#59](https://github.com/kickstartDS/kickstartDS-storybook/pull/59) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.13.20 (Thu Apr 07 2022)
+
+#### ⚠️ Pushed to `master`
+
+- refactor: fix link button props ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.13.19 (Thu Apr 07 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add Subscription Form ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.13.18 (Mon Apr 04 2022)
+
+#### ⚠️ Pushed to `master`
+
+- chore: update kickstartds ([@lmestel](https://github.com/lmestel))
+- chore: update storybook ([@lmestel](https://github.com/lmestel))
+- fix: apply additional classNames to button wrapper ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.13.17 (Mon Apr 04 2022)
+
+#### ⚠️ Pushed to `master`
+
+- fix: override kds component types ([@lmestel](https://github.com/lmestel))
+- feat: add button hover + active animation ([@fleven-kds](https://github.com/fleven-kds))
+- feat: adjust glossary template ([@fleven-kds](https://github.com/fleven-kds))
+- feat: design adjustments ([@fleven-kds](https://github.com/fleven-kds))
+
+#### 🔩 Dependency Updates
+
+- build(deps): bump minimist from 1.2.5 to 1.2.6 [#58](https://github.com/kickstartDS/kickstartDS-storybook/pull/58) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps): bump nanoid from 3.1.25 to 3.3.1 [#56](https://github.com/kickstartDS/kickstartDS-storybook/pull/56) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps): bump follow-redirects from 1.14.1 to 1.14.8 [#44](https://github.com/kickstartDS/kickstartDS-storybook/pull/44) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- [@fleven-kds](https://github.com/fleven-kds)
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.13.16 (Thu Mar 31 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: button overhaul ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.13.15 (Thu Mar 31 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: overhaul nav ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.13.14 (Fri Mar 25 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: fix logo sizing bug ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.13.13 (Thu Mar 24 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: reintroduce cta-css to fix build fail ([@fleven-kds](https://github.com/fleven-kds))
+- feat: add various stories ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.13.12 (Tue Mar 22 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: various story adjustments ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v1.13.11 (Tue Mar 22 2022)
+
+#### ⚠️ Pushed to `master`
+
+- docs: fix broken link on welcome page ([@lmestel](https://github.com/lmestel))
+- docs: add providers to docs ([@lmestel](https://github.com/lmestel))
+- feat: subscribe to location event to close mobile nav on location change ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.13.10 (Mon Mar 21 2022)
 
 #### ⚠️ Pushed to `master`

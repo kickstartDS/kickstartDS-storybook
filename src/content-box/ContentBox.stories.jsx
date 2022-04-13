@@ -22,13 +22,25 @@ Image.args = pack({
   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ispum dolor distinctio minima unde voluptatum aut. Lorem ipsum dolor sit amet.",
 });
 
-export const ImageLink = Template.bind({});
-ImageLink.args = pack({
+export const ImageWithButton = Template.bind({});
+ImageWithButton.args = pack({
   ...Image.args,
   link: {
     enabled: true,
     variant: "solid",
     href: "#",
-    label: "Mehr erfahren",
+    label: "Learn more",
   },
+});
+
+export const Icon = Template.bind({});
+Icon.args = pack({
+  ...Image.args,
+  link: {
+    enabled: false,
+  },
+  ratio:"none",
+  alignement: "center",
+  image: "img/icons/tokens.svg",
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
 });

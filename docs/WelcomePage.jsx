@@ -1,11 +1,16 @@
-import { Section } from "@kickstartds/base/lib/section";
-import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
+import {
+  Section,
+  TeaserBox,
+  ContentBox,
+  Headline
+} from "@kickstartds/base";
+
+import { Button } from "@kickstartds/base/lib/button";
 import { LinkButton } from "@kickstartds/base/lib/link-button";
 import { Visual } from "@kickstartds/content/lib/visual";
-import { LinkProvider } from "./LinkProvider";
 
 export const Welcome = () => (
-  <LinkProvider>
+  <>
     <Section width="full" spaceBefore="none" spaceAfter="none">
       <Visual
         className="c-visual--welcome"
@@ -21,7 +26,6 @@ export const Welcome = () => (
           horizontal: "left",
           indent: false,
           link: {
-            className: "c-button--main",
             enabled: false,
             fillAnimation: false,
             href: "https://example.com",
@@ -53,7 +57,6 @@ export const Welcome = () => (
     </Section>
 
     <Section
-      gutter="default"
       headline={{
         align: "center",
         content: "Getting started with ...",
@@ -61,6 +64,7 @@ export const Welcome = () => (
         pageHeader: false,
         spaceAfter: "none",
       }}
+      className="col-four"
       mode="tile"
       spaceAfter="small"
       spaceBefore="small"
@@ -70,7 +74,6 @@ export const Welcome = () => (
         topic="Design Tokens"
         text="Design Tokens encode your main brand identity, including colors, fonts and typography. Explore all defined values, ready to be copied and used in your project."
         link={{
-          fillAnimation: true,
           href: "sb:design-tokens-colors:page",
           iconAfter: false,
           iconAnimation: false,
@@ -84,8 +87,7 @@ export const Welcome = () => (
         topic="Controls"
         text="Controls provide explorative access to our JSON Schema defined structural options, giving designers, developers and content editors all needed power!"
         link={{
-          fillAnimation: true,
-          href: "sb:content-visual:box-hell",
+          href: "sb:content-visual:box-light",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
@@ -98,7 +100,6 @@ export const Welcome = () => (
         topic="Pages"
         text="Pages show the potential to quickly prototype views independently, and early, in your development cycle. Test your assumptions, before implementing!"
         link={{
-          fillAnimation: true,
           href: "sb:pages:landingpage",
           iconAfter: false,
           iconAnimation: false,
@@ -112,12 +113,44 @@ export const Welcome = () => (
         topic="Blog"
         text="Learn about the newest developments, or explore background articles about our architectural choices, and the rationale behind our decisions!"
         link={{
-          fillAnimation: true,
           href: "https://www.kickstartds.com/blog",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
           label: "Read more",
+          newTab: false,
+          variant: "outline",
+        }}
+      />
+    </Section>
+    <Section
+      className="col-four"
+      mode="tile"
+      spaceAfter="small"
+      spaceBefore="small"
+      width="max"
+    >
+      <div>
+        <ContentBox
+          image="img/lightbulb.png"
+        />
+        <Headline
+          content="Need inspiration?"
+          styleAs="h2"
+          subheadline="Check out our Recipe catalogue"
+          align="center"
+          className="no-spacing"
+        />
+      </div>
+      <TeaserBox
+        topic="Recipes"
+        text="Explore the possibilities of kickstartDS in our component-cookbook. It shows a variety of use cases, easy for you to recreate and to play around with."
+        link={{
+          href: "sb:recipes-hero:angled-image",
+          iconAfter: false,
+          iconAnimation: false,
+          iconBefore: false,
+          label: "View Recipes",
           newTab: false,
           variant: "outline",
         }}
@@ -161,19 +194,25 @@ export const Welcome = () => (
 
     <Section
       gutter="default"
-      mode="list"
       spaceAfter="small"
       spaceBefore="small"
       width="narrow"
     >
-      <LinkButton
-        className="c-button--main"
-        href="https://www.kickstartds.com"
-        label="... or learn more on our website"
-        size="default"
-        type="button"
-        variant="solid"
-      />
+      <div
+        align="center"
+      >
+
+        <LinkButton
+          className="no-stretch"
+          href="https://www.kickstartds.com"
+          label="... or learn more on our website"
+          size="default"
+          type="button"
+          highlighted
+          deko
+          variant="solid"
+        />
+      </div>
     </Section>
-  </LinkProvider>
+  </>
 );

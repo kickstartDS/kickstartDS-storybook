@@ -1,4 +1,5 @@
 import { actions } from "@storybook/addon-actions";
+import { DocsContainer } from "@storybook/addon-docs";
 // @see https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/attrchange
 import "lazysizes/plugins/attrchange/ls.attrchange";
 import { unpackDecorator } from "@kickstartds/core/lib/storybook/helpers";
@@ -7,12 +8,9 @@ import "@kickstartds/base/lib/global/base.js";
 import "@kickstartds/base/lib/global/base.css";
 import "../src/index.js";
 import "../static/index.css";
-import { HeadlineProvider } from "../src/headline/HeadlineComponent";
-import { SectionProvider } from "../src/section/SectionComponent";
 import { IconSprite } from "../src/icon-sprite/IconSpriteComponent";
-import { CountUpProvider } from "../src/count-up/CountUpComponent";
-import { ButtonProvider } from "../src/button/ButtonComponent";
-import { LinkButtonProvider } from "../src/link-button/LinkButtonComponent";
+import Providers from "../src/Providers";
+import { LinkProvider } from "../docs/LinkProvider";
 
 import { LightBox } from "@kickstartds/base/lib/lightbox";
 
@@ -30,17 +28,9 @@ const myActions = actions("radio");
 window.rm.radio.on("*", myActions.radio);
 
 const providerDecorator = (Story, context) => (
-  <HeadlineProvider>
-    <ButtonProvider>
-      <LinkButtonProvider>
-        <SectionProvider>
-          <CountUpProvider>
-            <Story {...context} />
-          </CountUpProvider>
-        </SectionProvider>
-      </LinkButtonProvider>
-    </ButtonProvider>
-  </HeadlineProvider>
+  <Providers>
+    <Story {...context} />
+  </Providers>
 );
 
 export const parameters = {
@@ -72,6 +62,16 @@ export const parameters = {
   },
   designToken: {
     files: tokenFiles,
+  },
+  docs: {
+    container: (props) => (
+      <LinkProvider>
+        <Providers>
+          <IconSprite />
+          <DocsContainer {...props} />
+        </Providers>
+      </LinkProvider>
+    ),
   },
 };
 

@@ -2,6 +2,7 @@ import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 import { Section } from "@kickstartds/base/lib/section";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { Button } from "@kickstartds/base/lib/button";
+import { Storytelling } from "@kickstartds/content/lib/storytelling";
 import { Contact } from "@kickstartds/content/lib/contact";
 import { TextField } from "@kickstartds/form/lib/text-field";
 
@@ -10,9 +11,9 @@ import HeaderStories from "../header/Header.stories";
 import { SamplePost } from "../post/SamplePost";
 import { Default as PostAsideStory } from "../post-aside/PostAside.stories";
 import { Default as PostHeadStory } from "../post-head/PostHead.stories";
-import { Cta } from "../cta/CtaComponent";
 import { Footer } from "../footer/FooterComponent";
 import FooterStories from "../footer/Footer.stories";
+import { Subscription } from "../subscription/SubscriptionComponent";
 
 export default {
   title: "Blog Post",
@@ -25,19 +26,20 @@ const Page = () => (
       aside={unpack(PostAsideStory.args)}
       head={unpack(PostHeadStory.args)}
     />
-    {/* <SamplePost {...unpack(PostStory.args)} /> */}
     <Section
-      width="narrow"
+      width="full"
       mode="list"
       spaceBefore="default"
       spaceAfter="small"
+      className="l-section-style--highlight l-section--outer-width-narrow"
       gutter="large"
       headline={{
         content: "Get to know us",
         align: "center",
       }}
     >
-      <Cta
+      <Storytelling
+        backgroundColor="#eceff3"
         image={{
           order: {
             desktopImageLast: true,
@@ -149,10 +151,7 @@ After working in a large tech corporation for a long time I very well know today
         subheadline: "Stay up to date",
       }}
     >
-      <div className="c-form">
-        <TextField placeholder="Enter your email" />
-        <Button label="subscribe" size="default" />
-      </div>
+      <Subscription />
     </Section>
     <Footer {...FooterStories.args} />
   </>

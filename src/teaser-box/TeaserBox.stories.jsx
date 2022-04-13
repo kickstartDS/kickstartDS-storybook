@@ -11,35 +11,60 @@ export default {
   },
 };
 
-export const Linked = Template.bind({});
-Linked.args = pack({
+export const LinkedWithoutButton = Template.bind({});
+LinkedWithoutButton.args = pack({
   ratio: "16:9",
   topic: "Lorem Ipsum",
   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ispum dolor distinctio minima unde voluptatum aut. Lorem ipsum dolor sit amet.",
   link: {
     variant: "solid",
-    label: "Mehr erfahren",
+    label: "learn more",
     hidden: true,
   },
 });
 
-export const Button = Template.bind({});
-Button.args = pack({
-  ...Linked.args,
+export const LinkedWithButton = Template.bind({});
+LinkedWithButton.args = pack({
+  ...LinkedWithoutButton.args,
   link: {
     variant: "solid",
-    label: "mehr erfahren",
+    label: "learn more",
     hidden: false,
+    iconAfter: true,
+    icon: {
+      icon: "chevron-right",
+    },
   },
 });
 
-export const Dark = Template.bind({});
-Dark.args = pack({
-  ...Linked.args,
+export const DarkStyle = Template.bind({});
+DarkStyle.args = pack({
+  ...LinkedWithoutButton.args,
   link: {
-    variant: "solid-inverted",
-    label: "mehr erfahren",
+    variant: "outline-inverted",
+    label: "learn more",
     hidden: false,
+    iconAfter: true,
+    icon: {
+      icon: "chevron-right",
+    },
   },
   darkStyle: true,
+});
+
+export const ImageSpacing = Template.bind({});
+ImageSpacing.args = pack({
+  ...LinkedWithoutButton.args,
+  imageSpacing: true,
+  image: "img/blog/storybook-dark.svg",
+  darkStyle: true,
+  link: {
+    variant: "clear-inverted",
+    label: "learn more",
+    hidden: false,
+    iconAfter: true,
+    icon: {
+      icon: "chevron-right",
+    },
+  },
 });

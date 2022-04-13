@@ -95,7 +95,8 @@
   --font-weight-bold: 700;
 
   --font-family-display: "Helvetica Neue", Arial, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, system-ui, -apple-system, system-ui, sans-serif;
+    Oxygen-Sans, Ubuntu, Cantarell, system-ui, -apple-system, system-ui,
+    sans-serif;
   --font-family-copy: var(--font-family-display);
   --font-family-ui: var(--font-family-display);
 
@@ -105,10 +106,10 @@
 
   --font-size-xs: 0.6rem;
   --font-size-s: 0.8rem;
-  --font-size-m: 0.9rem; /* Copy, Subheadline */
-  --font-size-l: 1.125rem; /* h3 */
-  --font-size-xl: 1.35rem; /* h2 */
-  --font-size-xxl: 1.75rem; /* h1 */
+  --font-size-m: 0.9rem;
+  --font-size-l: 1.125rem;
+  --font-size-xl: 1.35rem;
+  --font-size-xxl: 1.75rem;
 
   --line-height-xs: 1rem;
   --line-height-s: 1.3rem;
@@ -195,6 +196,8 @@
   --g-content-width-max: 96rem;
   --g-content-padding: var(--spacing-l);
 
+  --g-transition--bounce: 275ms all cubic-bezier(0.17, 1, 0.5, 1.5);
+
   --l-section-dark-color: var(--color-white-alpha-9);
 
   --pswp--assets-path: url("img/lightbox/default-skin.svg");
@@ -218,14 +221,14 @@
     --font-size-xs: 0.7rem;
     --font-size-s: 0.9375rem;
     --font-size-m: 1.125rem;
-    --font-size-l: 1.5rem;
+    --font-size-l: 1.35rem;
     --font-size-xl: 1.75rem;
-    --font-size-xxl: 2.25rem;
+    --font-size-xxl: 2.4rem;
 
     --line-height-xs: 1.15rem;
     --line-height-s: 1.45rem;
     --line-height-m: 1.75rem;
-    --line-height-l: 2rem;
+    --line-height-l: 1.85rem;
     --line-height-xl: 2.5rem;
     --line-height-xxl: 3rem;
   }
@@ -238,9 +241,11 @@
     --spacing-xxl: 5rem;
 
     --font-size-s: 0.9375rem;
+    --font-size-l: 1.5rem;
     --font-size-xl: 2rem;
     --font-size-xxl: 2.65rem;
 
+    --line-height-l: 2rem;
     --line-height-xl: 2.75rem;
     --line-height-xxl: 3.5rem;
   }
@@ -258,7 +263,6 @@
 }
 
 .no-stretch {
-  /* display: block; */
   width: fit-content;
   text-align: center;
   margin: auto;

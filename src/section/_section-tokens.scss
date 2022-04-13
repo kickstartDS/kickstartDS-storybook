@@ -28,6 +28,9 @@
       --l-section_col--min-width: 17rem;
     }
   }
+  &--gutter-none {
+      --l-section_container--gutter: 0;
+  }
 }
 
 .l-section {

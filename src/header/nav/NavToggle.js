@@ -26,6 +26,8 @@ export default class NavToggle extends Component {
         this.close();
       }
     });
+
+    window.rm.radio.on('location.change', () => this.close());
   }
 
   open() {
