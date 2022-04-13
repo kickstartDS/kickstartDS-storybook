@@ -9,6 +9,18 @@
     {
       "type": "object",
       "properties": {
+        "background": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["default", "accent", "dark", "dark-accent"],
+              "default": "default"
+            },
+            {
+              "$ref": "http://frontend.ruhmesmeile.com/base/base/section.schema.json#/properties/background"
+            }
+          ]
+        },
         "pattern": {
           "type": "string",
           "enum": ["none", "1", "2"],
