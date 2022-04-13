@@ -39,7 +39,6 @@ const Page = () => (
     >
       <Storytelling
         full
-        // backgroundImage="img/sanity/sanity_hero-bg.png"
         box={{
           headline: {
             content: "Lorem Ipsum dolor",
@@ -50,7 +49,6 @@ const Page = () => (
           link: {
             label: "lorem ipsum",
           },
-          // text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut."
         }}
         image={{
           source: "img/integration/backend/sanity.png",
@@ -67,7 +65,6 @@ const Page = () => (
       spaceBefore="none"
       headline={{
         content: "Backend integration with kickstartDS",
-        // subheadline: "Lorem ipsum dolor sit amet, consetetur sadipscing",
         level: "h2",
         styleAs: "h1",
         align: "center",
