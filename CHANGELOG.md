@@ -1,3 +1,15 @@
+# v2.0.10 (Wed Apr 13 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add selector to section tokens ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.0.9 (Wed Apr 13 2022)
 
 #### 🐛 Bug Fix
