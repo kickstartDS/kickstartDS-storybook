@@ -2,9 +2,7 @@
 
 .c-post {
   &__content {
-    max-width: calc(
-      var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2)
-    );
+    max-width: calc(var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2));
     width: 100%;
 
     .c-post-share-bar {
@@ -17,9 +15,8 @@
 
   &-text {
     > p {
-      max-width: calc(
-        var(--g-content-width-narrow) - calc(var(--g-content-padding) * 4)
-      );
+      max-width: var(--g-content-width-narrow);
+      padding: 0 var(--spacing-m);
       margin: auto;
       margin-bottom: var(--c-rich-text--vertical-spacing);
       margin-top: var(--c-rich-text--vertical-spacing);

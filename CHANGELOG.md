@@ -1,3 +1,15 @@
+# v2.0.8 (Wed Apr 13 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: post adjustments + add subscription succes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.0.7 (Tue Apr 12 2022)
 
 #### ⚠️ Pushed to `master`

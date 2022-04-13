@@ -14,6 +14,7 @@ import { Default as PostHeadStory } from "../post-head/PostHead.stories";
 import { Footer } from "../footer/FooterComponent";
 import FooterStories from "../footer/Footer.stories";
 import { Subscription } from "../subscription/SubscriptionComponent";
+import { RichText } from "@kickstartds/base";
 
 export default {
   title: "Blog Post",
@@ -41,6 +42,7 @@ const Page = () => (
       <Storytelling
         backgroundColor="#eceff3"
         image={{
+          hAlign: "left",
           order: {
             desktopImageLast: true,
             mobileImageLast: true,
@@ -48,6 +50,7 @@ const Page = () => (
           source: "img/contact.svg",
         }}
         box={{
+          hAlign: "right",
           headline: {
             content: "Find out if kickstartDS suits your project",
             level: "h2",
@@ -140,8 +143,7 @@ After working in a large tech corporation for a long time I very well know today
     <Section
       spaceBefore="none"
       spaceAfter="none"
-      width="narrow"
-      mode="list"
+      width="slim"
       background="accent"
       headline={{
         content: "Subscribe to our newsletter",

@@ -17,6 +17,7 @@ export const Post = ({
       mode="list"
       width="wide"
       className="l-section--blog"
+      gutter="large"
     >
       {aside && <PostAside {...aside} />}
 
