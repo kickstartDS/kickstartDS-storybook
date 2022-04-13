@@ -1,3 +1,15 @@
+# v2.0.9 (Wed Apr 13 2022)
+
+#### 🐛 Bug Fix
+
+- fix: modify section [#57](https://github.com/kickstartDS/kickstartDS-storybook/pull/57) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.0.8 (Wed Apr 13 2022)
 
 #### ⚠️ Pushed to `master`
