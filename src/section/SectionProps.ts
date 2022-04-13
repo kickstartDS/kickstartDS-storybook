@@ -1390,12 +1390,11 @@ export interface SectionProps {
     | LogoTiles
     | TeaserRow
   )[];
-  background?: (("default" | "accent" | "dark" | "dark-accent") | ("default" | "accent" | "dark")) &
-    ("default" | "accent" | "dark");
   spaceBefore?: "default" | "small" | "none";
   spaceAfter?: "default" | "small" | "none";
   headline?: Headline4;
   className?: AdditionalClass11;
+  background?: "default" | "accent" | "dark" | "dark-accent";
   pattern?: "none" | "1" | "2";
   variant?: "none" | "head" | "body" | "highlight";
   [k: string]: unknown;
