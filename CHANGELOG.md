@@ -1,3 +1,15 @@
+# v2.0.11 (Thu Apr 14 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Add author image ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.0.10 (Wed Apr 13 2022)
 
 #### ⚠️ Pushed to `master`
