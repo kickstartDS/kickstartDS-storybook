@@ -1,3 +1,20 @@
+# v1.14.0 (Thu Apr 14 2022)
+
+#### 🚀 Enhancement
+
+- storytelling & visual button group [#59](https://github.com/kickstartDS/kickstartDS-storybook/pull/59) ([@lmestel](https://github.com/lmestel))
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'support/1' of github.com:kickstartDS/kickstartDS-storybook into support/1 ([@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.14.0 (Thu Apr 07 2022)
 
 #### 🚀 Enhancement
