@@ -1,6 +1,7 @@
 {
   "author": "Lukas Mestel <lukas.mestel@ruhmesmeile.com>",
   "baseBranch": "master",
+  "versionBranches": "support/",
   "plugins": [
     "npm",
     "released"
