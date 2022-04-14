@@ -1,3 +1,15 @@
+# v1.13.21 (Thu Apr 14 2022)
+
+#### ⚠️ Pushed to `master`
+
+- chore: add support branch for 1.x ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.13.20 (Thu Apr 07 2022)
 
 #### ⚠️ Pushed to `master`
