@@ -1,3 +1,18 @@
+# v2.0.12 (Thu Apr 14 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- chore: add support branch vor 1.x ([@julrich](https://github.com/julrich))
+- build: trigger staging deployment ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.0.11 (Thu Apr 14 2022)
 
 #### ⚠️ Pushed to `master`
