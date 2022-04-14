@@ -1,3 +1,16 @@
+# v1.13.22 (Thu Apr 14 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'support/1' of github.com:kickstartDS/kickstartDS-storybook into support/1 ([@julrich](https://github.com/julrich))
+- fix: add author image for fleven ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.13.21 (Thu Apr 14 2022)
 
 #### ⚠️ Pushed to `master`
