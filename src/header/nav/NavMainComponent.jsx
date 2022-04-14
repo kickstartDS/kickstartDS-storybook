@@ -4,7 +4,7 @@ import { Link } from "@kickstartds/base/lib/link";
 import { LinkButton } from "@kickstartds/base/lib/link-button";
 import { Logo } from "../../logo/LogoComponent";
 
-export const NavMain = ({ active, navEntries = [], cta, light }) => (
+export const NavMain = ({ activeEntry, navEntries = [], cta, light }) => (
   <div className="nav-main__wrap">
     <NavToggle />
     <nav className="nav-main" id="nav-main" aria-label="Hauptnavigation">
@@ -14,7 +14,7 @@ export const NavMain = ({ active, navEntries = [], cta, light }) => (
           <li
             className={classnames(
               "nav-main__item",
-              active === id && "nav-main__item--active"
+              activeEntry === id && "nav-main__item--active"
             )}
             key={index}
           >
