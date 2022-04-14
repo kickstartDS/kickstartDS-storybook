@@ -1,25 +1,12 @@
-# v1.13.22 (Thu Apr 14 2022)
+# v1.14.0 (Thu Apr 07 2022)
 
-#### ⚠️ Pushed to `master`
+#### 🚀 Enhancement
 
-- Merge branch 'support/1' of github.com:kickstartDS/kickstartDS-storybook into support/1 ([@julrich](https://github.com/julrich))
-- fix: add author image for fleven ([@julrich](https://github.com/julrich))
-
-#### Authors: 1
-
-- Jonas Ulrich ([@julrich](https://github.com/julrich))
-
----
-
-# v1.13.21 (Thu Apr 14 2022)
-
-#### ⚠️ Pushed to `master`
-
-- chore: add support branch for 1.x ([@julrich](https://github.com/julrich))
+- storytelling & visual button group [#59](https://github.com/kickstartDS/kickstartDS-storybook/pull/59) ([@lmestel](https://github.com/lmestel))
 
 #### Authors: 1
 
-- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
 
 ---
 

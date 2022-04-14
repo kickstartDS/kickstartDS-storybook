@@ -6,30 +6,6 @@
  */
 
 /**
- * Switch to displaying the image after the text on desktop
- */
-export type DesktopImageAfterText = boolean;
-/**
- * Switch to displaying the image after the text on mobile
- */
-export type MobileImageAfterText = boolean;
-/**
- * Image source to use
- */
-export type ImageSource = string;
-/**
- * Select an aspect ratio to use for cropping and displaying the image
- */
-export type ImageAspectRatio = "4:3" | "3:2" | "16:9" | "1:1" | "none";
-/**
- * Select a vertical alignment for the image
- */
-export type ImageVerticalAlignment = "center" | "top" | "top-edge" | "bottom" | "bottom-edge";
-/**
- * Select a horizontal alignment for the image
- */
-export type ImageHorizontalAlignment = "center" | "left" | "left-edge" | "right" | "right-edge";
-/**
  * Text used on button
  */
 export type Label = string;
@@ -188,6 +164,30 @@ export type BackgroundColor = string;
  */
 export type FullSizeImage = boolean;
 /**
+ * Image source to use
+ */
+export type ImageSource = string;
+/**
+ * Select an aspect ratio to use for cropping and displaying the image
+ */
+export type ImageAspectRatio = "4:3" | "3:2" | "16:9" | "1:1" | "none";
+/**
+ * Select a vertical alignment for the image
+ */
+export type ImageVerticalAlignment = "center" | "top" | "top-edge" | "bottom" | "bottom-edge";
+/**
+ * Select a horizontal alignment for the image
+ */
+export type ImageHorizontalAlignment = "center" | "left" | "left-edge" | "right" | "right-edge";
+/**
+ * Switch to displaying the image after the text on mobile
+ */
+export type MobileImageAfterText = boolean;
+/**
+ * Switch to displaying the image after the text on desktop
+ */
+export type DesktopImageAfterText = boolean;
+/**
  * Additional css classes attached to the wrapping element
  */
 export type Class = string;
@@ -195,32 +195,13 @@ export type Class = string;
 /**
  * Component to present rich combinations of text and media, best used sequentially
  */
-export interface CtaProps {
-  image?: Image;
+export interface StorytellingProps {
   box: TextBox;
   backgroundImage?: BackgroundImage;
   backgroundColor?: BackgroundColor;
   full?: FullSizeImage;
+  image?: Image;
   className?: Class;
-  [k: string]: unknown;
-}
-/**
- * Image displayed alongside the text content
- */
-export interface Image {
-  order?: Order;
-  source?: ImageSource;
-  ratio?: ImageAspectRatio;
-  vAlign?: ImageVerticalAlignment;
-  hAlign?: ImageHorizontalAlignment;
-  [k: string]: unknown;
-}
-/**
- * Choose what comes first on mobile and desktop: image or text
- */
-export interface Order {
-  desktopImageLast?: DesktopImageAfterText;
-  mobileImageLast?: MobileImageAfterText;
   [k: string]: unknown;
 }
 /**
@@ -301,5 +282,24 @@ export interface Icon1 {
   icon?: IconIdentifier1;
   role?: AriaRole1;
   className?: AdditionalClass1;
+  [k: string]: unknown;
+}
+/**
+ * Image displayed alongside the text content
+ */
+export interface Image {
+  source?: ImageSource;
+  ratio?: ImageAspectRatio;
+  vAlign?: ImageVerticalAlignment;
+  hAlign?: ImageHorizontalAlignment;
+  order?: Order;
+  [k: string]: unknown;
+}
+/**
+ * Choose what comes first on mobile and desktop: image or text
+ */
+export interface Order {
+  mobileImageLast?: MobileImageAfterText;
+  desktopImageLast?: DesktopImageAfterText;
   [k: string]: unknown;
 }

@@ -20,7 +20,7 @@
       }
     },
     {
-      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/storytelling.schema.json"
+      "$ref": "http://kickstartds.com/storytelling.schema.json"
     }
   ]
 }

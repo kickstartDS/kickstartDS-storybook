@@ -6,37 +6,13 @@
  */
 
 /**
- * Switch to displaying the image after the text on desktop
+ * Choose one of the styles from the list
  */
-export type DesktopImageAfterText = boolean;
-/**
- * Switch to displaying the image after the text on mobile
- */
-export type MobileImageAfterText = boolean;
-/**
- * Image source to use
- */
-export type ImageSource = string;
-/**
- * Select an aspect ratio to use for cropping and displaying the image
- */
-export type ImageAspectRatio = "4:3" | "3:2" | "16:9" | "1:1" | "none";
-/**
- * Select a vertical alignment for the image
- */
-export type ImageVerticalAlignment = "center" | "top" | "top-edge" | "bottom" | "bottom-edge";
-/**
- * Select a horizontal alignment for the image
- */
-export type ImageHorizontalAlignment = "center" | "left" | "left-edge" | "right" | "right-edge";
+export type ButtonStyle = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
 /**
  * Text used on button
  */
 export type Label = string;
-/**
- * Choose one of the styles from the list
- */
-export type ButtonStyle = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
 /**
  * Choose a size between small, medium and large
  */
@@ -77,6 +53,10 @@ export type ButtonHref = string;
  */
 export type OpenLinkInNewTab = boolean;
 /**
+ * Toggles visibility of the box
+ */
+export type DisplayBox = boolean;
+/**
  * Select the headline level to use, or p alternatively
  */
 export type Level = "h1" | "h2" | "h3" | "h4" | "h5" | "p";
@@ -109,33 +89,21 @@ export type PageHeader = boolean;
  */
 export type AdditionalClasses1 = string;
 /**
- * Text content to display inside the element
+ * Text box copy text
  */
 export type Text1 = string;
 /**
- * Switch text alignment between left and center
+ * Toggles visibility of the link
  */
-export type TextAlignment = "left" | "center";
-/**
- * Overwrite the color to use for the text content
- */
-export type TextColor = string;
-/**
- * Select a vertical alignment for the box
- */
-export type BoxVerticalAlignment = "center" | "top" | "bottom";
-/**
- * Select a horizontal alignment for the box
- */
-export type BoxHorizontalAlignment = "center" | "left" | "right";
-/**
- * Text used on button
- */
-export type Label1 = string;
+export type DisplayLink = boolean;
 /**
  * Choose one of the styles from the list
  */
 export type ButtonStyle1 = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
+/**
+ * Text used on button
+ */
+export type Label1 = string;
 /**
  * Choose a size between small, medium and large
  */
@@ -176,73 +144,113 @@ export type ButtonHref1 = string;
  */
 export type OpenLinkInNewTab1 = boolean;
 /**
- * Background image for the whole element
+ * The text box is aligned inside the content grid
  */
-export type BackgroundImage = string;
+export type Indent = boolean;
 /**
- * Background color for the whole element
+ * Horizontal orientation of the box inside the keyvisual
  */
-export type BackgroundColor = string;
+export type HorizontalOrientation = "left" | "center" | "right";
 /**
- * Display a full sized version of the image
+ * Vertical orientation of the box inside the keyvisual
  */
-export type FullSizeImage = boolean;
+export type VerticalOrientation = "top" | "center" | "bottom";
 /**
- * Additional css classes attached to the wrapping element
+ * Choose a style for the box
  */
-export type Class = string;
+export type StyleOfTheBox = "default" | "light" | "transparent";
+export type Height = "small" | "default" | "fullImage" | "fullScreen";
+/**
+ * Choose a media type between image, video and none
+ */
+export type MediaType = "image" | "video" | "none";
+/**
+ * Background image source for small screens
+ */
+export type MobileImageSource = string;
+/**
+ * Background image source for medium screens
+ */
+export type TabletImageSource = string;
+/**
+ * Background image source for large screens
+ */
+export type DesktopImageSource = string;
+/**
+ * Override for img tag of picture element, if needed
+ */
+export type OptionalSource = string;
+/**
+ * Choose to indent the image horizontally on small screens
+ */
+export type ImageIndent = "none" | "left" | "right";
+/**
+ * Alt text to display for picture
+ */
+export type AltText = string;
+/**
+ * Background video source for small screens
+ */
+export type MobileVideoSource = string;
+/**
+ * Background video source for medium screens
+ */
+export type TabletVideoSource = string;
+/**
+ * Background video source for large screens
+ */
+export type DesktopVideoSource = string;
+/**
+ * Enable grid layer
+ */
+export type GridLayer = boolean;
+/**
+ * Custom css background color
+ */
+export type CustomBackgroundColor = string;
+/**
+ * The text box is in front of the image on small screens
+ */
+export type Inbox = boolean;
+/**
+ * Show skip button
+ */
+export type SkipButton = boolean;
+export type AdditionalClasses3 = string;
 
 /**
- * Component to present rich combinations of text and media, best used sequentially
+ * visual
  */
-export interface CtaProps {
-  image?: Image;
-  box: TextBox;
-  backgroundImage?: BackgroundImage;
-  backgroundColor?: BackgroundColor;
-  full?: FullSizeImage;
-  className?: Class;
-  [k: string]: unknown;
+export interface VisualProps {
+  box?: TextBox;
+  height?: Height;
+  media?: MediaWrapper;
+  overlay?: GridLayer;
+  backgroundColor?: CustomBackgroundColor;
+  inbox?: Inbox;
+  skipButton?: SkipButton;
+  className?: AdditionalClasses3;
 }
 /**
- * Image displayed alongside the text content
- */
-export interface Image {
-  order?: Order;
-  source?: ImageSource;
-  ratio?: ImageAspectRatio;
-  vAlign?: ImageVerticalAlignment;
-  hAlign?: ImageHorizontalAlignment;
-  [k: string]: unknown;
-}
-/**
- * Choose what comes first on mobile and desktop: image or text
- */
-export interface Order {
-  desktopImageLast?: DesktopImageAfterText;
-  mobileImageLast?: MobileImageAfterText;
-  [k: string]: unknown;
-}
-/**
- * Text content to display
+ * Content and style configuration for the text box
  */
 export interface TextBox {
   links?: LinkButton[];
+  enabled?: DisplayBox;
   headline?: Headline;
   text?: Text1;
-  textAlign?: TextAlignment;
-  textColor?: TextColor;
-  vAlign?: BoxVerticalAlignment;
-  hAlign?: BoxHorizontalAlignment;
-  link?: LinkButton1;
-  [k: string]: unknown;
+  link?: Link;
+  indent?: Indent;
+  horizontal?: HorizontalOrientation;
+  vertical?: VerticalOrientation;
+  background?: StyleOfTheBox;
 }
 /**
  * link-button
  */
 export interface LinkButton {
-  label: Label;
   variant: ButtonStyle;
+  label: Label;
   size: ButtonSize;
   className?: AdditionalClasses;
   icon?: Icon;
@@ -278,11 +286,12 @@ export interface Headline {
   [k: string]: unknown;
 }
 /**
- * link-button
+ * Text box link configuration
  */
-export interface LinkButton1 {
-  label: Label1;
+export interface Link {
+  enabled?: DisplayLink;
   variant: ButtonStyle1;
+  label: Label1;
   size: ButtonSize1;
   className?: AdditionalClasses2;
   icon?: Icon1;
@@ -301,5 +310,34 @@ export interface Icon1 {
   icon?: IconIdentifier1;
   role?: AriaRole1;
   className?: AdditionalClass1;
+  [k: string]: unknown;
+}
+/**
+ * Wrapper for all media types
+ */
+export interface MediaWrapper {
+  mode?: MediaType;
+  image?: BackgroundImage;
+  video?: BackgroundVideo;
+}
+/**
+ * Sources of background images for different screen sizes
+ */
+export interface BackgroundImage {
+  srcMobile: MobileImageSource;
+  srcTablet: TabletImageSource;
+  srcDesktop: DesktopImageSource;
+  src?: OptionalSource;
+  indent?: ImageIndent;
+  alt?: AltText;
+  [k: string]: unknown;
+}
+/**
+ * Sources of background videos for different screen sizes
+ */
+export interface BackgroundVideo {
+  srcMobile: MobileVideoSource;
+  srcTablet: TabletVideoSource;
+  srcDesktop: DesktopVideoSource;
   [k: string]: unknown;
 }

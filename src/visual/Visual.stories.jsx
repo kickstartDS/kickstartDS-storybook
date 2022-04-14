@@ -1,13 +1,23 @@
 import merge from "deepmerge";
-import { pack } from "@kickstartds/core/lib/storybook/helpers";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
 import visualStories, {
   Template,
 } from "@kickstartds/content/lib/visual/visual.stories";
 import tokens from "./visual-tokens.json";
-import schema from "@kickstartds/content/lib/visual/visual.schema.dereffed.json";
+import schema from "./visual.schema.dereffed.json";
+
+const { defaultArgs: args, argTypes } = getArgsShared(schema);
+for (const prop in args) {
+  if (prop.startsWith("box.link.")) {
+    delete args[prop];
+    delete argTypes[prop];
+  }
+}
 
 export default {
   ...visualStories,
+  args,
+  argTypes,
   parameters: {
     cssprops: merge(visualStories.parameters.cssprops, tokens),
     jsonschema: schema,
@@ -20,9 +30,11 @@ BoxLight.args = pack({
   height: "fullImage",
   box: {
     background: "light",
-    link: {
-      variant: "solid",
-    },
+    links: [
+      {
+        variant: "solid",
+      },
+    ],
   },
 });
 
@@ -31,9 +43,15 @@ BoxDark.args = pack({
   backgroundColor: "transparent",
   height: "fullImage",
   box: {
-    link: {
-      variant: "solid-inverted",
-    },
+    links: [
+      {
+        variant: "solid-inverted",
+      },
+      {
+        label: "Lorem Ipsum",
+        variant: "outline-inverted",
+      },
+    ],
   },
 });
 
@@ -54,7 +72,7 @@ VideoWithLargeHeadline.args = pack({
   box: {
     headline: {
       content: "Hic maxime sed eos non. Consequatur ut qui amet.",
-      subheadline:"Hic maxime sed eos non. Consequatur ut qui amet.",
+      subheadline: "Hic maxime sed eos non. Consequatur ut qui amet.",
       level: "h1",
       styleAs: "h1",
     },
@@ -62,12 +80,10 @@ VideoWithLargeHeadline.args = pack({
     vertical: "top",
     background: "transparent",
     text: "",
-    link: {
-      enabled: false,
-      variant: "outline",
-    },
+    links: [{ label: ""}],
   },
 });
+
 export const VideoWithOverlay = Template.bind({});
 VideoWithOverlay.args = pack({
   backgroundColor: "transparent",
@@ -91,8 +107,10 @@ VideoWithOverlay.args = pack({
     vertical: "center",
     background: "transparent",
     text: "Hic maxime sed eos non. Consequatur ut qui amet accusantium nesciunt.",
-    link: {
-      variant: "outline",
-    },
+    links: [
+      {
+        variant: "outline",
+      },
+    ],
   },
 });
