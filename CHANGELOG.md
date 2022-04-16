@@ -1,3 +1,15 @@
+# v1.15.2 (Sat Apr 16 2022)
+
+#### 🐛 Bug Fix
+
+- fix: witdh of logo on safari [#71](https://github.com/kickstartDS/kickstartDS-storybook/pull/71) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.15.1 (Thu Apr 14 2022)
 
 #### 🐛 Bug Fix
