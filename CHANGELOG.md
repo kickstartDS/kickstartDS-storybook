@@ -1,3 +1,16 @@
+# v2.0.13 (Mon Apr 18 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: optimize welcome page on mobile ([@fleven-kds](https://github.com/fleven-kds))
+- feat: optimize mobile blog styling ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.0.12 (Thu Apr 14 2022)
 
 #### ⚠️ Pushed to `master`
