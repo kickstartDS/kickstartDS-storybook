@@ -1912,10 +1912,14 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 }
 .c-post-text > p {
   max-width: var(--g-content-width-narrow);
-  padding: 0 var(--spacing-m);
   margin: auto;
   margin-bottom: var(--c-rich-text--vertical-spacing);
   margin-top: var(--c-rich-text--vertical-spacing);
+}
+@media (min-width: 60.01em) {
+  .c-post-text > p {
+    padding: 0 var(--spacing-m);
+  }
 }
 .c-post-text > .wp-block-video,
 .c-post-text > .wp-block-pullquote,
@@ -2165,7 +2169,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   aspect-ratio: 1/1;
   transform: translateY(-30%);
   height: 60%;
-  max-height: 6rem;
+  max-height: 5rem;
   min-height: 4rem;
 }
 @media (min-width: 40.01em) {

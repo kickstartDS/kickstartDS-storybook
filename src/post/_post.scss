@@ -15,8 +15,10 @@
 
   &-text {
     > p {
+      @include breakpoint.media(">m") {
+        padding: 0 var(--spacing-m);
+      }
       max-width: var(--g-content-width-narrow);
-      padding: 0 var(--spacing-m);
       margin: auto;
       margin-bottom: var(--c-rich-text--vertical-spacing);
       margin-top: var(--c-rich-text--vertical-spacing);

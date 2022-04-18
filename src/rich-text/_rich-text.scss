@@ -38,7 +38,7 @@
 
         transform: translateY(-30%);
         height: 60%;
-        max-height: 6rem;
+        max-height: 5rem;
         min-height: 4rem;
 
         @include breakpoint.media(">s") {
