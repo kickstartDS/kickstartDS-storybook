@@ -23,7 +23,7 @@ export const Welcome = () => (
             content: "Welcome 👋",
             subheadline: "Get started with the kickstartDS Design System!",
           },
-          horizontal: "left",
+          horizontal: "center",
           indent: false,
           link: {
             enabled: false,
@@ -47,9 +47,9 @@ export const Welcome = () => (
         media={{
           image: {
             indent: "none",
-            srcDesktop: "img/banner/visual_lemon.png",
-            srcMobile: "img/lemon.svg",
-            srcTablet: "img/banner/visual_lemon.png",
+            srcDesktop: "img/banner/welcome-centered.svg",
+            srcTablet: "img/banner/welcome-centered.svg",
+            srcMobile: "img/banner/welcome-centered-m.svg",
           },
           mode: "image",
         }}

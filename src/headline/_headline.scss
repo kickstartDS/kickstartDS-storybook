@@ -1,7 +1,7 @@
 @use "./headline-tokens";
 
 .c-headline {
-  max-width: calc(100vh - calc(var(--g-content-padding) * 2));
+  max-width: calc(100vw - calc(var(--g-content-padding) * 2));
   @media (min-width: 80em) {
     max-width: 90%;
   }

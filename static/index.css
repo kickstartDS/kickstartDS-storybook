@@ -1826,7 +1826,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 }
 
 .c-headline {
-  max-width: calc(100vh - calc(var(--g-content-padding) * 2));
+  max-width: calc(100vw - calc(var(--g-content-padding) * 2));
 }
 @media (min-width: 80em) {
   .c-headline {
@@ -3132,6 +3132,10 @@ main {
 
 .no-spacing {
   margin: 0 !important;
+}
+
+.sbdocs.sbdocs-wrapper {
+  padding: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
