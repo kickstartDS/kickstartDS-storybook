@@ -14,7 +14,7 @@
   }
 
   &-text {
-    > p {
+    > p:not(h2, h3) {
       @include breakpoint.media(">m") {
         padding: 0 var(--spacing-m);
       }
@@ -24,6 +24,12 @@
       margin-top: var(--c-rich-text--vertical-spacing);
     }
 
+    > ul,
+    > ol {
+      @include breakpoint.media(">m") {
+        margin-left: var(--spacing-m);
+      }
+    }
     > .wp-block-video,
     > .wp-block-pullquote,
     > .wp-block-image {

@@ -220,7 +220,7 @@
     --font-size-l: 1.5rem;
     --font-size-xl: 2rem;
     --font-size-xxl: 2.65rem;
-    --line-height-l: 2rem;
+    --line-height-l: 2.1rem;
     --line-height-xl: 2.75rem;
     --line-height-xxl: 3.5rem;
   }
@@ -1910,15 +1910,21 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
     display: none;
   }
 }
-.c-post-text > p {
+.c-post-text > p:not(h2, h3) {
   max-width: var(--g-content-width-narrow);
   margin: auto;
   margin-bottom: var(--c-rich-text--vertical-spacing);
   margin-top: var(--c-rich-text--vertical-spacing);
 }
 @media (min-width: 60.01em) {
-  .c-post-text > p {
+  .c-post-text > p:not(h2, h3) {
     padding: 0 var(--spacing-m);
+  }
+}
+@media (min-width: 60.01em) {
+  .c-post-text > ul,
+.c-post-text > ol {
+    margin-left: var(--spacing-m);
   }
 }
 .c-post-text > .wp-block-video,
@@ -2138,7 +2144,6 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 }
 
 .c-rich-text .has-large-font-size {
-  color: var(--g-headline--color);
   font: var(--font-ui-l);
   margin-top: var(--spacing-xl);
 }
