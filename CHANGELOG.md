@@ -1,3 +1,15 @@
+# v2.0.14 (Tue Apr 19 2022)
+
+#### ⚠️ Pushed to `master`
+
+- adjust sample post ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.0.13 (Mon Apr 18 2022)
 
 #### ⚠️ Pushed to `master`
