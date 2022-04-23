@@ -4,6 +4,7 @@
   "title": "Link Button",
   "allOf": [
     {
+      "type": "object",
       "properties": {
         "highlighted": {
           "type": "boolean",
