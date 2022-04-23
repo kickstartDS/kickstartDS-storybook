@@ -1,3 +1,15 @@
+# v1.15.3 (Sat Apr 23 2022)
+
+#### ⚠️ Pushed to `master`
+
+- fix: missing object types in schemas ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.15.2 (Sat Apr 16 2022)
 
 #### 🐛 Bug Fix
