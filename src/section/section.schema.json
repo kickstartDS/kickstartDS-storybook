@@ -4,7 +4,7 @@
   "title": "Section",
   "allOf": [
     {
-      "$ref": "http://frontend.ruhmesmeile.com/base/base/section.schema.json"
+      "$ref": "http://schema.kickstartds.com/base/section.schema.json"
     },
     {
       "type": "object",
@@ -17,7 +17,7 @@
               "default": "default"
             },
             {
-              "$ref": "http://frontend.ruhmesmeile.com/base/base/section.schema.json#/properties/background"
+              "$ref": "http://schema.kickstartds.com/base/section.schema.json#/properties/background"
             }
           ]
         },

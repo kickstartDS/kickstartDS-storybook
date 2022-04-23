@@ -1,7 +1,7 @@
 const $RefParser = require("json-schema-ref-parser");
 const merge = require("json-schema-merge-allof");
 const traverse = require('json-schema-traverse');
-const { rmResolver, kdsResolver } = require("./schemaResolver");
+const { rmResolver, kdsResolver, kickstartdsResolver } = require("./schemaResolver");
 
 // TODO deduplicate this (whole file), this should (mostly) be consumed from @kickstartDS directly
 
@@ -45,6 +45,10 @@ const parse = (schemaPath) =>
       kds: {
         order: 2,
         ...kdsResolver,
+      },
+      kickstartds: {
+        order: 3,
+        ...kickstartdsResolver,
       },
     },
   });

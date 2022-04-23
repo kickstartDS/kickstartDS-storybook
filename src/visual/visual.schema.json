@@ -19,7 +19,7 @@
                     }
                   },
                   {
-                    "$ref": "http://frontend.ruhmesmeile.com/base/atoms/link-button.schema.json"
+                    "$ref": "http://schema.kickstartds.com/base/link-button.schema.json"
                   }
                 ]
               },
@@ -34,7 +34,7 @@
       }
     },
     {
-      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/visual.schema.json"
+      "$ref": "http://schema.kickstartds.com/content/visual.schema.json"
     }
   ]
 }
