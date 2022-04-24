@@ -3,8 +3,10 @@
   "$id": "http://kickstartds.com/storytelling.schema.json",
   "allOf": [
     {
+      "type": "object",
       "properties": {
         "box": {
+          "type": "object",
           "properties": {
             "links": {
               "type": "array",
