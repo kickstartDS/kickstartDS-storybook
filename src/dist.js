@@ -1,4 +1,3 @@
-import "@kickstartds/base/lib/content-box/ContentBox";
 import "@kickstartds/base/lib/global/base";
 import "@kickstartds/base/lib/iframe/IframeRatio";
 import "@kickstartds/base/lib/lightbox/lazyLightbox";
