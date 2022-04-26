@@ -1,5 +1,5 @@
 @use "./section-tokens";
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../breakpoint";
 
 :root {
   --l-section--corner-top-left-height: var(--spacing-l);

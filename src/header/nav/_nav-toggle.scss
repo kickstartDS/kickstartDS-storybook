@@ -1,6 +1,6 @@
 @use "sass:math";
 @use "bourbon/core/bourbon";
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../../breakpoint";
 // @use '../var';
 
 html.overlay-open {

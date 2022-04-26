@@ -1,0 +1,13 @@
+@use 'sass:list';
+
+$breakpoints: (
+  xs: 25em,
+  s: 40em,
+  m: 60em,
+  l: 64em,
+  xl: 75em,
+);
+
+@forward 'include-media/dist/include-media' with (
+  $breakpoints: $breakpoints
+);

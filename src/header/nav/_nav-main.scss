@@ -1,6 +1,6 @@
 @use "sass:meta";
 @use "bourbon/core/bourbon";
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../../breakpoint";
 @use "./nav-main-tokens";
 
 .nav-main {
