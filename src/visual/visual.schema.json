@@ -13,15 +13,15 @@
               "items": {
                 "allOf": [
                   {
+                    "$ref": "http://kickstartds.com/link-button.schema.json"
+                  },
+                  {
                     "type": "object",
                     "properties": {
                       "variant": {
                         "default": "outline-inverted"
                       }
                     }
-                  },
-                  {
-                    "$ref": "http://schema.kickstartds.com/base/link-button.schema.json"
                   }
                 ]
               },
