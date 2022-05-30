@@ -1,3 +1,15 @@
+# v2.0.16 (Wed Apr 27 2022)
+
+#### ⚠️ Pushed to `master`
+
+- chore: update manager style ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.0.15 (Sat Apr 23 2022)
 
 #### ⚠️ Pushed to `master`
