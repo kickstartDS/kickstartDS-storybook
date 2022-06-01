@@ -115,3 +115,12 @@ dist
 
 # TypeScript definition files
 *.d.ts
+
+# Style Dictionary related, generated files
+/.storybook/IconSprite.js
+/.storybook/icons.html
+/.storybook/tokens.css
+/.storybook/tokens.js
+/src/_token-map.scss
+/src/icon-sprite.html
+/src/tokens.css

@@ -1,4 +1,4 @@
-import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import { Meta } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 
 <Meta title="Design Tokens/Typography" />
@@ -11,11 +11,23 @@ import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 
 ## Font Sizes
 
-<DesignTokenDocBlock categoryName="Font Sizes" viewType="table" />
+### Display
 
-## Line Heights
+<div className="foo">
+  <DesignTokenDocBlock categoryName="Font Sizes: display" viewType="table" />
+</div>
 
-<DesignTokenDocBlock categoryName="Line Heights" viewType="table" />
+### Copy
+
+<DesignTokenDocBlock categoryName="Font Sizes: copy" viewType="table" />
+
+### UI
+
+<DesignTokenDocBlock categoryName="Font Sizes: ui" viewType="table" />
+
+### Mono
+
+<DesignTokenDocBlock categoryName="Font Sizes: mono" viewType="table" />
 
 ## Font Weights
 

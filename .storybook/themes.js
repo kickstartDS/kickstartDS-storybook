@@ -1,37 +1,38 @@
-import { create, themes } from "@storybook/theming";
+import { create } from "@storybook/theming";
+import * as tokens from './tokens';
 
 export const light = create({
   base: "light",
 
-  colorPrimary: themes.light.colorPrimary,
-  colorSecondary: "#06566a",
+  colorPrimary: tokens.KsColorPrimaryBase,
+  colorSecondary: tokens.KsColorPrimaryBase,
 
   // UI
-  appBg: "#eceff3",
-  appContentBg: themes.light.appContentBg,
-  appBorderColor: themes.light.appBorderColor,
-  appBorderRadius: themes.light.appBorderRadius,
+  appBg: tokens.KsColorPrimaryToBg9Base,
+  appContentBg: tokens.KsBackgroundColorDefaultBase,
+  appBorderColor: tokens.KsColorPrimaryAlpha2Base,
+  appBorderRadius: tokens.KsBorderRadiusCard,
 
   // Typography
-  fontBase: '"Helvetica Neue","Helvetica","Arial",sans-serif',
-  fontCode: themes.light.fontCode,
+  fontBase: tokens.KsFontFamilyUi,
+  fontCode: tokens.KsFontFamilyMono,
 
   // Text colors
-  textColor: "#444f52",
-  textInverseColor: themes.light.textInverseColor,
+  textColor: tokens.KsTextColorDefaultBase,
+  textInverseColor: tokens.KsTextColorDefaultInvertedBase,
 
   // Toolbar default and active colors
-  barTextColor: "#74b2c1",
-  barSelectedColor: "#06566a",
-  barBg: themes.light.barBg,
+  barTextColor: tokens.KsColorPrimaryAlpha6Base,
+  barSelectedColor: tokens.KsColorPrimaryBase,
+  barBg: tokens.KsBackgroundColorDefaultBase,
 
   // Form colors
-  inputBg: themes.light.inputBg,
-  inputBorder: themes.light.inputBorder,
-  inputTextColor: themes.light.inputTextColor,
-  inputBorderRadius: themes.light.inputBorderRadius,
+  inputBg: tokens.KsBackgroundColorInterfaceInteractiveBase,
+  inputBorder: tokens.KsColorFgToBg7Base,
+  inputTextColor: tokens.KsTextColorInterfaceInteractiveBase,
+  inputBorderRadius: tokens.KsBorderRadiusControl,
 
   brandTitle: "kickstartDS Storybook",
-  brandUrl: "https://www.kickstartds.com",
+  brandUrl: "https://www.kickstartDS.com",
   brandImage: "/logo.svg",
 });

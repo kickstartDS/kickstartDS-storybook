@@ -1,0 +1,294 @@
+{
+  "ks": {
+    "spacing": {
+      "l": {
+        "_": {
+          "value": "{ks.spacing.l.base}",
+          "token": {
+            "category": "Spacing",
+            "presenter": "Spacing"
+          }
+        },
+        "base": {
+          "value": "1.875",
+          "attributes": {
+            "category": "size"
+          }
+        },
+        "bp-factor": {
+          "phone": {
+            "value": "1"
+          },
+          "tablet": {
+            "value": "1.15"
+          },
+          "laptop": {
+            "value": "1.25"
+          },
+          "desktop": {
+            "value": "1.5"
+          }
+        }
+      },
+      "m": {
+        "_": {
+          "value": "{ks.spacing.m.base}",
+          "token": {
+            "category": "Spacing",
+            "presenter": "Spacing"
+          }
+        },
+        "base": {
+          "value": "1.25",
+          "attributes": {
+            "category": "size"
+          }
+        },
+        "bp-factor": {
+          "phone": {
+            "value": "1"
+          },
+          "tablet": {
+            "value": "1.15"
+          },
+          "laptop": {
+            "value": "1.25"
+          },
+          "desktop": {
+            "value": "1.5"
+          }
+        }
+      },
+      "s": {
+        "_": {
+          "value": "{ks.spacing.s.base}",
+          "token": {
+            "category": "Spacing",
+            "presenter": "Spacing"
+          }
+        },
+        "base": {
+          "value": "0.625",
+          "attributes": {
+            "category": "size"
+          }
+        },
+        "bp-factor": {
+          "phone": {
+            "value": "1"
+          },
+          "tablet": {
+            "value": "1.15"
+          },
+          "laptop": {
+            "value": "1.25"
+          },
+          "desktop": {
+            "value": "1.5"
+          }
+        }
+      },
+      "xl": {
+        "_": {
+          "value": "{ks.spacing.xl.base}",
+          "token": {
+            "category": "Spacing",
+            "presenter": "Spacing"
+          }
+        },
+        "base": {
+          "value": "2.8125",
+          "attributes": {
+            "category": "size"
+          }
+        },
+        "bp-factor": {
+          "phone": {
+            "value": "1"
+          },
+          "tablet": {
+            "value": "1.15"
+          },
+          "laptop": {
+            "value": "1.25"
+          },
+          "desktop": {
+            "value": "1.5"
+          }
+        }
+      },
+      "xs": {
+        "_": {
+          "value": "{ks.spacing.xs.base}",
+          "token": {
+            "category": "Spacing",
+            "presenter": "Spacing"
+          }
+        },
+        "base": {
+          "value": "0.3125",
+          "attributes": {
+            "category": "size"
+          }
+        },
+        "bp-factor": {
+          "phone": {
+            "value": "1"
+          },
+          "tablet": {
+            "value": "1.15"
+          },
+          "laptop": {
+            "value": "1.25"
+          },
+          "desktop": {
+            "value": "1.5"
+          }
+        }
+      },
+      "xxl": {
+        "_": {
+          "value": "{ks.spacing.xxl.base}",
+          "token": {
+            "category": "Spacing",
+            "presenter": "Spacing"
+          }
+        },
+        "base": {
+          "value": "3.75",
+          "attributes": {
+            "category": "size"
+          }
+        },
+        "bp-factor": {
+          "phone": {
+            "value": "1"
+          },
+          "tablet": {
+            "value": "1.15"
+          },
+          "laptop": {
+            "value": "1.25"
+          },
+          "desktop": {
+            "value": "1.5"
+          }
+        }
+      },
+      "xxs": {
+        "_": {
+          "value": "{ks.spacing.xxs.base}",
+          "token": {
+            "category": "Spacing",
+            "presenter": "Spacing"
+          }
+        },
+        "base": {
+          "value": "0.125",
+          "attributes": {
+            "category": "size"
+          }
+        },
+        "bp-factor": {
+          "phone": {
+            "value": "1"
+          },
+          "tablet": {
+            "value": "1.15"
+          },
+          "laptop": {
+            "value": "1.25"
+          },
+          "desktop": {
+            "value": "1.5"
+          }
+        }
+      },
+      "inline": {
+        "l": {
+          "value": "{ks.spacing.l.base}"
+        },
+        "m": {
+          "value": "{ks.spacing.m.base}"
+        },
+        "s": {
+          "value": "{ks.spacing.s.base}"
+        },
+        "xl": {
+          "value": "{ks.spacing.xl.base}"
+        },
+        "xs": {
+          "value": "{ks.spacing.xs.base}"
+        }
+      },
+      "inset": {
+        "l": {
+          "value": "{ks.spacing.l.base}"
+        },
+        "m": {
+          "value": "{ks.spacing.m.base}"
+        },
+        "s": {
+          "value": "{ks.spacing.s.base}"
+        },
+        "xl": {
+          "value": "{ks.spacing.xl.base}"
+        },
+        "xs": {
+          "value": "{ks.spacing.xs.base}"
+        }
+      },
+      "inset-squish": {
+        "l": {
+          "value": "{ks.spacing.m._} {ks.spacing.l._}"
+        },
+        "m": {
+          "value": "{ks.spacing.s._} {ks.spacing.m._}"
+        },
+        "s": {
+          "value": "{ks.spacing.xs._} {ks.spacing.s._}"
+        },
+        "xl": {
+          "value": "{ks.spacing.l._} {ks.spacing.xl._}"
+        },
+        "xs": {
+          "value": "{ks.spacing.xxs._} {ks.spacing.xs._}"
+        }
+      },
+      "inset-stretch": {
+        "l": {
+          "value": "{ks.spacing.xl._} {ks.spacing.l._}"
+        },
+        "m": {
+          "value": "{ks.spacing.l._} {ks.spacing.m._}"
+        },
+        "s": {
+          "value": "{ks.spacing.m._} {ks.spacing.s._}"
+        },
+        "xl": {
+          "value": "{ks.spacing.xxl._} {ks.spacing.xl._}"
+        },
+        "xs": {
+          "value": "{ks.spacing.s._} {ks.spacing.xs._}"
+        }
+      },
+      "stack": {
+        "l": {
+          "value": "{ks.spacing.l.base}"
+        },
+        "m": {
+          "value": "{ks.spacing.m.base}"
+        },
+        "s": {
+          "value": "{ks.spacing.s.base}"
+        },
+        "xl": {
+          "value": "{ks.spacing.xl.base}"
+        },
+        "xs": {
+          "value": "{ks.spacing.xs.base}"
+        }
+      }
+    }
+  }
+}

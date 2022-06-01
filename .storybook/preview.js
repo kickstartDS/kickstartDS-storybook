@@ -14,16 +14,6 @@ import { LinkProvider } from "../docs/LinkProvider";
 
 import { LightBox } from "@kickstartds/base/lib/lightbox";
 
-const tokenContext = require.context(
-  "!!raw-loader!../src/design-tokens",
-  false,
-  /design-tokens\.css$/
-);
-const tokenFiles = tokenContext.keys().map((filename) => ({
-  filename,
-  content: tokenContext(filename).default,
-}));
-
 const myActions = actions("radio");
 window.rm.radio.on("*", myActions.radio);
 
@@ -61,7 +51,7 @@ export const parameters = {
     },
   },
   designToken: {
-    files: tokenFiles,
+    disable: true,
   },
   docs: {
     container: (props) => (

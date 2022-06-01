@@ -1,0 +1,94 @@
+{
+  "ks": {
+    "box-shadow": {
+      "opacity": {
+        "card": {
+          "_": {
+            "value": "0.15"
+          },
+          "hover": {
+            "value": "0.2"
+          }
+        },
+        "control": {
+          "_": {
+            "value": "0.1"
+          },
+          "hover": {
+            "value": "0.15"
+          }
+        },
+        "surface": {
+          "_": {
+            "value": "0.2"
+          },
+          "hover": {
+            "value": "0.25"
+          }
+        }
+      },
+      "card": {
+        "_": {
+          "value": "0px 1px 2px {ks.box-shadow.color.card._}",
+          "token": {
+            "category": "Box Shadow",
+            "presenter": "Shadow"
+          }
+        },
+        "hover": {
+          "value": "0px 1px 3px {ks.box-shadow.color.card.hover}"
+        }
+      },
+      "control": {
+        "_": {
+          "value": "0px 0px 3px {ks.box-shadow.color.control._}",
+          "token": {
+            "category": "Box Shadow",
+            "presenter": "Shadow"
+          }
+        },
+        "hover": {
+          "value": "0px 0px 3px {ks.box-shadow.color.control.hover}"
+        }
+      },
+      "color": {
+        "card": {
+          "_": {
+            "value": "rgba(0,0,0,{ks.box-shadow.opacity.card._})"
+          },
+          "hover": {
+            "value": "rgba(5,5,5,{ks.box-shadow.opacity.card.hover})"
+          }
+        },
+        "control": {
+          "_": {
+            "value": "rgba(0,0,0,{ks.box-shadow.opacity.control._})"
+          },
+          "hover": {
+            "value": "rgba(5,5,5,{ks.box-shadow.opacity.control.hover})"
+          }
+        },
+        "surface": {
+          "_": {
+            "value": "rgba(0,0,0,{ks.box-shadow.opacity.surface._})"
+          },
+          "hover": {
+            "value": "rgba(5,5,5,{ks.box-shadow.opacity.surface.hover})"
+          }
+        }
+      },
+      "surface": {
+        "_": {
+          "value": "0px 2px 4px {ks.box-shadow.color.surface._}",
+          "token": {
+            "category": "Box Shadow",
+            "presenter": "Shadow"
+          }
+        },
+        "hover": {
+          "value": "0px 4px 16px {ks.box-shadow.color.surface.hover}"
+        }
+      }
+    }
+  }
+}
