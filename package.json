@@ -12,7 +12,7 @@
   "scripts": {
     "init-tokens": "kickstartDS tokens init --cleanup --rc-only",
     "build-tokens": "kickstartDS tokens compile --cleanup --rc-only",
-    "build-storybook": "run-p sass sass-manager schema token && build-storybook --output-dir storybook",
+    "build-storybook": "run-p sass sass-manager schema token && DESIGN_TOKEN_GLOB=.storybook/tokens.css build-storybook --output-dir storybook",
     "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --storybook-build-dir 'storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes --exit-once-uploaded",
     "dist:js": "esbuild index=src/dist.js --outdir=dist --format=esm --bundle --minify --splitting",
     "dist:sass": "sass --load-path=node_modules src/dist.scss dist/index.css",
@@ -25,13 +25,11 @@
     "sass-manager": "sass --load-path=node_modules .storybook/manager.scss static/manager.css",
     "token": "node scripts/customPropertyExtract.js",
     "typings": "tsc",
-    "watch:sass": "yarn sass --watch",
-    "watch:sass-manager": "yarn sass-manager --watch",
     "watch:schema": "yarn schema && chokidar \"src/**/*.schema.json\" -c \"yarn schema {path}\"",
     "watch:token": "yarn token && chokidar \"src/**/*-tokens.scss\" -c \"yarn token {path}\"",
     "schema": "node scripts/schema.js",
     "start": "run-p watch:* storybook",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "DESIGN_TOKEN_GLOB=.storybook/tokens.css start-storybook -p 6006"
   },
   "keywords": [],
   "dependencies": {
@@ -78,7 +76,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.34.1",
-    "storybook-design-token": "^1.4.0"
+    "storybook-design-token": "^2.2.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
