@@ -2301,14 +2301,14 @@
   resolved "https://registry.yarnpkg.com/@jsdevtools/ono/-/ono-7.1.3.tgz#9df03bbd7c696a5c58885c34aa06da41c8543796"
   integrity sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==
 
-"@kickstartds/base@2.0.0-canary.922.4357.0":
-  version "2.0.0-canary.922.4357.0"
-  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-2.0.0-canary.922.4357.0.tgz#56dd0a0fec1a1d27ff37506351182acccf5c8383"
-  integrity sha512-2JuPfIwtyUP/Ih2eFXiaPrP1bfJBMJ10pK+wKrnQvIq1QfIAjnra9HHqdfgaQos2YU8meMzkV0xxD0or9xhGfQ==
+"@kickstartds/base@2.0.0-canary.922.4383.0":
+  version "2.0.0-canary.922.4383.0"
+  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-2.0.0-canary.922.4383.0.tgz#2638834483218a4ac3421121cac17b685d6ac027"
+  integrity sha512-rG/kOcZ1Eh8/9bpeDwDzsVa619ObHdMmOd9C33lFOfFEmgyw8Q+FEbNmP/Y3shtlUgz70pxjd3Z6BSrfEoaHoQ==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@glidejs/glide" "^3.5.2"
-    "@kickstartds/core" "2.0.0-canary.922.4357.0"
+    "@kickstartds/core" "2.0.0-canary.922.4383.0"
     classnames "^2.2.6"
     date-fns "^2.28.0"
     focus-visible "^5.0.2"
@@ -2317,60 +2317,28 @@
     react-markdown "^8.0.2"
     vhtml "^2.2.0"
 
-"@kickstartds/blog@2.0.0-canary.922.4357.0":
-  version "2.0.0-canary.922.4357.0"
-  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-2.0.0-canary.922.4357.0.tgz#13ffe41529d955bfd7df84d84b6511689100a94a"
-  integrity sha512-X3KXgVHiactCGtTA3TJQGSJCFuX6klDnoiroAJQpagys8JGIMc9TWcOvwcG4oIPlBjUco4mt3RSZVFEoCWZ7kA==
+"@kickstartds/blog@2.0.0-canary.922.4383.0":
+  version "2.0.0-canary.922.4383.0"
+  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-2.0.0-canary.922.4383.0.tgz#12244d7b017a8bb8ee36ec10c382267c363b125f"
+  integrity sha512-fzdyZZPGP3v8cwJO3nLIeqF2nIL3CCKOscNzAuMHJkG0pljxqv1xCJ8N70H50kPEja9DZONmrhZv4QNKKJMSng==
   dependencies:
     "@babel/runtime" "^7.17.8"
-    "@kickstartds/base" "2.0.0-canary.922.4357.0"
-    "@kickstartds/content" "2.0.0-canary.922.4357.0"
-    "@kickstartds/core" "2.0.0-canary.922.4357.0"
+    "@kickstartds/base" "2.0.0-canary.922.4383.0"
+    "@kickstartds/content" "2.0.0-canary.922.4383.0"
+    "@kickstartds/core" "2.0.0-canary.922.4383.0"
     classnames "^2.2.6"
     date-fns "^2.28.0"
 
-"@kickstartds/content@2.0.0-canary.922.4357.0":
-  version "2.0.0-canary.922.4357.0"
-  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-2.0.0-canary.922.4357.0.tgz#b63c6de102773478978354adc87d470cf5094fee"
-  integrity sha512-3zSbt/4IEmllNkYd+5ftLoVIsqECYJ/eTuugCcvpV6xo00gxX+oFypg/+aU9XTAEpbHIu6rvPK7MxDHumkqlyA==
+"@kickstartds/content@2.0.0-canary.922.4383.0":
+  version "2.0.0-canary.922.4383.0"
+  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-2.0.0-canary.922.4383.0.tgz#25781e04784ea723e615630c835a56f5187c3988"
+  integrity sha512-Eaj2NxT7udvLcUro3HwqBY73MsNoKKN3UVTMyRL1S/hB8SO9IT/bFIs5l1OtjOUpFPNJ0EpihbuD8mK9/P19fA==
   dependencies:
     "@babel/runtime" "^7.17.8"
-    "@kickstartds/base" "2.0.0-canary.922.4357.0"
-    "@kickstartds/core" "2.0.0-canary.922.4357.0"
+    "@kickstartds/base" "2.0.0-canary.922.4383.0"
+    "@kickstartds/core" "2.0.0-canary.922.4383.0"
     classnames "^2.2.6"
     countup.js "^2.1.0"
-
-"@kickstartds/core@2.0.0-canary.922.4357.0":
-  version "2.0.0-canary.922.4357.0"
-  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-2.0.0-canary.922.4357.0.tgz#bd45ecaee176bb30835d52475d41f3c48de18b8a"
-  integrity sha512-a5AZY+Y1nmEHuN4P5RzTXfpL/I57fI1R6c5ZbRON1TG21vIndaZ1NOECpPaRGQGmFpuK2xjLVPfHV4TZEoGtkg==
-  dependencies:
-    "@babel/core" "^7.17.8"
-    "@babel/preset-react" "^7.16.7"
-    "@babel/runtime" "^7.17.8"
-    ajv "^8.10.0"
-    bezier-js "^6.1.0"
-    bourbon "^7.2.0"
-    classnames "^2.2.6"
-    del "^6.0.0"
-    dependency-graph "^0.11.0"
-    esbuild "^0.14.36"
-    fast-glob "^3.2.11"
-    fs-extra "^10.0.1"
-    htmltojsx "^0.3.0"
-    lazysizes "^5.3.2"
-    lodash "^4.17.21"
-    lodash-es "^4.17.21"
-    node-html-parser "^5.2.0"
-    postcss "^8.4.6"
-    postcss-calc "^8.2.4"
-    postcss-colormin "^5.3.0"
-    postcss-normalize-whitespace "^5.1.1"
-    postcss-sort-media-queries "^4.2.1"
-    pubsub-js "^1.9.4"
-    sass "^1.50.0"
-    svgstore "^3.0.1"
-    tinycolor2 "^1.4.2"
 
 "@kickstartds/core@2.0.0-canary.922.4383.0":
   version "2.0.0-canary.922.4383.0"
@@ -2404,14 +2372,14 @@
     svgstore "^3.0.1"
     tinycolor2 "^1.4.2"
 
-"@kickstartds/form@2.0.0-canary.922.4357.0":
-  version "2.0.0-canary.922.4357.0"
-  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-2.0.0-canary.922.4357.0.tgz#be30a1ea1af6c525061db9270353e4cb19930d66"
-  integrity sha512-2rtOh5pBN3lVjoaKGbzfCbl984ob9bj8QNMFDH4ootdCa9PYYftbglXyXYSSMkzLdsmACmAO3ocBQgj86uqYwg==
+"@kickstartds/form@2.0.0-canary.922.4383.0":
+  version "2.0.0-canary.922.4383.0"
+  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-2.0.0-canary.922.4383.0.tgz#4ea31b896dfcc931949dea019ab6cce3dbf1bef6"
+  integrity sha512-FKQWC4k+8UpSuFSodgQApQbCnRQ1vb/K3S4dqBclqm/PXlc7GmKSKdCXcgpK0pWVTqDVuN2aKo4APqH8mIsS7w==
   dependencies:
     "@babel/runtime" "^7.17.8"
-    "@kickstartds/base" "2.0.0-canary.922.4357.0"
-    "@kickstartds/core" "2.0.0-canary.922.4357.0"
+    "@kickstartds/base" "2.0.0-canary.922.4383.0"
+    "@kickstartds/core" "2.0.0-canary.922.4383.0"
     classnames "^2.2.6"
 
 "@kickstartds/json-schema-viewer@^1.1.0":
@@ -2809,7 +2777,7 @@
     xml2js "^0.4.23"
     xmlbuilder2 "^3.0.2"
 
-"@storybook/addon-actions@6.5.6", "@storybook/addon-actions@^6.5.5":
+"@storybook/addon-actions@6.5.6", "@storybook/addon-actions@^6.5.6":
   version "6.5.6"
   resolved "https://registry.npmjs.org/@storybook/addon-actions/-/addon-actions-6.5.6.tgz#0e980a0a6d8d47db8031108ffa1fd51cc627a466"
   integrity sha512-AGtzpWOU/B0FxcqFDM7E/KSHQyr6tMbVts77JlAKCIbwqEncD1LIQoz9CyMdbr1jynkep0Ck0JjcDdmp7CXVoQ==
@@ -2871,7 +2839,7 @@
     lodash "^4.17.21"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-docs@6.5.6", "@storybook/addon-docs@^6.5.5":
+"@storybook/addon-docs@6.5.6", "@storybook/addon-docs@^6.5.6":
   version "6.5.6"
   resolved "https://registry.npmjs.org/@storybook/addon-docs/-/addon-docs-6.5.6.tgz#39ea88cf5feebc82cc7faf9c0a10f9f3cba420bb"
   integrity sha512-18MOB4Cvr10ibRlA58Y2MqaC0EM9NG758iSjweThaU4kZtSBSDn8R2qBLDGQPwEFkww+4+oAFXxR5/J0qO2xEw==
@@ -2905,7 +2873,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-essentials@^6.5.5":
+"@storybook/addon-essentials@^6.5.6":
   version "6.5.6"
   resolved "https://registry.npmjs.org/@storybook/addon-essentials/-/addon-essentials-6.5.6.tgz#502e6152b729696d8de8c792fb44aae76fae934e"
   integrity sha512-n+kDN/AI6NDJNJjofYXjGBh618Yg17DuRppFdXROnocwndKufuImF+/tRaQ0YLwXmnULpAiFSGbja6F0pc7fOw==
@@ -2926,7 +2894,7 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-links@^6.5.5":
+"@storybook/addon-links@^6.5.6":
   version "6.5.6"
   resolved "https://registry.npmjs.org/@storybook/addon-links/-/addon-links-6.5.6.tgz#1074d239c3c9c8b7168d20c9cc20b8918e4993a6"
   integrity sha512-a4+9HLc6+M9qv5Fvezoc8AJYze8HDfHlsEFvCY1AtQiyVEmxFRNBdAp6w+/teNzihXWY78EKRcGM0jjyt+9mWg==
@@ -3004,7 +2972,7 @@
     prop-types "^15.7.2"
     regenerator-runtime "^0.13.7"
 
-"@storybook/addons@6.5.6", "@storybook/addons@^6.3.12", "@storybook/addons@^6.5.5":
+"@storybook/addons@6.5.6", "@storybook/addons@^6.3.12", "@storybook/addons@^6.5.6":
   version "6.5.6"
   resolved "https://registry.npmjs.org/@storybook/addons/-/addons-6.5.6.tgz#ed7ab72ac3a4e2d74e2ba4d10b4a0721d66cd1cd"
   integrity sha512-Ktv7Pk4iq+8+6yifXu3bOiC1ii9VXD93mmha7XcrdW+wl8jti9Ll5jLKEN0lAhd+Qupz4R0g9+znpRXk5n0pBg==
@@ -3565,7 +3533,7 @@
     react-docgen-typescript "^2.1.1"
     tslib "^2.0.0"
 
-"@storybook/react@^6.5.5":
+"@storybook/react@^6.5.6":
   version "6.5.6"
   resolved "https://registry.npmjs.org/@storybook/react/-/react-6.5.6.tgz#9b7ddc678790a8af100c26b8d47c332bc6f4fc84"
   integrity sha512-lU2ggvZe9PbKWK4cbwHI6eDT7tlRAqdx489kLrfKhGTUVE8zhc/uosVEMpxbxS/zf1YYnXumr2DH1Uw2S3JeqA==
@@ -3712,7 +3680,7 @@
     resolve-from "^5.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/theming@6.5.6", "@storybook/theming@^6.3.12", "@storybook/theming@^6.5.5":
+"@storybook/theming@6.5.6", "@storybook/theming@^6.3.12", "@storybook/theming@^6.5.6":
   version "6.5.6"
   resolved "https://registry.npmjs.org/@storybook/theming/-/theming-6.5.6.tgz#519e1675a7ff5c780f5a41b05b4b679c37b62fe8"
   integrity sha512-JEKl9gdVD2Ef9xSwRtaq6EpjJD5xe7X2OP/4e61ucrp/rSOk7SOpYUZYQh6PhYLGhnGbgQkedVVc9CUhK8bs6Q==
