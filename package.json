@@ -12,7 +12,7 @@
   "scripts": {
     "init-tokens": "kickstartDS tokens init --cleanup --rc-only",
     "build-tokens": "kickstartDS tokens compile --cleanup --rc-only",
-    "build-storybook": "run-p sass sass-manager schema token && DESIGN_TOKEN_GLOB=.storybook/tokens.css build-storybook --output-dir storybook",
+    "build-storybook": "yarn build-tokens && run-p sass sass-manager schema token && DESIGN_TOKEN_GLOB=.storybook/tokens.css build-storybook --output-dir storybook",
     "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --storybook-build-dir 'storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes --exit-once-uploaded",
     "dist:js": "esbuild index=src/dist.js --outdir=dist --format=esm --bundle --minify --splitting",
     "dist:sass": "sass --load-path=node_modules src/dist.scss dist/index.css",
