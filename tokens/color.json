@@ -7,6 +7,333 @@
             "base": {
               "value": {
                 "a": 0.05,
+                "b": 5,
+                "g": 5,
+                "r": 5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg Alpha Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "2": {
+            "base": {
+              "value": {
+                "a": 0.13,
+                "b": 5,
+                "g": 5,
+                "r": 5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg Alpha Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "3": {
+            "base": {
+              "value": {
+                "a": 0.24,
+                "b": 5,
+                "g": 5,
+                "r": 5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg Alpha Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "4": {
+            "base": {
+              "value": {
+                "a": 0.37,
+                "b": 5,
+                "g": 5,
+                "r": 5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg Alpha Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "5": {
+            "base": {
+              "value": {
+                "a": 0.5,
+                "b": 5,
+                "g": 5,
+                "r": 5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg Alpha Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "6": {
+            "base": {
+              "value": {
+                "a": 0.63,
+                "b": 5,
+                "g": 5,
+                "r": 5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg Alpha Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "7": {
+            "base": {
+              "value": {
+                "a": 0.76,
+                "b": 5,
+                "g": 5,
+                "r": 5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg Alpha Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "8": {
+            "base": {
+              "value": {
+                "a": 0.87,
+                "b": 5,
+                "g": 5,
+                "r": 5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg Alpha Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "9": {
+            "base": {
+              "value": {
+                "a": 0.95,
+                "b": 5,
+                "g": 5,
+                "r": 5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg Alpha Scale",
+                "presenter": "Color"
+              }
+            }
+          }
+        },
+        "base": {
+          "value": {
+            "a": 1,
+            "b": 5,
+            "g": 5,
+            "r": 5
+          },
+          "attributes": {
+            "category": "color"
+          },
+          "token": {
+            "category": "Colors: Fg",
+            "presenter": "Color"
+          }
+        },
+        "to-bg": {
+          "1": {
+            "base": {
+              "value": {
+                "a": 1,
+                "b": 18,
+                "g": 18,
+                "r": 18
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg To Bg Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "2": {
+            "base": {
+              "value": {
+                "a": 1,
+                "b": 38,
+                "g": 38,
+                "r": 38
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg To Bg Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "3": {
+            "base": {
+              "value": {
+                "a": 1,
+                "b": 65,
+                "g": 65,
+                "r": 65
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg To Bg Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "4": {
+            "base": {
+              "value": {
+                "a": 1,
+                "b": 98,
+                "g": 98,
+                "r": 98
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg To Bg Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "5": {
+            "base": {
+              "value": {
+                "a": 1,
+                "b": 130,
+                "g": 130,
+                "r": 130
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg To Bg Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "6": {
+            "base": {
+              "value": {
+                "a": 1,
+                "b": 163,
+                "g": 163,
+                "r": 163
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg To Bg Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "7": {
+            "base": {
+              "value": {
+                "a": 1,
+                "b": 195,
+                "g": 195,
+                "r": 195
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg To Bg Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "8": {
+            "base": {
+              "value": {
+                "a": 1,
+                "b": 223,
+                "g": 223,
+                "r": 223
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg To Bg Scale",
+                "presenter": "Color"
+              }
+            }
+          },
+          "9": {
+            "base": {
+              "value": {
+                "a": 1,
+                "b": 242,
+                "g": 242,
+                "r": 242
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Fg To Bg Scale",
+                "presenter": "Color"
+              }
+            }
+          }
+        }
+      },
+      "fg-inverted": {
+        "alpha": {
+          "1": {
+            "base": {
+              "value": {
+                "a": 0.05,
                 "b": 255,
                 "g": 255,
                 "r": 255
@@ -15,7 +342,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Alpha Scale",
+                "category": "Colors: Fg Inverted Alpha Scale",
                 "presenter": "Color"
               }
             }
@@ -32,7 +359,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Alpha Scale",
+                "category": "Colors: Fg Inverted Alpha Scale",
                 "presenter": "Color"
               }
             }
@@ -49,7 +376,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Alpha Scale",
+                "category": "Colors: Fg Inverted Alpha Scale",
                 "presenter": "Color"
               }
             }
@@ -66,7 +393,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Alpha Scale",
+                "category": "Colors: Fg Inverted Alpha Scale",
                 "presenter": "Color"
               }
             }
@@ -83,7 +410,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Alpha Scale",
+                "category": "Colors: Fg Inverted Alpha Scale",
                 "presenter": "Color"
               }
             }
@@ -100,7 +427,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Alpha Scale",
+                "category": "Colors: Fg Inverted Alpha Scale",
                 "presenter": "Color"
               }
             }
@@ -117,7 +444,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Alpha Scale",
+                "category": "Colors: Fg Inverted Alpha Scale",
                 "presenter": "Color"
               }
             }
@@ -134,7 +461,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Alpha Scale",
+                "category": "Colors: Fg Inverted Alpha Scale",
                 "presenter": "Color"
               }
             }
@@ -151,7 +478,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Alpha Scale",
+                "category": "Colors: Fg Inverted Alpha Scale",
                 "presenter": "Color"
               }
             }
@@ -168,26 +495,24 @@
             "category": "color"
           },
           "token": {
-            "category": "Colors: Fg",
+            "category": "Colors: Fg Inverted",
             "presenter": "Color"
           }
-        }
-      },
-      "fg-inverted": {
-        "alpha": {
+        },
+        "to-bg": {
           "1": {
             "base": {
               "value": {
-                "a": 0.05,
-                "b": 35,
-                "g": 32,
-                "r": 31
+                "a": 1,
+                "b": 242,
+                "g": 242,
+                "r": 242
               },
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Inverted Alpha Scale",
+                "category": "Colors: Fg Inverted To Bg Scale",
                 "presenter": "Color"
               }
             }
@@ -195,16 +520,16 @@
           "2": {
             "base": {
               "value": {
-                "a": 0.13,
-                "b": 35,
-                "g": 32,
-                "r": 31
+                "a": 1,
+                "b": 222,
+                "g": 222,
+                "r": 222
               },
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Inverted Alpha Scale",
+                "category": "Colors: Fg Inverted To Bg Scale",
                 "presenter": "Color"
               }
             }
@@ -212,16 +537,16 @@
           "3": {
             "base": {
               "value": {
-                "a": 0.24,
-                "b": 35,
-                "g": 32,
-                "r": 31
+                "a": 1,
+                "b": 195,
+                "g": 195,
+                "r": 195
               },
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Inverted Alpha Scale",
+                "category": "Colors: Fg Inverted To Bg Scale",
                 "presenter": "Color"
               }
             }
@@ -229,16 +554,16 @@
           "4": {
             "base": {
               "value": {
-                "a": 0.37,
-                "b": 35,
-                "g": 32,
-                "r": 31
+                "a": 1,
+                "b": 162,
+                "g": 162,
+                "r": 162
               },
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Inverted Alpha Scale",
+                "category": "Colors: Fg Inverted To Bg Scale",
                 "presenter": "Color"
               }
             }
@@ -246,16 +571,16 @@
           "5": {
             "base": {
               "value": {
-                "a": 0.5,
-                "b": 35,
-                "g": 32,
-                "r": 31
+                "a": 1,
+                "b": 130,
+                "g": 130,
+                "r": 130
               },
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Inverted Alpha Scale",
+                "category": "Colors: Fg Inverted To Bg Scale",
                 "presenter": "Color"
               }
             }
@@ -263,16 +588,16 @@
           "6": {
             "base": {
               "value": {
-                "a": 0.63,
-                "b": 35,
-                "g": 32,
-                "r": 31
+                "a": 1,
+                "b": 97,
+                "g": 97,
+                "r": 97
               },
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Inverted Alpha Scale",
+                "category": "Colors: Fg Inverted To Bg Scale",
                 "presenter": "Color"
               }
             }
@@ -280,16 +605,16 @@
           "7": {
             "base": {
               "value": {
-                "a": 0.76,
-                "b": 35,
-                "g": 32,
-                "r": 31
+                "a": 1,
+                "b": 65,
+                "g": 65,
+                "r": 65
               },
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Inverted Alpha Scale",
+                "category": "Colors: Fg Inverted To Bg Scale",
                 "presenter": "Color"
               }
             }
@@ -297,16 +622,16 @@
           "8": {
             "base": {
               "value": {
-                "a": 0.87,
-                "b": 35,
-                "g": 32,
-                "r": 31
+                "a": 1,
+                "b": 37,
+                "g": 37,
+                "r": 37
               },
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Inverted Alpha Scale",
+                "category": "Colors: Fg Inverted To Bg Scale",
                 "presenter": "Color"
               }
             }
@@ -314,34 +639,19 @@
           "9": {
             "base": {
               "value": {
-                "a": 0.95,
-                "b": 35,
-                "g": 32,
-                "r": 31
+                "a": 1,
+                "b": 17,
+                "g": 17,
+                "r": 17
               },
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Fg Inverted Alpha Scale",
+                "category": "Colors: Fg Inverted To Bg Scale",
                 "presenter": "Color"
               }
             }
-          }
-        },
-        "base": {
-          "value": {
-            "a": 1,
-            "b": 35,
-            "g": 32,
-            "r": 31
-          },
-          "attributes": {
-            "category": "color"
-          },
-          "token": {
-            "category": "Colors: Fg Inverted",
-            "presenter": "Color"
           }
         }
       },
@@ -349,9 +659,9 @@
         "base": {
           "value": {
             "a": 1,
-            "b": 255,
-            "g": 216,
-            "r": 165
+            "b": 214,
+            "g": 126,
+            "r": 28
           },
           "attributes": {
             "category": "color"
@@ -366,9 +676,9 @@
         "base": {
           "value": {
             "a": 1,
-            "b": 214,
-            "g": 126,
-            "r": 28
+            "b": 255,
+            "g": 216,
+            "r": 165
           },
           "attributes": {
             "category": "color"
@@ -385,9 +695,9 @@
             "base": {
               "value": {
                 "a": 0.05,
-                "b": 227,
-                "g": 77,
-                "r": 98
+                "b": 106,
+                "g": 86,
+                "r": 6
               },
               "attributes": {
                 "category": "color"
@@ -402,9 +712,9 @@
             "base": {
               "value": {
                 "a": 0.13,
-                "b": 227,
-                "g": 77,
-                "r": 98
+                "b": 106,
+                "g": 86,
+                "r": 6
               },
               "attributes": {
                 "category": "color"
@@ -419,9 +729,9 @@
             "base": {
               "value": {
                 "a": 0.24,
-                "b": 227,
-                "g": 77,
-                "r": 98
+                "b": 106,
+                "g": 86,
+                "r": 6
               },
               "attributes": {
                 "category": "color"
@@ -436,9 +746,9 @@
             "base": {
               "value": {
                 "a": 0.37,
-                "b": 227,
-                "g": 77,
-                "r": 98
+                "b": 106,
+                "g": 86,
+                "r": 6
               },
               "attributes": {
                 "category": "color"
@@ -453,9 +763,9 @@
             "base": {
               "value": {
                 "a": 0.5,
-                "b": 227,
-                "g": 77,
-                "r": 98
+                "b": 106,
+                "g": 86,
+                "r": 6
               },
               "attributes": {
                 "category": "color"
@@ -470,9 +780,9 @@
             "base": {
               "value": {
                 "a": 0.63,
-                "b": 227,
-                "g": 77,
-                "r": 98
+                "b": 106,
+                "g": 86,
+                "r": 6
               },
               "attributes": {
                 "category": "color"
@@ -487,9 +797,9 @@
             "base": {
               "value": {
                 "a": 0.76,
-                "b": 227,
-                "g": 77,
-                "r": 98
+                "b": 106,
+                "g": 86,
+                "r": 6
               },
               "attributes": {
                 "category": "color"
@@ -504,9 +814,9 @@
             "base": {
               "value": {
                 "a": 0.87,
-                "b": 227,
-                "g": 77,
-                "r": 98
+                "b": 106,
+                "g": 86,
+                "r": 6
               },
               "attributes": {
                 "category": "color"
@@ -521,9 +831,9 @@
             "base": {
               "value": {
                 "a": 0.95,
-                "b": 227,
-                "g": 77,
-                "r": 98
+                "b": 106,
+                "g": 86,
+                "r": 6
               },
               "attributes": {
                 "category": "color"
@@ -538,9 +848,9 @@
         "base": {
           "value": {
             "a": 1,
-            "b": 227,
-            "g": 77,
-            "r": 98
+            "b": 106,
+            "g": 86,
+            "r": 6
           },
           "attributes": {
             "category": "color"
@@ -555,9 +865,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 217,
-                "g": 75,
-                "r": 95
+                "b": 113,
+                "g": 94,
+                "r": 18
               },
               "attributes": {
                 "category": "color"
@@ -572,9 +882,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 202,
-                "g": 71,
-                "r": 89
+                "b": 125,
+                "g": 108,
+                "r": 38
               },
               "attributes": {
                 "category": "color"
@@ -589,9 +899,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 181,
-                "g": 66,
-                "r": 82
+                "b": 142,
+                "g": 127,
+                "r": 66
               },
               "attributes": {
                 "category": "color"
@@ -606,9 +916,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 156,
-                "g": 60,
-                "r": 73
+                "b": 161,
+                "g": 149,
+                "r": 98
               },
               "attributes": {
                 "category": "color"
@@ -623,9 +933,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 131,
-                "g": 55,
-                "r": 64
+                "b": 180,
+                "g": 171,
+                "r": 131
               },
               "attributes": {
                 "category": "color"
@@ -640,9 +950,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 106,
-                "g": 49,
-                "r": 56
+                "b": 200,
+                "g": 192,
+                "r": 163
               },
               "attributes": {
                 "category": "color"
@@ -657,9 +967,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 81,
-                "g": 43,
-                "r": 47
+                "b": 219,
+                "g": 214,
+                "r": 195
               },
               "attributes": {
                 "category": "color"
@@ -674,9 +984,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 60,
-                "g": 38,
-                "r": 40
+                "b": 236,
+                "g": 233,
+                "r": 223
               },
               "attributes": {
                 "category": "color"
@@ -691,9 +1001,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 45,
-                "g": 34,
-                "r": 34
+                "b": 248,
+                "g": 247,
+                "r": 243
               },
               "attributes": {
                 "category": "color"
@@ -712,9 +1022,9 @@
             "base": {
               "value": {
                 "a": 0.05,
-                "b": 255,
+                "b": 0,
                 "g": 255,
-                "r": 255
+                "r": 236
               },
               "attributes": {
                 "category": "color"
@@ -729,9 +1039,9 @@
             "base": {
               "value": {
                 "a": 0.13,
-                "b": 255,
+                "b": 0,
                 "g": 255,
-                "r": 255
+                "r": 236
               },
               "attributes": {
                 "category": "color"
@@ -746,9 +1056,9 @@
             "base": {
               "value": {
                 "a": 0.24,
-                "b": 255,
+                "b": 0,
                 "g": 255,
-                "r": 255
+                "r": 236
               },
               "attributes": {
                 "category": "color"
@@ -763,9 +1073,9 @@
             "base": {
               "value": {
                 "a": 0.37,
-                "b": 255,
+                "b": 0,
                 "g": 255,
-                "r": 255
+                "r": 236
               },
               "attributes": {
                 "category": "color"
@@ -780,9 +1090,9 @@
             "base": {
               "value": {
                 "a": 0.5,
-                "b": 255,
+                "b": 0,
                 "g": 255,
-                "r": 255
+                "r": 236
               },
               "attributes": {
                 "category": "color"
@@ -797,9 +1107,9 @@
             "base": {
               "value": {
                 "a": 0.63,
-                "b": 255,
+                "b": 0,
                 "g": 255,
-                "r": 255
+                "r": 236
               },
               "attributes": {
                 "category": "color"
@@ -814,9 +1124,9 @@
             "base": {
               "value": {
                 "a": 0.76,
-                "b": 255,
+                "b": 0,
                 "g": 255,
-                "r": 255
+                "r": 236
               },
               "attributes": {
                 "category": "color"
@@ -831,9 +1141,9 @@
             "base": {
               "value": {
                 "a": 0.87,
-                "b": 255,
+                "b": 0,
                 "g": 255,
-                "r": 255
+                "r": 236
               },
               "attributes": {
                 "category": "color"
@@ -848,9 +1158,9 @@
             "base": {
               "value": {
                 "a": 0.95,
-                "b": 255,
+                "b": 0,
                 "g": 255,
-                "r": 255
+                "r": 236
               },
               "attributes": {
                 "category": "color"
@@ -865,9 +1175,9 @@
         "base": {
           "value": {
             "a": 1,
-            "b": 255,
+            "b": 0,
             "g": 255,
-            "r": 255
+            "r": 236
           },
           "attributes": {
             "category": "color"
@@ -882,9 +1192,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 228,
-                "g": 86,
-                "r": 106
+                "b": 5,
+                "g": 247,
+                "r": 224
               },
               "attributes": {
                 "category": "color"
@@ -899,9 +1209,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 231,
-                "g": 100,
-                "r": 118
+                "b": 14,
+                "g": 233,
+                "r": 206
               },
               "attributes": {
                 "category": "color"
@@ -916,9 +1226,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 234,
-                "g": 120,
-                "r": 136
+                "b": 25,
+                "g": 214,
+                "r": 181
               },
               "attributes": {
                 "category": "color"
@@ -933,9 +1243,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 237,
-                "g": 143,
-                "r": 156
+                "b": 39,
+                "g": 192,
+                "r": 151
               },
               "attributes": {
                 "category": "color"
@@ -950,9 +1260,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 241,
-                "g": 166,
-                "r": 177
+                "b": 53,
+                "g": 170,
+                "r": 121
               },
               "attributes": {
                 "category": "color"
@@ -967,9 +1277,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 245,
-                "g": 189,
-                "r": 197
+                "b": 67,
+                "g": 149,
+                "r": 91
               },
               "attributes": {
                 "category": "color"
@@ -984,9 +1294,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 248,
-                "g": 212,
-                "r": 217
+                "b": 81,
+                "g": 127,
+                "r": 61
               },
               "attributes": {
                 "category": "color"
@@ -1001,9 +1311,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 251,
-                "g": 232,
-                "r": 235
+                "b": 92,
+                "g": 108,
+                "r": 36
               },
               "attributes": {
                 "category": "color"
@@ -1018,9 +1328,9 @@
             "base": {
               "value": {
                 "a": 1,
-                "b": 254,
-                "g": 246,
-                "r": 247
+                "b": 101,
+                "g": 94,
+                "r": 17
               },
               "attributes": {
                 "category": "color"
