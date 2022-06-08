@@ -1,0 +1,26 @@
+:root,
+[ks-theme],
+[ks-inverted] {
+  .c-teaser {
+    --c-teaser--color: var(--ks-text-color-default);
+    --c-teaser--background: var(--ks-background-color-default);
+    --c-teaser--background-hover: var(--ks-background-color-default);
+    --c-teaser--border-color: var(--ks-border-color-interface-interactive);
+    --c-teaser--border-color-hover: var(--ks-border-color-interface-interactive-hover);
+    --c-teaser--border-width: var(--ks-border-width-default);
+    --c-teaser--border-style: solid;
+    --c-teaser--padding: var(--ks-spacing-inset-stretch-s);
+    --c-teaser--shadow-hover: none;
+  }
+
+  .c-teaser__text {
+    --g-link--color: var(--ks-color-primary);
+    --c-teaser_text--spacing: var(--ks-spacing-xs);
+  }
+
+  @media (min-width: 40em) {
+    .c-teaser {
+      --c-teaser--border-width: var(--ks-border-width-emphasized);
+    }
+  }
+}

@@ -1,12 +1,6 @@
 .c-quote {
   --c-quote--align: top;
-  --c-quote__text--margin: var(--spacing-s);
-  --c-quote_source--font: var(--font-ui-s);
+  --c-quote__text--margin: var(--ks-spacing-s);
+  --c-quote_source--font: var(--ks-font-ui-s);
   --c-quote_image--max-width: 30%;
-
-  .l-section--dark & {
-    --c-quote_source--font: var(--font-ui-s);
-    --c-quote_source--color: var(--color-white);
-    --c-quote_icon--color: var(--l-section-dark-color);
-  }
 }

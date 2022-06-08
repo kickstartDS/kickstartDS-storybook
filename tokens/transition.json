@@ -1,33 +1,22 @@
 {
   "ks": {
     "duration": {
-      "fast": {
-        "value": "100ms"
-      },
       "immediate": {
         "value": "50ms"
       },
+      "fast": {
+        "value": "100ms"
+      },
       "medium": {
-        "value": "200ms"
+        "value": "150ms"
       },
       "slow": {
-        "value": "300ms"
-      }
-    },
-    "transition": {
-      "collapse": {
-        "value": "{ks.duration.slow} {ks.timing-function.ease-out}"
-      },
-      "hover": {
-        "value": "{ks.duration.fast} {ks.timing-function.ease-in-out}"
-      },
-      "fade": {
-        "value": "{ks.duration.medium} {ks.timing-function.ease-out}"
+        "value": "275ms"
       }
     },
     "timing-function": {
       "bounce": {
-        "value": "cubic-bezier(0.17,1,0.5,1.5)"
+        "value": "cubic-bezier(0.17,1,0.5,1.45)"
       },
       "ease-out": {
         "value": "ease-out"
@@ -40,6 +29,20 @@
       },
       "linear": {
         "value": "linear"
+      }
+    },
+    "transition": {
+      "collapse": {
+        "value": "{ks.duration.slow} {ks.timing-function.ease-out}"
+      },
+      "hover": {
+        "value": "{ks.duration.fast} {ks.timing-function.ease-in-out}"
+      },
+      "fade": {
+        "value": "{ks.duration.slow} {ks.timing-function.ease-out}"
+      },
+      "bounce": {
+        "value": "{ks.duration.slow} {ks.timing-function.bounce}"
       }
     }
   }

@@ -1,180 +1,184 @@
 {
   "ks": {
-    "text-color": {
-      "default": {
+    "border-color": {
+      "accent": {
         "base": {
-          "value": "{ks.color.fg.base}",
+          "value": "{ks.color.fg.to-bg.8.base}",
           "attributes": {
             "category": "color"
           },
           "token": {
-            "category": "Colors: Text Default",
+            "category": "Colors: Background Accent",
             "presenter": "Color"
           }
-        },
+        }
+      },
+      "accent-inverted": {
+        "base": {
+          "value": "{ks.color.fg-inverted.to-bg.8.base}",
+          "attributes": {
+            "category": "color"
+          },
+          "token": {
+            "category": "Colors: Background Accent",
+            "presenter": "Color"
+          }
+        }
+      },
+      "clear": {
         "interactive": {
           "base": {
-            "value": "{ks.color.link.base}",
+            "value": "{ks.color.transparent.base}",
             "attributes": {
               "category": "color"
             },
             "token": {
-              "category": "Colors: Text Default",
+              "category": "Colors: Background Clear",
               "presenter": "Color"
             }
           },
           "hover": {
             "base": {
-              "value": "{ks.color.link.base}",
+              "value": "{ks.color.primary.alpha.2.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Text Default",
+                "category": "Colors: Background Clear",
                 "presenter": "Color"
               }
             }
           },
           "active": {
             "base": {
-              "value": "{ks.color.link.base}",
+              "value": "{ks.color.primary.alpha.3.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Text Default",
-                "presenter": "Color"
-              }
-            }
-          },
-          "visited": {
-            "base": {
-              "value": "{ks.color.link.base}",
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Text Default",
+                "category": "Colors: Background Clear",
                 "presenter": "Color"
               }
             }
           }
         }
       },
-      "default-inverted": {
+      "clear-inverted": {
+        "interactive": {
+          "base": {
+            "value": "{ks.color.transparent.base}",
+            "attributes": {
+              "category": "color"
+            },
+            "token": {
+              "category": "Colors: Background Clear",
+              "presenter": "Color"
+            }
+          },
+          "hover": {
+            "base": {
+              "value": "{ks.color.primary-inverted.alpha.3.base}",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background Clear",
+                "presenter": "Color"
+              }
+            }
+          },
+          "active": {
+            "base": {
+              "value": "{ks.color.primary-inverted.alpha.4.base}",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background Clear",
+                "presenter": "Color"
+              }
+            }
+          }
+        }
+      },
+      "default": {
         "base": {
           "value": "{ks.color.fg-inverted.base}",
           "attributes": {
             "category": "color"
           },
           "token": {
-            "category": "Colors: Text Default",
+            "category": "Colors: Background Default",
             "presenter": "Color"
           }
-        },
-        "interactive": {
-          "base": {
-            "value": "{ks.color.link-inverted.base}",
-            "attributes": {
-              "category": "color"
-            },
-            "token": {
-              "category": "Colors: Text Default",
-              "presenter": "Color"
-            }
+        }
+      },
+      "default-inverted": {
+        "base": {
+          "value": "{ks.color.fg.alpha.7.base}",
+          "attributes": {
+            "category": "color"
           },
-          "hover": {
-            "base": {
-              "value": "{ks.color.link-inverted.base}",
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Text Default",
-                "presenter": "Color"
-              }
-            }
-          },
-          "active": {
-            "base": {
-              "value": "{ks.color.link-inverted.base}",
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Text Default",
-                "presenter": "Color"
-              }
-            }
-          },
-          "visited": {
-            "base": {
-              "value": "{ks.color.link-inverted.base}",
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Text Default",
-                "presenter": "Color"
-              }
-            }
+          "token": {
+            "category": "Colors: Background Default",
+            "presenter": "Color"
           }
         }
       },
       "interface": {
         "base": {
-          "value": "{ks.color.fg.alpha.8.base}",
+          "value": "{ks.color.transparent.base}",
           "attributes": {
             "category": "color"
           },
           "token": {
-            "category": "Colors: Text Interface",
+            "category": "Colors: Background Interface",
             "presenter": "Color"
           }
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg.base}",
+            "value": "{ks.color.primary.to-bg.8.base}",
             "attributes": {
               "category": "color"
             },
             "token": {
-              "category": "Colors: Text Interface",
+              "category": "Colors: Background Interface",
               "presenter": "Color"
             }
           },
-          "hover": {
+          "disabled": {
             "base": {
-              "value": "{ks.color.fg.base}",
+              "value": "{ks.color.fg.alpha.1.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Text Interface",
+                "category": "Colors: Background Interface",
+                "presenter": "Color"
+              }
+            }
+          },
+          "hover": {
+            "base": {
+              "value": "{ks.color.primary.to-bg.7.base}",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background Interface",
                 "presenter": "Color"
               }
             }
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg.base}",
+              "value": "{ks.color.primary.to-bg.6.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Text Interface",
-                "presenter": "Color"
-              }
-            }
-          },
-          "visited": {
-            "base": {
-              "value": "{ks.color.fg.base}",
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Text Interface",
+                "category": "Colors: Background Interface",
                 "presenter": "Color"
               }
             }
@@ -183,58 +187,58 @@
       },
       "interface-inverted": {
         "base": {
-          "value": "{ks.color.fg-inverted.alpha.8.base}",
+          "value": "{ks.color.transparent.base}",
           "attributes": {
             "category": "color"
           },
           "token": {
-            "category": "Colors: Text Interface",
+            "category": "Colors: Background Interface",
             "presenter": "Color"
           }
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg-inverted.base}",
+            "value": "{ks.color.fg.to-bg.4.base}",
             "attributes": {
               "category": "color"
             },
             "token": {
-              "category": "Colors: Text Interface",
+              "category": "Colors: Background Interface",
               "presenter": "Color"
             }
           },
-          "hover": {
+          "disabled": {
             "base": {
-              "value": "{ks.color.fg-inverted.base}",
+              "value": "{ks.color.fg.alpha.1.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Text Interface",
+                "category": "Colors: Background Interface",
+                "presenter": "Color"
+              }
+            }
+          },
+          "hover": {
+            "base": {
+              "value": "{ks.color.fg.to-bg.6.base}",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background Interface",
                 "presenter": "Color"
               }
             }
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg-inverted.base}",
+              "value": "{ks.color.fg.to-bg.7.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Text Interface",
-                "presenter": "Color"
-              }
-            }
-          },
-          "visited": {
-            "base": {
-              "value": "{ks.color.fg-inverted.base}",
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Text Interface",
+                "category": "Colors: Background Interface",
                 "presenter": "Color"
               }
             }
@@ -248,55 +252,55 @@
             "category": "color"
           },
           "token": {
-            "category": "Colors: Text Primary",
+            "category": "Colors: Background Primary",
             "presenter": "Color"
           }
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.primary.alpha.8.base}",
+            "value": "{ks.color.primary.base}",
             "attributes": {
               "category": "color"
             },
             "token": {
-              "category": "Colors: Text Primary",
+              "category": "Colors: Background Primary",
               "presenter": "Color"
             }
           },
           "hover": {
             "base": {
-              "value": "{ks.color.primary.alpha.8.base}",
+              "value": "{ks.color.primary.to-bg.2.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Text Primary",
+                "category": "Colors: Background Primary",
                 "presenter": "Color"
               }
             }
           },
           "active": {
             "base": {
-              "value": "{ks.color.primary.alpha.8.base}",
+              "value": "{ks.color.primary.to-bg.3.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Text Primary",
+                "category": "Colors: Background Primary",
                 "presenter": "Color"
               }
             }
-          },
-          "visited": {
-            "base": {
-              "value": "{ks.color.primary.alpha.8.base}",
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Text Primary",
-                "presenter": "Color"
-              }
+          }
+        },
+        "translucent": {
+          "base": {
+            "value": "{ks.color.primary.alpha.8.base}",
+            "attributes": {
+              "category": "color"
+            },
+            "token": {
+              "category": "Colors: Background Primary",
+              "presenter": "Color"
             }
           }
         }
@@ -308,55 +312,55 @@
             "category": "color"
           },
           "token": {
-            "category": "Colors: Text Primary",
+            "category": "Colors: Background Primary",
             "presenter": "Color"
           }
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.primary-inverted.alpha.8.base}",
+            "value": "{ks.color.primary-inverted.base}",
             "attributes": {
               "category": "color"
             },
             "token": {
-              "category": "Colors: Text Primary",
+              "category": "Colors: Background Primary",
               "presenter": "Color"
             }
           },
           "hover": {
             "base": {
-              "value": "{ks.color.primary-inverted.alpha.8.base}",
+              "value": "{ks.color.primary-inverted.to-bg.2.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Text Primary",
+                "category": "Colors: Background Primary",
                 "presenter": "Color"
               }
             }
           },
           "active": {
             "base": {
-              "value": "{ks.color.primary-inverted.alpha.8.base}",
+              "value": "{ks.color.primary-inverted.to-bg.3.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Text Primary",
+                "category": "Colors: Background Primary",
                 "presenter": "Color"
               }
             }
-          },
-          "visited": {
-            "base": {
-              "value": "{ks.color.primary-inverted.alpha.8.base}",
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Text Primary",
-                "presenter": "Color"
-              }
+          }
+        },
+        "translucent": {
+          "base": {
+            "value": "{ks.color.primary-inverted.alpha.8.base}",
+            "attributes": {
+              "category": "color"
+            },
+            "token": {
+              "category": "Colors: Background Primary",
+              "presenter": "Color"
             }
           }
         }

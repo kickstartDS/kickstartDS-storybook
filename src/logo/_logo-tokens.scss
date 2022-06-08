@@ -2,7 +2,7 @@
 
 :root {
   --g-logo-height: 1.5rem;
-  --kds-header-spacing: var(--spacing-s);
+  --kds-header-spacing: var(--ks-spacing-s);
 
   @include breakpoint.media("≥s") {
     --g-logo-height: 2.5rem;

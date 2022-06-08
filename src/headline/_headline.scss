@@ -1,17 +1,21 @@
 @use "./headline-tokens";
+@use "@kickstartds/core/source/core/container";
+@include container.wrapper("headline");
 
-.c-headline {
-  max-width: calc(100vw - calc(var(--g-content-padding) * 2));
-  @media (min-width: 80em) {
+:root {
+  .l-container--headline[min-width~="640"] .c-headline {
     max-width: 90%;
   }
+  .c-headline {
+    max-width: calc(100vw - calc(var(--l-section--content-padding) * 2));
 
-  h1 + .c-headline__subheadline,
-  .c-headline__h1 + .c-headline__subheadline {
-    --c-headline_subheadline--font: var(--font-display-l);
-  }
+    h1 + .c-headline__subheadline,
+    .c-headline__h1 + .c-headline__subheadline {
+      --c-headline_subheadline--font: var(--ks-font-display-l);
+    }
 
-  h1.c-headline__h2 + .c-headline__subheadline {
-    --c-headline_subheadline--font: var(--font-display-m);
+    h1.c-headline__h2 + .c-headline__subheadline {
+      --c-headline_subheadline--font: var(--ks-font-display-m);
+    }
   }
 }

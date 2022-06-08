@@ -1,8 +1,18 @@
-:root {
-  .l-section__container {
-    --l-section_container--gutter: var(--spacing-l);
+@use "../breakpoint";
+:root,
+[ks-inverted],
+[ks-theme] {
+  --l-section--content-width-wide: 87.5rem !important;
+  --l-section--content-width-slim: 30rem;
 
-    @media (min-width: 40em) {
+  @include breakpoint.media("≥s") {
+    --l-section--content-padding: var(--ks-spacing-inset-l) !important;
+  }
+
+  .l-section__container {
+    --l-section_container--gutter: var(--ks-spacing-l);
+
+    @include breakpoint.media("≥s") {
       --l-section_col--min-width: 12rem;
 
       .l-section--outer-width-wide & {
@@ -11,8 +21,8 @@
       }
     }
 
-    @media (min-width: 60em) {
-      --l-section_container--gutter: var(--spacing-m);
+    @include breakpoint.media("≥m") {
+      --l-section_container--gutter: var(--ks-spacing-m);
 
       .l-section--outer-width-wide & {
         --l-section_col--min-width: 9rem;
@@ -21,29 +31,16 @@
     }
 
     &--gutter-large {
-      @media (min-width: 60em) {
-        --l-section_container--gutter: var(--spacing-l);
+      @include breakpoint.media("≥m") {
+        --l-section_container--gutter: var(--ks-spacing-l);
       }
-      @media (min-width: 60em) {
-        --l-section_container--gutter: var(--spacing-xl);
+      @include breakpoint.media("≥l") {
+        --l-section_container--gutter: var(--ks-spacing-xl);
         --l-section_col--min-width: 17rem;
       }
     }
     &--gutter-none {
       --l-section_container--gutter: 0;
-    }
-  }
-  .l-section {
-    --l-section--background: var(--color-white);
-
-    &--accent {
-      --l-section--background: var(--color-primary-lighter-6);
-    }
-    &--dark {
-      --l-section--background: var(--color-primary);
-    }
-    &--dark-accent {
-      --l-section--background: var(--color-primary-lighter-1);
     }
   }
 }

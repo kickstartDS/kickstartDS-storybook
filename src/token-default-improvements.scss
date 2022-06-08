@@ -1,0 +1,158 @@
+:root {
+  .c-button {
+    --c-button--padding: var(--ks-spacing-inset-squish-m);
+
+    &--small {
+      --c-button--padding: var(--ks-spacing-inset-squish-s);
+    }
+    &--large {
+      --c-button--padding: var(--ks-spacing-inset-squish-l);
+    }
+
+    &--solid {
+      --c-button--border-color: var(--c-button--background-color);
+      --c-button--border-color-hover: var(--c-button--background-color-hover);
+    }
+
+    &--outline {
+      --c-button--border-width: var(--ks-border-width-default);
+    }
+
+    &--outline {
+      --c-button--border-color: var(--ks-border-color-primary-interactive);
+      --c-button--border-color-hover: var(--ks-border-color-primary-interactive-hover);
+    }
+  }
+
+  .c-collapsible-box {
+    --c-collapsible-box--border-color: var(--ks-border-color-accent);
+    details {
+      border-width: var(--ks-border-width-default);
+    }
+
+    &__header {
+      &__icon {
+        color: var(--c-collapsible-box_icon--color);
+        --c-collapsible-box_icon--color: var(--g-topic--color);
+      }
+      &__text {
+        color: var(--c-collapsible-box_header--color);
+        --c-collapsible-box_header--color: var(--g-topic--color);
+      }
+    }
+  }
+
+  .c-content-box {
+    margin-bottom: var(--c-content-box--margin-bottom);
+    --c-content-box--margin-bottom: 0;
+
+    gap: var(--c-content-box--gap);
+    --c-content-box--gap: var(--ks-spacing-stack-m);
+
+    --c-content-box_topic--color: var(--g-topic--color);
+
+    &__body {
+      gap: var(--c-content-box-body--gap);
+      --c-content-box-body--gap: var(--ks-spacing-stack-m);
+    }
+
+    &__link {
+      margin-top: unset;
+    }
+
+    &__image {
+      margin-bottom: unset;
+    }
+  }
+
+  .c-divider {
+    --c-divider--height: var(--ks-border-width-default);
+    --c-divider--background: var(--ks-border-color-accent);
+  }
+
+  .c-form-field {
+    --c-form-field--background: var(--ks-background-color-interface-interactive);
+    --c-form-field--border-color: var(--ks-border-color-interface-interactive);
+    --c-form-field_hover--border-color: var(--ks-border-color-interface-interactive-hover);
+    --c-form-field_focus--border-color: var(--ks-border-color-interface-interactive-active);
+    --c-form-field--border-width: var(--ks-border-width-default) solid;
+    --c-form-field--color: var(--ks-text-color-interface-interactive);
+
+    &__input {
+      border-width: var(--c-form-field--border-width);
+      box-sizing: border-box;
+    }
+  }
+
+  .c-form-check {
+    --c-form-check_box--border-color: var(--ks-border-color-primary);
+    --c-form-check_box-hover--border-color: var(--ks-border-color-primary-interactive-hover);
+    --c-form-check_box-focus--border-color: var(--ks-border-color-primary-interactive-active);
+    --c-form-check_box-focus--shadow: 0 0 4px 0;
+    --c-form-check_box-checked--background: var(--ks-background-color-primary);
+    --c-form-check_box-checked--border-color: var(--ks-background-color-primary);
+    --c-form-check_checkmark--color: var(--ks-background-color-primary-inverted);
+
+    &__box {
+      border-color: var(--c-form-check--border-color);
+      --c-form-check--border-color: var(--ks-border-color-interface-interactive);
+    }
+  }
+
+  .c-form-field,
+  .c-form-check {
+    &__label {
+      color: var(--c-form-field-label--color);
+      --c-form-field-label--color: var(--ks-text-color-interface);
+    }
+  }
+
+  .c-rich-text {
+    --c-rich-text--vertical-spacing: 1em;
+  }
+
+  header.c-headline {
+    margin-bottom: 0;
+
+    h4 {
+      --c-rich-text_headline--font: var(--ks-font-display-m);
+    }
+
+    h5 {
+      --c-rich-text_headline--font: var(--ks-font-display-s);
+    }
+
+    h6 {
+      --c-rich-text_headline--font: var(--ks-font-display-xs);
+    }
+  }
+
+  .c-quote {
+    &__source,
+    &__byline {
+      color: var(--ks-text-color-interface);
+    }
+  }
+
+  .c-teaser {
+    --c-teaser--border-radius: var(--ks-border-radius-card);
+    border-width: var(--c-teaser-border-width);
+
+    .c-teaser__link {
+      margin-top: var(--ks-spacing-stack-m);
+    }
+  }
+
+  .c-visual {
+    .c-visual__box.c-visual__box--transparent {
+      background: none;
+    }
+  }
+
+  .l-container {
+    &--teaser-box,
+    &--content-box {
+      display: flex;
+    }
+  }
+}

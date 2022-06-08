@@ -20,8 +20,8 @@ header[data-component="kds.header"] {
   margin: 0;
   padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
   width: 100%;
-  max-width: var(--g-content-width-wide);
-  gap: var(--spacing-s);
+  max-width: var(--l-section--content-width-wide);
+  gap: var(--ks-spacing-s);
   align-items: flex-end;
   transition-duration: var(--g-transition-duration-s);
   transition-property: all;
@@ -48,7 +48,7 @@ header[data-component="kds.header"] {
     overflow: hidden;
     left: 0;
     top: 0;
-    background-color: var(--color-black-alpha-8);
+    background-color: var(--ks-color-bg-to-fg-8);
     z-index: -1;
     pointer-events: none;
     opacity: 0;

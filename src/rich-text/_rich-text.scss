@@ -3,16 +3,16 @@
 
 .c-rich-text {
   .has-large-font-size {
-    font: var(--font-ui-l);
+    font: var(--ks-font-ui-l);
 
-    margin-top: var(--spacing-xl);
+    margin-top: var(--ks-spacing-xl);
 
     &:first-child {
       margin-top: 0;
     }
   }
   strong {
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--ks-font-weight-bold);
   }
 
   blockquote {

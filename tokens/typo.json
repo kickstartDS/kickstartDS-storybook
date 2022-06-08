@@ -1,29 +1,29 @@
 {
   "ks": {
     "font-family": {
-      "copy": {
-        "value": "apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-        "token": {
-          "category": "Font Families",
-          "presenter": "FontFamily"
-        }
-      },
       "display": {
-        "value": "apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+        "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
         }
       },
-      "mono": {
-        "value": "apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "copy": {
+        "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
         }
       },
       "ui": {
-        "value": "apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+        "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+        "token": {
+          "category": "Font Families",
+          "presenter": "FontFamily"
+        }
+      },
+      "mono": {
+        "value": "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
@@ -46,7 +46,7 @@
         }
       },
       "semi-bold": {
-        "value": 600,
+        "value": 500,
         "token": {
           "category": "Font Weights",
           "presenter": "FontWeight"
@@ -64,14 +64,14 @@
       "display": {
         "bp-factor": {
           "phone": {
-            "value": 1.167
+            "value": 1
           },
           "tablet": {
-            "value": 1.333
+            "value": 1.75
           }
         },
-        "l-base": {
-          "value": "1.375rem",
+        "xxs-base": {
+          "value": "0.75rem",
           "attributes": {
             "category": "size"
           },
@@ -80,8 +80,8 @@
             "presenter": "FontSize"
           }
         },
-        "m-base": {
-          "value": "1.125rem",
+        "xs-base": {
+          "value": "0.875rem",
           "attributes": {
             "category": "size"
           },
@@ -100,8 +100,8 @@
             "presenter": "FontSize"
           }
         },
-        "xl-base": {
-          "value": "1.6875rem",
+        "m-base": {
+          "value": "1.125rem",
           "attributes": {
             "category": "size"
           },
@@ -110,8 +110,18 @@
             "presenter": "FontSize"
           }
         },
-        "xs-base": {
-          "value": "0.75rem",
+        "l-base": {
+          "value": "1.25rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: display",
+            "presenter": "FontSize"
+          }
+        },
+        "xl-base": {
+          "value": "1.5rem",
           "attributes": {
             "category": "size"
           },
@@ -121,17 +131,7 @@
           }
         },
         "xxl-base": {
-          "value": "2.1875rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: display",
-            "presenter": "FontSize"
-          }
-        },
-        "xxs-base": {
-          "value": "0.5625rem",
+          "value": "2rem",
           "attributes": {
             "category": "size"
           },
@@ -147,38 +147,8 @@
             "value": 1.125
           }
         },
-        "l-base": {
-          "value": "1.375rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: copy",
-            "presenter": "FontSize"
-          }
-        },
-        "m-base": {
-          "value": "1.125rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: copy",
-            "presenter": "FontSize"
-          }
-        },
-        "s-base": {
-          "value": "1rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: copy",
-            "presenter": "FontSize"
-          }
-        },
-        "xl-base": {
-          "value": "1.6875rem",
+        "xxs-base": {
+          "value": "0.5rem",
           "attributes": {
             "category": "size"
           },
@@ -197,8 +167,8 @@
             "presenter": "FontSize"
           }
         },
-        "xxl-base": {
-          "value": "2.1875rem",
+        "s-base": {
+          "value": "1rem",
           "attributes": {
             "category": "size"
           },
@@ -207,8 +177,38 @@
             "presenter": "FontSize"
           }
         },
-        "xxs-base": {
-          "value": "0.5625rem",
+        "m-base": {
+          "value": "1.25rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "l-base": {
+          "value": "1.5rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "xl-base": {
+          "value": "1.75rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "xxl-base": {
+          "value": "2rem",
           "attributes": {
             "category": "size"
           },
@@ -224,43 +224,13 @@
             "value": 1.125
           }
         },
-        "l-base": {
-          "value": "1.375rem",
+        "xxs-base": {
+          "value": "0.5rem",
           "attributes": {
             "category": "size"
           },
           "token": {
-            "category": "Font Sizes: ui",
-            "presenter": "FontSize"
-          }
-        },
-        "m-base": {
-          "value": "1.125rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: ui",
-            "presenter": "FontSize"
-          }
-        },
-        "s-base": {
-          "value": "1rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: ui",
-            "presenter": "FontSize"
-          }
-        },
-        "xl-base": {
-          "value": "1.6875rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: ui",
+            "category": "Font Sizes: copy",
             "presenter": "FontSize"
           }
         },
@@ -270,27 +240,57 @@
             "category": "size"
           },
           "token": {
-            "category": "Font Sizes: ui",
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "s-base": {
+          "value": "1rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "m-base": {
+          "value": "1.25rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "l-base": {
+          "value": "1.5rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "xl-base": {
+          "value": "1.75rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
             "presenter": "FontSize"
           }
         },
         "xxl-base": {
-          "value": "2.1875rem",
+          "value": "2rem",
           "attributes": {
             "category": "size"
           },
           "token": {
-            "category": "Font Sizes: ui",
-            "presenter": "FontSize"
-          }
-        },
-        "xxs-base": {
-          "value": "0.5625rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: ui",
+            "category": "Font Sizes: copy",
             "presenter": "FontSize"
           }
         }
@@ -301,38 +301,8 @@
             "value": 1.125
           }
         },
-        "l-base": {
-          "value": "1.375rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: mono",
-            "presenter": "FontSize"
-          }
-        },
-        "m-base": {
-          "value": "1.125rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: mono",
-            "presenter": "FontSize"
-          }
-        },
-        "s-base": {
-          "value": "1rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: mono",
-            "presenter": "FontSize"
-          }
-        },
-        "xl-base": {
-          "value": "1.6875rem",
+        "xxs-base": {
+          "value": "0.544rem",
           "attributes": {
             "category": "size"
           },
@@ -342,7 +312,47 @@
           }
         },
         "xs-base": {
-          "value": "0.75rem",
+          "value": "0.6664rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: mono",
+            "presenter": "FontSize"
+          }
+        },
+        "s-base": {
+          "value": "0.8163rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: mono",
+            "presenter": "FontSize"
+          }
+        },
+        "m-base": {
+          "value": "1rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: mono",
+            "presenter": "FontSize"
+          }
+        },
+        "l-base": {
+          "value": "1.225rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: mono",
+            "presenter": "FontSize"
+          }
+        },
+        "xl-base": {
+          "value": "1.5006rem",
           "attributes": {
             "category": "size"
           },
@@ -352,17 +362,7 @@
           }
         },
         "xxl-base": {
-          "value": "2.1875rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: mono",
-            "presenter": "FontSize"
-          }
-        },
-        "xxs-base": {
-          "value": "0.5625rem",
+          "value": "1.8383rem",
           "attributes": {
             "category": "size"
           },
@@ -374,96 +374,96 @@
       }
     },
     "line-height": {
-      "copy": {
-        "l": {
-          "value": "1.35"
-        },
-        "m": {
-          "value": "1.35"
-        },
-        "s": {
-          "value": "1.35"
-        },
-        "xl": {
-          "value": "1.35"
-        },
-        "xs": {
-          "value": "1.35"
-        },
-        "xxl": {
-          "value": "1.35"
-        },
-        "xxs": {
-          "value": "1.35"
-        }
-      },
       "display": {
-        "l": {
-          "value": "1.35"
-        },
-        "m": {
-          "value": "1.35"
-        },
-        "s": {
-          "value": "1.35"
-        },
-        "xl": {
-          "value": "1.35"
+        "xxs": {
+          "value": 1.35
         },
         "xs": {
-          "value": "1.35"
+          "value": 1.35
+        },
+        "s": {
+          "value": 1.35
+        },
+        "m": {
+          "value": 1.35
+        },
+        "l": {
+          "value": 1.35
+        },
+        "xl": {
+          "value": 1.35
         },
         "xxl": {
-          "value": "1.35"
-        },
-        "xxs": {
-          "value": "1.35"
+          "value": 1.35
         }
       },
-      "mono": {
-        "l": {
-          "value": "1.35"
-        },
-        "m": {
-          "value": "1.35"
-        },
-        "s": {
-          "value": "1.35"
-        },
-        "xl": {
-          "value": "1.35"
+      "copy": {
+        "xxs": {
+          "value": 1.5
         },
         "xs": {
-          "value": "1.35"
+          "value": 1.5
+        },
+        "s": {
+          "value": 1.5
+        },
+        "m": {
+          "value": 1.5
+        },
+        "l": {
+          "value": 1.5
+        },
+        "xl": {
+          "value": 1.5
         },
         "xxl": {
-          "value": "1.35"
-        },
-        "xxs": {
-          "value": "1.35"
+          "value": 1.5
         }
       },
       "ui": {
-        "l": {
-          "value": "1.35"
-        },
-        "m": {
-          "value": "1.35"
-        },
-        "s": {
-          "value": "1.35"
-        },
-        "xl": {
-          "value": "1.35"
+        "xxs": {
+          "value": 1.5
         },
         "xs": {
-          "value": "1.35"
+          "value": 1.5
+        },
+        "s": {
+          "value": 1.5
+        },
+        "m": {
+          "value": 1.5
+        },
+        "l": {
+          "value": 1.5
+        },
+        "xl": {
+          "value": 1.5
         },
         "xxl": {
-          "value": "1.35"
-        },
+          "value": 1.5
+        }
+      },
+      "mono": {
         "xxs": {
-          "value": "1.35"
+          "value": 1.75
+        },
+        "xs": {
+          "value": 1.75
+        },
+        "s": {
+          "value": 1.75
+        },
+        "m": {
+          "value": 1.75
+        },
+        "l": {
+          "value": 1.75
+        },
+        "xl": {
+          "value": 1.75
+        },
+        "xxl": {
+          "value": 1.75
         }
       }
     }

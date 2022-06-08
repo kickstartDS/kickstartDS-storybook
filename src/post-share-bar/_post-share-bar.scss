@@ -2,11 +2,11 @@
 
 .c-post-share-bar {
   --g-link--background-hover: transparent;
-  --g-link--color: var(--color-primary-alpha-5);
+  --g-link--color: var(--ks-color-primary-alpha-5);
 
   .c-headline {
     --c-headline--margin-bottom: 0;
-    --c-headline--color: var(--color-grey-7);
+    --c-headline--color: var(--ks-color-fg-to-bg-3);
   }
 
   &__link {
