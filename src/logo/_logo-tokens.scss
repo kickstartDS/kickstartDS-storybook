@@ -1,8 +1,8 @@
 @use "../breakpoint";
 
 :root {
-  --g-logo-height: 1.5rem;
-  --kds-header-spacing: var(--ks-spacing-s);
+  --g-logo-height: 2rem;
+  --kds-header-spacing: var(--ks-spacing-inset-s);
 
   @include breakpoint.media("≥s") {
     --g-logo-height: 2.5rem;

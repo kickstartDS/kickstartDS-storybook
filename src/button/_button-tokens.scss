@@ -21,8 +21,13 @@
   }
 
   .c-button--solid {
-    --c-button--color: var(--ks-color-primary-inverted);
     --c-button--shadow-color: var(--ks-color-primary-inverted-to-bg-1);
+  }
+
+  [ks-inverted="true"] {
+    .c-button--solid {
+      --c-button--shadow-color: var(--ks-color-primary-inverted-to-fg-5);
+    }
   }
 
   .c-button--outline {

@@ -20,13 +20,13 @@
             "value": "1"
           },
           "tablet": {
-            "value": "1"
+            "value": "1.15"
           },
           "laptop": {
-            "value": "1"
+            "value": "1.25"
           },
           "desktop": {
-            "value": "1.25"
+            "value": "1.35"
           }
         }
       },
@@ -49,13 +49,13 @@
             "value": "1"
           },
           "tablet": {
-            "value": "1.25"
+            "value": "1.15"
           },
           "laptop": {
-            "value": "1.35"
+            "value": "1.25"
           },
           "desktop": {
-            "value": "1.5"
+            "value": "1.35"
           }
         }
       },
@@ -78,13 +78,13 @@
             "value": "1"
           },
           "tablet": {
-            "value": "1.25"
+            "value": "1.15"
           },
           "laptop": {
-            "value": "1.35"
+            "value": "1.15"
           },
           "desktop": {
-            "value": "1.5"
+            "value": "1.25"
           }
         }
       },
@@ -97,7 +97,7 @@
           }
         },
         "base": {
-          "value": "1.250",
+          "value": "1.875",
           "attributes": {
             "category": "size"
           }
@@ -107,13 +107,13 @@
             "value": "1"
           },
           "tablet": {
-            "value": "1.25"
+            "value": "1.15"
           },
           "laptop": {
-            "value": "1.35"
+            "value": "1.25"
           },
           "desktop": {
-            "value": "1.5"
+            "value": "1.35"
           }
         }
       },

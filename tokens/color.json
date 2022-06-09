@@ -326,6 +326,116 @@
               }
             }
           }
+        },
+        "to-fg": {
+          "1": {
+            "base": {
+              "value": "#054E60",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "2": {
+            "base": {
+              "value": "#054656",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "3": {
+            "base": {
+              "value": "#053E4C",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "4": {
+            "base": {
+              "value": "#053642",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "5": {
+            "base": {
+              "value": "#052E38",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "6": {
+            "base": {
+              "value": "#05252D",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "7": {
+            "base": {
+              "value": "#051D23",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "8": {
+            "base": {
+              "value": "#051519",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "9": {
+            "base": {
+              "value": "#050D0F",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          }
         }
       },
       "primary-inverted": {
@@ -649,6 +759,116 @@
               },
               "token": {
                 "category": "Colors: Primary",
+                "presenter": "Color"
+              }
+            }
+          }
+        },
+        "to-fg": {
+          "1": {
+            "base": {
+              "value": "#EEFF1A",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "2": {
+            "base": {
+              "value": "#F0FF33",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "3": {
+            "base": {
+              "value": "#F2FF4D",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "4": {
+            "base": {
+              "value": "#F4FF66",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "5": {
+            "base": {
+              "value": "#F6FF80",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "6": {
+            "base": {
+              "value": "#F7FF99",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "7": {
+            "base": {
+              "value": "#F9FFB3",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "8": {
+            "base": {
+              "value": "#FBFFCC",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
+                "presenter": "Color"
+              }
+            }
+          },
+          "9": {
+            "base": {
+              "value": "#FDFFE6",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Foreground",
                 "presenter": "Color"
               }
             }

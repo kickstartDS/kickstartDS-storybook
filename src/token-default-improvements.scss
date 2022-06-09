@@ -136,7 +136,14 @@
 
   .c-teaser {
     --c-teaser--border-radius: var(--ks-border-radius-card);
-    border-width: var(--c-teaser-border-width);
+    --c-teaser--border-color: var(--ks-border-color-interactive);
+    --c-teaser--border-color-hover: var(--ks-border-color-interactive-hover);
+    border-color: var(--c-teaser--border-color);
+    border-width: var(--c-teaser--border-width);
+
+    &:hover.js-linked {
+      border-color: var(--c-teaser--border-color-hover);
+    }
 
     .c-teaser__link {
       margin-top: var(--ks-spacing-stack-m);

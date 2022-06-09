@@ -1,4 +1,4 @@
-@use '../breakpoint';
+@use "../breakpoint";
 
 :root {
   --c-footer-font: var(--ks-font-ui-s);
@@ -26,15 +26,14 @@
     flex-direction: column;
     justify-content: center;
 
-    
-    border-top: 1px solid var(--ks-color-fg-to-bg-8);
+    border-top: 1px solid var(--ks-border-color-accent);
     margin: var(--ks-spacing-l) 0 0 0;
     padding: var(--ks-spacing-l) 0 0 0;
 
     @include breakpoint.media("≥m") {
       margin: 0 0 0 var(--ks-spacing-l);
       padding: 0 0 0 var(--ks-spacing-l);
-      border-left: 1px solid var(--ks-color-fg-to-bg-8);
+      border-left: 1px solid var(--ks-border-color-accent);
       border-top: 0;
     }
 
@@ -54,7 +53,7 @@
     }
 
     img {
-      height: var(--ks-spacing-xl);
+      height: var(--g-logo-height);
 
       @include breakpoint.media("≥s") {
         height: 3rem;

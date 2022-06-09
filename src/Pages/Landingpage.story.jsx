@@ -133,6 +133,10 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       />
     </Section>
     <Section
+      spaceAfter="default"
+      spaceBefore="none"
+    />
+    <Section
       width="wide"
       background="accent"
       headline={{
@@ -264,7 +268,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       />
       <Storytelling
         full
-        // backgroundColor="#eceff3"
         box={{
           link: {
             label: "read more",
@@ -423,7 +426,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         content: "What kickstartDS can do for you?",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "none",
+        spaceAfter: "small",
       }}
       className="l-section--outer-width-wide"
       variant="highlight"
