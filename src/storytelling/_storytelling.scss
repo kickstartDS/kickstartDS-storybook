@@ -27,7 +27,7 @@
 
   &.cta {
     background: var(--ks-background-color-accent);
-    padding: var(--ks-spacing-xl) var(--ks-spacing-xl);
+    padding: var(--ks-spacing-inset-stretch-m) ;
     transition: 300ms all cubic-bezier(0.1, 0.9, 0.3, 1.5);
     gap: var(--ks-spacing-s);
 
@@ -36,8 +36,8 @@
       var(--ks-spacing-m) 0%,
       /* Corner Top Right */ 100% 0,
       100% 0,
-      /* Corner Bottom Right */ 100% calc(100% - var(--ks-spacing-xxl)),
-      calc(100% - var(--l-section--space)) 100%,
+      /* Corner Bottom Right */ 100% calc(100% - var(--ks-spacing-xl)),
+      calc(100% - var(--ks-spacing-xl)) 100%,
       /* Corner Bottom Left */ var(--ks-spacing-m) 100%,
       0 calc(100% - var(--ks-spacing-m))
     );

@@ -1,3 +1,6 @@
-.c-form-field {
-  --c-form-field--border: var(--ks-border-width-emphasized) solid;
+:root {
+  .c-form-field {
+    --c-form-field--border-width: var(--ks-border-width-emphasized);
+    --c-form-field_focus--shadow: 0;
+  }
 }

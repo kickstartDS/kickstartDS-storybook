@@ -1,17 +1,19 @@
 @use "../breakpoint";
 
-.c-post-aside {
-  --c-post-aside--gap: calc(var(--ks-spacing-s) * 1.25);
-  --c-post-aside_author--headline-spacing: var(--ks-spacing-xs);
-  --c-post-aside_meta--gap: var(--ks-spacing-m);
-  --c-post-aside_meta-item--font: var(--ks-font-ui-xs);
-  --c-post-aside_meta-item--color: var(--ks-color-fg-to-bg-6);
-  --c-post-aside_meta-item--icon-size: 1.15rem;
-  --c-post-aside_meta-item--icon-spacing: 0.25em;
-  --c-post-aside_share-bar--padding: 0.35em;
-  --c-post-aside_share-bar--icon-size: 2em;
+:root {
+  .c-post-aside {
+    --c-post-aside--gap: var(--ks-spacing-stack-s);
+    --c-post-aside_author--headline-spacing: var(--ks-spacing-xs);
+    --c-post-aside_meta--gap: var(--ks-spacing-m);
+    --c-post-aside_meta-item--font: var(--ks-font-interface-xs);
+    --c-post-aside_meta-item--color: var(--ks-text-color-ui);
+    --c-post-aside_meta-item--icon-size: 1.15rem;
+    --c-post-aside_meta-item--icon-spacing: 0.25em;
+    --c-post-aside_share-bar--padding: 0.35em;
+    --c-post-aside_share-bar--icon-size: 2em;
 
-  @include breakpoint.media("≥m") {
-    --c-post-aside_share-bar--icon-size: 1.35em;
+    @include breakpoint.media("≥m") {
+      --c-post-aside_share-bar--icon-size: 1.35em;
+    }
   }
 }

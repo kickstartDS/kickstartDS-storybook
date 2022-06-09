@@ -22,7 +22,7 @@
     margin-top: calc(-1 * var(--c-post-aside--gap));
 
     .c-headline__headline {
-      font: var(--ks-font-display-s);
+      font: var(--ks-font-copy-m);
       font-weight: var(--c-headline--font-weight);
     }
   }
@@ -56,7 +56,7 @@
 
           &__headline {
             color: var(--c-rich-text--color);
-            font: var(--ks-font-display-s);
+            font: var(--ks-font-copy-s);
             font-weight: var(--c-headline--font-weight);
           }
 
@@ -69,7 +69,7 @@
       }
 
       &__image {
-        max-width: 2rem;
+        max-width: 3rem;
 
         @include breakpoint.media("≥m") {
           max-width: 4rem;

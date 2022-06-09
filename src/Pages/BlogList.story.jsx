@@ -58,6 +58,7 @@ const Page = () => (
       headline={{
         content: "Dig deeper ⛏️",
         level: "h2",
+        spaceAfter: "small",
       }}
       spaceAfter="none"
       width="wide"

@@ -147,7 +147,7 @@
       },
       "interface": {
         "base": {
-          "value": "{ks.color.fg.alpha.1.base}",
+          "value": "{ks.color.primary.alpha.2.base}",
           "attributes": {
             "category": "color"
           },

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 09 Jun 2022 09:21:05 GMT
+ * Generated on Thu, 09 Jun 2022 11:47:10 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-8-base);
@@ -46,15 +46,15 @@
   --ks-border-color-default-base: var(--ks-color-fg-inverted-base);
   --ks-border-color-default-inverted-base: var(--ks-color-fg-alpha-7-base);
   --ks-border-color-interface-base: var(--ks-color-transparent-base);
-  --ks-border-color-interface-interactive-base: var(--ks-color-primary-to-bg-8-base);
+  --ks-border-color-interface-interactive-base: var(--ks-color-primary-alpha-2-base);
   --ks-border-color-interface-interactive-disabled-base: var(--ks-color-fg-alpha-1-base);
-  --ks-border-color-interface-interactive-hover-base: var(--ks-color-primary-to-bg-7-base);
-  --ks-border-color-interface-interactive-active-base: var(--ks-color-primary-to-bg-6-base);
+  --ks-border-color-interface-interactive-hover-base: var(--ks-color-primary-alpha-4-base);
+  --ks-border-color-interface-interactive-active-base: var(--ks-color-primary-base);
   --ks-border-color-interface-inverted-base: var(--ks-color-transparent-base);
-  --ks-border-color-interface-inverted-interactive-base: var(--ks-color-primary-to-bg-4-base);
+  --ks-border-color-interface-inverted-interactive-base: var(--ks-color-primary-alpha-4-base);
   --ks-border-color-interface-inverted-interactive-disabled-base: var(--ks-color-fg-alpha-1-base);
-  --ks-border-color-interface-inverted-interactive-hover-base: var(--ks-color-primary-to-bg-6-base);
-  --ks-border-color-interface-inverted-interactive-active-base: var(--ks-color-primary-to-bg-7-base);
+  --ks-border-color-interface-inverted-interactive-hover-base: var(--ks-color-primary-alpha-6-base);
+  --ks-border-color-interface-inverted-interactive-active-base: var(--ks-color-primary-alpha-7-base);
   --ks-border-color-primary-base: var(--ks-color-primary-base);
   --ks-border-color-primary-interactive-base: var(--ks-color-primary-base);
   --ks-border-color-primary-interactive-hover-base: var(--ks-color-primary-to-bg-2-base);

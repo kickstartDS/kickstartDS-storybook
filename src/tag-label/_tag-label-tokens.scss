@@ -1,8 +1,8 @@
 :root {
   .c-tag-label {
-    --c-tag-label--background-color: var(--ks-color-primary-alpha-1);
+    --c-tag-label--background-color: var(--ks-background-color-interface);
 
-    --tag-label--border: solid 2px var(--ks-color-primary-alpha-1);
+    --tag-label--border: solid 2px var(--ks-border-color-interface);
     --c-tag-label--border-radius: 0;
 
     --c-tag-label--color: var(--ks-color-primary);

@@ -84,7 +84,7 @@ Directly engage with components through **Storybooks** rich interface.
     <Section
       width="wide"
       spaceBefore="default"
-      background="dark"
+      ks-inverted="true"
       gutter="large"
       headline={{
         content: "Why kickstartDS works so well with sanity",
@@ -131,7 +131,8 @@ Directly engage with components through **Storybooks** rich interface.
       }}
       width="max"
       gutter="large"
-      background="dark-accent"
+      ks-inverted="true"
+      background="accent"
       variant="body"
       className="progress"
     >

@@ -3,7 +3,9 @@
 [ks-inverted],
 [ks-theme] {
   --l-section--content-width-wide: 87.5rem !important;
-  --l-section--content-width-slim: 30rem;
+  --l-section--content-width-default: 77.5rem !important;
+  --l-section--content-width-narrow: 62.5rem !important;
+  --l-section--content-width-slim: 40rem;
 
   @include breakpoint.media("≥s") {
     --l-section--content-padding: var(--ks-spacing-inset-l) !important;

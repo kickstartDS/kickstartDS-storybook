@@ -1,9 +1,12 @@
-.c-post-meta {
-  --c-post-meta_item--font: var(--ks-font-ui-xs);
-  --c-post-meta_item--color: var(--ks-color-fg-to-bg-6);
-  --c-post-meta_item--icon-size: 1.15rem;
+:root {
+  .c-post-meta {
+    --c-post-meta_item--font: var(--ks-font-ui-xs);
+    --c-post-meta_item--color: var(--ks-text-color-interface);
+    --c-post-meta_item--icon-size: 1.15rem;
+    --c-post-meta--gap: var(--ks-spacing-inline-s);
 
-  --c-post-meta_author--color: var(--ks-color-fg-to-bg-7);
-  --c-post-meta_author--avatar-border-radius: 0;
-  --c-post-meta_author--avatar-size: 1.75rem;
+    --c-post-meta_author--color: var(--ks-text-color-interface);
+    --c-post-meta_author--avatar-border-radius: 0;
+    --c-post-meta_author--avatar-size: 1.75rem;
+  }
 }

@@ -66,7 +66,6 @@
   }
 
   .c-divider {
-    --c-divider--height: var(--ks-border-width-default);
     --c-divider--background: var(--ks-border-color-accent);
   }
 
@@ -75,10 +74,11 @@
     --c-form-field--border-color: var(--ks-border-color-interface-interactive);
     --c-form-field_hover--border-color: var(--ks-border-color-interface-interactive-hover);
     --c-form-field_focus--border-color: var(--ks-border-color-interface-interactive-active);
-    --c-form-field--border-width: var(--ks-border-width-default) solid;
+    --c-form-field--border-width: var(--ks-border-width-default);
     --c-form-field--color: var(--ks-text-color-interface-interactive);
 
     &__input {
+      border-style: solid;
       border-width: var(--c-form-field--border-width);
       box-sizing: border-box;
     }
@@ -146,7 +146,7 @@
     }
 
     .c-teaser__link {
-      margin-top: var(--ks-spacing-stack-m);
+      margin-top: var(--ks-spacing-stack-s);
     }
   }
 

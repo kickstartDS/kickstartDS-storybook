@@ -37,6 +37,7 @@ const Page = () => (
       headline={{
         content: "Get to know us",
         align: "center",
+        spaceAfter: "small",
       }}
     >
       <Storytelling
@@ -104,6 +105,7 @@ After working in a large tech corporation for a long time I very well know today
       headline={{
         content: "Dig deeper ⛏️",
         align: "center",
+        spaceAfter: "small",
       }}
     >
       <TeaserBox
@@ -151,6 +153,7 @@ After working in a large tech corporation for a long time I very well know today
         styleAs: "h3",
         align: "center",
         subheadline: "Stay up to date",
+        spaceAfter: "small",
       }}
     >
       <Subscription />
