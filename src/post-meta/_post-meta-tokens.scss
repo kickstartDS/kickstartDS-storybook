@@ -1,4 +1,6 @@
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   .c-post-meta {
     --c-post-meta_item--font: var(--ks-font-ui-xs);
     --c-post-meta_item--color: var(--ks-text-color-interface);

@@ -1,6 +1,8 @@
 @use "../breakpoint";
 
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   .c-post-aside {
     --c-post-aside--gap: var(--ks-spacing-stack-s);
     --c-post-aside_author--headline-spacing: var(--ks-spacing-xs);

@@ -1,4 +1,6 @@
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   .l-container--visual[min-width~="1200"] .c-visual__box {
     --c-visual_box--max-width: 57rem;
   }

@@ -1,5 +1,7 @@
 @use "../breakpoint";
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   .c-storytelling {
     --c-storytelling--horizontal-padding: 0;
     --c-storytelling--box-max-width: 36.85em;

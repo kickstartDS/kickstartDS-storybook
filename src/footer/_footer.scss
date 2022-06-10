@@ -1,6 +1,8 @@
 @use "../breakpoint";
 
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   --c-footer-font: var(--ks-font-ui-s);
   --c-footer-color: var(--c-rich-text--color);
 }

@@ -1,6 +1,8 @@
 @use "./contact-tokens";
 
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   .c-contact {
     height: fit-content;
 

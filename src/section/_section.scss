@@ -1,7 +1,9 @@
 @use "./section-tokens";
 @use "../breakpoint";
 
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   --l-section--corner-top-left-height: var(--ks-spacing-l);
   --l-section--corner-top-right-height: 0px;
   --l-section--corner-bottom-left-height: 0px;
@@ -12,7 +14,9 @@
   }
 }
 
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   .l-section {
     margin: auto;
 

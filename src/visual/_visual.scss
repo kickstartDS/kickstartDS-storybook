@@ -1,7 +1,9 @@
 @use "./visual-tokens";
 @use "../breakpoint";
 
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   .c-visual {
     &--full {
       height: 100vh;

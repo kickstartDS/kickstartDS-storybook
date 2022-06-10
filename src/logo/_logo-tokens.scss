@@ -1,6 +1,8 @@
 @use "../breakpoint";
 
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   --g-logo-height: 2rem;
   --kds-header-spacing: var(--ks-spacing-inset-s);
 

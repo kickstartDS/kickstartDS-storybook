@@ -2,7 +2,9 @@
 @use "@kickstartds/core/source/core/container";
 @include container.wrapper("headline");
 
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   .l-container--headline[min-width~="640"] .c-headline {
     max-width: 90%;
   }

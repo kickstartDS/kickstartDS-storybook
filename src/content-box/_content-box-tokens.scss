@@ -1,4 +1,6 @@
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   .c-content-box {
     --c-content-box_topic--font-xs: var(--ks-font-display-xs);
     --c-content-box_topic--font-s: var(--ks-font-display-s);

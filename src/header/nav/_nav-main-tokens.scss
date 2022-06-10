@@ -1,6 +1,8 @@
 @use "../../breakpoint";
 
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   --c-nav-main_background-color: var(--ks-background-color-default);
 
   --c-nav-main_item--color: var(--ks-text-color-primary-interactive);

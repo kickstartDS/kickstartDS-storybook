@@ -1,7 +1,9 @@
-@use './glossary-tokens';
-@use '../breakpoint';
+@use "./glossary-tokens";
+@use "../breakpoint";
 
-:root {
+:root,
+[ks-theme],
+[ks-inverted] {
   --c-glossary--img-size: 5.5rem;
 
   @include breakpoint.media(">s") {
