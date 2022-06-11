@@ -28,7 +28,7 @@
     "watch:sass": "yarn sass --watch",
     "watch:sass-manager": "yarn sass-manager --watch",
     "watch:schema": "yarn schema && chokidar \"src/**/*.schema.json\" -c \"yarn schema {path}\"",
-    "watch:token": "yarn token && chokidar \"src/**/*-tokens.scss\" -c \"yarn token {path}\"",
+    "watch:token": "yarn build-tokens && yarn token && chokidar \"src/**/*-tokens.scss\" -c \"yarn token {path}\"",
     "schema": "node scripts/schema.js",
     "start": "run-p watch:* storybook",
     "storybook": "DESIGN_TOKEN_GLOB=.storybook/tokens.css start-storybook -p 6006"
