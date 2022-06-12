@@ -1,19 +1,18 @@
 @use "./rich-text-tokens";
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../breakpoint";
 
 .c-rich-text {
   .has-large-font-size {
-    color: var(--g-headline--color);
-    font: var(--font-ui-l);
+    font: var(--ks-font-ui-l);
 
-    margin-top: var(--spacing-xl);
+    margin-top: var(--ks-spacing-xl);
 
     &:first-child {
       margin-top: 0;
     }
   }
   strong {
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--ks-font-weight-bold);
   }
 
   blockquote {
@@ -38,7 +37,7 @@
 
         transform: translateY(-30%);
         height: 60%;
-        max-height: 6rem;
+        max-height: 5rem;
         min-height: 4rem;
 
         @include breakpoint.media(">s") {

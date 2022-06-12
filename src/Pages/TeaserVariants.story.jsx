@@ -86,7 +86,7 @@ const Page = () => (
         pageHeader: false,
         spaceAfter: "none",
       }}
-      background="dark"
+      ks-inverted="true"
       spaceAfter="default"
       spaceBefore="default"
       width="default"
@@ -205,7 +205,7 @@ const Page = () => (
         pageHeader: false,
         spaceAfter: "none",
       }}
-      background="dark"
+      ks-inverted="true"
       spaceAfter="default"
       spaceBefore="default"
       width="default"

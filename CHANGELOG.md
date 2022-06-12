@@ -1,3 +1,79 @@
+# v2.0.16 (Wed Apr 27 2022)
+
+#### ⚠️ Pushed to `master`
+
+- chore: update manager style ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v2.0.15 (Sat Apr 23 2022)
+
+#### ⚠️ Pushed to `master`
+
+- fix: missing object types in schemas ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.0.14 (Tue Apr 19 2022)
+
+#### ⚠️ Pushed to `master`
+
+- adjust sample post ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v2.0.13 (Mon Apr 18 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: optimize welcome page on mobile ([@fleven-kds](https://github.com/fleven-kds))
+- feat: optimize mobile blog styling ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
+# v2.0.12 (Thu Apr 14 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- chore: add support branch vor 1.x ([@julrich](https://github.com/julrich))
+- build: trigger staging deployment ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v2.0.11 (Thu Apr 14 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Add author image ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.0.10 (Wed Apr 13 2022)
 
 #### ⚠️ Pushed to `master`

@@ -51,11 +51,13 @@ const CountUp: FunctionComponent<
           ></rect>
         </svg>
 
-        <div className="kds-count-up__fill">
-          <div className="bubbles">
-            {[...Array(20)].map((_, i) => (
-              <div className="bubble" key={i}></div>
-            ))}
+        <div className="kds-count-up__fill-wrapper">
+          <div className="kds-count-up__fill">
+            <div className="bubbles">
+              {[...Array(20)].map((_, i) => (
+                <div className="bubble" key={i}></div>
+              ))}
+            </div>
           </div>
         </div>
       </>

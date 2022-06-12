@@ -1,12 +1,12 @@
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../breakpoint";
 
 .c-post {
   &__content {
-    max-width: calc(var(--g-content-width-narrow) - calc(var(--g-content-padding) * 2));
+    max-width: calc(var(--l-section--content-width-narrow) - calc(var(--l-section--content-padding) * 2));
     width: 100%;
 
     .c-post-share-bar {
-      padding-top: var(--spacing-s);
+      padding-top: var(--ks-spacing-s);
       @include breakpoint.media(">m") {
         display: none;
       }
@@ -14,21 +14,29 @@
   }
 
   &-text {
-    > p {
-      max-width: var(--g-content-width-narrow);
-      padding: 0 var(--spacing-m);
+    > p:not(h2, h3) {
+      @include breakpoint.media(">m") {
+        padding: 0 var(--ks-spacing-m);
+      }
+      max-width: var(--l-section--content-width-narrow);
       margin: auto;
       margin-bottom: var(--c-rich-text--vertical-spacing);
       margin-top: var(--c-rich-text--vertical-spacing);
     }
 
+    > ul,
+    > ol {
+      @include breakpoint.media(">m") {
+        margin-left: var(--ks-spacing-m);
+      }
+    }
     > .wp-block-video,
     > .wp-block-pullquote,
     > .wp-block-image {
       width: 100%;
       margin: auto;
-      margin-top: var(--spacing-xl);
-      margin-bottom: var(--spacing-xl);
+      margin-top: var(--ks-spacing-xl);
+      margin-bottom: var(--ks-spacing-xl);
     }
   }
 }
@@ -38,7 +46,7 @@
     display: flex;
     @include breakpoint.media("<m") {
       flex-direction: column;
-      gap: var(--spacing-xl);
+      gap: var(--ks-spacing-xl);
     }
 
     @include breakpoint.media(">m") {

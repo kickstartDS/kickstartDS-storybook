@@ -53,6 +53,11 @@ const LinkButtonComponent: ForwardRefExoticComponent<
         className
       )}
     >
+      {deko && (
+        <div className="c-button__deko-left">
+          <div className="c-button__deko"></div>
+        </div>
+      )}
       <Link
         href={href}
         className={classnames(
@@ -86,6 +91,11 @@ const LinkButtonComponent: ForwardRefExoticComponent<
           <span className="c-button__border" />
         </span>
       </Link>
+      {deko && (
+        <div className="c-button__deko-right">
+          <div className="c-button__deko"></div>
+        </div>
+      )}
     </span>
   )
 );

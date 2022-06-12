@@ -1,8 +1,8 @@
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../breakpoint";
 @use "./post-aside-tokens";
 
 .c-post-aside {
-  --tag-label-height: calc(var(--line-height-xs) + calc(var(--spacing-xs) * 2) + var(--spacing-s));
+  --tag-label-height: calc(var(--line-height-xs) + calc(var(--ks-spacing-xs) * 2) + var(--ks-spacing-s));
 
   height: fit-content;
 
@@ -18,11 +18,11 @@
   @include breakpoint.media("≥m") {
     position: sticky;
     top: 0;
-    padding-top: calc(var(--tag-label-height) + var(--spacing-s));
+    padding-top: calc(var(--tag-label-height) + var(--ks-spacing-s));
     margin-top: calc(-1 * var(--c-post-aside--gap));
 
     .c-headline__headline {
-      font: var(--font-display-s);
+      font: var(--ks-font-copy-m);
       font-weight: var(--c-headline--font-weight);
     }
   }
@@ -36,7 +36,7 @@
       --icon-size: 1rem;
 
       margin: 0;
-      gap: var(--spacing-s);
+      gap: var(--ks-spacing-s);
 
       > * {
         margin: 0;
@@ -45,7 +45,7 @@
       &__body {
         display: flex;
         flex-direction: column;
-        gap: var(--spacing-xs);
+        gap: var(--ks-spacing-xs);
 
         > * {
           margin: 0;
@@ -56,12 +56,12 @@
 
           &__headline {
             color: var(--c-rich-text--color);
-            font: var(--font-display-s);
+            font: var(--ks-font-copy-s);
             font-weight: var(--c-headline--font-weight);
           }
 
           @include breakpoint.media("≥m") {
-            font: var(--font-copy-xs);
+            font: var(--ks-font-copy-xs);
             font-weight: var(--c-headline--font-weight);
             color: var(--c-rich-text--color);
           }
@@ -69,7 +69,7 @@
       }
 
       &__image {
-        max-width: 2rem;
+        max-width: 3rem;
 
         @include breakpoint.media("≥m") {
           max-width: 4rem;
@@ -77,7 +77,7 @@
       }
 
       &__links {
-        font: var(--font-ui-xs);
+        font: var(--ks-font-ui-xs);
       }
 
       &__link {
@@ -86,7 +86,7 @@
     }
 
     .c-rich-text {
-      font: var(--font-copy-xs);
+      font: var(--ks-font-copy-xs);
     }
   }
 

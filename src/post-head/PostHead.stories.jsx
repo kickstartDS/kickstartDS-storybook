@@ -30,7 +30,7 @@ Default.args = pack({
     content: "Why we are creating kickstartDS",
     level: "h1",
     pageHeader: false,
-    spaceAfter: "none",
+    spaceAfter: "small",
   },
   image: {
     src: "/img/why-kickstart-Design-System.svg",

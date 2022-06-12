@@ -1,5 +1,5 @@
 @use "logo-tokens";
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../breakpoint";
 
 .kds-logo {
   --g-link--background-hover: none;

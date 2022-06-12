@@ -1,58 +1,62 @@
 @use "./visual-tokens";
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../breakpoint";
 
-.c-visual {
-  .c-headline__subheadline {
-    --c-headline_subheadline--color: var(--color-primary);
-  }
-
-  &--full {
-    height: 100vh;
-  }
-
-  &__content {
-    &--indent {
-      max-width: var(--g-content-width-wide);
+:root,
+[ks-theme],
+[ks-inverted] {
+  .c-visual {
+    &--full {
+      height: 100vh;
     }
 
-    @include breakpoint.media("≥s") {
-      padding-top: var(--spacing-l);
-      padding-bottom: var(--spacing-l);
-    }
+    &__content {
+      &--indent {
+        max-width: var(--l-section--content-width-wide);
+      }
 
-    &--center {
-      .c-visual__link {
-        justify-content: center;
+      @include breakpoint.media("≥s") {
+        padding-top: var(--ks-spacing-l);
+        padding-bottom: var(--ks-spacing-l);
+      }
+
+      &--center {
+        .c-visual__link {
+          justify-content: center;
+        }
       }
     }
-  }
 
-  &__link {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-s);
-  }
+    &__link {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--ks-spacing-s);
+    }
 
-  &__box.c-visual__box--transparent {
-    overflow: unset;
-  }
+    &__box.c-visual__box--transparent {
+      overflow: unset;
+    }
 
-  &--welcome {
-    @include breakpoint.media("≥s") {
-      --c-visual--min-height: 10rem;
+    &--welcome {
+      @include breakpoint.media("≥s") {
+        --c-visual--min-height: 10rem;
 
-      .c-visual__box {
-        --c-visual_box--max-width: 25rem;
+        .c-visual__box {
+          --c-visual_box--max-width: 25rem;
+        }
       }
     }
-  }
-}
 
-.kds-header--spacer {
-  + .c-visual--full,
-  + .l-section .c-visual--full {
-    @include breakpoint.media("≥s") {
-      height: calc(100vh - var(--g-header-height));
+    .c-headline__subheadline {
+      --c-headline_subheadline--color: var(--ks-text-color-primary);
+    }
+  }
+
+  .kds-header--spacer {
+    + .c-visual--full,
+    + .l-section .c-visual--full {
+      @include breakpoint.media("≥s") {
+        height: calc(100vh - var(--g-header-height));
+      }
     }
   }
 }

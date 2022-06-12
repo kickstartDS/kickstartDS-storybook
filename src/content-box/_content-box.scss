@@ -1,4 +1,4 @@
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../breakpoint";
 @use "./content-box-tokens";
 
 .c-content-box {
@@ -6,20 +6,14 @@
   margin-bottom: 0;
 
   &__image {
-    margin-bottom: var(--spacing-s);
+    margin-bottom: var(--ks-spacing-s);
   }
 
   &.related-post {
-    padding: var(--spacing-m);
-    background: var(--color-white);
+    padding: var(--ks-spacing-m);
+    background: var(--ks-background-color-default);
 
-    clip-path: polygon(
-      calc(100% - var(--spacing-l)) 0%,
-      100% var(--spacing-l),
-      100% 100%,
-      0 100%,
-      0 0
-    );
+    clip-path: polygon(calc(100% - var(--ks-spacing-l)) 0%, 100% var(--ks-spacing-l), 100% 100%, 0 100%, 0 0);
 
     .c-content-box {
       &__image {
@@ -40,47 +34,16 @@
           position: absolute;
           width: 100%;
           height: var(--line-height-m);
-          background: linear-gradient(
-            0deg,
-            var(--color-white) 20%,
-            rgba(255, 255, 255, 0)
-          );
+          background: linear-gradient(0deg, var(--ks-background-color-default) 20%, rgba(255, 255, 255, 0));
           bottom: 0;
           pointer-events: none;
         }
       }
 
       &__topic {
-        font: var(--font-ui-l);
-        font-weight: var(--font-weight-bold);
+        font: var(--ks-font-ui-l);
+        font-weight: var(--ks-font-weight-bold);
       }
-    }
-  }
-
-  & &__body {
-    &[min-width~="0"] {
-      --c-content-box_topic--font: var(--c-content-box_topic--font-xs);
-      --c-rich-text--font: var(--c-content-box_rich-text--font-xs);
-    }
-
-    &[min-width~="200"] {
-      --c-content-box_topic--font: var(--c-content-box_topic--font-s);
-      --c-rich-text--font: var(--c-content-box_rich-text--font-s);
-
-      // .c-button {
-      //   @include breakpoint.media("≥m") {
-      //     --c-button--font: var(--font-ui-xs);
-      //   }
-      // }
-    }
-
-    &[min-width~="400"] {
-      --c-content-box_topic--font: var(--c-content-box_topic--font-m);
-      --c-rich-text--font: var(--c-content-box_rich-text--font-m);
-
-      // .c-button {
-      //   --c-button--font: var(--font-ui-s);
-      // }
     }
   }
 }

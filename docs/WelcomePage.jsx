@@ -23,7 +23,7 @@ export const Welcome = () => (
             content: "Welcome 👋",
             subheadline: "Get started with the kickstartDS Design System!",
           },
-          horizontal: "left",
+          horizontal: "center",
           indent: false,
           link: {
             enabled: false,
@@ -47,9 +47,9 @@ export const Welcome = () => (
         media={{
           image: {
             indent: "none",
-            srcDesktop: "img/banner/visual_lemon.png",
-            srcMobile: "img/lemon.svg",
-            srcTablet: "img/banner/visual_lemon.png",
+            srcDesktop: "img/banner/welcome-centered.svg",
+            srcTablet: "img/banner/welcome-centered.svg",
+            srcMobile: "img/banner/welcome-centered-m.svg",
           },
           mode: "image",
         }}
@@ -62,7 +62,7 @@ export const Welcome = () => (
         content: "Getting started with ...",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "none",
+        spaceAfter: "small",
       }}
       className="col-four"
       mode="tile"
@@ -125,7 +125,7 @@ export const Welcome = () => (
     </Section>
     <Section
       className="col-four"
-      mode="tile"
+
       spaceAfter="small"
       spaceBefore="small"
       width="max"
@@ -164,7 +164,7 @@ export const Welcome = () => (
         content: "Frontend first framework",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "none",
+        spaceAfter: "small",
         subheadline:
           "Proven content components to serve your frontend needs. It works for either explicit HTML integration or direct usage in React (for the start) and comes with built-in styleguide and documentation.",
       }}
@@ -172,9 +172,9 @@ export const Welcome = () => (
       spaceAfter="small"
       spaceBefore="small"
       width="max"
-      background="dark"
       deko="true"
       pattern="1"
+      ks-inverted="true"
     >
       <TeaserBox
         topic="Interested and want to know more?"
@@ -187,7 +187,7 @@ export const Welcome = () => (
           iconBefore: false,
           label: "Send us an email",
           newTab: true,
-          variant: "solid-inverted",
+          variant: "solid",
         }}
       />
     </Section>

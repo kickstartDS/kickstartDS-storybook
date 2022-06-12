@@ -12,10 +12,10 @@ const Page = () => (
       <Button className="no-stretch" variant="outline" size="small" label="Button Small" />
     </Section>
 
-    <Section width="narrow" background="dark">
-      <Button className="no-stretch" variant="outline-inverted" size="large" label="Button Large" />
-      <Button className="no-stretch" variant="outline-inverted" size="medium" label="Button Medium" />
-      <Button className="no-stretch" variant="outline-inverted" size="small" label="Button Small" />
+    <Section width="narrow" ks-inverted="true">
+      <Button className="no-stretch" variant="outline" size="large" label="Button Large" />
+      <Button className="no-stretch" variant="outline" size="medium" label="Button Medium" />
+      <Button className="no-stretch" variant="outline" size="small" label="Button Small" />
     </Section>
 
     <Section width="narrow">
@@ -24,10 +24,10 @@ const Page = () => (
       <Button className="no-stretch" variant="solid" size="small" label="Button Small" />
     </Section>
 
-    <Section width="narrow" background="dark">
-      <Button className="no-stretch" variant="solid-inverted" size="large" label="Button Large" />
-      <Button className="no-stretch" variant="solid-inverted" size="medium" label="Button Medium" />
-      <Button className="no-stretch" variant="solid-inverted" size="small" label="Button Small" />
+    <Section width="narrow" ks-inverted="true">
+      <Button className="no-stretch" variant="solid" size="large" label="Button Large" />
+      <Button className="no-stretch" variant="solid" size="medium" label="Button Medium" />
+      <Button className="no-stretch" variant="solid" size="small" label="Button Small" />
     </Section>
 
     <Section width="narrow">
@@ -36,10 +36,10 @@ const Page = () => (
       <Button className="no-stretch" variant="clear" size="small" label="Button Small" />
     </Section>
 
-    <Section width="narrow" background="dark">
-      <Button className="no-stretch" variant="clear-inverted" size="large" label="Button Large" />
-      <Button className="no-stretch" variant="clear-inverted" size="medium" label="Button Medium" />
-      <Button className="no-stretch" variant="clear-inverted" size="small" label="Button Small" />
+    <Section width="narrow" ks-inverted="true">
+      <Button className="no-stretch" variant="clear" size="large" label="Button Large" />
+      <Button className="no-stretch" variant="clear" size="medium" label="Button Medium" />
+      <Button className="no-stretch" variant="clear" size="small" label="Button Small" />
     </Section>
 
     <Section width="narrow">

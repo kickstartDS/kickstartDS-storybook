@@ -9,6 +9,7 @@ module.exports = {
     "@kickstartds/storybook-addon-component-tokens",
     "@whitespace/storybook-addon-html",
     "@kickstartds/storybook-addon-jsonschema",
+    "storybook-design-token"
   ],
   staticDirs: ["../static"],
 };

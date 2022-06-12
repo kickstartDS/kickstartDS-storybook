@@ -1,7 +1,7 @@
 const $RefParser = require("json-schema-ref-parser");
 const merge = require("json-schema-merge-allof");
 const traverse = require('json-schema-traverse');
-const { rmResolver, kdsResolver } = require("./schemaResolver");
+const { kdsResolver, kickstartdsResolver } = require("./schemaResolver");
 
 // TODO deduplicate this (whole file), this should (mostly) be consumed from @kickstartDS directly
 
@@ -41,13 +41,13 @@ const mergeAnyOfEnums = (schema) => {
 const parse = (schemaPath) =>
   new $RefParser().dereference(schemaPath, {
     resolve: {
-      rm: {
-        order: 1,
-        ...rmResolver,
-      },
       kds: {
-        order: 2,
+        order: 1,
         ...kdsResolver,
+      },
+      kickstartds: {
+        order: 2,
+        ...kickstartdsResolver,
       },
     },
   });

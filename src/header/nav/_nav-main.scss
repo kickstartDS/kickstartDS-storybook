@@ -1,6 +1,6 @@
 @use "sass:meta";
 @use "bourbon/core/bourbon";
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../../breakpoint";
 @use "./nav-main-tokens";
 
 .nav-main {
@@ -33,7 +33,7 @@
     &__link {
       /* critical:start */
       display: block;
-      font-weight: var(--font-weight-bold);
+      font-weight: var(--ks-font-weight-bold);
       padding: var(--c-nav-main_item--padding);
       --g-link--color: var(--c-nav-main_item--color);
       --g-link--color-hover: var(--c-nav-main_item--color-hover);
@@ -72,6 +72,7 @@
 
     .overlay-open & {
       left: 0;
+      box-shadow: 100px 0px 0px #00000066, 20px 0px 30px #00000021;
     }
 
     > .kds-logo {
@@ -86,14 +87,14 @@
     }
 
     ul.nav-main__list {
-      padding-top: calc(var(--g-header-spacing-v) - var(--spacing-s));
+      padding-top: calc(var(--g-header-spacing-v) - var(--ks-spacing-s));
 
       .nav-main--contact-button {
         margin-left: var(--g-header-spacing-h);
         margin-top: var(--g-header-spacing-v);
 
         .c-button.c-button--small {
-          font-size: var(--font-size-s);
+          font-size: var(--ks-font-size-s);
         }
 
         .c-button__content {
@@ -111,7 +112,7 @@
     /* critical:end */
 
     .c-button--wrapper {
-      margin-left: var(--spacing-s);
+      margin-left: var(--ks-spacing-s);
     }
 
     &__list {
@@ -119,7 +120,7 @@
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
-      gap: var(--spacing-m);
+      gap: var(--ks-spacing-m);
       /* critical:end */
     }
 

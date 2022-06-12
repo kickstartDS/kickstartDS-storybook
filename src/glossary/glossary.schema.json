@@ -117,7 +117,7 @@
       "default": "https://stackshare.io/julrich/decisions/107141570573419830"
     },
     "cta": {
-      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/storytelling.schema.json"
+      "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json"
     }
   },
   "required": ["term"]
