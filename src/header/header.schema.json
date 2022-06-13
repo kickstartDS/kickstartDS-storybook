@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://kickstartds.com/header.schema.json",
+    "$id": "http://kickstartds.com/cms/header.schema.json",
     "title": "Header",
     "type": "object",
     "properties": {
