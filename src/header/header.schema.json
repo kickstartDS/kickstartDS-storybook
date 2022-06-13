@@ -67,7 +67,7 @@
       "activeEntry": {
         "title": "Active navigation entry",
         "type": "string",
-        "description": "Slug of the current page, to mark it in the Header menu",
+        "description": "Slug of the current page, to mark it in the Header menu"
       },
       "cta": {
         "title": "Call-to-action",
