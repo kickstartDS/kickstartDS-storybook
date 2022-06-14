@@ -277,7 +277,7 @@ Directly engage with components through **Storybooks** rich interface.
         ]}
       />
     </Section>
-    <Footer {...FooterStories.args} />
+    <Footer {...unpack(FooterStories.args)} />
   </>
 );
 

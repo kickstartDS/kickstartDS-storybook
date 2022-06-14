@@ -22,7 +22,7 @@ export default {
 
 const Page = () => (
   <>
-    <Header {...HeaderStories.args} />
+    <Header {...unpack(HeaderStories.args)} />
     <SamplePost
       aside={unpack(PostAsideStory.args)}
       head={unpack(PostHeadStory.args)}
@@ -158,7 +158,7 @@ After working in a large tech corporation for a long time I very well know today
     >
       <Subscription />
     </Section>
-    <Footer {...FooterStories.args} />
+    <Footer {...unpack(FooterStories.args)} />
   </>
 );
 

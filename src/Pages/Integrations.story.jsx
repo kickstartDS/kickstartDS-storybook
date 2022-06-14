@@ -29,7 +29,7 @@ import { Footer } from "../footer/FooterComponent";
 
 const Page = () => (
   <>
-    <Header {...HeaderStories.args} />
+    <Header {...unpack(HeaderStories.args)} />
     <Section
       width="default"
       spaceBefore="default"
@@ -419,7 +419,7 @@ const Page = () => (
         }}
       />
     </Section>
-    <Footer {...FooterStories.args} />
+    <Footer {...unpack(FooterStories.args)} />
   </>
 );
 

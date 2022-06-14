@@ -465,7 +465,7 @@ After working in a large tech corporation for a long time I very well know today
       <Button variant="outline" label="Join our Discord community!" />
       <Button variant="outline" label="Follow us on Twitter!" />
     </Section>
-    <Footer {...FooterStories.args} />
+    <Footer {...unpack(FooterStories.args)} />
   </>
 );
 

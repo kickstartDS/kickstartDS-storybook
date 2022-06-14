@@ -6,8 +6,8 @@ import { PostTeaser } from "@kickstartds/blog/lib/post-teaser";
 
 import { Default as PostTeaserStory } from "../post-teaser/PostTeaser.stories";
 import { Header } from "../header/HeaderComponent";
-import HeaderStories from "../header/Header.stories";
 import { Footer } from "../footer/FooterComponent";
+import HeaderStories from "../header/Header.stories";
 import FooterStories from "../footer/Footer.stories";
 
 export default {
@@ -16,7 +16,7 @@ export default {
 
 const Page = () => (
   <>
-    <Header {...HeaderStories.args} />
+    <Header {...unpack(HeaderStories.args)} />
     <Section
       headline={{
         content: "Welcome to the kickstartDS Blog",
@@ -98,7 +98,7 @@ const Page = () => (
         }}
       />
     </Section>
-    <Footer {...FooterStories.args} />
+    <Footer {...unpack(FooterStories.args)} />
   </>
 );
 
