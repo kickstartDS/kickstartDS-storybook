@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 09 Jun 2022 11:47:10 GMT
+ * Generated on Tue, 14 Jun 2022 08:57:23 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-8-base);
@@ -15,7 +15,7 @@
   --ks-background-color-clear-inverted-interactive-active-base: var(--ks-color-primary-inverted-alpha-4-base);
   --ks-background-color-default-base: var(--ks-color-fg-inverted-base);
   --ks-background-color-default-inverted-base: var(--ks-color-primary-base);
-  --ks-background-color-interface-base: var(--ks-color-fg-alpha-1-base);
+  --ks-background-color-interface-base: var(--ks-color-primary-alpha-2-base);
   --ks-background-color-interface-interactive-base: var(--ks-color-transparent-base);
   --ks-background-color-interface-interactive-disabled-base: var(--ks-color-fg-alpha-1-base);
   --ks-background-color-interface-interactive-hover-base: var(--ks-color-fg-alpha-1-base);
@@ -45,11 +45,11 @@
   --ks-border-color-clear-inverted-interactive-active-base: var(--ks-color-primary-inverted-alpha-4-base);
   --ks-border-color-default-base: var(--ks-color-fg-inverted-base);
   --ks-border-color-default-inverted-base: var(--ks-color-fg-alpha-7-base);
-  --ks-border-color-interface-base: var(--ks-color-transparent-base);
+  --ks-border-color-interface-base: rgba(0,0,0,0);
   --ks-border-color-interface-interactive-base: var(--ks-color-primary-alpha-2-base);
   --ks-border-color-interface-interactive-disabled-base: var(--ks-color-fg-alpha-1-base);
   --ks-border-color-interface-interactive-hover-base: var(--ks-color-primary-alpha-4-base);
-  --ks-border-color-interface-interactive-active-base: var(--ks-color-primary-base);
+  --ks-border-color-interface-interactive-active-base: var(--ks-color-primary-alpha-6-base);
   --ks-border-color-interface-inverted-base: var(--ks-color-transparent-base);
   --ks-border-color-interface-inverted-interactive-base: var(--ks-color-primary-alpha-4-base);
   --ks-border-color-interface-inverted-interactive-disabled-base: var(--ks-color-fg-alpha-1-base);

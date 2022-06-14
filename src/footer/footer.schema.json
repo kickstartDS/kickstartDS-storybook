@@ -1,0 +1,96 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://kickstartds.com/cms/footer.schema.json",
+    "title": "Footer",
+    "description": "Footer to be used in website layouts",
+    "type": "object",
+    "properties": {
+      "sections": {
+        "title": "Sections",
+        "type": "array",
+        "description": "Sections of the footer",
+        "items": {
+          "type": "object",
+          "properties": {
+            "headline": {
+              "title": "Headline",
+              "type": "string",
+              "description": "Headline for the section"
+            },
+            "links": {
+              "title": "Links",
+              "type": "array",
+              "description": "Links to display for the section",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "title": "Label",
+                    "type": "string",
+                    "description": "Label for the link"
+                  },
+                  "href": {
+                    "title": "Link target",
+                    "type": "string",
+                    "description": "Link target for link"
+                  }
+                },
+                "required": ["label", "href"]
+              }
+            }
+          },
+          "required": ["headline"]
+        },
+        "default": [
+          {
+            "headline": "Links",
+            "links": [
+              {
+                "label": "Blog",
+                "href": "/blog"
+              },
+              {
+                "label": "Storybook",
+                "href": "/storybook/"
+              }
+            ]
+          },
+          {
+            "headline": "Get in touch",
+            "links": [
+              {
+                "label": "Twitter",
+                "href": "https://twitter.com/kickstartDS"
+              },
+              {
+                "label": "WhatsApp us",
+                "href": "https://wa.me/491752131879?text=Hi!%20I%20am%20interested%20to%20know%20more%20about%20kickstartDS."
+              },
+              {
+                "label": "Send a Mail",
+                "href": "mailto:hello@kickstartds.com"
+              }
+            ]
+          },
+          {
+            "headline": "Data & Compliance",
+            "links": [
+              {
+                "label": "Privacy",
+                "href": "/privacy"
+              },
+              {
+                "label": "Cookie List",
+                "href": "/cookies"
+              },
+              {
+                "label": "Legal notice",
+                "href": "/legal"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  

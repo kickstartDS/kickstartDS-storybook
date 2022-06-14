@@ -51,6 +51,9 @@ export type LabelForButton = string;
  */
 export type LinkTargetForButton = string;
 
+/**
+ * Header to be used in website layouts
+ */
 export interface HeaderProps {
   light?: LightVersion;
   homeLink: LinkToHomePage;

@@ -2,13 +2,14 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "http://kickstartds.com/cms/header.schema.json",
     "title": "Header",
+    "description": "Header to be used in website layouts",
     "type": "object",
     "properties": {
       "light": {
         "title": "Light version",
         "type": "boolean",
         "description": "Choose wether to use the light version of the Header",
-        "default": true
+        "default": false
       },
       "homeLink": {
         "title": "Link to home page",
