@@ -208,7 +208,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       }}
       spaceAfter="default"
       spaceBefore="default"
-      width="default"
+      width="narrow"
       ks-inverted="true"
       pattern="1"
     >

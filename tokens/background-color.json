@@ -97,7 +97,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.primary-inverted.alpha.3.base}",
+              "value": "{ks.color.fg-inverted.alpha.2.base}",
               "attributes": {
                 "category": "color"
               },
