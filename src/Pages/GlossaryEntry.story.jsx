@@ -1,13 +1,15 @@
+import { unpack } from "@kickstartds/core/lib/storybook/helpers";
+
+import HeaderStories from "../header/Header.stories";
 import FooterStories from "../footer/Footer.stories";
+
 import { Glossary } from "../glossary/GlossaryComponent.tsx";
+import { Header } from "../header/HeaderComponent";
+import { Footer } from "../footer/FooterComponent";
 
 export default {
   title: "Glossary Entry",
 };
-
-import { Header } from "../header/HeaderComponent";
-import HeaderStories from "../header/Header.stories";
-import { Footer } from "../footer/FooterComponent";
 
 const Page = () => (
   <>

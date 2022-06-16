@@ -4,11 +4,12 @@ import { Section } from "@kickstartds/base/lib/section";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { PostTeaser } from "@kickstartds/blog/lib/post-teaser";
 
+import HeaderStories from "../header/Header.stories";
+import FooterStories from "../footer/Footer.stories";
+
 import { Default as PostTeaserStory } from "../post-teaser/PostTeaser.stories";
 import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
-import HeaderStories from "../header/Header.stories";
-import FooterStories from "../footer/Footer.stories";
 
 export default {
   title: "Blog List",
