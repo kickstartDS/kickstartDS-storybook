@@ -37,7 +37,12 @@ FooterProps & HTMLAttributes<HTMLDivElement>
 
       <div className="kds-footer__logo-wrap">
         <Link href="/" className="kds-footer__logo">
-          <img alt="kickstartDS Logo" src="/logo.svg" />
+          <img
+            alt="kickstartDS Logo"
+            src="/logo.svg"
+            width={284}
+            height={56}
+          />
         </Link>
       </div>
     </Section>
