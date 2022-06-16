@@ -1,18 +1,7 @@
 import {
   Section,
-  TextMedia,
-  Headline,
-  ContentBox,
   TeaserBox,
-  Divider,
 } from "@kickstartds/base";
-import {
-  Visual,
-  CollapsibleBox,
-  Contact,
-  Quote,
-  LogoTiles,
-} from "@kickstartds/content";
 
 export default {
   title: "TeaserVariants",

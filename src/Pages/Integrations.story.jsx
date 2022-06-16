@@ -1,35 +1,27 @@
+import { unpack } from "@kickstartds/core/lib/storybook/helpers";
+
 import {
   TextMedia,
-  Headline,
   ContentBox,
-  TeaserBox,
-  Divider,
   Section,
 } from "@kickstartds/base";
-import { Button } from "@kickstartds/base/lib/button";
 import {
-  Visual,
-  CollapsibleBox,
-  Contact,
-  Quote,
-  QuotesSlider,
-  LogoTiles,
-  CountUp,
   Storytelling,
 } from "@kickstartds/content";
+
+import HeaderStories from "../header/Header.stories";
 import FooterStories from "../footer/Footer.stories";
+
+import { Header } from "../header/HeaderComponent";
+import { Footer } from "../footer/FooterComponent";
 
 export default {
   title: "Integrations",
 };
 
-import { Header } from "../header/HeaderComponent";
-import HeaderStories from "../header/Header.stories";
-import { Footer } from "../footer/FooterComponent";
-
 const Page = () => (
   <>
-    <Header {...HeaderStories.args} />
+    <Header {...unpack(HeaderStories.args)} />
     <Section
       width="default"
       spaceBefore="default"
@@ -419,7 +411,7 @@ const Page = () => (
         }}
       />
     </Section>
-    <Footer {...FooterStories.args} />
+    <Footer {...unpack(FooterStories.args)} />
   </>
 );
 

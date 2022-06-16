@@ -1,20 +1,19 @@
 import { unpack } from "@kickstartds/core/lib/storybook/helpers";
+
 import { Section } from "@kickstartds/base/lib/section";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
-import { Button } from "@kickstartds/base/lib/button";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 import { Contact } from "@kickstartds/content/lib/contact";
-import { TextField } from "@kickstartds/form/lib/text-field";
+
+import HeaderStories from "../header/Header.stories";
+import FooterStories from "../footer/Footer.stories";
 
 import { Header } from "../header/HeaderComponent";
-import HeaderStories from "../header/Header.stories";
+import { Footer } from "../footer/FooterComponent";
 import { SamplePost } from "../post/SamplePost";
 import { Default as PostAsideStory } from "../post-aside/PostAside.stories";
 import { Default as PostHeadStory } from "../post-head/PostHead.stories";
-import { Footer } from "../footer/FooterComponent";
-import FooterStories from "../footer/Footer.stories";
 import { Subscription } from "../subscription/SubscriptionComponent";
-import { RichText } from "@kickstartds/base";
 
 export default {
   title: "Blog Post",
@@ -22,7 +21,7 @@ export default {
 
 const Page = () => (
   <>
-    <Header {...HeaderStories.args} />
+    <Header {...unpack(HeaderStories.args)} />
     <SamplePost
       aside={unpack(PostAsideStory.args)}
       head={unpack(PostHeadStory.args)}
@@ -158,7 +157,7 @@ After working in a large tech corporation for a long time I very well know today
     >
       <Subscription />
     </Section>
-    <Footer {...FooterStories.args} />
+    <Footer {...unpack(FooterStories.args)} />
   </>
 );
 

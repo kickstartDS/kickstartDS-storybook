@@ -1,34 +1,29 @@
+import { unpack } from "@kickstartds/core/lib/storybook/helpers";
+
 import {
   TextMedia,
-  Headline,
   ContentBox,
-  TeaserBox,
-  Divider,
   Section,
 } from "@kickstartds/base";
-import { Button } from "@kickstartds/base/lib/button";
 import {
-  Visual,
-  CollapsibleBox,
-  Contact,
   Quote,
-  QuotesSlider,
   LogoTiles,
-  CountUp,
   Storytelling,
 } from "@kickstartds/content";
+
+import HeaderStories from "../header/Header.stories";
 import FooterStories from "../footer/Footer.stories";
+
+import { Header } from "../header/HeaderComponent";
+import { Footer } from "../footer/FooterComponent";
 
 export default {
   title: "Sanity",
 };
 
-import { Header } from "../header/HeaderComponent";
-import { Footer } from "../footer/FooterComponent";
-
 const Page = () => (
   <>
-    <Header />
+    <Header {...unpack(HeaderStories.args)}  />
     <Section
       mode="list"
       width="wide"
@@ -277,7 +272,7 @@ Directly engage with components through **Storybooks** rich interface.
         ]}
       />
     </Section>
-    <Footer {...FooterStories.args} />
+    <Footer {...unpack(FooterStories.args)} />
   </>
 );
 
