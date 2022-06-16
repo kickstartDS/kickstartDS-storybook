@@ -43,30 +43,11 @@ MitIcon.args = pack({
   },
 });
 
-export const Inverted = Template.bind({});
-Inverted.args = pack({
-  ...Solid.args,
-  variant: "solid-inverted",
-  href: "#",
-});
-Inverted.parameters = {
-  backgrounds: { default: "dark" },
-};
-
 export const Outline = Template.bind({});
 Outline.args = pack({
   ...Solid.args,
   variant: "outline",
 });
-
-export const OutlineInverted = Template.bind({});
-OutlineInverted.args = pack({
-  ...Solid.args,
-  variant: "outline-inverted",
-});
-OutlineInverted.parameters = {
-  backgrounds: { default: "dark" },
-};
 
 export const Clear = Template.bind({});
 Clear.args = pack({

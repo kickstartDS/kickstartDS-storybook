@@ -286,6 +286,24 @@
       }
     }
 
+    &:hover {
+      .c-button__border {
+        &::before {
+          border-color: var(--c-button--border-color-hover);
+        }
+
+        &::after {
+          border-color: var(--c-button--border-color-hover);
+        }
+      }
+      .c-button__content {
+        &::before,
+        &::after {
+          background-color: var(--c-button--border-color-hover);
+        }
+      }
+    }
+
     &.c-button--small {
       .c-button__border {
         &::before {
