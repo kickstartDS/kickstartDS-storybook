@@ -49,10 +49,10 @@
             "value": "1"
           },
           "tablet": {
-            "value": "1.15"
+            "value": "1.25"
           },
           "laptop": {
-            "value": "1.25"
+            "value": "1.35"
           },
           "desktop": {
             "value": "1.35"
@@ -68,7 +68,7 @@
           }
         },
         "base": {
-          "value": "0.6250",
+          "value": "0.75",
           "attributes": {
             "category": "size"
           }
@@ -78,13 +78,13 @@
             "value": "1"
           },
           "tablet": {
-            "value": "1.15"
+            "value": "1.25"
           },
           "laptop": {
-            "value": "1.15"
+            "value": "1.35"
           },
           "desktop": {
-            "value": "1.25"
+            "value": "1.75"
           }
         }
       },
@@ -97,7 +97,7 @@
           }
         },
         "base": {
-          "value": "1.875",
+          "value": "1.5",
           "attributes": {
             "category": "size"
           }
@@ -260,16 +260,16 @@
           "value": "{ks.spacing.xxs._} {ks.spacing.xs._}"
         },
         "s": {
-          "value": "{ks.spacing.xs._} {ks.spacing.m._}"
+          "value": "{ks.spacing.xs._} {ks.spacing.s._}"
         },
         "m": {
-          "value": "{ks.spacing.s._} {ks.spacing.l._}"
+          "value": "{ks.spacing.s._} {ks.spacing.m._}"
         },
         "l": {
-          "value": "{ks.spacing.m._} {ks.spacing.xl._}"
+          "value": "{ks.spacing.m._} {ks.spacing.l._}"
         },
         "xl": {
-          "value": "{ks.spacing.l._} {ks.spacing.xxl._}"
+          "value": "{ks.spacing.l._} {ks.spacing.xl._}"
         },
         "xxl": {
           "value": "{ks.spacing.xl._} {ks.spacing.xxl._}"

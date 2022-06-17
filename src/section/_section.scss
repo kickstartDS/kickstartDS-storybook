@@ -12,11 +12,7 @@
   @include breakpoint.media(">s") {
     --l-section--corner-bottom-right-height: var(--ks-spacing-xxl);
   }
-}
 
-:root,
-[ks-theme],
-[ks-inverted] {
   .l-section {
     margin: auto;
 
@@ -404,35 +400,6 @@
       }
     }
 
-    &--dark {
-      .c-teaser {
-        .c-rich-text a {
-          color: var(--g-link--color);
-          &:hover {
-            background: var(--g-link--backround-hover);
-            color: var(--g-link--color-hover);
-          }
-        }
-      }
-
-      .c-button--fill-animation:focus,
-      .c-button--fill-animation:hover {
-        * {
-          color: var(--c-button_fill-animation--color-hover);
-        }
-      }
-
-      .c-button,
-      .c-button--solid,
-      .c-button--solid-inverted,
-      .c-button---outline,
-      .c-button---outline-inverted {
-        * {
-          color: var(--c-button--color);
-        }
-      }
-    }
-
     &.col-three {
       .l-section__container {
         --l-section_container--gutter: var(--ks-spacing-l);
@@ -484,6 +451,9 @@
         }
       }
     }
+  }
+  .l-section.additional-spacing {
+    margin-bottom: var(--l-section--space);
   }
 }
 

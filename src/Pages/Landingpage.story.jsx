@@ -86,7 +86,7 @@ const Page = () => (
         pageHeader: false,
         spaceAfter: "small",
       }}
-      className="l-section--outer-width-wide"
+      className="l-section--outer-width-wide additional-spacing"
       variant="highlight"
       pattern="2"
       width="default"
@@ -130,10 +130,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         topic="Tokens"
       />
     </Section>
-    <Section
-      spaceAfter="default"
-      spaceBefore="none"
-    />
+
     <Section
       width="wide"
       background="accent"
@@ -206,7 +203,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       }}
       spaceAfter="default"
       spaceBefore="default"
-      width="narrow"
+      width="default"
       ks-inverted="true"
       pattern="1"
     >
@@ -400,15 +397,15 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       background="default"
       className="col-three"
     >
-      <TeaserBox
+      <ContentBox
         topic="Lorem Ipsum"
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all."
       />
-      <TeaserBox
+      <ContentBox
         topic="Accessibility baked in"
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components."
       />
-      <TeaserBox
+      <ContentBox
         topic="Powerful theming tools"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
       />

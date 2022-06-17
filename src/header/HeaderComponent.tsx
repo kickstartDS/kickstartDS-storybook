@@ -19,16 +19,23 @@ export const Header: FunctionComponent<
   cta,
   ...props
 }) => (
-  <div {...props}>
-    <NavSkip />
-    <header data-component="kds.header">
-      <div className={`kds-header ${light ? "kds-header--light" : ""}`}>
-        <Logo home={homeLink} />
-        {navEntries && navEntries.length > 0 && navEnabled && (
-          <NavMain light={light} navEntries={navEntries} activeEntry={activeEntry} cta={cta} />
-        )}
-      </div>
-    </header>
+  <>
+    <div {...props}>
+      <NavSkip />
+      <header data-component="kds.header">
+        <div className={`kds-header ${light ? "kds-header--light" : ""}`}>
+          <Logo home={homeLink} />
+          {navEntries && navEntries.length > 0 && navEnabled && (
+            <NavMain
+              light={light}
+              navEntries={navEntries}
+              activeEntry={activeEntry}
+              cta={cta}
+            />
+          )}
+        </div>
+      </header>
+    </div>
     {!light && <div className="kds-header--spacer"></div>}
-  </div>
+  </>
 );

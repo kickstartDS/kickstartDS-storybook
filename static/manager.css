@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 16 Jun 2022 15:05:20 GMT
+ * Generated on Fri, 17 Jun 2022 12:39:19 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-8-base);
@@ -184,8 +184,8 @@
   --ks-color-fg-inverted-to-bg-7-base: #414141;
   --ks-color-fg-inverted-to-bg-8-base: #262626;
   --ks-color-fg-inverted-to-bg-9-base: #121212;
-  --ks-color-link-base: #5d5dd5;
-  --ks-color-link-inverted-base: #c6c6ff;
+  --ks-color-link-base: #05566a;
+  --ks-color-link-inverted-base: #ecff00;
   --ks-color-transparent-base: rgba(0,0,0,0);
   --ks-depth-modal: 1000;
   --ks-spacing-xxs: var(--ks-spacing-xxs-base);
@@ -197,17 +197,17 @@
   --ks-spacing-xs: var(--ks-spacing-xs-base);
   --ks-spacing-xs-base: 0.3125rem;
   --ks-spacing-xs-bp-factor-phone: 1;
-  --ks-spacing-xs-bp-factor-tablet: 1.15;
-  --ks-spacing-xs-bp-factor-laptop: 1.25;
+  --ks-spacing-xs-bp-factor-tablet: 1.25;
+  --ks-spacing-xs-bp-factor-laptop: 1.35;
   --ks-spacing-xs-bp-factor-desktop: 1.35;
   --ks-spacing-s: var(--ks-spacing-s-base);
-  --ks-spacing-s-base: 0.625rem;
+  --ks-spacing-s-base: 0.75rem;
   --ks-spacing-s-bp-factor-phone: 1;
-  --ks-spacing-s-bp-factor-tablet: 1.15;
-  --ks-spacing-s-bp-factor-laptop: 1.15;
-  --ks-spacing-s-bp-factor-desktop: 1.25;
+  --ks-spacing-s-bp-factor-tablet: 1.25;
+  --ks-spacing-s-bp-factor-laptop: 1.35;
+  --ks-spacing-s-bp-factor-desktop: 1.75;
   --ks-spacing-m: var(--ks-spacing-m-base);
-  --ks-spacing-m-base: 1.875rem;
+  --ks-spacing-m-base: 1.5rem;
   --ks-spacing-m-bp-factor-phone: 1;
   --ks-spacing-m-bp-factor-tablet: 1.15;
   --ks-spacing-m-bp-factor-laptop: 1.25;
@@ -246,10 +246,10 @@
   --ks-spacing-inset-l: var(--ks-spacing-l);
   --ks-spacing-inset-xl: var(--ks-spacing-xl);
   --ks-spacing-inset-squish-xs: var(--ks-spacing-xxs) var(--ks-spacing-xs);
-  --ks-spacing-inset-squish-s: var(--ks-spacing-xs) var(--ks-spacing-m);
-  --ks-spacing-inset-squish-m: var(--ks-spacing-s) var(--ks-spacing-l);
-  --ks-spacing-inset-squish-l: var(--ks-spacing-m) var(--ks-spacing-xl);
-  --ks-spacing-inset-squish-xl: var(--ks-spacing-l) var(--ks-spacing-xxl);
+  --ks-spacing-inset-squish-s: var(--ks-spacing-xs) var(--ks-spacing-s);
+  --ks-spacing-inset-squish-m: var(--ks-spacing-s) var(--ks-spacing-m);
+  --ks-spacing-inset-squish-l: var(--ks-spacing-m) var(--ks-spacing-l);
+  --ks-spacing-inset-squish-xl: var(--ks-spacing-l) var(--ks-spacing-xl);
   --ks-spacing-inset-squish-xxl: var(--ks-spacing-xl) var(--ks-spacing-xxl);
   --ks-spacing-inset-stretch-xs: var(--ks-spacing-s) var(--ks-spacing-xs);
   --ks-spacing-inset-stretch-s: var(--ks-spacing-m) var(--ks-spacing-s);

@@ -38,7 +38,7 @@
       }
       @include breakpoint.media("≥l") {
         --l-section_container--gutter: var(--ks-spacing-xl);
-        --l-section_col--min-width: 17rem;
+        --l-section_col--min-width: 20rem;
       }
     }
     &--gutter-none {

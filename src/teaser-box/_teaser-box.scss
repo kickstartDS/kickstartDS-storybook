@@ -1,45 +1,36 @@
 @use "./teaser-tokens.scss";
 @use "../breakpoint";
-
-.c-teaser--style-dark {
-  --c-teaser--color: var(--ks-color-white-alpha-9);
-  --c-teaser--background: var(--ks-color-primary);
-  --c-teaser--background-hover: var(--ks-color-primary-lighter-1);
-  --c-teaser--border-color: var(--ks-color-primary);
-  --c-teaser--border-color-hover: var(--ks-color-primary-lighter-1);
-  --c-teaser--shadow-hover: none;
-  --g-link--color: var(--ks-color-secondary);
-  --g-link--color-hover: var(--ks-color-secondary);
-  --g-link--backround-hover: var(--ks-color-secondary-alpha-1);
-}
-
-.c-teaser--style-dark .c-teaser__text {
-  --c-teaser--color: var(--ks-color-white-alpha-9);
-  --g-link--color: var(--ks-color-secondary);
-}
-
-.l-section--dark .c-teaser {
-  --c-teaser--background-hover: var(--ks-color-primary-lighter-6);
-  --c-teaser--border-color: var(--ks-color-white);
-  --c-teaser--border-color-hover: var(--ks-color-primary-lighter-6);
-  --c-rich-text--color: var(--c-teaser--color);
-}
-
-.l-section--dark .c-teaser--style-dark {
-  --c-teaser--border-color: var(--ks-color-white-alpha-1);
-  --c-teaser--border-color-hover: var(--ks-color-secondary);
-  --c-teaser--background-hover: var(--ks-color-primary);
-  --c-rich-text--color: var(--ks-l-section-dark-color);
-}
-
-.c-teaser--style-dark .c-teaser__topic {
-  --c-teaser--color: var(--ks-color-white);
-}
+@use "@kickstartds/core/source/core/container";
+@include container.wrapper("teaser-box");
 
 .c-teaser {
   border-color: var(--c-teaser--border-color);
   border-width: var(--c-teaser--border-width);
   border-style: var(--c-teaser--border-style);
+
+  .c-teaser__body {
+    padding: var(--c-teaser--padding);
+
+    --g-topic--font: var(--ks-font-copy-s);
+    --c-rich-text--font: var(--ks-font-copy-s);
+    --c-teaser--padding: calc(var(--ks-spacing-inset-s) * 1.35) var(--ks-spacing-inset-s);
+  }
+
+  .c-button {
+    --c-button--font: var(--ks-font-ui-s);
+  }
+
+  @include container.size("≥", 400px, "teaser-box") {
+    .c-teaser__body {
+      --g-topic--font: var(--ks-font-copy-m);
+      --c-rich-text--font: var(--ks-font-copy-m);
+      --c-teaser--padding: calc(var(--ks-spacing-inset-m) * 1.35) var(--ks-spacing-inset-m);
+    }
+
+    .c-button {
+      --c-button--font: var(--ks-font-ui-m);
+    }
+  }
 
   &.js-linked {
     transition-property: all;
@@ -48,12 +39,5 @@
       border-color: var(--c-teaser--border-color-hover);
       background-color: var(--c-teaser--background-hover);
     }
-  }
-
-  &__body {
-    --c-rich-text--font: var(--ks-font-copy-s);
-    --g-topic--font: var(--ks-font-copy-s);
-
-    padding: var(--c-teaser--padding);
   }
 }

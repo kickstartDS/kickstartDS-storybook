@@ -35,8 +35,8 @@
       display: block;
       font-weight: var(--ks-font-weight-bold);
       padding: var(--c-nav-main_item--padding);
-      --g-link--color: var(--c-nav-main_item--color);
-      --g-link--color-hover: var(--c-nav-main_item--color-hover);
+      --ks-text-color-default-interactive: var(--c-nav-main_item--color);
+      --ks-text-color-default-interactive-hover: var(--c-nav-main_item--color-hover);
       --g-link--background: var(--c-nav-main--background-color);
       --g-link--background-hover: var(--c-nav-main_item--background-color-hover);
       --g-link--font-weight: var(--c-nav-main_item--font-weight);
