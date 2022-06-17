@@ -311,12 +311,7 @@
           },
           "9": {
             "base": {
-              "value": {
-                "r": 243,
-                "g": 247,
-                "b": 248,
-                "a": 1
-              },
+              "value": "#eceff3",
               "attributes": {
                 "category": "color"
               },
@@ -877,12 +872,7 @@
       },
       "fg": {
         "base": {
-          "value": {
-            "r": 5,
-            "g": 5,
-            "b": 5,
-            "a": 1
-          },
+          "value": "#444f52",
           "attributes": {
             "category": "color"
           },

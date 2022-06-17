@@ -1,4 +1,4 @@
-@use '../breakpoint';
+@use "../breakpoint";
 
 .kds-footer-nav {
   flex: 1;
@@ -31,7 +31,7 @@
         font-weight: var(--ks-font-weight-semi-bold);
 
         &:hover {
-          color: var(--ks-text-color-default);
+          color: var(--ks-text-color-default-interactive-hover);
           background: 0;
         }
       }

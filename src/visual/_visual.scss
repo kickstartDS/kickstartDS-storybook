@@ -9,6 +9,12 @@
       height: 100vh;
     }
 
+    &__image {
+      img {
+        object-fit: contain;
+      }
+    }
+
     &__content {
       &--indent {
         max-width: var(--l-section--content-width-wide);

@@ -20,7 +20,7 @@
     --c-button--font: var(--ks-font-ui-s);
   }
 
-  @include container.size("≥", 400px, "teaser-box") {
+  @include container.size("≥", 450px, "teaser-box") {
     .c-teaser__body {
       --g-topic--font: var(--ks-font-copy-m);
       --c-rich-text--font: var(--ks-font-copy-m);
