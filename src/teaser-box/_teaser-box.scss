@@ -1,75 +1,36 @@
-@use "@kickstartds/core/source/core/breakpoint";
-
-.c-teaser {
-  --c-teaser--color: var(--color-grey-7);
-  --c-teaser--background: var(--color-white);
-  --c-teaser--background-hover: var(--color-white);
-  --c-teaser--border-color: var(--color-primary-lighter-6);
-  --c-teaser--border-color-hover: var(--color-primary);
-  --c-teaser--border-width: 2px;
-  --c-teaser--border-style: solid;
-  --c-teaser--padding: 1em 1.2em;
-  --c-teaser--shadow-hover: none;
-
-  --c-teaser_rich-text--font-xs: var(--font-copy-xs);
-  --c-teaser_rich-text--font-s: var(--font-copy-s);
-  --c-teaser_rich-text--font-m: var(--font-copy-m);
-
-  --c-teaser_topic--font-xs: var(--font-copy-xs);
-  --c-teaser_topic--font-s: var(--font-copy-s);
-  --c-teaser_topic--font-m: var(--font-copy-m);
-}
-
-.c-teaser__text {
-  --g-link--color: var(--color-primary);
-  --c-teaser_text--spacing: var(--spacing-xs);
-}
-
-@media (min-width: 40em) {
-  .c-teaser {
-    --c-teaser--border-width: 3px;
-  }
-}
-
-.c-teaser--style-dark {
-  --c-teaser--color: var(--color-white-alpha-9);
-  --c-teaser--background: var(--color-primary);
-  --c-teaser--background-hover: var(--color-primary-lighter-1);
-  --c-teaser--border-color: var(--color-primary);
-  --c-teaser--border-color-hover: var(--color-primary-lighter-1);
-  --c-teaser--shadow-hover: none;
-  --g-link--color: var(--color-secondary);
-  --g-link--color-hover: var(--color-secondary);
-  --g-link--backround-hover: var(--color-secondary-alpha-1);
-}
-
-.c-teaser--style-dark .c-teaser__text {
-  --c-teaser--color: var(--color-white-alpha-9);
-  --g-link--color: var(--color-secondary);
-}
-
-.l-section--dark .c-teaser {
-  --c-teaser--background-hover: var(--color-primary-lighter-6);
-  --c-teaser--border-color: var(--color-white);
-  --c-teaser--border-color-hover: var(--color-primary-lighter-6);
-  --c-rich-text--color: var(--c-teaser--color);
-}
-
-.l-section--dark .c-teaser--style-dark {
-  --c-teaser--border-color: var(--color-white-alpha-1);
-  --c-teaser--border-color-hover: var(--color-secondary);
-  --c-teaser--background-hover: var(--color-primary);
-  --c-rich-text--color: var(--l-section-dark-color);
-}
-
-.c-teaser--style-dark .c-teaser__topic {
-  --c-teaser--color: var(--color-white);
-}
+@use "./teaser-tokens.scss";
+@use "../breakpoint";
+@use "@kickstartds/core/source/core/container";
+@include container.wrapper("teaser-box");
 
 .c-teaser {
   border-color: var(--c-teaser--border-color);
   border-width: var(--c-teaser--border-width);
   border-style: var(--c-teaser--border-style);
+
+  .c-teaser__body {
+    padding: var(--c-teaser--padding);
+
+    --g-topic--font: var(--ks-font-copy-s);
+    --c-rich-text--font: var(--ks-font-copy-s);
+    --c-teaser--padding: calc(var(--ks-spacing-inset-s) * 1.35) var(--ks-spacing-inset-s);
+  }
+
+  .c-button {
+    --c-button--font: var(--ks-font-ui-s);
+  }
+
+  @include container.size("≥", 450px, "teaser-box") {
+    .c-teaser__body {
+      --g-topic--font: var(--ks-font-copy-m);
+      --c-rich-text--font: var(--ks-font-copy-m);
+      --c-teaser--padding: calc(var(--ks-spacing-inset-m) * 1.35) var(--ks-spacing-inset-m);
+    }
+
+    .c-button {
+      --c-button--font: var(--ks-font-ui-m);
+    }
+  }
 
   &.js-linked {
     transition-property: all;
@@ -77,48 +38,6 @@
     &:hover {
       border-color: var(--c-teaser--border-color-hover);
       background-color: var(--c-teaser--background-hover);
-    }
-  }
-
-  &__body {
-    --c-rich-text--font: var(--font-copy-s);
-    --g-topic--font: var(--font-copy-s);
-
-    padding: var(--c-teaser--padding);
-  }
-}
-
-.c-teaser-box {
-  &[min-width~="0"] {
-    .c-teaser__body {
-      --g-topic--font: var(--c-teaser_topic--font-xs);
-      --c-rich-text--font: var(--c-teaser_rich-text--font-xs);
-    }
-
-    .c-teaser__topic {
-      font-weight: var(--font-weight-bold);
-    }
-  }
-
-  &[min-width~="200"] {
-    .c-teaser__body {
-      --g-topic--font: var(--c-teaser_topic--font-s);
-      --c-rich-text--font: var(--c-teaser_rich-text--font-s);
-    }
-
-    .c-teaser__topic {
-      font-weight: var(--font-weight-bold);
-    }
-  }
-
-  &[min-width~="400"] {
-    .c-teaser__body {
-      --g-topic--font: var(--c-teaser_topic--font-m);
-      --c-rich-text--font: var(--c-teaser_rich-text--font-m);
-    }
-
-    .c-teaser__topic {
-      font-weight: var(--font-weight-bold);
     }
   }
 }

@@ -1,16 +1,24 @@
-@use './contact-tokens';
+@use "./contact-tokens";
 
-.c-contact {
-  height: fit-content;
+:root,
+[ks-theme],
+[ks-inverted] {
+  .c-contact {
+    height: fit-content;
 
-  &__links {
-    color: var(--g-link--color);
+    &__copy {
+      margin-top: 0;
+    }
 
-    .icon {
-      opacity: var(--icon-opacity);
-      width: var(--icon-size);
-      height: var(--icon-size);
-      margin-right: 0.35em;
+    &__links {
+      color: var(--g-link--color);
+
+      .icon {
+        opacity: var(--c-contact-icon-opacity);
+        width: var(--c-contact-icon-size);
+        height: var(--c-contact-icon-size);
+        margin-right: 0.35em;
+      }
     }
   }
 }

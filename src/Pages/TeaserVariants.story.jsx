@@ -1,18 +1,7 @@
 import {
   Section,
-  TextMedia,
-  Headline,
-  ContentBox,
   TeaserBox,
-  Divider,
 } from "@kickstartds/base";
-import {
-  Visual,
-  CollapsibleBox,
-  Contact,
-  Quote,
-  LogoTiles,
-} from "@kickstartds/content";
 
 export default {
   title: "TeaserVariants",
@@ -86,7 +75,7 @@ const Page = () => (
         pageHeader: false,
         spaceAfter: "none",
       }}
-      background="dark"
+      ks-inverted="true"
       spaceAfter="default"
       spaceBefore="default"
       width="default"
@@ -205,7 +194,7 @@ const Page = () => (
         pageHeader: false,
         spaceAfter: "none",
       }}
-      background="dark"
+      ks-inverted="true"
       spaceAfter="default"
       spaceBefore="default"
       width="default"

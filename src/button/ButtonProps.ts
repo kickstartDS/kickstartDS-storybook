@@ -14,7 +14,8 @@ export type Label = string;
 /**
  * Choose one of the styles from the list
  */
-export type ButtonStyle = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
+export type ButtonStyle = "solid" | "clear" | "outline";
+export type Inverted = boolean;
 /**
  * Choose a size between small, medium and large
  */
@@ -71,6 +72,7 @@ export interface ButtonProps {
   deko?: ButtonDekoStyle;
   label: Label;
   variant: ButtonStyle;
+  inverted?: Inverted;
   size: ButtonSize;
   className?: AdditionalClasses;
   icon?: Icon;

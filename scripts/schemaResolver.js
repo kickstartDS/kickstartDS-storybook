@@ -1,27 +1,27 @@
 const fs = require("fs-extra");
 const glob = require("fast-glob");
 
-const rmUrlRegExp =
-  /^http:\/\/frontend\.ruhmesmeile\.com\/([a-z-_]+)\/([a-z-_]+)\/([a-z-_/]+)\.(?:schema|definitions)\.json$/;
+const kdsUrlRegExp =
+  /^http:\/\/schema\.kickstartds\.com\/([a-z-_]+)\/([a-z-_/]+)\.(?:schema|definitions)\.json$/i;
 
-const rmResolver = {
-  canRead: /^http:\/\/frontend\.ruhmesmeile\.com/i,
+const kdsResolver = {
+  canRead: /^http:\/\/schema\.kickstartds\.com/i,
   async read(file) {
-    const [, module, , name] = rmUrlRegExp.exec(file.url);
+    const [, module, name] = kdsUrlRegExp.exec(file.url);
     const [resolvedPath] = await glob(
-      `node_modules/@kickstartds/${module}/lib/**/${name}.(schema|definitions).json`
+      `node_modules/@kickstartds/${module}/lib/${name === 'lightbox-lazy-image' ? 'lightbox-image' : name}/${name}.(schema|definitions).json`
     );
     return fs.readJSON(resolvedPath);
   },
 };
 
-const kdsUrlRegExp =
+const kickstartdsUrlRegExp =
   /^http:\/\/kickstartds\.com\/([a-z-_]+)\.(?:schema|definitions)\.json$/;
 
-const kdsResolver = {
+const kickstartdsResolver = {
   canRead: /^http:\/\/kickstartds\.com/i,
   async read(file) {
-    const [, name] = kdsUrlRegExp.exec(file.url);
+    const [, name] = kickstartdsUrlRegExp.exec(file.url);
     const [resolvedPath] = await glob(
       `src/**/${name}/${name}.(schema|definitions).json`
     );
@@ -29,4 +29,4 @@ const kdsResolver = {
   },
 };
 
-module.exports = { rmResolver, kdsResolver };
+module.exports = { kdsResolver, kickstartdsResolver };

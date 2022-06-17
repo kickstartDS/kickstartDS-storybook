@@ -1,7 +1,8 @@
-.c-form-field {
-  --c-form-field--border-radius: 0;
-  --c-form-field--border: 3px solid;
-  --c-form-field_focus--shadow: none;
-  --c-form-field--border-color: var(--color-primary-alpha-3);
-  --c-form-field_hover--border-color: var(--color-primary-alpha-5);
+:root,
+[ks-theme],
+[ks-inverted] {
+  .c-form-field {
+    --c-form-field--border-width: var(--ks-border-width-emphasized);
+    --c-form-field_focus--shadow: 0;
+  }
 }

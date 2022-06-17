@@ -1,19 +1,19 @@
-@use '@kickstartds/core/source/core/breakpoint';
+@use "../breakpoint";
 
 .kds-footer-nav {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
-  grid-gap: var(--spacing-l);
+  grid-gap: var(--ks-spacing-l);
 
   @include breakpoint.media("≥s") {
     flex-direction: row;
   }
 
   &_headline {
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--ks-font-weight-bold);
     margin-top: unset;
-    margin-bottom: var(--spacing-s);
+    margin-bottom: var(--ks-spacing-s);
   }
 
   &_list {
@@ -22,16 +22,16 @@
 
     &_item {
       list-style: none;
-      margin-bottom: var(--spacing-xs);
+      margin-bottom: var(--ks-spacing-xs);
 
       &_link,
       a {
         color: var(--c-footer-color);
         text-decoration: none;
-        font-weight: var(--font-weight-semi-bold);
+        font-weight: var(--ks-font-weight-semi-bold);
 
         &:hover {
-          color: var(--color-black);
+          color: var(--ks-text-color-default-interactive-hover);
           background: 0;
         }
       }

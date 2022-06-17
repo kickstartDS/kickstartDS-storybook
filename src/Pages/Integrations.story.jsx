@@ -1,35 +1,27 @@
+import { unpack } from "@kickstartds/core/lib/storybook/helpers";
+
 import {
   TextMedia,
-  Headline,
   ContentBox,
-  TeaserBox,
-  Divider,
   Section,
 } from "@kickstartds/base";
-import { Button } from "@kickstartds/base/lib/button";
 import {
-  Visual,
-  CollapsibleBox,
-  Contact,
-  Quote,
-  QuotesSlider,
-  LogoTiles,
-  CountUp,
   Storytelling,
 } from "@kickstartds/content";
+
+import HeaderStories from "../header/Header.stories";
 import FooterStories from "../footer/Footer.stories";
+
+import { Header } from "../header/HeaderComponent";
+import { Footer } from "../footer/FooterComponent";
 
 export default {
   title: "Integrations",
 };
 
-import { Header } from "../header/HeaderComponent";
-import HeaderStories from "../header/Header.stories";
-import { Footer } from "../footer/FooterComponent";
-
 const Page = () => (
   <>
-    <Header {...HeaderStories.args} />
+    <Header {...unpack(HeaderStories.args)} />
     <Section
       width="default"
       spaceBefore="default"
@@ -120,7 +112,7 @@ const Page = () => (
       spaceBefore="default"
       spaceAfter="default"
       variant="head"
-      background="dark"
+      ks-inverted="true"
       // pattern="2"
       headline={{
         content: "Generators with kickstartDS",
@@ -147,14 +139,15 @@ const Page = () => (
       width="wide"
       spaceBefore="default"
       gutter="none"
-      background="dark-accent"
+      background="accent"
+      ks-inverted="true"
       variant="body"
     >
       <Storytelling
         box={{
           link: {
             label: "read more",
-            variant: "solid-inverted",
+            variant: "solid",
           },
           headline: {
             content: "Lorem Ipsum dolor",
@@ -172,7 +165,7 @@ const Page = () => (
         box={{
           link: {
             label: "read more",
-            variant: "solid-inverted",
+            variant: "solid",
           },
           headline: {
             content: "Lorem Ipsum dolor",
@@ -190,7 +183,7 @@ const Page = () => (
         box={{
           link: {
             label: "read more",
-            variant: "solid-inverted",
+            variant: "solid",
           },
           headline: {
             content: "Lorem Ipsum dolor",
@@ -313,6 +306,7 @@ const Page = () => (
       headline={{
         content: "Integration with",
         align: "center",
+        spaceAfter: "small",
       }}
       variant="body"
       spaceBefore="default"
@@ -320,7 +314,7 @@ const Page = () => (
       spaceAfter="none"
       align="center"
     >
-      <ContentBox image="/logos/logo_storybook.svg" />
+      <ContentBox align="center" image="/logos/logo_storybook.svg" />
     </Section>
 
     <Section background="accent" spaceBefore="small" width="wide">
@@ -349,7 +343,7 @@ const Page = () => (
       width="default"
       spaceBefore="default"
       spaceAfter="defaultz"
-      background="dark"
+      ks-inverted="true"
       variant="head"
       headline={{
         content: "Derivatives with kickstartDS",
@@ -377,13 +371,14 @@ const Page = () => (
       spaceBefore="default"
       variant="body"
       gutter="none"
-      background="dark-accent"
+      background="accent"
+      ks-inverted="true"
     >
       <Storytelling
         box={{
           link: {
             label: "read more",
-            variant: "solid-inverted",
+            variant: "solid",
           },
           headline: {
             content: "Lorem Ipsum dolor",
@@ -401,7 +396,7 @@ const Page = () => (
         box={{
           link: {
             label: "read more",
-            variant: "solid-inverted",
+            variant: "solid",
           },
           headline: {
             content: "Lorem Ipsum dolor",
@@ -416,7 +411,7 @@ const Page = () => (
         }}
       />
     </Section>
-    <Footer {...FooterStories.args} />
+    <Footer {...unpack(FooterStories.args)} />
   </>
 );
 

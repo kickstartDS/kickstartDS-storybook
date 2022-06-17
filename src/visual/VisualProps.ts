@@ -5,14 +5,16 @@
  * and run `yarn run schema` to regenerate this file.
  */
 
-/**
- * Choose one of the styles from the list
- */
-export type ButtonStyle = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
+export type ButtonHighlightedStyle = boolean;
+export type ButtonDekoStyle = boolean;
 /**
  * Text used on button
  */
 export type Label = string;
+/**
+ * Choose one of the styles from the list
+ */
+export type ButtonStyle = "solid" | "clear" | "outline";
 /**
  * Choose a size between small, medium and large
  */
@@ -52,6 +54,7 @@ export type ButtonHref = string;
  * Open link in new Tab
  */
 export type OpenLinkInNewTab = boolean;
+export type Inverted = boolean;
 /**
  * Toggles visibility of the box
  */
@@ -99,7 +102,7 @@ export type DisplayLink = boolean;
 /**
  * Choose one of the styles from the list
  */
-export type ButtonStyle1 = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
+export type ButtonStyle1 = "solid" | "clear" | "outline";
 /**
  * Text used on button
  */
@@ -143,6 +146,7 @@ export type ButtonHref1 = string;
  * Open link in new Tab
  */
 export type OpenLinkInNewTab1 = boolean;
+export type Inverted1 = boolean;
 /**
  * The text box is aligned inside the content grid
  */
@@ -158,7 +162,8 @@ export type VerticalOrientation = "top" | "center" | "bottom";
 /**
  * Choose a style for the box
  */
-export type StyleOfTheBox = "default" | "light" | "transparent";
+export type StyleOfTheBox = "solid" | "transparent";
+export type Inverted2 = boolean;
 export type Height = "small" | "default" | "fullImage" | "fullScreen";
 /**
  * Choose a media type between image, video and none
@@ -244,13 +249,16 @@ export interface TextBox {
   horizontal?: HorizontalOrientation;
   vertical?: VerticalOrientation;
   background?: StyleOfTheBox;
+  inverted?: Inverted2;
 }
 /**
  * link-button
  */
 export interface LinkButton {
-  variant: ButtonStyle;
+  highlighted?: ButtonHighlightedStyle;
+  deko?: ButtonDekoStyle;
   label: Label;
+  variant: ButtonStyle;
   size: ButtonSize;
   className?: AdditionalClasses;
   icon?: Icon;
@@ -261,6 +269,7 @@ export interface LinkButton {
   iconAnimation?: IconAnimation;
   href: ButtonHref;
   newTab?: OpenLinkInNewTab;
+  inverted?: Inverted;
 }
 /**
  * Icon
@@ -302,6 +311,7 @@ export interface Link {
   iconAnimation?: IconAnimation1;
   href: ButtonHref1;
   newTab?: OpenLinkInNewTab1;
+  inverted?: Inverted1;
 }
 /**
  * Icon

@@ -3,13 +3,15 @@
   "$id": "http://kickstartds.com/storytelling.schema.json",
   "allOf": [
     {
+      "type": "object",
       "properties": {
         "box": {
+          "type": "object",
           "properties": {
             "links": {
               "type": "array",
               "items": {
-                "$ref": "http://frontend.ruhmesmeile.com/base/atoms/link-button.schema.json"
+                "$ref": "http://schema.kickstartds.com/base/link-button.schema.json"
               },
               "default": [
                 {
@@ -22,7 +24,7 @@
       }
     },
     {
-      "$ref": "http://frontend.ruhmesmeile.com/content/molecules/storytelling.schema.json"
+      "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json"
     }
   ]
 }

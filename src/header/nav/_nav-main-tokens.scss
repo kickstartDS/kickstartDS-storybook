@@ -1,26 +1,23 @@
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../../breakpoint";
 
-:root {
-  --c-nav-main_background-color: var(--color-white);
+:root,
+[ks-theme],
+[ks-inverted] {
+  --c-nav-main_background-color: var(--ks-background-color-default);
 
-  --c-nav-main_item--color: var(--color-primary-darker-1);
-  --c-nav-main_item--color-active: var(--color-primary);
-  --c-nav-main_item--color-hover: var(--color-primary-darker-1);
+  --c-nav-main_item--color: var(--ks-text-color-primary-interactive);
+  --c-nav-main_item--color-active: var(--ks-text-color-primary-interactive-active);
+  --c-nav-main_item--color-hover: var(--ks-text-color-primary-interactive-hover);
 
-  --c-nav-main_item--font: var(--font-ui-l);
-  --c-nav-main_item--font-weight: var(--font-weight-semi-bold);
-  --c-nav-main_item--font-weight-active: var(--font-weight-bold);
+  --c-nav-main_item--font: var(--ks-font-ui-l);
+  --c-nav-main_item--font-weight: var(--ks-font-weight-semi-bold);
+  --c-nav-main_item--font-weight-active: var(--ks-font-weight-bold);
 
   --c-nav-main_item--padding: 0.5rem var(--g-header-spacing-h);
 
   @include breakpoint.media("≥m") {
-    --c-nav-main_item--font: var(--font-ui-s);
+    --c-nav-main_item--font: var(--ks-font-ui-s);
     --c-nav-main_item--padding: none;
-    --c-nav-main_item--background-color-hover: var(--color-secondary);
-
-    .kds-header--light {
-      --c-nav-main_item--color: var(--color-white);
-      --c-nav-main_item--color-hover: var(--color-secondary);
-    }
+    --c-nav-main_item--background-color-hover: var(--ks-color-primary-inverted);
   }
 }

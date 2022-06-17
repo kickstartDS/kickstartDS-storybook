@@ -1,4 +1,4 @@
-@use '@kickstartds/core/source/core/breakpoint';
+@use '../breakpoint';
 
 @include breakpoint.media("≥s") {
   #onetrust-banner-sdk .ot-sdk-container,

@@ -1,0 +1,42 @@
+{
+  "color": {
+    "white": {
+      "value": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "attributes": {
+        "category": "color",
+        "deprecated": true
+      }
+    },
+    "error": {
+      "value": {
+        "r": 230,
+        "g": 2,
+        "b": 1,
+        "a": 1
+      },
+      "attributes": {
+        "category": "color",
+        "deprecated": true
+      }
+    }
+  },
+  "g": {
+    "header-height": {
+      "value": "0px",
+      "attributes": {
+        "deprecated": true
+      }
+    },
+    "scroll-offset": {
+      "value": "{g.header-height.value}",
+      "attributes": {
+        "deprecated": true
+      }
+    }
+  }
+}

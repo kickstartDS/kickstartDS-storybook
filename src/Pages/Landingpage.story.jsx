@@ -1,16 +1,13 @@
+import { unpack } from "@kickstartds/core/lib/storybook/helpers";
+
 import {
-  TextMedia,
-  Headline,
   ContentBox,
   TeaserBox,
-  Divider,
   Section,
 } from "@kickstartds/base";
 import { Button } from "@kickstartds/base/lib/button";
 import {
   Visual,
-  CollapsibleBox,
-  Contact,
   Quote,
   QuotesSlider,
   LogoTiles,
@@ -18,14 +15,15 @@ import {
   Storytelling,
 } from "@kickstartds/content";
 
+import HeaderStories from "../header/Header.stories";
+import FooterStories from "../footer/Footer.stories";
+
+import { Header } from "../header/HeaderComponent";
+import { Footer } from "../footer/FooterComponent";
+
 export default {
   title: "Landingpage",
 };
-
-import { Header } from "../header/HeaderComponent";
-import HeaderStories from "../header/Header.stories";
-import { Footer } from "../footer/FooterComponent";
-import FooterStories from "../footer/Footer.stories";
 
 const Page = () => (
   <>
@@ -37,7 +35,7 @@ const Page = () => (
           enabled: true,
           headline: {
             content:
-              "kickstartDS is a comprehensive component and pattern library",
+              "kickstartDS is the starter kit for Design Systems",
             level: "h1",
             styleAs: "h1",
             subheadline: "The frontend first framework!",
@@ -78,7 +76,7 @@ const Page = () => (
       />
     </Section>
     <Section
-      background="dark"
+      ks-inverted="true"
       headline={{
         align: "center",
         content: "kickstartDS' full flexibility in numbers",
@@ -86,9 +84,9 @@ const Page = () => (
           "The foundation to scale your design system across all your platforms and website",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "none",
+        spaceAfter: "small",
       }}
-      className="l-section--outer-width-wide"
+      className="l-section--outer-width-wide additional-spacing"
       variant="highlight"
       pattern="2"
       width="default"
@@ -132,6 +130,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         topic="Tokens"
       />
     </Section>
+
     <Section
       width="wide"
       background="accent"
@@ -200,12 +199,12 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           "... a holistic view of components; unifying content creators, developers, designers and stakeholders under one roof",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "none",
+        spaceAfter: "small",
       }}
       spaceAfter="default"
       spaceBefore="default"
       width="default"
-      background="dark"
+      ks-inverted="true"
       pattern="1"
     >
       <ContentBox
@@ -240,6 +239,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         align: "center",
         level: "h2",
         styleAs: "h1",
+        spaceAfter: "large",
       }}
     >
       <Storytelling
@@ -250,6 +250,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           },
           headline: {
             content: "Lorem Ipsum dolor",
+            spaceAfter: "small",
           },
           text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
@@ -262,13 +263,13 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       />
       <Storytelling
         full
-        // backgroundColor="#eceff3"
         box={{
           link: {
             label: "read more",
           },
           headline: {
             content: "Lorem Ipsum dolor",
+            spaceAfter: "small",
           },
           text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
@@ -287,6 +288,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           },
           headline: {
             content: "Lorem Ipsum dolor",
+            spaceAfter: "small",
           },
           text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
@@ -306,14 +308,14 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         styleAs: "h2",
         align: "left",
         pageHeader: false,
-        spaceAfter: "none",
+        spaceAfter: "small",
       }}
       mode="list"
       className="l-section--outer-width-wide" /* Background Weite */
       variant="highlight"
       pattern="1"
       width="wide" /* Content Weite */
-      background="dark"
+      ks-inverted="true"
       spaceAfter="default"
       spaceBefore="default"
     >
@@ -353,7 +355,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           "kickstartDS comes accessibility baked in and provides support",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "none",
+        spaceAfter: "small",
       }}
       pattern="2"
       spaceAfter="default"
@@ -386,7 +388,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           "kickstartDS comes accessibility baked in and provides support",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "none",
+        spaceAfter: "small",
       }}
       pattern="2"
       spaceAfter="default"
@@ -395,25 +397,22 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       background="default"
       className="col-three"
     >
-      <TeaserBox
-        image="img/icons/Headline.svg"
+      <ContentBox
         topic="Lorem Ipsum"
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all."
       />
-      <TeaserBox
-        image="img/icons/Quote.svg"
+      <ContentBox
         topic="Accessibility baked in"
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components."
       />
-      <TeaserBox
-        image="img/icons/Slider.svg"
+      <ContentBox
         topic="Powerful theming tools"
         text="kickstartDS comes in two themes and allows you to choose globally or locally [per component](http://example.com/) which theme you want to utilize."
       />
     </Section>
 
     <Section
-      background="dark"
+      ks-inverted="true"
       pattern="2"
       gutter="default"
       mode="list"
@@ -422,7 +421,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         content: "What kickstartDS can do for you?",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "none",
+        spaceAfter: "small",
       }}
       className="l-section--outer-width-wide"
       variant="highlight"
@@ -453,6 +452,7 @@ After working in a large tech corporation for a long time I very well know today
         subheadline:
           "We would love to hear from you! Every bit and piece of feedback is welcome as we want to learn from you, get to know you better, to evolve kickstartDS to meet your needs.",
         align: "center",
+        spaceAfter: "small",
       }}
       width="wide"
     >
@@ -460,7 +460,7 @@ After working in a large tech corporation for a long time I very well know today
       <Button variant="outline" label="Join our Discord community!" />
       <Button variant="outline" label="Follow us on Twitter!" />
     </Section>
-    <Footer {...FooterStories.args} />
+    <Footer {...unpack(FooterStories.args)} />
   </>
 );
 

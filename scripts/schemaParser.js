@@ -1,10 +1,13 @@
 const $RefParser = require("json-schema-ref-parser");
 const merge = require("json-schema-merge-allof");
 const traverse = require('json-schema-traverse');
-const { rmResolver, kdsResolver } = require("./schemaResolver");
+const { kdsResolver, kickstartdsResolver } = require("./schemaResolver");
 
 // TODO deduplicate this (whole file), this should (mostly) be consumed from @kickstartDS directly
 
+// TODO this one, too, is a poor mans version of @kickstartds/jsonschema-utils mergeAnyOfEnums
+// which is also used inside the kickstartDS-schema-toolkit for the same purpose
+// Should vanish with the rest of the duplicated JSON Schema stuff here
 const mergeAnyOfEnums = (schema) => {
   traverse(schema, {
     cb: (subSchema, pointer, rootSchema) => {
@@ -38,13 +41,13 @@ const mergeAnyOfEnums = (schema) => {
 const parse = (schemaPath) =>
   new $RefParser().dereference(schemaPath, {
     resolve: {
-      rm: {
-        order: 1,
-        ...rmResolver,
-      },
       kds: {
-        order: 2,
+        order: 1,
         ...kdsResolver,
+      },
+      kickstartds: {
+        order: 2,
+        ...kickstartdsResolver,
       },
     },
   });

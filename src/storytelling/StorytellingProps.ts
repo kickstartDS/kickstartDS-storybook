@@ -12,7 +12,7 @@ export type Label = string;
 /**
  * Choose one of the styles from the list
  */
-export type ButtonStyle = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
+export type ButtonStyle = "solid" | "clear" | "outline";
 /**
  * Choose a size between small, medium and large
  */
@@ -52,6 +52,7 @@ export type ButtonHref = string;
  * Open link in new Tab
  */
 export type OpenLinkInNewTab = boolean;
+export type Inverted = boolean;
 /**
  * Select the headline level to use, or p alternatively
  */
@@ -111,7 +112,7 @@ export type Label1 = string;
 /**
  * Choose one of the styles from the list
  */
-export type ButtonStyle1 = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
+export type ButtonStyle1 = "solid" | "clear" | "outline";
 /**
  * Choose a size between small, medium and large
  */
@@ -151,6 +152,7 @@ export type ButtonHref1 = string;
  * Open link in new Tab
  */
 export type OpenLinkInNewTab1 = boolean;
+export type Inverted1 = boolean;
 /**
  * Background image for the whole element
  */
@@ -234,6 +236,7 @@ export interface LinkButton {
   iconAnimation?: IconAnimation;
   href: ButtonHref;
   newTab?: OpenLinkInNewTab;
+  inverted?: Inverted;
 }
 /**
  * Icon
@@ -274,6 +277,7 @@ export interface LinkButton1 {
   iconAnimation?: IconAnimation1;
   href: ButtonHref1;
   newTab?: OpenLinkInNewTab1;
+  inverted?: Inverted1;
 }
 /**
  * Icon

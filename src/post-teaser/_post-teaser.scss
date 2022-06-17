@@ -1,11 +1,16 @@
 @use "./post-teaser-tokens";
 
-.c-post-teaser {
-  .c-teaser {
-    --c-teaser--border-width: 0 !important;
+:root,
+[ks-inverted],
+[ks-theme] {
+  .c-post-teaser {
+    .c-teaser {
+      --c-teaser--border-width: 0 !important;
 
-    &__body {
-      --g-topic--font: var(--font-display-l);
+      .c-teaser__body {
+        padding: 0;
+        --g-topic--font: var(--ks-font-display-m);
+      }
     }
   }
 }

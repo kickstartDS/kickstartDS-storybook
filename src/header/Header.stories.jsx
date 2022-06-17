@@ -1,11 +1,20 @@
 import { Header } from "./HeaderComponent";
-import { navEntries } from "./nav/navMainData";
+import { getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
+import schema from "./header.schema.dereffed.json";
+import tokens from "./header-tokens.json";
 
+const { defaultArgs: args, argTypes } = getArgsShared(schema);
 const Template = (args) => <Header {...args} />;
 
 export default {
   title: "Base/Header",
   component: Header,
+  args,
+  argTypes,
+  parameters: {
+    cssprops: tokens,
+    jsonschema: schema,
+  },
   decorators: [
     (Story) => (
       <div style={{ height: "500vh" }}>
@@ -13,25 +22,6 @@ export default {
       </div>
     ),
   ],
-  args: {
-    nav: {
-      enabled: true,
-      items: navEntries,
-    },
-    activeNavId: "about",
-    cta: {
-      label: "Get in contact",
-      href: "#",
-    },
-  },
 };
 
 export const Default = Template.bind({});
-
-// export const Light = Template.bind({});
-// Light.parameters = {
-//   backgrounds: { default: "dark" },
-// };
-// Light.args = {
-//   light: true,
-// };

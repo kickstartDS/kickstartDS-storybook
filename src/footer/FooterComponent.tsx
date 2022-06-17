@@ -1,7 +1,13 @@
+import { FunctionComponent, HTMLAttributes } from "react";
+
 import { Link } from "@kickstartds/base/lib/link";
 import { Section } from "@kickstartds/base/lib/section";
 
-export const Footer = ({ nav }) => (
+import { FooterProps } from "./FooterProps";
+
+export const Footer: FunctionComponent<
+FooterProps & HTMLAttributes<HTMLDivElement>
+> = ({ sections }) => (
   <footer className="kds-footer">
     <Section
       mode="list"
@@ -13,11 +19,11 @@ export const Footer = ({ nav }) => (
       width="wide"
     >
       <nav className="kds-footer-nav">
-        {nav.map(({ headline, items }, navKey) => (
+        {sections && sections.length > 0 && sections.map(({ headline, links }, navKey) => (
           <div key={navKey}>
             <p className="kds-footer-nav_headline">{headline}</p>
             <ul className="kds-footer-nav_list">
-              {items.map(({ label, ...props }, itemKey) => (
+              {links && links.length > 0 && links.map(({ label, ...props }, itemKey) => (
                 <li className="kds-footer-nav_list_item" key={itemKey}>
                   <Link {...props} className="kds-footer-nav_list_item_link">
                     {label}
@@ -31,7 +37,12 @@ export const Footer = ({ nav }) => (
 
       <div className="kds-footer__logo-wrap">
         <Link href="/" className="kds-footer__logo">
-          <img alt="kickstartDS Logo" src="/logo.svg" />
+          <img
+            alt="kickstartDS Logo"
+            src="/logo.svg"
+            width={284}
+            height={56}
+          />
         </Link>
       </div>
     </Section>

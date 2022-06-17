@@ -19,7 +19,7 @@
       }
     },
     {
-      "$ref": "http://frontend.ruhmesmeile.com/base/atoms/link-button.schema.json"
+      "$ref": "http://schema.kickstartds.com/base/link-button.schema.json"
     }
   ]
 }

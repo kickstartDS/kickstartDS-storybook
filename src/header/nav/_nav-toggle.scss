@@ -1,6 +1,6 @@
 @use "sass:math";
 @use "bourbon/core/bourbon";
-@use "@kickstartds/core/source/core/breakpoint";
+@use "../../breakpoint";
 // @use '../var';
 
 html.overlay-open {
@@ -14,7 +14,6 @@ button.nav-toggle {
   /* critical:start */
   display: block;
   position: relative;
-  // top: var(--spacing-s);
   right: 0;
   box-sizing: content-box;
   transition: top 0.15s;
@@ -51,24 +50,18 @@ button.nav-toggle {
     width: 30px;
     transform: scale(0.7) translate(7.5%, 7.5%);
     transition: inherit;
-    color: var(--color-primary);
-
-    .kds-header--light & {
-      color: var(--color-white);
-    }
+    color: var(--ks-color-primary);
 
     .overlay-open &,
     .overlay-open .header-is-scrolling & {
-      color: var(--color-white);
+      color: var(--ks-text-color-default-inverted);
     }
 
     .header-is-scrolling-up & {
-      color: var(--color-primary);
+      color: var(--ks-text-color-primary);
     }
 
     /* critical:end */
-
-
 
     &::before,
     &::after {
