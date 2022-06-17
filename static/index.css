@@ -1,9 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Fri, 17 Jun 2022 15:51:03 GMT
+ * Generated on Fri, 17 Jun 2022 16:09:50 GMT
  */
 :root, [ks-theme] {
-  --ks-background-color-accent-base: var(--ks-color-primary-to-bg-8-base);
+  --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
   --ks-background-color-accent-inverted-base: var(--ks-color-primary-to-bg-2-base);
   --ks-background-color-clear-base: var(--ks-color-transparent-base);
   --ks-background-color-clear-interactive-base: var(--ks-color-transparent-base);
@@ -108,7 +108,7 @@
   --ks-color-primary-to-bg-6-base: #a3c0c8;
   --ks-color-primary-to-bg-7-base: #c3d6db;
   --ks-color-primary-to-bg-8-base: #dfe9ec;
-  --ks-color-primary-to-bg-9-base: #f3f7f8;
+  --ks-color-primary-to-bg-9-base: #eceff3;
   --ks-color-primary-to-fg-1-base: #054e60;
   --ks-color-primary-to-fg-2-base: #054656;
   --ks-color-primary-to-fg-3-base: #053e4c;
@@ -2774,6 +2774,11 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 [ks-inverted] {
   --c-rich-text_headline--color: #050505 !important;
 }
+:root [ks-inverted=true],
+[ks-theme] [ks-inverted=true],
+[ks-inverted] [ks-inverted=true] {
+  --c-rich-text_headline--color: white !important;
+}
 :root .c-headline__subheadline,
 [ks-theme] .c-headline__subheadline,
 [ks-inverted] .c-headline__subheadline {
@@ -4078,7 +4083,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   --c-visual--min-height: 35vh;
   --c-visual_overlay--background: linear-gradient(90deg, var(--ks-background-color-default), transparent);
   --c-visual_overlay--background-size: cover;
-  --c-visual_headline--color: var(--ks-text-color-default);
+  --c-visual_headline--color: var(--c-rich-text_headline--color);
 }
 :root .c-visual__box,
 [ks-theme] .c-visual__box,

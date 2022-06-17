@@ -3,6 +3,10 @@
 [ks-inverted] {
   --c-rich-text_headline--color: #050505 !important;
 
+  [ks-inverted="true"] {
+    --c-rich-text_headline--color: white !important;
+  }
+
   .c-headline__subheadline {
     --c-headline_subheadline--color: var(--ks-color-primary);
     --c-headline_subheadline--font-weight: var(--ks-font-weight-semi-bold);

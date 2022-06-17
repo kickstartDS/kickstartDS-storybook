@@ -10,7 +10,7 @@
     --c-visual_overlay--background: linear-gradient(90deg, var(--ks-background-color-default), transparent);
     --c-visual_overlay--background-size: cover;
 
-    --c-visual_headline--color: var(--ks-text-color-default);
+    --c-visual_headline--color: var(--c-rich-text_headline--color);
 
     &__box {
       --c-visual_box--color: var(--c-rich-text--color);
