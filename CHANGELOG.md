@@ -1,3 +1,17 @@
+# v2.1.0 (Fri Jun 17 2022)
+
+#### 🚀 Enhancement
+
+- feature/upgrade to `kickstartDS` `2.0.0` [#74](https://github.com/kickstartDS/kickstartDS-storybook/pull/74) ([@julrich](https://github.com/julrich) [@fleven-kds](https://github.com/fleven-kds))
+- feature/header with schema [#75](https://github.com/kickstartDS/kickstartDS-storybook/pull/75) ([@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- [@fleven-kds](https://github.com/fleven-kds)
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.0.17 (Thu Jun 02 2022)
 
 
