@@ -10,7 +10,7 @@
           }
         },
         "base": {
-          "value": "0.125",
+          "value": "0.35",
           "attributes": {
             "category": "size"
           }
@@ -22,11 +22,8 @@
           "tablet": {
             "value": "1.15"
           },
-          "laptop": {
-            "value": "1.25"
-          },
           "desktop": {
-            "value": "1.35"
+            "value": "1.25"
           }
         }
       },
@@ -39,7 +36,7 @@
           }
         },
         "base": {
-          "value": "0.31250",
+          "value": "0.50",
           "attributes": {
             "category": "size"
           }
@@ -49,10 +46,7 @@
             "value": "1"
           },
           "tablet": {
-            "value": "1.25"
-          },
-          "laptop": {
-            "value": "1.35"
+            "value": "1.15"
           },
           "desktop": {
             "value": "1.35"

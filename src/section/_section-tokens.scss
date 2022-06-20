@@ -6,6 +6,7 @@
   --l-section--content-width-default: 77.5rem !important;
   --l-section--content-width-narrow: 62.5rem !important;
   --l-section--content-width-slim: 40rem;
+  --l-section_container--gutter-small: var(--ks-spacing-s);
 
   @include breakpoint.media("≥s") {
     --l-section--content-padding: var(--ks-spacing-inset-l) !important;
