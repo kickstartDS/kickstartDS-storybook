@@ -75,6 +75,11 @@
 
     &__container {
       justify-content: center;
+
+      &--gutter-small {
+        gap: var(--l-section_container--gutter-small);
+      }
+
       &--max,
       &--max {
         max-width: var(--l-section--content-width-max);
@@ -454,6 +459,9 @@
   }
   .l-section.additional-spacing {
     margin-bottom: var(--l-section--space);
+  }
+  .l-section.additional-spacing-small {
+    margin-bottom: var(--l-section--space-small);
   }
 }
 

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 17 Jun 2022 16:09:50 GMT
+ * Generated on Mon, 20 Jun 2022 13:50:20 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -189,16 +189,14 @@
   --ks-color-transparent-base: rgba(0,0,0,0);
   --ks-depth-modal: 1000;
   --ks-spacing-xxs: var(--ks-spacing-xxs-base);
-  --ks-spacing-xxs-base: 0.125rem;
+  --ks-spacing-xxs-base: 0.35rem;
   --ks-spacing-xxs-bp-factor-phone: 1;
   --ks-spacing-xxs-bp-factor-tablet: 1.15;
-  --ks-spacing-xxs-bp-factor-laptop: 1.25;
-  --ks-spacing-xxs-bp-factor-desktop: 1.35;
+  --ks-spacing-xxs-bp-factor-desktop: 1.25;
   --ks-spacing-xs: var(--ks-spacing-xs-base);
-  --ks-spacing-xs-base: 0.3125rem;
+  --ks-spacing-xs-base: 0.5rem;
   --ks-spacing-xs-bp-factor-phone: 1;
-  --ks-spacing-xs-bp-factor-tablet: 1.25;
-  --ks-spacing-xs-bp-factor-laptop: 1.35;
+  --ks-spacing-xs-bp-factor-tablet: 1.15;
   --ks-spacing-xs-bp-factor-desktop: 1.35;
   --ks-spacing-s: var(--ks-spacing-s-base);
   --ks-spacing-s-base: 0.75rem;
@@ -855,8 +853,6 @@
 }
 @media (min-width: 62em) {
   :root {
-    --ks-spacing-xxs-bp-factor: var(--ks-spacing-xxs-bp-factor-laptop);
-    --ks-spacing-xs-bp-factor: var(--ks-spacing-xs-bp-factor-laptop);
     --ks-spacing-s-bp-factor: var(--ks-spacing-s-bp-factor-laptop);
     --ks-spacing-m-bp-factor: var(--ks-spacing-m-bp-factor-laptop);
     --ks-spacing-l-bp-factor: var(--ks-spacing-l-bp-factor-laptop);

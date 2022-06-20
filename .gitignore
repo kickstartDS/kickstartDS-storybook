@@ -1,7 +1,7 @@
 .DS_Store
 static/index.css.map
 storybook-static
-storybook
+/storybook
 *.dereffed.json
 *-tokens.json
 

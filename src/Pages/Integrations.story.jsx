@@ -4,6 +4,7 @@ import {
   TextMedia,
   ContentBox,
   Section,
+  TeaserBox,
 } from "@kickstartds/base";
 import {
   Storytelling,
@@ -22,6 +23,54 @@ export default {
 const Page = () => (
   <>
     <Header {...unpack(HeaderStories.args)} />
+    <Section
+      className="additional-spacing-small"
+      pattern="3"
+      headline={{
+        content: "Various integrations with kickstartDS",
+        level: "h1",
+        styleAs: "h1",
+        spaceAfter: "large",
+        align: "center",
+      }}
+    >
+      <TeaserBox
+        topic="Backend"
+        image="img/integration/teaser/backend-teaser.svg"
+        text="kickstart DS is the foundation for your design system"
+        link={{
+          label: "Go to",
+          hidden: true,
+        }}
+      />
+      <TeaserBox
+        topic="Generators"
+        image="img/integration/teaser/generatoren-teaser.svg"
+        text="System with reusable components and tools"
+        link={{
+          label: "Go to",
+          hidden: true,
+        }}
+      />
+      <TeaserBox
+        topic="Design Tooling"
+        image="img/integration/teaser/design-tooling-teaser.svg"
+        text="Guided by clear standards, that can be assembled together"
+        link={{
+          label: "Go to",
+          hidden: true,
+        }}
+      />
+      <TeaserBox
+        topic="Derivatives"
+        image="img/integration/teaser/derivatives-teaser.svg"
+        text="Build digital product."
+        link={{
+          label: "Go to",
+          hidden: true,
+        }}
+      />
+    </Section>
     <Section
       width="default"
       spaceBefore="default"
@@ -54,6 +103,7 @@ const Page = () => (
       spaceBefore="default"
       gutter="none"
       variant="body"
+      id="integrations"
     >
       <Storytelling
         box={{
