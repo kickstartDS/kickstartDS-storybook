@@ -249,12 +249,10 @@ const Page = () => (
       />
     </Section>
     <Section
-      width="wide"
       spaceBefore="default"
-      spaceAfter="defaultz"
+      spaceAfter="default"
       background="accent"
       variant="head"
-      // pattern="1"
       headline={{
         content: "Design tooling with kickstartDS",
         level: "h2",
@@ -362,9 +360,8 @@ const Page = () => (
       spaceBefore="default"
       background="accent"
       spaceAfter="none"
-      align="center"
     >
-      <ContentBox align="center" image="/logos/logo_storybook.svg" />
+      <ContentBox className="center" image="/logos/logo_storybook.svg" />
     </Section>
 
     <Section background="accent" spaceBefore="small" width="wide">
@@ -392,7 +389,7 @@ const Page = () => (
     <Section
       width="default"
       spaceBefore="default"
-      spaceAfter="defaultz"
+      spaceAfter="default"
       ks-inverted="true"
       variant="head"
       headline={{
