@@ -40,14 +40,13 @@ button.nav-toggle {
     /* critical:start */
     position: relative;
     cursor: pointer;
-    height: var(--g-logo-height);
+    height: 31px;
     @include breakpoint.media("≥s") {
       /* critical:start */
-      height: 30px;
       transform: scale(0.9) translate(2.5%, 2.5%);
       /* critical:end */
     }
-    width: 30px;
+    width: 31px;
     transform: scale(0.7) translate(7.5%, 7.5%);
     transition: inherit;
     color: var(--ks-color-primary);

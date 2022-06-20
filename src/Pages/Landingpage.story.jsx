@@ -27,7 +27,7 @@ export default {
 
 const Page = () => (
   <>
-    <Header {...HeaderStories.args} active="sanity" />
+    <Header {...unpack(HeaderStories.args)} active="sanity" />
     <Section width="full" spaceBefore="none" spaceAfter="small">
       <Visual
         box={{
