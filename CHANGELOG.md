@@ -1,3 +1,16 @@
+# v2.1.1 (Mon Jun 20 2022)
+
+#### 🐛 Bug Fix
+
+- Feature/upgrade to 2 0 0 [#76](https://github.com/kickstartDS/kickstartDS-storybook/pull/76) ([@fleven-kds](https://github.com/fleven-kds) [@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- [@fleven-kds](https://github.com/fleven-kds)
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.0 (Fri Jun 17 2022)
 
 #### 🚀 Enhancement
