@@ -117,7 +117,7 @@
         left: -50%; // Center square
         height: 200%;
         width: 200%;
-        background-color: var(--l-section--background, white);
+        background-color: var(--ks-color-primary-inverted-to-bg-2);
         border-radius: 35%; // Smooth edges to appear like liquid
         animation: spin 3s ease-out forwards; // Set to forwards to freeze on last frame
         z-index: 1;

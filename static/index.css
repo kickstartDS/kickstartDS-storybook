@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 20 Jun 2022 13:50:20 GMT
+ * Generated on Mon, 20 Jun 2022 14:24:47 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -301,7 +301,7 @@
   --ks-font-family-copy: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --ks-font-family-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --ks-font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-  --ks-font-weight-light: 300;
+  --ks-font-weight-light: 200;
   --ks-font-weight-regular: 400;
   --ks-font-weight-semi-bold: 500;
   --ks-font-weight-bold: 700;
@@ -1683,7 +1683,11 @@
 [ks-inverted] {
   --c-count-up_icon--size: 200px;
   --c-count-up_text--font: var(--ks-font-copy-s);
-  --c-count-up_number--font: var(--ks-font-copy-xxl);
+}
+:root .c-count-up,
+[ks-theme] .c-count-up,
+[ks-inverted] .c-count-up {
+  --c-count-up_number--font: var(--ks-font-display-xxl);
   --c-count-up_number--font-weight: var(--ks-font-weight-light);
   --c-count-up_topic--color: var(--ks-text-color-primary);
 }
@@ -1791,7 +1795,7 @@
   left: -50%;
   height: 200%;
   width: 200%;
-  background-color: var(--l-section--background, white);
+  background-color: var(--ks-color-primary-inverted-to-bg-2);
   border-radius: 35%;
   animation: spin 3s ease-out forwards;
   z-index: 1;

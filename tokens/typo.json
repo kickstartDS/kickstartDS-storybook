@@ -32,7 +32,7 @@
     },
     "font-weight": {
       "light": {
-        "value": 300,
+        "value": 200,
         "token": {
           "category": "Font Weights",
           "presenter": "FontWeight"
