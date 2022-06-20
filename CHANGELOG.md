@@ -1,3 +1,15 @@
+# v2.1.2 (Mon Jun 20 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: fix count up token selector ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.1.1 (Mon Jun 20 2022)
 
 #### 🐛 Bug Fix
