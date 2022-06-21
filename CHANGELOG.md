@@ -1,3 +1,15 @@
+# v2.1.7 (Tue Jun 21 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: fix visual stories ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.1.6 (Tue Jun 21 2022)
 
 #### ⚠️ Pushed to `master`
