@@ -1,3 +1,15 @@
+# v2.1.6 (Tue Jun 21 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add `id` prop to section ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.5 (Tue Jun 21 2022)
 
 #### ⚠️ Pushed to `master`
