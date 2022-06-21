@@ -1404,6 +1404,7 @@ export interface SectionProps {
   background?: "default" | "accent" | "dark" | "dark-accent";
   pattern?: "none" | "1" | "2";
   variant?: "none" | "head" | "body" | "highlight";
+  id?: string;
   [k: string]: unknown;
 }
 export interface QuotesSlider {

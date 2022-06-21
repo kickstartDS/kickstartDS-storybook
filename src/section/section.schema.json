@@ -30,6 +30,9 @@
           "type": "string",
           "enum": ["none", "head", "body", "highlight"],
           "default": "none"
+        },
+        "id": {
+          "type": "string"
         }
       }
     }
