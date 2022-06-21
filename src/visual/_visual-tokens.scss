@@ -10,13 +10,18 @@
     --c-visual_overlay--background: linear-gradient(90deg, var(--ks-background-color-default), transparent);
     --c-visual_overlay--background-size: cover;
 
-    --c-visual_headline--color: var(--c-rich-text_headline--color);
-
     &__box {
       --c-visual_box--color: var(--c-rich-text--color);
+      --c-visual_box--background: var(--ks-color-fg-inverted-alpha-8);
 
       @media (min-width: 40em) {
         --c-visual_box--max-width: 70%;
+      }
+    }
+
+    [ks-inverted="true"] {
+      .c-visual__box {
+        --c-visual_box--background: var(--ks-background-color-primary-inverted-translucent);
       }
     }
 

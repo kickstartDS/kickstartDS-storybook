@@ -16,7 +16,7 @@
 
   [ks-inverted="true"] {
     .c-button:not(.c-button--clear) {
-      --c-button--shadow-color: var(--ks-color-primary-inverted-to-bg-2);
+      --c-button--shadow-color: var(--ks-color-fg-alpha-2);
     }
   }
 

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 21 Jun 2022 08:43:33 GMT
+ * Generated on Tue, 21 Jun 2022 14:20:20 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -1078,7 +1078,7 @@
 :root [ks-inverted=true] .c-button:not(.c-button--clear),
 [ks-theme] [ks-inverted=true] .c-button:not(.c-button--clear),
 [ks-inverted] [ks-inverted=true] .c-button:not(.c-button--clear) {
-  --c-button--shadow-color: var(--ks-color-primary-inverted-to-bg-2);
+  --c-button--shadow-color: var(--ks-color-fg-alpha-2);
 }
 :root .c-button--small,
 [ks-theme] .c-button--small,
@@ -2772,12 +2772,12 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 :root,
 [ks-theme],
 [ks-inverted] {
-  --c-rich-text_headline--color: #050505 !important;
+  --c-rich-text_headline--color: #050505;
 }
 :root [ks-inverted=true],
 [ks-theme] [ks-inverted=true],
 [ks-inverted] [ks-inverted=true] {
-  --c-rich-text_headline--color: white !important;
+  --c-rich-text_headline--color: white;
 }
 :root .c-headline__subheadline,
 [ks-theme] .c-headline__subheadline,
@@ -4122,12 +4122,12 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   --c-visual--min-height: 35vh;
   --c-visual_overlay--background: linear-gradient(90deg, var(--ks-background-color-default), transparent);
   --c-visual_overlay--background-size: cover;
-  --c-visual_headline--color: var(--c-rich-text_headline--color);
 }
 :root .c-visual__box,
 [ks-theme] .c-visual__box,
 [ks-inverted] .c-visual__box {
   --c-visual_box--color: var(--c-rich-text--color);
+  --c-visual_box--background: var(--ks-color-fg-inverted-alpha-8);
 }
 @media (min-width: 40em) {
   :root .c-visual__box,
@@ -4135,6 +4135,11 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 [ks-inverted] .c-visual__box {
     --c-visual_box--max-width: 70%;
   }
+}
+:root .c-visual [ks-inverted=true] .c-visual__box,
+[ks-theme] .c-visual [ks-inverted=true] .c-visual__box,
+[ks-inverted] .c-visual [ks-inverted=true] .c-visual__box {
+  --c-visual_box--background: var(--ks-background-color-primary-inverted-translucent);
 }
 @media (min-width: 40em) {
   :root .c-visual,
@@ -4170,9 +4175,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 [ks-inverted] .c-visual--full {
   height: 100vh;
 }
-:root .c-visual__image img,
-[ks-theme] .c-visual__image img,
-[ks-inverted] .c-visual__image img {
+:root .c-visual.contain-image .c-visual__image img,
+[ks-theme] .c-visual.contain-image .c-visual__image img,
+[ks-inverted] .c-visual.contain-image .c-visual__image img {
   object-fit: contain;
 }
 :root .c-visual__content--indent,

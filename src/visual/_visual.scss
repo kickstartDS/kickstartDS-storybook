@@ -9,9 +9,11 @@
       height: 100vh;
     }
 
-    &__image {
-      img {
-        object-fit: contain;
+    &.contain-image {
+      .c-visual__image {
+        img {
+          object-fit: contain;
+        }
       }
     }
 

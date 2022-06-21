@@ -36,7 +36,7 @@ BoxLight.args = pack({
     },
   },
   box: {
-    background: "light",
+    background: "solid",
     links: [
       {
         variant: "solid",
@@ -61,7 +61,7 @@ BoxCenter.args = pack({
     },
   },
   box: {
-    background: "light",
+    background: "solid",
     horizontal: "center",
     links: [
       {
@@ -87,13 +87,14 @@ BoxDark.args = pack({
     },
   },
   box: {
+    inverted: true,
     links: [
       {
-        variant: "solid-inverted",
+        variant: "solid",
       },
       {
         label: "Lorem Ipsum",
-        variant: "outline-inverted",
+        variant: "outline",
       },
     ],
   },
@@ -137,7 +138,8 @@ FullScreen.args = pack({
     },
   },
   box: {
-    background: "light",
+    background: "solid",
+    inverted: true,
     links: [
       {
         variant: "solid",

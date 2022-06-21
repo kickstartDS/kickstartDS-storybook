@@ -30,6 +30,7 @@ const Page = () => (
     <Header {...unpack(HeaderStories.args)} active="sanity" />
     <Section width="full" spaceBefore="none" spaceAfter="small">
       <Visual
+        className="contain-image"
         box={{
           background: "transparent",
           enabled: true,
