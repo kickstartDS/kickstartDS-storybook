@@ -1,3 +1,15 @@
+# v2.1.5 (Tue Jun 21 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: customize content nav on integrations page ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.1.4 (Mon Jun 20 2022)
 
 #### ⚠️ Pushed to `master`
