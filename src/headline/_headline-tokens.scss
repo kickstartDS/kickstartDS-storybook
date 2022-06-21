@@ -1,10 +1,10 @@
 :root,
 [ks-theme],
 [ks-inverted] {
-  --c-rich-text_headline--color: #050505;
+  --g-headline-color: #050505;
 
   [ks-inverted="true"] {
-    --c-rich-text_headline--color: white;
+    --g-headline-color: var(--ks-text-color-primary);
   }
 
   .c-headline__subheadline {

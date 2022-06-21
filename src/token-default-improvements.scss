@@ -113,8 +113,12 @@
     --c-rich-text--vertical-spacing: 1em;
   }
 
-  header.c-headline {
+  .c-headline {
     margin-bottom: 0;
+
+    .c-headline__headline {
+      color: var(--g-headline-color);
+    }
 
     h4 {
       --c-rich-text_headline--font: var(--ks-font-display-m);

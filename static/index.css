@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 21 Jun 2022 14:20:20 GMT
+ * Generated on Tue, 21 Jun 2022 14:41:38 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -1003,24 +1003,29 @@
 [ks-inverted] .c-rich-text {
   --c-rich-text--vertical-spacing: 1em;
 }
-:root header.c-headline,
-[ks-theme] header.c-headline,
-[ks-inverted] header.c-headline {
+:root .c-headline,
+[ks-theme] .c-headline,
+[ks-inverted] .c-headline {
   margin-bottom: 0;
 }
-:root header.c-headline h4,
-[ks-theme] header.c-headline h4,
-[ks-inverted] header.c-headline h4 {
+:root .c-headline .c-headline__headline,
+[ks-theme] .c-headline .c-headline__headline,
+[ks-inverted] .c-headline .c-headline__headline {
+  color: var(--g-headline-color);
+}
+:root .c-headline h4,
+[ks-theme] .c-headline h4,
+[ks-inverted] .c-headline h4 {
   --c-rich-text_headline--font: var(--ks-font-display-m);
 }
-:root header.c-headline h5,
-[ks-theme] header.c-headline h5,
-[ks-inverted] header.c-headline h5 {
+:root .c-headline h5,
+[ks-theme] .c-headline h5,
+[ks-inverted] .c-headline h5 {
   --c-rich-text_headline--font: var(--ks-font-display-s);
 }
-:root header.c-headline h6,
-[ks-theme] header.c-headline h6,
-[ks-inverted] header.c-headline h6 {
+:root .c-headline h6,
+[ks-theme] .c-headline h6,
+[ks-inverted] .c-headline h6 {
   --c-rich-text_headline--font: var(--ks-font-display-xs);
 }
 :root .c-quote__source, :root .c-quote__byline,
@@ -2772,12 +2777,12 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 :root,
 [ks-theme],
 [ks-inverted] {
-  --c-rich-text_headline--color: #050505;
+  --g-headline-color: #050505;
 }
 :root [ks-inverted=true],
 [ks-theme] [ks-inverted=true],
 [ks-inverted] [ks-inverted=true] {
-  --c-rich-text_headline--color: white;
+  --g-headline-color: var(--ks-text-color-primary);
 }
 :root .c-headline__subheadline,
 [ks-theme] .c-headline__subheadline,
