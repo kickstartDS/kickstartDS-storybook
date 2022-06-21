@@ -6,44 +6,60 @@
   --l-section--content-width-default: 77.5rem !important;
   --l-section--content-width-narrow: 62.5rem !important;
   --l-section--content-width-slim: 40rem;
-  --l-section_container--gutter-small: var(--ks-spacing-s);
-
-  @include breakpoint.media("≥s") {
-    --l-section--content-padding: var(--ks-spacing-inset-l) !important;
-  }
 
   .l-section__container {
-    --l-section_container--gutter: var(--ks-spacing-l);
+    --l-section_container--gutter-small: var(--ks-spacing-s);
+
+    &--gutter-none {
+      --l-section_container--gutter: 0;
+    }
 
     @include breakpoint.media("≥s") {
+      --l-section--content-padding: var(--ks-spacing-inset-l) !important;
+      --l-section_container--gutter: var(--ks-spacing-m);
       --l-section_col--min-width: 12rem;
 
-      .l-section--outer-width-wide & {
+      .l-section--outer-width-wide {
         --l-section_col--min-width: 16rem;
         --l-section_col--max-width: 500px;
       }
     }
 
     @include breakpoint.media("≥m") {
-      --l-section_container--gutter: var(--ks-spacing-m);
-
-      .l-section--outer-width-wide & {
+      .l-section--outer-width-wide {
         --l-section_col--min-width: 9rem;
         --l-section_col--max-width: 1fr;
       }
-    }
 
-    &--gutter-large {
-      @include breakpoint.media("≥m") {
+      &--gutter-large {
         --l-section_container--gutter: var(--ks-spacing-l);
       }
-      @include breakpoint.media("≥l") {
+    }
+
+    @include breakpoint.media("≥l") {
+      &--gutter-large {
         --l-section_container--gutter: var(--ks-spacing-xl);
         --l-section_col--min-width: 20rem;
       }
     }
-    &--gutter-none {
-      --l-section_container--gutter: 0;
+  }
+
+  .l-section.four-grid {
+    .l-section__container {
+      --l-section_col--min-width: 12rem;
+      --l-section_container--gutter: var(--ks-spacing-s);
+
+      @include breakpoint.media("≥s") {
+        --l-section_col--min-width: 8rem;
+      }
+
+      @include breakpoint.media("≥m") {
+        --l-section_col--min-width: 12rem;
+      }
+
+      @include breakpoint.media("≥xl") {
+        --l-section_container--gutter: var(--ks-spacing-m);
+      }
     }
   }
 }

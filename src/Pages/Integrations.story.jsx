@@ -24,7 +24,7 @@ const Page = () => (
   <>
     <Header {...unpack(HeaderStories.args)} />
     <Section
-      className="additional-spacing-small"
+      className="additional-spacing-small four-grid"
       pattern="3"
       headline={{
         content: "Various integrations with kickstartDS",
@@ -37,6 +37,7 @@ const Page = () => (
       <TeaserBox
         topic="Backend"
         image="img/integration/teaser/backend-teaser.svg"
+        ratio="4:3"
         text="kickstart DS is the foundation for your design system"
         link={{
           label: "Go to",
@@ -46,6 +47,7 @@ const Page = () => (
       <TeaserBox
         topic="Generators"
         image="img/integration/teaser/generatoren-teaser.svg"
+        ratio="4:3"
         text="System with reusable components and tools"
         link={{
           label: "Go to",
@@ -55,6 +57,7 @@ const Page = () => (
       <TeaserBox
         topic="Design Tooling"
         image="img/integration/teaser/design-tooling-teaser.svg"
+        ratio="4:3"
         text="Guided by clear standards, that can be assembled together"
         link={{
           label: "Go to",
@@ -64,6 +67,7 @@ const Page = () => (
       <TeaserBox
         topic="Derivatives"
         image="img/integration/teaser/derivatives-teaser.svg"
+        ratio="4:3"
         text="Build digital product."
         link={{
           label: "Go to",

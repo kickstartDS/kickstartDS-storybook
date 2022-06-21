@@ -69,11 +69,13 @@
     background-color: var(--c-nav-main_background-color);
     backface-visibility: hidden;
     -webkit-overflow-scrolling: touch;
-    box-shadow: 100px 0px 0px 1000px #00000000, 20px 0px 30px #00000000;
+    // box-shadow: 100px 0px 0px 1000px #00000000, 20px 0px 30px #00000000;
+    box-shadow: 20px 0px 30px #00000000;
 
     .overlay-open & {
       left: 0;
-      box-shadow: 100px 0px 0px 1000px #00000066, 20px 0px 30px #00000021;
+      // box-shadow: 100px 0px 0px 1000px #00000066, 20px 0px 30px #00000021;
+      box-shadow: 20px 0px 30px #00000021;
     }
 
     > .kds-logo {
