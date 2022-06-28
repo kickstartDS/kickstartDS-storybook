@@ -1,3 +1,15 @@
+# v2.1.9 (Tue Jun 28 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: style improvements ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.1.8 (Tue Jun 21 2022)
 
 #### ⚠️ Pushed to `master`
