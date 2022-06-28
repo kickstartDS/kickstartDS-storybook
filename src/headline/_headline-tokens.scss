@@ -2,6 +2,7 @@
 [ks-theme],
 [ks-inverted] {
   --g-headline-color: #050505;
+  --c-rich-text_headline--color: var(--g-headline-color);
 
   [ks-inverted="true"] {
     --g-headline-color: var(--ks-text-color-primary);

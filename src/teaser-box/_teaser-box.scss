@@ -16,6 +16,10 @@
     --c-rich-text--font: var(--ks-font-copy-xs);
     --c-teaser--padding: var(--ks-spacing-inset-xs);
 
+    article & {
+      --c-rich-text--font: var(--ks-font-copy-s);
+    }
+
     .c-teaser__text > * + * {
       --c-teaser_text--spacing: var(--ks-spacing-xxs);
     }

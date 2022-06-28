@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 21 Jun 2022 14:41:38 GMT
+ * Generated on Tue, 28 Jun 2022 06:48:49 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -2778,6 +2778,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 [ks-theme],
 [ks-inverted] {
   --g-headline-color: #050505;
+  --c-rich-text_headline--color: var(--g-headline-color);
 }
 :root [ks-inverted=true],
 [ks-theme] [ks-inverted=true],
@@ -3167,6 +3168,21 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   color: var(--c-quote_source--color);
 }
 
+:root .c-rich-text h1, :root .c-rich-text h2, :root .c-rich-text h3, :root .c-rich-text h4, :root .c-rich-text h5, :root .c-rich-text h6,
+[ks-theme] .c-rich-text h1,
+[ks-theme] .c-rich-text h2,
+[ks-theme] .c-rich-text h3,
+[ks-theme] .c-rich-text h4,
+[ks-theme] .c-rich-text h5,
+[ks-theme] .c-rich-text h6,
+[ks-inverted] .c-rich-text h1,
+[ks-inverted] .c-rich-text h2,
+[ks-inverted] .c-rich-text h3,
+[ks-inverted] .c-rich-text h4,
+[ks-inverted] .c-rich-text h5,
+[ks-inverted] .c-rich-text h6 {
+  --c-rich-text_headline--color: var(--g-headline-color);
+}
 :root .c-rich-text blockquote p,
 [ks-theme] .c-rich-text blockquote p,
 [ks-inverted] .c-rich-text blockquote p {
@@ -3983,8 +3999,8 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 [ks-theme] .c-tag-label--s,
 [ks-inverted] .c-tag-label--s {
   --c-tag-label--font: var(--ks-font-ui-xs);
-  --c-tag-label--horizontal-padding: var(--ks-spacing-inset-xs);
-  --c-tag-label--vertical-padding: var(--ks-spacing-inset-xs);
+  --c-tag-label--horizontal-padding: var(--ks-spacing-xxs);
+  --c-tag-label--vertical-padding: var(--ks-spacing-xxs);
 }
 
 .tag-label-container {
@@ -4037,6 +4053,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   --g-topic--font: var(--ks-font-copy-xs);
   --c-rich-text--font: var(--ks-font-copy-xs);
   --c-teaser--padding: var(--ks-spacing-inset-xs);
+}
+article .c-teaser .c-teaser__body {
+  --c-rich-text--font: var(--ks-font-copy-s);
 }
 .c-teaser .c-teaser__body .c-teaser__text > * + * {
   --c-teaser_text--spacing: var(--ks-spacing-xxs);
@@ -4113,7 +4132,11 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 :root,
 [ks-inverted],
 [ks-theme] {
-  --g-topic--color: var(--c-rich-text_headline--color);
+  --g-topic--color: var(--g-headline-color);
+}
+
+[ks-inverted=true] {
+  --g-topic--color: var(--g-headline-color);
 }
 
 :root .l-container--visual[min-width~="1200"] .c-visual__box,

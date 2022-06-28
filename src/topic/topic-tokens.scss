@@ -1,5 +1,9 @@
 :root,
 [ks-inverted],
 [ks-theme] {
-  --g-topic--color: var(--c-rich-text_headline--color);
+  --g-topic--color: var(--g-headline-color);
+}
+
+[ks-inverted="true"] {
+  --g-topic--color: var(--g-headline-color);
 }

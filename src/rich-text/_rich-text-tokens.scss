@@ -1,8 +1,14 @@
 :root,
 [ks-theme],
 [ks-inverted] {
-  .c-rich-text blockquote p {
-    --c-rich-text_blockquote--font: var(--ks-font-copy-xl);
-    --c-rich-text_blockquote--color: var(--ks-color-primary-to-bg-3);
+  .c-rich-text {
+    h1, h2, h3, h4, h5, h6 {
+      --c-rich-text_headline--color: var(--g-headline-color);
+    }
+    
+    blockquote p {
+      --c-rich-text_blockquote--font: var(--ks-font-copy-xl);
+      --c-rich-text_blockquote--color: var(--ks-color-primary-to-bg-3);
+    }
   }
 }
