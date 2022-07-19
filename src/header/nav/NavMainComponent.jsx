@@ -25,13 +25,13 @@ export const NavMain = ({ activeEntry, navEntries = [], cta, light }) => (
         ))}
         {cta && (
           <LinkButton
-            className="nav-main--contact-button"
+            className="nav-main--button"
             size="small"
             icon={{
-              icon: "contact",
+              icon: "chevron-right",
             }}
             {...cta}
-            variant={light?"outline-inverted":"outline"}
+            variant="outline"
           />
         )}
       </ul>

@@ -19,7 +19,7 @@ export default {
 export const Default = Template.bind({});
 Default.args = pack({
   author: {
-    headline: "Published by",
+    // headline: "Published by",
     image: {
       src: "/img/blog/web_profile_images.png",
       width: "250",
@@ -56,7 +56,7 @@ Default.args = pack({
   shareBar: {
     headline: {
       content: "Share this article",
-      level: "h3",
+      level: "p",
     },
     links: [
       {

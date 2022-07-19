@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 28 Jun 2022 06:48:49 GMT
+ * Generated on Tue, 19 Jul 2022 10:50:58 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -2581,14 +2581,14 @@ header[data-component="kds.header"] {
   .nav-main ul.nav-main__list {
     padding-top: calc(var(--g-header-spacing-v) - var(--ks-spacing-s));
   }
-  .nav-main ul.nav-main__list .nav-main--contact-button {
+  .nav-main ul.nav-main__list .nav-main--button {
     margin-left: var(--g-header-spacing-h);
     margin-top: var(--g-header-spacing-v);
   }
-  .nav-main ul.nav-main__list .nav-main--contact-button .c-button.c-button--small {
-    font-size: var(--ks-font-size-ui-s);
+  .nav-main ul.nav-main__list .nav-main--button .c-button {
+    --c-button--font: var(--ks-font-size-ui-s);
   }
-  .nav-main ul.nav-main__list .nav-main--contact-button .c-button__content {
+  .nav-main ul.nav-main__list .nav-main--button .c-button .c-button__content {
     --c-button--padding: 0.4rem 1rem;
   }
 }
@@ -2610,6 +2610,12 @@ header[data-component="kds.header"] {
     align-items: center;
     gap: var(--ks-spacing-m);
     /* critical:end */
+  }
+  .nav-main__list .nav-main--button .c-button {
+    --c-button--font: var(--ks-font-size-ui-s);
+  }
+  .nav-main__list .nav-main--button .c-button span {
+    font-size: 98%;
   }
   .nav-main__item {
     /* critical:start */
@@ -3006,6 +3012,10 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
     top: 0;
     padding-top: calc(var(--tag-label-height) + var(--ks-spacing-s));
   }
+  .c-post-aside .c-headline p {
+    font: var(--ks-font-copy-s);
+    font-weight: var(--c-headline--font-weight);
+  }
   .c-post-aside .c-headline__headline {
     font: var(--ks-font-copy-m);
     font-weight: var(--c-headline--font-weight);
@@ -3034,7 +3044,6 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   display: block;
 }
 .c-post-aside__author .c-contact__body .c-headline__headline {
-  color: var(--c-rich-text--color);
   font: var(--ks-font-copy-s);
   font-weight: var(--c-headline--font-weight);
 }

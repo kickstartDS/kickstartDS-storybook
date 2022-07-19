@@ -22,9 +22,15 @@
     top: 0;
     padding-top: calc(var(--tag-label-height) + var(--ks-spacing-s));
 
-    .c-headline__headline {
-      font: var(--ks-font-copy-m);
-      font-weight: var(--c-headline--font-weight);
+    .c-headline {
+      p {
+        font: var(--ks-font-copy-s);
+        font-weight: var(--c-headline--font-weight);
+      }
+      &__headline {
+        font: var(--ks-font-copy-m);
+        font-weight: var(--c-headline--font-weight);
+      }
     }
   }
 
@@ -56,7 +62,6 @@
           display: block;
 
           &__headline {
-            color: var(--c-rich-text--color);
             font: var(--ks-font-copy-s);
             font-weight: var(--c-headline--font-weight);
           }

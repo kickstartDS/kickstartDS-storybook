@@ -92,16 +92,15 @@
     ul.nav-main__list {
       padding-top: calc(var(--g-header-spacing-v) - var(--ks-spacing-s));
 
-      .nav-main--contact-button {
+      .nav-main--button {
         margin-left: var(--g-header-spacing-h);
         margin-top: var(--g-header-spacing-v);
 
-        .c-button.c-button--small {
-          font-size: var(--ks-font-size-ui-s);
-        }
-
-        .c-button__content {
-          --c-button--padding: 0.4rem 1rem;
+        .c-button {
+          --c-button--font: var(--ks-font-size-ui-s);
+          .c-button__content {
+            --c-button--padding: 0.4rem 1rem;
+          }
         }
       }
     }
@@ -124,6 +123,15 @@
       flex-wrap: nowrap;
       align-items: center;
       gap: var(--ks-spacing-m);
+
+      .nav-main--button {
+        .c-button {
+          --c-button--font: var(--ks-font-size-ui-s);
+          span {
+            font-size: 98%;
+          }
+        }
+      }
       /* critical:end */
     }
 

@@ -40,7 +40,7 @@ const Page = () => (
       }}
     >
       <Storytelling
-        backgroundColor="#eceff3"
+        backgroundColor="var(--ks-background-color-accent)"
         image={{
           hAlign: "left",
           order: {
