@@ -21,6 +21,8 @@ const Recipe = () => (
           },
         }}
         box={{
+          inverted: "true",
+          textColor: "#fff",
           enabled: true,
           headline: {
             content: "Hic maxime sed eos non. Consequatur ut qui amet.",
@@ -30,7 +32,7 @@ const Recipe = () => (
           text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
           horizontal: "right",
           vertical: "center",
-          background: "transparent-dark",
+          background: "transparent",
           links: [{ label: "" }],
         }}
       />

@@ -85,7 +85,6 @@ const Page = () => (
           "The foundation to scale your design system across all your platforms and website",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "small",
       }}
       className="l-section--outer-width-wide additional-spacing"
       variant="highlight"
@@ -200,7 +199,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           "... a holistic view of components; unifying content creators, developers, designers and stakeholders under one roof",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "small",
       }}
       spaceAfter="default"
       spaceBefore="default"
@@ -251,7 +249,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           },
           headline: {
             content: "Lorem Ipsum dolor",
-            spaceAfter: "small",
           },
           text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
@@ -270,7 +267,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           },
           headline: {
             content: "Lorem Ipsum dolor",
-            spaceAfter: "small",
           },
           text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
@@ -289,7 +285,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           },
           headline: {
             content: "Lorem Ipsum dolor",
-            spaceAfter: "small",
           },
           text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
         }}
@@ -309,7 +304,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         styleAs: "h2",
         align: "left",
         pageHeader: false,
-        spaceAfter: "small",
       }}
       mode="list"
       className="l-section--outer-width-wide" /* Background Weite */
@@ -356,7 +350,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           "kickstartDS comes accessibility baked in and provides support",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "small",
       }}
       pattern="2"
       spaceAfter="default"
@@ -389,7 +382,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           "kickstartDS comes accessibility baked in and provides support",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "small",
       }}
       pattern="2"
       spaceAfter="default"
@@ -422,7 +414,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         content: "What kickstartDS can do for you?",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "small",
       }}
       className="l-section--outer-width-wide"
       variant="highlight"
@@ -453,7 +444,6 @@ After working in a large tech corporation for a long time I very well know today
         subheadline:
           "We would love to hear from you! Every bit and piece of feedback is welcome as we want to learn from you, get to know you better, to evolve kickstartDS to meet your needs.",
         align: "center",
-        spaceAfter: "small",
       }}
       width="wide"
     >

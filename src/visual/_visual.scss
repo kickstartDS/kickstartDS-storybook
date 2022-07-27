@@ -9,6 +9,10 @@
       height: 100vh;
     }
 
+    &__text {
+      margin: 0;
+    }
+
     &.contain-image {
       .c-visual__image {
         img {

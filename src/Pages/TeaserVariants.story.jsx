@@ -150,7 +150,7 @@ const Page = () => (
           label: "Mehr erfahren",
           newTab: false,
           size: "medium",
-          variant: "solid-inverted",
+          variant: "solid",
         }}
       />
       <TeaserBox
@@ -165,7 +165,7 @@ const Page = () => (
           label: "Mehr erfahren",
           newTab: false,
           size: "medium",
-          variant: "solid-inverted",
+          variant: "solid",
         }}
       />
       <TeaserBox
@@ -180,7 +180,7 @@ const Page = () => (
           label: "Mehr erfahren",
           newTab: false,
           size: "medium",
-          variant: "solid-inverted",
+          variant: "solid",
         }}
       />
     </Section>
@@ -211,7 +211,7 @@ const Page = () => (
           label: "Mehr erfahren",
           newTab: false,
           size: "medium",
-          variant: "solid-inverted",
+          variant: "solid",
         }}
       />
       <TeaserBox
@@ -226,7 +226,7 @@ const Page = () => (
           label: "Mehr erfahren",
           newTab: false,
           size: "medium",
-          variant: "solid-inverted",
+          variant: "solid",
         }}
       />
       <TeaserBox
@@ -241,7 +241,7 @@ const Page = () => (
           label: "Mehr erfahren",
           newTab: false,
           size: "medium",
-          variant: "solid-inverted",
+          variant: "solid",
         }}
       />
     </Section>
@@ -327,7 +327,7 @@ const Page = () => (
           label: "Mehr erfahren",
           newTab: false,
           size: "medium",
-          variant: "solid-inverted",
+          variant: "solid",
         }}
       />
       <TeaserBox
@@ -342,7 +342,7 @@ const Page = () => (
           label: "Mehr erfahren",
           newTab: false,
           size: "medium",
-          variant: "solid-inverted",
+          variant: "solid",
         }}
       />
       <TeaserBox
@@ -357,7 +357,7 @@ const Page = () => (
           label: "Mehr erfahren",
           newTab: false,
           size: "medium",
-          variant: "solid-inverted",
+          variant: "solid",
         }}
       />
     </Section>

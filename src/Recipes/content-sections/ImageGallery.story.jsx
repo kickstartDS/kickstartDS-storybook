@@ -13,7 +13,6 @@ const Recipe = () => (
         styleAs: "h1",
         content: "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.",
         align: "left",
-        spaceAfter: "small",
       }}
     >
 

@@ -29,7 +29,6 @@ export const Glossary: FunctionComponent<
       spaceAfter="none"
       headline={{
         align: "left",
-        spaceAfter: "small",
         content: term,
         level: "h1",
       }}
@@ -99,7 +98,6 @@ export const Glossary: FunctionComponent<
         headline={{
           level: "h3",
           align: "left",
-          spaceAfter: "small",
           content: "Take a closer look 🧐",
         }}
       >
@@ -132,7 +130,6 @@ export const Glossary: FunctionComponent<
       headline={{
         content: "Read more, or discuss this decision with us on StackShare.io",
         align: "center",
-        spaceAfter: "small",
       }}
     >
       <div>
@@ -157,7 +154,6 @@ export const Glossary: FunctionComponent<
           content: "Related",
           level: "h3",
           align: "left",
-          spaceAfter: "small",
         }}
         variant="head"
         className="two-col"

@@ -11,7 +11,7 @@
     --l-section_container--gutter-small: var(--ks-spacing-s);
 
     &--gutter-none {
-      --l-section_container--gutter: 0;
+      --l-section_container--gutter: 0 !important;
     }
 
     @include breakpoint.media("≥s") {

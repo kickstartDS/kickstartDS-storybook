@@ -62,7 +62,6 @@ export const Welcome = () => (
         content: "Getting started with ...",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "small",
       }}
       className="col-four"
       mode="tile"
@@ -164,7 +163,6 @@ export const Welcome = () => (
         content: "Frontend first framework",
         level: "h2",
         pageHeader: false,
-        spaceAfter: "small",
         subheadline:
           "Proven content components to serve your frontend needs. It works for either explicit HTML integration or direct usage in React (for the start) and comes with built-in styleguide and documentation.",
       }}

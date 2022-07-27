@@ -9,6 +9,7 @@ const Recipe = () => (
   >
     <Storytelling
       backgroundColor="#000000"
+      ks-inverted="true"
       backgroundImage="./"
       box={{
         headline: {

@@ -57,6 +57,7 @@ Default.args = pack({
     headline: {
       content: "Share this article",
       level: "p",
+      spaceAfter: "none",
     },
     links: [
       {

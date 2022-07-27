@@ -86,7 +86,6 @@ const Page = () => (
         level: "h2",
         styleAs: "h1",
         align: "center",
-        spaceAfter: "small",
       }}
     >
       <TextMedia
@@ -173,7 +172,6 @@ const Page = () => (
         level: "h2",
         styleAs: "h1",
         align: "center",
-        spaceAfter: "small",
       }}
     >
       <TextMedia
@@ -262,7 +260,6 @@ const Page = () => (
         level: "h2",
         styleAs: "h1",
         align: "center",
-        spaceAfter: "small",
       }}
     >
       <TextMedia
@@ -358,7 +355,6 @@ const Page = () => (
       headline={{
         content: "Integration with",
         align: "center",
-        spaceAfter: "small",
       }}
       variant="body"
       spaceBefore="default"

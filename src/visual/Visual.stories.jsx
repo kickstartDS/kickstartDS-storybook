@@ -37,6 +37,9 @@ BoxLight.args = pack({
   },
   box: {
     background: "solid",
+    headline: {
+      spaceAfter: "small",
+    },
     links: [
       {
         variant: "solid",
@@ -63,6 +66,9 @@ BoxCenter.args = pack({
   box: {
     background: "solid",
     horizontal: "center",
+    headline: {
+      spaceAfter: "small",
+    },
     links: [
       {
         variant: "solid",
@@ -87,6 +93,9 @@ BoxDark.args = pack({
     },
   },
   box: {
+    headline: {
+      spaceAfter: "small",
+    },
     inverted: true,
     links: [
       {
@@ -112,6 +121,9 @@ BoxTransparent.args = pack({
     },
   },
   box: {
+    headline: {
+      spaceAfter: "small",
+    },
     background: "transparent",
     links: [
       {
@@ -138,6 +150,9 @@ FullScreen.args = pack({
     },
   },
   box: {
+    headline: {
+      spaceAfter: "small",
+    },
     background: "solid",
     inverted: true,
     links: [
@@ -165,6 +180,9 @@ Video.args = pack({
     },
   },
   box: {
+    headline: {
+      spaceAfter: "small",
+    },
     background: "light",
     links: [
       {
@@ -196,6 +214,7 @@ Overlay.args = pack({
       content: "Hic maxime sed eos non consequatur ut qui.",
       level: "h1",
       styleAs: "h1",
+      spaceAfter: "small",
     },
     horizontal: "left",
     vertical: "center",
@@ -226,6 +245,9 @@ SkipButton.args = pack({
     },
   },
   box: {
+    headline: {
+      spaceAfter: "small",
+    },
     background: "light",
     links: [
       {
@@ -252,6 +274,9 @@ InboxMobile.args = pack({
     },
   },
   box: {
+    headline: {
+      spaceAfter: "small",
+    },
     background: "light",
     links: [
       {

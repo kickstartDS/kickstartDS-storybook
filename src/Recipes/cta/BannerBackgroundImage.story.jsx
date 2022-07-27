@@ -4,6 +4,7 @@ const Recipe = () => (
   <Storytelling
     backgroundColor="#06566A"
     backgroundImage="img/recipes/graphics--bg.svg"
+    ks-inverted="true"
     box={{
       hAlign: "left",
       headline: {
@@ -17,7 +18,7 @@ const Recipe = () => (
       link: {
         label: "Get in touch",
         href: "#",
-        variant: "solid-inverted",
+        variant: "solid",
       },
     }}
   />

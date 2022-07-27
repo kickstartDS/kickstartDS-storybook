@@ -200,7 +200,7 @@ BackgroundImage.args = pack({
       {
         label: "Request a guided demo",
         href: "#",
-        variant: "solid-inverted",
+        variant: "solid",
       }
     ],
   },

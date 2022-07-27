@@ -41,7 +41,7 @@ export const DarkStyle = Template.bind({});
 DarkStyle.args = pack({
   ...LinkedWithoutButton.args,
   link: {
-    variant: "outline-inverted",
+    variant: "outline",
     label: "learn more",
     hidden: false,
     iconAfter: true,
@@ -59,7 +59,7 @@ ImageSpacing.args = pack({
   image: "img/blog/storybook-dark.svg",
   darkStyle: true,
   link: {
-    variant: "clear-inverted",
+    variant: "clear",
     label: "learn more",
     hidden: false,
     iconAfter: true,

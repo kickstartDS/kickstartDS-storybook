@@ -20,7 +20,7 @@ const Headline: FunctionComponent<
   align = "left",
   pageHeader,
   subheadline,
-  spaceAfter = "none",
+  spaceAfter = "small",
   renderContent = defaultRenderFn,
   renderSubheadline = defaultRenderFn,
   className,
@@ -29,35 +29,45 @@ const Headline: FunctionComponent<
 }) => {
   const TagName = level;
   return (
-    <header
-      className={classnames(
-        "c-headline",
-        align && `c-headline--align-${align}`,
-        spaceAfter && `c-headline--space-after-${spaceAfter}`,
-        { "c-headline--page-header": pageHeader },
-        className
+    <>
+      {content || subheadline ? (
+        <>
+          <header
+            className={classnames(
+              "c-headline",
+              align && `c-headline--align-${align}`,
+              spaceAfter && `c-headline--space-after-${spaceAfter}`,
+              { "c-headline--page-header": pageHeader },
+              className
+            )}
+            {...props}
+          >
+            {subheadline && switchOrder && (
+              <p className="c-headline__subheadline">
+                {renderSubheadline(subheadline)}
+              </p>
+            )}
+            <TagName
+              className={classnames(
+                "c-headline__headline",
+                styleAs !== "none" &&
+                  styleAs !== level &&
+                  `c-headline__${styleAs}`
+              )}
+            >
+              {renderContent(content)}
+            </TagName>
+            {subheadline && !switchOrder && (
+              <p className="c-headline__subheadline">
+                {renderSubheadline(subheadline)}
+              </p>
+            )}
+          </header>
+        </>
+      ) : (
+        ""
       )}
-      {...props}
-    >
-      {subheadline && switchOrder && (
-        <p className="c-headline__subheadline">
-          {renderSubheadline(subheadline)}
-        </p>
-      )}
-      <TagName
-        className={classnames(
-          "c-headline__headline",
-          styleAs !== "none" && styleAs !== level && `c-headline__${styleAs}`
-        )}
-      >
-        {renderContent(content)}
-      </TagName>
-      {subheadline && !switchOrder && (
-        <p className="c-headline__subheadline">
-          {renderSubheadline(subheadline)}
-        </p>
-      )}
-    </header>
+    </>
   );
 };
 
