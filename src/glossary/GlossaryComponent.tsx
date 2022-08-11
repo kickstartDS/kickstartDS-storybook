@@ -7,7 +7,7 @@ import { ContentBox } from "@kickstartds/base/lib/content-box";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
 import { GlossaryProps } from "./GlossaryProps";
-import { LinkButton } from "../link-button/LinkButtonComponent";
+import { Button } from "../button/ButtonComponent";
 
 export const Glossary: FunctionComponent<
   GlossaryProps & HTMLAttributes<HTMLDivElement>
@@ -133,7 +133,7 @@ export const Glossary: FunctionComponent<
       }}
     >
       <div>
-        <LinkButton
+        <Button
           label={"Go to StackShare.io"}
           variant="solid"
           size={"medium"}

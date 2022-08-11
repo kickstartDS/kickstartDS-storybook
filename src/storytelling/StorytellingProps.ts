@@ -13,10 +13,15 @@ export type Label = string;
  * Choose one of the styles from the list
  */
 export type ButtonStyle = "solid" | "clear" | "outline";
+export type Inverted = boolean;
 /**
  * Choose a size between small, medium and large
  */
 export type ButtonSize = "small" | "medium" | "large";
+/**
+ * Link used for button
+ */
+export type ButtonHref = string;
 /**
  * Add additional css classes that should be applied to the button
  */
@@ -45,14 +50,25 @@ export type FillAnimation = boolean;
  */
 export type IconAnimation = boolean;
 /**
- * Link used for button
+ * Select the type attribute for the button
  */
-export type ButtonHref = string;
+export type TypeAttribute = "button" | "submit" | "reset";
+/**
+ * Define a value attribute for the button
+ */
+export type ValueAttribute = string;
+/**
+ * Define a name attribute for the button
+ */
+export type NameAttribute = string;
+/**
+ * Set the disabled attribute for the button
+ */
+export type DisabledAttribute = boolean;
 /**
  * Open link in new Tab
  */
 export type OpenLinkInNewTab = boolean;
-export type Inverted = boolean;
 /**
  * Select the headline level to use, or p alternatively
  */
@@ -113,10 +129,15 @@ export type Label1 = string;
  * Choose one of the styles from the list
  */
 export type ButtonStyle1 = "solid" | "clear" | "outline";
+export type Inverted1 = boolean;
 /**
  * Choose a size between small, medium and large
  */
 export type ButtonSize1 = "small" | "medium" | "large";
+/**
+ * Link used for button
+ */
+export type ButtonHref1 = string;
 /**
  * Add additional css classes that should be applied to the button
  */
@@ -145,14 +166,25 @@ export type FillAnimation1 = boolean;
  */
 export type IconAnimation1 = boolean;
 /**
- * Link used for button
+ * Select the type attribute for the button
  */
-export type ButtonHref1 = string;
+export type TypeAttribute1 = "button" | "submit" | "reset";
+/**
+ * Define a value attribute for the button
+ */
+export type ValueAttribute1 = string;
+/**
+ * Define a name attribute for the button
+ */
+export type NameAttribute1 = string;
+/**
+ * Set the disabled attribute for the button
+ */
+export type DisabledAttribute1 = boolean;
 /**
  * Open link in new Tab
  */
 export type OpenLinkInNewTab1 = boolean;
-export type Inverted1 = boolean;
 /**
  * Background image for the whole element
  */
@@ -193,6 +225,7 @@ export type DesktopImageAfterText = boolean;
  * Additional css classes attached to the wrapping element
  */
 export type Class = string;
+export type Inverted2 = boolean;
 
 /**
  * Component to present rich combinations of text and media, best used sequentially
@@ -204,29 +237,32 @@ export interface StorytellingProps {
   full?: FullSizeImage;
   image?: Image;
   className?: Class;
+  inverted?: Inverted2;
   [k: string]: unknown;
 }
 /**
  * Text content to display
  */
 export interface TextBox {
-  links?: LinkButton[];
+  links?: Button[];
   headline?: Headline;
   text?: Text1;
   textAlign?: TextAlignment;
   textColor?: TextColor;
   vAlign?: BoxVerticalAlignment;
   hAlign?: BoxHorizontalAlignment;
-  link?: LinkButton1;
+  link?: Button1;
   [k: string]: unknown;
 }
 /**
- * link-button
+ * Component to display links and call-to-actions
  */
-export interface LinkButton {
+export interface Button {
   label: Label;
   variant: ButtonStyle;
+  inverted?: Inverted;
   size: ButtonSize;
+  href?: ButtonHref;
   className?: AdditionalClasses;
   icon?: Icon;
   iconBefore?: IconBeforeButton;
@@ -234,9 +270,11 @@ export interface LinkButton {
   dataComponent?: DataComponentAttribute;
   fillAnimation?: FillAnimation;
   iconAnimation?: IconAnimation;
-  href: ButtonHref;
+  type?: TypeAttribute;
+  value?: ValueAttribute;
+  name?: NameAttribute;
+  disabled?: DisabledAttribute;
   newTab?: OpenLinkInNewTab;
-  inverted?: Inverted;
 }
 /**
  * Icon
@@ -262,12 +300,14 @@ export interface Headline {
   [k: string]: unknown;
 }
 /**
- * link-button
+ * Component to display links and call-to-actions
  */
-export interface LinkButton1 {
+export interface Button1 {
   label: Label1;
   variant: ButtonStyle1;
+  inverted?: Inverted1;
   size: ButtonSize1;
+  href?: ButtonHref1;
   className?: AdditionalClasses2;
   icon?: Icon1;
   iconBefore?: IconBeforeButton1;
@@ -275,9 +315,11 @@ export interface LinkButton1 {
   dataComponent?: DataComponentAttribute1;
   fillAnimation?: FillAnimation1;
   iconAnimation?: IconAnimation1;
-  href: ButtonHref1;
+  type?: TypeAttribute1;
+  value?: ValueAttribute1;
+  name?: NameAttribute1;
+  disabled?: DisabledAttribute1;
   newTab?: OpenLinkInNewTab1;
-  inverted?: Inverted1;
 }
 /**
  * Icon

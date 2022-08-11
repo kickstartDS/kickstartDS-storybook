@@ -1,7 +1,7 @@
 import classnames from "classnames";
 import { NavToggle } from "./NavToggleComponent";
 import { Link } from "@kickstartds/base/lib/link";
-import { LinkButton } from "@kickstartds/base/lib/link-button";
+import { Button } from "@kickstartds/base/lib/button";
 import { Logo } from "../../logo/LogoComponent";
 
 export const NavMain = ({ activeEntry, navEntries = [], cta, light }) => (
@@ -24,7 +24,7 @@ export const NavMain = ({ activeEntry, navEntries = [], cta, light }) => (
           </li>
         ))}
         {cta && (
-          <LinkButton
+          <Button
             className="nav-main--button"
             size="small"
             icon={{

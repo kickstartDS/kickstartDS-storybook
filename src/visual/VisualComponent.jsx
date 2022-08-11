@@ -1,16 +1,16 @@
-import { LinkButtonContext } from "@kickstartds/base/lib/link-button";
+import { ButtonContext } from "@kickstartds/base/lib/button";
 import { VisualContext } from "@kickstartds/content/lib/visual";
 import { useContext } from "react";
 
 export const VisualProvider = ({ children }) => {
-  const LinkButton = useContext(LinkButtonContext);
+  const Button = useContext(ButtonContext);
   const Visual = useContext(VisualContext);
 
   const ButtonGroup = ({ buttons = [] }) =>
     buttons.length ? (
       <>
         {buttons.map((button, i) =>
-          button.label ? <LinkButton {...button} key={i} /> : ""
+          button.label ? <Button {...button} key={i} /> : ""
         )}
       </>
     ) : null;
@@ -20,9 +20,9 @@ export const VisualProvider = ({ children }) => {
 
     if (links?.length) {
       return (
-        <LinkButtonContext.Provider value={ButtonGroup}>
+        <ButtonContext.Provider value={ButtonGroup}>
           <Visual box={{ ...boxRest, link: { buttons: links, enabled: true } }} {...props} />
-        </LinkButtonContext.Provider>
+        </ButtonContext.Provider>
       );
     }
     return <Visual box={{ ...boxRest, link }} {...props} />;

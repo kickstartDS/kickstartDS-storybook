@@ -6,7 +6,6 @@ import {
 } from "@kickstartds/base";
 
 import { Button } from "@kickstartds/base/lib/button";
-import { LinkButton } from "@kickstartds/base/lib/link-button";
 import { Visual } from "@kickstartds/content/lib/visual";
 
 export const Welcome = () => (
@@ -200,7 +199,7 @@ export const Welcome = () => (
         align="center"
       >
 
-        <LinkButton
+        <Button
           className="no-stretch"
           href="https://www.kickstartds.com"
           label="... or learn more on our website"

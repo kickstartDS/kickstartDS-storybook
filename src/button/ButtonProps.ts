@@ -21,6 +21,10 @@ export type Inverted = boolean;
  */
 export type ButtonSize = "small" | "medium" | "large";
 /**
+ * Link used for button
+ */
+export type ButtonHref = string;
+/**
  * Add additional css classes that should be applied to the button
  */
 export type AdditionalClasses = string;
@@ -63,6 +67,10 @@ export type NameAttribute = string;
  * Set the disabled attribute for the button
  */
 export type DisabledAttribute = boolean;
+/**
+ * Open link in new Tab
+ */
+export type OpenLinkInNewTab = boolean;
 
 /**
  * Component to display links and call-to-actions
@@ -74,6 +82,7 @@ export interface ButtonProps {
   variant: ButtonStyle;
   inverted?: Inverted;
   size: ButtonSize;
+  href?: ButtonHref;
   className?: AdditionalClasses;
   icon?: Icon;
   iconBefore?: IconBeforeButton;
@@ -85,6 +94,7 @@ export interface ButtonProps {
   value?: ValueAttribute;
   name?: NameAttribute;
   disabled?: DisabledAttribute;
+  newTab?: OpenLinkInNewTab;
 }
 /**
  * Icon

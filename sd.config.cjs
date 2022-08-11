@@ -1,6 +1,6 @@
 const path = require('path');
 const StyleDictionary = require("style-dictionary");
-const { config } = require("@kickstartds/core/design-tokens");
+const { config } = require("@kickstartds/style-dictionary");
 
 module.exports = StyleDictionary.extend(config).extend({
   source: [
