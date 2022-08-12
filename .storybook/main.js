@@ -12,4 +12,14 @@ module.exports = {
     "storybook-design-token"
   ],
   staticDirs: ["../static"],
+  async webpackFinal(config, { configType }) {
+    const babelRuleIndex = config.module.rules.findIndex((rule) =>
+      rule?.use?.some((u) => u?.loader.includes("babel-loader"))
+    );
+
+    config.module.rules[babelRuleIndex].exclude =
+      /node_modules\/(?!(@kickstartds\/))/;
+
+    return config;
+  },
 };
