@@ -7,7 +7,7 @@ import {
   ElementType,
 } from "react";
 import classnames from "classnames";
-import { renderFn, defaultRenderFn } from "@kickstartds/core/lib/core";
+import { defaultRenderFn } from "@kickstartds/core/lib/core";
 import { Icon } from "@kickstartds/base/lib/icon";
 import { Link } from "@kickstartds/base/lib/link";
 import { ButtonProps } from "./ButtonProps";
@@ -17,7 +17,7 @@ import {
 } from "@kickstartds/base/lib/button";
 
 interface RenderFunctions {
-  renderLabel?: renderFn;
+  renderLabel?: typeof defaultRenderFn;
 }
 
 const ButtonComponent: ForwardRefExoticComponent<

@@ -5,15 +5,16 @@ import {
   CountUpContext,
   CountUpContextDefault,
 } from "@kickstartds/content/lib/count-up";
-import { renderFn, renderTextFn } from "@kickstartds/core/lib/core";
+import { defaultRenderFn } from "@kickstartds/core/lib/core";
+import { defaultRenderFn as richTextDefaultRenderFn } from "@kickstartds/base/lib/rich-text";
 
 import { CountUpProps } from "./CountUpProps";
 
 interface RenderFunctions {
-  renderTo?: renderFn;
-  renderTopic?: renderFn;
-  renderText?: renderTextFn;
-  renderLinkLabel?: renderFn;
+  renderTo?: typeof defaultRenderFn;
+  renderTopic?: typeof defaultRenderFn;
+  renderText?: typeof richTextDefaultRenderFn;
+  renderLinkLabel?: typeof defaultRenderFn;
 }
 
 const CountUp: FunctionComponent<

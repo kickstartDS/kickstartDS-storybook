@@ -2,13 +2,13 @@ import { FunctionComponent, HTMLAttributes } from "react";
 
 import { HeadlineContext } from "@kickstartds/base/lib/headline";
 import classnames from "classnames";
-import { renderFn, defaultRenderFn } from "@kickstartds/core/lib/core";
+import { defaultRenderFn } from "@kickstartds/core/lib/core";
 
 import { HeadlineProps } from "./HeadlineProps";
 
 interface RenderFunctions {
-  renderContent?: renderFn;
-  renderSubheadline?: renderFn;
+  renderContent?: typeof defaultRenderFn;
+  renderSubheadline?: typeof defaultRenderFn;
 }
 
 const Headline: FunctionComponent<
