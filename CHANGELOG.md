@@ -1,3 +1,15 @@
+# v2.1.13 (Thu Sep 15 2022)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add container queries quick fixes ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.12 (Tue Aug 30 2022)
 
 
