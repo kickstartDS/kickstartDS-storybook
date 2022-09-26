@@ -6,7 +6,8 @@ export default {
   title: "Form/Subscription",
   component: Subscription,
   args: {
-    action: "",
+    headline: "Subscribe to our newsletter",
+    subheadline: "Stay up to date",
     hiddenFields: [],
     honeypot: "",
     localStorageKey: "hideSubscriptionForm",

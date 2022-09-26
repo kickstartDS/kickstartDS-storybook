@@ -14,6 +14,7 @@ import { SamplePost } from "../post/SamplePost";
 import { Default as PostAsideStory } from "../post-aside/PostAside.stories";
 import { Default as PostHeadStory } from "../post-head/PostHead.stories";
 import { Subscription } from "../subscription/SubscriptionComponent";
+import SubscriptionStories from "../subscription/Subscription.stories";
 
 export default {
   title: "Blog Post",
@@ -144,15 +145,8 @@ After working in a large tech corporation for a long time I very well know today
       spaceAfter="none"
       width="slim"
       background="accent"
-      headline={{
-        content: "Subscribe to our newsletter",
-        level: "h3",
-        styleAs: "h3",
-        align: "center",
-        subheadline: "Stay up to date",
-      }}
     >
-      <Subscription />
+      <Subscription {...SubscriptionStories.args} />
     </Section>
     <Footer {...unpack(FooterStories.args)} />
   </>
