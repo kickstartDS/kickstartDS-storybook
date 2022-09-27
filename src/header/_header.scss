@@ -1,12 +1,15 @@
 @use "header-tokens";
 @use "../breakpoint";
 
-header[data-component="kds.header"] {
+.kds-header__wrap {
   position: absolute;
   top: 0%;
   z-index: 2;
   left: 0;
   width: 100%;
+}
+
+header[data-component="kds.header"] {
   display: flex;
   justify-content: center;
   transition-duration: var(--g-transition-duration-s);

@@ -56,6 +56,7 @@ export const Subscription: FC<SubscriptionProps> = ({
           required
           type="email"
           name="EMAIL"
+          className="c-subscription__input"
         />
         <Button label="subscribe" variant="solid" size="medium" type="submit" />
       </form>

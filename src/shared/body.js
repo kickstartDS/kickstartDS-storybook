@@ -8,6 +8,10 @@ const elements = [
     selector: ".nav-toggle",
     property: "marginRight",
   },
+  {
+    selector: ".kds-header__wrap > .l-container--section", // announcement bar
+    property: "paddingRight",
+  },
 ];
 
 function setStyle(value) {

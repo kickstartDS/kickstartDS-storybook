@@ -99,7 +99,7 @@
         },
         "linkLabel": {
           "type": "string",
-          "default": "Sign up today"
+          "default": "Get notified"
         }
       },
       "required": ["content", "linkLabel"]

@@ -8,7 +8,7 @@ export default {
   args: {
     content:
       "We are on a mission to democratize design systems. That's why we will go open source soon.",
-    linkLabel: "Sign up today",
+    linkLabel: "Get notified",
     linkHref: "#notification-subscribe",
     targetSessionStorageKey: "hideSubscriptionForm",
   },
