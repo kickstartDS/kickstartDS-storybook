@@ -1,3 +1,16 @@
+# v2.1.14 (Mon Sep 26 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add headline to subscription component ([@lmestel](https://github.com/lmestel))
+- feat: hide subscription form after submit ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.13 (Thu Sep 15 2022)
 
 #### ⚠️ Pushed to `master`
