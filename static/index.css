@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 27 Sep 2022 10:33:08 GMT
+ * Generated on Tue, 27 Sep 2022 12:20:22 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -4289,7 +4289,7 @@ article .c-teaser .c-teaser__body {
 .c-announcement-bar > * {
   vertical-align: middle;
 }
-.c-announcement-bar__img {
+.c-announcement-bar__icon {
   width: auto;
   height: calc(1.25em * var(--ks-line-height-ui-xs));
   margin-right: var(--ks-spacing-xxs);

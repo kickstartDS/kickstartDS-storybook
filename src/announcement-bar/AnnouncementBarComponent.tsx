@@ -1,12 +1,7 @@
 import React, { FC, HTMLAttributes } from "react";
 import { Section } from "@kickstartds/base/lib/section";
 import { LinkButton } from "@kickstartds/base/lib/link-button";
-
-type AnnouncementBarProps = {
-  content: string;
-  linkLabel: string;
-  linkHref: string;
-};
+import { useSessionState } from "../hooks/useSessionState";
 
 const AlertIcon: FC<HTMLAttributes<SVGElement>> = (props) => (
   <svg
@@ -36,22 +31,38 @@ const AlertIcon: FC<HTMLAttributes<SVGElement>> = (props) => (
   </svg>
 );
 
+type AnnouncementBarProps = {
+  content: string;
+  linkLabel: string;
+  linkHref: string;
+  targetSessionStorageKey: string;
+};
+
 export const AnnouncementBar: FC<AnnouncementBarProps> = ({
   content,
   linkHref,
   linkLabel,
-}) => (
-  <Section width="max" spaceBefore="none" spaceAfter="none" inverted="true">
-    <div className="c-announcement-bar">
-      <AlertIcon className="c-announcement-bar__icon" />
-      <span>{content}</span>
-      <LinkButton
-        label={linkLabel}
-        href={linkHref}
-        variant="solid"
-        size="small"
-        className="c-announcement-bar__link"
-      />
-    </div>
-  </Section>
-);
+  targetSessionStorageKey,
+}) => {
+  const [hidden] = useSessionState(targetSessionStorageKey);
+
+  return (
+    <Section width="max" spaceBefore="none" spaceAfter="none" inverted="true">
+      <div className="c-announcement-bar">
+        <AlertIcon className="c-announcement-bar__icon" />
+        <span>{content}</span>
+        {hidden ? (
+          ""
+        ) : (
+          <LinkButton
+            label={linkLabel}
+            href={linkHref}
+            variant="solid"
+            size="small"
+            className="c-announcement-bar__link"
+          />
+        )}
+      </div>
+    </Section>
+  );
+};

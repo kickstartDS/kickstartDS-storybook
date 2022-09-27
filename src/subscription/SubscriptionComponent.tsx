@@ -1,7 +1,8 @@
-import React, { FC, HTMLAttributes, useEffect, useState } from "react";
+import React, { FC, HTMLAttributes } from "react";
 import { Headline } from "@kickstartds/base/lib/headline";
 import { TextField } from "@kickstartds/form/lib/text-field";
 import { Button } from "@kickstartds/base/lib/button";
+import { useSessionState } from "../hooks/useSessionState";
 
 type SubscriptionProps = HTMLAttributes<HTMLFormElement> & {
   hiddenFields: [string, string][];
@@ -19,17 +20,12 @@ export const Subscription: FC<SubscriptionProps> = ({
   subheadline,
   ...props
 }) => {
-  const [hidden, setHidden] = useState(true);
+  const [hidden, setHidden] = useSessionState(sessionStorageKey);
   const onSubmit = () => {
     requestAnimationFrame(() => {
-      sessionStorage.setItem(sessionStorageKey, "1");
-      setHidden(true);
+      setHidden("1");
     });
   };
-
-  useEffect(() => {
-    setHidden(!!sessionStorage.getItem(sessionStorageKey));
-  }, [sessionStorageKey]);
 
   return hidden ? null : (
     <div>
