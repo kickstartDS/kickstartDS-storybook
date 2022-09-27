@@ -1,3 +1,16 @@
+# v2.1.15 (Tue Sep 27 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartds-storybook ([@lmestel](https://github.com/lmestel))
+- feat: add announcement bar component ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.14 (Mon Sep 26 2022)
 
 #### ⚠️ Pushed to `master`
