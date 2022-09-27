@@ -10,7 +10,8 @@ export default {
     subheadline: "Stay up to date",
     hiddenFields: [],
     honeypot: "",
-    localStorageKey: "hideSubscriptionForm",
+    sessionStorageKey: "hideSubscriptionForm",
+    id: "notification-subscribe"
   },
 };
 

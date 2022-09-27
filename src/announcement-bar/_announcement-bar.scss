@@ -1,0 +1,20 @@
+.c-announcement-bar {
+  font: var(--ks-font-ui-xs);
+  color: var(--ks-color-primary);
+  text-align: center;
+  padding: 0.125rem 0;
+
+  > * {
+    vertical-align: middle;
+  }
+
+  &__icon {
+    width: auto;
+    height: calc(1.25em * var(--ks-line-height-ui-xs));
+    margin-right: var(--ks-spacing-xxs);
+  }
+
+  &__link {
+    margin-left: var(--ks-spacing-xs);
+  }
+}

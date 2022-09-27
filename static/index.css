@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 15 Sep 2022 12:05:44 GMT
+ * Generated on Tue, 27 Sep 2022 10:33:08 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -4278,6 +4278,24 @@ article .c-teaser .c-teaser__body {
 [ks-inverted] .kds-header--spacer + .l-section .c-visual--full {
     height: calc(100vh - var(--g-header-height));
   }
+}
+
+.c-announcement-bar {
+  font: var(--ks-font-ui-xs);
+  color: var(--ks-color-primary);
+  text-align: center;
+  padding: 0.125rem 0;
+}
+.c-announcement-bar > * {
+  vertical-align: middle;
+}
+.c-announcement-bar__img {
+  width: auto;
+  height: calc(1.25em * var(--ks-line-height-ui-xs));
+  margin-right: var(--ks-spacing-xxs);
+}
+.c-announcement-bar__link {
+  margin-left: var(--ks-spacing-xs);
 }
 
 .c-content-box,

@@ -6,7 +6,7 @@ import { Button } from "@kickstartds/base/lib/button";
 type SubscriptionProps = HTMLAttributes<HTMLFormElement> & {
   hiddenFields: [string, string][];
   honeypot: string;
-  localStorageKey: string;
+  sessionStorageKey: string;
   headline?: string;
   subheadline?: string;
 };
@@ -14,7 +14,7 @@ type SubscriptionProps = HTMLAttributes<HTMLFormElement> & {
 export const Subscription: FC<SubscriptionProps> = ({
   hiddenFields,
   honeypot,
-  localStorageKey,
+  sessionStorageKey,
   headline,
   subheadline,
   ...props
@@ -22,14 +22,14 @@ export const Subscription: FC<SubscriptionProps> = ({
   const [hidden, setHidden] = useState(true);
   const onSubmit = () => {
     requestAnimationFrame(() => {
-      localStorage.setItem(localStorageKey, "1");
+      sessionStorage.setItem(sessionStorageKey, "1");
       setHidden(true);
     });
   };
 
   useEffect(() => {
-    setHidden(!!localStorage.getItem(localStorageKey));
-  }, [localStorageKey]);
+    setHidden(!!sessionStorage.getItem(sessionStorageKey));
+  }, [sessionStorageKey]);
 
   return hidden ? null : (
     <div>
