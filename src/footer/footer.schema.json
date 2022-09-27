@@ -94,15 +94,10 @@
     "subscriptionForm": {
       "type": "object",
       "properties": {
-        "hiddenFields": {
+        "tags": {
           "type": "array",
           "items": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "minItems": 2,
-            "maxItems": 2
+            "type": "string"
           },
           "default": []
         },
@@ -117,6 +112,10 @@
         "subheadline": {
           "type": "string",
           "default": "Sign up for a reminder as soon as we launched. You will only opt-in for only two email, a confirmation mail plus the release notification itself. promised 🤞"
+        },
+        "action": {
+          "type": "string",
+          "default": ""
         }
       },
       "required": ["honeypot"]

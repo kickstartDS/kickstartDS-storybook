@@ -38,6 +38,7 @@ const sharedConfig = {
     entryPoints,
     outdir: "dist/components",
     inject: ["./utils/react-shim.js"],
+    splitting: true,
     ...sharedConfig,
   });
 })();

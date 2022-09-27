@@ -8,10 +8,11 @@ export default {
   args: {
     headline: "Subscribe to our newsletter",
     subheadline: "Stay up to date",
-    hiddenFields: [],
+    tags: ["hey"],
     honeypot: "",
     sessionStorageKey: "hideSubscriptionForm",
-    id: "notification-subscribe"
+    id: "notification-subscribe",
+    action: "/"
   },
 };
 

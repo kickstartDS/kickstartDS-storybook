@@ -5,7 +5,7 @@ import { Button } from "@kickstartds/base/lib/button";
 import { useSessionState } from "../hooks/useSessionState";
 
 type SubscriptionProps = HTMLAttributes<HTMLFormElement> & {
-  hiddenFields?: [string, string][];
+  tags?: string[];
   honeypot: string;
   sessionStorageKey: string;
   headline?: string;
@@ -13,7 +13,7 @@ type SubscriptionProps = HTMLAttributes<HTMLFormElement> & {
 };
 
 export const Subscription: FC<SubscriptionProps> = ({
-  hiddenFields = [],
+  tags = [],
   honeypot,
   sessionStorageKey,
   headline,
@@ -43,8 +43,8 @@ export const Subscription: FC<SubscriptionProps> = ({
         method="post"
         onSubmit={onSubmit}
       >
-        {hiddenFields.map(([name, value], index) => (
-          <input type="hidden" name={name} value={value} key={index} />
+        {tags.map((value, key) => (
+          <input type="hidden" name="tags" value={value} key={key} />
         ))}
         <div aria-hidden="true" className="hidden-visually">
           <input type="text" name={honeypot} tabIndex={-1} />
