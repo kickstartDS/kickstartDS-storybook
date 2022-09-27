@@ -1,3 +1,16 @@
+# v2.1.16 (Tue Sep 27 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartds-storybook ([@lmestel](https://github.com/lmestel))
+- feat: hide announcement button if subscription form was submitted ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.15 (Tue Sep 27 2022)
 
 #### ⚠️ Pushed to `master`
