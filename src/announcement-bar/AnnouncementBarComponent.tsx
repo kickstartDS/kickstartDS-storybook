@@ -47,8 +47,14 @@ export const AnnouncementBar: FC<AnnouncementBarProps> = ({
   const [hidden] = useSessionState(targetSessionStorageKey);
 
   return (
-    <Section width="max" spaceBefore="none" spaceAfter="none" inverted="true">
-      <div className="c-announcement-bar">
+    <Section
+      width="max"
+      spaceBefore="none"
+      spaceAfter="none"
+      inverted="true"
+      className="c-announcement-bar"
+    >
+      <div className="c-announcement-bar__content">
         <AlertIcon className="c-announcement-bar__icon" />
         <span>{content}</span>
         {hidden ? (

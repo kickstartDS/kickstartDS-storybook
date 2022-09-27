@@ -39,5 +39,12 @@ export type Sections = {
  */
 export interface FooterProps {
   sections?: Sections;
+  subscriptionForm?: {
+    hiddenFields?: [string, string][];
+    honeypot: string;
+    headline?: string;
+    subheadline?: string;
+    [k: string]: unknown;
+  };
   [k: string]: unknown;
 }

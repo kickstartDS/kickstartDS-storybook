@@ -13,8 +13,6 @@ import { Footer } from "../footer/FooterComponent";
 import { SamplePost } from "../post/SamplePost";
 import { Default as PostAsideStory } from "../post-aside/PostAside.stories";
 import { Default as PostHeadStory } from "../post-head/PostHead.stories";
-import { Subscription } from "../subscription/SubscriptionComponent";
-import SubscriptionStories from "../subscription/Subscription.stories";
 
 export default {
   title: "Blog Post",
@@ -140,14 +138,7 @@ After working in a large tech corporation for a long time I very well know today
         }}
       />
     </Section>
-    <Section
-      spaceBefore="none"
-      spaceAfter="none"
-      width="slim"
-      background="accent"
-    >
-      <Subscription {...SubscriptionStories.args} />
-    </Section>
+
     <Footer {...unpack(FooterStories.args)} />
   </>
 );

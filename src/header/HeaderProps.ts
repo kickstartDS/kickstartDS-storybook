@@ -61,6 +61,11 @@ export interface HeaderProps {
   navEntries?: NavigationEntries;
   activeEntry: ActiveNavigationEntry;
   cta?: CallToAction;
+  announcementBar?: {
+    content: string;
+    linkLabel: string;
+    [k: string]: unknown;
+  };
   [k: string]: unknown;
 }
 /**

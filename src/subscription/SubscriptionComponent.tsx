@@ -5,7 +5,7 @@ import { Button } from "@kickstartds/base/lib/button";
 import { useSessionState } from "../hooks/useSessionState";
 
 type SubscriptionProps = HTMLAttributes<HTMLFormElement> & {
-  hiddenFields: [string, string][];
+  hiddenFields?: [string, string][];
   honeypot: string;
   sessionStorageKey: string;
   headline?: string;
@@ -13,11 +13,12 @@ type SubscriptionProps = HTMLAttributes<HTMLFormElement> & {
 };
 
 export const Subscription: FC<SubscriptionProps> = ({
-  hiddenFields,
+  hiddenFields = [],
   honeypot,
   sessionStorageKey,
   headline,
   subheadline,
+  id,
   ...props
 }) => {
   const [hidden, setHidden] = useSessionState(sessionStorageKey);
@@ -28,7 +29,7 @@ export const Subscription: FC<SubscriptionProps> = ({
   };
 
   return hidden ? null : (
-    <div>
+    <div id={id}>
       <Headline
         content={headline}
         level="h3"

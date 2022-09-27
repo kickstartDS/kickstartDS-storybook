@@ -1,8 +1,9 @@
-import { FunctionComponent, HTMLAttributes } from "react";
+import React, { FunctionComponent, HTMLAttributes } from "react";
 
 import { NavMain } from "./nav/NavMainComponent";
 import { NavSkip } from "./nav/NavSkipComponent";
 import { Logo } from "../logo/LogoComponent";
+import { AnnouncementBar } from "../announcement-bar/AnnouncementBarComponent";
 
 import "./Header";
 
@@ -17,10 +18,18 @@ export const Header: FunctionComponent<
   navEntries,
   activeEntry,
   cta,
+  announcementBar,
   ...props
 }) => (
   <>
     <div {...props}>
+      {announcementBar && announcementBar.content && (
+        <AnnouncementBar
+          {...announcementBar}
+          linkHref="#notification-subscribe"
+          targetSessionStorageKey="hideSubscriptionForm"
+        />
+      )}
       <NavSkip />
       <header data-component="kds.header">
         <div className={`kds-header ${light ? "kds-header--light" : ""}`}>

@@ -1,11 +1,16 @@
 .c-announcement-bar {
   font: var(--ks-font-ui-xs);
   color: var(--ks-color-primary);
-  text-align: center;
-  padding: 0.125rem 0;
+  position: relative;
+  z-index: 5;
 
-  > * {
-    vertical-align: middle;
+  &__content {
+    text-align: center;
+    padding: 0.125rem 0;
+
+    > * {
+      vertical-align: middle;
+    }
   }
 
   &__icon {
