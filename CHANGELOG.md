@@ -1,3 +1,15 @@
+# v2.1.20 (Wed Sep 28 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: fix stoytelling padding issue ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.1.19 (Tue Sep 27 2022)
 
 #### ⚠️ Pushed to `master`
