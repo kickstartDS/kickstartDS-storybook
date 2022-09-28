@@ -1,3 +1,15 @@
+# v2.1.22 (Wed Sep 28 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: make `useSessionState` ssr'able ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.21 (Wed Sep 28 2022)
 
 #### ⚠️ Pushed to `master`
