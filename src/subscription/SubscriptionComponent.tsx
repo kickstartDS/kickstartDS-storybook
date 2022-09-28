@@ -8,6 +8,8 @@ type SubscriptionProps = HTMLAttributes<HTMLFormElement> & {
   tags?: string[];
   honeypot: string;
   sessionStorageKey: string;
+  buttonLabel: string;
+  placeholder?: string;
   headline?: string;
   subheadline?: string;
 };
@@ -19,6 +21,8 @@ export const Subscription: FC<SubscriptionProps> = ({
   headline,
   subheadline,
   id,
+  placeholder,
+  buttonLabel,
   ...props
 }) => {
   const [hidden, setHidden] = useSessionState(sessionStorageKey);
@@ -50,7 +54,7 @@ export const Subscription: FC<SubscriptionProps> = ({
           <input type="text" name={honeypot} tabIndex={-1} />
         </div>
         <TextField
-          placeholder="Enter your email"
+          placeholder={placeholder}
           label="Email Address"
           hideLabel
           required
@@ -58,7 +62,7 @@ export const Subscription: FC<SubscriptionProps> = ({
           name="EMAIL"
           className="c-subscription__input"
         />
-        <Button label="subscribe" variant="solid" size="medium" type="submit" />
+        <Button label={buttonLabel} variant="solid" size="medium" type="submit" />
       </form>
     </div>
   );

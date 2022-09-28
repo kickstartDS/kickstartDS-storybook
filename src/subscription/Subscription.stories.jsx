@@ -12,7 +12,9 @@ export default {
     honeypot: "",
     sessionStorageKey: "hideSubscriptionForm",
     id: "notification-subscribe",
-    action: "/"
+    action: "/",
+    placeholder: "Enter your email",
+    buttonLabel: "Subscribe",
   },
 };
 

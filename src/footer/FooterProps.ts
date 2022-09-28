@@ -45,6 +45,8 @@ export interface FooterProps {
     headline?: string;
     subheadline?: string;
     action?: string;
+    placeholder?: string;
+    buttonLabel: string;
     [k: string]: unknown;
   };
   [k: string]: unknown;

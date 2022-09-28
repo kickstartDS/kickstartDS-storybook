@@ -116,9 +116,17 @@
         "action": {
           "type": "string",
           "default": ""
+        },
+        "placeholder": {
+          "type": "string",
+          "default": "Enter your email"
+        },
+        "buttonLabel": {
+          "type": "string",
+          "default": "Subscribe"
         }
       },
-      "required": ["honeypot"]
+      "required": ["honeypot", "buttonLabel"]
     }
   }
 }
