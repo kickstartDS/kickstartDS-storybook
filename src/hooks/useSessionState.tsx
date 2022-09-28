@@ -1,6 +1,20 @@
-import { useEffect, useState, useContext, createContext } from "react";
+import {
+  useEffect,
+  useState,
+  useContext,
+  createContext,
+  Dispatch,
+  SetStateAction,
+} from "react";
 
-const SessionStateContext = createContext((sessionKey: string) => {
+const SessionStateContext = createContext((sessionKey: string): [
+  string | null,
+  Dispatch<SetStateAction<string | null>>
+] => {
+  if (typeof window === "undefined") {
+    return [null, () => {}];
+  }
+
   const [value, setValue] = useState(sessionStorage.getItem(sessionKey));
 
   useEffect(() => {
@@ -10,7 +24,7 @@ const SessionStateContext = createContext((sessionKey: string) => {
       sessionStorage.setItem(sessionKey, value);
     }
   }, [value]);
-  return [value, setValue] as const;
+  return [value, setValue];
 });
 
 export const useSessionState = (sessionKey: string) =>
