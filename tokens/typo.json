@@ -67,6 +67,9 @@
             "value": 1
           },
           "tablet": {
+            "value": 1.5
+          },
+          "laptop": {
             "value": 1.75
           }
         },

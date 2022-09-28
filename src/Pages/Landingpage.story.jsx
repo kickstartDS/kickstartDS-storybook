@@ -229,20 +229,19 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
     </Section>
     <Section
       mode="list"
-      width="max"
+      width="full"
       spaceBefore="default"
-      gutter="large"
+      gutter="small"
       headline={{
         content: "Easy peasy lemon squeezy",
         subheadline: "5 reasons why you should start with kickstartDS today!",
         align: "center",
         level: "h2",
         styleAs: "h1",
-        spaceAfter: "large",
+        spaceAfter: "small",
       }}
     >
       <Storytelling
-        full
         box={{
           link: {
             label: "read more",
@@ -260,25 +259,28 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         }}
       />
       <Storytelling
+        backgroundColor="var(--ks-background-color-accent)"
         full
         box={{
           link: {
             label: "read more",
           },
           headline: {
-            content: "Lorem Ipsum dolor",
+            content: "Flexible + easy design application",
+            subheadline: "One common ground for developers and designers",
           },
-          text: "kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.",
+          text: `kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.
+          
+kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.`,
         }}
         image={{
-          source: "img/landingpage/storybook.png",
+          source: "img/landingpage/storybook.webp",
           order: {
             desktopImageLast: true,
           },
         }}
       />
       <Storytelling
-        full
         box={{
           link: {
             label: "read more",

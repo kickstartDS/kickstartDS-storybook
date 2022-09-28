@@ -3,6 +3,17 @@
 @import "../mixin.scss";
 
 .c-storytelling {
+  &--full.c-storytelling--order-desktop-image-last {
+    @include breakpoint.media("<s") {
+      .c-storytelling__image {
+        margin-bottom: 1rem;
+      }
+      .c-storytelling__box {
+        padding-top: 0;
+      }
+    }
+  }
+
   &__box {
     &--right.c-storytelling__box {
       padding-right: 0;
@@ -27,7 +38,7 @@
 
   &.cta {
     background: var(--ks-background-color-accent);
-    padding: var(--ks-spacing-inset-stretch-m) ;
+    padding: var(--ks-spacing-inset-stretch-m);
     transition: 300ms all cubic-bezier(0.1, 0.9, 0.3, 1.5);
     gap: var(--ks-spacing-s);
 

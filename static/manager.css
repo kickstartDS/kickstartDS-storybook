@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 15 Sep 2022 12:05:44 GMT
+ * Generated on Wed, 28 Sep 2022 08:50:15 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -306,7 +306,8 @@
   --ks-font-weight-semi-bold: 500;
   --ks-font-weight-bold: 700;
   --ks-font-size-display-bp-factor-phone: 1;
-  --ks-font-size-display-bp-factor-tablet: 1.75;
+  --ks-font-size-display-bp-factor-tablet: 1.5;
+  --ks-font-size-display-bp-factor-laptop: 1.75;
   --ks-font-size-display-xxs-base: 0.75rem;
   --ks-font-size-display-xs-base: 0.875rem;
   --ks-font-size-display-s-base: 1rem;
@@ -853,6 +854,7 @@
 }
 @media (min-width: 62em) {
   :root {
+    --ks-font-size-display-bp-factor: var(--ks-font-size-display-bp-factor-laptop);
     --ks-spacing-s-bp-factor: var(--ks-spacing-s-bp-factor-laptop);
     --ks-spacing-m-bp-factor: var(--ks-spacing-m-bp-factor-laptop);
     --ks-spacing-l-bp-factor: var(--ks-spacing-l-bp-factor-laptop);
