@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 28 Sep 2022 08:50:15 GMT
+ * Generated on Fri, 30 Sep 2022 06:46:48 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -4170,11 +4170,6 @@ article .c-teaser .c-teaser__body {
   --g-topic--color: var(--g-headline-color);
 }
 
-:root .l-container--visual[min-width~="1200"] .c-visual__box,
-[ks-theme] .l-container--visual[min-width~="1200"] .c-visual__box,
-[ks-inverted] .l-container--visual[min-width~="1200"] .c-visual__box {
-  --c-visual_box--max-width: 57rem;
-}
 :root .c-visual,
 [ks-theme] .c-visual,
 [ks-inverted] .c-visual {
@@ -4187,13 +4182,6 @@ article .c-teaser .c-teaser__body {
 [ks-inverted] .c-visual__box {
   --c-visual_box--color: var(--c-rich-text--color);
   --c-visual_box--background: var(--ks-color-fg-inverted-alpha-8);
-}
-@media (min-width: 40em) {
-  :root .c-visual__box,
-[ks-theme] .c-visual__box,
-[ks-inverted] .c-visual__box {
-    --c-visual_box--max-width: 70%;
-  }
 }
 :root .c-visual [ks-inverted=true] .c-visual__box,
 [ks-theme] .c-visual [ks-inverted=true] .c-visual__box,
@@ -4512,7 +4500,7 @@ article .c-teaser .c-teaser__body {
 }
 @container visual (min-width: 1200px) {
   .c-visual__box {
-    --c-visual_box--max-width: 40rem !important;
+    --c-visual_box--max-width: 70% !important;
     padding-bottom: 3rem !important;
     padding-top: 3rem !important;
   }

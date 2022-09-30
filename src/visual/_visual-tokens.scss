@@ -1,10 +1,6 @@
 :root,
 [ks-theme],
 [ks-inverted] {
-  .l-container--visual[min-width~="1200"] .c-visual__box {
-    --c-visual_box--max-width: 57rem;
-  }
-
   .c-visual {
     --c-visual--min-height: 35vh;
     --c-visual_overlay--background: linear-gradient(90deg, var(--ks-background-color-default), transparent);
@@ -13,10 +9,6 @@
     &__box {
       --c-visual_box--color: var(--c-rich-text--color);
       --c-visual_box--background: var(--ks-color-fg-inverted-alpha-8);
-
-      @media (min-width: 40em) {
-        --c-visual_box--max-width: 70%;
-      }
     }
 
     [ks-inverted="true"] {

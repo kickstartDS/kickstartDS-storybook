@@ -281,6 +281,8 @@ kickstart DS is the foundation for your design system with reusable components a
         }}
       />
       <Storytelling
+        backgroundColor="var(--ks-background-color-default)"
+        ks-inverted="true"
         box={{
           link: {
             label: "read more",
