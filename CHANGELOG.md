@@ -1,3 +1,15 @@
+# v2.1.24 (Fri Sep 30 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: fix visual box width ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.1.23 (Wed Sep 28 2022)
 
 #### ⚠️ Pushed to `master`
