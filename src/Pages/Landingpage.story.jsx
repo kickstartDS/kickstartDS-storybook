@@ -89,7 +89,7 @@ const Page = () => (
       width="max"
       spaceAfter="default"
       spaceBefore="small"
-      className="arrows progress"
+      className="five-steps"
     >
       <ContentBox
         className="arrow"

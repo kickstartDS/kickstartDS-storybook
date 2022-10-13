@@ -456,6 +456,28 @@
         }
       }
     }
+    &.five-steps {
+      .l-section__container {
+        --l-section_container--gutter: var(--ks-spacing-xl);
+        --l-section_col--min-width: 18rem;
+        --l-section_col--max-width: 27.5rem;
+
+        @media (min-width: 900px) {
+          --l-section_col--min-width: 18rem;
+          --l-section_col--max-width: 27.5rem;
+        }
+
+        @include breakpoint.media(">m") {
+          --l-section_container--gutter: var(--ks-spacing-m);
+          --l-section_col--min-width: 9rem;
+          --l-section_col--max-width: 1fr;
+        }
+
+        @include breakpoint.media(">l") {
+          --l-section_container--gutter: var(--ks-spacing-l);
+        }
+      }
+    }
   }
   .l-section.additional-spacing {
     margin-bottom: var(--l-section--space);
