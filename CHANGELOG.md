@@ -1,3 +1,15 @@
+# v2.1.25 (Thu Oct 13 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat(landingpage): add 5 steps element ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.1.24 (Fri Sep 30 2022)
 
 #### ⚠️ Pushed to `master`
