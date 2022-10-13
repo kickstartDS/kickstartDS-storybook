@@ -1,3 +1,16 @@
+# v2.1.26 (Thu Oct 13 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat: adjust 5 steps element ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.1.25 (Thu Oct 13 2022)
 
 #### ⚠️ Pushed to `master`
