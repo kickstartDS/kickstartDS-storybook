@@ -77,6 +77,51 @@ const Page = () => (
       />
     </Section>
     <Section
+      headline={{
+        align: "center",
+        content: "How does it work",
+        subheadline:
+          "Setup a Design System and put it into action in just 5 steps",
+        level: "h2",
+        pageHeader: false,
+        spaceAfter: "small",
+      }}
+      width="max"
+      spaceAfter="default"
+      spaceBefore="small"
+      className="arrows progress"
+    >
+      <ContentBox
+        className="arrow"
+        align="center"
+        image="img/landingpage/start.svg"
+        topic="Start"
+      />
+      <ContentBox
+        className="arrow"
+        align="center"
+        image="img/landingpage/design.svg"
+        topic="Design"
+      />
+      <ContentBox
+        className="arrow"
+        align="center"
+        image="img/landingpage/configure.svg"
+        topic="Configure"
+      />
+      <ContentBox
+        className="arrow"
+        align="center"
+        image="img/landingpage/collect.svg"
+        topic="Collect"
+      />
+      <ContentBox
+        align="center"
+        image="img/landingpage/publish.svg"
+        topic="Publish"
+      />
+    </Section>
+    <Section
       ks-inverted="true"
       headline={{
         align: "center",

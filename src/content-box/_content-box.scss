@@ -2,6 +2,7 @@
 @use "./content-box-tokens";
 
 .c-content-box {
+  --c-content-box--gap: var(--ks-spacing-stack-s);
   color: var(--g-topic--color);
   margin-bottom: 0;
 
@@ -43,6 +44,37 @@
       &__topic {
         font: var(--ks-font-ui-l);
         font-weight: var(--ks-font-weight-bold);
+      }
+    }
+  }
+
+  &.arrow {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: var(--l-section_container--gutter);
+      height: var(--l-section_container--gutter);
+      bottom: 0;
+      left: 50%;
+      transform: translateY(100%) translateX(-50%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(/patterns/progress-arrow.svg);
+
+      @media (min-width: 900px) {
+        transform: rotate(-90deg) translateY(100%) translateX(50%);
+        right: 0;
+        top: 50%;
+        left: unset;
+      }
+
+      @include breakpoint.media(">m") {
+        --l-section_container--gutter: var(--ks-spacing-m);
+      }
+
+      @include breakpoint.media(">l") {
+        --l-section_container--gutter: var(--ks-spacing-l);
       }
     }
   }

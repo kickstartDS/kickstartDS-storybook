@@ -6,5 +6,10 @@
     --c-content-box_topic--font-s: var(--ks-font-copy-s);
     --c-content-box_topic--font-m: var(--ks-font-copy-m);
     --c-content-box_topic--margin: 0 0 var(--ks-spacing-stack-xs);
+    --c-content-box--gap: var(--ks-spacing-stack-s);
+
+    @container content-box (min-width: 200px) {
+      --c-content-box--gap: var(--ks-spacing-stack-m);
+    }
   }
 }
