@@ -1,3 +1,15 @@
+# v2.1.27 (Tue Oct 18 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat(logo): replace logo-loght.svg ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.1.26 (Thu Oct 13 2022)
 
 #### ⚠️ Pushed to `master`
