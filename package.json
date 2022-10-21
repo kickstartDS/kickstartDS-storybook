@@ -35,6 +35,7 @@
   },
   "keywords": [],
   "dependencies": {
+    "@bedrock-layout/primitives": "^2.2.1",
     "@kickstartds/base": "2.0.0-canary.922.4419.0",
     "@kickstartds/blog": "2.0.0-canary.922.4419.0",
     "@kickstartds/content": "2.0.0-canary.922.4419.0",
@@ -45,6 +46,7 @@
     "json-schema-to-typescript": "^10.1.5",
     "json-schema-traverse": "^1.0.0",
     "postinstall-postinstall": "^2.1.0",
+    "styled-components": "^5.3.6",
     "typescript": "^4.5.4"
   },
   "devDependencies": {
