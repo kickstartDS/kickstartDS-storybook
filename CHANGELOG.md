@@ -1,3 +1,15 @@
+# v2.1.28 (Fri Oct 21 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add bedrock ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.27 (Tue Oct 18 2022)
 
 #### ⚠️ Pushed to `master`
