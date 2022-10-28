@@ -7,6 +7,10 @@
   --l-section--content-width-narrow: 62.5rem !important;
   --l-section--content-width-slim: 40rem;
 
+  @include breakpoint.media("≥s") {
+    --l-section--content-padding: var(--ks-spacing-inset-l) !important;
+  }
+
   .l-section__container {
     --l-section_container--gutter-small: var(--ks-spacing-s);
 
@@ -15,7 +19,6 @@
     }
 
     @include breakpoint.media("≥s") {
-      --l-section--content-padding: var(--ks-spacing-inset-l) !important;
       --l-section_container--gutter: var(--ks-spacing-m);
       --l-section_col--min-width: 12rem;
 

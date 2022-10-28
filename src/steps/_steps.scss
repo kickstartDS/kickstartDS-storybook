@@ -1,0 +1,29 @@
+@use "steps-tokens";
+@use "../breakpoint";
+
+.kds-steps {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint.media(">m") {
+    flex-direction: row;
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: var(--kds-steps-arrow-width);
+      height: var(--kds-steps-arrow-width);
+      @include breakpoint.media(">m") {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  .l-container {
+    flex: 1 1;
+  }
+}

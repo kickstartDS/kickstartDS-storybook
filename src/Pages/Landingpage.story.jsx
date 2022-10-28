@@ -20,6 +20,7 @@ import FooterStories from "../footer/Footer.stories";
 
 import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
+import { Steps } from "../steps/StepsComponent";
 
 export default {
   title: "Landingpage",
@@ -77,6 +78,7 @@ const Page = () => (
       />
     </Section>
     <Section
+      ks-inverted="true"
       headline={{
         align: "center",
         content: "How does it work",
@@ -86,99 +88,17 @@ const Page = () => (
         pageHeader: false,
         spaceAfter: "small",
       }}
-      width="max"
+      width="full"
       spaceAfter="default"
-      spaceBefore="small"
-      className="five-steps"
-    >
-      <ContentBox
-        className="arrow"
-        align="center"
-        image="img/landingpage/start.svg"
-        topic="Start"
-      />
-      <ContentBox
-        className="arrow"
-        align="center"
-        image="img/landingpage/design.svg"
-        topic="Design"
-      />
-      <ContentBox
-        className="arrow"
-        align="center"
-        image="img/landingpage/configure.svg"
-        topic="Configure"
-      />
-      <ContentBox
-        className="arrow"
-        align="center"
-        image="img/landingpage/collect.svg"
-        topic="Collect"
-      />
-      <ContentBox
-        align="center"
-        image="img/landingpage/publish.svg"
-        topic="Publish"
-      />
-    </Section>
-    <Section
-      ks-inverted="true"
-      headline={{
-        align: "center",
-        content: "kickstartDS' full flexibility in numbers",
-        subheadline:
-          "The foundation to scale your design system across all your platforms and website",
-        level: "h2",
-        pageHeader: false,
-      }}
-      className="l-section--outer-width-wide additional-spacing"
       variant="highlight"
-      pattern="2"
-      width="default"
-      spaceAfter="small"
       spaceBefore="small"
+      className="l-section--outer-width-max"
     >
-      <CountUp
-        graphic="components"
-        icon={[]}
-        link={[]}
-        text={`
-Use our components as **solid building blocks**, adapt and improve them as needed. From tokens to full customization.
-
-Benefit from **15+ years of frontend experience!**
-      `}
-        to={33}
-        topic="Components"
-      />
-      <CountUp
-        graphic="properties"
-        icon={[]}
-        link={[]}
-        text={`
-Component properties encode decisions, **rooted in reality**, pre-solving everyday problems for you.
-
-Directly engage with components through **Storybooks** rich interface.
-      `}
-        to={580}
-        topic="Properties"
-      />
-      <CountUp
-        graphic="tokens"
-        icon={[]}
-        link={[]}
-        text={`
-Of course we have **design tokens** – colors, fonts, sizes and iconography.
-
-Additionally, **component tokens** provide a solid base layer of defaults for you to mutate.
-`}
-        to={793}
-        topic="Tokens"
-      />
+      <Steps />
     </Section>
 
     <Section
       width="wide"
-      background="accent"
       headline={{
         align: "center",
         content:
@@ -235,6 +155,63 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         ]}
       />
     </Section>
+
+    <Section
+      ks-inverted="true"
+      headline={{
+        align: "center",
+        content: "kickstartDS' full flexibility in numbers",
+        subheadline:
+          "The foundation to scale your design system across all your platforms and website",
+        level: "h2",
+        pageHeader: false,
+      }}
+      className="l-section--outer-width-wide additional-spacing"
+      variant="highlight"
+      pattern="2"
+      width="default"
+      spaceAfter="small"
+      spaceBefore="small"
+    >
+      <CountUp
+        graphic="components"
+        icon={[]}
+        link={[]}
+        text={`
+Use our components as **solid building blocks**, adapt and improve them as needed. From tokens to full customization.
+
+Benefit from **15+ years of frontend experience!**
+      `}
+        to={33}
+        topic="Components"
+      />
+      <CountUp
+        graphic="properties"
+        icon={[]}
+        link={[]}
+        text={`
+Component properties encode decisions, **rooted in reality**, pre-solving everyday problems for you.
+
+Directly engage with components through **Storybooks** rich interface.
+      `}
+        to={580}
+        topic="Properties"
+      />
+      <CountUp
+        graphic="tokens"
+        icon={[]}
+        link={[]}
+        text={`
+Of course we have **design tokens** – colors, fonts, sizes and iconography.
+
+Additionally, **component tokens** provide a solid base layer of defaults for you to mutate.
+`}
+        to={793}
+        topic="Tokens"
+      />
+    </Section>
+
+
     <Section
       gutter="large"
       headline={{

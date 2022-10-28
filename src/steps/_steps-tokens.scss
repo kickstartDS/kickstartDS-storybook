@@ -1,0 +1,13 @@
+@use "../breakpoint";
+
+:root,
+[ks-theme],
+[ks-inverted] {
+  .kds-steps {
+    --kds-steps-arrow-width: 5vh;
+
+    @include breakpoint.media(">m") {
+      --kds-steps-arrow-width: 3vw;
+    }
+  }
+}
