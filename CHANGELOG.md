@@ -1,3 +1,15 @@
+# v2.1.29 (Fri Oct 28 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat: add stzeps component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.1.28 (Fri Oct 21 2022)
 
 #### ⚠️ Pushed to `master`
