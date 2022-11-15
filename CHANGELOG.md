@@ -1,3 +1,15 @@
+# v2.1.30 (Tue Nov 15 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat(welcome): add Product Hunt banner ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- [@fleven-kds](https://github.com/fleven-kds)
+
+---
+
 # v2.1.29 (Fri Oct 28 2022)
 
 #### ⚠️ Pushed to `master`
