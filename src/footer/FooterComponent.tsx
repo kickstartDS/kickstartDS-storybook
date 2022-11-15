@@ -8,22 +8,8 @@ import { FooterProps } from "./FooterProps";
 
 export const Footer: FunctionComponent<
   FooterProps & HTMLAttributes<HTMLDivElement>
-> = ({ sections, subscriptionForm }) => (
+> = ({ sections }) => (
   <>
-    {subscriptionForm && subscriptionForm.honeypot && (
-      <Section
-        spaceBefore="small"
-        spaceAfter="none"
-        width="narrow"
-        background="accent"
-      >
-        <Subscription
-          {...subscriptionForm}
-          sessionStorageKey="hideSubscriptionForm"
-          id="notification-subscribe"
-        />
-      </Section>
-    )}
     <footer className="kds-footer">
       <Section
         mode="list"
