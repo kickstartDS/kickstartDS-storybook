@@ -1,3 +1,15 @@
+# v2.1.31 (Tue Nov 15 2022)
+
+#### ⚠️ Pushed to `master`
+
+- fix: change notification bar content to PH, remove form ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.30 (Tue Nov 15 2022)
 
 #### ⚠️ Pushed to `master`
