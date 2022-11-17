@@ -1,3 +1,15 @@
+# v2.1.33 (Thu Nov 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feat(welcome page): remove product hunt banner ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.32 (Tue Nov 15 2022)
 
 #### ⚠️ Pushed to `master`
