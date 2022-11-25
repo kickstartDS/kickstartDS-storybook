@@ -64,6 +64,7 @@ export interface HeaderProps {
   announcementBar?: {
     content: string;
     linkLabel: string;
+    linkHref: string;
     [k: string]: unknown;
   };
   [k: string]: unknown;

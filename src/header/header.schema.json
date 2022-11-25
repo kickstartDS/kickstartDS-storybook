@@ -100,9 +100,13 @@
         "linkLabel": {
           "type": "string",
           "default": "Get notified"
+        },
+        "linkHref": {
+          "type": "string",
+          "default": "/blog"
         }
       },
-      "required": ["content", "linkLabel"]
+      "required": ["content", "linkLabel", "linkHref"]
     }
   },
   "required": ["homeLink", "activeEntry"]

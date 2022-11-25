@@ -26,7 +26,6 @@ export const Header: FunctionComponent<HeaderProps & HTMLAttributes<HTMLDivEleme
         {announcementBar && announcementBar.content && (
           <AnnouncementBar
             {...announcementBar}
-            linkHref="https://www.producthunt.com/posts/kickstartds"
             targetSessionStorageKey="hideSubscriptionForm"
           />
         )}
