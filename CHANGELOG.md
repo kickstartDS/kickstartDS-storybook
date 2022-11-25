@@ -1,3 +1,15 @@
+# v2.1.34 (Fri Nov 25 2022)
+
+#### ⚠️ Pushed to `master`
+
+- feature: update header component, allow url field in announcement ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.33 (Thu Nov 17 2022)
 
 #### ⚠️ Pushed to `master`
