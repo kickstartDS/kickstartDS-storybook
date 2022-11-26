@@ -1,0 +1,28 @@
+@use "./showcase-tokens";
+@use "../breakpoint";
+
+:root,
+[ks-theme],
+[ks-inverted] {
+  --c-showcase--img-size: 5.5rem;
+
+  @include breakpoint.media(">s") {
+    --c-showcase--img-size: 10rem;
+  }
+}
+
+.c-showcase {
+  &--text-media {
+    &.text-media--intext .text-media__gallery {
+      float: left;
+      padding-right: var(--ks-spacing-m);
+    }
+
+    figure {
+      img {
+        width: var(--c-showcase--img-size);
+        height: var(--c-showcase--img-size);
+      }
+    }
+  }
+}

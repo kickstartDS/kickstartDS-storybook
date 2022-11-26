@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/showcase.schema.json",
+  "title": "Showcase",
+  "description": "Display one showcase entry with all its details",
+  "type": "object",
+  "properties": {
+    "link": {
+      "title": "Link to showcase",
+      "type": "string",
+      "default": "https://www.encore.de/",
+      "description": "Link to the showcase / example / demo project"
+    },
+    "title": {
+      "title": "Title for the showcase",
+      "type": "string",
+      "default": "encore - Energie im Herzen",
+      "description": "Title that should be shown for this appearance"
+    },
+    "description": {
+      "title": "Description of the appearance",
+      "type": "string",
+      "format": "markdown",
+      "default": "encore as a German utility company supports their customers with modern, cloud-based software solutions, and a wide spectrum of services around their business. They create online experiences for their customers, and future-proof their eCommerce, energy billing and services portfolio.",
+      "description": "Description of the type and content of the appearance"
+    },
+    "cover": {
+      "title": "Cover image",
+      "type": "object",
+      "description": "Add main image to represent this showcase entry",
+      "properties": {
+        "src": {
+          "title": "Url",
+          "type": "string",
+          "format": "image",
+          "default": "https://picsum.photos/seed/showcase-cover/300/300",
+          "description": "Url to main image for this showcase entry"
+        },
+        "caption": {
+          "title": "Caption",
+          "type": "string",
+          "default": "Encore Logo",
+          "description": "Title of the showcase cover"
+        }
+      }
+    },
+    "media": {
+      "title": "Media",
+      "description": "Media assets to display for this showcase entry",
+      "type": "array",
+      "items": {
+        "title": "Media asset",
+        "type": "object",
+        "description": "Single media asset",
+        "properties": {
+          "src": {
+            "title": "Url for the media asset",
+            "type": "string",
+            "format": "image",
+            "default": "https://picsum.photos/seed/showcase-media/640/480",
+            "description": "Select a media asset for this showcase entry"
+          },
+          "caption": {
+            "title": "Caption for the image",
+            "type": "string",
+            "default": "Showcase screenshot",
+            "description": "Title of the showcase image"
+          }
+        }
+      }
+    },
+    "tags": {
+      "title": "Tags",
+      "description": "Tags for this showcase entry",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "title": "Tag",
+        "default": "elitr",
+        "description": "Name of the tag"
+      }
+    },
+    "related": {
+      "title": "Related entries",
+      "description": "Entries related to this showcase entry",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Related Entry",
+        "description": "Single related entry",
+        "properties": {
+          "title": {
+            "title": "Title",
+            "type": "string",
+            "description": "Title of the related showcase",
+            "default": "maxcluster"
+          },
+          "excerpt": {
+            "title": "Excerpt",
+            "type": "string",
+            "description": "Excerpt for the related showcase",
+            "default": "For agencies and store operators with ambitions, maxcluster makes complex technologies uncomplicated to use and thus enables them to become even more successful."
+          },
+          "url": {
+            "title": "Url",
+            "type": "string",
+            "description": "Url for the related showcase",
+            "default": "/showcase/maxcluster/"
+          },
+          "image": {
+            "title": "Image",
+            "type": "string",
+            "format": "image",
+            "default": "https://picsum.photos/seed/showcase-related-media-01/640/480",
+            "description": "Image for the related showcase"
+          }
+        },
+        "required": ["title", "url"]
+      }
+    }
+  },
+  "required": ["link", "title", "description", "cover"]
+}
+  

@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/appearance.schema.json",
+  "title": "Appearance",
+  "description": "Display one appearance entry with all its details",
+  "type": "object",
+  "properties": {
+    "link": {
+      "title": "Link to appearance",
+      "type": "string",
+      "default": "http://podrocket.logrocket.com/design-system-starter-kit",
+      "description": "Link to the appearance"
+    },
+    "title": {
+      "title": "Title for the appearance",
+      "type": "string",
+      "default": "Podrocket: The starter kit for design systems with Jonas Ulrich and Daniel Ley",
+      "description": "Title that should be shown for this appearance"
+    },
+    "description": {
+      "title": "Description of the appearance",
+      "type": "string",
+      "format": "markdown",
+      "default": "kickstartDS is a low-code framework and comprehensive component library that enables development teams to create consistent and brand-compliant web frontends. Jonas Ulrich and Daniel Ley join us to talk about kickstartDS, the starter kit for Design Systems.",
+      "description": "Description of the type and content of the appearance"
+    },
+    "cover": {
+      "title": "Cover image",
+      "type": "object",
+      "description": "Add main image to represent this appearance entry",
+      "properties": {
+        "src": {
+          "title": "Url",
+          "type": "string",
+          "format": "image",
+          "default": "https://picsum.photos/seed/appearance-cover/300/300",
+          "description": "Url to main image for this appearance entry"
+        },
+        "caption": {
+          "title": "Caption",
+          "type": "string",
+          "default": "Podrocket Logo",
+          "description": "Title of the appearance cover"
+        }
+      },
+      "required": ["src", "caption"]
+    },
+    "media": {
+      "title": "Media",
+      "description": "Media assets to display for this appearance entry",
+      "type": "array",
+      "items": {
+        "title": "Media asset",
+        "type": "object",
+        "description": "Single media asset",
+        "properties": {
+          "src": {
+            "title": "Url for the media asset",
+            "type": "string",
+            "format": "image",
+            "default": "https://picsum.photos/seed/appearance-media/640/480",
+            "description": "Select a media asset for this appearance entry"
+          },
+          "caption": {
+            "title": "Caption for the image",
+            "type": "string",
+            "default": "Podcast cover",
+            "description": "Title of the appearance image"
+          }
+        }
+      }
+    },
+    "tags": {
+      "title": "Tags",
+      "description": "Tags for this appearance entry",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "title": "Tag",
+        "default": "elitr",
+        "description": "Name of the tag"
+      }
+    },
+    "related": {
+      "title": "Related entries",
+      "description": "Entries related to this appearance entry",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Related Entry",
+        "description": "Single related entry",
+        "properties": {
+          "title": {
+            "title": "Title",
+            "type": "string",
+            "description": "Title of the related appearance",
+            "default": "Amplifyn "
+          },
+          "excerpt": {
+            "title": "Excerpt",
+            "type": "string",
+            "description": "Excerpt for the related appearance",
+            "default": "We talked about how we have put together a code-sided starter kit for digital design systems and will take you through how design systems can be done in the simplest way using kickstartDS..."
+          },
+          "url": {
+            "title": "Url",
+            "type": "string",
+            "description": "Url for the related appearance",
+            "default": "/appearance/amplifyn/"
+          },
+          "image": {
+            "title": "Image",
+            "type": "string",
+            "format": "image",
+            "default": "https://picsum.photos/seed/appearance-related-media-01/640/480",
+            "description": "Image for the related appearance"
+          }
+        },
+        "required": ["title", "url"]
+      }
+    }
+  },
+  "required": ["link", "title", "description", "cover"]
+}
+  

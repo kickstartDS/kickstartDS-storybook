@@ -206,6 +206,9 @@ export type Inverted = boolean;
  */
 export type Class = string;
 
+/**
+ * Display one glossary entry with all its details
+ */
 export interface GlossaryProps {
   term: Term;
   definition?: Definition;
