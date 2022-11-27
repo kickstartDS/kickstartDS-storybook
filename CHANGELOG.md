@@ -1,3 +1,15 @@
+# v2.2.0 (Sun Nov 27 2022)
+
+#### 🚀 Enhancement
+
+- Add components for appearances and showcases page types [#87](https://github.com/kickstartDS/kickstartDS-storybook/pull/87) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.34 (Fri Nov 25 2022)
 
 #### ⚠️ Pushed to `master`
