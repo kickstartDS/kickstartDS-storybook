@@ -60,10 +60,10 @@ export const Showcase: FunctionComponent<
         media={{
           image: {
             indent: 'none',
-            src: 'https://picsum.photos/seed/kdsvisual/640/270',
-            srcDesktop: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-            srcMobile: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-            srcTablet: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+            src: cover.src,
+            srcDesktop: cover.src,
+            srcMobile: cover.src,
+            srcTablet: cover.src
           },
           mode: 'image',
           video: {
