@@ -1,0 +1,28 @@
+@use "./appearance-tokens";
+@use "../breakpoint";
+
+:root,
+[ks-theme],
+[ks-inverted] {
+  --c-appearance--img-size: 8rem;
+
+  @include breakpoint.media(">s") {
+    --c-appearance--img-size: 15rem;
+  }
+}
+
+.c-appearance {
+  &--text-media {
+    &.text-media--intext .text-media__gallery {
+      float: left;
+      padding-right: var(--ks-spacing-m);
+    }
+
+    figure {
+      img {
+        width: var(--c-appearance--img-size);
+        height: var(--c-appearance--img-size);
+      }
+    }
+  }
+}

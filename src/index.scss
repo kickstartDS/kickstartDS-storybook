@@ -1,5 +1,6 @@
 @use "./tokens.css";
 @use "./token-default-improvements.scss";
+@use "appearance/appearance";
 @use "button/button";
 @use "contact/contact";
 @use "content-box/content-box";
@@ -27,6 +28,7 @@
 @use "quote/quote";
 @use "rich-text/rich-text";
 @use "section/section";
+@use "showcase/showcase";
 @use "steps/steps";
 @use "slider/slider";
 @use "storytelling/storytelling";

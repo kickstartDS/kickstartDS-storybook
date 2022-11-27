@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://kickstartds.com/glossary.schema.json",
   "title": "Glossary",
+  "description": "Display one glossary entry with all its details",
   "type": "object",
   "properties": {
     "term": {
@@ -77,6 +78,7 @@
       "title": "Related entries",
       "description": "Entries related to this glossary entry",
       "type": "array",
+      "maxItems": 3,
       "items": {
         "type": "object",
         "title": "Related Entry",
