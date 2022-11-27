@@ -21,8 +21,50 @@
       "title": "Description of the appearance",
       "type": "string",
       "format": "markdown",
-      "default": "kickstartDS is a low-code framework and comprehensive component library that enables development teams to create consistent and brand-compliant web frontends. Jonas Ulrich and Daniel Ley join us to talk about kickstartDS, the starter kit for Design Systems.",
+      "default": "kickstartDS is a low-code framework and comprehensive component library that enables development teams to create consistent and brand-compliant web frontends. Jonas Ulrich and Daniel Ley join us to talk about kickstartDS, the starter kit for Design Systems. We've talked to Paul Mikulskis about the beginnings of kickstartDS, what we've built so far... and what we still have in our plans! This podcast is a great and short introduction to kickstartDS, we hope you enjoy it!",
       "description": "Description of the type and content of the appearance"
+    },
+    "host": {
+      "type": "object",
+      "title": "Host of the appearance",
+      "description": "The party hosting the appearance, may be a podcast, company or individual",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string",
+          "default": "Podrocket by Logrocket",
+          "description": "Name of the host"
+        },
+        "url": {
+          "title": "Link",
+          "type": "string",
+          "default": "https://podrocket.logrocket.com/",
+          "description": "URL to get to the web presence of the host"
+        }
+      }
+    },
+    "participants": {
+      "type": "array",
+      "title": "Participants",
+      "description": "Who participated in this appearance?",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      },
+      "default": ["Daniel Ley", "Jonas Ulrich"]
+    },
+    "date": {
+      "type": "string",
+      "title": "Date",
+      "default": "October 21st, 2022",
+      "description": "Date the appearance occurred" 
+    },
+    "language": {
+      "type": "string",
+      "title": "Language",
+      "default": "English",
+      "description": "Primary language the appearance was in",
+      "enum": ["English", "German"]
     },
     "cover": {
       "title": "Cover image",
@@ -120,6 +162,6 @@
       }
     }
   },
-  "required": ["link", "title", "description", "cover"]
+  "required": ["link", "title", "description", "cover", "host", "participants", "date"]
 }
   

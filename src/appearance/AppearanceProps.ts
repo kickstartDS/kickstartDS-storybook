@@ -18,6 +18,26 @@ export type TitleForTheAppearance = string;
  */
 export type DescriptionOfTheAppearance = string;
 /**
+ * Name of the host
+ */
+export type Name = string;
+/**
+ * URL to get to the web presence of the host
+ */
+export type Link = string;
+/**
+ * Who participated in this appearance?
+ */
+export type Participants = [string, ...string[]];
+/**
+ * Date the appearance occurred
+ */
+export type Date = string;
+/**
+ * Primary language the appearance was in
+ */
+export type Language = "English" | "German";
+/**
  * Url to main image for this appearance entry
  */
 export type Url = string;
@@ -73,10 +93,22 @@ export interface AppearanceProps {
   link: LinkToAppearance;
   title: TitleForTheAppearance;
   description: DescriptionOfTheAppearance;
+  host: HostOfTheAppearance;
+  participants: Participants;
+  date: Date;
+  language?: Language;
   cover: CoverImage;
   media?: Media;
   tags?: Tags;
   related?: RelatedEntries;
+  [k: string]: unknown;
+}
+/**
+ * The party hosting the appearance, may be a podcast, company or individual
+ */
+export interface HostOfTheAppearance {
+  name?: Name;
+  url?: Link;
   [k: string]: unknown;
 }
 /**

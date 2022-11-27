@@ -6,7 +6,8 @@ import { Section } from "@kickstartds/base/lib/section";
 import { ContentBox } from "@kickstartds/base/lib/content-box";
 
 import { ShowcaseProps } from "./ShowcaseProps";
-import { LinkButton } from "../link-button/LinkButtonComponent";
+import { Visual } from "@kickstartds/content/lib/visual";
+import { Headline } from "@kickstartds/base/lib/headline";
 
 export const Showcase: FunctionComponent<
   ShowcaseProps & HTMLAttributes<HTMLDivElement>
@@ -24,47 +25,101 @@ export const Showcase: FunctionComponent<
     <Section
       width="default"
       spaceBefore="small"
-      spaceAfter="none"
+      spaceAfter="small"
       headline={{
         align: "left",
-        content: title,
         level: "h1",
       }}
-    ></Section>
+    >
+      <Visual
+        height="small"
+        box={{
+          background: 'solid',
+          enabled: true,
+          headline: {
+            align: "left",
+            content: title,
+            level: 'h1',
+            pageHeader: false,
+            spaceAfter: 'small',
+            styleAs: 'h2'
+          },
+          horizontal: 'left',
+          link: {
+            enabled: true,
+            href: link,
+            label: 'Visit showcase',
+            size: 'medium',
+            variant: 'solid',
+            highlight: true,
+            deko: true,
+            newTab: true,
+          },
+          vertical: 'center'
+        }}
+        media={{
+          image: {
+            indent: 'none',
+            src: 'https://picsum.photos/seed/kdsvisual/640/270',
+            srcDesktop: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+            srcMobile: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+            srcTablet: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+          },
+          mode: 'image',
+          video: {
+            srcDesktop: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4',
+            srcMobile: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4',
+            srcTablet: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4'
+          }
+        }}
+      />
+    </Section>
     
-    <div className="template template--wide">
-      <div className="template__main">
-        <Section
-          width="narrow"
-          mode="list"
-          spaceBefore="none"
-          spaceAfter="default"
-        >
-          <div className="c-showcase">
-            {cover && cover.src ? (
-              <TextMedia
-                className="c-showcase--text-media"
-                media={[
-                  {
-                    image: {
-                      src: cover.src,
-                      height: 100,
-                      width: 100,
+    <Section
+      width="max"
+      mode="list"
+      spaceBefore="none"
+      spaceAfter="default"
+    >
+      <div className="template template--wide">
+        <div className="template__main">
+          {media && media.length > 0 && (
+            <Section
+              width="wide"
+              spaceBefore="none"
+              spaceAfter="small"
+              className="img-grid"
+              headline={{
+                level: "h3",
+                align: "left",
+                content: "Screenshot impressions",
+              }}
+            >
+              {media?.map((item, i) => (
+                <TextMedia
+                  media={[
+                    {
+                      lightboxImage: {
+                        image: item.src,
+                        thumb: item.src,
+                        height: 853,
+                        width: 1280,
+                        zoomIcon: true,
+                        gallery: "closer-look",
+                      },
+                      caption: item.caption,
                     },
-                  },
-                ]}
-                mediaAlignment="intext-left"
-                text={description}
-              />
-            ) : (
-              <TextMedia
-                className="c-showcase--text-media"
-                media={[]}
-                mediaAlignment="intext-left"
-                text={description}
-              />
-            )}
-          </div>
+                  ]}
+                  key={i}
+                  text=""
+                  mediaAlignment="above-center"
+                />
+              ))}
+            </Section>
+          )}    
+        </div>
+        <div className="template__side">
+          <Headline content="Filed under" level="p" styleAs="p" />
           {tags && tags.length > 0 && (
             <div className="tag-label-container">
               {tags?.map((tag, i) => (
@@ -74,64 +129,17 @@ export const Showcase: FunctionComponent<
               ))}
             </div>
           )}
-        </Section>
-      </div>
-      <div className="template__side">
-        <Section
-          spaceBefore="none"
-          spaceAfter="default"
-          width="narrow"
-          background="default"
-        >
+          <br/>
+          <Headline content="Description" level="p" styleAs="p" />
           <TextMedia
-            text="Explore this showcase yourself by visiting the following link:"
-            mediaAlignment="above-center"
+            className="c-showcase--text-media"
+            media={[]}
+            mediaAlignment="intext-left"
+            text={description}
           />
-          <LinkButton
-            href={link}
-            label="Visit showcase"
-            deko={true}
-            variant="solid"
-            size="large"
-          />
-        </Section>
+        </div>
       </div>
-    </div>
-
-    {media && media.length > 0 && (
-      <Section
-        width="wide"
-        spaceBefore="none"
-        spaceAfter="small"
-        className="img-grid"
-        headline={{
-          level: "h3",
-          align: "left",
-          content: "Some screenshots for the showcase",
-        }}
-      >
-        {media?.map((item, i) => (
-          <TextMedia
-            media={[
-              {
-                lightboxImage: {
-                  image: item.src,
-                  thumb: item.src,
-                  height: 853,
-                  width: 1280,
-                  zoomIcon: true,
-                  gallery: "closer-look",
-                },
-                caption: item.caption,
-              },
-            ]}
-            key={i}
-            text=""
-            mediaAlignment="above-center"
-          />
-        ))}
-      </Section>
-    )}    
+    </Section>
 
     {related && related.length > 0 && (
       <Section
@@ -156,8 +164,8 @@ export const Showcase: FunctionComponent<
             link={{
               href: item.url,
               enabled: true,
-              label: "Explore showcase",
-              variant: "clear",
+              label: "Explore",
+              variant: "outline",
               size: "medium",
               iconAfter: true,
               icon: {

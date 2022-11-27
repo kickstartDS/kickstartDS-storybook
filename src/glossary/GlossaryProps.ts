@@ -42,6 +42,14 @@ export type Tag = string;
  */
 export type Tags = Tag[];
 /**
+ * Entries related to this glossary entry
+ */
+export type RelatedEntries =
+  | []
+  | [RelatedEntry]
+  | [RelatedEntry, RelatedEntry]
+  | [RelatedEntry, RelatedEntry, RelatedEntry];
+/**
  * Title of the related term
  */
 export type Title = string;
@@ -57,10 +65,6 @@ export type Url = string;
  * Image for the related term
  */
 export type Image = string;
-/**
- * Entries related to this glossary entry
- */
-export type RelatedEntries = RelatedEntry[];
 /**
  * Link to the related StacKShare discussion
  */

@@ -78,6 +78,7 @@
       "title": "Related entries",
       "description": "Entries related to this glossary entry",
       "type": "array",
+      "maxItems": 3,
       "items": {
         "type": "object",
         "title": "Related Entry",
