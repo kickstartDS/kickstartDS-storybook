@@ -403,6 +403,40 @@
           }
         }
       }
+      //Contact
+      &-contact {
+        &::after {
+          transform: scale(1);
+          top: 0;
+          right: -40%;
+          height: 100%;
+          width: 100%;
+          opacity: 0.25;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          @media (min-width: 48em) {
+            right: -30%;
+            transform: scale(1.35);
+          }
+
+          @media (min-width: 80em) {
+            right: -20%;
+          }
+        }
+
+        &--dark {
+          &::after {
+            background-image: url(/img/contact-inverted.svg);
+          }
+        }
+
+        &--light {
+          &::after {
+            background-image: url(/img/contact-inverted.svg);
+          }
+        }
+      }
     }
 
     &.col-three {

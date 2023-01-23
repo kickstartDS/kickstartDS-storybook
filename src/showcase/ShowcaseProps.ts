@@ -14,6 +14,30 @@ export type LinkToShowcase = string;
  */
 export type TitleForTheShowcase = string;
 /**
+ * Enable/Disable Quote element
+ */
+export type QuoteToggle = boolean;
+/**
+ * Select an image to display inside the quote, to the left
+ */
+export type ImageSource = string;
+/**
+ * Copy text for the element
+ */
+export type TextContent = string;
+/**
+ * Optionally display the source for the quote
+ */
+export type Source = string;
+/**
+ * Optionally display a byline for the quote's source
+ */
+export type SourceAddition = string;
+/**
+ * Additional css classes attached to the wrapping element
+ */
+export type Class = string;
+/**
  * Description of the type and content of the appearance
  */
 export type DescriptionOfTheAppearance = string;
@@ -72,11 +96,24 @@ export type RelatedEntries = RelatedEntry[];
 export interface ShowcaseProps {
   link: LinkToShowcase;
   title: TitleForTheShowcase;
+  quote?: QuoteElement;
   description: DescriptionOfTheAppearance;
   cover: CoverImage;
   media?: Media;
   tags?: Tags;
   related?: RelatedEntries;
+  [k: string]: unknown;
+}
+/**
+ * Quote that should be shown for this appearance
+ */
+export interface QuoteElement {
+  quoteToggle?: QuoteToggle;
+  image?: ImageSource;
+  text?: TextContent;
+  source?: Source;
+  byline?: SourceAddition;
+  className?: Class;
   [k: string]: unknown;
 }
 /**
