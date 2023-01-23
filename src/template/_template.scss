@@ -5,10 +5,12 @@
   position: relative;
   margin: auto;
   gap: var(--ks-spacing-m);
-  // padding: 0 var(--l-section--content-padding);  
+  display: flex;
+  flex-direction: column;
+  // padding: 0 var(--l-section--content-padding);
 
   @include breakpoint.media(">m") {
-    display: flex;
+    flex-direction: row;
   }
 
   .l-container {
@@ -18,7 +20,7 @@
   .l-section {
     margin: unset;
     &__container {
-      // padding: 0;  
+      // padding: 0;
     }
   }
 
