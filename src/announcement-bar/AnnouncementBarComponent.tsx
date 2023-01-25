@@ -1,8 +1,8 @@
-import React, { FC, HTMLAttributes } from "react";
 import { Section } from "@kickstartds/base/lib/section";
 import { Link } from "@kickstartds/base/lib/link";
 import { LinkButton } from "@kickstartds/base/lib/link-button";
 import { useSessionState } from "../hooks/useSessionState";
+import { FC, HTMLAttributes } from "react";
 
 const AlertIcon: FC<HTMLAttributes<SVGElement>> = (props) => (
   <svg
@@ -55,25 +55,21 @@ export const AnnouncementBar: FC<AnnouncementBarProps> = ({
       className="c-announcement-bar--section"
     >
       <div className="c-announcement-bar">
-        <AlertIcon className="c-announcement-bar__icon" />
         <div className="c-announcement-bar__content">
+          <AlertIcon className="c-announcement-bar__icon" />
           <span className="c-announcement-bar__text">{content}</span>
-          {hidden ? (
-            ""
-          ) : (
-            <LinkButton
-              label={linkLabel}
-              href={linkHref}
-              variant="clear"
-              iconAfter
-              icon={{
-                icon: "chevron-right",
-              }}
-              size="small"
-              className="c-announcement-bar__link"
-            />
-          )}
         </div>
+        {hidden ? (
+          ""
+        ) : (
+          <LinkButton
+            label={linkLabel}
+            href={linkHref}
+            variant="solid"
+            size="small"
+            className="c-announcement-bar__link"
+          />
+        )}
       </div>
     </Section>
   );

@@ -7,8 +7,8 @@ export default {
   component: AnnouncementBar,
   args: {
     content:
-      "We are on a mission to democratize design systems. That's why we will go open source soon.",
-    linkLabel: "Get notified",
+      "kickstartDS is Open Source now, learn more in our announcement blog post 🎉",
+    linkLabel: "Read Post",
     linkHref: "#notification-subscribe",
     targetSessionStorageKey: "hideSubscriptionForm",
   },

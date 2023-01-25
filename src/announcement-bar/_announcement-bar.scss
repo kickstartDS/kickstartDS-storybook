@@ -1,18 +1,21 @@
+@use "../breakpoint.scss";
+
 .c-announcement-bar {
   display: flex;
   margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
   gap: var(--ks-spacing-xxs);
   padding: var(--ks-spacing-xs) 0;
 
   &--section {
     padding: var(--ks-spacing-xs) 0;
+    border-bottom: 4px solid var(--ks-color-primary);
   }
 
   &__content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--ks-spacing-xxs);
+    display: inline;
+    text-align: left;
   }
 
   &__text {
@@ -26,6 +29,8 @@
     max-height: calc(var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs));
     width: 100%;
     height: 100%;
+    vertical-align: middle;
+    margin-right: var(--ks-spacing-xxs);
   }
 
   &__link {
@@ -33,16 +38,6 @@
     display: flex;
 
     .c-button {
-      padding: 0;
-      line-height: var(--ks-line-height-ui-xs);
-
-      &:hover {
-        padding: 0;
-        &:before {
-          background-color: transparent;
-        }
-      }
-
       span {
         display: flex;
       }

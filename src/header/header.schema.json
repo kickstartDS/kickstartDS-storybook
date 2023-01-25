@@ -49,6 +49,11 @@
       },
       "default": [
         {
+          "label": "Documentation",
+          "href": "/documentation",
+          "id": "documentation"
+        },
+        {
           "label": "Integrations",
           "href": "/integrations",
           "id": "integrations"
@@ -95,11 +100,11 @@
       "properties": {
         "content": {
           "type": "string",
-          "default": "We are on a mission to democratize design systems. That's why we will go open source soon."
+          "default": "kickstartDS is Open Source now, learn more in our announcement blog post 🎉"
         },
         "linkLabel": {
           "type": "string",
-          "default": "Get notified"
+          "default": "Read Post"
         },
         "linkHref": {
           "type": "string",

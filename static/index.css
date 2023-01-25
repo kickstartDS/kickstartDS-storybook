@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 23 Jan 2023 07:28:53 GMT
+ * Generated on Wed, 25 Jan 2023 11:53:02 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -2443,11 +2443,19 @@
 .github-corner {
   fill: var(--ks-color-background-default);
   color: var(--ks-color-primary);
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 100;
   border: 0;
   right: 0;
+  width: 50px;
+  height: 50px;
+}
+@media (min-width: 40em) {
+  .github-corner {
+    width: unset;
+    height: unset;
+  }
 }
 .github-corner .octo-arm {
   transform-origin: center;
@@ -2466,7 +2474,7 @@
     transform: rotate(10deg);
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 40em) {
   .github-corner:hover .octo-arm {
     animation: none;
   }
@@ -2635,6 +2643,16 @@ header[data-component="kds.header"] {
 .nav-main__item--active .nav-main__item__link {
   color: var(--c-nav-main_item--color-active);
   font-weight: var(--c-nav-main_item--font-weight-active);
+}
+.nav-main__item.nav-main__item--icon::after {
+  content: none;
+}
+.nav-main__item--github .icon {
+  border-radius: var(--ks-border-radius-circle);
+  transition: all var(--ks-transition-hover);
+}
+.nav-main__item--github:hover .icon {
+  background-color: var(--ks-color-primary-inverted);
 }
 .nav-main__item__link {
   /* critical:start */
@@ -4544,17 +4562,18 @@ article .c-teaser .c-teaser__body {
 .c-announcement-bar {
   display: flex;
   margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
   gap: var(--ks-spacing-xxs);
   padding: var(--ks-spacing-xs) 0;
 }
 .c-announcement-bar--section {
   padding: var(--ks-spacing-xs) 0;
+  border-bottom: 4px solid var(--ks-color-primary);
 }
 .c-announcement-bar__content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--ks-spacing-xxs);
+  display: inline;
+  text-align: left;
 }
 .c-announcement-bar__text {
   color: var(--ks-text-color-default);
@@ -4566,20 +4585,12 @@ article .c-teaser .c-teaser__body {
   max-height: calc(var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs));
   width: 100%;
   height: 100%;
+  vertical-align: middle;
+  margin-right: var(--ks-spacing-xs);
 }
 .c-announcement-bar__link {
   width: fit-content;
   display: flex;
-}
-.c-announcement-bar__link .c-button {
-  padding: 0;
-  line-height: var(--ks-line-height-ui-xs);
-}
-.c-announcement-bar__link .c-button:hover {
-  padding: 0;
-}
-.c-announcement-bar__link .c-button:hover:before {
-  background-color: transparent;
 }
 .c-announcement-bar__link .c-button span {
   display: flex;
