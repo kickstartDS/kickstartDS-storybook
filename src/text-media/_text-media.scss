@@ -1,7 +1,16 @@
 .text-media {
-    &--highlight {
-        .c-rich-text {
-            font: var(--ks-font-ui-l);
-        }
+  &--highlight {
+    .c-rich-text {
+      font: var(--ks-font-ui-l);
     }
+  }
+
+  &__caption {
+    font: var(--ks-font-ui-s);
+  }
+}
+
+caption,
+figcaption {
+  font-style: normal;
 }

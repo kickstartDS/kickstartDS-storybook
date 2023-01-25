@@ -11,6 +11,10 @@
   }
 
   &.related-post {
+    @container content-box (min-width: 550px) {
+      flex-direction: row;
+    }
+
     padding: var(--ks-spacing-m);
     background: var(--ks-background-color-default);
 
@@ -19,7 +23,7 @@
     .c-content-box {
       &__image {
         width: 35%;
-        height: auto;
+        height: fit-content;
         padding-bottom: 0;
 
         img {
