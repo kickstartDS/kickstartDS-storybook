@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 25 Jan 2023 11:53:02 GMT
+ * Generated on Thu, 26 Jan 2023 03:04:24 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -4564,7 +4564,7 @@ article .c-teaser .c-teaser__body {
   margin: auto;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--ks-spacing-xxs);
+  gap: var(--ks-spacing-xs);
   padding: var(--ks-spacing-xs) 0;
 }
 .c-announcement-bar--section {
@@ -4586,7 +4586,7 @@ article .c-teaser .c-teaser__body {
   width: 100%;
   height: 100%;
   vertical-align: middle;
-  margin-right: var(--ks-spacing-xs);
+  margin-right: var(--ks-spacing-xxs);
 }
 .c-announcement-bar__link {
   width: fit-content;
