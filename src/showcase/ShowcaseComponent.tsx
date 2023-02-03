@@ -284,18 +284,25 @@ export const Showcase: FunctionComponent<
             />
           ))}
         </Inline>
-        <div align="center">
-          <Button
-            variant="outline"
-            label="Showcases Overview"
-            iconAfter
-            icon={{
-              icon: "chevron-right",
-            }}
-            size="large"
-          />
-        </div>
       </Section>
     )}
+    <Section
+      spaceBefore="none"
+      spaceAfter="default"
+      background="accent"
+      width="wide"
+    >
+      <Inline justify="center">
+        <Button
+          variant="outline"
+          label="Showcases Overview"
+          iconAfter
+          icon={{
+            icon: "chevron-right",
+          }}
+          size="large"
+        />
+      </Inline>
+    </Section>
   </div>
 );
