@@ -4,12 +4,11 @@
 .template {
   position: relative;
   margin: auto;
-  gap: var(--ks-spacing-m);
+  gap: var(--ks-spacing-l);
   display: flex;
   flex-direction: column;
-  // padding: 0 var(--l-section--content-padding);
 
-  @include breakpoint.media(">m") {
+  @media (min-width: 76rem) {
     flex-direction: row;
   }
 
@@ -19,9 +18,6 @@
 
   .l-section {
     margin: unset;
-    &__container {
-      // padding: 0;
-    }
   }
 
   &--wide {
@@ -30,7 +26,7 @@
 
   &__main,
   &__side {
-    @include breakpoint.media(">m") {
+    @media (min-width: 76rem) {
       height: fit-content;
       position: sticky;
       top: var(--ks-spacing-m);
@@ -38,13 +34,13 @@
   }
 
   &__main {
-    @include breakpoint.media(">m") {
+    @media (min-width: 76rem) {
       width: 70%;
     }
   }
 
   &__side {
-    @include breakpoint.media(">m") {
+    @media (min-width: 76rem) {
       width: 30%;
     }
   }

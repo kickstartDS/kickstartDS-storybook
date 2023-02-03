@@ -2,7 +2,6 @@
 @use "./content-box-tokens";
 
 .c-content-box {
-  --c-content-box--gap: var(--ks-spacing-stack-s);
   color: var(--g-topic--color);
   margin-bottom: 0;
 
@@ -22,13 +21,21 @@
 
     .c-content-box {
       &__image {
-        width: 35%;
         height: fit-content;
         padding-bottom: 0;
 
+        @container content-box (min-width: 550px) {
+          width: 25%;
+        }
+
         img {
           position: relative;
+          object-fit: contain;
           aspect-ratio: 1 / 1;
+
+          @container content-box (min-width: 550px) {
+            width: 100%;
+          }
         }
       }
 
@@ -43,11 +50,24 @@
           bottom: 0;
           pointer-events: none;
         }
+
+        .c-rich-text {
+          font: var(--ks-font-copy-s);
+
+          @container content-box (min-width: 350px) {
+            font: var(--ks-font-copy-m);
+          }
+        }
       }
 
       &__topic {
-        font: var(--ks-font-ui-l);
+        font: var(--ks-font-copy-s);
         font-weight: var(--ks-font-weight-bold);
+
+        @container content-box (min-width: 350px) {
+          font: var(--ks-font-copy-m);
+          font-weight: var(--ks-font-weight-bold);
+        }
       }
     }
   }

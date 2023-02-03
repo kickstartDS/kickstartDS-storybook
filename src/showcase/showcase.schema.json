@@ -113,7 +113,7 @@
             "title": "Excerpt",
             "type": "string",
             "description": "Excerpt for the related showcase",
-            "default": "For agencies and store operators with ambitions, maxcluster makes complex technologies uncomplicated to use and thus enables them to become even more successful."
+            "default": "For agencies and store operators with ambitions..."
           },
           "url": {
             "title": "Url",
@@ -125,7 +125,7 @@
             "title": "Image",
             "type": "string",
             "format": "image",
-            "default": "https://picsum.photos/seed/showcase-related-media-01/640/480",
+            "default": "img/showcase/showcase-cover.png",
             "description": "Image for the related showcase"
           }
         },
