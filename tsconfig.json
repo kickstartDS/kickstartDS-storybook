@@ -4,7 +4,8 @@
     "declaration": true,
     "jsx": "preserve",
     "outDir": "dist/components",
-    "strict": false
+    "strict": false,
+    "esModuleInterop": true
   },
   "include": ["src/types.ts"],
   "exclude": ["node_modules"]
