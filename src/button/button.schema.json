@@ -6,6 +6,13 @@
     {
       "type": "object",
       "properties": {
+        "href": {
+          "title": "Button href?",
+          "description": "Link used for button",
+          "type": "string",
+          "format": "uri",
+          "examples": ["https://example.com"]
+        },
         "highlighted": {
           "type": "boolean",
           "title": "Button Highlighted Style",

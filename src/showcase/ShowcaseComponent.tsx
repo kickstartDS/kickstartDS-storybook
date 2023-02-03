@@ -133,6 +133,7 @@ export const Showcase: FunctionComponent<
             }}
             highlighted
             deko
+            size="medium"
           />
         </div>
       </Stack>
@@ -189,6 +190,7 @@ export const Showcase: FunctionComponent<
               variant="outline"
               href={link}
               iconAfter
+              size="medium"
               icon={{
                 icon: "chevron-right",
                 iconAfter: true,
@@ -198,25 +200,23 @@ export const Showcase: FunctionComponent<
         </div>
       </div>
     </Section>
-    <Section
-      spaceBefore="default"
-      spaceAfter="default"
-      width="narrow"
-      pattern="1"
-    >
-      {quote.quoteToggle ? (
-        <>
-          <Quote
-            image={quote.image}
-            text={quote.text}
-            source={quote.source}
-            byline={quote.byline}
-          />
-        </>
-      ) : (
-        ""
-      )}
-    </Section>
+    {quote.quoteToggle ? (
+      <Section
+        spaceBefore="default"
+        spaceAfter="default"
+        width="narrow"
+        pattern="1"
+      >
+        <Quote
+          image={quote.image}
+          text={quote.text}
+          source={quote.source}
+          byline={quote.byline}
+        />
+      </Section>
+    ) : (
+      ""
+    )}
 
     <Section
       spaceBefore="default"
