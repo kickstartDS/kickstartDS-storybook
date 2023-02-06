@@ -4,13 +4,11 @@ import { FunctionComponent, HTMLAttributes } from "react";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Section } from "@kickstartds/base/lib/section";
-import { ContentBox } from "@kickstartds/base/lib/content-box";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 
 import { ShowcaseProps } from "./ShowcaseProps";
 import { Visual } from "@kickstartds/content/lib/visual";
 import { Headline } from "@kickstartds/base/lib/headline";
-import { Link } from "@kickstartds/base/lib/link";
 import { Button } from "../button/ButtonComponent";
 import { RichText } from "@kickstartds/base";
 import { Quote } from "@kickstartds/content";
@@ -30,59 +28,25 @@ export const Showcase: FunctionComponent<
   ...props
 }) => (
   <div {...props}>
-    <Section spaceBefore="small" spaceAfter="none" width="wide">
-      {tags && tags.length > 0 && (
-        <div className="tag-label-container">
-          {tags?.map((tag, i) => (
-            <div>
-              <TagLabel label={tag} size="s" key={i} />
-            </div>
-          ))}
-        </div>
-      )}
+    <Section spaceBefore="default" spaceAfter="small" width="narrow">
+      <div>
+        <Headline align="left" level="h1" content={title} />
+        {tags && tags.length > 0 && (
+          <div className="tag-label-container">
+            {tags?.map((tag, i) => (
+              <div>
+                <TagLabel label={tag} size="m" key={i} />
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
     </Section>
-    <Section
-      headline={{
-        align: "left",
-        level: "h1",
-        content: title,
-      }}
-      spaceBefore="none"
-      spaceAfter="none"
-      mode="list"
-      width="wide"
-    >
+    <Section spaceBefore="none" spaceAfter="none" mode="list" width="wide">
       <Visual
         height="default"
         box={{
-          background: "solid",
           enabled: false,
-          headline: {
-            align: "left",
-            content: "Explore the showcase yourself",
-            level: "h3",
-            pageHeader: false,
-            spaceAfter: "none",
-            styleAs: "h3",
-          },
-          horizontal: "center",
-          link: {
-            enabled: true,
-            href: link,
-            label: "Visit showcase",
-            size: "large",
-            variant: "solid",
-            newTab: true,
-            deko: true,
-            highlighted: true,
-
-            iconAfter: true,
-            icon: {
-              icon: "chevron-right",
-              iconAfter: true,
-            },
-          },
-          vertical: "bottom",
         }}
         media={{
           image: {

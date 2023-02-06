@@ -57,7 +57,7 @@
       "type": "string",
       "title": "Date",
       "default": "October 21st, 2022",
-      "description": "Date the appearance occurred" 
+      "description": "Date the appearance occurred"
     },
     "language": {
       "type": "string",
@@ -75,7 +75,7 @@
           "title": "Url",
           "type": "string",
           "format": "image",
-          "default": "https://picsum.photos/seed/appearance-cover/300/300",
+          "default": "img/appearance/appearance-cover.jpeg",
           "description": "Url to main image for this appearance entry"
         },
         "caption": {
@@ -100,13 +100,13 @@
             "title": "Url for the media asset",
             "type": "string",
             "format": "image",
-            "default": "https://picsum.photos/seed/appearance-media/640/480",
+            "default": "img/appearance/appearance-impression.png",
             "description": "Select a media asset for this appearance entry"
           },
           "caption": {
             "title": "Caption for the image",
             "type": "string",
-            "default": "Podcast cover",
+            "default": "Podcast impression",
             "description": "Title of the appearance image"
           }
         }
@@ -142,7 +142,7 @@
             "title": "Excerpt",
             "type": "string",
             "description": "Excerpt for the related appearance",
-            "default": "We talked about how we have put together a code-sided starter kit for digital design systems and will take you through how design systems can be done in the simplest way using kickstartDS..."
+            "default": "We talked about how we have put together a code-sided starter kit for digital design systems and..."
           },
           "url": {
             "title": "Url",
@@ -162,6 +162,13 @@
       }
     }
   },
-  "required": ["link", "title", "description", "cover", "host", "participants", "date"]
+  "required": [
+    "link",
+    "title",
+    "description",
+    "cover",
+    "host",
+    "participants",
+    "date"
+  ]
 }
-  
