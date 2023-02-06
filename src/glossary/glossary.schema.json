@@ -27,7 +27,7 @@
           "title": "Url for the main image",
           "type": "string",
           "format": "image",
-          "default": "https://picsum.photos/seed/glossary-cover/300/300",
+          "default": "img/glossary/logo.png",
           "description": "Url to main image for this glossary entry"
         },
         "caption": {

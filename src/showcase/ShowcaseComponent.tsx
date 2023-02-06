@@ -106,7 +106,7 @@ export const Showcase: FunctionComponent<
       spaceBefore="default"
       spaceAfter="default"
     >
-      <div className="template template--wide">
+      <div className="template">
         <div className="template__main">
           <Stack gutter="var(--ks-spacing-stack-l)">
             {media && media.length > 0 && (

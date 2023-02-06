@@ -117,7 +117,7 @@ ${language}
           content: "Some impressions",
         }}
       >
-        <div className="template template--wide">
+        <div className="template">
           <div className="template__main">
             {media && media.length > 0 && (
               <Stack gutter="var(--ks-spacing-stack-l)">
