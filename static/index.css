@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 06 Feb 2023 04:26:20 GMT
+ * Generated on Mon, 06 Feb 2023 06:11:57 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -3724,24 +3724,14 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
     top: 5%;
   }
 }
-:root .l-section__pattern-graphics--dark::before,
-[ks-theme] .l-section__pattern-graphics--dark::before,
-[ks-inverted] .l-section__pattern-graphics--dark::before {
+:root .l-section__pattern-graphics::before,
+[ks-theme] .l-section__pattern-graphics::before,
+[ks-inverted] .l-section__pattern-graphics::before {
   content: url(/patterns/graphics--1.svg);
 }
-:root .l-section__pattern-graphics--dark::after,
-[ks-theme] .l-section__pattern-graphics--dark::after,
-[ks-inverted] .l-section__pattern-graphics--dark::after {
-  content: url(/patterns/graphics--2.svg);
-}
-:root .l-section__pattern-graphics--light::before,
-[ks-theme] .l-section__pattern-graphics--light::before,
-[ks-inverted] .l-section__pattern-graphics--light::before {
-  content: url(/patterns/graphics--1.svg);
-}
-:root .l-section__pattern-graphics--light::after,
-[ks-theme] .l-section__pattern-graphics--light::after,
-[ks-inverted] .l-section__pattern-graphics--light::after {
+:root .l-section__pattern-graphics::after,
+[ks-theme] .l-section__pattern-graphics::after,
+[ks-inverted] .l-section__pattern-graphics::after {
   content: url(/patterns/graphics--2.svg);
 }
 :root .l-section__pattern-1::before,
@@ -3785,24 +3775,24 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
     right: 15%;
   }
 }
-:root .l-section__pattern-1--dark::before,
-[ks-theme] .l-section__pattern-1--dark::before,
-[ks-inverted] .l-section__pattern-1--dark::before {
-  content: url(/patterns/pattern_1-dark--1.svg);
+:root .l-section__pattern-1[ks-inverted=true]::before,
+[ks-theme] .l-section__pattern-1[ks-inverted=true]::before,
+[ks-inverted] .l-section__pattern-1[ks-inverted=true]::before {
+  content: url(/patterns/pattern_1-inverted--1.svg);
 }
-:root .l-section__pattern-1--dark::after,
-[ks-theme] .l-section__pattern-1--dark::after,
-[ks-inverted] .l-section__pattern-1--dark::after {
-  content: url(/patterns/pattern_1-dark--2.svg);
+:root .l-section__pattern-1[ks-inverted=true]::after,
+[ks-theme] .l-section__pattern-1[ks-inverted=true]::after,
+[ks-inverted] .l-section__pattern-1[ks-inverted=true]::after {
+  content: url(/patterns/pattern_1-inverted--2.svg);
 }
-:root .l-section__pattern-1--light::before,
-[ks-theme] .l-section__pattern-1--light::before,
-[ks-inverted] .l-section__pattern-1--light::before {
+:root .l-section__pattern-1::before,
+[ks-theme] .l-section__pattern-1::before,
+[ks-inverted] .l-section__pattern-1::before {
   content: url(/patterns/pattern_1-light--1.svg);
 }
-:root .l-section__pattern-1--light::after,
-[ks-theme] .l-section__pattern-1--light::after,
-[ks-inverted] .l-section__pattern-1--light::after {
+:root .l-section__pattern-1::after,
+[ks-theme] .l-section__pattern-1::after,
+[ks-inverted] .l-section__pattern-1::after {
   content: url(/patterns/pattern_1-light--2.svg);
 }
 :root .l-section__pattern-2::before,
@@ -3837,25 +3827,25 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
     right: 15%;
   }
 }
-:root .l-section__pattern-2--dark::before,
-[ks-theme] .l-section__pattern-2--dark::before,
-[ks-inverted] .l-section__pattern-2--dark::before {
-  content: url(/patterns/pattern_2-dark--1.svg);
+:root .l-section__pattern-2[ks-inverted=true]::before,
+[ks-theme] .l-section__pattern-2[ks-inverted=true]::before,
+[ks-inverted] .l-section__pattern-2[ks-inverted=true]::before {
+  content: url(/patterns/pattern_2-inverted--1.svg);
 }
-:root .l-section__pattern-2--dark::after,
-[ks-theme] .l-section__pattern-2--dark::after,
-[ks-inverted] .l-section__pattern-2--dark::after {
-  content: url(/patterns/pattern_2-dark--2.svg);
+:root .l-section__pattern-2[ks-inverted=true]::after,
+[ks-theme] .l-section__pattern-2[ks-inverted=true]::after,
+[ks-inverted] .l-section__pattern-2[ks-inverted=true]::after {
+  content: url(/patterns/pattern_2-inverted--2.svg);
 }
-:root .l-section__pattern-2--light::before,
-[ks-theme] .l-section__pattern-2--light::before,
-[ks-inverted] .l-section__pattern-2--light::before {
-  content: url(/patterns/pattern_2-light--1.svg);
+:root .l-section__pattern-2::before,
+[ks-theme] .l-section__pattern-2::before,
+[ks-inverted] .l-section__pattern-2::before {
+  content: url(/patterns/pattern_2--1.svg);
 }
-:root .l-section__pattern-2--light::after,
-[ks-theme] .l-section__pattern-2--light::after,
-[ks-inverted] .l-section__pattern-2--light::after {
-  content: url(/patterns/pattern_2-light--2.svg);
+:root .l-section__pattern-2::after,
+[ks-theme] .l-section__pattern-2::after,
+[ks-inverted] .l-section__pattern-2::after {
+  content: url(/patterns/pattern_2--2.svg);
 }
 :root .l-section__pattern-3::before,
 [ks-theme] .l-section__pattern-3::before,
@@ -3916,14 +3906,14 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
     right: 25%;
   }
 }
-:root .l-section__pattern-3--light::before,
-[ks-theme] .l-section__pattern-3--light::before,
-[ks-inverted] .l-section__pattern-3--light::before {
-  content: url(/patterns/pattern_1-light--2.svg);
+:root .l-section__pattern-3::before,
+[ks-theme] .l-section__pattern-3::before,
+[ks-inverted] .l-section__pattern-3::before {
+  content: url(/patterns/pattern_1--2.svg);
 }
-:root .l-section__pattern-3--light::after,
-[ks-theme] .l-section__pattern-3--light::after,
-[ks-inverted] .l-section__pattern-3--light::after {
+:root .l-section__pattern-3::after,
+[ks-theme] .l-section__pattern-3::after,
+[ks-inverted] .l-section__pattern-3::after {
   content: url(/patterns/pattern_3.svg);
 }
 :root .l-section__pattern-4::after,
@@ -3956,14 +3946,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
     right: 30%;
   }
 }
-:root .l-section__pattern-4--dark::after,
-[ks-theme] .l-section__pattern-4--dark::after,
-[ks-inverted] .l-section__pattern-4--dark::after {
-  content: url(/patterns/pattern_3.svg);
-}
-:root .l-section__pattern-4--light::after,
-[ks-theme] .l-section__pattern-4--light::after,
-[ks-inverted] .l-section__pattern-4--light::after {
+:root .l-section__pattern-4::after,
+[ks-theme] .l-section__pattern-4::after,
+[ks-inverted] .l-section__pattern-4::after {
   content: url(/patterns/pattern_3.svg);
 }
 :root .l-section__pattern-contact::after,
@@ -3993,14 +3978,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
     right: -20%;
   }
 }
-:root .l-section__pattern-contact--dark::after,
-[ks-theme] .l-section__pattern-contact--dark::after,
-[ks-inverted] .l-section__pattern-contact--dark::after {
-  background-image: url(/img/contact-inverted.svg);
-}
-:root .l-section__pattern-contact--light::after,
-[ks-theme] .l-section__pattern-contact--light::after,
-[ks-inverted] .l-section__pattern-contact--light::after {
+:root .l-section__pattern-contact::after,
+[ks-theme] .l-section__pattern-contact::after,
+[ks-inverted] .l-section__pattern-contact::after {
   background-image: url(/img/contact-inverted.svg);
 }
 :root .l-section.col-three .l-section__container,

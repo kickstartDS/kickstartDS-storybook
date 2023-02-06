@@ -9,21 +9,9 @@
     {
       "type": "object",
       "properties": {
-        "background": {
-          "anyOf": [
-            {
-              "type": "string",
-              "enum": ["default", "accent", "dark", "dark-accent"],
-              "default": "default"
-            },
-            {
-              "$ref": "http://schema.kickstartds.com/base/section.schema.json#/properties/background"
-            }
-          ]
-        },
         "pattern": {
           "type": "string",
-          "enum": ["none", "1", "2"],
+          "enum": ["none", "1", "2", "3", "4", "contact"],
           "default": "none"
         },
         "variant": {
