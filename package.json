@@ -27,8 +27,9 @@
     "typings": "tsc",
     "watch:schema": "yarn schema && chokidar \"src/**/*.schema.json\" -c \"yarn schema {path}\"",
     "watch:token": "yarn build-tokens && yarn token && chokidar \"src/**/*-tokens.scss\" -c \"yarn token {path}\"",
+    "watch:sass": "yarn sass --watch",
     "schema": "node scripts/schema.js",
-    "start": "run-p watch:* storybook",
+    "start": "yarn sass && run-p watch:* storybook",
     "storybook": "DESIGN_TOKEN_GLOB=.storybook/tokens.css start-storybook -p 6006"
   },
   "keywords": [],
