@@ -16,9 +16,6 @@ import { RichText } from "@kickstartds/base";
 import { Quote } from "@kickstartds/content";
 import { Stack, Inline } from "@bedrock-layout/primitives";
 
-import HeaderStories from "../header/Header.stories";
-import { Header } from "../header/HeaderComponent";
-
 export const Showcase: FunctionComponent<
   ShowcaseProps & HTMLAttributes<HTMLDivElement>
 > = ({
@@ -33,7 +30,6 @@ export const Showcase: FunctionComponent<
   ...props
 }) => (
   <div {...props}>
-    <Header {...unpack(HeaderStories.args)} />
     <Section spaceBefore="small" spaceAfter="none" width="wide">
       {tags && tags.length > 0 && (
         <div className="tag-label-container">
