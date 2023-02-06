@@ -1,0 +1,20 @@
+@use "./related-tokens";
+@use "../breakpoint";
+
+:root,
+[ks-theme],
+[ks-inverted] {
+  @include breakpoint.media(">s") {
+  }
+}
+
+.kds-related {
+  display: flex;
+  flex-direction: column;
+
+  &--topic {
+    font: var(--ks-font-copy-m);
+    font-weight: var(--ks-font-weight-semi-bold);
+    color: var(--ks-color-fg);
+  }
+}

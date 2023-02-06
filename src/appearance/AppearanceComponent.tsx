@@ -7,7 +7,6 @@ import { ContentBox } from "@kickstartds/base/lib/content-box";
 
 import { AppearanceProps } from "./AppearanceProps";
 import { LinkButton } from "../link-button/LinkButtonComponent";
-import { Divider } from "@kickstartds/base/lib/divider";
 
 export const Appearance: FunctionComponent<
   AppearanceProps & HTMLAttributes<HTMLDivElement>
@@ -48,7 +47,7 @@ export const Appearance: FunctionComponent<
           </div>
         )}
       </Section>
-      
+
       <div className="template template--wide">
         <div className="template__main">
           <Section
@@ -98,7 +97,7 @@ export const Appearance: FunctionComponent<
                   />
                 ))}
               </Section>
-            )}    
+            )}
           </Section>
         </div>
         <div className="template__side">
@@ -196,4 +195,4 @@ export const Appearance: FunctionComponent<
       )}
     </div>
   );
-}
+};

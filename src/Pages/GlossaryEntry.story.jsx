@@ -6,6 +6,9 @@ import FooterStories from "../footer/Footer.stories";
 import { Glossary } from "../glossary/GlossaryComponent.tsx";
 import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
+import { Related } from "../related/RelatedComponent";
+
+import { Section } from "@kickstartds/base";
 
 export default {
   title: "Glossary Entry",
@@ -14,6 +17,15 @@ export default {
 const Page = () => (
   <>
     <Header {...unpack(HeaderStories.args)} />
+    <Section>
+      <Related title="ECMAScript 6 (ES6)"
+        excerpt="ES6 is the specific flavour of JavaScript we're writing for it's much improved module support.."
+        url="https://www.kickstartds.com/glossary/es6/"
+        image="https://raw.githubusercontent.com/github/explore/e4270e345b968ae626310bc86e339a2ae80c6ae4/topics/ecmascript/ecmascript.png"
+        tags={["kickstartDS", "Decision"]}
+      />
+    </Section>
+
     <Glossary
       term="TypeScript"
       definition="In addition to using ES6 as a specific flavor, on top of JavaScript, as a technology, we're using TypeScript for it's additional type safety and resulting confidence when developing long lasting, well-rounded frontend solutions like a component library.
