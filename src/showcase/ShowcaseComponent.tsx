@@ -235,6 +235,7 @@ export const Showcase: FunctionComponent<
               url={item.url}
               excerpt={item.excerpt}
               title={item.title}
+              tags={item.tags}
               key={i}
             />
           ))}

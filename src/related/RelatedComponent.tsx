@@ -12,15 +12,17 @@ import { Button, Picture, RichText } from "@kickstartds/base";
 
 export const Related: FunctionComponent<
   RelatedProps & HTMLAttributes<HTMLDivElement>
-> = ({ url, title, excerpt, image, tags, ...props }) => {
+> = ({ url, title, excerpt, image, tags, type, ...props }) => {
   return (
     <a href={url} className="kds-related">
       <div className="kds-related--image-wrapper">
+        <span className="kds-related--type">{type}</span>
         <Picture className="kds-related--image" src={image} />
       </div>
       <div className="kds-related--topic-wrapper">
         <span className="kds-related--topic">{title}</span>
       </div>
+      <RichText text={excerpt} />
       {tags && tags.length > 0 && (
         <div className="tag-label-container">
           {tags?.map((tag, i) => (
@@ -30,7 +32,6 @@ export const Related: FunctionComponent<
           ))}
         </div>
       )}
-      <RichText text={excerpt} />
     </a>
   );
 };

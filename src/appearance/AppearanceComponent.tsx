@@ -213,7 +213,7 @@ ${language}
           width="wide"
           mode="list"
         >
-          <Inline gutter="var(--ks-spacing-m)" switchAt="55rem">
+          <Inline stretch="all" gutter="var(--ks-spacing-m)" switchAt="55rem">
             {related?.map((item, i) => (
               <Related
                 image={item.image}

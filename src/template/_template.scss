@@ -20,16 +20,19 @@
     margin: unset;
   }
 
-  &--wide {
-    max-width: var(--l-section--content-width-wide);
-  }
-
   &__main,
+  &__split,
   &__side {
     @media (min-width: 76rem) {
       height: fit-content;
       position: sticky;
       top: var(--ks-spacing-m);
+    }
+  }
+
+  &__split {
+    @media (min-width: 76rem) {
+      width: 50%;
     }
   }
 

@@ -43,7 +43,7 @@ export const Glossary: FunctionComponent<
         )}
       </div>
       <div className="template">
-        <div className="template__main">
+        <div className="template__split">
           <Stack gutter="var(--ks-spacing-stack-s)">
             <div className="c-glossary">
               {cover && cover.src ? (
@@ -72,7 +72,7 @@ export const Glossary: FunctionComponent<
             </div>
           </Stack>
         </div>
-        <div className="template__side">
+        <div className="template__split">
           {media && media.length > 0 && (
             <>
               {media?.map((item, i) => (
@@ -139,7 +139,7 @@ export const Glossary: FunctionComponent<
         width="wide"
         mode="list"
       >
-        <Inline gutter="var(--ks-spacing-m)" switchAt="55rem">
+        <Inline stretch="all" gutter="var(--ks-spacing-m)" switchAt="55rem">
           {related?.map((item, i) => (
             <Related
               image={item.image}

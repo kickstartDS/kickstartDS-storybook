@@ -138,6 +138,24 @@
             "description": "Title of the related appearance",
             "default": "Amplifyn "
           },
+          "tags": {
+            "title": "Tags",
+            "description": "Tags for this related teaser",
+            "type": "array",
+            "items": {
+              "type": "string",
+              "title": "Tag",
+              "default": "Frontend",
+              "description": "Name of the tag"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "description": "Type of content that is being teased",
+            "type": "string",
+            "enum": ["Showcase", "Blog", "Appearance", "Glossary"],
+            "default": "Showcase"
+          },
           "excerpt": {
             "title": "Excerpt",
             "type": "string",
@@ -154,7 +172,7 @@
             "title": "Image",
             "type": "string",
             "format": "image",
-            "default": "https://picsum.photos/seed/appearance-related-media-01/640/480",
+            "default": "img/showcase/showcase-cover.png",
             "description": "Image for the related appearance"
           }
         },

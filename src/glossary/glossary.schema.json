@@ -96,6 +96,24 @@
             "description": "Excerpt for the related term",
             "default": "Sass is the CSS extension language of our choice for the additional constructs it offers when creating modularized and DRY styles for components in a Design System."
           },
+          "tags": {
+            "title": "Tags",
+            "description": "Tags for this related teaser",
+            "type": "array",
+            "items": {
+              "type": "string",
+              "title": "Tag",
+              "default": "Frontend",
+              "description": "Name of the tag"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "description": "Type of content that is being teased",
+            "type": "string",
+            "enum": ["Showcase", "Blog", "Appearance", "Glossary"],
+            "default": "Showcase"
+          },
           "url": {
             "title": "Url",
             "type": "string",

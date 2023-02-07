@@ -58,6 +58,18 @@ export type Title = string;
  */
 export type Excerpt = string;
 /**
+ * Name of the tag
+ */
+export type Tag1 = string;
+/**
+ * Tags for this related teaser
+ */
+export type Tags1 = Tag1[];
+/**
+ * Type of content that is being teased
+ */
+export type Type = "Showcase" | "Blog" | "Appearance" | "Glossary";
+/**
  * Url for the related term
  */
 export type Url = string;
@@ -246,6 +258,8 @@ export interface MediaAsset {
 export interface RelatedEntry {
   title?: Title;
   excerpt?: Excerpt;
+  tags?: Tags1;
+  type?: Type;
   url?: Url;
   image?: Image;
   [k: string]: unknown;

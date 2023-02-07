@@ -18,6 +18,10 @@ export type Excerpt = string;
  */
 export type Url = string;
 /**
+ * Type of content that is being teased
+ */
+export type Type = "Showcase" | "Blog" | "Appearance" | "Glossary";
+/**
  * Image for the related appearance
  */
 export type Image = string;
@@ -37,6 +41,7 @@ export interface RelatedProps {
   title: Title;
   excerpt: Excerpt;
   url: Url;
+  type?: Type;
   image: Image;
   tags?: Tags;
   [k: string]: unknown;
