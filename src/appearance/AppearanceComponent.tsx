@@ -9,6 +9,7 @@ import { AppearanceProps } from "./AppearanceProps";
 import { LinkButton } from "../link-button/LinkButtonComponent";
 import { Headline, TeaserBox } from "@kickstartds/base";
 import { Button } from "../button/ButtonComponent";
+import { Related } from "../related/RelatedComponent";
 
 export const Appearance: FunctionComponent<
   AppearanceProps & HTMLAttributes<HTMLDivElement>
@@ -214,24 +215,11 @@ ${language}
         >
           <Inline gutter="var(--ks-spacing-m)" switchAt="55rem">
             {related?.map((item, i) => (
-              <TeaserBox
-                ratio="16:9"
-                alignement="left"
+              <Related
                 image={item.image}
-                className="related-post"
-                link={{
-                  href: item.url,
-                  enabled: true,
-                  label: "Explore",
-                  variant: "clear",
-                  size: "medium",
-                  iconAfter: true,
-                  icon: {
-                    icon: "chevron-right",
-                  },
-                }}
-                text={item.excerpt}
-                topic={item.title}
+                url={item.url}
+                excerpt={item.excerpt}
+                title={item.title}
                 key={i}
               />
             ))}
