@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 06 Feb 2023 11:12:16 GMT
+ * Generated on Tue, 07 Feb 2023 02:25:41 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -4169,6 +4169,31 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   color: var(--ks-text-color-primary);
 }
 
+.kds-related {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ks-spacing-xs);
+  max-width: 500px;
+  text-decoration: none;
+}
+.kds-related--image {
+  transition: var(--ks-transition-hover) all;
+}
+.kds-related--topic {
+  font: var(--ks-font-copy-m);
+  font-weight: var(--ks-font-weight-semi-bold);
+  color: var(--ks-color-fg);
+  display: inline;
+  width: fit-content;
+}
+
+a.kds-related {
+  text-decoration: none;
+}
+a.kds-related:hover .kds-related--topic {
+  color: var(--ks-text-color-primary-to-bg-5);
+  background-color: var(--ks-color-primary-alpha-2);
+}
 :root .c-tag-label,
 [ks-theme] .c-tag-label,
 [ks-inverted] .c-tag-label {

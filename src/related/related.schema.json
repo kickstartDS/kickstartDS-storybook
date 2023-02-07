@@ -16,7 +16,7 @@
       "title": "Excerpt",
       "type": "string",
       "description": "Excerpt for the related appearance",
-      "default": "We talked about how we have put together a code-sided starter kit for digital design systems and will take you through how design systems can be done in the simplest way using kickstartDS..."
+      "default": "We talked about how we have put together a code-sided starter kit for digital design systems."
     },
     "url": {
       "title": "Url",
@@ -28,7 +28,7 @@
       "title": "Image",
       "type": "string",
       "format": "image",
-      "default": "https://picsum.photos/seed/appearance-related-media-01/640/480",
+      "default": "https://cdn.sanity.io/images/81pocpw8/production/d621f066ce92ee5ef4828d89e7dc67bb320953ae-2196x1100.jpg?w=2196&h=1100&fit=clip&auto=format",
       "description": "Image for the related appearance"
     },
     "tags": {
