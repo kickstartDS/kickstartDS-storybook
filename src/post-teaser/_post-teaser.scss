@@ -4,8 +4,15 @@
 [ks-inverted],
 [ks-theme] {
   .c-post-teaser {
+    gap: var(--ks-spacing-s);
+
+    @media (min-width: 548px) {
+      gap: var(--ks-spacing-xxs);
+    }
+
     .c-teaser {
       --c-teaser--border-width: 0 !important;
+      gap: var(--c-post-teaser--gap);
 
       .c-teaser__body {
         padding: 0;

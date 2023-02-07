@@ -215,22 +215,11 @@
           }
         }
 
-        &--dark {
-          &::before {
-            content: url(/patterns/graphics--1.svg);
-          }
-          &::after {
-            content: url(/patterns/graphics--2.svg);
-          }
+        &::before {
+          content: url(/patterns/graphics--1.svg);
         }
-
-        &--light {
-          &::before {
-            content: url(/patterns/graphics--1.svg);
-          }
-          &::after {
-            content: url(/patterns/graphics--2.svg);
-          }
+        &::after {
+          content: url(/patterns/graphics--2.svg);
         }
       }
 
@@ -260,22 +249,20 @@
           }
         }
 
-        &--dark {
+        &[ks-inverted="true"] {
           &::before {
-            content: url(/patterns/pattern_1-dark--1.svg);
+            content: url(/patterns/pattern_1-inverted--1.svg);
           }
           &::after {
-            content: url(/patterns/pattern_1-dark--2.svg);
+            content: url(/patterns/pattern_1-inverted--2.svg);
           }
         }
 
-        &--light {
-          &::before {
-            content: url(/patterns/pattern_1-light--1.svg);
-          }
-          &::after {
-            content: url(/patterns/pattern_1-light--2.svg);
-          }
+        &::before {
+          content: url(/patterns/pattern_1-light--1.svg);
+        }
+        &::after {
+          content: url(/patterns/pattern_1-light--2.svg);
         }
       }
 
@@ -301,22 +288,20 @@
           }
         }
 
-        &--dark {
+        &[ks-inverted="true"] {
           &::before {
-            content: url(/patterns/pattern_2-dark--1.svg);
+            content: url(/patterns/pattern_2-inverted--1.svg);
           }
           &::after {
-            content: url(/patterns/pattern_2-dark--2.svg);
+            content: url(/patterns/pattern_2-inverted--2.svg);
           }
         }
 
-        &--light {
-          &::before {
-            content: url(/patterns/pattern_2-light--1.svg);
-          }
-          &::after {
-            content: url(/patterns/pattern_2-light--2.svg);
-          }
+        &::before {
+          content: url(/patterns/pattern_2--1.svg);
+        }
+        &::after {
+          content: url(/patterns/pattern_2--2.svg);
         }
       }
       //Headline
@@ -360,13 +345,11 @@
           }
         }
 
-        &--light {
-          &::before {
-            content: url(/patterns/pattern_1-light--2.svg);
-          }
-          &::after {
-            content: url(/patterns/pattern_3.svg);
-          }
+        &::before {
+          content: url(/patterns/pattern_1--2.svg);
+        }
+        &::after {
+          content: url(/patterns/pattern_3.svg);
         }
       }
       //Blog Post
@@ -391,16 +374,34 @@
           }
         }
 
-        &--dark {
-          &::after {
-            content: url(/patterns/pattern_3.svg);
+        &::after {
+          content: url(/patterns/pattern_3.svg);
+        }
+      }
+      //Contact
+      &-contact {
+        &::after {
+          transform: scale(1);
+          top: 0;
+          right: -40%;
+          height: 100%;
+          width: 100%;
+          opacity: 0.25;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          @media (min-width: 48em) {
+            right: -30%;
+            transform: scale(1.35);
+          }
+
+          @media (min-width: 80em) {
+            right: -20%;
           }
         }
 
-        &--light {
-          &::after {
-            content: url(/patterns/pattern_3.svg);
-          }
+        &::after {
+          background-image: url(/img/contact-inverted.svg);
         }
       }
     }

@@ -11,7 +11,9 @@
 :root,
 [ks-theme],
 [ks-inverted] {
-  --g-header-height: calc(var(--g-logo-height) + calc(var(--g-header-spacing-v) * 2) + var(--c-announcement-bar-height));
+  --g-header-height: calc(
+    var(--g-logo-height) + calc(var(--g-header-spacing-v) * 2) + var(--c-announcement-bar-height)
+  );
   --g-header-spacing: var(--g-header-spacing-v) var(--g-header-spacing-h);
   --g-header-spacing-h: var(--l-section--content-padding);
   --g-header-spacing-v: var(--ks-spacing-m);

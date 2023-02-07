@@ -17,6 +17,20 @@
       "default": "encore - Energie im Herzen",
       "description": "Title that should be shown for this appearance"
     },
+    "quote": {
+      "title": "Quote Element",
+      "type": "object",
+      "description": "Quote that should be shown for this appearance",
+      "properties": {
+        "quoteToggle": {
+          "title": "Quote Toggle",
+          "description": "Enable/Disable Quote element",
+          "type": "boolean",
+          "default": true
+        },
+        "$ref": "http://schema.kickstartds.com/content/quote.schema.json#/properties"
+      }
+    },
     "description": {
       "title": "Description of the appearance",
       "type": "string",
@@ -33,7 +47,7 @@
           "title": "Url",
           "type": "string",
           "format": "image",
-          "default": "https://picsum.photos/seed/showcase-cover/300/300",
+          "default": "img/showcase/showcase-cover.png",
           "description": "Url to main image for this showcase entry"
         },
         "caption": {
@@ -57,7 +71,7 @@
             "title": "Url for the media asset",
             "type": "string",
             "format": "image",
-            "default": "https://picsum.photos/seed/showcase-media/640/480",
+            "default": "img/showcase/Showcase_screen.png",
             "description": "Select a media asset for this showcase entry"
           },
           "caption": {
@@ -76,7 +90,7 @@
       "items": {
         "type": "string",
         "title": "Tag",
-        "default": "elitr",
+        "default": "Frontend",
         "description": "Name of the tag"
       }
     },
@@ -99,7 +113,7 @@
             "title": "Excerpt",
             "type": "string",
             "description": "Excerpt for the related showcase",
-            "default": "For agencies and store operators with ambitions, maxcluster makes complex technologies uncomplicated to use and thus enables them to become even more successful."
+            "default": "For agencies and store operators with ambitions..."
           },
           "url": {
             "title": "Url",
@@ -111,7 +125,7 @@
             "title": "Image",
             "type": "string",
             "format": "image",
-            "default": "https://picsum.photos/seed/showcase-related-media-01/640/480",
+            "default": "img/showcase/showcase-cover.png",
             "description": "Image for the related showcase"
           }
         },
@@ -121,4 +135,3 @@
   },
   "required": ["link", "title", "description", "cover"]
 }
-  

@@ -12,6 +12,7 @@ import {
   ButtonContext,
   Button as KdsButton,
 } from "@kickstartds/base/lib/button";
+import React from "react";
 
 const ButtonComponent: ForwardRefExoticComponent<
   RefAttributes<HTMLButtonElement> &
@@ -31,6 +32,7 @@ const ButtonComponent: ForwardRefExoticComponent<
       icon,
       iconBefore,
       iconAfter,
+      href,
       highlighted,
       deko,
       ...props
