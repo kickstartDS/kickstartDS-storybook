@@ -9,9 +9,9 @@ import { Related } from "../related/RelatedComponent";
 
 import { ShowcaseProps } from "./ShowcaseProps";
 import { Visual } from "@kickstartds/content/lib/visual";
-import { Headline } from "@kickstartds/base/lib/headline";
+import { Headline, HeadlineContext } from "@kickstartds/base/lib/headline";
 import { Button } from "../button/ButtonComponent";
-import { RichText } from "@kickstartds/base";
+import { Divider, RichText } from "@kickstartds/base";
 import { Quote } from "@kickstartds/content";
 import { Stack, Inline } from "@bedrock-layout/primitives";
 
@@ -31,16 +31,7 @@ export const Showcase: FunctionComponent<
   <div {...props}>
     <Section spaceBefore="default" spaceAfter="small" width="narrow">
       <div>
-        <Headline align="left" level="h1" content={title} />
-        {tags && tags.length > 0 && (
-          <div className="tag-label-container">
-            {tags?.map((tag, i) => (
-              <div>
-                <TagLabel label={tag} size="m" key={i} />
-              </div>
-            ))}
-          </div>
-        )}
+        <Headline align="center" level="h1" content={title} />
       </div>
     </Section>
     <Section spaceBefore="none" spaceAfter="none" mode="list" width="wide">
@@ -79,8 +70,20 @@ export const Showcase: FunctionComponent<
       mode="list"
       gutter="none"
     >
-      <Headline content="Explore the showcase yourself" />
       <Stack gutter="var(--ks-spacing-stack-s)">
+        <div>
+          <Headline content="Explore the showcase yourself" />
+          {tags && tags.length > 0 && (
+            <div className="tag-label-container">
+              {tags?.map((tag, i) => (
+                <div>
+                  <TagLabel label={tag} size="m" key={i} />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
         <RichText text="encore as a German utility company supports their customers with modern, cloud-based software solutions, and a wide spectrum of services around their business. They create online experiences for their customers, and future-proof their eCommerce, energy billing and services portfolio." />
         <div>
           <Button
@@ -137,27 +140,31 @@ export const Showcase: FunctionComponent<
           </Stack>
         </div>
         <div className="template__side">
-          <Headline content="About the project" level="h3" styleAs="h3" />
-          <TextMedia
-            className="c-showcase--text-media"
-            media={[]}
-            mediaAlignment="intext-left"
-            text={description}
-          />
-          <br />
-          <div>
-            <Button
-              label="Visit showcase"
-              variant="outline"
-              href={link}
-              iconAfter
-              size="medium"
-              icon={{
-                icon: "chevron-right",
-                iconAfter: true,
-              }}
-            />
-          </div>
+          <Stack gutter="var(--ks-spacing-stack-s)">
+            <div>
+              <Headline content="About the project" level="h4" styleAs="h4" />
+              <TextMedia
+                className="c-showcase--text-media"
+                media={[]}
+                mediaAlignment="intext-left"
+                text={description}
+              />
+            </div>
+
+            <div>
+              <Button
+                label="Visit showcase"
+                variant="outline"
+                href={link}
+                iconAfter
+                size="medium"
+                icon={{
+                  icon: "chevron-right",
+                  iconAfter: true,
+                }}
+              />
+            </div>
+          </Stack>
         </div>
       </div>
     </Section>
