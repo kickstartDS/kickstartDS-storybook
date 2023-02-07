@@ -5,6 +5,7 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Section } from "@kickstartds/base/lib/section";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
+import { Related } from "../related/RelatedComponent";
 
 import { ShowcaseProps } from "./ShowcaseProps";
 import { Visual } from "@kickstartds/content/lib/visual";
@@ -220,26 +221,13 @@ export const Showcase: FunctionComponent<
         width="wide"
         mode="list"
       >
-        <Inline gutter="var(--ks-spacing-m)" switchAt="55rem">
+        <Inline stretch="all" gutter="var(--ks-spacing-m)" switchAt="55rem">
           {related?.map((item, i) => (
-            <TeaserBox
-              ratio="16:9"
-              alignement="left"
+            <Related
               image={item.image}
-              className="related-post"
-              link={{
-                href: item.url,
-                enabled: true,
-                label: "Explore",
-                variant: "clear",
-                size: "medium",
-                iconAfter: true,
-                icon: {
-                  icon: "chevron-right",
-                },
-              }}
-              text={item.excerpt}
-              topic={item.title}
+              url={item.url}
+              excerpt={item.excerpt}
+              title={item.title}
               key={i}
             />
           ))}

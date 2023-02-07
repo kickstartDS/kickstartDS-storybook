@@ -107,7 +107,7 @@
             "title": "Title",
             "type": "string",
             "description": "Title of the related showcase",
-            "default": "maxcluster"
+            "default": "maxcluster - Managed E-Commerce Hosting"
           },
           "excerpt": {
             "title": "Excerpt",

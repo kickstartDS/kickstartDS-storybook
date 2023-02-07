@@ -15,8 +15,12 @@ export const Related: FunctionComponent<
 > = ({ url, title, excerpt, image, tags, ...props }) => {
   return (
     <a href={url} className="kds-related">
-      <Picture className="kds-related--image" src={image} />
-      <span className="kds-related--topic">{title}</span>
+      <div className="kds-related--image-wrapper">
+        <Picture className="kds-related--image" src={image} />
+      </div>
+      <div className="kds-related--topic-wrapper">
+        <span className="kds-related--topic">{title}</span>
+      </div>
       {tags && tags.length > 0 && (
         <div className="tag-label-container">
           {tags?.map((tag, i) => (
