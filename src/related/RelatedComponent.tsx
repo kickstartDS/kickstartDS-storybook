@@ -16,7 +16,14 @@ export const Related: FunctionComponent<
   return (
     <a href={url} className="kds-related">
       <div className="kds-related--image-wrapper">
-        <span className="kds-related--type">{type}</span>
+        {type ? (
+          <>
+            <span className="kds-related--type">{type}</span>
+          </>
+        ) : (
+          ""
+        )}
+
         <Picture className="kds-related--image" src={image} />
       </div>
       <div className="kds-related--topic-wrapper">

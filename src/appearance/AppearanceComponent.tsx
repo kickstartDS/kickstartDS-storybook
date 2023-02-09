@@ -7,7 +7,7 @@ import { Section } from "@kickstartds/base/lib/section";
 
 import { AppearanceProps } from "./AppearanceProps";
 import { LinkButton } from "../link-button/LinkButtonComponent";
-import { Headline, TeaserBox } from "@kickstartds/base";
+import { Divider, Headline, TeaserBox } from "@kickstartds/base";
 import { Button } from "../button/ButtonComponent";
 import { Related } from "../related/RelatedComponent";
 
@@ -51,15 +51,6 @@ export const Appearance: FunctionComponent<
         width="narrow"
       >
         <div className="kds-appearance-meta">
-          {/* {tags && tags.length > 0 && (
-            <div className="tag-label-container">
-              {tags?.map((tag, i) => (
-                <div>
-                  <TagLabel label={tag} size="s" key={i} />
-                </div>
-              ))}
-            </div>
-          )} */}
           <div className="kds-appearance-meta__content">
             <div className="kds-appearance-meta__col">
               <TextMedia
@@ -201,49 +192,63 @@ ${language}
         </div>
       </Section>
       {related && related.length > 0 && (
-        <Section
-          headline={{
-            content: "Similar appearances",
-            level: "h3",
-            align: "left",
-          }}
-          spaceBefore="small"
-          spaceAfter="small"
-          background="accent"
-          width="wide"
-          mode="list"
-        >
-          <Inline stretch="all" gutter="var(--ks-spacing-m)" switchAt="55rem">
-            {related?.map((item, i) => (
-              <Related
-                image={item.image}
-                url={item.url}
-                excerpt={item.excerpt}
-                title={item.title}
-                key={i}
-              />
-            ))}
-          </Inline>
-        </Section>
-      )}
-      <Section
-        spaceBefore="none"
-        spaceAfter="default"
-        background="accent"
-        width="wide"
-      >
-        <Inline justify="center">
-          <Button
-            variant="outline"
-            label="Appearances Overview"
-            iconAfter
-            icon={{
-              icon: "chevron-right",
+        <>
+          <Section
+            headline={{
+              content: "Similar appearances",
+              level: "h3",
+              align: "left",
             }}
-            size="large"
-          />
-        </Inline>
-      </Section>
+            spaceBefore="small"
+            spaceAfter="small"
+            background="accent"
+            width="wide"
+            mode="list"
+          >
+            <Inline stretch="all" gutter="var(--ks-spacing-m)" switchAt="55rem">
+              {related?.map((item, i) => (
+                <Related
+                  image={item.image}
+                  url={item.url}
+                  excerpt={item.excerpt}
+                  title={item.title}
+                  type={item.type}
+                  tags={item.tags}
+                  key={i}
+                />
+              ))}
+            </Inline>
+          </Section>
+
+          <Section
+            spaceBefore="none"
+            spaceAfter="small"
+            background="accent"
+            width="wide"
+            mode="list"
+          >
+            <Inline justify="center">
+              <Button
+                variant="outline"
+                label="Appearances Overview"
+                iconAfter
+                icon={{
+                  icon: "chevron-right",
+                }}
+                size="large"
+              />
+            </Inline>
+          </Section>
+          <Section
+            spaceBefore="small"
+            spaceAfter="small"
+            background="accent"
+            width="wide"
+          >
+            <Divider />
+          </Section>
+        </>
+      )}
     </div>
   );
 };

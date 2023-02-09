@@ -96,58 +96,10 @@
     },
     "related": {
       "title": "Related entries",
-      "description": "Entries related to this showcase entry",
+      "description": "Entries related to this appearance entry",
       "type": "array",
       "items": {
-        "type": "object",
-        "title": "Related Entry",
-        "description": "Single related entry",
-        "properties": {
-          "title": {
-            "title": "Title",
-            "type": "string",
-            "description": "Title of the related showcase",
-            "default": "maxcluster - Managed E-Commerce Hosting"
-          },
-          "tags": {
-            "title": "Tags",
-            "description": "Tags for this related teaser",
-            "type": "array",
-            "items": {
-              "type": "string",
-              "title": "Tag",
-              "default": "Frontend",
-              "description": "Name of the tag"
-            }
-          },
-          "type": {
-            "title": "Type",
-            "description": "Type of content that is being teased",
-            "type": "string",
-            "enum": ["Showcase", "Blog", "Appearance", "Glossary"],
-            "default": "Blog"
-          },
-          "excerpt": {
-            "title": "Excerpt",
-            "type": "string",
-            "description": "Excerpt for the related showcase",
-            "default": "For agencies and store operators with ambitions..."
-          },
-          "url": {
-            "title": "Url",
-            "type": "string",
-            "description": "Url for the related showcase",
-            "default": "/showcase/maxcluster/"
-          },
-          "image": {
-            "title": "Image",
-            "type": "string",
-            "format": "image",
-            "default": "img/showcase/showcase-cover.png",
-            "description": "Image for the related showcase"
-          }
-        },
-        "required": ["title", "url"]
+        "$ref": "http://kickstartds.com/related.schema.json"
       }
     }
   },

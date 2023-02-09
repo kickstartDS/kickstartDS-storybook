@@ -29,7 +29,7 @@ export const Showcase: FunctionComponent<
   ...props
 }) => (
   <div {...props}>
-    <Section spaceBefore="default" spaceAfter="small" width="narrow">
+    <Section spaceBefore="small" spaceAfter="small" width="narrow">
       <div>
         <Headline align="center" level="h1" content={title} />
       </div>
@@ -64,7 +64,7 @@ export const Showcase: FunctionComponent<
     <Section
       width="narrow"
       spaceBefore="small"
-      spaceAfter="small"
+      spaceAfter="default"
       level="h2"
       styleAs="h2"
       mode="list"
@@ -216,49 +216,61 @@ export const Showcase: FunctionComponent<
     </Section>
 
     {related && related.length > 0 && (
-      <Section
-        headline={{
-          content: "Similar showcases",
-          level: "h3",
-          align: "left",
-        }}
-        spaceBefore="small"
-        spaceAfter="small"
-        background="accent"
-        width="wide"
-        mode="list"
-      >
-        <Inline stretch="all" gutter="var(--ks-spacing-m)" switchAt="55rem">
-          {related?.map((item, i) => (
-            <Related
-              image={item.image}
-              url={item.url}
-              excerpt={item.excerpt}
-              title={item.title}
-              tags={item.tags}
-              key={i}
-            />
-          ))}
-        </Inline>
-      </Section>
-    )}
-    <Section
-      spaceBefore="none"
-      spaceAfter="default"
-      background="accent"
-      width="wide"
-    >
-      <Inline justify="center">
-        <Button
-          variant="outline"
-          label="Showcases Overview"
-          iconAfter
-          icon={{
-            icon: "chevron-right",
+      <>
+        <Section
+          headline={{
+            content: "Similar Showcases",
+            level: "h3",
+            align: "left",
           }}
-          size="large"
-        />
-      </Inline>
-    </Section>
+          spaceBefore="small"
+          spaceAfter="small"
+          background="accent"
+          width="wide"
+          mode="list"
+        >
+          <Inline stretch="all" gutter="var(--ks-spacing-m)" switchAt="55rem">
+            {related?.map((item, i) => (
+              <Related
+                image={item.image}
+                url={item.url}
+                excerpt={item.excerpt}
+                title={item.title}
+                type={item.type}
+                tags={item.tags}
+                key={i}
+              />
+            ))}
+          </Inline>
+        </Section>
+
+        <Section
+          spaceBefore="none"
+          spaceAfter="small"
+          background="accent"
+          width="wide"
+        >
+          <Inline justify="center">
+            <Button
+              variant="outline"
+              label="Showcases Overview"
+              iconAfter
+              icon={{
+                icon: "chevron-right",
+              }}
+              size="large"
+            />
+          </Inline>
+        </Section>
+        <Section
+          spaceBefore="small"
+          spaceAfter="small"
+          background="accent"
+          width="wide"
+        >
+          <Divider />
+        </Section>
+      </>
+    )}
   </div>
 );

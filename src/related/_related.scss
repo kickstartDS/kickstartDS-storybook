@@ -29,7 +29,11 @@
 
   &--image-wrapper {
     position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+
     &:before {
+      pointer-events: none;
       transition: var(--ks-transition-hover) opacity;
       content: "";
       position: absolute;
@@ -40,6 +44,12 @@
       top: 0;
       left: 0;
     }
+  }
+
+  &--image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
   }
 
   &--type {

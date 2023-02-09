@@ -58,29 +58,9 @@ export type CaptionForTheImage = string;
  */
 export type Media = MediaAsset[];
 /**
- * Name of the tag
- */
-export type Tag = string;
-/**
- * Tags for this appearance entry
- */
-export type Tags = Tag[];
-/**
  * Title of the related appearance
  */
 export type Title = string;
-/**
- * Name of the tag
- */
-export type Tag1 = string;
-/**
- * Tags for this related teaser
- */
-export type Tags1 = Tag1[];
-/**
- * Type of content that is being teased
- */
-export type Type = "Showcase" | "Blog" | "Appearance" | "Glossary";
 /**
  * Excerpt for the related appearance
  */
@@ -90,13 +70,25 @@ export type Excerpt = string;
  */
 export type Url1 = string;
 /**
+ * Type of content that is being teased
+ */
+export type Type = string;
+/**
  * Image for the related appearance
  */
 export type Image = string;
 /**
+ * Name of the tag
+ */
+export type Tag = string;
+/**
+ * Tags for this related teaser
+ */
+export type Tags = Tag[];
+/**
  * Entries related to this appearance entry
  */
-export type RelatedEntries = RelatedEntry[];
+export type RelatedEntries = Related[];
 
 /**
  * Display one appearance entry with all its details
@@ -111,7 +103,6 @@ export interface AppearanceProps {
   language?: Language;
   cover: CoverImage;
   media?: Media;
-  tags?: Tags;
   related?: RelatedEntries;
   [k: string]: unknown;
 }
@@ -140,14 +131,14 @@ export interface MediaAsset {
   [k: string]: unknown;
 }
 /**
- * Single related entry
+ * A preview of contextually relevant content
  */
-export interface RelatedEntry {
+export interface Related {
   title: Title;
-  tags?: Tags1;
-  type?: Type;
-  excerpt?: Excerpt;
+  excerpt: Excerpt;
   url: Url1;
-  image?: Image;
+  type?: Type;
+  image: Image;
+  tags?: Tags;
   [k: string]: unknown;
 }

@@ -112,71 +112,12 @@
         }
       }
     },
-    "tags": {
-      "title": "Tags",
-      "description": "Tags for this appearance entry",
-      "type": "array",
-      "items": {
-        "type": "string",
-        "title": "Tag",
-        "default": "elitr",
-        "description": "Name of the tag"
-      }
-    },
     "related": {
       "title": "Related entries",
       "description": "Entries related to this appearance entry",
       "type": "array",
       "items": {
-        "type": "object",
-        "title": "Related Entry",
-        "description": "Single related entry",
-        "properties": {
-          "title": {
-            "title": "Title",
-            "type": "string",
-            "description": "Title of the related appearance",
-            "default": "Amplifyn "
-          },
-          "tags": {
-            "title": "Tags",
-            "description": "Tags for this related teaser",
-            "type": "array",
-            "items": {
-              "type": "string",
-              "title": "Tag",
-              "default": "Frontend",
-              "description": "Name of the tag"
-            }
-          },
-          "type": {
-            "title": "Type",
-            "description": "Type of content that is being teased",
-            "type": "string",
-            "enum": ["Showcase", "Blog", "Appearance", "Glossary"],
-            "default": "Showcase"
-          },
-          "excerpt": {
-            "title": "Excerpt",
-            "type": "string",
-            "description": "Excerpt for the related appearance",
-            "default": "We talked about how we have put together a code-sided starter kit for digital design systems and..."
-          },
-          "url": {
-            "title": "Url",
-            "type": "string",
-            "description": "Url for the related appearance",
-            "default": "/appearance/amplifyn/"
-          },
-          "image": {
-            "title": "Image",
-            "type": "string",
-            "format": "image",
-            "default": "img/showcase/showcase-cover.png",
-            "description": "Image for the related appearance"
-          }
-        },
-        "required": ["title", "url"]
+        "$ref": "http://kickstartds.com/related.schema.json"
       }
     }
   },

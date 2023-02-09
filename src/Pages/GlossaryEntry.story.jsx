@@ -17,77 +17,65 @@ export default {
 const Page = () => (
   <>
     <Header {...unpack(HeaderStories.args)} />
-    <Section>
-      <Related title="ECMAScript 6 (ES6)"
-        excerpt="ES6 is the specific flavour of JavaScript we're writing for it's much improved module support.."
-        url="https://www.kickstartds.com/glossary/es6/"
-        image="https://raw.githubusercontent.com/github/explore/e4270e345b968ae626310bc86e339a2ae80c6ae4/topics/ecmascript/ecmascript.png"
-        tags={["kickstartDS", "Decision"]}
-      />
-    </Section>
-
     <Glossary
-      term="TypeScript"
-      definition="In addition to using ES6 as a specific flavor, on top of JavaScript, as a technology, we're using TypeScript for it's additional type safety and resulting confidence when developing long lasting, well-rounded frontend solutions like a component library.
-
-      One additional feature of TypeScript we're relying heavily on is the ability to generate types for publishing packages. We use this to generate all component typings automatically, based on shared JSON Schema definitions, enabling auto-complete for properties defined in the context of the component... based on the generated types."
       cover={{
-        src: "https://www.kickstartds.com/static/f750dd4b7cf3a79182eff8c092509daf/5d536/ts-logo-512.png",
+        caption: 'CSS3 image caption',
+        src: 'img/glossary/logo.png'
       }}
+      cta={{
+        image: {
+          order: {
+            desktopImageLast: true
+          }
+        }
+      }}
+      definition="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
       media={[
         {
-          src: "https://www.kickstartds.com/static/29fe689e24e44e20c1d4fc4f2eca07fe/2643c/2021-10-23_17-18.webp",
-          caption:
-            "Excerpt of the TypeScript typings we auto-generate for all components. Generation happens based on our JSON Schema definitions (per component), and enables auto-complete when using components from our component library / Design System in your project.",
+          caption: 'CSS3 image caption',
+          src: 'https://picsum.photos/seed/glossary-media/640/480'
         },
         {
-          src: "https://www.kickstartds.com/static/7b42c45763d3911d61fa5e06a28133be/8be91/2021-10-23_17-17.webp",
-          caption:
-            "Shows the source code of the kickstartDS Visual component, as an example of TypeScript use in our codebase.",
+          caption: 'CSS3 image caption',
+          src: 'https://picsum.photos/seed/glossary-media/640/480'
         },
+        {
+          caption: 'CSS3 image caption',
+          src: 'https://picsum.photos/seed/glossary-media/640/480'
+        }
       ]}
-      tags={["kickstartDS", "Decision"]}
+      stackshare="https://stackshare.io/julrich/decisions/107141570573419830"
+      tags={[
+        'elitr',
+        'elitr',
+        'elitr'
+      ]}
+      term="CSS3"
       related={[
         {
-          title: "ECMAScript 6 (ES6)",
-          excerpt:
-            "ES6 is the specific flavour of JavaScript we're writing for it's much improved module support, making 100% vanilla JavaScript solutions a reality. It is also much more terse and expressive in its syntax (iterators, destructuring, arrow functions, etc).",
-          url: "https://www.kickstartds.com/glossary/es6/",
-          image:
-            "https://raw.githubusercontent.com/github/explore/e4270e345b968ae626310bc86e339a2ae80c6ae4/topics/ecmascript/ecmascript.png",
+          excerpt: 'JavaScript for us has two uses. On the one hand it is the foundation for progressively layered...',
+          image: 'img/showcase/showcase-cover.png',
+          tags: [
+            'Frontend',
+            'HTML',
+            'API'
+          ],
+          title: 'ECMAScript 6 (ES6)',
+          type: 'Glossary',
+          url: '#'
         },
         {
-          title: "JavaScript",
-          excerpt:
-            "JavaScript for us has two uses. On the one hand it is the foundation for progressively layered interactivity on a website / interface built with kickstartDS, and on the other hand it's at the core of the engine powering quality and developer experience in modern web frameworks: build tooling, bundling, semantic versioning, testing, etc.",
-          url: "https://www.kickstartds.com/glossary/javascript/",
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png",
-        },
+          excerpt: "ES6 is the specific flavour of JavaScript we're writing for it's much improved module support...",
+          image: 'img/showcase/showcase-cover.png',
+          tags: [
+            'CSS',
+            'HTML'
+          ],
+          title: 'JavaScript',
+          type: 'Glossary',
+          url: '#'
+        }
       ]}
-      stackshare="https://stackshare.io/julrich/decisions/107140151808024329"
-      cta={{
-        box: {
-          text: "Read more, or chat with us, to learn how this helps create consistent frontend interfaces",
-          vAlign: "top",
-          link: {
-            label: "Lets have a chat",
-            variant: "solid",
-            iconAfter: true,
-            icon: {
-              icon: "person",
-            },
-          },
-        },
-        full: true,
-        image: {
-          source: "img/contact.svg",
-          vAlign: "top",
-          order: {
-            desktopImageLast: true,
-          },
-        },
-      }}
     />
     <Footer {...unpack(FooterStories.args)} />
   </>

@@ -28,7 +28,6 @@
       "title": "Type",
       "description": "Type of content that is being teased",
       "type": "string",
-      "enum": ["Showcase", "Blog", "Appearance", "Glossary"],
       "default": "Showcase"
     },
     "image": {

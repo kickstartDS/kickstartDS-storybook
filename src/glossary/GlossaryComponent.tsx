@@ -6,7 +6,7 @@ import { Section } from "@kickstartds/base/lib/section";
 
 import { GlossaryProps } from "./GlossaryProps";
 import { LinkButton } from "../link-button/LinkButtonComponent";
-import { Headline, TeaserBox } from "@kickstartds/base";
+import { Headline, Button, Divider } from "@kickstartds/base";
 import { Inline, Stack } from "@bedrock-layout/primitives";
 import { Related } from "../related/RelatedComponent";
 
@@ -24,12 +24,7 @@ export const Glossary: FunctionComponent<
   ...props
 }) => (
   <div {...props}>
-    <Section
-      width="wide"
-      mode="list"
-      spaceBefore="default"
-      spaceAfter="default"
-    >
+    <Section width="wide" mode="list" spaceBefore="small" spaceAfter="default">
       <div>
         <Headline align="left" level="h1" content={term} />
         {tags && tags.length > 0 && (
@@ -127,30 +122,61 @@ export const Glossary: FunctionComponent<
     </Section>
 
     {related && related.length > 0 && (
-      <Section
-        headline={{
-          content: "Similar appearances",
-          level: "h3",
-          align: "left",
-        }}
-        spaceBefore="small"
-        spaceAfter="small"
-        background="accent"
-        width="wide"
-        mode="list"
-      >
-        <Inline stretch="all" gutter="var(--ks-spacing-m)" switchAt="55rem">
-          {related?.map((item, i) => (
-            <Related
-              image={item.image}
-              url={item.url}
-              excerpt={item.excerpt}
-              title={item.title}
-              key={i}
+      <>
+        <Section
+          headline={{
+            content: "Similar appearances",
+            level: "h3",
+            align: "left",
+          }}
+          spaceBefore="small"
+          spaceAfter="small"
+          background="accent"
+          width="wide"
+          mode="list"
+        >
+          <Inline stretch="all" gutter="var(--ks-spacing-m)" switchAt="55rem">
+            {related?.map((item, i) => (
+              <Related
+                image={item.image}
+                url={item.url}
+                excerpt={item.excerpt}
+                title={item.title}
+                type={item.type}
+                tags={item.tags}
+                key={i}
+              />
+            ))}
+          </Inline>
+        </Section>
+
+        <Section
+          spaceBefore="none"
+          spaceAfter="small"
+          background="accent"
+          width="wide"
+        >
+          <Inline justify="center">
+            <Button
+              variant="outline"
+              label="Appearances Overview"
+              iconAfter
+              icon={{
+                icon: "chevron-right",
+              }}
+              size="large"
             />
-          ))}
-        </Inline>
-      </Section>
+          </Inline>
+        </Section>
+        <Section
+          spaceBefore="small"
+          spaceAfter="small"
+          background="accent"
+          width="wide"
+        >
+          <Divider />
+        </Section>
+      </>
     )}
   </div>
 );

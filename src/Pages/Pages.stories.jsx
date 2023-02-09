@@ -35,6 +35,6 @@ export { Sanity } from "./Sanity.story";
 export { BlogPost } from "./BlogPost.story";
 export { BlogList } from "./BlogList.story";
 export { Buttons } from "./Buttons.story";
+export { ShowcaseEntry } from "./ShowcaseEntry.story";
+export { AppearanceEntry } from "./AppearanceEntry.story";
 export { GlossaryEntry } from "./GlossaryEntry.story";
-// export { CountUpVariants } from "./CountUpVariants.story";
-// export { TeaserVariants } from "./TeaserVariants.story";

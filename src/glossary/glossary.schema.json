@@ -135,9 +135,6 @@
       "type": "string",
       "description": "Link to the related StacKShare discussion",
       "default": "https://stackshare.io/julrich/decisions/107141570573419830"
-    },
-    "cta": {
-      "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json"
     }
   },
   "required": ["term"]

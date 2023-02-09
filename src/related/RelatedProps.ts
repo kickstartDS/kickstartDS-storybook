@@ -20,7 +20,7 @@ export type Url = string;
 /**
  * Type of content that is being teased
  */
-export type Type = "Showcase" | "Blog" | "Appearance" | "Glossary";
+export type Type = string;
 /**
  * Image for the related appearance
  */
