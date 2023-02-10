@@ -6,6 +6,27 @@
   .c-post-teaser {
     gap: var(--ks-spacing-s);
 
+    .c-teaser__topic {
+      display: inline;
+      transition: var(--ks-transition-hover) all;
+    }
+
+    &__image {
+      &:before {
+        pointer-events: none;
+        transition: var(--ks-transition-hover) opacity;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: var(--ks-color-fg-inverted-base);
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+
     @media (min-width: 548px) {
       gap: var(--ks-spacing-xxs);
     }
@@ -13,6 +34,23 @@
     .c-teaser {
       --c-teaser--border-width: 0 !important;
       gap: var(--c-post-teaser--gap);
+
+      &:hover {
+        .c-rich-text > p {
+          text-decoration: none;
+        }
+
+        .c-teaser__topic {
+          color: var(--ks-text-color-primary);
+          background-color: var(--ks-color-primary-alpha-2);
+        }
+
+        .c-post-teaser__image {
+          &:before {
+            opacity: 0.15;
+          }
+        }
+      }
 
       .c-teaser__body {
         padding: 0;

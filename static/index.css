@@ -3207,6 +3207,27 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 [ks-theme] .c-post-teaser {
   gap: var(--ks-spacing-s);
 }
+:root .c-post-teaser .c-teaser__topic,
+[ks-inverted] .c-post-teaser .c-teaser__topic,
+[ks-theme] .c-post-teaser .c-teaser__topic {
+  display: inline;
+  transition: var(--ks-transition-hover) all;
+}
+:root .c-post-teaser__image:before,
+[ks-inverted] .c-post-teaser__image:before,
+[ks-theme] .c-post-teaser__image:before {
+  pointer-events: none;
+  transition: var(--ks-transition-hover) opacity;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: var(--ks-color-fg-inverted-base);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 @media (min-width: 548px) {
   :root .c-post-teaser,
 [ks-inverted] .c-post-teaser,
@@ -3219,6 +3240,22 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 [ks-theme] .c-post-teaser .c-teaser {
   --c-teaser--border-width: 0 !important;
   gap: var(--c-post-teaser--gap);
+}
+:root .c-post-teaser .c-teaser:hover .c-rich-text > p,
+[ks-inverted] .c-post-teaser .c-teaser:hover .c-rich-text > p,
+[ks-theme] .c-post-teaser .c-teaser:hover .c-rich-text > p {
+  text-decoration: none;
+}
+:root .c-post-teaser .c-teaser:hover .c-teaser__topic,
+[ks-inverted] .c-post-teaser .c-teaser:hover .c-teaser__topic,
+[ks-theme] .c-post-teaser .c-teaser:hover .c-teaser__topic {
+  color: var(--ks-text-color-primary);
+  background-color: var(--ks-color-primary-alpha-2);
+}
+:root .c-post-teaser .c-teaser:hover .c-post-teaser__image:before,
+[ks-inverted] .c-post-teaser .c-teaser:hover .c-post-teaser__image:before,
+[ks-theme] .c-post-teaser .c-teaser:hover .c-post-teaser__image:before {
+  opacity: 0.15;
 }
 :root .c-post-teaser .c-teaser .c-teaser__body,
 [ks-inverted] .c-post-teaser .c-teaser .c-teaser__body,
