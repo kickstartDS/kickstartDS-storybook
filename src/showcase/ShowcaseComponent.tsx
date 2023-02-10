@@ -264,7 +264,7 @@ export const Showcase: FunctionComponent<
         </Section>
         <Section
           spaceBefore="small"
-          spaceAfter="small"
+          spaceAfter="none"
           background="accent"
           width="wide"
         >

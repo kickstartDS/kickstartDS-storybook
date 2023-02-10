@@ -170,7 +170,7 @@ export const Glossary: FunctionComponent<
         </Section>
         <Section
           spaceBefore="small"
-          spaceAfter="small"
+          spaceAfter="none"
           background="accent"
           width="wide"
         >
