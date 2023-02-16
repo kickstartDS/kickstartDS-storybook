@@ -10,19 +10,19 @@
       "title": "Title",
       "type": "string",
       "description": "Title of the related appearance",
-      "default": "Amplifyn "
+      "default": "Lorem Ipsum "
     },
     "excerpt": {
       "title": "Excerpt",
       "type": "string",
       "description": "Excerpt for the related appearance",
-      "default": "We talked about how we have put together a code-sided starter kit for digital design systems."
+      "default": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ispum dolor distinctio minima unde voluptatum aut. Lorem ipsum dolor sit amet."
     },
     "url": {
       "title": "Url",
       "type": "string",
       "description": "Url for the related appearance",
-      "default": "/appearance/amplifyn/"
+      "default": "#"
     },
     "type": {
       "title": "Type",
@@ -44,7 +44,7 @@
       "items": {
         "type": "string",
         "title": "Tag",
-        "default": "Frontend",
+        "default": "Dolor",
         "description": "Name of the tag"
       }
     }
