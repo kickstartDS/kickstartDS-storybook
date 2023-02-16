@@ -24,7 +24,7 @@ export const Glossary: FunctionComponent<
   ...props
 }) => (
   <div {...props}>
-    <Section width="wide" mode="list" spaceBefore="small" spaceAfter="default">
+    <Section width="narrow" mode="list" spaceAfter="default">
       <div>
         <Headline align="left" level="h1" content={term} />
         {tags && tags.length > 0 && (
@@ -97,13 +97,13 @@ export const Glossary: FunctionComponent<
     </Section>
 
     <Section
-      align="center"
       width="narrow"
-      pattern="1"
+      pattern="contact"
       ks-inverted="true"
       headline={{
+        styleAs: "h1",
         content: "Read more, or discuss this decision with us on StackShare.io",
-        align: "center",
+        align: "left",
       }}
     >
       <div>

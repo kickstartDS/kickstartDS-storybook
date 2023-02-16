@@ -22,6 +22,7 @@ const Page = () => (
         caption: 'Encore Logo',
         src: 'img/showcase/showcase-cover.png'
       }}
+      summary="encore as a German utility company supports their customers with modern, cloud-based software solutions."
       description="encore as a German utility company supports their customers with modern, cloud-based software solutions, and a wide spectrum of services around their business. They create online experiences for their customers, and future-proof their eCommerce, energy billing and services portfolio."
       link="https://www.encore.de/"
       media={[

@@ -18,6 +18,7 @@ const Page = () => (
   <>
     <Header {...unpack(HeaderStories.args)} />
     <Appearance
+      title="Podrocket: The starter kit for design systems"
       cover={{
         caption: 'Podrocket Logo',
         src: 'img/appearance/appearance-cover.jpeg'
@@ -28,6 +29,10 @@ const Page = () => (
         name: 'Podrocket by Logrocket',
         url: 'https://podrocket.logrocket.com/'
       }}
+      tags={[
+        'Framework',
+        'Design System'
+      ]}
       language="English"
       link="http://podrocket.logrocket.com/design-system-starter-kit"
       media={[
@@ -45,8 +50,16 @@ const Page = () => (
         }
       ]}
       participants={[
-        'Daniel Ley',
-        'Jonas Ulrich'
+        {
+          name: "Daniel Ley",
+          avatar: "img/profile_images_dley.webp",
+          title: "Founder & CTO, frontend first since day one"
+        },
+        {
+          name: "Jonas Ulrich",
+          avatar: "img/profile_images_julrich.webp",
+          title: "Co-Founder + UX Strategist with heart & soul"
+        },
       ]}
       related={[
         {
@@ -84,7 +97,7 @@ const Page = () => (
           url: '/appearance/amplifyn/'
         }
       ]}
-      title="Podrocket: The starter kit for design systems with Jonas Ulrich and Daniel Ley"
+
     />
     <Footer {...unpack(FooterStories.args)} />
   </>

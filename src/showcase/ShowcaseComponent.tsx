@@ -1,10 +1,8 @@
-import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 import { FunctionComponent, HTMLAttributes } from "react";
 
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Section } from "@kickstartds/base/lib/section";
-import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { Related } from "../related/RelatedComponent";
 
 import { ShowcaseProps } from "./ShowcaseProps";
@@ -25,18 +23,53 @@ export const Showcase: FunctionComponent<
   media,
   tags,
   related,
+  summary,
   quote,
   ...props
 }) => (
   <div {...props}>
-    <Section spaceBefore="small" spaceAfter="small" width="narrow">
-      <div>
-        <Headline align="center" level="h1" content={title} />
-      </div>
+    <Section
+      width="narrow"
+      spaceBefore="default"
+      spaceAfter="default"
+      mode="list"
+      gutter="none"
+    >
+      <Stack gutter="var(--ks-spacing-stack-s)">
+        <div>
+          <Headline level="h1" content={title} />
+          {tags && tags.length > 0 && (
+            <div className="tag-label-container">
+              {tags?.map((tag, i) => (
+                <div>
+                  <TagLabel label={tag} size="m" key={i} />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <RichText text={summary} />
+        <div>
+          <Button
+            label="Visit showcase"
+            variant="solid"
+            href={link}
+            iconAfter
+            icon={{
+              icon: "chevron-right",
+              iconAfter: true,
+            }}
+            highlighted
+            deko
+            size="medium"
+          />
+        </div>
+      </Stack>
     </Section>
-    <Section spaceBefore="none" spaceAfter="none" mode="list" width="wide">
+    <Section spaceBefore="none" spaceAfter="none" mode="list" width="full">
       <Visual
-        height="default"
+        height="fullImage"
         box={{
           enabled: false,
         }}
@@ -59,48 +92,6 @@ export const Showcase: FunctionComponent<
           },
         }}
       />
-    </Section>
-
-    <Section
-      width="narrow"
-      spaceBefore="small"
-      spaceAfter="default"
-      level="h2"
-      styleAs="h2"
-      mode="list"
-      gutter="none"
-    >
-      <Stack gutter="var(--ks-spacing-stack-s)">
-        <div>
-          <Headline content="Explore the showcase yourself" />
-          {tags && tags.length > 0 && (
-            <div className="tag-label-container">
-              {tags?.map((tag, i) => (
-                <div>
-                  <TagLabel label={tag} size="m" key={i} />
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-
-        <RichText text="encore as a German utility company supports their customers with modern, cloud-based software solutions, and a wide spectrum of services around their business. They create online experiences for their customers, and future-proof their eCommerce, energy billing and services portfolio." />
-        <div>
-          <Button
-            label="Visit showcase"
-            variant="solid"
-            href={link}
-            iconAfter
-            icon={{
-              icon: "chevron-right",
-              iconAfter: true,
-            }}
-            highlighted
-            deko
-            size="medium"
-          />
-        </div>
-      </Stack>
     </Section>
 
     <Section

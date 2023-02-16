@@ -44,14 +44,24 @@
       }
     },
     "participants": {
-      "type": "array",
       "title": "Participants",
       "description": "Who participated in this appearance?",
       "minItems": 1,
+      "type": "array",
       "items": {
-        "type": "string"
-      },
-      "default": ["Daniel Ley", "Jonas Ulrich"]
+        "$ref": "http://kickstartds.com/person.schema.json"
+      }
+    },
+    "tags": {
+      "title": "Tags",
+      "description": "Tags for this showcase entry",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "title": "Tag",
+        "default": "Frontend",
+        "description": "Name of the tag"
+      }
     },
     "date": {
       "type": "string",

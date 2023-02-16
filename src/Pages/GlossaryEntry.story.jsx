@@ -29,28 +29,26 @@ const Page = () => (
           }
         }
       }}
-      definition="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+      definition="In addition to using ES6 as a specific flavor, on top of JavaScript as a technology, we're using TypeScript for it's additional type safety and resulting confidence when developing long lasting, well-rounded frontend solutions like a component library.   
+      
+      One additional feature of TypeScript we're relying heavily on is the ability to generate types for publishing packages. We use this to generate all component typings automatically, based on shared JSON Schema definitions, enabling auto-complete for properties defined in the context of the component... based on the generated types.
+      "
       media={[
         {
-          caption: 'CSS3 image caption',
-          src: 'https://picsum.photos/seed/glossary-media/640/480'
+          caption: 'Excerpt of the TypeScript typings we auto-generate for all components. Generation happens based on our JSON Schema definitions (per component), and enables auto-complete when using components from our component library / Design System in your project.',
+          src: 'img/glossary/code.png'
         },
         {
-          caption: 'CSS3 image caption',
-          src: 'https://picsum.photos/seed/glossary-media/640/480'
-        },
-        {
-          caption: 'CSS3 image caption',
-          src: 'https://picsum.photos/seed/glossary-media/640/480'
+          caption: 'Shows the source code of the kickstartDS Visual component, as an example of TypeScript use in our codebase.',
+          src: 'img/glossary/code.png'
         }
       ]}
       stackshare="https://stackshare.io/julrich/decisions/107141570573419830"
       tags={[
-        'elitr',
-        'elitr',
-        'elitr'
+        'kickstartDS',
+        'Decision'
       ]}
-      term="CSS3"
+      term="TypeScript"
       related={[
         {
           excerpt: 'JavaScript for us has two uses. On the one hand it is the foundation for progressively layered...',

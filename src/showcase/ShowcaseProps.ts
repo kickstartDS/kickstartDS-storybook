@@ -14,6 +14,10 @@ export type LinkToShowcase = string;
  */
 export type TitleForTheShowcase = string;
 /**
+ * Title that should be shown for this appearance
+ */
+export type ShortSummaryOfTheShowcase = string;
+/**
  * Enable/Disable Quote element
  */
 export type QuoteToggle = boolean;
@@ -108,6 +112,7 @@ export type RelatedEntries = Related[];
 export interface ShowcaseProps {
   link: LinkToShowcase;
   title: TitleForTheShowcase;
+  summary?: ShortSummaryOfTheShowcase;
   quote?: QuoteElement;
   description: DescriptionOfTheAppearance;
   cover: CoverImage;

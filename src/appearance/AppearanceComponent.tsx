@@ -7,9 +7,10 @@ import { Section } from "@kickstartds/base/lib/section";
 
 import { AppearanceProps } from "./AppearanceProps";
 import { LinkButton } from "../link-button/LinkButtonComponent";
-import { Divider, Headline, TeaserBox } from "@kickstartds/base";
+import { Divider, Headline, Picture, TeaserBox } from "@kickstartds/base";
 import { Button } from "../button/ButtonComponent";
 import { Related } from "../related/RelatedComponent";
+import { Person } from "../person/PersonComponent";
 
 export const Appearance: FunctionComponent<
   AppearanceProps & HTMLAttributes<HTMLDivElement>
@@ -30,26 +31,19 @@ export const Appearance: FunctionComponent<
   console.log("related", related);
   return (
     <div {...props}>
-      <Section spaceBefore="default" spaceAfter="none" width="narrow">
+      <Section spaceAfter="small" mode="list" width="narrow">
         <div>
-          <Headline align="left" level="h1" content={title} />
-          {participants && participants.length > 0 && (
+          <Headline level="h1" content={title} />
+          {tags && tags.length > 0 && (
             <div className="tag-label-container">
-              {participants?.map((participant, i) => (
+              {tags?.map((tag, i) => (
                 <div>
-                  <TagLabel label={participant} size="m" key={i} />
+                  <TagLabel label={tag} size="m" key={i} />
                 </div>
               ))}
             </div>
           )}
         </div>
-      </Section>
-      <Section
-        spaceBefore="small"
-        spaceAfter="small"
-        mode="list"
-        width="narrow"
-      >
         <div className="kds-appearance-meta">
           <div className="kds-appearance-meta__content">
             <div className="kds-appearance-meta__col">
@@ -141,6 +135,12 @@ ${language}
           </div>
           <div className="template__side">
             <Stack gutter="var(--ks-spacing-stack-s)">
+              <Headline
+                content="Description"
+                level="p"
+                styleAs="p"
+                spaceAfter="none"
+              />
               <TextMedia
                 className="kds-appearance--text-media"
                 media={[]}
@@ -159,6 +159,27 @@ ${language}
                   }}
                 />
               </div>
+              <Divider />
+              <Headline
+                content="Participants"
+                level="p"
+                styleAs="p"
+                spaceAfter="none"
+              />
+              {participants && participants.length > 0 && (
+                <>
+                  <Stack gutter="var(--ks-spacing-stack-xs)">
+                    {participants?.map((item, i) => (
+                      <Person
+                        name={item.name}
+                        avatar={item.avatar}
+                        size={"m"}
+                        key={i}
+                      />
+                    ))}
+                  </Stack>
+                </>
+              )}
             </Stack>
           </div>
         </div>

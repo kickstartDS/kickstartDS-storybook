@@ -1,0 +1,25 @@
+.kds-person {
+  --c-person--color: var(--g-topic--color);
+  --c-person-title--color: var(--ks-text-color-default);
+  --c-person-avatar--border-radius: 0;
+  --c-person--font-weight: var(--ks-font-weight-bold);
+  --c-person-title--font-weight: var(--ks-font-weight-semi-bold);
+
+  &--s {
+    --c-person--font: var(--ks-font-ui-xs);
+    --c-person--gap: 1em;
+    --c-person-avatar--size: 2em;
+  }
+
+  &--m {
+    --c-person--font: var(--ks-font-ui-s);
+    --c-person--gap: 1em;
+    --c-person-avatar--size: 2.5em;
+  }
+
+  &--l {
+    --c-person--font: var(--ks-font-ui-m);
+    --c-person--gap: 1em;
+    --c-person-avatar--size: 3em;
+  }
+}
