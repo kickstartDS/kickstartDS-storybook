@@ -1,3 +1,15 @@
+# v2.2.3 (Thu Feb 16 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feature: switch to GTM ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.2.2 (Mon Feb 06 2023)
 
 #### ⚠️ Pushed to `master`
