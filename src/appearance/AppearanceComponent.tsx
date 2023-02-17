@@ -159,15 +159,15 @@ ${language}
                   }}
                 />
               </div>
-              <Divider />
-              <Headline
-                content="Participants"
-                level="p"
-                styleAs="p"
-                spaceAfter="none"
-              />
               {participants && participants.length > 0 && (
                 <>
+                  <Divider />
+                  <Headline
+                    content="Participants"
+                    level="p"
+                    styleAs="p"
+                    spaceAfter="none"
+                  />
                   <Stack gutter="var(--ks-spacing-stack-xs)">
                     {participants?.map((item, i) => (
                       <Person

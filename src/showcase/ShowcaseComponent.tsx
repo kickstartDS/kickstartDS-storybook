@@ -12,6 +12,7 @@ import { Button } from "../button/ButtonComponent";
 import { Divider, RichText } from "@kickstartds/base";
 import { Quote } from "@kickstartds/content";
 import { Stack, Inline } from "@bedrock-layout/primitives";
+import { Person } from "../person/PersonComponent";
 
 export const Showcase: FunctionComponent<
   ShowcaseProps & HTMLAttributes<HTMLDivElement>
@@ -24,6 +25,7 @@ export const Showcase: FunctionComponent<
   tags,
   related,
   summary,
+  author,
   quote,
   ...props
 }) => (
@@ -155,6 +157,26 @@ export const Showcase: FunctionComponent<
                 }}
               />
             </div>
+
+            {author.name || author?.avatar ? (
+              <>
+                <Divider />
+                <Headline
+                  content="Author"
+                  level="p"
+                  styleAs="p"
+                  spaceAfter="none"
+                />
+                <Person
+                  name={author.name}
+                  avatar={author.avatar}
+                  title={author.title}
+                  size={"m"}
+                />
+              </>
+            ) : (
+              ""
+            )}
           </Stack>
         </div>
       </div>
