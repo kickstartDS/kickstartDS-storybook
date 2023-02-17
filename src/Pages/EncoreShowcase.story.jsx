@@ -47,12 +47,12 @@ const Page = () => (
         image: 'img/showcase/encore/encore-quote.jpeg',
         quoteToggle: true,
         source: 'Richard McClintock',
-        text: 'Consequuntur est quia atque eum ducimus. Consequatur fugiat hic eos perferendis. Libero unde omnis dolorem maxime occaecati sapiente distinctio. Consectetur non placeat dolorem est animi.\n\nSuscipit quos rem suscipit culpa. Et distinctio et veritatis consectetur quae dolorem aut. Explicabo commodi repudiandae fugiat. Accusamus alias mollitia perferendis qui iure magni. Minus est vitae dolor dolor.'
+        text: 'Consequuntur est quia atque eum ducimus. Consequatur fugiat hic eos perferendis. Libero unde omnis dolorem maxime occaecati sapiente distinctio. Consectetur non placeat dolorem est animi.'
       }}
       related={[
         {
           excerpt: 'Komplexe Technologien für Unternehmen unkompliziert nutzbar machen.',
-          image: 'img/showcase/maxcluster.jpeg',
+          image: 'img/showcase/maxcluster/maxcluster.jpeg',
           tags: [
             'CSS',
             'HTML'
@@ -63,7 +63,7 @@ const Page = () => (
         },
         {
           excerpt: 'Eine einmalige Service- und Produktwelt für Energieversorger.',
-          image: 'img/showcase/encore.png',
+          image: 'img/showcase/encore/encore-cover.png',
           tags: [
             'JS',
             'Frameworks'

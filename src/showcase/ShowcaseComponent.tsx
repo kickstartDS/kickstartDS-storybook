@@ -32,10 +32,10 @@ export const Showcase: FunctionComponent<
   <div {...props}>
     <Section
       width="narrow"
-      spaceBefore="default"
-      spaceAfter="default"
       mode="list"
       gutter="none"
+      spaceBefore="default"
+      spaceAfter="small"
     >
       <Stack gutter="var(--ks-spacing-stack-s)">
         <div>
@@ -69,7 +69,12 @@ export const Showcase: FunctionComponent<
         </div>
       </Stack>
     </Section>
-    <Section spaceBefore="none" spaceAfter="none" mode="list" width="full">
+    <Section
+      spaceBefore="small"
+      spaceAfter="default"
+      mode="list"
+      width="wide"
+    >
       <Visual
         height="fullImage"
         box={{

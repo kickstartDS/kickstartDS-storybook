@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 17 Feb 2023 03:15:44 GMT
+ * Generated on Fri, 17 Feb 2023 11:39:21 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -2488,24 +2488,20 @@
 :root,
 [ks-theme],
 [ks-inverted] {
-  --c-glossary--img-size: 5rem;
-}
-@media (min-width: 40.01em) {
-  :root,
-[ks-theme],
-[ks-inverted] {
-    --c-glossary--img-size: 10rem;
-  }
+  --c-glossary-icon--spacing: var(--ks-spacing-xs);
+  --c-glossary-icon--size: calc(
+    calc(var(--ks-line-height-copy-m) * var(--ks-font-size-copy-m) * 3) - var(--c-glossary-icon--spacing)
+  );
 }
 
 .c-glossary--text-media.text-media--intext .text-media__gallery {
   float: left;
-  padding-right: var(--ks-spacing-m);
-  padding-bottom: var(--ks-spacing-xs);
+  padding-right: var(--c-glossary-icon--spacing);
+  padding-bottom: var(--c-glossary-icon--spacing);
 }
 .c-glossary--text-media figure img {
-  width: var(--c-glossary--img-size);
-  height: var(--c-glossary--img-size);
+  width: var(--c-glossary-icon--size);
+  height: var(--c-glossary-icon--size);
 }
 
 :root {
