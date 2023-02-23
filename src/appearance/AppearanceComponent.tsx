@@ -31,7 +31,7 @@ export const Appearance: FunctionComponent<
   console.log("related", related);
   return (
     <div {...props}>
-      <Section spaceAfter="small" mode="list" width="narrow">
+      <Section spaceBefore="small" spaceAfter="small" mode="list" width="narrow">
         <div>
           <Headline level="h1" content={title} />
           {tags && tags.length > 0 && (

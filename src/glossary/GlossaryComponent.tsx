@@ -24,7 +24,7 @@ export const Glossary: FunctionComponent<
   ...props
 }) => (
   <div {...props}>
-    <Section width="narrow" mode="list" spaceAfter="default">
+    <Section width="narrow" mode="list" spaceBefore="small" spaceAfter="default">
       <div>
         <Headline align="left" level="h1" content={term} />
         {tags && tags.length > 0 && (

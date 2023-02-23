@@ -34,7 +34,7 @@ export const Showcase: FunctionComponent<
       width="narrow"
       mode="list"
       gutter="none"
-      spaceBefore="default"
+      spaceBefore="small"
       spaceAfter="small"
     >
       <Stack gutter="var(--ks-spacing-stack-s)">
@@ -70,8 +70,10 @@ export const Showcase: FunctionComponent<
       </Stack>
     </Section>
     <Section
+      variant="half"
+      background="accent"
       spaceBefore="small"
-      spaceAfter="default"
+      spaceAfter="small"
       mode="list"
       width="wide"
     >
@@ -100,12 +102,11 @@ export const Showcase: FunctionComponent<
         }}
       />
     </Section>
-
     <Section
       background="accent"
       width="wide"
       mode="list"
-      spaceBefore="default"
+      spaceBefore="small"
       spaceAfter="default"
     >
       <div className="template">

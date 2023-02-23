@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 17 Feb 2023 11:39:21 GMT
+ * Generated on Thu, 23 Feb 2023 04:40:51 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -3592,6 +3592,11 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   --transition-height: var(--ks-spacing-l);
   clip-path: polygon(var(--ks-spacing-xl) 0, calc(100% - var(--ks-spacing-xl)) 0, 100% var(--transition-height), 100% 100%, 0 100%, 0 var(--transition-height));
 }
+:root .l-section-style--half,
+[ks-theme] .l-section-style--half,
+[ks-inverted] .l-section-style--half {
+  background: linear-gradient(0deg, var(--ks-background-color-accent) 30%, transparent 0%);
+}
 :root .l-section-style--body,
 [ks-theme] .l-section-style--body,
 [ks-inverted] .l-section-style--body {
@@ -4540,6 +4545,9 @@ article .c-teaser .c-teaser__body {
 }
 .template .l-section {
   margin: unset;
+}
+.template__main, .template__split, .template__side {
+  max-width: var(--l-section--content-width-narrow);
 }
 @media (min-width: 76rem) {
   .template__main, .template__split, .template__side {

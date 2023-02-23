@@ -23,6 +23,7 @@
   &__main,
   &__split,
   &__side {
+    max-width: var(--l-section--content-width-narrow);
     @media (min-width: 76rem) {
       height: fit-content;
       position: sticky;

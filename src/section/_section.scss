@@ -39,6 +39,10 @@
         );
       }
 
+      &--half {
+        background: linear-gradient(0deg, var(--ks-background-color-accent) 30%, transparent 0%);
+      }
+
       &--body {
         --transition-height: var(--ks-spacing-m);
 
