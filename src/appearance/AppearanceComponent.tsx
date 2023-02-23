@@ -31,7 +31,12 @@ export const Appearance: FunctionComponent<
   console.log("related", related);
   return (
     <div {...props}>
-      <Section spaceBefore="small" spaceAfter="small" mode="list" width="narrow">
+      <Section
+        spaceBefore="small"
+        spaceAfter="default"
+        mode="list"
+        width="narrow"
+      >
         <div>
           <Headline level="h1" content={title} />
           {tags && tags.length > 0 && (
@@ -92,6 +97,7 @@ ${language}
 
       <Section
         background="accent"
+        variant="head"
         width="wide"
         mode="list"
         spaceBefore="small"
