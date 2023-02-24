@@ -1,11 +1,10 @@
 <svg width="250" height="80" viewBox="0 0 250 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="250" height="80" fill="white"/>
-<rect width="80" height="80" fill="#06566A" fill-opacity="0.05"/>
-<rect x="20" y="18" width="40" height="4" fill="#06566A" fill-opacity="0.25"/>
-<rect x="20" y="24" width="40" height="4" fill="#06566A" fill-opacity="0.25"/>
-<rect x="20" y="30" width="29.3333" height="4" fill="#06566A" fill-opacity="0.25"/>
-<rect x="10" y="39" width="60" height="2" fill="#06566A"/>
-<rect x="20" y="46" width="40" height="4" fill="#06566A" fill-opacity="0.25"/>
-<rect x="20" y="52" width="40" height="4" fill="#06566A" fill-opacity="0.25"/>
-<rect x="20" y="58" width="29.3333" height="4" fill="#06566A" fill-opacity="0.25"/>
+<path d="M80 0H0V80H80V0Z" fill="#E6EAEB"/>
+<path d="M60 18H20V22H60V18Z" fill="#06566A" fill-opacity="0.25"/>
+<path d="M60 24H20V28H60V24Z" fill="#06566A" fill-opacity="0.25"/>
+<path d="M49.3333 30H20V34H49.3333V30Z" fill="#06566A" fill-opacity="0.25"/>
+<path d="M70 39H10V41H70V39Z" fill="#06566A"/>
+<path d="M60 46H20V50H60V46Z" fill="#06566A" fill-opacity="0.25"/>
+<path d="M60 52H20V56H60V52Z" fill="#06566A" fill-opacity="0.25"/>
+<path d="M49.3333 58H20V62H49.3333V58Z" fill="#06566A" fill-opacity="0.25"/>
 </svg>

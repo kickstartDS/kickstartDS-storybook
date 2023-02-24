@@ -1,22 +1,21 @@
 <svg width="250" height="80" viewBox="0 0 250 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="250" height="80" fill="white"/>
-<rect width="80" height="80" fill="#06566A" fill-opacity="0.05"/>
+<path d="M80 0H0V80H80V0Z" fill="#E6EAEB"/>
 <g opacity="0.25">
 <path d="M10 9H9V10V70V71H10H70H71V70V10V9H70H10Z" stroke="#06566A" stroke-width="2"/>
-<mask id="mask0_758_4120" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="62" height="62">
+<mask id="mask0_1832_4001" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="62" height="62">
 <path d="M10 9.5H9.5V10V70V70.5H10H70H70.5V70V10V9.5H70H10Z" fill="#06566A" stroke="#06566A"/>
 </mask>
-<g mask="url(#mask0_758_4120)">
-<rect width="60" height="6" transform="translate(10 10)" fill="#06566A"/>
-<rect x="25" y="10" width="30" height="4" fill="white"/>
+<g mask="url(#mask0_1832_4001)">
+<path d="M70 10H10V16H70V10Z" fill="#06566A"/>
+<path d="M55 10H25V14H55V10Z" fill="white"/>
 </g>
 </g>
-<rect width="52" height="25" transform="translate(14 22)" fill="#06566A"/>
+<path d="M66 22H14V47H66V22Z" fill="#06566A"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M24.75 31.5C25.9926 31.5 27 30.4926 27 29.25C27 28.0074 25.9926 27 24.75 27C23.5074 27 22.5 28.0074 22.5 29.25C22.5 30.4926 23.5074 31.5 24.75 31.5ZM34.4407 30.5L42.2456 42H32.2561H26.6359H22.5L27.378 35L29.4088 37.9142L34.4407 30.5Z" fill="#ECFF00"/>
-<rect x="44.5" y="29.5" width="13" height="2" fill="#ECFF00"/>
-<rect x="44.5" y="33.5" width="13" height="2" fill="#ECFF00"/>
-<rect x="44.5" y="37.5" width="9.53333" height="2" fill="#ECFF00"/>
-<rect x="30" y="52" width="20" height="4" fill="#06566A" fill-opacity="0.25"/>
-<rect x="28" y="59" width="24" height="2" fill="#06566A" fill-opacity="0.25"/>
-<rect x="30.5" y="63" width="19" height="2" fill="#06566A" fill-opacity="0.25"/>
+<path d="M57.5 29.5H44.5V31.5H57.5V29.5Z" fill="#ECFF00"/>
+<path d="M57.5 33.5H44.5V35.5H57.5V33.5Z" fill="#ECFF00"/>
+<path d="M54.0333 37.5H44.5V39.5H54.0333V37.5Z" fill="#ECFF00"/>
+<path d="M50 52H30V56H50V52Z" fill="#06566A" fill-opacity="0.25"/>
+<path d="M52 59H28V61H52V59Z" fill="#06566A" fill-opacity="0.25"/>
+<path d="M49.5 63H30.5V65H49.5V63Z" fill="#06566A" fill-opacity="0.25"/>
 </svg>
