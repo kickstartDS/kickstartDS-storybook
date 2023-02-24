@@ -134,7 +134,7 @@ const Page = () => (
         ratio="none"
         text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
         link={{
-          variant: "clear",
+          variant: "solid",
           label: "Medium Button",
           iconAfter: true,
           icon: {
@@ -149,7 +149,7 @@ const Page = () => (
         ratio="none"
         text="Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod."
         link={{
-          variant: "clear",
+          variant: "outline",
           label: "Medium Button",
           iconAfter: true,
           icon: {
@@ -255,12 +255,6 @@ commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate vel
         image="img/recipes/icons/button.svg"
         ratio="none"
         text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
-        link={{
-          hidden: true,
-          variant: "clear",
-          label: "Explore generators",
-
-        }}
         imageSpacing
       />
       <TeaserBox
@@ -268,12 +262,6 @@ commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate vel
         image="img/recipes/icons/content-box.svg"
         ratio="none"
         text="Consetetur sadipscing elitr, sed diam nonumy eirmod."
-        link={{
-          hidden: true,
-          variant: "clear",
-          label: "See our components",
-
-        }}
         imageSpacing
       />
       <TeaserBox
@@ -281,12 +269,6 @@ commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate vel
         image="img/recipes/icons/count-up.svg"
         ratio="none"
         text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
-        link={{
-          hidden: true,
-          variant: "clear",
-          label: "See our components",
-
-        }}
         imageSpacing
       />
       <TeaserBox
@@ -294,12 +276,6 @@ commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate vel
         image="img/recipes/icons/divider.svg"
         ratio="none"
         text="Consetetur sadipscing elitr, sed diam nonumy eirmod."
-        link={{
-          hidden: true,
-          variant: "clear",
-          label: "See our components",
-
-        }}
         imageSpacing
       />
       <TeaserBox
@@ -307,12 +283,6 @@ commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate vel
         image="img/recipes/icons/divider.svg"
         ratio="none"
         text="Consetetur sadipscing elitr, sed diam nonumy eirmod."
-        link={{
-          hidden: true,
-          variant: "clear",
-          label: "See our components",
-
-        }}
         imageSpacing
       />
       <TeaserBox
@@ -320,12 +290,6 @@ commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate vel
         image="img/recipes/icons/headline.svg"
         ratio="none"
         text="Consetetur sadipscing elitr, sed diam nonumy eirmod."
-        link={{
-          hidden: true,
-          variant: "clear",
-          label: "See our components",
-
-        }}
         imageSpacing
       />
       <TeaserBox
@@ -333,12 +297,6 @@ commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate vel
         image="img/recipes/icons/quote-slider.svg"
         ratio="none"
         text="Consetetur sadipscing elitr, sed diam nonumy eirmod."
-        link={{
-          hidden: true,
-          variant: "clear",
-          label: "See our components",
-
-        }}
         imageSpacing
       />
       <TeaserBox
@@ -346,12 +304,6 @@ commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate vel
         image="img/recipes/icons/section.svg"
         ratio="none"
         text="Consetetur sadipscing elitr, sed diam nonumy eirmod."
-        link={{
-          hidden: true,
-          variant: "clear",
-          label: "See our components",
-
-        }}
         imageSpacing
       />
       <TeaserBox
@@ -359,12 +311,6 @@ commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate vel
         image="img/recipes/icons/slider.svg"
         ratio="none"
         text="Consetetur sadipscing elitr, sed diam nonumy eirmod."
-        link={{
-          hidden: true,
-          variant: "clear",
-          label: "See our components",
-
-        }}
         imageSpacing
       />
       <TeaserBox
@@ -372,12 +318,6 @@ commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate vel
         image="img/recipes/icons/storytelling.svg"
         ratio="none"
         text="Consetetur sadipscing elitr, sed diam nonumy eirmod."
-        link={{
-          hidden: true,
-          variant: "clear",
-          label: "See our components",
-
-        }}
         imageSpacing
       />
     </Section>

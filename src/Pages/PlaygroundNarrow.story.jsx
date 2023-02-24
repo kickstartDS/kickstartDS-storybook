@@ -35,73 +35,78 @@ const Page = () => (
         </div>
       </div>
     </Section>
-    <Visual
-      backgroundColor="transparent"
-      box={{
-        background: 'solid',
-        enabled: true,
-        headline: {
-          align: null,
-          className: undefined,
-          content: 'As a H2, I should be noticably smaller than the Page Headline',
-          level: 'p',
-          pageHeader: false,
-          spaceAfter: 'small',
-          styleAs: 'h2',
-          subheadline: undefined
-        },
-        horizontal: 'left',
-        indent: false,
-        inverted: false,
-        links: [
-          {
+    <Section
+      spaceBefore="none"
+      spaceAfter="small"
+    >
+      <Visual
+        backgroundColor="transparent"
+        box={{
+          background: 'solid',
+          enabled: true,
+          headline: {
+            align: null,
             className: undefined,
-            dataComponent: undefined,
-            deko: false,
-            fillAnimation: false,
-            highlighted: false,
-            href: 'https://example.com',
-            icon: {
-              className: undefined,
-              icon: undefined,
-              role: undefined
-            },
-            iconAfter: false,
-            iconAnimation: false,
-            iconBefore: false,
-            inverted: undefined,
-            label: 'Large CTA Button',
-            newTab: false,
-            size: 'large',
-            variant: 'solid'
+            content: 'As a H2, I should be noticably smaller than the Page Headline',
+            level: 'p',
+            pageHeader: false,
+            spaceAfter: 'small',
+            styleAs: 'h2',
+            subheadline: undefined
           },
-          {
-            label: 'With an alternative',
-            variant: 'outline',
-            size: 'large',
+          horizontal: 'left',
+          indent: false,
+          inverted: false,
+          links: [
+            {
+              className: undefined,
+              dataComponent: undefined,
+              deko: false,
+              fillAnimation: false,
+              highlighted: false,
+              href: 'https://example.com',
+              icon: {
+                className: undefined,
+                icon: undefined,
+                role: undefined
+              },
+              iconAfter: false,
+              iconAnimation: false,
+              iconBefore: false,
+              inverted: undefined,
+              label: 'Large CTA Button',
+              newTab: false,
+              size: 'large',
+              variant: 'solid'
+            },
+            {
+              label: 'With an alternative',
+              variant: 'outline',
+              size: 'large',
+            }
+          ],
+          text: "The copy text shouldn't appear too small following a big Headline",
+          vertical: 'center'
+        }}
+        height="default"
+        media={{
+          image: {
+            alt: undefined,
+            indent: 'none',
+            src: 'https://picsum.photos/seed/kdsvisual/640/270',
+            srcDesktop: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+            srcMobile: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+            srcTablet: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+          },
+          mode: 'image',
+          video: {
+            srcDesktop: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4',
+            srcMobile: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4',
+            srcTablet: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4'
           }
-        ],
-        text: "The copy text shouldn't appear too small following a big Headline",
-        vertical: 'center'
-      }}
-      height="default"
-      media={{
-        image: {
-          alt: undefined,
-          indent: 'none',
-          src: 'https://picsum.photos/seed/kdsvisual/640/270',
-          srcDesktop: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-          srcMobile: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-          srcTablet: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-        },
-        mode: 'image',
-        video: {
-          srcDesktop: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4',
-          srcMobile: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4',
-          srcTablet: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4'
-        }
-      }}
-    />
+        }}
+      />
+    </Section>
     <Section
       background="accent"
       width="narrow"
@@ -134,7 +139,7 @@ const Page = () => (
         ratio="none"
         text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
         link={{
-          variant: "clear",
+          variant: "solid",
           label: "Medium Button",
           iconAfter: true,
           icon: {
@@ -149,7 +154,7 @@ const Page = () => (
         ratio="none"
         text="Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod."
         link={{
-          variant: "clear",
+          variant: "outline",
           label: "Medium Button",
           iconAfter: true,
           icon: {
