@@ -33,6 +33,7 @@ export { Landingpage } from "./Landingpage.story";
 export { Integrations } from "./Integrations.story";
 export { Sanity } from "./Sanity.story";
 export { PlaygroundWide } from "./PlaygroundWide.story";
+export { PlaygroundNarrow } from "./PlaygroundNarrow.story";
 export { BlogPost } from "./BlogPost.story";
 export { BlogList } from "./BlogList.story";
 export { Buttons } from "./Buttons.story";
