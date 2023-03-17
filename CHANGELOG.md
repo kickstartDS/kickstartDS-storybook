@@ -1,3 +1,15 @@
+# v2.2.4 (Fri Mar 17 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: always show spacer in header ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.2.3 (Thu Feb 16 2023)
 
 #### ⚠️ Pushed to `master`
