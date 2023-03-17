@@ -18,7 +18,7 @@
     "dist:sass": "sass --load-path=node_modules src/dist.scss dist/index.css",
     "dist:components": "node scripts/bundleComponents.js",
     "dist:schema": "yarn schema && node scripts/copySchema.js && yarn typings",
-    "dist:images": "cp -r static/img static/patterns static/logo.svg static/logo-light.svg dist/",
+    "dist:images": "cp -r static/img static/patterns static/logo.svg static/concierge-dude.svg static/logo-light.svg dist/",
     "dist:favicons": "cp -r static/favicon dist/",
     "prepublishOnly": "rm -rf dist && mkdir -p dist && yarn build-tokens && run-p dist:*",
     "sass": "sass --load-path=node_modules src/index.scss static/index.css",
