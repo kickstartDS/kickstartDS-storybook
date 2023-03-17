@@ -1,3 +1,16 @@
+# v2.2.7 (Fri Mar 17 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: copy Concierge, too ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.2.6 (Fri Mar 17 2023)
 
 #### ⚠️ Pushed to `master`
