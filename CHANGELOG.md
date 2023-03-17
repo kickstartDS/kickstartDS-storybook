@@ -1,3 +1,15 @@
+# v2.2.6 (Fri Mar 17 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add concierge svg ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.2.5 (Fri Mar 17 2023)
 
 #### ⚠️ Pushed to `master`
