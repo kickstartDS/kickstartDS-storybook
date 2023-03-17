@@ -43,6 +43,6 @@ export const Header: FunctionComponent<HeaderProps & HTMLAttributes<HTMLDivEleme
           </div>
         </header>
       </div>
-      {!light && <div className="kds-header--spacer"></div>}
+      <div className="kds-header--spacer"></div>
     </>
   );
