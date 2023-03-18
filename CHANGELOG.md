@@ -1,3 +1,27 @@
+# v2.2.3 (Thu Feb 16 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feature: switch to GTM ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.2.2 (Mon Feb 06 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix(package.json): add sass watch task ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.2.1 (Tue Jan 17 2023)
 
 
