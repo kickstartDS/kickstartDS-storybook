@@ -28,7 +28,7 @@ export default {
 
 const Page = () => (
   <>
-    <Header {...unpack(HeaderStories.args)} active="sanity" />
+    <Header  {...unpack(HeaderStories.args)} />
     <Section width="full" spaceBefore="none" spaceAfter="small">
       <Visual
         className="contain-image"

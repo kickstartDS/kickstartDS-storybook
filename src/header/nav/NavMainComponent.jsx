@@ -5,11 +5,11 @@ import { LinkButton } from "@kickstartds/base/lib/link-button";
 import { Logo } from "../../logo/LogoComponent";
 import { Icon } from "@kickstartds/base";
 
-export const NavMain = ({ activeEntry, navEntries = [], cta }) => (
+export const NavMain = ({ activeEntry, dark, navEntries = [], cta }) => (
   <div className="nav-main__wrap">
     <NavToggle />
     <nav className="nav-main" id="nav-main" aria-label="Hauptnavigation">
-      <Logo />
+      <Logo dark={dark} />
       <ul className="nav-main__list">
         {navEntries.map(({ label, href, id }, index) => (
           <li

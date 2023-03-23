@@ -3,10 +3,10 @@
 .c-announcement-bar {
   display: flex;
   margin: auto;
-  flex-wrap: wrap;
   align-items: center;
   gap: var(--ks-spacing-xs);
-  padding: var(--ks-spacing-xs) 0;
+  padding: 0.55em 0;
+  font: var(--ks-font-ui-xs);
 
   &--section {
     padding: var(--ks-spacing-xs) 0;
@@ -20,7 +20,6 @@
 
   &__text {
     color: var(--ks-text-color-default);
-    font: var(--ks-font-ui-xs);
     text-align: left;
   }
 
@@ -36,6 +35,7 @@
   &__link {
     width: fit-content;
     display: flex;
+    flex-shrink: 0;
 
     .c-button {
       span {

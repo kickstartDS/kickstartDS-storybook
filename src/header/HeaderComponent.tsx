@@ -22,7 +22,7 @@ export const Header: FunctionComponent<
   ...props
 }) => (
   <>
-    <div {...props} className="kds-header__wrap">
+    <div ks-inverted={dark} {...props} className="kds-header--wrap">
       <NavSkip />
       {announcementBar && announcementBar.content && (
         <AnnouncementBar
@@ -35,6 +35,7 @@ export const Header: FunctionComponent<
           <Logo dark={dark} homeLink={homeLink} />
           {navEntries && navEntries.length > 0 && navEnabled && (
             <NavMain
+              dark={dark}
               navEntries={navEntries}
               activeEntry={activeEntry}
               cta={cta}

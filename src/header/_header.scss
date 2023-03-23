@@ -1,14 +1,6 @@
 @use "header-tokens";
 @use "../breakpoint";
 
-.kds-header__wrap {
-  position: absolute;
-  top: 0%;
-  z-index: 2;
-  left: 0;
-  width: 100%;
-}
-
 header[data-component="kds.header"] {
   display: flex;
   justify-content: center;
@@ -28,6 +20,10 @@ header[data-component="kds.header"] {
   transition-duration: var(--g-transition-duration-s);
   transition-property: all;
   z-index: 1;
+
+  &--wrap {
+    background-color: var(--g-header-background-color);
+  }
 
   &::after {
     content: "";
