@@ -15,18 +15,5 @@
     @include breakpoint.media("≥s") {
       padding: 0;
     }
-
-    &--dark {
-      position: absolute;
-      top: 0;
-    }
-
-    &--light {
-      opacity: 0;
-
-      .kds-header--light & {
-        opacity: 1;
-      }
-    }
   }
 }

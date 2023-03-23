@@ -4,7 +4,7 @@ import { Link } from "@kickstartds/base/lib/link";
 import { LinkButton } from "@kickstartds/base/lib/link-button";
 import { Logo } from "../../logo/LogoComponent";
 
-export const NavMain = ({ activeEntry, navEntries = [], cta, light }) => (
+export const NavMain = ({ activeEntry, navEntries = [], cta }) => (
   <div className="nav-main__wrap">
     <NavToggle />
     <nav className="nav-main" id="nav-main" aria-label="Hauptnavigation">

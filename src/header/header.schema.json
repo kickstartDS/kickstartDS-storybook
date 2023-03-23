@@ -5,10 +5,10 @@
   "description": "Header to be used in website layouts",
   "type": "object",
   "properties": {
-    "light": {
-      "title": "Light version",
+    "dark": {
+      "title": "Dark version",
       "type": "boolean",
-      "description": "Choose wether to use the light version of the Header",
+      "description": "Choose wether to use the dark version of the Header",
       "default": false
     },
     "homeLink": {
@@ -109,5 +109,5 @@
       "required": ["content", "linkLabel", "linkHref"]
     }
   },
-  "required": ["homeLink", "activeEntry"]
+  "required": ["activeEntry"]
 }

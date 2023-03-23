@@ -17,7 +17,6 @@ header[data-component="kds.header"] {
 }
 
 .kds-header {
-  background-color: var(--kds-header-background-color);
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -29,19 +28,6 @@ header[data-component="kds.header"] {
   transition-duration: var(--g-transition-duration-s);
   transition-property: all;
   z-index: 1;
-
-  &--light {
-    > .kds-logo {
-      .kds-logo__img {
-        &--light {
-          opacity: 1;
-        }
-        &--dark {
-          opacity: 0;
-        }
-      }
-    }
-  }
 
   &::after {
     content: "";
@@ -69,7 +55,6 @@ header[data-component="kds.header"] {
 
   @include breakpoint.media("≥m") {
     padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
-    border-radius: var(--g-border-radius-m);
   }
 
   a {
