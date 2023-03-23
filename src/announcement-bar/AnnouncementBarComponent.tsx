@@ -1,31 +1,30 @@
-import React, { FC, HTMLAttributes } from "react";
 import { Section } from "@kickstartds/base/lib/section";
+import { Link } from "@kickstartds/base/lib/link";
 import { LinkButton } from "@kickstartds/base/lib/link-button";
 import { useSessionState } from "../hooks/useSessionState";
+import { FC, HTMLAttributes } from "react";
 
 const AlertIcon: FC<HTMLAttributes<SVGElement>> = (props) => (
   <svg
-    width="41"
-    height="40"
-    viewBox="0 0 41 40"
+    viewBox="0 0 40 40"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     <path
-      d="M10.9299 12.9838L19.2531 6L34.7531 12.9838L30.7531 30L23.2531 32.5L7.75314 27L10.9299 12.9838Z"
+      d="M6.35334 12.4874L17.7592 3L39 12.4874L33.5185 35.6038L23.2407 39L2 31.5283L6.35334 12.4874Z"
       fill="#063946"
     />
     <path
-      d="M8.75313 9L17.2531 5L32.7531 14L29.0079 28.6697L22.2531 30.5L7.75313 26L8.75313 9Z"
+      d="M3.36 7.4902L14.92 2L36 14.3529L30.9065 34.4878L21.72 37L2 30.8235L3.36 7.4902Z"
       fill="#ECFF00"
     />
     <path
-      d="M20.0077 10L14.8889 11.7597L18.363 21.622L20.2396 21.3957L20.0077 10Z"
+      d="M18.6966 9L12 11.4226L16.545 25L19 24.6885L18.6966 9Z"
       fill="#06566A"
     />
     <path
-      d="M20.466 23.2723L18.5893 23.4986L18.4403 25.4205L20.3622 25.5696L21.3977 24.6831L20.466 23.2723Z"
+      d="M18.7398 27L16.2015 27.2955L16 29.8053L18.5994 30L20 28.8423L18.7398 27Z"
       fill="#06566A"
     />
   </svg>
@@ -51,12 +50,15 @@ export const AnnouncementBar: FC<AnnouncementBarProps> = ({
       width="max"
       spaceBefore="none"
       spaceAfter="none"
+      align="center"
       inverted="true"
-      className="c-announcement-bar"
+      className="c-announcement-bar--section"
     >
-      <div className="c-announcement-bar__content">
-        <AlertIcon className="c-announcement-bar__icon" />
-        <span>{content}</span>
+      <div className="c-announcement-bar">
+        <div className="c-announcement-bar__content">
+          <AlertIcon className="c-announcement-bar__icon" />
+          <span className="c-announcement-bar__text">{content}</span>
+        </div>
         {hidden ? (
           ""
         ) : (

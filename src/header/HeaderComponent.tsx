@@ -43,6 +43,5 @@ export const Header: FunctionComponent<
         </div>
       </header>
     </div>
-    <div className="kds-header--spacer"></div>
   </>
 );

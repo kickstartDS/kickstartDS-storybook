@@ -11,6 +11,7 @@
 @use "footer/footer-nav";
 @use "form/form";
 @use "form-field/form-field";
+@use "github-link/github-link";
 @use "glossary/glossary";
 @use "header/header";
 @use "header/nav/nav-main";
@@ -69,6 +70,7 @@ main {
   margin: 0 !important;
 }
 
-.sbdocs.sbdocs-wrapper {
+.sbdocs.sbdocs-wrapper,
+.sb-show-main.sb-main-padded {
   padding: 0;
 }

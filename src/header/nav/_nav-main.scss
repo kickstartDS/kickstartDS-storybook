@@ -30,6 +30,25 @@
       }
     }
 
+    &.nav-main__item--icon {
+      &::after {
+        content: none;
+      }
+    }
+
+    &--github {
+      .icon {
+        border-radius: var(--ks-border-radius-circle);
+        transition: all var(--ks-transition-hover);
+      }
+
+      &:hover {
+        .icon {
+          background-color: var(--ks-color-primary-inverted);
+        }
+      }
+    }
+
     &__link {
       /* critical:start */
       display: block;
@@ -44,6 +63,7 @@
     }
   }
 
+  // Mobile Nav
   @include breakpoint.media("<m") {
     /* critical:start */
     left: -100%;
@@ -106,6 +126,7 @@
     }
   }
 
+  // Desktop Nav
   @include breakpoint.media("≥m") {
     /* critical:start */
     > .kds-logo {
