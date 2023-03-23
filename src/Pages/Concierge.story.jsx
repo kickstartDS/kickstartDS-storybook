@@ -26,10 +26,30 @@ const Page = () => (
         spaceBefore="none"
       >
         <Header
-          announcementBar={{
-            visible: false,
+          light
+          navEnabled
+          homeLink="https://www.kickstartds.com/"
+          cta={{
+            label: "Blog",
+            href: "/blog",
           }}
-          {...unpack(HeaderStories.args)}
+          navEntries={[
+            {
+              label: "Integrations",
+              href: "/integrations",
+              id: "integrations"
+            },
+            {
+              label: "Services",
+              href: "/services",
+              id: "services"
+            },
+            {
+              label: "About",
+              href: "/about",
+              id: "about"
+            }
+          ]}
         />
       </Section>
       <Section
