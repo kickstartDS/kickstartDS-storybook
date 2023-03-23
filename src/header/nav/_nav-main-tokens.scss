@@ -14,7 +14,7 @@
   --c-nav-main_item--font-weight-active: var(--ks-font-weight-bold);
 
   --c-nav-main_item--padding: 0.5rem var(--g-header-spacing-h);
-  --c-nav-main_item--background-color-hover: var(--ks-color-primary-inverted-base);
+  --c-nav-main_item--background-color-hover: var(--ks-color-primary-inverted);
 
   @include breakpoint.media("≥m") {
     --c-nav-main_item--font: var(--ks-font-ui-s);
