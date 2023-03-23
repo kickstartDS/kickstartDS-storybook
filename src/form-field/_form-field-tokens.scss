@@ -4,5 +4,24 @@
   .c-form-field {
     --c-form-field--border-width: var(--ks-border-width-emphasized);
     --c-form-field_focus--shadow: 0;
+    &__input {
+      &--highlight {
+        --c-form-field--border-color: var(--ks-color-fg);
+        --c-form-field_hover--border-color: var(--ks-color-fg);
+        --c-form-field_focus--border-color: var(--ks-border-color-primary);
+        --c-form-field--shadow: 12px 12px 0px 0px;
+        --c-form-field_focus--shadow: 6px 6px 0px 0px;
+        --c-form-field--background: var(--ks-background-color-default);
+        --c-form-field_placeholder--color: var(--ks-color-fg-alpha-6);
+
+        box-shadow: var(--c-form-field--shadow) var(--c-form-field--border-color);
+        transition: var(--ks-transition-bounce);
+        transition-property: all;
+
+        &.focus-visible {
+          transform: translateY(5px);
+        }
+      }
+    }
   }
 }
