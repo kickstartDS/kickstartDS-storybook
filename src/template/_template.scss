@@ -1,37 +1,39 @@
-@use './template-tokens';
-@use '../breakpoint';
+@use "./template-tokens";
+@use "../breakpoint";
 
 .template {
-  width: 100%;
   position: relative;
   margin: auto;
   gap: var(--ks-spacing-l);
-  padding: 0 var(--l-section--content-padding);
+  display: flex;
+  flex-direction: column;
 
-  @include breakpoint.media(">m") {
-    display: flex;
-  }
+  &--concierge.template {
+    gap: var(--ks-spacing-m);
 
-  .l-section {
-    margin: unset;
-    &__container {
-      padding: 0;
+    @media (min-width: 40rem) {
+      flex-direction: row;
     }
-  }
 
-  &--wide {
-    max-width: var(--l-section--content-width-wide);
-  }
-
-  &__main {
-    @include breakpoint.media(">m") {
-      width: 70%;
+    .template__main,
+    .template__side {
+      @media (min-width: 40rem) {
+        height: fit-content;
+        position: sticky;
+        top: var(--ks-spacing-m);
+      }
     }
-  }
 
-  &__side {
-    @include breakpoint.media(">m") {
-      width: 30%;
+    .template__main {
+      @media (min-width: 40rem) {
+        width: 70%;
+      }
+    }
+
+    .template__side {
+      @media (min-width: 40rem) {
+        width: 30%;
+      }
     }
   }
 }

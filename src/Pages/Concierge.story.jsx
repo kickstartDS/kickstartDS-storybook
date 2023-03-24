@@ -112,7 +112,7 @@ const Page = () => (
         </div>
       </Section>
       <Section spaceBefore="small" background="accent" width="narrow">
-        <div className="template" gutter="var(--ks-spacing-m)" fraction="3/4" switchAt="40rem">
+        <div className="template template--concierge">
           <div className="template__main">
             <RichText text={`Hey there!
 
@@ -552,6 +552,7 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
           target="blank"
         />
       </Section>
+      <Footer {...unpack(FooterStories.args)} />
     </div>
   </>
 );
