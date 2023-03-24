@@ -6,11 +6,11 @@
     --c-form-field_focus--shadow: 0;
     &__input {
       &--highlight {
-        --c-form-field--border-color: var(--ks-color-fg);
-        --c-form-field_hover--border-color: var(--ks-color-fg);
-        --c-form-field_focus--border-color: var(--ks-border-color-primary);
-        --c-form-field--shadow: 12px 12px 0px 0px;
-        --c-form-field_focus--shadow: 6px 6px 0px 0px;
+        --c-form-field--border-color: var(--ks-color-primary-inverted-to-bg-6);
+        --c-form-field_hover--border-color: var(--ks-color-primary-inverted-to-bg-6);
+        --c-form-field_focus--border-color: var(--ks-color-primary);
+        --c-form-field--shadow: 8px 8px 0px 0px;
+        --c-form-field_focus--shadow: 8px 8px 0px 0px;
         --c-form-field--background: var(--ks-background-color-default);
         --c-form-field_placeholder--color: var(--ks-color-fg-alpha-6);
 
@@ -19,7 +19,7 @@
         transition-property: all;
 
         &.focus-visible {
-          transform: translateY(5px);
+          filter: drop-shadow(2px 6px 6px var(--ks-color-primary-alpha-4));
         }
       }
     }

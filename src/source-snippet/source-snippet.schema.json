@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/source-snippet.schema.json",
+  "title": "Source Snippet",
+  "description": "Display one showcase entry with all its details",
+  "type": "object",
+  "properties": {
+    "title": {
+      "title": "Title",
+      "description": "Title of the Source",
+      "type": "string",
+      "default": "Brad Frost"
+    },
+    "text": {
+      "title": "Text",
+      "description": "Text excerpt",
+      "type": "string",
+      "default": "What is a design system? A design system is a continuously evolving single source of truth..."
+    }
+  },
+  "required": ["link", "title", "description", "cover"]
+}

@@ -1,0 +1,19 @@
+.reference {
+  ul,
+  li {
+    padding: 0;
+    list-style: none;
+  }
+
+  display: flex;
+  gap: var(--ks-spacing-m);
+  flex-wrap: wrap;
+
+  a {
+    font: var(--ks-font-copy-xs);
+  }
+
+  &__text.c-rich-text p {
+    font: var(--ks-font-copy-s);
+  }
+}

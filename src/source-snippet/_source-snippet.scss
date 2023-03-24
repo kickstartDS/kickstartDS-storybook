@@ -1,0 +1,24 @@
+@use "source-snippet-tokens";
+@use "../breakpoint";
+
+.c-source-snippet {
+  display: flex;
+  gap: var(--ks-spacing-stack-xs);
+  flex-direction: column;
+
+  &__title {
+    font: var(--ks-font-copy-xs);
+    color: var(--ks-text-color-default);
+    font-weight: var(--ks-font-weight-semi-bold);
+  }
+
+  &__text {
+    font: var(--ks-font-copy-xs);
+    color: var(--ks-text-color-default);
+    margin: 0;
+  }
+
+  &__link {
+    width: fit-content;
+  }
+}

@@ -2,6 +2,7 @@
 @use '../breakpoint';
 
 .template {
+  width: 100%;
   position: relative;
   margin: auto;
   gap: var(--ks-spacing-l);
