@@ -36,4 +36,45 @@
       }
     }
   }
+
+  @media (min-width: 76rem) {
+    flex-direction: row;
+  }
+
+  .l-container {
+    container-type: normal;
+  }
+
+  .l-section {
+    margin: unset;
+  }
+
+  &__main,
+  &__split,
+  &__side {
+    max-width: var(--l-section--content-width-narrow);
+    @media (min-width: 76rem) {
+      height: fit-content;
+      position: sticky;
+      top: var(--ks-spacing-m);
+    }
+  }
+
+  &__split {
+    @media (min-width: 76rem) {
+      width: 50%;
+    }
+  }
+
+  &__main {
+    @media (min-width: 76rem) {
+      width: 60%;
+    }
+  }
+
+  &__side {
+    @media (min-width: 76rem) {
+      width: 40%;
+    }
+  }
 }
