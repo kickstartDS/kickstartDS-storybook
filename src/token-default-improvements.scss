@@ -154,10 +154,6 @@
     &:hover.js-linked {
       border-color: var(--c-teaser--border-color-hover);
     }
-
-    .c-teaser__link {
-      margin-top: var(--ks-spacing-stack-s);
-    }
   }
 
   .c-visual {
@@ -170,6 +166,20 @@
     &--teaser-box,
     &--content-box {
       display: flex;
+    }
+  }
+}
+
+.c-teaser {
+  .c-teaser__link {
+    margin-top: var(--ks-spacing-stack-xs);
+  }
+}
+
+@container teaser-box (min-width: 450px) {
+  .c-teaser {
+    .c-teaser__link {
+      margin-top: var(--ks-spacing-stack-s);
     }
   }
 }

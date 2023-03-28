@@ -1,6 +1,6 @@
 import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 
-import { Button, Section, TagLabel, Headline, RichText, Divider } from "@kickstartds/base";
+import { Button, Section, TagLabel, Headline, RichText, Picture } from "@kickstartds/base";
 import { CollapsibleBox } from "@kickstartds/content";
 import { Quote } from "@kickstartds/content";
 import { TextArea } from "@kickstartds/form";
@@ -12,6 +12,7 @@ import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
 import { Inline, Split, Stack } from "@bedrock-layout/primitives";
 import { SourceSnippet } from "../source-snippet/SourceSnippetComponent";
+import { Source } from "../source/SourceComponent";
 
 export default {
   title: "Concierge",
@@ -111,7 +112,7 @@ const Page = () => (
           />
         </div>
       </Section>
-      <Section spaceBefore="small" background="accent" width="narrow">
+      <Section spaceBefore="small" background="accent" width="default">
         <div className="template template--concierge">
           <div className="template__main">
             <RichText text={`Hey there!
@@ -124,20 +125,18 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
           </div>
           <div className="template__side">
             <Stack gutter="var(--ks-spacing-stack-xs)">
-              <SourceSnippet title="supernova.io" text="What Is a Design System? The Definitive Guide" />
-              <Divider />
-              <SourceSnippet title="designstrategy.guide" text="What is a design system and how does it align your team to create better products?" />
-              <Divider />
-              <SourceSnippet title="delldesignsystem.com" text="About the Dell Design System" />
+              <Picture src="/concierge-dude.svg" />
+              <SourceSnippet title="supernova.io" text="What Is a Design System? The Definitive Guide" link="#source-1" />
+              <SourceSnippet title="designstrategy.guide" text="What is a design system and how does it align your team to create better products?" link="#source-2" />
+              <SourceSnippet title="delldesignsystem.com" text="About the Dell Design System" link="#source-3" />
             </Stack>
           </div>
         </div>
       </Section>
 
       <Section
-        width="default"
-        spaceBefore="small"
-        gutter="small"
+        gutter="none"
+
         headline={{
           content: "Referenced articles",
           align: "left",
@@ -147,71 +146,68 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
         mode="list"
       >
 
-        <div>
-          <CollapsibleBox
-            summary="Creating Themeable Design Systems | Brad Frost"
-            text={`Design Tokens and a Multi-Tiered Variable System From Salesforce’s Lightning Design System, which popularized the term “design tokens” in design systems: Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development. Design tokens move variables to a higher level, making it easier to manage brand attributes without diving deep into a codebase. For a design system powering multiple brands, each brand defines their own design tokens, which then hook into the design system’s codebase. To accomplish this in my own work, I tend to break these variables into several tiers.   
+        <Source
+          title="Why should developers build with Design Systems?"
+          url="https://backlight.dev/blog/why-should-developers-build-with-design-systems"
+          id="source-1"
+          thumbnail="img/concierge/backlight.png"
+          sections={
+            [
+              {
+                excerpt: `🧩 Benefits from design tokens Design tokens are core elements of the design language used both by designers and developers to build components in Design Systems. We can refer to tokens as “constants” hosting common values in the Design System codebase. An interesting thread about it here. For instance, here are some common tokens: colors, fonts, spacing, border, radius, opacity, shadows, z-index, … A Design System is a source of truth for tokens, built-in collaboration with designers and developers. All Design System components built on top of tokens benefit from auto updates when tokens are modified. So having a Design System, instead of a standalone component library, makes it easier and more efficient to build consistent and maintainable components. Tips: Design system tokens on the code-side can be synchronized with the Design System on the design-side thanks to some dedicated tools (like Specify) or built-in features in Design System tools (like Backlight).`,
+                relevance: "87.78",
 
-**Relevance:** 75%`}
-            renderText={(text) => (
-              <>
-                <RichText text={text} />
-                <Button
-                  href="#"
-                  label="Open reference"
-                  size="medium"
-                  variant={"clear"}
-                  iconAfter
-                  icon={{
-                    icon: "chevron-right"
-                  }}
-                />
-              </>
-            )}
-          />
-          <CollapsibleBox
-            summary="Introduction to Design Tokens · Michael Mangialardi"
-            text={`Design Tokens and a Multi-Tiered Variable System From Salesforce’s Lightning Design System, which popularized the term “design tokens” in design systems: Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development. Design tokens move variables to a higher level, making it easier to manage brand attributes without diving deep into a codebase. For a design system powering multiple brands, each brand defines their own design tokens, which then hook into the design system’s codebase. To accomplish this in my own work, I tend to break these variables into several tiers.   
+              },
+              {
+                excerpt: `What are Design Tokens? With design systems, individual items on a screen - like a text input - turned into components: reusable elements that are built in one place and referenced in different parts of the product. Similarly, the most basic brand definitions like color, typography, spacing, etc., are turning into Design Tokens. These design decisions are “hard-coded” values, but with Design Tokens they are turned into a string that gets registered in one place - like a JSON file - and re-used everywhere in the interface, enabling an extra layer of consistency to an ever-evolving product. The advantage of the Design Tokens approach is the ability to store the design decisions generically. This information can then get translated into any technology or platform.`,
+                relevance: "87.20",
+              }
+            ]
+          }
+        />
+        <Source
+          title="What Is a Design System? The Definitive Guide – Blog – Supernova.io"
+          url="https://www.supernova.io/blog/what-is-a-design-system"
+          id="source-2"
+          thumbnail="img/concierge/supernova.png"
+          sections={
+            [
+              {
+                excerpt: `🧩 Benefits from design tokens Design tokens are core elements of the design language used both by designers and developers to build components in Design Systems. We can refer to tokens as “constants” hosting common values in the Design System codebase. An interesting thread about it here. For instance, here are some common tokens: colors, fonts, spacing, border, radius, opacity, shadows, z-index, … A Design System is a source of truth for tokens, built-in collaboration with designers and developers. All Design System components built on top of tokens benefit from auto updates when tokens are modified. So having a Design System, instead of a standalone component library, makes it easier and more efficient to build consistent and maintainable components. Tips: Design system tokens on the code-side can be synchronized with the Design System on the design-side thanks to some dedicated tools (like Specify) or built-in features in Design System tools (like Backlight).`,
+                relevance: "85.5",
+              }
+            ]
+          }
+        />
+        <Source
+          title="What is a design system and how does it align your team to create better products? - Design strategy guide"
+          url="https://designstrategy.guide/design-management/what-is-a-design-system-and-how-does-it-align-your-team-to-create-better-products/"
+          id="source-3"
+          thumbnail="img/concierge/design-strategy.png"
+          sections={
+            [
+              {
+                excerpt: `What is a design system? A design system is a continuously evolving single source of truth for the whole team that’s working on a project or product. It combines a UI kit, behavior and scale rules, code, and a brand book. It is a collection of reusable components, guided by clear standards, that can be assembled to build any number of applications. Or as Chris Messina, tech evangelist and former Developer Experience Lead at Uber, puts it: “Design systems provide a convenient, centralized, and evolving map of a brand’s known product territories with directional pointers to help you explore new regions`,
+                relevance: "81.5",
+              }
+            ]
+          }
+        />
 
-**Relevance:** 75%`}
-            renderText={(text) => (
-              <>
-                <RichText text={text} />
-                <Button
-                  href="#"
-                  label="Open reference"
-                  size="medium"
-                  variant={"clear"}
-                  iconAfter
-                  icon={{
-                    icon: "chevron-right"
-                  }}
-                />
-              </>
-            )}
-          />
-          <CollapsibleBox
-            summary="Release Notes - Lightning Design System"
-            text={`Design Tokens and a Multi-Tiered Variable System From Salesforce’s Lightning Design System, which popularized the term “design tokens” in design systems: Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development. Design tokens move variables to a higher level, making it easier to manage brand attributes without diving deep into a codebase. For a design system powering multiple brands, each brand defines their own design tokens, which then hook into the design system’s codebase. To accomplish this in my own work, I tend to break these variables into several tiers.   
 
-**Relevance:** 75%`}
-            renderText={(text) => (
-              <>
-                <RichText text={text} />
-                <Button
-                  href="#"
-                  label="Open reference"
-                  size="medium"
-                  variant={"clear"}
-                  iconAfter
-                  icon={{
-                    icon: "chevron-right"
-                  }}
-                />
-              </>
-            )}
-          />
-        </div>
+      </Section>
+      <Section
+        background="accent"
+        width="narrow"
+        mode="list"
+        headline={{
+          content: "Knowledge database",
+          align: "left",
+          level: "h4",
+          subheadline:
+            "Sections that were used as context to generate the above answer",
+        }}
+      >
         <div
           className="reference"
         >
@@ -528,7 +524,6 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
           align: "center",
         }}
         width="wide"
-        background="accent"
       >
         <Button
           href="mailto:hello@kickstartDS.com"

@@ -2,23 +2,25 @@
 @use "../breakpoint";
 
 .c-source-snippet {
-  display: flex;
-  gap: var(--ks-spacing-stack-xs);
-  flex-direction: column;
-
-  &__title {
-    font: var(--ks-font-copy-xs);
-    color: var(--ks-text-color-default);
-    font-weight: var(--ks-font-weight-semi-bold);
+  background: var(--ks-background-color-default);
+  
+  .c-teaser__body {
+    flex-direction: column;
   }
 
-  &__text {
-    font: var(--ks-font-copy-xs);
-    color: var(--ks-text-color-default);
-    margin: 0;
-  }
+  // &__title {
+  //   font: var(--ks-font-copy-xs);
+  //   color: var(--ks-text-color-default);
+  //   font-weight: var(--ks-font-weight-semi-bold);
+  // }
 
-  &__link {
-    width: fit-content;
-  }
+  // &__text {
+  //   font: var(--ks-font-copy-xs);
+  //   color: var(--ks-text-color-default);
+  //   margin: 0;
+  // }
+
+  // &__link {
+  //   width: fit-content;
+  // }
 }

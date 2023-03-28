@@ -16,6 +16,12 @@
       "description": "Text excerpt",
       "type": "string",
       "default": "What is a design system? A design system is a continuously evolving single source of truth..."
+    },
+    "link": {
+      "title": "Link",
+      "description": "Link to source",
+      "type": "string",
+      "default": "#"
     }
   },
   "required": ["link", "title", "description", "cover"]

@@ -11,6 +11,7 @@
 
   a {
     font: var(--ks-font-copy-xs);
+    color: var(--ks-color-fg-alpha-8) !important;
   }
 
   &__text.c-rich-text p {
