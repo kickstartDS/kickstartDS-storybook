@@ -84,11 +84,12 @@ const Page = () => (
       <Section
         width="narrow"
         background="accent"
+
         mode="list"
         spaceBefore="small"
         spaceAfter="small"
         className="l-section-style--head"
-
+        pattern="3"
       >
         <div className="c-form-field--concierge">
           <span id="msg" class="c-form-field__label">Concierge is awaiting your request!</span>
@@ -138,7 +139,7 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
 
       <Section
         gutter="none"
-
+        pattern="1"
         headline={{
           content: "Referenced articles",
           align: "left",
