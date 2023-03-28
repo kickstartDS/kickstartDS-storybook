@@ -10,11 +10,11 @@
  */
 export type Title = string;
 /**
- * Text excerpt
+ * URL of the referenced page
  */
-export type Text = string;
+export type URL = string;
 /**
- * Link to source
+ * Link to the source component
  */
 export type Link = string;
 
@@ -23,7 +23,7 @@ export type Link = string;
  */
 export interface SourceSnippetProps {
   title: Title;
-  text?: Text;
-  link: Link;
+  url: URL;
+  link?: Link;
   [k: string]: unknown;
 }

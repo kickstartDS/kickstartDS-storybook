@@ -126,9 +126,11 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
           <div className="template__side">
             <Stack gutter="var(--ks-spacing-stack-xs)">
               <Picture src="/concierge-dude.svg" />
-              <SourceSnippet title="supernova.io" text="What Is a Design System? The Definitive Guide" link="#source-1" />
-              <SourceSnippet title="designstrategy.guide" text="What is a design system and how does it align your team to create better products?" link="#source-2" />
-              <SourceSnippet title="delldesignsystem.com" text="About the Dell Design System" link="#source-3" />
+              <SourceSnippet title="supernova.io" url="https://backlight.dev/blog/why-should-developers-build-with-design-systems" link="#source-1" />
+              <SourceSnippet title="designstrategy.guide" url="https://www.supernova.io/blog/what-is-a-design-system" link="#source-2" />
+              <SourceSnippet title="delldesignsystem.com" url="https://designstrategy.guide/design-management/what-is-a-design-system-and-how-does-it-align-your-team-to-create-better-products" link="#source-3" />
+              <SourceSnippet title="supernova.io" url="https://backlight.dev/blog/why-should-developers-build-with-design-systems" link="#source-4" />
+              <SourceSnippet title="designstrategy.guide" url="https://www.supernova.io/blog/what-is-a-design-system" link="#source-5" />
             </Stack>
           </div>
         </div>
@@ -145,7 +147,6 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
         }}
         mode="list"
       >
-
         <Source
           title="Why should developers build with Design Systems?"
           url="https://backlight.dev/blog/why-should-developers-build-with-design-systems"
@@ -193,7 +194,39 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
             ]
           }
         />
+        <Source
+          title="Why should developers build with Design Systems?"
+          url="https://backlight.dev/blog/why-should-developers-build-with-design-systems"
+          id="source-4"
+          thumbnail="img/concierge/backlight.png"
+          sections={
+            [
+              {
+                excerpt: `🧩 Benefits from design tokens Design tokens are core elements of the design language used both by designers and developers to build components in Design Systems. We can refer to tokens as “constants” hosting common values in the Design System codebase. An interesting thread about it here. For instance, here are some common tokens: colors, fonts, spacing, border, radius, opacity, shadows, z-index, … A Design System is a source of truth for tokens, built-in collaboration with designers and developers. All Design System components built on top of tokens benefit from auto updates when tokens are modified. So having a Design System, instead of a standalone component library, makes it easier and more efficient to build consistent and maintainable components. Tips: Design system tokens on the code-side can be synchronized with the Design System on the design-side thanks to some dedicated tools (like Specify) or built-in features in Design System tools (like Backlight).`,
+                relevance: "87.78",
 
+              },
+              {
+                excerpt: `What are Design Tokens? With design systems, individual items on a screen - like a text input - turned into components: reusable elements that are built in one place and referenced in different parts of the product. Similarly, the most basic brand definitions like color, typography, spacing, etc., are turning into Design Tokens. These design decisions are “hard-coded” values, but with Design Tokens they are turned into a string that gets registered in one place - like a JSON file - and re-used everywhere in the interface, enabling an extra layer of consistency to an ever-evolving product. The advantage of the Design Tokens approach is the ability to store the design decisions generically. This information can then get translated into any technology or platform.`,
+                relevance: "87.20",
+              }
+            ]
+          }
+        />
+        <Source
+          title="What Is a Design System? The Definitive Guide – Blog – Supernova.io"
+          url="https://www.supernova.io/blog/what-is-a-design-system"
+          id="source-5"
+          thumbnail="img/concierge/supernova.png"
+          sections={
+            [
+              {
+                excerpt: `🧩 Benefits from design tokens Design tokens are core elements of the design language used both by designers and developers to build components in Design Systems. We can refer to tokens as “constants” hosting common values in the Design System codebase. An interesting thread about it here. For instance, here are some common tokens: colors, fonts, spacing, border, radius, opacity, shadows, z-index, … A Design System is a source of truth for tokens, built-in collaboration with designers and developers. All Design System components built on top of tokens benefit from auto updates when tokens are modified. So having a Design System, instead of a standalone component library, makes it easier and more efficient to build consistent and maintainable components. Tips: Design system tokens on the code-side can be synchronized with the Design System on the design-side thanks to some dedicated tools (like Specify) or built-in features in Design System tools (like Backlight).`,
+                relevance: "85.5",
+              }
+            ]
+          }
+        />
 
       </Section>
       <Section

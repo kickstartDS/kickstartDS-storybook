@@ -11,18 +11,20 @@
       "type": "string",
       "default": "Brad Frost"
     },
-    "text": {
-      "title": "Text",
-      "description": "Text excerpt",
+    "url": {
+      "title": "URL",
+      "description": "URL of the referenced page",
       "type": "string",
-      "default": "What is a design system? A design system is a continuously evolving single source of truth..."
+      "format": "uri",
+      "default": "https://backlight.dev/blog/why-should-developers-build-with-design-systems"
     },
     "link": {
-      "title": "Link",
-      "description": "Link to source",
+      "title": "link",
+      "description": "Link to the source component",
       "type": "string",
-      "default": "#"
+      "format": "uri",
+      "default": "#source-1"
     }
   },
-  "required": ["link", "title", "description", "cover"]
+  "required": ["url", "title"]
 }

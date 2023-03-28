@@ -10,11 +10,11 @@ import { Button, Teaser } from "@kickstartds/base";
 
 export const SourceSnippet: FunctionComponent<
   SourceSnippetProps & HTMLAttributes<HTMLDivElement>
-> = ({ title, text, link, ...props }) => (
+> = ({ title, url, link, ...props }) => (
   <Teaser
     className="c-source-snippet"
     topic={title}
-    text={text}
+    text={url}
     link={{
       href: link,
       label: "Go to source",
