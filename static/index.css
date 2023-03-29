@@ -4698,16 +4698,12 @@ figcaption {
 [ks-inverted] [ks-theme=dark],
 [ks-theme] [ks-theme=dark] {
   --ks-background-color-default: #012a34;
+  --g-link--color: var(--ks-color-fg);
 }
 :root [ks-theme=dark] button.nav-toggle .nav-toggle__icon,
 [ks-inverted] [ks-theme=dark] button.nav-toggle .nav-toggle__icon,
 [ks-theme] [ks-theme=dark] button.nav-toggle .nav-toggle__icon {
   color: var(--ks-color-primary-inverted-base);
-}
-:root [ks-theme=dark] a:not(.c-button),
-[ks-inverted] [ks-theme=dark] a:not(.c-button),
-[ks-theme] [ks-theme=dark] a:not(.c-button) {
-  color: var(--ks-color-fg);
 }
 :root [ks-theme=dark] .l-section--accent,
 [ks-inverted] [ks-theme=dark] .l-section--accent,
