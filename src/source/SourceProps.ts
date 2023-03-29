@@ -10,6 +10,10 @@
  */
 export type Title = string;
 /**
+ * HTML ID of the component
+ */
+export type ID = string;
+/**
  * URL of the referenced page
  */
 export type URL = string;
@@ -36,6 +40,7 @@ export type Sections = {
  */
 export interface SourceProps {
   title?: Title;
+  id?: ID;
   url?: URL;
   thumbnail?: Thumbnail;
   sections?: Sections;

@@ -17,10 +17,10 @@ import { Inline, Split, Stack } from "@bedrock-layout/primitives";
 
 export const Source: FunctionComponent<
   SourceProps & HTMLAttributes<HTMLDivElement>
-> = ({ title, sourceAmount, thumbnail, sections = [], url, ...props }) => (
+> = ({ title, sourceAmount, thumbnail, id, sections = [], url, ...props }) => (
   <CollapsibleBox
     className="c-source"
-    id="source-1"
+    id={id}
     summary="Creating Themeable Design Systems | Brad Frost"
     text={`Design Tokens and a Multi-Tiered Variable System From Salesforce’s Lightning Design System, which popularized the term “design tokens” in design systems: Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development. Design tokens move variables to a higher level, making it easier to manage brand attributes without diving deep into a codebase. For a design system powering multiple brands, each brand defines their own design tokens, which then hook into the design system’s codebase. To accomplish this in my own work, I tend to break these variables into several tiers.   
 

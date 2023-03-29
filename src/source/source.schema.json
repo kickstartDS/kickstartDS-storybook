@@ -11,6 +11,12 @@
       "type": "string",
       "default": "Why should developers build with Design Systems?"
     },
+    "id": {
+      "title": "ID",
+      "description": "HTML ID of the component",
+      "type": "string",
+      "default": "source-1"
+    },
     "url": {
       "title": "URL",
       "description": "URL of the referenced page",
