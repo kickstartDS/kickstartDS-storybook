@@ -4,12 +4,41 @@
 .template {
   position: relative;
   margin: auto;
-  gap: var(--ks-spacing-m);
+  gap: var(--ks-spacing-l);
   display: flex;
   flex-direction: column;
-  // padding: 0 var(--l-section--content-padding);
 
-  @include breakpoint.media(">m") {
+  &--concierge.template {
+    gap: var(--ks-spacing-m);
+    flex-direction: column-reverse;
+
+    @media (min-width: 40rem) {
+      flex-direction: row;
+    }
+
+    .template__main,
+    .template__side {
+      @media (min-width: 40rem) {
+        height: fit-content;
+        position: sticky;
+        top: var(--ks-spacing-m);
+      }
+    }
+
+    .template__main {
+      @media (min-width: 40rem) {
+        width: 70%;
+      }
+    }
+
+    .template__side {
+      @media (min-width: 40rem) {
+        width: 30%;
+      }
+    }
+  }
+
+  @media (min-width: 76rem) {
     flex-direction: row;
   }
 
@@ -19,13 +48,23 @@
 
   .l-section {
     margin: unset;
-    &__container {
-      // padding: 0;
+  }
+
+  &__main,
+  &__split,
+  &__side {
+    max-width: var(--l-section--content-width-narrow);
+    @media (min-width: 76rem) {
+      height: fit-content;
+      position: sticky;
+      top: var(--ks-spacing-m);
     }
   }
 
-  &--wide {
-    max-width: var(--l-section--content-width-wide);
+  &__split {
+    @media (min-width: 76rem) {
+      width: 50%;
+    }
   }
 
   &__main,
@@ -38,14 +77,14 @@
   }
 
   &__main {
-    @include breakpoint.media(">m") {
-      width: 70%;
+    @media (min-width: 76rem) {
+      width: 60%;
     }
   }
 
   &__side {
-    @include breakpoint.media(">m") {
-      width: 30%;
+    @media (min-width: 76rem) {
+      width: 40%;
     }
   }
 }

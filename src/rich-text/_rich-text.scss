@@ -49,7 +49,7 @@
   }
 }
 
-.c-rich-text a,
-.c-rich-text.c-visual__text a {
+.c-rich-text a:not(.c-button),
+.c-rich-text.c-visual__text a:not(.c-button) {
   padding: 2px;
 }

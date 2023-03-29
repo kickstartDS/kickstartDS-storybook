@@ -77,11 +77,16 @@
     --c-form-field_focus--border-color: var(--ks-border-color-interface-interactive-active);
     --c-form-field--border-width: var(--ks-border-width-default);
     --c-form-field--color: var(--ks-text-color-interface-interactive);
+    --c-form-field_placeholder--color: var(--ks-color-fg-alpha-4);
 
     &__input {
       border-style: solid;
       border-width: var(--c-form-field--border-width);
       box-sizing: border-box;
+
+      &::placeholder {
+        color: var(--c-form-field_placeholder--color);
+      }
     }
   }
 
@@ -149,10 +154,6 @@
     &:hover.js-linked {
       border-color: var(--c-teaser--border-color-hover);
     }
-
-    .c-teaser__link {
-      margin-top: var(--ks-spacing-stack-s);
-    }
   }
 
   .c-visual {
@@ -166,6 +167,20 @@
     &--content-box {
       display: flex;
       flex: 1 1;
+    }
+  }
+}
+
+.c-teaser {
+  .c-teaser__link {
+    margin-top: var(--ks-spacing-stack-xs);
+  }
+}
+
+@container teaser-box (min-width: 450px) {
+  .c-teaser {
+    .c-teaser__link {
+      margin-top: var(--ks-spacing-stack-s);
     }
   }
 }

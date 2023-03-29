@@ -25,8 +25,18 @@
     }
   }
 
+  &__link {
+    display: inline-flex;
+  }
+
   .c-button {
     --c-button--font: var(--ks-font-ui-s);
+  }
+  .c-button.c-button--small {
+    --c-button--font: var(--ks-font-ui-xs);
+  }
+  .c-button.c-button--large {
+    --c-button--font: var(--ks-font-ui-m);
   }
 
   @include container.size("≥", 250px, "teaser-box") {

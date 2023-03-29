@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/source-snippet.schema.json",
+  "title": "Source Snippet",
+  "description": "Display one showcase entry with all its details",
+  "type": "object",
+  "properties": {
+    "title": {
+      "title": "Title",
+      "description": "Title of the Source",
+      "type": "string",
+      "default": "Brad Frost"
+    },
+    "url": {
+      "title": "URL",
+      "description": "URL of the referenced page",
+      "type": "string",
+      "format": "uri",
+      "default": "https://backlight.dev/blog/why-should-developers-build-with-design-systems"
+    },
+    "link": {
+      "title": "link",
+      "description": "Link to the source component",
+      "type": "string",
+      "format": "uri",
+      "default": "#source-1"
+    }
+  },
+  "required": ["url", "title"]
+}

@@ -27,7 +27,10 @@
 @use "post-head/post-head";
 @use "post-share-bar/post-share-bar";
 @use "quote/quote";
+@use "reference/reference";
 @use "rich-text/rich-text";
+@use "source/source";
+@use "source-snippet/source-snippet";
 @use "section/section";
 @use "showcase/showcase";
 @use "steps/steps";
@@ -37,6 +40,7 @@
 @use "text-media/text-media";
 @use "theme/theme";
 @use "teaser-box/teaser-box";
+@use "theme/theme";
 @use "template/template";
 @use "topic/topic";
 @use "visual/visual";
