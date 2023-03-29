@@ -51,6 +51,11 @@ button.nav-toggle {
     transition: inherit;
     color: var(--ks-color-primary);
 
+    .overlay-open &,
+    .overlay-open .header-is-scrolling & {
+      color: var(--ks-text-color-default-inverted);
+    }
+
     .header-is-scrolling-up & {
       color: var(--ks-text-color-primary);
     }

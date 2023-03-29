@@ -2945,6 +2945,9 @@ button.nav-toggle .nav-toggle__icon {
     /* critical:end */
   }
 }
+.overlay-open button.nav-toggle .nav-toggle__icon, .overlay-open .header-is-scrolling button.nav-toggle .nav-toggle__icon {
+  color: var(--ks-text-color-default-inverted);
+}
 .header-is-scrolling-up button.nav-toggle .nav-toggle__icon {
   color: var(--ks-text-color-primary);
 }
@@ -4695,6 +4698,11 @@ figcaption {
 [ks-inverted] [ks-theme=dark],
 [ks-theme] [ks-theme=dark] {
   --ks-background-color-default: #012a34;
+}
+:root [ks-theme=dark] button.nav-toggle .nav-toggle__icon,
+[ks-inverted] [ks-theme=dark] button.nav-toggle .nav-toggle__icon,
+[ks-theme] [ks-theme=dark] button.nav-toggle .nav-toggle__icon {
+  color: var(--ks-color-primary-inverted-base);
 }
 :root [ks-theme=dark] a:not(.c-button),
 [ks-inverted] [ks-theme=dark] a:not(.c-button),
