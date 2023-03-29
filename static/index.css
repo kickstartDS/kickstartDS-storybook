@@ -3301,6 +3301,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 .reference li {
   padding: 0;
   list-style: none;
+  margin: 0;
 }
 .reference a {
   font: var(--ks-font-copy-xs);
