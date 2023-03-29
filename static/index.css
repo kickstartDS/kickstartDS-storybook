@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 28 Mar 2023 09:33:01 GMT
+ * Generated on Wed, 29 Mar 2023 03:20:12 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -3445,11 +3445,64 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   color: var(--ks-text-color-primary);
 }
 
-.c-source-snippet {
+.c-source-snippet.c-teaser {
   background: var(--ks-background-color-default);
 }
-.c-source-snippet .c-teaser__body {
+.c-source-snippet.c-teaser .c-teaser__body {
   flex-direction: column;
+}
+.c-source-snippet.c-teaser .c-teaser__topic {
+  color: var(--ks-color-fg);
+}
+.c-source-snippet.c-teaser .c-rich-text {
+  color: var(--ks-text-color-interface);
+}
+.c-source-snippet.c-teaser--mobile.c-teaser.c-teaser-box {
+  flex-direction: row;
+  gap: var(--ks-spacing-xs);
+}
+.c-source-snippet.c-teaser--mobile.c-teaser.c-teaser-box > :first-child {
+  max-width: 7.5rem;
+}
+.c-source-snippet.c-teaser--mobile.c-teaser.c-teaser-box .c-teaser__body {
+  justify-content: center;
+  --c-rich-text--font: var(--ks-font-mono-s);
+}
+.c-source-snippet.c-teaser--mobile.c-teaser.c-teaser-box .c-teaser__link {
+  margin-top: 0;
+}
+.c-source-snippet.c-teaser--mobile.c-teaser.c-teaser-box .c-teaser__text {
+  flex: none;
+}
+
+.source-snippet-menu {
+  flex-direction: column;
+  gap: var(--ks-spacing-stack-xs);
+  font: var(--ks-font-mono-s);
+  font-weight: var(--ks-font-weight-semi-bold);
+  color: var(--ks-text-color-default);
+}
+@media (max-width: 39.99em) {
+  .source-snippet-menu--avatar {
+    max-width: 35%;
+  }
+}
+.source-snippet-menu--mobile {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 40em) {
+  .source-snippet-menu--mobile {
+    display: none;
+  }
+}
+.source-snippet-menu--desktop {
+  display: none;
+}
+@media (min-width: 40em) {
+  .source-snippet-menu--desktop {
+    display: flex;
+  }
 }
 
 :root,
@@ -4454,6 +4507,7 @@ article .c-teaser .c-teaser__body {
 }
 .template--concierge.template {
   gap: var(--ks-spacing-m);
+  flex-direction: column-reverse;
 }
 @media (min-width: 40rem) {
   .template--concierge.template {

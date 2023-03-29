@@ -10,6 +10,7 @@
 
   &--concierge.template {
     gap: var(--ks-spacing-m);
+    flex-direction: column-reverse;
 
     @media (min-width: 40rem) {
       flex-direction: row;

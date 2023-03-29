@@ -1,6 +1,6 @@
 import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 
-import { Button, Section, TagLabel, Headline, RichText, Picture } from "@kickstartds/base";
+import { Button, Section, TagLabel, Headline, RichText, Picture, LinkButton, TeaserBox } from "@kickstartds/base";
 import { CollapsibleBox } from "@kickstartds/content";
 import { Quote } from "@kickstartds/content";
 import { TextArea } from "@kickstartds/form";
@@ -10,7 +10,6 @@ import FooterStories from "../footer/Footer.stories";
 
 import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
-import { Inline, Split, Stack } from "@bedrock-layout/primitives";
 import { SourceSnippet } from "../source-snippet/SourceSnippetComponent";
 import { Source } from "../source/SourceComponent";
 
@@ -125,14 +124,36 @@ My updated definition is as follows: A design system is the official story of ho
 If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: Almost always, a design system offers a library of visual style and components documented and released as reusable code for developers and/or tool(s) for designers. A system may also offer guidance on accessibility, page layout, and editorial and less often branding, data viz, UX patterns, and other tools. A design system is adopted by and supported for other teams making experiences. These teams use it to develop and ship features more efficiently to form a more cohesive customer journey. A design system is made by an individual, team, and/or community. While some arise less formally, organizations now dedicate small to large squad(s) to develop and release system versions and processes over time.` } />
           </div>
           <div className="template__side">
-            <Stack gutter="var(--ks-spacing-stack-xs)">
-              <Picture src="/concierge-dude.svg" />
-              <SourceSnippet title="supernova.io" url="https://backlight.dev/blog/why-should-developers-build-with-design-systems" link="#source-1" />
-              <SourceSnippet title="designstrategy.guide" url="https://www.supernova.io/blog/what-is-a-design-system" link="#source-2" />
-              <SourceSnippet title="delldesignsystem.com" url="https://designstrategy.guide/design-management/what-is-a-design-system-and-how-does-it-align-your-team-to-create-better-products" link="#source-3" />
-              <SourceSnippet title="supernova.io" url="https://backlight.dev/blog/why-should-developers-build-with-design-systems" link="#source-4" />
-              <SourceSnippet title="designstrategy.guide" url="https://www.supernova.io/blog/what-is-a-design-system" link="#source-5" />
-            </Stack>
+            <div className="source-snippet-menu--wrapper">
+
+
+
+              <div className="source-snippet-menu source-snippet-menu--mobile">
+                <TeaserBox className="c-source-snippet--mobile"
+                  image="/concierge-dude.svg"
+                  text="I found 5 relevant sources regarding your question"
+                  link={{
+                    label: "Visit Sources",
+                    variant: "clear",
+                    size: "small",
+                    iconAfter: true,
+                    href: "#sources",
+                    icon: {
+                      icon: "chevron-down",
+                    }
+                  }}
+                />
+
+              </div>
+              <div className="source-snippet-menu source-snippet-menu--desktop">
+                <Picture className="source-snippet-menu--avatar" src="/concierge-dude.svg" />
+                <SourceSnippet title="Why should developers build with Design Systems?" url="https://backlight.dev/blog/why-should-developers-build-with-design-systems" link="#source-1" />
+                <SourceSnippet title="What Is a Design System? The Definitive Guide – Blog – Supernova.io" url="https://www.supernova.io/blog/what-is-a-design-system" link="#source-2" />
+                <SourceSnippet title="What is a design system and how does it align your team to create better products? - Design strategy guide" url="https://designstrategy.guide/design-management/what-is-a-design-system-and-how-does-it-align-your-team-to-create-better-products" link="#source-3" />
+                <SourceSnippet title="Why should developers build with Design Systems?" url="https://backlight.dev/blog/why-should-developers-build-with-design-systems" link="#source-4" />
+                <SourceSnippet title="What Is a Design System? The Definitive Guide – Blog – Supernova.io" url="https://www.supernova.io/blog/what-is-a-design-system" link="#source-5" />
+              </div>
+            </div>
           </div>
         </div>
       </Section>
@@ -147,6 +168,7 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
             "Sections that were used as context to generate the above answer",
         }}
         mode="list"
+        id="sources"
       >
         <Source
           title="Why should developers build with Design Systems?"
