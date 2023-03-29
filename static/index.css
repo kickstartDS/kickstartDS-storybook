@@ -3482,6 +3482,12 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   font-weight: var(--ks-font-weight-semi-bold);
   color: var(--ks-text-color-default);
 }
+.source-snippet-menu--concierge {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ks-spacing-inline-s);
+  margin-bottom: var(--ks-spacing-stack-xs);
+}
 @media (max-width: 39.99em) {
   .source-snippet-menu--avatar {
     max-width: 35%;

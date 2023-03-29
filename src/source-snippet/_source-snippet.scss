@@ -46,7 +46,11 @@
   font-weight: var(--ks-font-weight-semi-bold);
   color: var(--ks-text-color-default);
 
-  &--wrapper {
+  &--concierge {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ks-spacing-inline-s);
+    margin-bottom: var(--ks-spacing-stack-xs);
   }
 
   &--avatar {

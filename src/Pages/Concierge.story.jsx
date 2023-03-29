@@ -1,8 +1,6 @@
 import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 
-import { Button, Section, TagLabel, Headline, RichText, Picture, LinkButton, TeaserBox } from "@kickstartds/base";
-import { CollapsibleBox } from "@kickstartds/content";
-import { Quote } from "@kickstartds/content";
+import { Button, Section, TagLabel, Headline, RichText, Picture, TeaserBox } from "@kickstartds/base";
 import { TextArea } from "@kickstartds/form";
 
 import HeaderStories from "../header/Header.stories";
@@ -12,6 +10,7 @@ import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
 import { SourceSnippet } from "../source-snippet/SourceSnippetComponent";
 import { Source } from "../source/SourceComponent";
+
 
 export default {
   title: "Concierge",
@@ -125,15 +124,12 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
           </div>
           <div className="template__side">
             <div className="source-snippet-menu--wrapper">
-
-
-
               <div className="source-snippet-menu source-snippet-menu--mobile">
                 <TeaserBox className="c-source-snippet--mobile"
                   image="/concierge-dude.svg"
                   text="I found 5 relevant sources regarding your question"
                   link={{
-                    label: "Visit Sources",
+                    label: "View Sources",
                     variant: "clear",
                     size: "small",
                     iconAfter: true,
@@ -146,7 +142,12 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
 
               </div>
               <div className="source-snippet-menu source-snippet-menu--desktop">
-                <Picture className="source-snippet-menu--avatar" src="/concierge-dude.svg" />
+                <div className="source-snippet-menu--concierge">
+                  <div>
+                    <Picture className="source-snippet-menu--avatar" src="/concierge-dude.svg" />
+                  </div>
+                  <span>I found the following sources relevant to your question 👇</span>
+                </div>
                 <SourceSnippet title="Why should developers build with Design Systems?" url="https://backlight.dev/blog/why-should-developers-build-with-design-systems" link="#source-1" />
                 <SourceSnippet title="What Is a Design System? The Definitive Guide – Blog – Supernova.io" url="https://www.supernova.io/blog/what-is-a-design-system" link="#source-2" />
                 <SourceSnippet title="What is a design system and how does it align your team to create better products? - Design strategy guide" url="https://designstrategy.guide/design-management/what-is-a-design-system-and-how-does-it-align-your-team-to-create-better-products" link="#source-3" />
