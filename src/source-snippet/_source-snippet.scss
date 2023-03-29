@@ -1,7 +1,7 @@
 @use "source-snippet-tokens";
 @use "../breakpoint";
 
-.c-source-snippet.c-teaser {
+.c-teaser.c-source-snippet {
   background: var(--ks-background-color-default);
 
   .c-teaser__body {
