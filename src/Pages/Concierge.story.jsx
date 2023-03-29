@@ -118,13 +118,13 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
                   <div>
                     <Picture className="source-snippet-menu--avatar" src="/concierge-dude.svg" />
                   </div>
-                  <span>I found the following sources relevant to your question 👇</span>
+                  <span>Relevant sources 👇</span>
                 </div>
-                <SourceSnippet title="Why should developers build with Design Systems?" url="https://backlight.dev/blog/why-should-developers-build-with-design-systems" link="#source-1" />
-                <SourceSnippet title="What Is a Design System? The Definitive Guide – Blog – Supernova.io" url="https://www.supernova.io/blog/what-is-a-design-system" link="#source-2" />
-                <SourceSnippet title="What is a design system and how does it align your team to create better products? - Design strategy guide" url="https://designstrategy.guide/design-management/what-is-a-design-system-and-how-does-it-align-your-team-to-create-better-products" link="#source-3" />
-                <SourceSnippet title="Why should developers build with Design Systems?" url="https://backlight.dev/blog/why-should-developers-build-with-design-systems" link="#source-4" />
-                <SourceSnippet title="What Is a Design System? The Definitive Guide – Blog – Supernova.io" url="https://www.supernova.io/blog/what-is-a-design-system" link="#source-5" />
+                <SourceSnippet title="Why should developers build with Design Systems?" url="backlight.dev" link="#source-1" />
+                <SourceSnippet title="What Is a Design System? The Definitive Guide – Blog – Supernova.io" url="supernova.io" link="#source-2" />
+                <SourceSnippet title="What is a design system and how does it align your team to create better products?" url="designstrategy.guide" link="#source-3" />
+                <SourceSnippet title="Why should developers build with Design Systems?" url="backlight.dev" link="#source-4" />
+                <SourceSnippet title="What Is a Design System? The Definitive Guide – Blog – Supernova.io" url="supernova.io" link="#source-5" />
               </div>
             </div>
           </div>

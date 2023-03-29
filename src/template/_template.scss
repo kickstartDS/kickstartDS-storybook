@@ -9,7 +9,7 @@
   flex-direction: column;
 
   &--concierge.template {
-    gap: var(--ks-spacing-m);
+    gap: var(--ks-spacing-l);
     flex-direction: column-reverse;
 
     @media (min-width: 40rem) {
