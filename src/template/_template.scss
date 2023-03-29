@@ -68,11 +68,19 @@
   }
 
   &__main,
+  &__split,
   &__side {
-    @include breakpoint.media(">m") {
+    max-width: var(--l-section--content-width-narrow);
+    @media (min-width: 76rem) {
       height: fit-content;
       position: sticky;
       top: var(--ks-spacing-m);
+    }
+  }
+
+  &__split {
+    @media (min-width: 76rem) {
+      width: 50%;
     }
   }
 

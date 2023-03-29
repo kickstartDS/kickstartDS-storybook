@@ -27,7 +27,7 @@
           "title": "Url for the main image",
           "type": "string",
           "format": "image",
-          "default": "https://picsum.photos/seed/glossary-cover/300/300",
+          "default": "img/glossary/logo.png",
           "description": "Url to main image for this glossary entry"
         },
         "caption": {
@@ -96,6 +96,24 @@
             "description": "Excerpt for the related term",
             "default": "Sass is the CSS extension language of our choice for the additional constructs it offers when creating modularized and DRY styles for components in a Design System."
           },
+          "tags": {
+            "title": "Tags",
+            "description": "Tags for this related teaser",
+            "type": "array",
+            "items": {
+              "type": "string",
+              "title": "Tag",
+              "default": "Frontend",
+              "description": "Name of the tag"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "description": "Type of content that is being teased",
+            "type": "string",
+            "enum": ["Showcase", "Blog", "Appearance", "Glossary"],
+            "default": "Showcase"
+          },
           "url": {
             "title": "Url",
             "type": "string",
@@ -117,9 +135,6 @@
       "type": "string",
       "description": "Link to the related StacKShare discussion",
       "default": "https://stackshare.io/julrich/decisions/107141570573419830"
-    },
-    "cta": {
-      "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json"
     }
   },
   "required": ["term"]

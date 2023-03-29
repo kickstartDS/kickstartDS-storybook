@@ -14,6 +14,10 @@ export type LinkToShowcase = string;
  */
 export type TitleForTheShowcase = string;
 /**
+ * Title that should be shown for this appearance
+ */
+export type ShortSummaryOfTheShowcase = string;
+/**
  * Enable/Disable Quote element
  */
 export type QuoteToggle = boolean;
@@ -70,25 +74,37 @@ export type Tag = string;
  */
 export type Tags = Tag[];
 /**
- * Title of the related showcase
+ * Title of the related appearance
  */
 export type Title = string;
 /**
- * Excerpt for the related showcase
+ * Excerpt for the related appearance
  */
 export type Excerpt = string;
 /**
- * Url for the related showcase
+ * Url for the related appearance
  */
 export type Url1 = string;
 /**
- * Image for the related showcase
+ * Type of content that is being teased
+ */
+export type Type = string;
+/**
+ * Image for the related appearance
  */
 export type Image = string;
 /**
- * Entries related to this showcase entry
+ * Name of the tag
  */
-export type RelatedEntries = RelatedEntry[];
+export type Tag1 = string;
+/**
+ * Tags for this related teaser
+ */
+export type Tags1 = Tag1[];
+/**
+ * Entries related to this appearance entry
+ */
+export type RelatedEntries = Related[];
 
 /**
  * Display one showcase entry with all its details
@@ -96,8 +112,15 @@ export type RelatedEntries = RelatedEntry[];
 export interface ShowcaseProps {
   link: LinkToShowcase;
   title: TitleForTheShowcase;
+  summary?: ShortSummaryOfTheShowcase;
   quote?: QuoteElement;
   description: DescriptionOfTheAppearance;
+  author?: {
+    name?: string;
+    avatar?: string;
+    title?: string;
+    [k: string]: unknown;
+  };
   cover: CoverImage;
   media?: Media;
   tags?: Tags;
@@ -133,12 +156,14 @@ export interface MediaAsset {
   [k: string]: unknown;
 }
 /**
- * Single related entry
+ * A preview of contextually relevant content
  */
-export interface RelatedEntry {
+export interface Related {
   title: Title;
-  excerpt?: Excerpt;
+  excerpt: Excerpt;
   url: Url1;
-  image?: Image;
+  type?: Type;
+  image: Image;
+  tags?: Tags1;
   [k: string]: unknown;
 }

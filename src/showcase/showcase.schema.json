@@ -17,6 +17,12 @@
       "default": "encore - Energie im Herzen",
       "description": "Title that should be shown for this appearance"
     },
+    "summary": {
+      "title": "Short summary of the showcase",
+      "type": "string",
+      "default": "encore as a German utility company supports their customers with modern, cloud-based software solutions, and a wide spectrum of services around their business.",
+      "description": "Title that should be shown for this appearance"
+    },
     "quote": {
       "title": "Quote Element",
       "type": "object",
@@ -37,6 +43,20 @@
       "format": "markdown",
       "default": "encore as a German utility company supports their customers with modern, cloud-based software solutions, and a wide spectrum of services around their business. They create online experiences for their customers, and future-proof their eCommerce, energy billing and services portfolio.",
       "description": "Description of the type and content of the appearance"
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "avatar": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      }
     },
     "cover": {
       "title": "Cover image",
@@ -96,40 +116,10 @@
     },
     "related": {
       "title": "Related entries",
-      "description": "Entries related to this showcase entry",
+      "description": "Entries related to this appearance entry",
       "type": "array",
       "items": {
-        "type": "object",
-        "title": "Related Entry",
-        "description": "Single related entry",
-        "properties": {
-          "title": {
-            "title": "Title",
-            "type": "string",
-            "description": "Title of the related showcase",
-            "default": "maxcluster"
-          },
-          "excerpt": {
-            "title": "Excerpt",
-            "type": "string",
-            "description": "Excerpt for the related showcase",
-            "default": "For agencies and store operators with ambitions, maxcluster makes complex technologies uncomplicated to use and thus enables them to become even more successful."
-          },
-          "url": {
-            "title": "Url",
-            "type": "string",
-            "description": "Url for the related showcase",
-            "default": "/showcase/maxcluster/"
-          },
-          "image": {
-            "title": "Image",
-            "type": "string",
-            "format": "image",
-            "default": "https://picsum.photos/seed/showcase-related-media-01/640/480",
-            "description": "Image for the related showcase"
-          }
-        },
-        "required": ["title", "url"]
+        "$ref": "http://kickstartds.com/related.schema.json"
       }
     }
   },

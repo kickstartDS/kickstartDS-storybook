@@ -36,6 +36,5 @@ export { BlogPost } from "./BlogPost.story";
 export { BlogList } from "./BlogList.story";
 export { Concierge } from "./Concierge.story";
 export { GlossaryEntry } from "./GlossaryEntry.story";
-export { Buttons } from "./Buttons.story";
-// export { CountUpVariants } from "./CountUpVariants.story";
-// export { TeaserVariants } from "./TeaserVariants.story";
+export { ShowcaseEntry } from "./ShowcaseEntry.story";
+export { AppearanceEntry } from "./AppearanceEntry.story";

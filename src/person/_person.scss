@@ -1,0 +1,36 @@
+@use "./person-tokens";
+@use "../breakpoint";
+
+:root,
+[ks-theme],
+[ks-inverted] {
+  @include breakpoint.media(">s") {
+  }
+}
+
+.kds-person {
+  display: flex;
+  align-items: center;
+  color: var(--c-person--color);
+  font: var(--c-person--font);
+  font-weight: var(--c-person--font-weight);
+  gap: var(--c-person--gap);
+
+  &__avatar {
+    border-radius: var(--c-person-avatar--border-radius);
+    height: var(--c-person-avatar--size);
+    width: var(--c-person-avatar--size);
+    object-fit: cover;
+    -o-object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: var(--c-person-title--color);
+    font-weight: var(--c-person-title--font-weight);
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/person.schema.json",
+  "title": "Person",
+  "description": "A preview of a person with name and an avatar image",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name",
+      "description": "The displayed name of the person",
+      "default": "Max Mütze"
+    },
+    "avatar": {
+      "type": "string",
+      "title": "Avatar",
+      "description": "The avatar of the person",
+      "default": "img/profile_images_dley.webp"
+    },
+    "title": {
+      "type": "string",
+      "title": "Title",
+      "description": "The titles of a person",
+      "default": "Web Frontend Developer, UX Designer"
+    },
+    "size": {
+      "title": "Size",
+      "description": "Set the size of the person component",
+      "type": "string",
+      "enum": ["s", "m", "l"],
+      "default": "m"
+    },
+    "className": {
+      "title": "Class",
+      "description": "Additional css classes attached to the wrapping element",
+      "type": "string"
+    },
+    "component": {
+      "title": "`ks-component` attribute",
+      "description": "Optional custom component identifier",
+      "type": "string"
+    }
+  },
+  "required": ["size", "name"]
+}

@@ -32,6 +32,7 @@ const ButtonComponent: ForwardRefExoticComponent<
       icon,
       iconBefore,
       iconAfter,
+      href,
       highlighted,
       deko,
       ...props

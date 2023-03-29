@@ -2,18 +2,22 @@
 [ks-theme],
 [ks-inverted] {
   .c-tag-label {
+    --c-tag-label--font: var(--ks-font-ui-s);
     --c-tag-label--background-color: var(--ks-background-color-interface);
-
-    --tag-label--border: solid 2px var(--ks-border-color-interface);
-    --c-tag-label--border-radius: 0;
+    --c-tag-label--border-radius: var(--ks-border-radius-pill);
 
     --c-tag-label--color: var(--ks-color-primary);
     --c-tag-label--font-weight: var(--ks-font-weight-semi-bold);
 
+    --c-tag-label--horizontal-padding: 0.75em;
+    --c-tag-label--vertical-padding: 0.35em;
+
     &--s {
       --c-tag-label--font: var(--ks-font-ui-xs);
-      --c-tag-label--horizontal-padding: var(--ks-spacing-xxs);
-      --c-tag-label--vertical-padding: var(--ks-spacing-xxs);
+    }
+
+    &--l {
+      --c-tag-label--font: var(--ks-font-ui-m);
     }
   }
 }

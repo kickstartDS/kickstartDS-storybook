@@ -473,7 +473,7 @@ After working in a large tech corporation for a long time I very well know today
       }}
       width="wide"
     >
-      <Button variant="outline" label="WhatsApp us!" />
+      <Button href="#" variant="outline" label="WhatsApp us!" />
       <Button variant="outline" label="Join our Discord community!" />
       <Button variant="outline" label="Follow us on Twitter!" />
     </Section>
