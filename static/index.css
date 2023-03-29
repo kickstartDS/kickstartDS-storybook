@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 29 Mar 2023 04:20:42 GMT
+ * Generated on Wed, 29 Mar 2023 04:23:56 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -2793,6 +2793,10 @@ header[data-component="kds.header"] {
     -webkit-overflow-scrolling: touch;
     box-shadow: 20px 0px 30px rgba(0, 0, 0, 0);
   }
+  .nav-main__item__link::after {
+    height: 100%;
+    bottom: 0;
+  }
   .overlay-open .nav-main {
     left: 0;
     box-shadow: 20px 0px 30px rgba(0, 0, 0, 0.1294117647);
@@ -2850,6 +2854,9 @@ header[data-component="kds.header"] {
     flex-shrink: 0;
     /* critical:end */
     outline: 0;
+  }
+  .nav-main__item--github .nav-main__item__link::after {
+    content: none;
   }
 }
 
@@ -2937,9 +2944,6 @@ button.nav-toggle .nav-toggle__icon {
     transform: scale(0.9) translate(2.5%, 2.5%);
     /* critical:end */
   }
-}
-.overlay-open button.nav-toggle .nav-toggle__icon, .overlay-open .header-is-scrolling button.nav-toggle .nav-toggle__icon {
-  color: var(--ks-text-color-default-inverted);
 }
 .header-is-scrolling-up button.nav-toggle .nav-toggle__icon {
   color: var(--ks-text-color-primary);

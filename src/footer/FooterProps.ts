@@ -33,12 +33,22 @@ export type Sections = {
   links?: Links;
   [k: string]: unknown;
 }[];
+/**
+ * Choose wether to use the dark version of the Footer
+ */
+export type DarkVersion = boolean;
+/**
+ * Link to the home page used on the logo
+ */
+export type LinkToHomePage = string;
 
 /**
  * Footer to be used in website layouts
  */
 export interface FooterProps {
   sections?: Sections;
+  dark?: DarkVersion;
+  homeLink?: LinkToHomePage;
   subscriptionForm?: {
     tags?: string[];
     honeypot: string;

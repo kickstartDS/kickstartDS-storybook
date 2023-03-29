@@ -66,7 +66,7 @@
 
       &::after {
         --corner-height: 8px;
-  
+
         content: "";
         width: 0;
         background-color: var(--c-nav-main_item--background-color-hover);
@@ -83,7 +83,7 @@
           calc(100% - var(--corner-height) * 1) 100%,
           0 100%
         );
-  
+
         opacity: 0;
         transition: all 200ms;
       }
@@ -125,6 +125,15 @@
     -webkit-overflow-scrolling: touch;
     // box-shadow: 100px 0px 0px 1000px #00000000, 20px 0px 30px #00000000;
     box-shadow: 20px 0px 30px #00000000;
+
+    &__item {
+      &__link {
+        &::after {
+          height: 100%;
+          bottom: 0;
+        }
+      }
+    }
 
     .overlay-open & {
       left: 0;
@@ -191,6 +200,13 @@
     }
 
     &__item {
+      &--github {
+        .nav-main__item__link {
+          &::after {
+            content: none;
+          }
+        }
+      }
       /* critical:start */
       flex-shrink: 0;
 

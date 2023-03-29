@@ -22,37 +22,9 @@ const Page = () => (
       ks-theme="dark"
       ks-inverted="true"
     >
-      <Section
-        spaceAfter="none"
-        spaceBefore="none"
-      >
-        <Header
-          light
-          navEnabled
-          homeLink="https://www.kickstartds.com/"
-          cta={{
-            label: "Blog",
-            href: "/blog",
-          }}
-          navEntries={[
-            {
-              label: "Integrations",
-              href: "/integrations",
-              id: "integrations"
-            },
-            {
-              label: "Services",
-              href: "/services",
-              id: "services"
-            },
-            {
-              label: "About",
-              href: "/about",
-              id: "about"
-            }
-          ]}
-        />
-      </Section>
+      <Header  {...unpack(HeaderStories.args)} dark announcementBar={{
+        content: "",
+      }} />
       <Section
         width="default"
         spaceAfter="small"
@@ -604,7 +576,7 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with: 
           target="blank"
         />
       </Section>
-      <Footer {...unpack(FooterStories.args)} />
+      <Footer {...unpack(FooterStories.args)} dark />
     </div>
   </>
 );
