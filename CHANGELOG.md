@@ -1,3 +1,16 @@
+# v2.3.2 (Thu Mar 30 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: source schema missing type object for sections ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.3.1 (Thu Mar 30 2023)
 
 #### ⚠️ Pushed to `master`
