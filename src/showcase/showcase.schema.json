@@ -24,18 +24,24 @@
       "description": "Title that should be shown for this appearance"
     },
     "quote": {
-      "title": "Quote Element",
-      "type": "object",
-      "description": "Quote that should be shown for this appearance",
-      "properties": {
-        "quoteToggle": {
-          "title": "Quote Toggle",
-          "description": "Enable/Disable Quote element",
-          "type": "boolean",
-          "default": true
+      "allOf": [
+        {
+          "type": "object",
+          "title": "Quote Element",
+          "description": "Quote that should be shown for this appearance",
+          "properties": {
+            "quoteToggle": {
+              "title": "Quote Toggle",
+              "description": "Enable/Disable Quote element",
+              "type": "boolean",
+              "default": true
+            }
+          }
         },
-        "$ref": "http://schema.kickstartds.com/content/quote.schema.json#/properties"
-      }
+        {
+          "$ref": "http://schema.kickstartds.com/content/quote.schema.json"
+        }
+      ]
     },
     "description": {
       "title": "Description of the appearance",

@@ -133,7 +133,7 @@ export interface ShowcaseProps {
 export interface QuoteElement {
   quoteToggle?: QuoteToggle;
   image?: ImageSource;
-  text?: TextContent;
+  text: TextContent;
   source?: Source;
   byline?: SourceAddition;
   className?: Class;
