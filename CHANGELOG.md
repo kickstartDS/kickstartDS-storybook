@@ -1,3 +1,21 @@
+# v2.3.0 (Thu Mar 30 2023)
+
+#### 🚀 Enhancement
+
+- Integration [#102](https://github.com/kickstartDS/kickstartDS-storybook/pull/102) ([@fleven-kds](https://github.com/fleven-kds) [@lmestel](https://github.com/lmestel) [@julrich](https://github.com/julrich))
+
+#### 🐛 Bug Fix
+
+- Merge branch 'feature/related-teaser' into integration [#99](https://github.com/kickstartDS/kickstartDS-storybook/pull/99) ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 3
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.2.7 (Fri Mar 17 2023)
 
 #### ⚠️ Pushed to `master`
