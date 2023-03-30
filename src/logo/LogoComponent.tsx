@@ -11,24 +11,46 @@ export const Logo: FC<LogoProps & HTMLAttributes<HTMLElement>> = ({
   ...props
 }) => (
   <>
-    <Link className="kds-logo" href={home}>
-      {dark ? (
-        <img
-          className="kds-logo__img kds-logo__img--dark"
-          src="/logo-dark.svg"
-          alt="kdsore Logo"
-          width={284}
-          height={56}
-        />
-      ) : (
-        <img
-          className="kds-logo__img"
-          src="/logo.svg"
-          alt="kickstartds Logo"
-          width={284}
-          height={56}
-        />
-      )}
-    </Link>
+    {home ? (
+      <Link className="kds-logo" href={home}>
+        {dark ? (
+          <img
+            className="kds-logo__img kds-logo__img--dark"
+            src="/logo-dark.svg"
+            alt="kdsore Logo"
+            width={284}
+            height={56}
+          />
+        ) : (
+          <img
+            className="kds-logo__img"
+            src="/logo.svg"
+            alt="kickstartds Logo"
+            width={284}
+            height={56}
+          />
+        )}
+      </Link>
+    ) : (
+      <div className="kds-logo">
+        {dark ? (
+          <img
+            className="kds-logo__img kds-logo__img--dark"
+            src="/logo-dark.svg"
+            alt="kdsore Logo"
+            width={284}
+            height={56}
+          />
+        ) : (
+          <img
+            className="kds-logo__img"
+            src="/logo.svg"
+            alt="kickstartds Logo"
+            width={284}
+            height={56}
+          />
+        )}
+      </div>
+    )}
   </>
 );

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.rub.com/logo.schema.json",
+  "$id": "http://kickstartds.com/logo.schema.json",
   "title": "Logo",
   "type": "object",
   "properties": {
