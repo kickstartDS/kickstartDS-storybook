@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/related.schema.json",
+
+  "type": "object",
+  "title": "Related",
+  "description": "A preview of contextually relevant content",
+  "properties": {
+    "title": {
+      "title": "Title",
+      "type": "string",
+      "description": "Title of the related appearance",
+      "default": "Lorem Ipsum "
+    },
+    "excerpt": {
+      "title": "Excerpt",
+      "type": "string",
+      "description": "Excerpt for the related appearance",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ispum dolor distinctio minima unde voluptatum aut. Lorem ipsum dolor sit amet."
+    },
+    "url": {
+      "title": "Url",
+      "type": "string",
+      "description": "Url for the related appearance",
+      "default": "#"
+    },
+    "type": {
+      "title": "Type",
+      "description": "Type of content that is being teased",
+      "type": "string",
+      "default": "Showcase"
+    },
+    "image": {
+      "title": "Image",
+      "type": "string",
+      "format": "image",
+      "default": "img/showcase/showcase-cover.png",
+      "description": "Image for the related appearance"
+    },
+    "tags": {
+      "title": "Tags",
+      "description": "Tags for this related teaser",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "title": "Tag",
+        "default": "Dolor",
+        "description": "Name of the tag"
+      }
+    }
+  },
+  "required": ["url", "title", "image", "excerpt"]
+}

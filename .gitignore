@@ -1,5 +1,6 @@
 .DS_Store
 static/index.css.map
+static/index.css
 storybook-static
 /storybook
 *.dereffed.json

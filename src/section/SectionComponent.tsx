@@ -17,7 +17,7 @@ const Section: FunctionComponent<
       pattern &&
         pattern !== "none" &&
         `l-section__pattern l-section__pattern-${pattern} l-section__pattern-${pattern}--${
-          background === "dark" ? "dark" : "light"
+          background === "dark" ? "dark" : "dark"
         }`,
       variant && variant !== "none" && `l-section-style--${variant}`
     )}

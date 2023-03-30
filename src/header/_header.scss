@@ -1,14 +1,6 @@
 @use "header-tokens";
 @use "../breakpoint";
 
-.kds-header__wrap {
-  position: absolute;
-  top: 0%;
-  z-index: 2;
-  left: 0;
-  width: 100%;
-}
-
 header[data-component="kds.header"] {
   display: flex;
   justify-content: center;
@@ -17,7 +9,6 @@ header[data-component="kds.header"] {
 }
 
 .kds-header {
-  background-color: var(--kds-header-background-color);
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -30,17 +21,8 @@ header[data-component="kds.header"] {
   transition-property: all;
   z-index: 1;
 
-  &--light {
-    > .kds-logo {
-      .kds-logo__img {
-        &--light {
-          opacity: 1;
-        }
-        &--dark {
-          opacity: 0;
-        }
-      }
-    }
+  &--wrap {
+    background-color: var(--g-header-background-color);
   }
 
   &::after {
@@ -69,7 +51,6 @@ header[data-component="kds.header"] {
 
   @include breakpoint.media("≥m") {
     padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
-    border-radius: var(--g-border-radius-m);
   }
 
   a {

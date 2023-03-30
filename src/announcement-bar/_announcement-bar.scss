@@ -1,25 +1,47 @@
+@use "../breakpoint.scss";
+
 .c-announcement-bar {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  gap: var(--ks-spacing-xs);
+  padding: 0.55em 0;
   font: var(--ks-font-ui-xs);
-  color: var(--ks-color-primary);
-  border-bottom: 0.25rem solid;
+
+  &--section {
+    padding: var(--ks-spacing-xs) 0;
+    border-bottom: 4px solid var(--ks-color-primary);
+  }
 
   &__content {
-    text-align: center;
-    padding: 0.375rem 0;
+    display: inline;
+    text-align: left;
+  }
 
-    > * {
-      vertical-align: middle;
-    }
+  &__text {
+    color: var(--ks-text-color-default);
+    text-align: left;
   }
 
   &__icon {
-    width: auto;
-    height: calc(1.25em * var(--ks-line-height-ui-xs));
+    max-width: calc(var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs));
+    max-height: calc(var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs));
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
     margin-right: var(--ks-spacing-xxs);
   }
 
   &__link {
-    margin-left: var(--ks-spacing-xs);
+    width: fit-content;
+    display: flex;
+    flex-shrink: 0;
+
+    .c-button {
+      span {
+        display: flex;
+      }
+    }
 
     span {
       z-index: 1 !important;

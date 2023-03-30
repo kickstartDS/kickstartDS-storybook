@@ -1401,8 +1401,7 @@ export interface SectionProps {
   spaceAfter?: "default" | "small" | "none";
   headline?: Headline4;
   className?: AdditionalClass11;
-  background?: "default" | "accent" | "dark" | "dark-accent";
-  pattern?: "none" | "1" | "2";
+  pattern?: "none" | "1" | "2" | "3" | "4" | "contact";
   variant?: "none" | "head" | "body" | "highlight";
   id?: string;
   [k: string]: unknown;

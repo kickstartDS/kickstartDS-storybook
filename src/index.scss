@@ -11,6 +11,7 @@
 @use "footer/footer-nav";
 @use "form/form";
 @use "form-field/form-field";
+@use "github-link/github-link";
 @use "glossary/glossary";
 @use "header/header";
 @use "header/nav/nav-main";
@@ -19,6 +20,7 @@
 @use "headline/headline";
 @use "logo/logo";
 @use "logo-tiles/logo-tiles";
+@use "person/person";
 @use "post/post";
 @use "post-aside/post-aside";
 @use "post-teaser/post-teaser";
@@ -26,14 +28,19 @@
 @use "post-head/post-head";
 @use "post-share-bar/post-share-bar";
 @use "quote/quote";
+@use "reference/reference";
 @use "rich-text/rich-text";
+@use "source/source";
+@use "source-snippet/source-snippet";
 @use "section/section";
 @use "showcase/showcase";
 @use "steps/steps";
 @use "slider/slider";
 @use "storytelling/storytelling";
+@use "related/related";
 @use "tag-label/tag-label";
 @use "text-media/text-media";
+@use "theme/theme";
 @use "teaser-box/teaser-box";
 @use "template/template";
 @use "topic/topic";
@@ -69,6 +76,7 @@ main {
   margin: 0 !important;
 }
 
-.sbdocs.sbdocs-wrapper {
+.sbdocs.sbdocs-wrapper,
+.sb-show-main.sb-main-padded {
   padding: 0;
 }

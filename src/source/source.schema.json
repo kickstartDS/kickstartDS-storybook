@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/source.schema.json",
+  "title": "Source",
+  "description": "Display one showcase entry with all its details",
+  "type": "object",
+  "properties": {
+    "title": {
+      "title": "Title",
+      "description": "Title of the source",
+      "type": "string",
+      "default": "Why should developers build with Design Systems?"
+    },
+    "id": {
+      "title": "ID",
+      "description": "HTML ID of the component",
+      "type": "string",
+      "default": "source-1"
+    },
+    "url": {
+      "title": "URL",
+      "description": "URL of the referenced page",
+      "type": "string",
+      "format": "uri",
+      "default": "https://backlight.dev/blog/why-should-developers-build-with-design-systems"
+    },
+    "thumbnail": {
+      "title": "Thumbnail",
+      "description": "Small image preview of the references site",
+      "type": "string",
+      "default": "img/concierge/supernova.png"
+    },
+    "sections": {
+      "title": "Sections",
+      "type": "array",
+      "items": {
+        "properties": {
+          "excerpt": {
+            "title": "Excerpt",
+            "description": "Excerpt of the source text",
+            "type": "string",
+            "default": "What is a design system? A design system is a continuously evolving single source of truth..."
+          },
+          "relevance": {
+            "title": "Relevance",
+            "description": "Percentile value that determines the relevance of the given section",
+            "type": "string",
+            "default": "75.5"
+          }
+        },
+        "required": ["link", "title", "excerpt", "relevance"]
+      }
+    }
+  },
+  "required": ["sources", "links", "domain"]
+}

@@ -91,6 +91,17 @@
         }
       ]
     },
+    "dark": {
+      "title": "Dark version",
+      "type": "boolean",
+      "description": "Choose wether to use the dark version of the Footer",
+      "default": false
+    },
+    "homeLink": {
+      "title": "Link to home page",
+      "type": "string",
+      "description": "Link to the home page used on the logo"
+    },
     "subscriptionForm": {
       "type": "object",
       "properties": {

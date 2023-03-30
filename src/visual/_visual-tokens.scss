@@ -8,7 +8,8 @@
 
     &__box {
       --c-visual_box--color: var(--c-rich-text--color);
-      --c-visual_box--background: var(--ks-color-fg-inverted-alpha-8);
+      --c-visual_box--background: var(--ks-color-fg-inverted);
+      box-shadow: 4px 4px 0 var(--ks-color-secondary);
     }
 
     [ks-inverted="true"] {

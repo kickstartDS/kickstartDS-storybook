@@ -5,6 +5,10 @@
  * and run `yarn run schema` to regenerate this file.
  */
 
+/**
+ * Link used for button
+ */
+export type ButtonHref = string;
 export type ButtonHighlightedStyle = boolean;
 export type ButtonDekoStyle = boolean;
 /**
@@ -68,6 +72,7 @@ export type DisabledAttribute = boolean;
  * Component to display links and call-to-actions
  */
 export interface ButtonProps {
+  href?: ButtonHref;
   highlighted?: ButtonHighlightedStyle;
   deko?: ButtonDekoStyle;
   label: Label;

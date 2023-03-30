@@ -1,0 +1,21 @@
+.reference {
+  ul,
+  li {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+
+  display: flex;
+  gap: var(--ks-spacing-m);
+  flex-wrap: wrap;
+
+  a {
+    font: var(--ks-font-copy-xs);
+    color: var(--ks-color-fg-alpha-8) !important;
+  }
+
+  &__text.c-rich-text p {
+    font: var(--ks-font-copy-s);
+  }
+}

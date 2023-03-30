@@ -5,10 +5,11 @@ import { Section } from "@kickstartds/base/lib/section";
 import { Subscription } from "../subscription/SubscriptionComponent";
 
 import { FooterProps } from "./FooterProps";
+import { Logo } from "../logo/LogoComponent";
 
 export const Footer: FunctionComponent<
   FooterProps & HTMLAttributes<HTMLDivElement>
-> = ({ sections }) => (
+> = ({ sections, dark, homeLink }) => (
   <>
     <footer className="kds-footer">
       <Section
@@ -45,14 +46,7 @@ export const Footer: FunctionComponent<
         </nav>
 
         <div className="kds-footer__logo-wrap">
-          <Link href="/" className="kds-footer__logo">
-            <img
-              alt="kickstartDS Logo"
-              src="/logo.svg"
-              width={284}
-              height={56}
-            />
-          </Link>
+          <Logo dark={dark} homeLink={homeLink} />
         </div>
       </Section>
     </footer>

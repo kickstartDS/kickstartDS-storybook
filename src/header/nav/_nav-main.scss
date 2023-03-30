@@ -23,6 +23,8 @@
   }
 
   &__item {
+    position: relative;
+
     &--active {
       .nav-main__item__link {
         color: var(--c-nav-main_item--color-active);
@@ -30,9 +32,30 @@
       }
     }
 
+    &.nav-main__item--icon {
+      &::after {
+        content: none;
+      }
+    }
+
+    &--github {
+      .icon {
+        border-radius: var(--ks-border-radius-circle);
+        transition: all var(--ks-transition-hover);
+      }
+
+      &:hover {
+        .icon {
+          background-color: var(--ks-color-primary-inverted);
+        }
+      }
+    }
+
     &__link {
       /* critical:start */
+      position: relative;
       display: block;
+      width: fit-content;
       font-weight: var(--ks-font-weight-bold);
       padding: var(--c-nav-main_item--padding);
       --ks-text-color-default-interactive: var(--c-nav-main_item--color);
@@ -40,10 +63,41 @@
       --g-link--background: var(--c-nav-main--background-color);
       --g-link--background-hover: var(--c-nav-main_item--background-color-hover);
       --g-link--font-weight: var(--c-nav-main_item--font-weight);
+
+      &::after {
+        --corner-height: 8px;
+
+        content: "";
+        width: 0;
+        background-color: var(--c-nav-main_item--background-color-hover);
+        position: absolute;
+        height: 60%;
+        left: calc(var(--corner-height) * -1);
+        bottom: -10%;
+        z-index: -1;
+        clip-path: polygon(
+          0% var(--corner-height),
+          var(--corner-height) 0,
+          100% 0,
+          100% calc(100% - var(--corner-height) * 1),
+          calc(100% - var(--corner-height) * 1) 100%,
+          0 100%
+        );
+
+        opacity: 0;
+        transition: all 200ms;
+      }
+      &:hover {
+        &::after {
+          width: calc(100% + var(--corner-height) * 2);
+          opacity: 1;
+        }
+      }
       /* critical:end */
     }
   }
 
+  // Mobile Nav
   @include breakpoint.media("<m") {
     /* critical:start */
     left: -100%;
@@ -71,6 +125,15 @@
     -webkit-overflow-scrolling: touch;
     // box-shadow: 100px 0px 0px 1000px #00000000, 20px 0px 30px #00000000;
     box-shadow: 20px 0px 30px #00000000;
+
+    &__item {
+      &__link {
+        &::after {
+          height: 100%;
+          bottom: 0;
+        }
+      }
+    }
 
     .overlay-open & {
       left: 0;
@@ -106,6 +169,7 @@
     }
   }
 
+  // Desktop Nav
   @include breakpoint.media("≥m") {
     /* critical:start */
     > .kds-logo {
@@ -136,41 +200,18 @@
     }
 
     &__item {
-      /* critical:start */
-      flex-shrink: 0;
-      position: relative;
-      /* critical:end */
-      outline: 0;
-
-      &::after {
-        --corner-height: 8px;
-
-        content: "";
-        width: 0;
-        background-color: var(--c-nav-main_item--background-color-hover);
-        position: absolute;
-        height: 60%;
-        left: calc(var(--corner-height) * -1);
-        bottom: -10%;
-        z-index: -1;
-        clip-path: polygon(
-          0% var(--corner-height),
-          var(--corner-height) 0,
-          100% 0,
-          100% calc(100% - var(--corner-height) * 1),
-          calc(100% - var(--corner-height) * 1) 100%,
-          0 100%
-        );
-
-        opacity: 0;
-        transition: all 200ms;
-      }
-      &:hover {
-        &::after {
-          width: calc(100% + var(--corner-height) * 2);
-          opacity: 1;
+      &--github {
+        .nav-main__item__link {
+          &::after {
+            content: none;
+          }
         }
       }
+      /* critical:start */
+      flex-shrink: 0;
+
+      /* critical:end */
+      outline: 0;
     }
   }
 }

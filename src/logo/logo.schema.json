@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/logo.schema.json",
+  "title": "Logo",
+  "type": "object",
+  "properties": {
+    "dark": {
+      "title": "Dark version",
+      "type": "boolean",
+      "description": "Choose wether to use the dark version of the Logo",
+      "default": false
+    },
+    "home": {
+      "title": "Link to home page",
+      "type": "string",
+      "description": "Link to the home page used on the logo"
+    }
+  }
+}

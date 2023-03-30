@@ -3,11 +3,12 @@ import { FunctionComponent, HTMLAttributes } from "react";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Section } from "@kickstartds/base/lib/section";
-import { ContentBox } from "@kickstartds/base/lib/content-box";
-import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
 import { GlossaryProps } from "./GlossaryProps";
 import { LinkButton } from "../link-button/LinkButtonComponent";
+import { Headline, Button, Divider } from "@kickstartds/base";
+import { Inline, Stack } from "@bedrock-layout/primitives";
+import { Related } from "../related/RelatedComponent";
 
 export const Glossary: FunctionComponent<
   GlossaryProps & HTMLAttributes<HTMLDivElement>
@@ -23,113 +24,86 @@ export const Glossary: FunctionComponent<
   ...props
 }) => (
   <div {...props}>
-    <Section
-      width="wide"
-      spaceBefore="small"
-      spaceAfter="none"
-      headline={{
-        align: "left",
-        content: term,
-        level: "h1",
-      }}
-    ></Section>
-    <div className="template template--wide">
-      <div className="template__main">
-        <Section
-          width="narrow"
-          mode="list"
-          spaceBefore="none"
-          spaceAfter="default"
-        >
-          <div className="c-glossary">
-            {cover && cover.src ? (
-              <TextMedia
-                className="c-glossary--text-media"
-                media={[
-                  {
-                    image: {
-                      src: cover.src,
-                      height: 100,
-                      width: 100,
-                    },
-                  },
-                ]}
-                mediaAlignment="intext-left"
-                text={definition}
-              />
-            ) : (
-              <TextMedia
-                className="c-glossary--text-media"
-                media={[]}
-                mediaAlignment="intext-left"
-                text={definition}
-              />
-            )}
+    <Section width="narrow" mode="list" spaceBefore="small" spaceAfter="default">
+      <div>
+        <Headline align="left" level="h1" content={term} />
+        {tags && tags.length > 0 && (
+          <div className="tag-label-container">
+            {tags?.map((tag, i) => (
+              <div>
+                <TagLabel label={tag} size="m" key={i} />
+              </div>
+            ))}
           </div>
-          {tags && tags.length > 0 && (
-            <div className="tag-label-container">
-              {tags?.map((tag, i) => (
-                <div>
-                  <TagLabel label={tag} size="s" key={i} />
-                </div>
-              ))}
+        )}
+      </div>
+      <div className="template">
+        <div className="template__split">
+          <Stack gutter="var(--ks-spacing-stack-s)">
+            <div className="c-glossary">
+              {cover && cover.src ? (
+                <TextMedia
+                  className="c-glossary--text-media"
+                  media={[
+                    {
+                      image: {
+                        src: cover.src,
+                        height: 100,
+                        width: 100,
+                      },
+                    },
+                  ]}
+                  mediaAlignment="intext-left"
+                  text={definition}
+                />
+              ) : (
+                <TextMedia
+                  className="c-glossary--text-media"
+                  media={[]}
+                  mediaAlignment="intext-left"
+                  text={definition}
+                />
+              )}
             </div>
+          </Stack>
+        </div>
+        <div className="template__split">
+          {media && media.length > 0 && (
+            <>
+              {media?.map((item, i) => (
+                <TextMedia
+                  media={[
+                    {
+                      lightboxImage: {
+                        image: item.src,
+                        thumb: item.src,
+                        height: 853,
+                        width: 1280,
+                        zoomIcon: true,
+                        gallery: "closer-look",
+                      },
+                      caption: item.caption,
+                    },
+                  ]}
+                  key={i}
+                  text=""
+                  mediaAlignment="above-center"
+                />
+              ))}
+            </>
           )}
-        </Section>
+        </div>
       </div>
-      <div className="template__side">
-        <Section
-          spaceBefore="none"
-          spaceAfter="default"
-          width="narrow"
-          background="default"
-        >
-          <Storytelling {...cta} className="cta" />
-        </Section>
-      </div>
-    </div>
-
-    {media && media.length > 0 && (
-      <Section
-        width="wide"
-        spaceBefore="none"
-        spaceAfter="none"
-        className="img-grid"
-        headline={{
-          level: "h3",
-          align: "left",
-          content: "Take a closer look 🧐",
-        }}
-      >
-        {media?.map((item, i) => (
-          <TextMedia
-            media={[
-              {
-                lightboxImage: {
-                  image: item.src,
-                  thumb: item.src,
-                  height: 853,
-                  width: 1280,
-                  zoomIcon: true,
-                  gallery: "closer-look",
-                },
-                caption: item.caption,
-              },
-            ]}
-            key={i}
-            text=""
-            mediaAlignment="above-center"
-          />
-        ))}
-      </Section>
-    )}
+    </Section>
 
     <Section
-      align="center"
       width="narrow"
+      pattern="contact"
+      ks-inverted="true"
       headline={{
+        styleAs: "h1",
         content: "Read more, or discuss this decision with us on StackShare.io",
-        align: "center",
+        align: "left",
       }}
     >
       <div>
@@ -137,7 +111,6 @@ export const Glossary: FunctionComponent<
           label={"Go to StackShare.io"}
           variant="solid"
           size={"medium"}
-          deko
           highlighted
           href={stackshare}
           iconAfter
@@ -149,42 +122,61 @@ export const Glossary: FunctionComponent<
     </Section>
 
     {related && related.length > 0 && (
-      <Section
-        headline={{
-          content: "Related",
-          level: "h3",
-          align: "left",
-        }}
-        variant="head"
-        className="two-col"
-        spaceBefore="default"
-        spaceAfter="small"
-        background="accent"
-        width="wide"
-      >
-        {related?.map((item, i) => (
-          <ContentBox
-            ratio="1:1"
-            alignement="left"
-            image={item.image}
-            className="related-post"
-            link={{
-              href: item.url,
-              enabled: true,
-              label: "Keep reading",
-              variant: "clear",
-              size: "medium",
-              iconAfter: true,
-              icon: {
+      <>
+        <Section
+          headline={{
+            content: "Similar appearances",
+            level: "h3",
+            align: "left",
+          }}
+          spaceBefore="small"
+          spaceAfter="small"
+          background="accent"
+          width="wide"
+          mode="list"
+        >
+          <Inline stretch="all" gutter="var(--ks-spacing-m)" switchAt="55rem">
+            {related?.map((item, i) => (
+              <Related
+                image={item.image}
+                url={item.url}
+                excerpt={item.excerpt}
+                title={item.title}
+                type={item.type}
+                tags={item.tags}
+                key={i}
+              />
+            ))}
+          </Inline>
+        </Section>
+
+        <Section
+          spaceBefore="none"
+          spaceAfter="small"
+          background="accent"
+          width="wide"
+        >
+          <Inline justify="center">
+            <Button
+              variant="outline"
+              label="Appearances Overview"
+              iconAfter
+              icon={{
                 icon: "chevron-right",
-              },
-            }}
-            text={item.excerpt}
-            topic={item.title}
-            key={i}
-          />
-        ))}
-      </Section>
+              }}
+              size="large"
+            />
+          </Inline>
+        </Section>
+        <Section
+          spaceBefore="small"
+          spaceAfter="none"
+          background="accent"
+          width="wide"
+        >
+          <Divider />
+        </Section>
+      </>
     )}
   </div>
 );

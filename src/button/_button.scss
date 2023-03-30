@@ -396,3 +396,24 @@
     margin: var(--c-button--icon-margin);
   }
 }
+
+[ks-inverted="true"] {
+  .c-button--deko-wrapper {
+    .c-button__deko-right,
+    .c-button__deko-left {
+      opacity: 0.75;
+    }
+
+    .c-button__deko-left {
+      .c-button__deko {
+        content: url(/patterns/button_before-inverted.svg);
+      }
+    }
+
+    .c-button__deko-right {
+      .c-button__deko {
+        content: url(/patterns/button_after-inverted.svg);
+      }
+    }
+  }
+}

@@ -3,5 +3,29 @@
 .c-form-field {
   &__label {
     color: var(--c-rich-text--color);
+    font: var(--ks-font-mono-s);
+  }
+
+  &--concierge {
+    filter: drop-shadow(2px 6px 6px #00000025);
+
+    .c-form-field {
+      &__input {
+        font: var(--ks-font-mono-m);
+      }
+
+      &__label {
+        --corner-height: 5px;
+        --c-form-field-label--color: var(--ks-text-color-primary);
+        text-shadow: 0 0 5px var(--ks-color-primary-alpha-6);
+        color: var(--c-form-field-label--color);
+
+        display: block;
+        text-align: left;
+        width: 24em;
+        padding: 0.5rem 1rem;
+        background: var(--ks-color-primary-inverted);
+      }
+    }
   }
 }

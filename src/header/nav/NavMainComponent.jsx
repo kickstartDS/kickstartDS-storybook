@@ -3,12 +3,13 @@ import { NavToggle } from "./NavToggleComponent";
 import { Link } from "@kickstartds/base/lib/link";
 import { LinkButton } from "@kickstartds/base/lib/link-button";
 import { Logo } from "../../logo/LogoComponent";
+import { Icon } from "@kickstartds/base";
 
-export const NavMain = ({ activeEntry, navEntries = [], cta, light }) => (
+export const NavMain = ({ activeEntry, dark, navEntries = [], cta }) => (
   <div className="nav-main__wrap">
     <NavToggle />
     <nav className="nav-main" id="nav-main" aria-label="Hauptnavigation">
-      <Logo />
+      <Logo dark={dark} />
       <ul className="nav-main__list">
         {navEntries.map(({ label, href, id }, index) => (
           <li
@@ -23,6 +24,14 @@ export const NavMain = ({ activeEntry, navEntries = [], cta, light }) => (
             </Link>
           </li>
         ))}
+        <li className="nav-main__item nav-main__item--icon nav-main__item--github">
+          <Link
+            href="https://github.com/kickstartDS/kickstartDS"
+            className="nav-main__item__link"
+          >
+            <Icon icon="github" />
+          </Link>
+        </li>
         {cta && (
           <LinkButton
             className="nav-main--button"
@@ -36,5 +45,5 @@ export const NavMain = ({ activeEntry, navEntries = [], cta, light }) => (
         )}
       </ul>
     </nav>
-  </div>
+  </div >
 );

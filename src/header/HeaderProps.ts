@@ -6,9 +6,9 @@
  */
 
 /**
- * Choose wether to use the light version of the Header
+ * Choose wether to use the dark version of the Header
  */
-export type LightVersion = boolean;
+export type DarkVersion = boolean;
 /**
  * Link to the home page used on the logo
  */
@@ -55,8 +55,8 @@ export type LinkTargetForButton = string;
  * Header to be used in website layouts
  */
 export interface HeaderProps {
-  light?: LightVersion;
-  homeLink: LinkToHomePage;
+  dark?: DarkVersion;
+  homeLink?: LinkToHomePage;
   navEnabled?: EnableNavigation;
   navEntries?: NavigationEntries;
   activeEntry: ActiveNavigationEntry;
