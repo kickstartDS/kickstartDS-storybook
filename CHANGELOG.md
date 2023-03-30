@@ -1,3 +1,15 @@
+# v2.3.1 (Thu Mar 30 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: showcase schema ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.3.0 (Thu Mar 30 2023)
 
 #### 🚀 Enhancement
