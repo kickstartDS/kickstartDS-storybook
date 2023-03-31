@@ -17,7 +17,7 @@ import { Inline, Split, Stack } from "@bedrock-layout/primitives";
 
 export const Source: FunctionComponent<
   SourceProps & HTMLAttributes<HTMLDivElement>
-> = ({ title, sourceAmount, thumbnail, id, sections = [], url, ...props }) => (
+> = ({ title, thumbnail, id, sections = [], url, ...props }) => (
   <CollapsibleBox
     className="c-source"
     id={id}
