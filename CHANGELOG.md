@@ -1,3 +1,15 @@
+# v2.3.3 (Fri Mar 31 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feat(logo): fix homeLink property ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.3.2 (Thu Mar 30 2023)
 
 #### ⚠️ Pushed to `master`
