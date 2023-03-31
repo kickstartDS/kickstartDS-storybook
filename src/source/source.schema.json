@@ -33,7 +33,7 @@
     "sections": {
       "title": "Sections",
       "type": "array",
-      "minimum": 1,
+      "minItems": 1,
       "items": {
         "type": "object",
         "properties": {
@@ -46,8 +46,8 @@
           "relevance": {
             "title": "Relevance",
             "description": "Percentile value that determines the relevance of the given section",
-            "type": "number",
-            "default": 75.5
+            "type": "string",
+            "default": "75.5"
           }
         },
         "required": ["excerpt", "relevance"]
