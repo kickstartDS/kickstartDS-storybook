@@ -14,7 +14,9 @@
     "homeLink": {
       "title": "Link to home page",
       "type": "string",
-      "description": "Link to the home page used on the logo"
+      "description": "Link to the home page used on the logo",
+      "format": "uri",
+      "default": "https://www.kickstartds.com/"
     },
     "navEnabled": {
       "title": "Enable navigation",

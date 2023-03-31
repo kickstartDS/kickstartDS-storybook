@@ -16,6 +16,6 @@ export type LinkToHomePage = string;
 
 export interface LogoProps {
   dark?: DarkVersion;
-  home?: LinkToHomePage;
+  homeLink?: LinkToHomePage;
   [k: string]: unknown;
 }
