@@ -103,7 +103,7 @@ export const Concierge: ForwardRefRenderFunction<
             variant="solid"
           />
         )}
-        {status.code === "idle" && answer && (
+        {status.code === "idle" && (
           <Button size="medium" label="Ask question" variant="solid" />
         )}
       </div>
