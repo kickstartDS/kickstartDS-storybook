@@ -1,19 +1,8 @@
-import {
-  FunctionComponent,
-  ForwardRefRenderFunction,
-  HTMLAttributes,
-} from "react";
-
+import React, { FunctionComponent, HTMLAttributes } from "react";
 import { RichText } from "@kickstartds/base/lib/rich-text";
-import { TagLabel } from "@kickstartds/base/lib/tag-label";
-
 import { CollapsibleBox } from "@kickstartds/content/lib/collapsible-box";
-
 import { SourceProps } from "./SourceProps";
-import { Headline } from "@kickstartds/base/lib/headline";
-import React from "react";
-import { LinkButton, Divider, Picture, Teaser, Link } from "@kickstartds/base";
-import { Inline, Split, Stack } from "@bedrock-layout/primitives";
+import { LinkButton, Picture, Link } from "@kickstartds/base";
 
 export const Source: FunctionComponent<
   SourceProps & HTMLAttributes<HTMLDivElement>

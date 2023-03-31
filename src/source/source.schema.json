@@ -33,6 +33,7 @@
     "sections": {
       "title": "Sections",
       "type": "array",
+      "minimum": 1,
       "items": {
         "type": "object",
         "properties": {
@@ -45,13 +46,13 @@
           "relevance": {
             "title": "Relevance",
             "description": "Percentile value that determines the relevance of the given section",
-            "type": "string",
-            "default": "75.5"
+            "type": "number",
+            "default": 75.5
           }
         },
-        "required": ["link", "title", "excerpt", "relevance"]
+        "required": ["excerpt", "relevance"]
       }
     }
   },
-  "required": ["sources", "links", "domain"]
+  "required": ["title", "id", "url", "thumbnail", "sections"]
 }

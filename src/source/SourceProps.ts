@@ -28,7 +28,7 @@ export type Excerpt = string;
 /**
  * Percentile value that determines the relevance of the given section
  */
-export type Relevance = string;
+export type Relevance = number;
 export type Sections = {
   excerpt: Excerpt;
   relevance: Relevance;
@@ -39,10 +39,10 @@ export type Sections = {
  * Display one showcase entry with all its details
  */
 export interface SourceProps {
-  title?: Title;
-  id?: ID;
-  url?: URL;
-  thumbnail?: Thumbnail;
-  sections?: Sections;
+  title: Title;
+  id: ID;
+  url: URL;
+  thumbnail: Thumbnail;
+  sections: Sections;
   [k: string]: unknown;
 }
