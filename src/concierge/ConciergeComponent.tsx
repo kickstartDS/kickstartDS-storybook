@@ -36,11 +36,10 @@ export type ConciergeProps = ConciergeSchemaProps & {
   handleConciergeConfirm?: typeof defaultHandleConciergeConfirm;
 };
 
-export const Concierge: ForwardRefExoticComponent<
-  RefAttributes<HTMLTextAreaElement> &
-    ConciergeProps &
-    HTMLAttributes<HTMLDivElement>
-> = forwardRef(
+export const Concierge = forwardRef<
+  HTMLTextAreaElement,
+  ConciergeProps & HTMLAttributes<HTMLDivElement>
+>(
   (
     {
       placeholder,
