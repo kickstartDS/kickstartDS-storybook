@@ -1,8 +1,10 @@
 import React, {
   forwardRef,
+  ForwardRefExoticComponent,
   ForwardRefRenderFunction,
   FunctionComponent,
   HTMLAttributes,
+  RefAttributes,
   useRef,
 } from "react";
 
@@ -34,9 +36,10 @@ export type ConciergeProps = ConciergeSchemaProps & {
   handleConciergeConfirm?: typeof defaultHandleConciergeConfirm;
 };
 
-export const Concierge: ForwardRefRenderFunction<
-  HTMLTextAreaElement,
-  ConciergeProps & HTMLAttributes<HTMLDivElement>
+export const Concierge: ForwardRefExoticComponent<
+  RefAttributes<HTMLTextAreaElement> &
+    ConciergeProps &
+    HTMLAttributes<HTMLDivElement>
 > = forwardRef(
   (
     {
@@ -93,6 +96,7 @@ export const Concierge: ForwardRefRenderFunction<
             hideLabel
             className="c-form-field__input--highlight"
             rows={6}
+            ref={textAreaRef}
             placeholder={placeholder}
           />
         </div>
