@@ -264,13 +264,15 @@ export const Concierge = forwardRef<
                 </div>
                 {sources &&
                   sources.length > 0 &&
-                  sources.map((source) => (
-                    <SourceSnippet
-                      title={source.title}
-                      url={new URL(source.url).hostname.replace("www.", "")}
-                      link={`#${source.id}`}
-                    />
-                  ))}
+                  sources
+                    .slice(0, 5)
+                    .map((source) => (
+                      <SourceSnippet
+                        title={source.title}
+                        url={new URL(source.url).hostname.replace("www.", "")}
+                        link={`#${source.id}`}
+                      />
+                    ))}
               </div>
             </div>
           </div>

@@ -1,7 +1,6 @@
-import { FunctionComponent, HTMLAttributes } from "react";
+import React, { FunctionComponent, HTMLAttributes } from "react";
 
 import { SourceSnippetProps } from "./SourceSnippetProps";
-import React from "react";
 import { Teaser } from "@kickstartds/base/lib/teaser";
 
 export const SourceSnippet: FunctionComponent<
@@ -21,5 +20,6 @@ export const SourceSnippet: FunctionComponent<
       variant: "clear",
       size: "small",
     }}
+    {...props}
   />
 );
