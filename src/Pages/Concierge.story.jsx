@@ -258,6 +258,17 @@ function chunkSubstr(str, size) {
   return chunks;
 }
 
+function getSourceThumbnail(sourceUrl) {
+  const url = new URL(sourceUrl);
+  const domain = url.hostname
+    .replace("rivet.iu", "rivet.ui")
+    .replace(/\./g, "_");
+  const path = url.pathname.endsWith("/")
+    ? url.pathname.substring(1, url.pathname.length - 1).replace(/\//g, "-")
+    : url.pathname.substring(1, url.pathname.length).replace(/\//g, "-");
+  return `https://pzdzoelitkqizxopmwfg.supabase.co/storage/v1/object/public/screenshots/${domain}/${path}-chromium.png`;
+}
+
 const Page = () => {
   const textAreaRef = useRef(null);
   const [answer, setAnswer] = useState("");
@@ -287,18 +298,7 @@ const Page = () => {
       .then(() => {
         setSources(
           dummySources.map((dummySource) => {
-            const url = new URL(dummySource.url);
-            const domain = url.hostname
-              .replaceAll("rivet.iu", "rivet.ui")
-              .replaceAll(".", "_");
-            const path = url.pathname.endsWith("/")
-              ? url.pathname
-                  .substring(1, url.pathname.length - 1)
-                  .replaceAll("/", "-")
-              : url.pathname
-                  .substring(1, url.pathname.length)
-                  .replaceAll("/", "-");
-
+            dummySource.thumbnail = getSourceThumbnail(dummySource.url);
             return dummySource;
           })
         );
