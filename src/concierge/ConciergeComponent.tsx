@@ -27,8 +27,8 @@ const defaultHandleResetPrompt = () => {
   return;
 };
 
-const defaultHandleConciergeConfirm = (query: string) => {
-  console.log("query entered", query);
+const defaultHandleConciergeConfirm = () => {
+  return;
 };
 
 export type ConciergeProps = ConciergeSchemaProps & {
@@ -109,7 +109,12 @@ export const Concierge = forwardRef<
             />
           )}
           {status.code === "idle" && (
-            <Button size="medium" label="Ask question" variant="solid" />
+            <Button
+              size="medium"
+              label="Ask question"
+              variant="solid"
+              onClick={handleConciergeConfirm}
+            />
           )}
         </div>
       </Section>
@@ -146,7 +151,7 @@ export const Concierge = forwardRef<
                                 if (textAreaRef.current) {
                                   textAreaRef.current.value = question;
                                 }
-                                handleConciergeConfirm(question);
+                                handleConciergeConfirm();
                               }}
                               size={"s"}
                             />
