@@ -1,12 +1,4 @@
-import React, {
-  forwardRef,
-  ForwardRefExoticComponent,
-  ForwardRefRenderFunction,
-  FunctionComponent,
-  HTMLAttributes,
-  RefAttributes,
-  useRef,
-} from "react";
+import React, { forwardRef, HTMLAttributes } from "react";
 
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Headline } from "@kickstartds/base/lib/headline";
@@ -100,15 +92,17 @@ export const Concierge = forwardRef<
           />
         </div>
         <div>
-          {status.code !== "loading" && status.code !== "idle" && answer && (
-            <Button
-              size="medium"
-              onClick={handleResetPrompt}
-              label="Ask another question"
-              variant="solid"
-            />
-          )}
-          {status.code === "idle" && (
+          {status.code !== "loading" &&
+            status.code !== "responding" &&
+            answer && (
+              <Button
+                size="medium"
+                onClick={handleResetPrompt}
+                label="Ask another question"
+                variant="outline"
+              />
+            )}
+          {status.code === "idle" && !answer && (
             <Button
               size="medium"
               label="Ask question"
@@ -222,6 +216,7 @@ export const Concierge = forwardRef<
               style={{
                 color: "var(--ks-text-color-default)",
                 font: "var(--ks-font-copy-xs)",
+                marginTop: "var(--ks-spacing-m)",
               }}
             >
               <strong>Powered by OpenAI: </strong>
@@ -337,7 +332,7 @@ export const Concierge = forwardRef<
             <ul>
               {index &&
                 index.length > 18 &&
-                index.slice(18, 18).map((page) => (
+                index.slice(18, 36).map((page) => (
                   <li>
                     <a target="blank" href={page.url}>
                       {page.title}
@@ -350,7 +345,7 @@ export const Concierge = forwardRef<
             <ul>
               {index &&
                 index.length > 0 &&
-                index.slice(36, 18).map((page) => (
+                index.slice(36, 54).map((page) => (
                   <li>
                     <a target="blank" href={page.url}>
                       {page.title}

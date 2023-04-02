@@ -21,6 +21,18 @@ export type URL = string;
  * Small image preview of the references site
  */
 export type Thumbnail = string;
+export type Sections = [
+  {
+    excerpt: Excerpt;
+    relevance: Relevance;
+    [k: string]: unknown;
+  },
+  ...{
+    excerpt: Excerpt;
+    relevance: Relevance;
+    [k: string]: unknown;
+  }[]
+];
 /**
  * Excerpt of the source text
  */
@@ -28,12 +40,7 @@ export type Excerpt = string;
 /**
  * Percentile value that determines the relevance of the given section
  */
-export type Relevance = number;
-export type Sections = {
-  excerpt: Excerpt;
-  relevance: Relevance;
-  [k: string]: unknown;
-}[];
+export type Relevance = string;
 
 /**
  * Display one showcase entry with all its details
