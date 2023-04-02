@@ -26,5 +26,5 @@
       "default": "#source-1"
     }
   },
-  "required": ["url", "title"]
+  "required": ["url", "title", "link"]
 }

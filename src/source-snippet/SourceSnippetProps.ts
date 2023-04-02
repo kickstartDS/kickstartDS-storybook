@@ -24,6 +24,6 @@ export type Link = string;
 export interface SourceSnippetProps {
   title: Title;
   url: URL;
-  link?: Link;
+  link: Link;
   [k: string]: unknown;
 }

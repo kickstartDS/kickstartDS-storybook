@@ -1,12 +1,7 @@
-import { FunctionComponent, HTMLAttributes } from "react";
-
-import { RichText } from "@kickstartds/base/lib/rich-text";
-import { TagLabel } from "@kickstartds/base/lib/tag-label";
+import React, { FunctionComponent, HTMLAttributes } from "react";
 
 import { SourceSnippetProps } from "./SourceSnippetProps";
-import { Headline } from "@kickstartds/base/lib/headline";
-import React from "react";
-import { Button, Teaser } from "@kickstartds/base";
+import { Teaser } from "@kickstartds/base/lib/teaser";
 
 export const SourceSnippet: FunctionComponent<
   SourceSnippetProps & HTMLAttributes<HTMLDivElement>
@@ -25,5 +20,6 @@ export const SourceSnippet: FunctionComponent<
       variant: "clear",
       size: "small",
     }}
+    {...props}
   />
 );

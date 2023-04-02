@@ -115,12 +115,6 @@ export interface ShowcaseProps {
   summary?: ShortSummaryOfTheShowcase;
   quote?: QuoteElement;
   description: DescriptionOfTheAppearance;
-  author?: {
-    name?: string;
-    avatar?: string;
-    title?: string;
-    [k: string]: unknown;
-  };
   cover: CoverImage;
   media?: Media;
   tags?: Tags;

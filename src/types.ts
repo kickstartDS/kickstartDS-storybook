@@ -1,3 +1,6 @@
+export * from "./concierge/ConciergeComponent";
+export * from "./source/SourceComponent";
+export * from "./source-snippet/SourceSnippetComponent";
 export * from "./count-up/CountUpComponent";
 export * from "./glossary/GlossaryComponent";
 export * from "./showcase/ShowcaseComponent";

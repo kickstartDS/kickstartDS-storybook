@@ -33,6 +33,7 @@
     "sections": {
       "title": "Sections",
       "type": "array",
+      "minItems": 1,
       "items": {
         "type": "object",
         "properties": {
@@ -49,9 +50,9 @@
             "default": "75.5"
           }
         },
-        "required": ["link", "title", "excerpt", "relevance"]
+        "required": ["excerpt", "relevance"]
       }
     }
   },
-  "required": ["sources", "links", "domain"]
+  "required": ["title", "id", "url", "thumbnail", "sections"]
 }

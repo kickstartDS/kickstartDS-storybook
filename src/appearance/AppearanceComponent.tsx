@@ -28,7 +28,6 @@ export const Appearance: FunctionComponent<
   related,
   ...props
 }) => {
-  console.log("related", related);
   return (
     <div {...props}>
       <Section

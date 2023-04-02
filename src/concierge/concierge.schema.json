@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kickstartds.com/concierge.schema.json",
+  "title": "Concierge",
+  "type": "object",
+  "description": "Your helpful Design System Concierge",
+  "properties": {
+    "placeholder": {
+      "title": "Question placeholder",
+      "description": "Placeholder to use for question prompt",
+      "type": "string",
+      "default": "Why should I care about Design Systems, and what are the main reasons to start one?\n\n... or maybe you'd like to know something about kickstartDS... I know about that as well, so fire away!"
+    },
+    "answer": {
+      "type": "string",
+      "title": "Answer to the prompted question",
+      "default": "Hey there!\n\nA design system is a library of reusable components governed by a set a foundational standards, such as color, typography, and grid. Additionally, guidelines and documentation accompany all components along with guiding patterns and best practices. Teams are encouraged to leverage the system and its documentation to build repeatable designs within applications or interfaces.\n\nMy updated definition is as follows: A design system is the official story of how an organization designs and builds digital interfaces. It is a connected, package-managed, version-controlled software product that contains the smallest set of components and guidelines an organization needs to make digital products consistently, efficiently and happily.\n\nIf I have ~30 seconds in an elevator or over animated slides, I’ll lead with: Almost always, a design system offers a library of visual style and components documented and released as reusable code for developers and/or tool(s) for designers. A system may also offer guidance on accessibility, page layout, and editorial and less often branding, data viz, UX patterns, and other tools. A design system is adopted by and supported for other teams making experiences. These teams use it to develop and ship features more efficiently to form a more cohesive customer journey. A design system is made by an individual, team, and/or community. While some arise less formally, organizations now dedicate small to large squad(s) to develop and release system versions and processes over time."
+    },
+    "sources": {
+      "type": "array",
+      "title": "Pages",
+      "description": "Pages referenced for the given answer",
+      "items": {
+        "$ref": "http://kickstartds.com/source.schema.json"
+      }
+    },
+    "index": {
+      "title": "Domain index",
+      "description": "Domains that are indexed in our knowledge base",
+      "type": "array",
+      "items": {
+        "title": "Domain",
+        "description": "Single domain which contents were scraped and indexed",
+        "type": "object",
+        "properties": {
+          "title": {
+            "title": "Title",
+            "type": "string",
+            "description": "Title of the domain",
+            "default": "Backlight.dev"
+          },
+          "url": {
+            "title": "Link",
+            "type": "string",
+            "format": "uri",
+            "default": "https://backlight.dev/",
+            "description": "Link to the domain"
+          }
+        },
+        "required": ["title", "url"]
+      }
+    },
+    "status": {
+      "title": "Status",
+      "description": "Current status",
+      "type": "object",
+      "properties": {
+        "idle": {
+          "title": "Idle",
+          "description": "Currently idle",
+          "type": "string",
+          "default": "Concierge is awaiting your request!"
+        },
+        "loading": {
+          "title": "Loading",
+          "description": "Currently loading",
+          "type": "string",
+          "default": "Working: Concierge is researching..."
+        },
+        "responding": {
+          "title": "Responding",
+          "description": "Currently responding",
+          "type": "string",
+          "default": "Working: Concierge is responding..."
+        },
+        "error": {
+          "title": "Errored",
+          "description": "There was an error",
+          "type": "string",
+          "default": "Concierge is not available"
+        },
+        "canthelp": {
+          "title": "Can't help",
+          "description": "Concierge can't help with prompt",
+          "type": "string",
+          "default": "Sorry, I couldn't find anything relevant to your question ☹️"
+        },
+        "code": {
+          "title": "Code",
+          "description": "Code for the current status",
+          "type": "string",
+          "enum": ["idle", "loading", "responding", "error", "canthelp"],
+          "default": "idle"
+        }
+      },
+      "required": ["idle", "loading", "responding", "error", "canthelp", "code"]
+    },
+    "questions": {
+      "title": "Demo questions",
+      "description": "Questions that can be asked to the concierge",
+      "type": "array",
+      "items": {
+        "title": "Question",
+        "description": "Single question that can be asked to the concierge",
+        "type": "string",
+        "default": "What is the definition of a Design System?"
+      }
+    }
+  },
+  "required": ["placeholder", "status"]
+}
