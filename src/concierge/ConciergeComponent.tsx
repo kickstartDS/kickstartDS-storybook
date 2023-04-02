@@ -296,7 +296,7 @@ export const Concierge = forwardRef<
               title={reference.title}
               url={reference.url}
               id={`source-${index}`}
-              thumbnail="img/concierge/backlight.png"
+              thumbnail={reference.thumbnail}
               sections={reference.sections}
             />
           ))}

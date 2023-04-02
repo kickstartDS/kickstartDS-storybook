@@ -285,7 +285,23 @@ const Page = () => {
 
     timeout(1200)
       .then(() => {
-        setSources(dummySources);
+        setSources(
+          dummySources.map((dummySource) => {
+            const url = new URL(dummySource.url);
+            const domain = url.hostname
+              .replaceAll("rivet.iu", "rivet.ui")
+              .replaceAll(".", "_");
+            const path = url.pathname.endsWith("/")
+              ? url.pathname
+                  .substring(1, url.pathname.length - 1)
+                  .replaceAll("/", "-")
+              : url.pathname
+                  .substring(1, url.pathname.length)
+                  .replaceAll("/", "-");
+
+            return dummySource;
+          })
+        );
       })
       .then(() => {
         setStatusCode("responding");

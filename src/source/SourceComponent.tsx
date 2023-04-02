@@ -8,6 +8,7 @@ export const Source: FunctionComponent<
   SourceProps & HTMLAttributes<HTMLDivElement>
 > = ({ title, thumbnail, id, sections = [], url, ...props }) => (
   <CollapsibleBox
+    {...props}
     className="c-source"
     id={id}
     summary="Creating Themeable Design Systems | Brad Frost"
