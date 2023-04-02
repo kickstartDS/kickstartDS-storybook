@@ -1,3 +1,15 @@
+# v2.4.0 (Sun Apr 02 2023)
+
+#### 🚀 Enhancement
+
+- feature: add dedicated concierge component [#103](https://github.com/kickstartDS/kickstartDS-storybook/pull/103) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.3.4 (Fri Mar 31 2023)
 
 #### ⚠️ Pushed to `master`
