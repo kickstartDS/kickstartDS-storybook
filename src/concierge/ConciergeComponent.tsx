@@ -48,7 +48,7 @@ export const Concierge = forwardRef<
   ) => (
     <div {...props}>
       <Section width="default" spaceAfter="small" spaceBefore="small">
-        <img src="/concierge-dude.svg" />
+        <img src="img/concierge/concierge-dude.svg" />
         <div>
           <Headline
             level="h1"
@@ -230,7 +230,7 @@ export const Concierge = forwardRef<
               <div className="source-snippet-menu source-snippet-menu--mobile">
                 <TeaserBox
                   className="c-source-snippet--mobile"
-                  image="/concierge-dude.svg"
+                  image="img/concierge/concierge-dude.svg"
                   text={`I found ${
                     sources?.length || 0
                   } relevant sources regarding your question`}
@@ -251,7 +251,7 @@ export const Concierge = forwardRef<
                   <div>
                     <Picture
                       className="source-snippet-menu--avatar"
-                      src="/concierge-sources.svg"
+                      src="img/concierge/concierge-sources.svg"
                     />
                   </div>
                   <span>Relevant sources 👇</span>
