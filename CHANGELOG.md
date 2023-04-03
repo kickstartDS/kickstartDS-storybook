@@ -1,3 +1,17 @@
+# v2.4.2 (Mon Apr 03 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feat(source-snippet): sourcen snippet design adjustment ([@fleven-kds](https://github.com/fleven-kds))
+- feat(package): remove path ([@fleven-kds](https://github.com/fleven-kds))
+- feat(static): move concierge svg's and correct paths ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.4.1 (Mon Apr 03 2023)
 
 #### ⚠️ Pushed to `master`
