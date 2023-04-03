@@ -3,4 +3,9 @@
 :root,
 [ks-theme],
 [ks-inverted] {
+  .c-teaser.c-source-snippet {
+    --c-teaser--border-color: transparent;
+    --c-teaser--background: var(--ks-color-primary-inverted-alpha-5);
+    --c-teaser--background-hover: var(--ks-color-primary-inverted-alpha-5);
+  }
 }

@@ -2,9 +2,6 @@
 @use "../breakpoint";
 
 .c-teaser.c-source-snippet {
-  background: var(--ks-background-color-default);
-  --c-teaser--border-color: transparent;
-
   .c-teaser__body {
     flex-direction: column;
     .c-teaser__topic {
