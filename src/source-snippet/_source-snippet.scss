@@ -52,6 +52,10 @@
   font-weight: var(--ks-font-weight-semi-bold);
   color: var(--ks-text-color-default);
 
+  span {
+    text-align: center;
+  }
+
   &--concierge {
     display: flex;
     flex-direction: column;
@@ -60,6 +64,10 @@
   }
 
   &--avatar {
+    @include breakpoint.media(">s") {
+      transform: translateX(-5%);
+    }
+
     @include breakpoint.media("<s") {
       max-width: 35%;
     }
@@ -78,6 +86,7 @@
     display: none;
     @include breakpoint.media("≥s") {
       display: flex;
+      margin-top: calc(var(--l-section--space-small) * -2);
     }
   }
 }

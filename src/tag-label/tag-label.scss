@@ -1,5 +1,11 @@
 @use "./tag-label-tokens";
 .c-tag-label {
+  &--link {
+    cursor: pointer;
+    &:hover {
+      border: var(--tag-label--border-hover);
+    }
+  }
 }
 
 .tag-label-container {
@@ -10,4 +16,12 @@
   > * {
     padding: 0 !important;
   }
+}
+
+.c-tag-label--list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--ks-spacing-stack-xs);
 }

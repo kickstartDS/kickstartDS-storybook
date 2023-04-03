@@ -117,17 +117,14 @@ export const Concierge = forwardRef<
           <div className="template__main">
             {status.code !== "loading" && !answer && status.code !== "error" && (
               <div>
-                <div
-                  style={{
-                    color: "var(--ks-text-color-default)",
-                    font: "var(--ks-font-copy-s)",
-                  }}
-                >
-                  <h2>Not sure where to start?</h2>
-
-                  <p>Try one of the following questions:</p>
-
-                  <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+                <div>
+                  <Headline
+                    content="Not sure where to start?"
+                    subheadline="Try one of the following questions:"
+                    level="h2"
+                    styleAs="h4"
+                  />
+                  <ul className="c-tag-label--list">
                     {textAreaRef &&
                       typeof textAreaRef !== "function" &&
                       questions &&
@@ -136,11 +133,8 @@ export const Concierge = forwardRef<
                         return (
                           <li key={`question-${index}`}>
                             <TagLabel
-                              style={{
-                                marginBottom: "var(--ks-spacing-s)",
-                                cursor: "pointer",
-                              }}
-                              label={`> ${question}`}
+                              className="c-tag-label--link"
+                              label={`${question}`}
                               onClick={() => {
                                 if (textAreaRef.current) {
                                   textAreaRef.current.value = question;
@@ -257,7 +251,7 @@ export const Concierge = forwardRef<
                   <div>
                     <Picture
                       className="source-snippet-menu--avatar"
-                      src="/concierge-dude.svg"
+                      src="/concierge-sources.svg"
                     />
                   </div>
                   <span>Relevant sources 👇</span>

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 02 Apr 2023 18:25:36 GMT
+ * Generated on Mon, 03 Apr 2023 04:15:49 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -3684,11 +3684,19 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   font-weight: var(--ks-font-weight-semi-bold);
   color: var(--ks-text-color-default);
 }
+.source-snippet-menu span {
+  text-align: center;
+}
 .source-snippet-menu--concierge {
   display: flex;
   flex-direction: column;
   gap: var(--ks-spacing-inline-s);
   margin-bottom: var(--ks-spacing-stack-xs);
+}
+@media (min-width: 40.01em) {
+  .source-snippet-menu--avatar {
+    transform: translateX(-5%);
+  }
 }
 @media (max-width: 39.99em) {
   .source-snippet-menu--avatar {
@@ -3710,6 +3718,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 @media (min-width: 40em) {
   .source-snippet-menu--desktop {
     display: flex;
+    margin-top: calc(var(--l-section--space-small) * -2);
   }
 }
 
@@ -4672,6 +4681,22 @@ a.kds-related {
 [ks-inverted] .c-tag-label--l {
   --c-tag-label--font: var(--ks-font-ui-m);
 }
+:root .c-tag-label--link,
+[ks-theme] .c-tag-label--link,
+[ks-inverted] .c-tag-label--link {
+  --tag-label--border: 1px solid var(--ks-border-color-interface-interactive);
+  --tag-label--border-hover: 1px solid var(--ks-border-color-interface-interactive-hover);
+  --c-tag-label--background-color: transparent;
+  --c-tag-label--horizontal-padding: 1em;
+  --c-tag-label--vertical-padding: 0.5em;
+}
+
+.c-tag-label--link {
+  cursor: pointer;
+}
+.c-tag-label--link:hover {
+  border: var(--tag-label--border-hover);
+}
 
 .tag-label-container {
   display: flex;
@@ -4681,6 +4706,14 @@ a.kds-related {
 }
 .tag-label-container > * {
   padding: 0 !important;
+}
+
+.c-tag-label--list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--ks-spacing-stack-xs);
 }
 
 .text-media--highlight .c-rich-text {
@@ -4829,7 +4862,7 @@ article .c-teaser .c-teaser__body {
 .template--concierge.template .template__side {
     height: fit-content;
     position: sticky;
-    top: var(--ks-spacing-m);
+    top: calc(var(--l-section--space-small) * 3);
   }
 }
 @media (min-width: 40rem) {

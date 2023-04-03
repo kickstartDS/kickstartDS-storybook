@@ -21,7 +21,7 @@
       @media (min-width: 40rem) {
         height: fit-content;
         position: sticky;
-        top: var(--ks-spacing-m);
+        top: calc(var(--l-section--space-small) * 3);
       }
     }
 

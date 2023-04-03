@@ -19,5 +19,13 @@
     &--l {
       --c-tag-label--font: var(--ks-font-ui-m);
     }
+
+    &--link {
+      --tag-label--border: 1px solid var(--ks-border-color-interface-interactive);
+      --tag-label--border-hover: 1px solid var(--ks-border-color-interface-interactive-hover);
+      --c-tag-label--background-color: transparent;
+      --c-tag-label--horizontal-padding: 1em;
+      --c-tag-label--vertical-padding: 0.5em;
+    }
   }
 }
