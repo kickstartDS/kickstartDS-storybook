@@ -159,6 +159,7 @@ ${language}
                   label="Go to appearance"
                   variant="outline"
                   size="medium"
+                  target="_blank"
                   iconAfter
                   icon={{
                     icon: "chevron-right",
