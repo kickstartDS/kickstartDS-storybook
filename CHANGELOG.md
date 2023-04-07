@@ -1,3 +1,15 @@
+# v2.4.3 (Fri Apr 07 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: make appearance CTA open in new tab ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.2 (Mon Apr 03 2023)
 
 #### ⚠️ Pushed to `master`
