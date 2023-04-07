@@ -71,6 +71,7 @@ ${language}
                   variant="solid"
                   size="medium"
                   iconAfter
+                  target="_blank"
                   icon={{
                     icon: "chevron-right",
                   }}
