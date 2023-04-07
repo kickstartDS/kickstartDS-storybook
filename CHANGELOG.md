@@ -1,3 +1,15 @@
+# v2.4.4 (Fri Apr 07 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add another open in new tab to appearance ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.3 (Fri Apr 07 2023)
 
 #### ⚠️ Pushed to `master`
