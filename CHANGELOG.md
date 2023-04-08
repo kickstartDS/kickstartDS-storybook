@@ -1,3 +1,16 @@
+# v2.4.10 (Sat Apr 08 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: open links on Showcases in new tab ([@julrich](https://github.com/julrich))
+- fix: add overviewPage property to Showcase ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.9 (Sat Apr 08 2023)
 
 #### ⚠️ Pushed to `master`
