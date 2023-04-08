@@ -71,6 +71,7 @@ const Page = () => (
       ]}
       tags={["Framework", "Design System"]}
       title="encore - Energie im Herzen"
+      overviewPage="https://www.kickstartDS.com/showcases/"
     />
     <Footer {...unpack(FooterStories.args)} />
   </>

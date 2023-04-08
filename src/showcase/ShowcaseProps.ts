@@ -105,6 +105,10 @@ export type Tags1 = Tag1[];
  * Entries related to this appearance entry
  */
 export type RelatedEntries = Related[];
+/**
+ * Overview page for all showcase entries
+ */
+export type OverviewPage = string;
 
 /**
  * Display one showcase entry with all its details
@@ -119,6 +123,7 @@ export interface ShowcaseProps {
   media?: Media;
   tags?: Tags;
   related?: RelatedEntries;
+  overviewPage: OverviewPage;
   [k: string]: unknown;
 }
 /**

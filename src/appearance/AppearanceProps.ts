@@ -141,7 +141,7 @@ export interface AppearanceProps {
   cover: CoverImage;
   media?: Media;
   related?: RelatedEntries;
-  overviewPage?: OverviewPage;
+  overviewPage: OverviewPage;
   [k: string]: unknown;
 }
 /**

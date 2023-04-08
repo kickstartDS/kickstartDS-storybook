@@ -56,7 +56,7 @@ export const Showcase: FunctionComponent<
 
         <RichText text={summary} />
         <div>
-          <Button
+          <LinkButton
             label="Visit showcase"
             variant="solid"
             href={link}
@@ -67,6 +67,7 @@ export const Showcase: FunctionComponent<
             }}
             highlighted
             deko
+            target="_blank"
             size="medium"
           />
         </div>
@@ -154,11 +155,12 @@ export const Showcase: FunctionComponent<
             </div>
 
             <div>
-              <Button
+              <LinkButton
                 label="Visit showcase"
                 variant="outline"
                 href={link}
                 iconAfter
+                target="_blank"
                 size="medium"
                 icon={{
                   icon: "chevron-right",
