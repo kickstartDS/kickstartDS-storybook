@@ -259,7 +259,7 @@ ${language}
             mode="list"
           >
             <Inline justify="center">
-              <Button
+              <LinkButton
                 variant="outline"
                 label="Appearances Overview"
                 href={overviewPage}
