@@ -1,18 +1,21 @@
-import { FunctionComponent, HTMLAttributes } from "react";
+import React, { FunctionComponent, HTMLAttributes } from "react";
+import { Stack, Inline } from "@bedrock-layout/primitives";
 
+import { Headline } from "@kickstartds/base/lib/headline";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Section } from "@kickstartds/base/lib/section";
+import { Divider } from "@kickstartds/base/lib/divider";
+import { RichText } from "@kickstartds/base/lib/rich-text";
+
+import { Quote } from "@kickstartds/content/lib/quote";
+import { Visual } from "@kickstartds/content/lib/visual";
+
+import { Button } from "../button/ButtonComponent";
+import { LinkButton } from "../link-button/LinkButtonComponent";
 import { Related } from "../related/RelatedComponent";
 
 import { ShowcaseProps } from "./ShowcaseProps";
-import { Visual } from "@kickstartds/content/lib/visual";
-import { Headline, HeadlineContext } from "@kickstartds/base/lib/headline";
-import { Button } from "../button/ButtonComponent";
-import { Divider, RichText } from "@kickstartds/base";
-import { Quote } from "@kickstartds/content";
-import { Stack, Inline } from "@bedrock-layout/primitives";
-import { Person } from "../person/PersonComponent";
 
 export const Showcase: FunctionComponent<
   ShowcaseProps & HTMLAttributes<HTMLDivElement>
@@ -26,6 +29,7 @@ export const Showcase: FunctionComponent<
   related,
   summary,
   quote,
+  overviewPage,
   ...props
 }) => (
   <div {...props}>
@@ -249,7 +253,8 @@ export const Showcase: FunctionComponent<
           width="wide"
         >
           <Inline justify="center">
-            <Button
+            <LinkButton
+              href={overviewPage}
               variant="outline"
               label="Showcases Overview"
               iconAfter

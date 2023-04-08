@@ -113,7 +113,14 @@
       "items": {
         "$ref": "http://kickstartds.com/related.schema.json"
       }
+    },
+    "overviewPage": {
+      "title": "Overview page",
+      "description": "Overview page for all showcase entries",
+      "type": "string",
+      "format": "uri",
+      "default": "https://www.kickstartDS.com/appearances"
     }
   },
-  "required": ["link", "title", "description", "cover"]
+  "required": ["link", "title", "description", "cover", "overviewPage"]
 }
