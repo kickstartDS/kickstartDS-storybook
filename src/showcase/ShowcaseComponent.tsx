@@ -172,7 +172,7 @@ export const Showcase: FunctionComponent<
         </div>
       </div>
     </Section>
-    {quote.quoteToggle ? (
+    {quote && quote.quoteToggle ? (
       <Section
         spaceBefore="default"
         spaceAfter="default"
