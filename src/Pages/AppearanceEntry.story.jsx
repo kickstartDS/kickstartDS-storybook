@@ -87,6 +87,7 @@ const Page = () => (
           url: "/appearance/amplifyn/",
         },
       ]}
+      overviewPage="https://www.kickstartDS.com/appearances/"
     />
     <Footer {...unpack(FooterStories.args)} />
   </>

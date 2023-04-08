@@ -129,6 +129,13 @@
       "items": {
         "$ref": "http://kickstartds.com/related.schema.json"
       }
+    },
+    "overviewPage": {
+      "title": "Overview page",
+      "description": "Overview page for all appearance entries",
+      "type": "string",
+      "format": "uri",
+      "default": "https://www.kickstartDS.com/appearances"
     }
   },
   "required": [

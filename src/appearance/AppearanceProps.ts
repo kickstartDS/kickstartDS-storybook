@@ -121,6 +121,10 @@ export type Tags1 = Tag1[];
  * Entries related to this appearance entry
  */
 export type RelatedEntries = Related[];
+/**
+ * Overview page for all appearance entries
+ */
+export type OverviewPage = string;
 
 /**
  * Display one appearance entry with all its details
@@ -137,6 +141,7 @@ export interface AppearanceProps {
   cover: CoverImage;
   media?: Media;
   related?: RelatedEntries;
+  overviewPage?: OverviewPage;
   [k: string]: unknown;
 }
 /**
