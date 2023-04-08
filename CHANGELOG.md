@@ -1,3 +1,16 @@
+# v2.4.7 (Sat Apr 08 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: renaming of type to typeLabel in Related ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.6 (Sat Apr 08 2023)
 
 #### ⚠️ Pushed to `master`
