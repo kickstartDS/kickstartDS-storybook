@@ -1,3 +1,15 @@
+# v2.4.6 (Sat Apr 08 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: rename Related type to typeLabel ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.5 (Sat Apr 08 2023)
 
 #### ⚠️ Pushed to `master`
