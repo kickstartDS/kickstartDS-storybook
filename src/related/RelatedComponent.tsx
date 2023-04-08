@@ -12,13 +12,13 @@ import { Button, Picture, RichText } from "@kickstartds/base";
 
 export const Related: FunctionComponent<
   RelatedProps & HTMLAttributes<HTMLDivElement>
-> = ({ url, title, excerpt, image, tags, type, ...props }) => {
+> = ({ url, title, excerpt, image, tags, typeLabel, ...props }) => {
   return (
     <a href={url} className="kds-related">
       <div className="kds-related--image-wrapper">
-        {type ? (
+        {typeLabel ? (
           <>
-            <span className="kds-related--type">{type}</span>
+            <span className="kds-related--type">{typeLabel}</span>
           </>
         ) : (
           ""

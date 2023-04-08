@@ -182,7 +182,7 @@ export interface Related {
   title: Title1;
   excerpt: Excerpt;
   url: Url1;
-  type?: Type;
+  typeLabel?: Type;
   image: Image;
   tags?: Tags1;
   [k: string]: unknown;

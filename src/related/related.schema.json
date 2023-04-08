@@ -24,7 +24,7 @@
       "description": "Url for the related appearance",
       "default": "#"
     },
-    "type": {
+    "typeLabel": {
       "title": "Type",
       "description": "Type of content that is being teased",
       "type": "string",
