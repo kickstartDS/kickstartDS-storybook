@@ -1,3 +1,15 @@
+# v2.4.9 (Sat Apr 08 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: Overview button of appearance ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.8 (Sat Apr 08 2023)
 
 #### ⚠️ Pushed to `master`
