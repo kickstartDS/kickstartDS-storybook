@@ -240,7 +240,7 @@ export const Showcase: FunctionComponent<
                 url={item.url}
                 excerpt={item.excerpt}
                 title={item.title}
-                type={item.type}
+                typeLabel={item.typeLabel}
                 tags={item.tags}
                 key={i}
               />
