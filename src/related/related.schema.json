@@ -28,7 +28,7 @@
       "title": "Type",
       "description": "Type of content that is being teased",
       "type": "string",
-      "default": "Showcase"
+      "default": "Related"
     },
     "image": {
       "title": "Image",

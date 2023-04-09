@@ -24,7 +24,12 @@ export const Glossary: FunctionComponent<
   ...props
 }) => (
   <div {...props}>
-    <Section width="narrow" mode="list" spaceBefore="small" spaceAfter="default">
+    <Section
+      width="narrow"
+      mode="list"
+      spaceBefore="small"
+      spaceAfter="default"
+    >
       <div>
         <Headline align="left" level="h1" content={term} />
         {tags && tags.length > 0 && (
@@ -125,7 +130,7 @@ export const Glossary: FunctionComponent<
       <>
         <Section
           headline={{
-            content: "Similar appearances",
+            content: "Similar glossary entries",
             level: "h3",
             align: "left",
           }}
@@ -142,39 +147,12 @@ export const Glossary: FunctionComponent<
                 url={item.url}
                 excerpt={item.excerpt}
                 title={item.title}
-                type={item.type}
+                typeLabel={item.typeLabel}
                 tags={item.tags}
                 key={i}
               />
             ))}
           </Inline>
-        </Section>
-
-        <Section
-          spaceBefore="none"
-          spaceAfter="small"
-          background="accent"
-          width="wide"
-        >
-          <Inline justify="center">
-            <Button
-              variant="outline"
-              label="Appearances Overview"
-              iconAfter
-              icon={{
-                icon: "chevron-right",
-              }}
-              size="large"
-            />
-          </Inline>
-        </Section>
-        <Section
-          spaceBefore="small"
-          spaceAfter="none"
-          background="accent"
-          width="wide"
-        >
-          <Divider />
         </Section>
       </>
     )}

@@ -74,6 +74,10 @@ export type Tag = string;
  */
 export type Tags = Tag[];
 /**
+ * Type of content that is being teased
+ */
+export type Type = string;
+/**
  * Title of the related appearance
  */
 export type Title = string;
@@ -85,10 +89,6 @@ export type Excerpt = string;
  * Url for the related appearance
  */
 export type Url1 = string;
-/**
- * Type of content that is being teased
- */
-export type Type = string;
 /**
  * Image for the related appearance
  */
@@ -158,10 +158,10 @@ export interface MediaAsset {
  * A preview of contextually relevant content
  */
 export interface Related {
+  typeLabel?: Type;
   title: Title;
   excerpt: Excerpt;
   url: Url1;
-  typeLabel?: Type;
   image: Image;
   tags?: Tags1;
   [k: string]: unknown;

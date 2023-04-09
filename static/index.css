@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 08 Apr 2023 18:51:19 GMT
+ * Generated on Sun, 09 Apr 2023 20:17:04 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -4648,6 +4648,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 700;
 }
 .kds-related--topic-wrapper {
   display: block;

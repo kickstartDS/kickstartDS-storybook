@@ -112,7 +112,19 @@
       "description": "Entries related to this appearance entry",
       "type": "array",
       "items": {
-        "$ref": "http://kickstartds.com/related.schema.json"
+        "allOf": [
+          {
+            "type": "object",
+            "properties": {
+              "typeLabel": {
+                "default": "Showcase"
+              }
+            }
+          },
+          {
+            "$ref": "http://kickstartds.com/related.schema.json"
+          }
+        ]
       }
     },
     "overviewPage": {
