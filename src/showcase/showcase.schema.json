@@ -20,6 +20,7 @@
     "summary": {
       "title": "Short summary of the showcase",
       "type": "string",
+      "format": "markdown",
       "default": "encore as a German utility company supports their customers with modern, cloud-based software solutions, and a wide spectrum of services around their business.",
       "description": "Title that should be shown for this appearance"
     },
