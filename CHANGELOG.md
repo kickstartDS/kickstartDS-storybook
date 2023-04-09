@@ -1,3 +1,15 @@
+# v2.4.13 (Sun Apr 09 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: rename type to typeLabel in showcase related ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.12 (Sun Apr 09 2023)
 
 #### ⚠️ Pushed to `master`
