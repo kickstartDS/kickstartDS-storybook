@@ -1,3 +1,16 @@
+# v2.4.14 (Sun Apr 09 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: z-index on related type labels ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.13 (Sun Apr 09 2023)
 
 #### ⚠️ Pushed to `master`
