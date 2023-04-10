@@ -1,3 +1,15 @@
+# v2.4.15 (Sun Apr 09 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: align Glossary, Showcases and Appearances ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.14 (Sun Apr 09 2023)
 
 #### ⚠️ Pushed to `master`
