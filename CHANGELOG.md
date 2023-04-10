@@ -1,3 +1,16 @@
+# v2.4.16 (Mon Apr 10 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: Concierge image url for production use ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.15 (Sun Apr 09 2023)
 
 #### ⚠️ Pushed to `master`
