@@ -1,12 +1,8 @@
-import {
-  Section,
-  TeaserBox,
-  ContentBox,
-  Headline
-} from "@kickstartds/base";
-
 import { Button } from "@kickstartds/base/lib/button";
-import { LinkButton } from "@kickstartds/base/lib/link-button";
+import { Section } from "@kickstartds/base/lib/section";
+import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
+import { ContentBox } from "@kickstartds/base/lib/content-box";
+import { Headline } from "@kickstartds/base/lib/headline";
 import { Visual } from "@kickstartds/content/lib/visual";
 
 export const Welcome = () => (
@@ -124,15 +120,12 @@ export const Welcome = () => (
     </Section>
     <Section
       className="col-four"
-
       spaceAfter="small"
       spaceBefore="small"
       width="max"
     >
       <div>
-        <ContentBox
-          image="img/lightbulb.png"
-        />
+        <ContentBox image="img/lightbulb.png" />
         <Headline
           content="Need inspiration?"
           styleAs="h2"
@@ -196,11 +189,8 @@ export const Welcome = () => (
       spaceBefore="small"
       width="narrow"
     >
-      <div
-        align="center"
-      >
-
-        <LinkButton
+      <div align="center">
+        <Button
           className="no-stretch"
           href="https://www.kickstartds.com"
           label="... or learn more on our website"

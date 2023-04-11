@@ -1,6 +1,5 @@
-import React, { FC, HTMLAttributes } from "react";
+import React, { FC } from "react";
 import { Link } from "@kickstartds/base/lib/link";
-import { LinkButton } from "@kickstartds/base/lib/link-button";
 
 type GithubLinkProps = {};
 

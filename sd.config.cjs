@@ -1,27 +1,30 @@
-const path = require('path');
+const path = require("path");
 const StyleDictionary = require("style-dictionary");
-const { config } = require("@kickstartds/core/design-tokens");
+const { config } = require("@kickstartds/style-dictionary");
 
 module.exports = StyleDictionary.extend(config).extend({
   source: [
     "tokens/**/*.json",
-    path.join(path.dirname(require.resolve('@kickstartds/core/package.json')), 'source/design-tokens/icons/*.svg')
+    path.join(
+      path.dirname(require.resolve("@kickstartds/core/package.json")),
+      "source/design-tokens/icons/*.svg"
+    ),
   ],
   platforms: {
     css: {
-      buildPath: 'src/'
+      buildPath: "src/",
     },
     scss: {
-      buildPath: 'src/'
+      buildPath: "src/",
     },
     html: {
-      buildPath: 'src/'
+      buildPath: "src/",
     },
     jsx: {
-      buildPath: '.storybook/'
+      buildPath: ".storybook/",
     },
     storybook: {
-      buildPath: '.storybook/'
+      buildPath: ".storybook/",
     },
     js: {
       transforms: ["attribute/cti", "name/cti/pascal", "size/rem", "color/css"],

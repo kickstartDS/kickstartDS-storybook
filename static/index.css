@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 11 Apr 2023 09:10:17 GMT
+ * Generated on Tue, 11 Apr 2023 20:39:59 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -4843,7 +4843,7 @@ article .c-teaser .c-teaser__body {
 .c-teaser .c-button.c-button--large {
   --c-button--font: var(--ks-font-ui-m);
 }
-@container teaser-box size(min-width: 250px) {
+@container teaser-box (min-width: 250px) {
   .c-teaser {
     --c-teaser--border-width: var(--ks-border-width-emphasized);
   }
@@ -4860,7 +4860,7 @@ article .c-teaser .c-teaser__body {
     --c-button--font: var(--ks-font-ui-s);
   }
 }
-@container teaser-box size(min-width: 450px) {
+@container teaser-box (min-width: 450px) {
   .c-teaser .c-teaser__body {
     --g-topic--font: var(--ks-font-copy-m);
     --c-rich-text--font: var(--ks-font-copy-m);

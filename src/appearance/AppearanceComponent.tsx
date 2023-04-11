@@ -7,7 +7,6 @@ import { Section } from "@kickstartds/base/lib/section";
 import { Divider } from "@kickstartds/base/lib/divider";
 import { Headline } from "@kickstartds/base/lib/headline";
 
-import { LinkButton } from "../link-button/LinkButtonComponent";
 import { Button } from "../button/ButtonComponent";
 import { Related } from "../related/RelatedComponent";
 import { Person } from "../person/PersonComponent";
@@ -67,7 +66,7 @@ ${language}
               `}
               />
               <div>
-                <LinkButton
+                <Button
                   href={link}
                   label="Go to appearance"
                   deko={true}
@@ -157,7 +156,7 @@ ${language}
                 text={description}
               />
               <div>
-                <LinkButton
+                <Button
                   href={link}
                   label="Go to appearance"
                   variant="outline"
@@ -259,7 +258,7 @@ ${language}
             mode="list"
           >
             <Inline justify="center">
-              <LinkButton
+              <Button
                 variant="outline"
                 label="Appearances Overview"
                 href={overviewPage}

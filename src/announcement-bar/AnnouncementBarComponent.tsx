@@ -1,6 +1,6 @@
 import React from "react";
 import { Section } from "@kickstartds/base/lib/section";
-import { LinkButton } from "@kickstartds/base/lib/link-button";
+import { Button } from "@kickstartds/base/lib/button";
 import { useSessionState } from "../hooks/useSessionState";
 import { FC, HTMLAttributes } from "react";
 
@@ -62,7 +62,7 @@ export const AnnouncementBar: FC<AnnouncementBarProps> = ({
         {hidden ? (
           ""
         ) : (
-          <LinkButton
+          <Button
             label={linkLabel}
             href={linkHref}
             variant="solid"

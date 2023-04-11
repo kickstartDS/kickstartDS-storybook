@@ -13,7 +13,6 @@ import { Source } from "../source/SourceComponent";
 import { Button } from "../button/ButtonComponent";
 import { SourceSnippet } from "../source-snippet/SourceSnippetComponent";
 import { ConciergeProps as ConciergeSchemaProps } from "./ConciergeProps";
-import { LinkButton } from "@kickstartds/base";
 
 const defaultHandleResetPrompt = () => {
   return;
@@ -376,21 +375,21 @@ export const Concierge = forwardRef<
         }}
         width="wide"
       >
-        <LinkButton
+        <Button
           href="mailto:hello@kickstartDS.com"
           variant="solid"
           label="Send us an email!"
           size={"medium"}
           target="blank"
         />
-        <LinkButton
+        <Button
           variant="solid"
           label="Join our Discord community!"
           size={"medium"}
           href="https://discord.gg/mwKzD5gejY"
           target="blank"
         />
-        <LinkButton
+        <Button
           href="https://twitter.com/intent/follow?screen_name=kickstartDS"
           variant="solid"
           label="Follow us on Twitter!"

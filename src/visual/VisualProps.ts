@@ -5,8 +5,6 @@
  * and run `yarn run schema` to regenerate this file.
  */
 
-export type ButtonHighlightedStyle = boolean;
-export type ButtonDekoStyle = boolean;
 /**
  * Text used on button
  */
@@ -15,10 +13,15 @@ export type Label = string;
  * Choose one of the styles from the list
  */
 export type ButtonStyle = "solid" | "clear" | "outline";
+export type Inverted = boolean;
 /**
  * Choose a size between small, medium and large
  */
 export type ButtonSize = "small" | "medium" | "large";
+/**
+ * Link used for button
+ */
+export type ButtonHref = string;
 /**
  * Add additional css classes that should be applied to the button
  */
@@ -26,14 +29,9 @@ export type AdditionalClasses = string;
 export type IconIdentifier = string;
 export type AriaRole = string;
 export type AdditionalClass = string;
-/**
- * Display icon before the button text
- */
-export type IconBeforeButton = boolean;
-/**
- * Display icon after the button text
- */
-export type IconAfterButton = boolean;
+export type IconIdentifier1 = string;
+export type AriaRole1 = string;
+export type AdditionalClass1 = string;
 /**
  * Overwrite the data-component to use for rendering
  */
@@ -47,14 +45,25 @@ export type FillAnimation = boolean;
  */
 export type IconAnimation = boolean;
 /**
- * Link used for button
+ * Select the type attribute for the button
  */
-export type ButtonHref = string;
+export type TypeAttribute = "button" | "submit" | "reset";
+/**
+ * Define a value attribute for the button
+ */
+export type ValueAttribute = string;
+/**
+ * Define a name attribute for the button
+ */
+export type NameAttribute = string;
+/**
+ * Set the disabled attribute for the button
+ */
+export type DisabledAttribute = boolean;
 /**
  * Open link in new Tab
  */
 export type OpenLinkInNewTab = boolean;
-export type Inverted = boolean;
 /**
  * Toggles visibility of the box
  */
@@ -107,25 +116,25 @@ export type ButtonStyle1 = "solid" | "clear" | "outline";
  * Text used on button
  */
 export type Label1 = string;
+export type Inverted1 = boolean;
 /**
  * Choose a size between small, medium and large
  */
 export type ButtonSize1 = "small" | "medium" | "large";
 /**
+ * Link used for button
+ */
+export type ButtonHref1 = string;
+/**
  * Add additional css classes that should be applied to the button
  */
 export type AdditionalClasses2 = string;
-export type IconIdentifier1 = string;
-export type AriaRole1 = string;
-export type AdditionalClass1 = string;
-/**
- * Display icon before the button text
- */
-export type IconBeforeButton1 = boolean;
-/**
- * Display icon after the button text
- */
-export type IconAfterButton1 = boolean;
+export type IconIdentifier2 = string;
+export type AriaRole2 = string;
+export type AdditionalClass2 = string;
+export type IconIdentifier3 = string;
+export type AriaRole3 = string;
+export type AdditionalClass3 = string;
 /**
  * Overwrite the data-component to use for rendering
  */
@@ -139,14 +148,25 @@ export type FillAnimation1 = boolean;
  */
 export type IconAnimation1 = boolean;
 /**
- * Link used for button
+ * Select the type attribute for the button
  */
-export type ButtonHref1 = string;
+export type TypeAttribute1 = "button" | "submit" | "reset";
+/**
+ * Define a value attribute for the button
+ */
+export type ValueAttribute1 = string;
+/**
+ * Define a name attribute for the button
+ */
+export type NameAttribute1 = string;
+/**
+ * Set the disabled attribute for the button
+ */
+export type DisabledAttribute1 = boolean;
 /**
  * Open link in new Tab
  */
 export type OpenLinkInNewTab1 = boolean;
-export type Inverted1 = boolean;
 /**
  * The text box is aligned inside the content grid
  */
@@ -240,7 +260,7 @@ export interface VisualProps {
  * Content and style configuration for the text box
  */
 export interface TextBox {
-  links?: LinkButton[];
+  links?: Button[];
   enabled?: DisplayBox;
   headline?: Headline;
   text?: Text1;
@@ -252,32 +272,42 @@ export interface TextBox {
   inverted?: Inverted2;
 }
 /**
- * link-button
+ * Component to display links and call-to-actions
  */
-export interface LinkButton {
-  highlighted?: ButtonHighlightedStyle;
-  deko?: ButtonDekoStyle;
+export interface Button {
   label: Label;
   variant: ButtonStyle;
+  inverted?: Inverted;
   size: ButtonSize;
+  href?: ButtonHref;
   className?: AdditionalClasses;
-  icon?: Icon;
   iconBefore?: IconBeforeButton;
   iconAfter?: IconAfterButton;
   dataComponent?: DataComponentAttribute;
   fillAnimation?: FillAnimation;
   iconAnimation?: IconAnimation;
-  href: ButtonHref;
+  type?: TypeAttribute;
+  value?: ValueAttribute;
+  name?: NameAttribute;
+  disabled?: DisabledAttribute;
   newTab?: OpenLinkInNewTab;
-  inverted?: Inverted;
 }
 /**
- * Icon
+ * Icon identifier for icon before the button text
  */
-export interface Icon {
-  icon?: IconIdentifier;
+export interface IconBeforeButton {
+  icon: IconIdentifier;
   role?: AriaRole;
   className?: AdditionalClass;
+  [k: string]: unknown;
+}
+/**
+ * Icon identifier for icon after the button text
+ */
+export interface IconAfterButton {
+  icon: IconIdentifier1;
+  role?: AriaRole1;
+  className?: AdditionalClass1;
   [k: string]: unknown;
 }
 /**
@@ -301,25 +331,37 @@ export interface Link {
   enabled?: DisplayLink;
   variant: ButtonStyle1;
   label: Label1;
+  inverted?: Inverted1;
   size: ButtonSize1;
+  href?: ButtonHref1;
   className?: AdditionalClasses2;
-  icon?: Icon1;
   iconBefore?: IconBeforeButton1;
   iconAfter?: IconAfterButton1;
   dataComponent?: DataComponentAttribute1;
   fillAnimation?: FillAnimation1;
   iconAnimation?: IconAnimation1;
-  href: ButtonHref1;
+  type?: TypeAttribute1;
+  value?: ValueAttribute1;
+  name?: NameAttribute1;
+  disabled?: DisabledAttribute1;
   newTab?: OpenLinkInNewTab1;
-  inverted?: Inverted1;
 }
 /**
- * Icon
+ * Icon identifier for icon before the button text
  */
-export interface Icon1 {
-  icon?: IconIdentifier1;
-  role?: AriaRole1;
-  className?: AdditionalClass1;
+export interface IconBeforeButton1 {
+  icon: IconIdentifier2;
+  role?: AriaRole2;
+  className?: AdditionalClass2;
+  [k: string]: unknown;
+}
+/**
+ * Icon identifier for icon after the button text
+ */
+export interface IconAfterButton1 {
+  icon: IconIdentifier3;
+  role?: AriaRole3;
+  className?: AdditionalClass3;
   [k: string]: unknown;
 }
 /**

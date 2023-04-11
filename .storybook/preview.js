@@ -12,8 +12,6 @@ import { IconSprite } from "../src/icon-sprite/IconSpriteComponent";
 import Providers from "../src/Providers";
 import { LinkProvider } from "../docs/LinkProvider";
 
-import { LightBox } from "@kickstartds/base/lib/lightbox";
-
 const myActions = actions("radio");
 window.rm.radio.on("*", myActions.radio);
 
@@ -72,7 +70,6 @@ export const decorators = [
     <>
       <IconSprite />
       <Story />
-      <LightBox />
     </>
   ),
 ];

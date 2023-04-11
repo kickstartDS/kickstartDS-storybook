@@ -12,7 +12,6 @@ import { Quote } from "@kickstartds/content/lib/quote";
 import { Visual } from "@kickstartds/content/lib/visual";
 
 import { Button } from "../button/ButtonComponent";
-import { LinkButton } from "../link-button/LinkButtonComponent";
 import { Related } from "../related/RelatedComponent";
 
 import { ShowcaseProps } from "./ShowcaseProps";
@@ -56,7 +55,7 @@ export const Showcase: FunctionComponent<
 
         <RichText text={summary} />
         <div>
-          <LinkButton
+          <Button
             label="Visit showcase"
             variant="solid"
             href={link}
@@ -155,7 +154,7 @@ export const Showcase: FunctionComponent<
             </div>
 
             <div>
-              <LinkButton
+              <Button
                 label="Visit showcase"
                 variant="outline"
                 href={link}
@@ -255,7 +254,7 @@ export const Showcase: FunctionComponent<
           width="wide"
         >
           <Inline justify="center">
-            <LinkButton
+            <Button
               href={overviewPage}
               variant="outline"
               label="Showcases Overview"

@@ -5,8 +5,8 @@ import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Section } from "@kickstartds/base/lib/section";
 
 import { GlossaryProps } from "./GlossaryProps";
-import { LinkButton } from "../link-button/LinkButtonComponent";
-import { Headline, Button, Divider } from "@kickstartds/base";
+import { Button } from "../button/ButtonComponent";
+import { Headline } from "@kickstartds/base/lib/headline";
 import { Inline, Stack } from "@bedrock-layout/primitives";
 import { Related } from "../related/RelatedComponent";
 
@@ -112,13 +112,14 @@ export const Glossary: FunctionComponent<
       }}
     >
       <div>
-        <LinkButton
+        <Button
           label={"Go to StackShare.io"}
           variant="solid"
           size={"medium"}
           highlighted
           href={stackshare}
           iconAfter
+          target="_blank"
           icon={{
             icon: "stackshare",
           }}

@@ -31,14 +31,9 @@ export type AdditionalClasses = string;
 export type IconIdentifier = string;
 export type AriaRole = string;
 export type AdditionalClass = string;
-/**
- * Display icon before the button text
- */
-export type IconBeforeButton = boolean;
-/**
- * Display icon after the button text
- */
-export type IconAfterButton = boolean;
+export type IconIdentifier1 = string;
+export type AriaRole1 = string;
+export type AdditionalClass1 = string;
 /**
  * Overwrite the data-component to use for rendering
  */
@@ -67,6 +62,10 @@ export type NameAttribute = string;
  * Set the disabled attribute for the button
  */
 export type DisabledAttribute = boolean;
+/**
+ * Open link in new Tab
+ */
+export type OpenLinkInNewTab = boolean;
 
 /**
  * Component to display links and call-to-actions
@@ -80,7 +79,6 @@ export interface ButtonProps {
   inverted?: Inverted;
   size: ButtonSize;
   className?: AdditionalClasses;
-  icon?: Icon;
   iconBefore?: IconBeforeButton;
   iconAfter?: IconAfterButton;
   dataComponent?: DataComponentAttribute;
@@ -90,13 +88,23 @@ export interface ButtonProps {
   value?: ValueAttribute;
   name?: NameAttribute;
   disabled?: DisabledAttribute;
+  newTab?: OpenLinkInNewTab;
 }
 /**
- * Icon
+ * Icon identifier for icon before the button text
  */
-export interface Icon {
-  icon?: IconIdentifier;
+export interface IconBeforeButton {
+  icon: IconIdentifier;
   role?: AriaRole;
   className?: AdditionalClass;
+  [k: string]: unknown;
+}
+/**
+ * Icon identifier for icon after the button text
+ */
+export interface IconAfterButton {
+  icon: IconIdentifier1;
+  role?: AriaRole1;
+  className?: AdditionalClass1;
   [k: string]: unknown;
 }

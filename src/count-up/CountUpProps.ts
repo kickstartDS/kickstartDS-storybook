@@ -32,10 +32,15 @@ export type Label = string;
  * Choose one of the styles from the list
  */
 export type ButtonStyle = "solid" | "clear" | "outline";
+export type Inverted = boolean;
 /**
  * Choose a size between small, medium and large
  */
 export type ButtonSize = "small" | "medium" | "large";
+/**
+ * Link used for button
+ */
+export type ButtonHref = string;
 /**
  * Add additional css classes that should be applied to the button
  */
@@ -43,14 +48,9 @@ export type AdditionalClasses = string;
 export type IconIdentifier1 = string;
 export type AriaRole1 = string;
 export type AdditionalClass1 = string;
-/**
- * Display icon before the button text
- */
-export type IconBeforeButton = boolean;
-/**
- * Display icon after the button text
- */
-export type IconAfterButton = boolean;
+export type IconIdentifier2 = string;
+export type AriaRole2 = string;
+export type AdditionalClass2 = string;
 /**
  * Overwrite the data-component to use for rendering
  */
@@ -64,14 +64,25 @@ export type FillAnimation = boolean;
  */
 export type IconAnimation = boolean;
 /**
- * Link used for button
+ * Select the type attribute for the button
  */
-export type ButtonHref = string;
+export type TypeAttribute = "button" | "submit" | "reset";
+/**
+ * Define a value attribute for the button
+ */
+export type ValueAttribute = string;
+/**
+ * Define a name attribute for the button
+ */
+export type NameAttribute = string;
+/**
+ * Set the disabled attribute for the button
+ */
+export type DisabledAttribute = boolean;
 /**
  * Open link in new Tab
  */
 export type OpenLinkInNewTab = boolean;
-export type Inverted = boolean;
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -98,36 +109,48 @@ export interface CountUpProps {
  * Icon
  */
 export interface Icon {
-  icon?: IconIdentifier;
+  icon: IconIdentifier;
   role?: AriaRole;
   className?: AdditionalClass;
   [k: string]: unknown;
 }
 /**
- * link-button
+ * Component to display links and call-to-actions
  */
 export interface Link {
   enabled?: DisplayLink;
   label: Label;
   variant: ButtonStyle;
+  inverted?: Inverted;
   size: ButtonSize;
+  href?: ButtonHref;
   className?: AdditionalClasses;
-  icon?: Icon1;
   iconBefore?: IconBeforeButton;
   iconAfter?: IconAfterButton;
   dataComponent?: DataComponentAttribute;
   fillAnimation?: FillAnimation;
   iconAnimation?: IconAnimation;
-  href: ButtonHref;
+  type?: TypeAttribute;
+  value?: ValueAttribute;
+  name?: NameAttribute;
+  disabled?: DisabledAttribute;
   newTab?: OpenLinkInNewTab;
-  inverted?: Inverted;
 }
 /**
- * Icon
+ * Icon identifier for icon before the button text
  */
-export interface Icon1 {
-  icon?: IconIdentifier1;
+export interface IconBeforeButton {
+  icon: IconIdentifier1;
   role?: AriaRole1;
   className?: AdditionalClass1;
+  [k: string]: unknown;
+}
+/**
+ * Icon identifier for icon after the button text
+ */
+export interface IconAfterButton {
+  icon: IconIdentifier2;
+  role?: AriaRole2;
+  className?: AdditionalClass2;
   [k: string]: unknown;
 }

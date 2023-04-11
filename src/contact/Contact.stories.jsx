@@ -1,8 +1,8 @@
 import { pack } from "@kickstartds/core/lib/storybook/helpers";
 import contactStories, {
   Template,
-} from "@kickstartds/content/lib/contact/contact.stories";
-import schema from "@kickstartds/content/lib/contact/contact.schema.dereffed.json";
+} from "@kickstartds/base/lib/contact/contact.stories";
+import schema from "@kickstartds/base/lib/contact/contact.schema.dereffed.json";
 
 export default {
   ...contactStories,
