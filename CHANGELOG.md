@@ -1,3 +1,16 @@
+# v2.4.17 (Tue Apr 11 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat(sources): adjust source & source snippet component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.4.16 (Mon Apr 10 2023)
 
 #### ⚠️ Pushed to `master`
