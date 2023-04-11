@@ -2522,14 +2522,14 @@
 }
 .c-form-field--concierge .c-form-field__label {
   --corner-height: 5px;
-  --c-form-field-label--color: var(--ks-text-color-primary);
-  text-shadow: 0 0 5px var(--ks-color-primary-alpha-6);
+  --c-form-field-label--color: var(--ks-text-color-primary-inverted);
+  box-shadow: 0 0 10px var(--ks-color-fg-alpha-6);
   color: var(--c-form-field-label--color);
   display: block;
   text-align: left;
   width: 24em;
   padding: 0.5rem 1rem;
-  background: var(--ks-color-primary-inverted);
+  background: var(--ks-color-fg);
 }
 
 .github-corner {
@@ -3723,16 +3723,15 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 .source-snippet-menu span {
   text-align: center;
 }
-.source-snippet-menu--concierge {
+.source-snippet-menu--concierge span {
+  box-shadow: 0 0 10px var(--ks-color-fg-alpha-6);
+  color: var(--ks-text-color-primary-inverted);
+  padding: var(--ks-spacing-inset-xs);
+  background: var(--ks-color-fg);
   display: flex;
-  flex-direction: column;
-  gap: var(--ks-spacing-inline-s);
-  margin-bottom: var(--ks-spacing-stack-xs);
-}
-@media (min-width: 40.01em) {
-  .source-snippet-menu--avatar {
-    transform: translateX(-5%);
-  }
+  justify-content: center;
+  align-items: center;
+  margin-top: -2%;
 }
 @media (max-width: 39.99em) {
   .source-snippet-menu--avatar {
