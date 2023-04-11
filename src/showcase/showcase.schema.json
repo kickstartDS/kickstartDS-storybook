@@ -20,6 +20,7 @@
     "summary": {
       "title": "Short summary of the showcase",
       "type": "string",
+      "format": "markdown",
       "default": "encore as a German utility company supports their customers with modern, cloud-based software solutions, and a wide spectrum of services around their business.",
       "description": "Title that should be shown for this appearance"
     },
@@ -111,9 +112,28 @@
       "description": "Entries related to this appearance entry",
       "type": "array",
       "items": {
-        "$ref": "http://kickstartds.com/related.schema.json"
+        "allOf": [
+          {
+            "type": "object",
+            "properties": {
+              "typeLabel": {
+                "default": "Showcase"
+              }
+            }
+          },
+          {
+            "$ref": "http://kickstartds.com/related.schema.json"
+          }
+        ]
       }
+    },
+    "overviewPage": {
+      "title": "Overview page",
+      "description": "Overview page for all showcase entries",
+      "type": "string",
+      "format": "uri",
+      "default": "https://www.kickstartDS.com/appearances"
     }
   },
-  "required": ["link", "title", "description", "cover"]
+  "required": ["link", "title", "description", "cover", "overviewPage"]
 }

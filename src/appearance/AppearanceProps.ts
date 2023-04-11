@@ -90,6 +90,10 @@ export type CaptionForTheImage = string;
  */
 export type Media = MediaAsset[];
 /**
+ * Type of content that is being teased
+ */
+export type Type = string;
+/**
  * Title of the related appearance
  */
 export type Title1 = string;
@@ -101,10 +105,6 @@ export type Excerpt = string;
  * Url for the related appearance
  */
 export type Url1 = string;
-/**
- * Type of content that is being teased
- */
-export type Type = string;
 /**
  * Image for the related appearance
  */
@@ -121,6 +121,10 @@ export type Tags1 = Tag1[];
  * Entries related to this appearance entry
  */
 export type RelatedEntries = Related[];
+/**
+ * Overview page for all appearance entries
+ */
+export type OverviewPage = string;
 
 /**
  * Display one appearance entry with all its details
@@ -137,6 +141,7 @@ export interface AppearanceProps {
   cover: CoverImage;
   media?: Media;
   related?: RelatedEntries;
+  overviewPage: OverviewPage;
   [k: string]: unknown;
 }
 /**
@@ -179,10 +184,10 @@ export interface MediaAsset {
  * A preview of contextually relevant content
  */
 export interface Related {
+  typeLabel?: Type;
   title: Title1;
   excerpt: Excerpt;
   url: Url1;
-  type?: Type;
   image: Image;
   tags?: Tags1;
   [k: string]: unknown;

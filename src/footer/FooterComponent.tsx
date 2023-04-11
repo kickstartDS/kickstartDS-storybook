@@ -2,7 +2,6 @@ import React, { FunctionComponent, HTMLAttributes } from "react";
 
 import { Link } from "@kickstartds/base/lib/link";
 import { Section } from "@kickstartds/base/lib/section";
-import { Subscription } from "../subscription/SubscriptionComponent";
 
 import { FooterProps } from "./FooterProps";
 import { Logo } from "../logo/LogoComponent";

@@ -4680,6 +4680,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 700;
 }
 .kds-related--topic-wrapper {
   display: block;

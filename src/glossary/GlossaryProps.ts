@@ -42,21 +42,25 @@ export type Tag = string;
  */
 export type Tags = Tag[];
 /**
- * Entries related to this glossary entry
+ * Type of content that is being teased
  */
-export type RelatedEntries =
-  | []
-  | [RelatedEntry]
-  | [RelatedEntry, RelatedEntry]
-  | [RelatedEntry, RelatedEntry, RelatedEntry];
+export type Type = string;
 /**
- * Title of the related term
+ * Title of the related appearance
  */
 export type Title = string;
 /**
- * Excerpt for the related term
+ * Excerpt for the related appearance
  */
 export type Excerpt = string;
+/**
+ * Url for the related appearance
+ */
+export type Url = string;
+/**
+ * Image for the related appearance
+ */
+export type Image = string;
 /**
  * Name of the tag
  */
@@ -66,17 +70,9 @@ export type Tag1 = string;
  */
 export type Tags1 = Tag1[];
 /**
- * Type of content that is being teased
+ * Entries related to this glossary entry
  */
-export type Type = "Showcase" | "Blog" | "Appearance" | "Glossary";
-/**
- * Url for the related term
- */
-export type Url = string;
-/**
- * Image for the related term
- */
-export type Image = string;
+export type RelatedEntries = Related[];
 /**
  * Link to the related StacKShare discussion
  */
@@ -112,14 +108,14 @@ export interface MediaAsset {
   [k: string]: unknown;
 }
 /**
- * Single related entry
+ * A preview of contextually relevant content
  */
-export interface RelatedEntry {
-  title?: Title;
-  excerpt?: Excerpt;
+export interface Related {
+  typeLabel?: Type;
+  title: Title;
+  excerpt: Excerpt;
+  url: Url;
+  image: Image;
   tags?: Tags1;
-  type?: Type;
-  url?: Url;
-  image?: Image;
   [k: string]: unknown;
 }

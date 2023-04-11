@@ -1,3 +1,175 @@
+# v2.4.16 (Mon Apr 10 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: Concierge image url for production use ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.15 (Sun Apr 09 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: align Glossary, Showcases and Appearances ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.14 (Sun Apr 09 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: z-index on related type labels ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.13 (Sun Apr 09 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: rename type to typeLabel in showcase related ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.12 (Sun Apr 09 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add markdown format to showcase texts ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.11 (Sat Apr 08 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: potentially undefined quote ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.10 (Sat Apr 08 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: open links on Showcases in new tab ([@julrich](https://github.com/julrich))
+- fix: add overviewPage property to Showcase ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.9 (Sat Apr 08 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: Overview button of appearance ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.8 (Sat Apr 08 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add overview url for appearance entries ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.7 (Sat Apr 08 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: renaming of type to typeLabel in Related ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.6 (Sat Apr 08 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: rename Related type to typeLabel ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.5 (Sat Apr 08 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add image format to avatar ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.4 (Fri Apr 07 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add another open in new tab to appearance ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.3 (Fri Apr 07 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: make appearance CTA open in new tab ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.2 (Mon Apr 03 2023)
 
 #### ⚠️ Pushed to `master`

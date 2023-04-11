@@ -1,24 +1,20 @@
-import { FunctionComponent, HTMLAttributes } from "react";
+import React, { FunctionComponent, HTMLAttributes } from "react";
 
-import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
-import { Section } from "@kickstartds/base/lib/section";
-import { ContentBox } from "@kickstartds/base/lib/content-box";
+import { Picture } from "@kickstartds/base/lib/picture";
+import { RichText } from "@kickstartds/base/lib/rich-text";
 
 import { RelatedProps } from "./RelatedProps";
-import { LinkButton } from "../link-button/LinkButtonComponent";
-import React from "react";
-import { Button, Picture, RichText } from "@kickstartds/base";
 
 export const Related: FunctionComponent<
   RelatedProps & HTMLAttributes<HTMLDivElement>
-> = ({ url, title, excerpt, image, tags, type, ...props }) => {
+> = ({ url, title, excerpt, image, tags, typeLabel, ...props }) => {
   return (
     <a href={url} className="kds-related">
       <div className="kds-related--image-wrapper">
-        {type ? (
+        {typeLabel ? (
           <>
-            <span className="kds-related--type">{type}</span>
+            <span className="kds-related--type">{typeLabel}</span>
           </>
         ) : (
           ""

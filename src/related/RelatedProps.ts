@@ -41,7 +41,7 @@ export interface RelatedProps {
   title: Title;
   excerpt: Excerpt;
   url: Url;
-  type?: Type;
+  typeLabel?: Type;
   image: Image;
   tags?: Tags;
   [k: string]: unknown;

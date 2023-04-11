@@ -1,16 +1,18 @@
-import { FunctionComponent, HTMLAttributes } from "react";
+import React, { FunctionComponent, HTMLAttributes } from "react";
 import { Stack, Inline } from "@bedrock-layout/primitives";
 
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Section } from "@kickstartds/base/lib/section";
+import { Divider } from "@kickstartds/base/lib/divider";
+import { Headline } from "@kickstartds/base/lib/headline";
 
-import { AppearanceProps } from "./AppearanceProps";
 import { LinkButton } from "../link-button/LinkButtonComponent";
-import { Divider, Headline, Picture, TeaserBox } from "@kickstartds/base";
 import { Button } from "../button/ButtonComponent";
 import { Related } from "../related/RelatedComponent";
 import { Person } from "../person/PersonComponent";
+
+import { AppearanceProps } from "./AppearanceProps";
 
 export const Appearance: FunctionComponent<
   AppearanceProps & HTMLAttributes<HTMLDivElement>
@@ -26,6 +28,7 @@ export const Appearance: FunctionComponent<
   media,
   tags,
   related,
+  overviewPage,
   ...props
 }) => {
   return (
@@ -71,6 +74,7 @@ ${language}
                   variant="solid"
                   size="medium"
                   iconAfter
+                  target="_blank"
                   icon={{
                     icon: "chevron-right",
                   }}
@@ -158,6 +162,7 @@ ${language}
                   label="Go to appearance"
                   variant="outline"
                   size="medium"
+                  target="_blank"
                   iconAfter
                   icon={{
                     icon: "chevron-right",
@@ -238,7 +243,7 @@ ${language}
                   url={item.url}
                   excerpt={item.excerpt}
                   title={item.title}
-                  type={item.type}
+                  typeLabel={item.typeLabel}
                   tags={item.tags}
                   key={i}
                 />
@@ -254,9 +259,10 @@ ${language}
             mode="list"
           >
             <Inline justify="center">
-              <Button
+              <LinkButton
                 variant="outline"
                 label="Appearances Overview"
+                href={overviewPage}
                 iconAfter
                 icon={{
                   icon: "chevron-right",

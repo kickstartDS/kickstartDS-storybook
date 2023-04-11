@@ -127,8 +127,27 @@
       "description": "Entries related to this appearance entry",
       "type": "array",
       "items": {
-        "$ref": "http://kickstartds.com/related.schema.json"
+        "allOf": [
+          {
+            "type": "object",
+            "properties": {
+              "typeLabel": {
+                "default": "Appearance"
+              }
+            }
+          },
+          {
+            "$ref": "http://kickstartds.com/related.schema.json"
+          }
+        ]
       }
+    },
+    "overviewPage": {
+      "title": "Overview page",
+      "description": "Overview page for all appearance entries",
+      "type": "string",
+      "format": "uri",
+      "default": "https://www.kickstartDS.com/appearances"
     }
   },
   "required": [
@@ -138,6 +157,7 @@
     "cover",
     "host",
     "participants",
-    "date"
+    "date",
+    "overviewPage"
   ]
 }
