@@ -1,7 +1,7 @@
 {
   "name": "@kickstartds/design-system",
   "version": "2.4.20",
-  "author": "ruhmesmeile GmbH <mail@ruhmesmeile.com> (https://ruhmesmeile.com)",
+  "author": "Jonas Ulrich <jonas.ulrich@kickstartds.com> (https://www.kickstartDS.com/)",
   "homepage": "https://ruhmesmeile.com",
   "license": "SEE LICENSE IN LICENSE",
   "main": "dist/index.js",
