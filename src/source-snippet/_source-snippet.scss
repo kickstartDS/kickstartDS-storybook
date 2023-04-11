@@ -77,17 +77,19 @@
   }
 
   &--concierge {
-    display: flex;
-    flex-direction: column;
-    gap: var(--ks-spacing-inline-s);
-    margin-bottom: var(--ks-spacing-stack-xs);
+    span {
+      box-shadow: 0 0 10px var(--ks-color-fg-alpha-6);
+      color: var(--ks-text-color-primary-inverted);
+      padding: var(--ks-spacing-inset-xs);
+      background: var(--ks-color-fg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -2%;
+    }
   }
 
   &--avatar {
-    @include breakpoint.media(">s") {
-      transform: translateX(-5%);
-    }
-
     @include breakpoint.media("<s") {
       max-width: 35%;
     }
