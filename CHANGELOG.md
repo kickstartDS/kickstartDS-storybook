@@ -1,3 +1,15 @@
+# v2.4.18 (Tue Apr 11 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: use inverted not darkStyle in Teaser Box ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.17 (Tue Apr 11 2023)
 
 #### ⚠️ Pushed to `master`
