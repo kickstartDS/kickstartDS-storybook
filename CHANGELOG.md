@@ -1,3 +1,16 @@
+# v2.4.19 (Tue Apr 11 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: fix images, add some status checks ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.18 (Tue Apr 11 2023)
 
 #### ⚠️ Pushed to `master`
