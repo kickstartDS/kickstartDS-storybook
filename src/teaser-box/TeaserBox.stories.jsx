@@ -49,7 +49,7 @@ DarkStyle.args = pack({
       icon: "chevron-right",
     },
   },
-  darkStyle: true,
+  inverted: true,
 });
 
 export const ImageSpacing = Template.bind({});
@@ -57,7 +57,7 @@ ImageSpacing.args = pack({
   ...LinkedWithoutButton.args,
   imageSpacing: true,
   image: "img/blog/storybook-dark.svg",
-  darkStyle: true,
+  inverted: true,
   link: {
     variant: "clear",
     label: "learn more",
