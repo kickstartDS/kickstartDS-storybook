@@ -118,11 +118,10 @@ export const Glossary: FunctionComponent<
           size={"medium"}
           highlighted
           href={stackshare}
-          iconAfter
-          target="_blank"
-          icon={{
+          iconAfter={{
             icon: "stackshare",
           }}
+          newTab
         />
       </div>
     </Section>

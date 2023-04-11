@@ -380,21 +380,21 @@ export const Concierge = forwardRef<
           variant="solid"
           label="Send us an email!"
           size={"medium"}
-          target="blank"
+          newTab
         />
         <Button
           variant="solid"
           label="Join our Discord community!"
           size={"medium"}
           href="https://discord.gg/mwKzD5gejY"
-          target="blank"
+          newTab
         />
         <Button
           href="https://twitter.com/intent/follow?screen_name=kickstartDS"
           variant="solid"
           label="Follow us on Twitter!"
           size={"medium"}
-          target="blank"
+          newTab
         />
       </Section>
     </div>

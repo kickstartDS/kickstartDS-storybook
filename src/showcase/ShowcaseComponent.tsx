@@ -59,14 +59,12 @@ export const Showcase: FunctionComponent<
             label="Visit showcase"
             variant="solid"
             href={link}
-            iconAfter
-            icon={{
+            iconAfter={{
               icon: "chevron-right",
-              iconAfter: true,
             }}
             highlighted
             deko
-            target="_blank"
+            newTab
             size="medium"
           />
         </div>
@@ -158,13 +156,11 @@ export const Showcase: FunctionComponent<
                 label="Visit showcase"
                 variant="outline"
                 href={link}
-                iconAfter
-                target="_blank"
-                size="medium"
-                icon={{
+                iconAfter={{
                   icon: "chevron-right",
-                  iconAfter: true,
                 }}
+                newTab
+                size="medium"
               />
             </div>
           </Stack>
@@ -210,8 +206,7 @@ export const Showcase: FunctionComponent<
           size="large"
           deko
           highlighted
-          iconAfter
-          icon={{
+          iconAfter={{
             icon: "chevron-right",
           }}
         />
@@ -258,8 +253,7 @@ export const Showcase: FunctionComponent<
               href={overviewPage}
               variant="outline"
               label="Showcases Overview"
-              iconAfter
-              icon={{
+              iconAfter={{
                 icon: "chevron-right",
               }}
               size="large"

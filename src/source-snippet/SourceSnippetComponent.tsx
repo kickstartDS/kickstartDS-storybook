@@ -19,8 +19,7 @@ export const SourceSnippet: FunctionComponent<
           href={link}
           variant={"clear"}
           size={"small"}
-          iconAfter
-          icon={{
+          iconAfter={{
             icon: "chevron-down",
           }}
         />

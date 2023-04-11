@@ -52,12 +52,11 @@ export const Source: FunctionComponent<
               label={"Visit Source"}
               variant={"clear"}
               size={"medium"}
-              iconAfter
-              newTab
-              href={url}
-              icon={{
+              iconAfter={{
                 icon: "chevron-right",
               }}
+              newTab
+              href={url}
             />
           </div>
         </div>

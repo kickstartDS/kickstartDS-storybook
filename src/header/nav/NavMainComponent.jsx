@@ -36,7 +36,7 @@ export const NavMain = ({ activeEntry, dark, navEntries = [], cta }) => (
           <Button
             className="nav-main--button"
             size="small"
-            icon={{
+            iconAfter={{
               icon: "chevron-right",
             }}
             {...cta}

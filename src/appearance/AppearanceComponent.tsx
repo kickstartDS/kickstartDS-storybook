@@ -72,11 +72,10 @@ ${language}
                   deko={true}
                   variant="solid"
                   size="medium"
-                  iconAfter
-                  target="_blank"
-                  icon={{
+                  iconAfter={{
                     icon: "chevron-right",
                   }}
+                  newTab
                 />
               </div>
             </div>
@@ -161,9 +160,8 @@ ${language}
                   label="Go to appearance"
                   variant="outline"
                   size="medium"
-                  target="_blank"
-                  iconAfter
-                  icon={{
+                  newTab
+                  iconAfter={{
                     icon: "chevron-right",
                   }}
                 />
@@ -214,8 +212,7 @@ ${language}
             size="large"
             deko
             highlighted
-            iconAfter
-            icon={{
+            iconAfter={{
               icon: "chevron-right",
             }}
           />
@@ -262,8 +259,7 @@ ${language}
                 variant="outline"
                 label="Appearances Overview"
                 href={overviewPage}
-                iconAfter
-                icon={{
+                iconAfter={{
                   icon: "chevron-right",
                 }}
                 size="large"

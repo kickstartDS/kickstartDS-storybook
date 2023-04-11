@@ -5,10 +5,6 @@
  * and run `yarn run schema` to regenerate this file.
  */
 
-/**
- * Link used for button
- */
-export type ButtonHref = string;
 export type ButtonHighlightedStyle = boolean;
 export type ButtonDekoStyle = boolean;
 /**
@@ -24,6 +20,10 @@ export type Inverted = boolean;
  * Choose a size between small, medium and large
  */
 export type ButtonSize = "small" | "medium" | "large";
+/**
+ * Link used for button
+ */
+export type ButtonHref = string;
 /**
  * Add additional css classes that should be applied to the button
  */
@@ -71,13 +71,13 @@ export type OpenLinkInNewTab = boolean;
  * Component to display links and call-to-actions
  */
 export interface ButtonProps {
-  href?: ButtonHref;
   highlighted?: ButtonHighlightedStyle;
   deko?: ButtonDekoStyle;
   label: Label;
   variant: ButtonStyle;
   inverted?: Inverted;
   size: ButtonSize;
+  href?: ButtonHref;
   className?: AdditionalClasses;
   iconBefore?: IconBeforeButton;
   iconAfter?: IconAfterButton;
