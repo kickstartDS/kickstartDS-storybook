@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 03 Apr 2023 10:50:30 GMT
+ * Generated on Tue, 11 Apr 2023 04:14:11 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -3578,6 +3578,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   flex-direction: column;
   gap: var(--ks-spacing-stack-s);
 }
+.c-source .c-collapsible-box__header__text {
+  overflow: hidden;
+}
 .c-source .c-button--wrapper {
   width: fit-content;
 }
@@ -3585,7 +3588,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   font: var(--ks-font-copy-s);
 }
 .c-source__relevance {
+  display: block;
   font-weight: var(--ks-font-weight-bold);
+  margin-bottom: var(--ks-spacing-stack-xs);
 }
 .c-source__content {
   position: relative;
@@ -3625,11 +3630,22 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   flex-direction: column;
   flex: 1 1;
   width: 100%;
-  gap: var(--ks-spacing-stack-s);
+}
+.c-source__section {
+  padding: var(--ks-spacing-stack-s) 0;
+  border-bottom: 1px solid var(--ks-border-color-interface-interactive);
+}
+.c-source__section:last-of-type {
+  border-bottom: 0;
 }
 .c-source__head {
   display: flex;
   flex-direction: column;
+}
+.c-source__head > span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .c-source__title {
   font-weight: var(--ks-font-weight-semi-bold);
@@ -3648,6 +3664,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   --c-teaser--background-hover: var(--ks-color-primary-inverted-alpha-5);
 }
 
+.c-teaser.c-source-snippet:hover .c-button.c-button--clear {
+  --c-button--color: var(--c-button--color-hover);
+}
 .c-teaser.c-source-snippet .c-teaser__body {
   flex-direction: column;
 }
@@ -3657,6 +3676,19 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 .c-teaser.c-source-snippet .c-teaser__body .c-rich-text {
   color: var(--ks-text-color-interface);
   font: var(--c-rich-text--font);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ks-spacing-s);
+}
+.c-teaser.c-source-snippet .c-teaser__body .c-rich-text .c-button--wrapper {
+  margin-left: auto;
+}
+.c-teaser.c-source-snippet .c-teaser__body .c-rich-text .c-button--wrapper .c-button.c-button--clear {
+  --c-button--background-color-hover: transparent;
+  background: transparent;
+  padding: 0;
 }
 .c-teaser.c-source-snippet--mobile.c-teaser.c-teaser-box {
   flex-direction: row;

@@ -64,7 +64,7 @@ export const Concierge = forwardRef<
                 />
               </div>
             )}
-            subheadline="Ask anything and get pointed the right way 👇"
+            subheadline="Ask anything and get pointed the right way"
           />
         </div>
       </Section>
@@ -254,7 +254,7 @@ export const Concierge = forwardRef<
                       src="img/concierge/concierge-sources.svg"
                     />
                   </div>
-                  <span>Relevant sources 👇</span>
+                  <span>Relevant sources</span>
                 </div>
                 {sources &&
                   sources.length > 0 &&

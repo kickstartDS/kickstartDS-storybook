@@ -2,6 +2,12 @@
 @use "../breakpoint";
 
 .c-teaser.c-source-snippet {
+  &:hover {
+    .c-button.c-button--clear {
+      --c-button--color: var(--c-button--color-hover);
+    }
+  }
+
   .c-teaser__body {
     flex-direction: column;
     .c-teaser__topic {
@@ -10,6 +16,23 @@
     .c-rich-text {
       color: var(--ks-text-color-interface);
       font: var(--c-rich-text--font);
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--ks-spacing-s);
+
+      .c-button--wrapper {
+        margin-left: auto;
+
+        .c-button.c-button--clear {
+          --c-button--background-color-hover: transparent;
+
+          background: transparent;
+          padding: 0;
+        }
+      }
     }
   }
 

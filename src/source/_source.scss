@@ -8,6 +8,10 @@
     gap: var(--ks-spacing-stack-s);
   }
 
+  .c-collapsible-box__header__text {
+    overflow: hidden;
+  }
+
   .c-button--wrapper {
     width: fit-content;
   }
@@ -17,7 +21,9 @@
   }
 
   &__relevance {
+    display: block;
     font-weight: var(--ks-font-weight-bold);
+    margin-bottom: var(--ks-spacing-stack-xs);
   }
 
   &__content {
@@ -59,12 +65,26 @@
     flex-direction: column;
     flex: 1 1;
     width: 100%;
-    gap: var(--ks-spacing-stack-s);
+  }
+
+  &__section {
+    padding: var(--ks-spacing-stack-s) 0;
+    border-bottom: 1px solid var(--ks-border-color-interface-interactive);
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
   }
 
   &__head {
     display: flex;
     flex-direction: column;
+
+    > span {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
   }
 
   &__title {
