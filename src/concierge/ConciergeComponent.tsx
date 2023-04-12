@@ -51,7 +51,9 @@ export const Concierge = forwardRef<
     <div className="concierge" {...props}>
       <Section width="default" spaceAfter="small" spaceBefore="small">
         <AvatarIntro
-          className={status.code === "idle" ? "idling-animation" : ""}
+          className={
+            status.code === "idle" && !answer ? "idling-animation" : ""
+          }
         />
         <div>
           <Headline
@@ -116,11 +118,7 @@ export const Concierge = forwardRef<
           )}
         </div>
       </Section>
-      <Section
-        spaceBefore="small"
-        background="accent"
-        width={answer ? "default" : "narrow"}
-      >
+      <Section spaceBefore="small" background="accent" width="default">
         <div className="template template--concierge">
           <div className="template__main">
             {status.code !== "loading" && !answer && status.code !== "error" && (
@@ -233,52 +231,53 @@ export const Concierge = forwardRef<
               <a href="#">Read our blog post about it (coming soon!)</a>
             </div>
           </div>
-          {answer && (
-            <div className="template__side">
-              <div className="concierge-context-menu--wrapper">
-                <div className="concierge-context-menu concierge-context-menu--mobile">
-                  <TeaserBox
-                    className="c-source-snippet--mobile"
-                    image="/img/concierge/concierge-sources.svg"
-                    text={`I found ${
-                      sources?.length || 0
-                    } relevant sources regarding your question`}
-                    link={{
-                      label: "View Sources",
-                      variant: "clear",
-                      size: "small",
-                      iconAfter: true,
-                      href: "#sources",
-                      icon: {
-                        icon: "chevron-down",
-                      },
-                    }}
+          <div className="template__side">
+            <div className="concierge-context-menu--wrapper">
+              <div className="concierge-context-menu concierge-context-menu--mobile">
+                <TeaserBox
+                  className="c-source-snippet--mobile"
+                  image="/img/concierge/concierge-sources.svg"
+                  text={`I found ${
+                    sources?.length || 0
+                  } relevant sources regarding your question`}
+                  link={{
+                    label: "View Sources",
+                    variant: "clear",
+                    size: "small",
+                    iconAfter: true,
+                    href: "#sources",
+                    icon: {
+                      icon: "chevron-down",
+                    },
+                  }}
+                />
+              </div>
+              <div className="concierge-context-menu concierge-context-menu--desktop">
+                <div className="concierge-context-menu--concierge">
+                  <AvatarSources
+                    className={
+                      status.code === "idle" && !answer
+                        ? "idling-animation"
+                        : ""
+                    }
                   />
+                  <span>Relevant sources</span>
                 </div>
-                <div className="concierge-context-menu concierge-context-menu--desktop">
-                  <div className="concierge-context-menu--concierge">
-                    <AvatarSources
-                      className={
-                        status.code === "idle" ? "idling-animation" : ""
-                      }
-                    />
-                    <span>Relevant sources</span>
-                  </div>
-                  {sources &&
-                    sources.length > 0 &&
-                    sources
-                      .slice(0, 5)
-                      .map((source) => (
-                        <SourceSnippet
-                          title={source.title}
-                          url={new URL(source.url).hostname.replace("www.", "")}
-                          link={`#${source.id}`}
-                        />
-                      ))}
-                </div>
+                {sources &&
+                  sources.length > 0 &&
+                  sources
+                    .slice(0, 5)
+                    .map((source) => (
+                      <SourceSnippet
+                        title={source.title}
+                        url={new URL(source.url).hostname.replace("www.", "")}
+                        link={`#${source.id}`}
+                      />
+                    ))}
+                {!sources || (sources.length === 0 && <div>Lorem Ipsum</div>)}
               </div>
             </div>
-          )}
+          </div>
         </div>
       </Section>
       {sources && sources.length > 0 && (
