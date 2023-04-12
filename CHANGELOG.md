@@ -1,3 +1,16 @@
+# v2.4.22 (Wed Apr 12 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat(concierge): avatar-sources overflow fix ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.4.21 (Wed Apr 12 2023)
 
 #### ⚠️ Pushed to `master`
