@@ -1,3 +1,16 @@
+# v2.4.24 (Wed Apr 12 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: update Concierge animations ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.23 (Wed Apr 12 2023)
 
 #### ⚠️ Pushed to `master`
