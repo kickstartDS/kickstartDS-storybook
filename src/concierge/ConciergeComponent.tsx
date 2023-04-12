@@ -11,6 +11,8 @@ import { TextArea } from "@kickstartds/form/lib/text-area";
 
 import { Source } from "../source/SourceComponent";
 import { Button } from "../button/ButtonComponent";
+import { AvatarIntro } from "./AvatarIntroComponent";
+import { AvatarSources } from "./AvatarSourcesComponent";
 import { SourceSnippet } from "../source-snippet/SourceSnippetComponent";
 import { ConciergeProps as ConciergeSchemaProps } from "./ConciergeProps";
 import { LinkButton } from "@kickstartds/base";
@@ -46,10 +48,9 @@ export const Concierge = forwardRef<
     },
     textAreaRef
   ) => (
-    <div {...props}>
+    <div className="concierge" {...props}>
       <Section width="default" spaceAfter="small" spaceBefore="small">
-        <img
-          src="/img/concierge/concierge-dude.svg"
+        <AvatarIntro
           className={status.code === "idle" ? "idling-animation" : ""}
         />
         <div>
@@ -234,8 +235,8 @@ export const Concierge = forwardRef<
           </div>
           {answer && (
             <div className="template__side">
-              <div className="source-snippet-menu--wrapper">
-                <div className="source-snippet-menu source-snippet-menu--mobile">
+              <div className="concierge-context-menu--wrapper">
+                <div className="concierge-context-menu concierge-context-menu--mobile">
                   <TeaserBox
                     className="c-source-snippet--mobile"
                     image="/img/concierge/concierge-sources.svg"
@@ -254,14 +255,13 @@ export const Concierge = forwardRef<
                     }}
                   />
                 </div>
-                <div className="source-snippet-menu source-snippet-menu--desktop">
-                  <div className="source-snippet-menu--concierge">
-                    <div>
-                      <Picture
-                        className="source-snippet-menu--avatar"
-                        src="/img/concierge/concierge-sources.svg"
-                      />
-                    </div>
+                <div className="concierge-context-menu concierge-context-menu--desktop">
+                  <div className="concierge-context-menu--concierge">
+                    <AvatarSources
+                      className={
+                        status.code === "idle" ? "idling-animation" : ""
+                      }
+                    />
                     <span>Relevant sources</span>
                   </div>
                   {sources &&
