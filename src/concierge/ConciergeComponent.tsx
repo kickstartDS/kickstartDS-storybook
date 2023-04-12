@@ -238,7 +238,7 @@ export const Concierge = forwardRef<
                 <div className="source-snippet-menu source-snippet-menu--mobile">
                   <TeaserBox
                     className="c-source-snippet--mobile"
-                    image="/img/concierge/concierge-dude.svg"
+                    image="/img/concierge/concierge-sources.svg"
                     text={`I found ${
                       sources?.length || 0
                     } relevant sources regarding your question`}
