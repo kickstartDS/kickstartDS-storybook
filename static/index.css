@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 12 Apr 2023 10:51:41 GMT
+ * Generated on Wed, 12 Apr 2023 14:42:39 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -2649,15 +2649,14 @@
   font: var(--ks-font-mono-m);
 }
 .c-form-field--concierge .c-form-field__label {
-  --corner-height: 5px;
-  --c-form-field-label--color: var(--ks-text-color-primary-inverted);
-  box-shadow: 0 0 10px var(--ks-color-fg-alpha-6);
+  --c-form-field-label--color: var(--ks-text-color-default);
+  text-shadow: 0 0 10px var(--ks-color-fg-alpha-6);
   color: var(--c-form-field-label--color);
   display: block;
   text-align: left;
   width: 24em;
   padding: 0.5rem 1rem;
-  background: var(--ks-color-fg-to-bg-1);
+  background: var(--ks-background-color-primary-inverted);
 }
 
 .github-corner {
