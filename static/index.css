@@ -2649,15 +2649,14 @@
   font: var(--ks-font-mono-m);
 }
 .c-form-field--concierge .c-form-field__label {
-  --corner-height: 5px;
-  --c-form-field-label--color: var(--ks-text-color-primary-inverted);
-  box-shadow: 0 0 10px var(--ks-color-fg-alpha-6);
+  --c-form-field-label--color: var(--ks-text-color-default);
+  text-shadow: 0 0 10px var(--ks-color-fg-alpha-6);
   color: var(--c-form-field-label--color);
   display: block;
   text-align: left;
   width: 24em;
   padding: 0.5rem 1rem;
-  background: var(--ks-color-fg-to-bg-1);
+  background: var(--ks-background-color-primary-inverted);
 }
 
 .github-corner {

@@ -1,3 +1,15 @@
+# v2.4.23 (Wed Apr 12 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feat(form-field): style concierge form field ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.4.22 (Wed Apr 12 2023)
 
 #### ⚠️ Pushed to `master`
