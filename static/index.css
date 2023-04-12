@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 11 Apr 2023 21:07:35 GMT
+ * Generated on Wed, 12 Apr 2023 13:47:43 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -299,7 +299,7 @@
   --ks-transition-bounce: var(--ks-duration-slow) var(--ks-timing-function-bounce);
   --ks-font-family-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --ks-font-family-copy: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --ks-font-family-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --ks-font-family-interface: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --ks-font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   --ks-font-weight-light: 200;
   --ks-font-weight-regular: 400;
@@ -323,14 +323,14 @@
   --ks-font-size-copy-l-base: 1.5rem;
   --ks-font-size-copy-xl-base: 1.75rem;
   --ks-font-size-copy-xxl-base: 2rem;
-  --ks-font-size-ui-bp-factor-tablet: 1.125;
-  --ks-font-size-ui-xxs-base: 0.5rem;
-  --ks-font-size-ui-xs-base: 0.75rem;
-  --ks-font-size-ui-s-base: 1rem;
-  --ks-font-size-ui-m-base: 1.25rem;
-  --ks-font-size-ui-l-base: 1.5rem;
-  --ks-font-size-ui-xl-base: 1.75rem;
-  --ks-font-size-ui-xxl-base: 2rem;
+  --ks-font-size-interface-bp-factor-tablet: 1.125;
+  --ks-font-size-interface-xxs-base: 0.5rem;
+  --ks-font-size-interface-xs-base: 0.75rem;
+  --ks-font-size-interface-s-base: 1rem;
+  --ks-font-size-interface-m-base: 1.25rem;
+  --ks-font-size-interface-l-base: 1.5rem;
+  --ks-font-size-interface-xl-base: 1.75rem;
+  --ks-font-size-interface-xxl-base: 2rem;
   --ks-font-size-mono-bp-factor-tablet: 1.125;
   --ks-font-size-mono-xxs-base: 0.544rem;
   --ks-font-size-mono-xs-base: 0.6664rem;
@@ -353,13 +353,13 @@
   --ks-line-height-copy-l: 1.5;
   --ks-line-height-copy-xl: 1.5;
   --ks-line-height-copy-xxl: 1.5;
-  --ks-line-height-ui-xxs: 1.5;
-  --ks-line-height-ui-xs: 1.5;
-  --ks-line-height-ui-s: 1.5;
-  --ks-line-height-ui-m: 1.5;
-  --ks-line-height-ui-l: 1.5;
-  --ks-line-height-ui-xl: 1.5;
-  --ks-line-height-ui-xxl: 1.5;
+  --ks-line-height-interface-xxs: 1.5;
+  --ks-line-height-interface-xs: 1.5;
+  --ks-line-height-interface-s: 1.5;
+  --ks-line-height-interface-m: 1.5;
+  --ks-line-height-interface-l: 1.5;
+  --ks-line-height-interface-xl: 1.5;
+  --ks-line-height-interface-xxl: 1.5;
   --ks-line-height-mono-xxs: 1.75;
   --ks-line-height-mono-xs: 1.75;
   --ks-line-height-mono-s: 1.75;
@@ -399,20 +399,20 @@
   --ks-font-copy-xl: var(--ks-font-size-copy-xl) / var(--ks-line-height-copy-xl) var(--ks-font-family-copy);
   --ks-font-size-copy-xxl: calc(var(--ks-font-size-copy-xxl-base) * var(--ks-font-size-copy-bp-factor, 1));
   --ks-font-copy-xxl: var(--ks-font-size-copy-xxl) / var(--ks-line-height-copy-xxl) var(--ks-font-family-copy);
-  --ks-font-size-ui-xxs: calc(var(--ks-font-size-ui-xxs-base) * var(--ks-font-size-ui-bp-factor, 1));
-  --ks-font-ui-xxs: var(--ks-font-size-ui-xxs) / var(--ks-line-height-ui-xxs) var(--ks-font-family-ui);
-  --ks-font-size-ui-xs: calc(var(--ks-font-size-ui-xs-base) * var(--ks-font-size-ui-bp-factor, 1));
-  --ks-font-ui-xs: var(--ks-font-size-ui-xs) / var(--ks-line-height-ui-xs) var(--ks-font-family-ui);
-  --ks-font-size-ui-s: calc(var(--ks-font-size-ui-s-base) * var(--ks-font-size-ui-bp-factor, 1));
-  --ks-font-ui-s: var(--ks-font-size-ui-s) / var(--ks-line-height-ui-s) var(--ks-font-family-ui);
-  --ks-font-size-ui-m: calc(var(--ks-font-size-ui-m-base) * var(--ks-font-size-ui-bp-factor, 1));
-  --ks-font-ui-m: var(--ks-font-size-ui-m) / var(--ks-line-height-ui-m) var(--ks-font-family-ui);
-  --ks-font-size-ui-l: calc(var(--ks-font-size-ui-l-base) * var(--ks-font-size-ui-bp-factor, 1));
-  --ks-font-ui-l: var(--ks-font-size-ui-l) / var(--ks-line-height-ui-l) var(--ks-font-family-ui);
-  --ks-font-size-ui-xl: calc(var(--ks-font-size-ui-xl-base) * var(--ks-font-size-ui-bp-factor, 1));
-  --ks-font-ui-xl: var(--ks-font-size-ui-xl) / var(--ks-line-height-ui-xl) var(--ks-font-family-ui);
-  --ks-font-size-ui-xxl: calc(var(--ks-font-size-ui-xxl-base) * var(--ks-font-size-ui-bp-factor, 1));
-  --ks-font-ui-xxl: var(--ks-font-size-ui-xxl) / var(--ks-line-height-ui-xxl) var(--ks-font-family-ui);
+  --ks-font-size-interface-xxs: calc(var(--ks-font-size-interface-xxs-base) * var(--ks-font-size-interface-bp-factor, 1));
+  --ks-font-interface-xxs: var(--ks-font-size-interface-xxs) / var(--ks-line-height-interface-xxs) var(--ks-font-family-interface);
+  --ks-font-size-interface-xs: calc(var(--ks-font-size-interface-xs-base) * var(--ks-font-size-interface-bp-factor, 1));
+  --ks-font-interface-xs: var(--ks-font-size-interface-xs) / var(--ks-line-height-interface-xs) var(--ks-font-family-interface);
+  --ks-font-size-interface-s: calc(var(--ks-font-size-interface-s-base) * var(--ks-font-size-interface-bp-factor, 1));
+  --ks-font-interface-s: var(--ks-font-size-interface-s) / var(--ks-line-height-interface-s) var(--ks-font-family-interface);
+  --ks-font-size-interface-m: calc(var(--ks-font-size-interface-m-base) * var(--ks-font-size-interface-bp-factor, 1));
+  --ks-font-interface-m: var(--ks-font-size-interface-m) / var(--ks-line-height-interface-m) var(--ks-font-family-interface);
+  --ks-font-size-interface-l: calc(var(--ks-font-size-interface-l-base) * var(--ks-font-size-interface-bp-factor, 1));
+  --ks-font-interface-l: var(--ks-font-size-interface-l) / var(--ks-line-height-interface-l) var(--ks-font-family-interface);
+  --ks-font-size-interface-xl: calc(var(--ks-font-size-interface-xl-base) * var(--ks-font-size-interface-bp-factor, 1));
+  --ks-font-interface-xl: var(--ks-font-size-interface-xl) / var(--ks-line-height-interface-xl) var(--ks-font-family-interface);
+  --ks-font-size-interface-xxl: calc(var(--ks-font-size-interface-xxl-base) * var(--ks-font-size-interface-bp-factor, 1));
+  --ks-font-interface-xxl: var(--ks-font-size-interface-xxl) / var(--ks-line-height-interface-xxl) var(--ks-font-family-interface);
   --ks-font-size-mono-xxs: calc(var(--ks-font-size-mono-xxs-base) * var(--ks-font-size-mono-bp-factor, 1));
   --ks-font-mono-xxs: var(--ks-font-size-mono-xxs) / var(--ks-line-height-mono-xxs) var(--ks-font-family-mono);
   --ks-font-size-mono-xs: calc(var(--ks-font-size-mono-xs-base) * var(--ks-font-size-mono-bp-factor, 1));
@@ -841,7 +841,7 @@
   :root {
     --ks-font-size-display-bp-factor: var(--ks-font-size-display-bp-factor-tablet);
     --ks-font-size-copy-bp-factor: var(--ks-font-size-copy-bp-factor-tablet);
-    --ks-font-size-ui-bp-factor: var(--ks-font-size-ui-bp-factor-tablet);
+    --ks-font-size-interface-bp-factor: var(--ks-font-size-interface-bp-factor-tablet);
     --ks-font-size-mono-bp-factor: var(--ks-font-size-mono-bp-factor-tablet);
     --ks-spacing-xxs-bp-factor: var(--ks-spacing-xxs-bp-factor-tablet);
     --ks-spacing-xs-bp-factor: var(--ks-spacing-xs-bp-factor-tablet);
@@ -1133,13 +1133,13 @@
 :root .c-button--small,
 [ks-theme] .c-button--small,
 [ks-inverted] .c-button--small {
-  --c-button--font: var(--ks-font-ui-xs);
+  --c-button--font: var(--ks-font-interface-xs);
   --c-button--padding: 0.3rem 1rem;
 }
 :root .c-button--large,
 [ks-theme] .c-button--large,
 [ks-inverted] .c-button--large {
-  --c-button--font: var(--ks-font-ui-l);
+  --c-button--font: var(--ks-font-interface-l);
   --c-button--padding: 0.5rem 1.5rem;
 }
 :root .c-button--clear,
@@ -2366,7 +2366,7 @@
 :root,
 [ks-theme],
 [ks-inverted] {
-  --c-footer-font: var(--ks-font-ui-s);
+  --c-footer-font: var(--ks-font-interface-s);
   --c-footer-color: var(--c-rich-text--color);
 }
 
@@ -2401,7 +2401,7 @@
   }
 }
 .kds-footer__logo-wrap p {
-  font: var(--ks-font-ui-xs);
+  font: var(--ks-font-interface-xs);
   margin: var(--ks-spacing-xs) 0;
 }
 .kds-footer__logo,
@@ -2687,7 +2687,7 @@ header[data-component="kds.header"] {
   --c-nav-main_item--color: var(--ks-text-color-primary-interactive);
   --c-nav-main_item--color-active: var(--ks-text-color-primary-interactive-active);
   --c-nav-main_item--color-hover: var(--ks-text-color-primary-interactive-hover);
-  --c-nav-main_item--font: var(--ks-font-ui-l);
+  --c-nav-main_item--font: var(--ks-font-interface-l);
   --c-nav-main_item--font-weight: var(--ks-font-weight-semi-bold);
   --c-nav-main_item--font-weight-active: var(--ks-font-weight-bold);
   --c-nav-main_item--padding: 0.5rem var(--g-header-spacing-h);
@@ -2697,7 +2697,7 @@ header[data-component="kds.header"] {
   :root,
 [ks-theme],
 [ks-inverted] {
-    --c-nav-main_item--font: var(--ks-font-ui-s);
+    --c-nav-main_item--font: var(--ks-font-interface-s);
     --c-nav-main_item--padding: none;
   }
 }
@@ -2818,7 +2818,7 @@ header[data-component="kds.header"] {
     margin-top: var(--g-header-spacing-v);
   }
   .nav-main ul.nav-main__list .nav-main--button .c-button {
-    --c-button--font: var(--ks-font-size-ui-s);
+    --c-button--font: var(--ks-font-size-interface-s);
   }
   .nav-main ul.nav-main__list .nav-main--button .c-button .c-button__content {
     --c-button--padding: 0.4rem 1rem;
@@ -2844,7 +2844,7 @@ header[data-component="kds.header"] {
     /* critical:end */
   }
   .nav-main__list .nav-main--button .c-button {
-    --c-button--font: var(--ks-font-size-ui-s);
+    --c-button--font: var(--ks-font-size-interface-s);
   }
   .nav-main__list .nav-main--button .c-button span {
     font-size: 98%;
@@ -3023,11 +3023,6 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 [ks-inverted] [ks-inverted=true] .c-headline__subheadline {
   --c-headline_subheadline--color: var(--ks-color-primary-inverted-to-bg-7);
 }
-:root .c-headline p.c-headline__headline,
-[ks-theme] .c-headline p.c-headline__headline,
-[ks-inverted] .c-headline p.c-headline__headline {
-  --c-rich-text_headline--font: var(--ks-font-copy-m);
-}
 :root .c-headline--space-after-none,
 [ks-theme] .c-headline--space-after-none,
 [ks-inverted] .c-headline--space-after-none {
@@ -3136,17 +3131,17 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   --c-person-title--font-weight: var(--ks-font-weight-semi-bold);
 }
 .kds-person--s {
-  --c-person--font: var(--ks-font-ui-xs);
+  --c-person--font: var(--ks-font-interface-xs);
   --c-person--gap: 1em;
   --c-person-avatar--size: 2em;
 }
 .kds-person--m {
-  --c-person--font: var(--ks-font-ui-s);
+  --c-person--font: var(--ks-font-interface-s);
   --c-person--gap: 1em;
   --c-person-avatar--size: 2.5em;
 }
 .kds-person--l {
-  --c-person--font: var(--ks-font-ui-m);
+  --c-person--font: var(--ks-font-interface-m);
   --c-person--gap: 1em;
   --c-person-avatar--size: 3em;
 }
@@ -3252,7 +3247,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 
 .c-post-aside {
   --tag-label-height: calc(
-    var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs) + calc(var(--ks-spacing-inset-xs) * 2)
+    var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs) + calc(var(--ks-spacing-inset-xs) * 2)
   );
   height: fit-content;
 }
@@ -3322,7 +3317,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   }
 }
 .c-post-aside__author .c-contact__links {
-  font: var(--ks-font-ui-xs);
+  font: var(--ks-font-interface-xs);
 }
 .c-post-aside__author .c-contact__link {
   margin: 0;
@@ -3406,7 +3401,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 :root .c-post-meta,
 [ks-theme] .c-post-meta,
 [ks-inverted] .c-post-meta {
-  --c-post-meta_item--font: var(--ks-font-ui-xs);
+  --c-post-meta_item--font: var(--ks-font-interface-xs);
   --c-post-meta_item--color: var(--ks-text-color-interface);
   --c-post-meta_item--icon-size: 1.15rem;
   --c-post-meta--gap: var(--ks-spacing-inline-s);
@@ -3459,7 +3454,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 .c-quote {
   --c-quote--align: top;
   --c-quote__text--margin: var(--ks-spacing-s);
-  --c-quote_source--font: var(--ks-font-ui-s);
+  --c-quote_source--font: var(--ks-font-interface-s);
   --c-quote_image--max-width: 30%;
 }
 
@@ -3528,7 +3523,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 }
 
 .c-rich-text .has-large-font-size {
-  font: var(--ks-font-ui-l);
+  font: var(--ks-font-interface-l);
   margin-top: var(--ks-spacing-xl);
 }
 .c-rich-text .has-large-font-size:first-child {
@@ -3710,7 +3705,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   margin-top: 0;
 }
 .c-teaser.c-source-snippet--mobile.c-teaser.c-teaser-box .c-teaser__body .c-teaser__link .c-button {
-  font: var(--ks-font-ui-xs);
+  font: var(--ks-font-interface-xs);
 }
 
 .source-snippet-menu {
@@ -4630,7 +4625,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   padding: 0 !important;
 }
 .c-storytelling.cta .c-rich-text {
-  font: var(--ks-font-ui-m);
+  font: var(--ks-font-interface-m);
   font-weight: var(--ks-font-weight-bold);
   color: var(--ks-text-color-primary);
 }
@@ -4674,7 +4669,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   background-color: var(--ks-color-primary-to-bg-2);
   color: var(--ks-color-primary-to-bg-8);
   padding: var(--ks-spacing-inset-squish-xs);
-  font: var(--ks-font-ui-xs);
+  font: var(--ks-font-interface-xs);
   font-weight: var(--ks-font-weight-semi-bold);
   position: absolute;
   top: 0;
@@ -4699,7 +4694,7 @@ a.kds-related {
 :root .c-tag-label,
 [ks-theme] .c-tag-label,
 [ks-inverted] .c-tag-label {
-  --c-tag-label--font: var(--ks-font-ui-s);
+  --c-tag-label--font: var(--ks-font-interface-s);
   --c-tag-label--background-color: var(--ks-background-color-interface);
   --c-tag-label--border-radius: var(--ks-border-radius-pill);
   --c-tag-label--color: var(--ks-color-primary);
@@ -4710,12 +4705,12 @@ a.kds-related {
 :root .c-tag-label--s,
 [ks-theme] .c-tag-label--s,
 [ks-inverted] .c-tag-label--s {
-  --c-tag-label--font: var(--ks-font-ui-xs);
+  --c-tag-label--font: var(--ks-font-interface-xs);
 }
 :root .c-tag-label--l,
 [ks-theme] .c-tag-label--l,
 [ks-inverted] .c-tag-label--l {
-  --c-tag-label--font: var(--ks-font-ui-m);
+  --c-tag-label--font: var(--ks-font-interface-m);
 }
 :root .c-tag-label--link,
 [ks-theme] .c-tag-label--link,
@@ -4753,10 +4748,10 @@ a.kds-related {
 }
 
 .text-media--highlight .c-rich-text {
-  font: var(--ks-font-ui-l);
+  font: var(--ks-font-interface-l);
 }
 .text-media__caption {
-  font: var(--ks-font-ui-s);
+  font: var(--ks-font-interface-s);
   color: var(--ks-text-color-default);
 }
 
@@ -4834,13 +4829,13 @@ article .c-teaser .c-teaser__body {
   display: inline-flex;
 }
 .c-teaser .c-button {
-  --c-button--font: var(--ks-font-ui-s);
+  --c-button--font: var(--ks-font-interface-s);
 }
 .c-teaser .c-button.c-button--small {
-  --c-button--font: var(--ks-font-ui-xs);
+  --c-button--font: var(--ks-font-interface-xs);
 }
 .c-teaser .c-button.c-button--large {
-  --c-button--font: var(--ks-font-ui-m);
+  --c-button--font: var(--ks-font-interface-m);
 }
 @container teaser-box (min-width: 250px) {
   .c-teaser {
@@ -4856,7 +4851,7 @@ article .c-teaser .c-teaser__body {
     --c-teaser_text--spacing: var(--ks-spacing-xs);
   }
   .c-teaser .c-button {
-    --c-button--font: var(--ks-font-ui-s);
+    --c-button--font: var(--ks-font-interface-s);
   }
 }
 @container teaser-box (min-width: 450px) {
@@ -4866,7 +4861,7 @@ article .c-teaser .c-teaser__body {
     --c-teaser--padding: calc(var(--ks-spacing-inset-m) * 1.35) var(--ks-spacing-inset-m);
   }
   .c-teaser .c-button {
-    --c-button--font: var(--ks-font-ui-m);
+    --c-button--font: var(--ks-font-interface-m);
   }
 }
 .c-teaser.js-linked {
@@ -5104,7 +5099,7 @@ article .c-teaser .c-teaser__body {
   align-items: center;
   gap: var(--ks-spacing-xs);
   padding: 0.55em 0;
-  font: var(--ks-font-ui-xs);
+  font: var(--ks-font-interface-xs);
 }
 .c-announcement-bar--section {
   border-bottom: 4px solid var(--ks-color-primary);
@@ -5118,8 +5113,8 @@ article .c-teaser .c-teaser__body {
   text-align: left;
 }
 .c-announcement-bar__icon {
-  max-width: calc(var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs));
-  max-height: calc(var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs));
+  max-width: calc(var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs));
+  max-height: calc(var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs));
   width: 100%;
   height: 100%;
   vertical-align: middle;
@@ -5345,7 +5340,7 @@ article .c-teaser .c-teaser__body {
   }
 
   .c-teaser .c-button {
-    --c-button--font: var(--ks-font-ui-s);
+    --c-button--font: var(--ks-font-interface-s);
   }
 }
 @container teaser-box (min-width: 450px) {
@@ -5356,7 +5351,7 @@ article .c-teaser .c-teaser__body {
   }
 
   .c-teaser .c-button {
-    --c-button--font: var(--ks-font-ui-m);
+    --c-button--font: var(--ks-font-interface-m);
   }
 }
 @container collapsible-box (min-width: 640px) {

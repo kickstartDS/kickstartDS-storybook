@@ -3,7 +3,7 @@
 :root,
 [ks-theme],
 [ks-inverted] {
-  --c-footer-font: var(--ks-font-ui-s);
+  --c-footer-font: var(--ks-font-interface-s);
   --c-footer-color: var(--c-rich-text--color);
 }
 
@@ -40,7 +40,7 @@
     }
 
     p {
-      font: var(--ks-font-ui-xs);
+      font: var(--ks-font-interface-xs);
       margin: var(--ks-spacing-xs) 0;
     }
   }

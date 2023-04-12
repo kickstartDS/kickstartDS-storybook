@@ -6,19 +6,19 @@
   --c-person-title--font-weight: var(--ks-font-weight-semi-bold);
 
   &--s {
-    --c-person--font: var(--ks-font-ui-xs);
+    --c-person--font: var(--ks-font-interface-xs);
     --c-person--gap: 1em;
     --c-person-avatar--size: 2em;
   }
 
   &--m {
-    --c-person--font: var(--ks-font-ui-s);
+    --c-person--font: var(--ks-font-interface-s);
     --c-person--gap: 1em;
     --c-person-avatar--size: 2.5em;
   }
 
   &--l {
-    --c-person--font: var(--ks-font-ui-m);
+    --c-person--font: var(--ks-font-interface-m);
     --c-person--gap: 1em;
     --c-person-avatar--size: 3em;
   }

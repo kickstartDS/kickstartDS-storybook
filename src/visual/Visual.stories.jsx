@@ -24,8 +24,8 @@ export default {
   },
 };
 
-export const BoxLight = Template.bind({});
-BoxLight.args = pack({
+export const BoxRight = Template.bind({});
+BoxRight.args = pack({
   backgroundColor: "transparent",
   media: {
     mode: "image",
@@ -42,6 +42,7 @@ BoxLight.args = pack({
     },
     links: [
       {
+        inverted: "false",
         variant: "solid",
       },
       {
@@ -71,6 +72,7 @@ BoxCenter.args = pack({
     },
     links: [
       {
+        inverted: "false",
         variant: "solid",
       },
       {
@@ -81,8 +83,8 @@ BoxCenter.args = pack({
   },
 });
 
-export const BoxDark = Template.bind({});
-BoxDark.args = pack({
+export const BoxInverted = Template.bind({});
+BoxInverted.args = pack({
   backgroundColor: "transparent",
   media: {
     mode: "image",
@@ -186,6 +188,7 @@ Video.args = pack({
     background: "light",
     links: [
       {
+        inverted: "false",
         variant: "solid",
       },
       {
@@ -223,6 +226,7 @@ Overlay.args = pack({
     links: [
       {
         variant: "solid",
+        inverted: "false"
       },
       {
         label: "Lorem Ipsum",
@@ -280,6 +284,7 @@ InboxMobile.args = pack({
     background: "light",
     links: [
       {
+        inverted: "false",
         variant: "solid",
       },
       {

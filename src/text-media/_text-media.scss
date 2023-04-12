@@ -1,12 +1,12 @@
 .text-media {
   &--highlight {
     .c-rich-text {
-      font: var(--ks-font-ui-l);
+      font: var(--ks-font-interface-l);
     }
   }
 
   &__caption {
-    font: var(--ks-font-ui-s);
+    font: var(--ks-font-interface-s);
     color: var(--ks-text-color-default);
   }
 }

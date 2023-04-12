@@ -181,6 +181,7 @@ BackgroundColor.args = pack({
 
 export const BackgroundImage = Template.bind({});
 BackgroundImage.args = pack({
+  inverted: true,
   backgroundColor: "#06566A",
   backgroundImage: "img/recipes/background-pattern-dark.svg",
   image: {

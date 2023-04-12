@@ -3,7 +3,7 @@
 
 .c-post-aside {
   --tag-label-height: calc(
-    var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs) + calc(var(--ks-spacing-inset-xs) * 2)
+    var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs) + calc(var(--ks-spacing-inset-xs) * 2)
   );
 
   height: fit-content;
@@ -84,7 +84,7 @@
       }
 
       &__links {
-        font: var(--ks-font-ui-xs);
+        font: var(--ks-font-interface-xs);
       }
 
       &__link {

@@ -160,7 +160,7 @@
         margin-top: var(--g-header-spacing-v);
 
         .c-button {
-          --c-button--font: var(--ks-font-size-ui-s);
+          --c-button--font: var(--ks-font-size-interface-s);
           .c-button__content {
             --c-button--padding: 0.4rem 1rem;
           }
@@ -190,7 +190,7 @@
 
       .nav-main--button {
         .c-button {
-          --c-button--font: var(--ks-font-size-ui-s);
+          --c-button--font: var(--ks-font-size-interface-s);
           span {
             font-size: 98%;
           }

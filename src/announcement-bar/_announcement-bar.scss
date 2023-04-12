@@ -6,7 +6,7 @@
   align-items: center;
   gap: var(--ks-spacing-xs);
   padding: 0.55em 0;
-  font: var(--ks-font-ui-xs);
+  font: var(--ks-font-interface-xs);
 
   &--section {
     border-bottom: 4px solid var(--ks-color-primary);
@@ -23,8 +23,8 @@
   }
 
   &__icon {
-    max-width: calc(var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs));
-    max-height: calc(var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs));
+    max-width: calc(var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs));
+    max-height: calc(var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs));
     width: 100%;
     height: 100%;
     vertical-align: middle;
