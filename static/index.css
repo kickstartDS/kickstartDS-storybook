@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 12 Apr 2023 10:36:44 GMT
+ * Generated on Wed, 12 Apr 2023 10:51:41 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -1652,7 +1652,6 @@
 }
 
 .concierge-avatar {
-  overflow: hidden;
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
@@ -1661,6 +1660,7 @@
   transition-property: background-size;
 }
 .concierge-avatar--intro {
+  overflow: hidden;
   background-size: 0%;
   display: flex;
   align-items: end;
@@ -1702,6 +1702,12 @@
 .concierge-avatar--sources.idling-animation .concierge-dude {
   transform: translateY(100%);
 }
+.concierge-avatar--sources .concierge-dude--wrapper {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: fit-content;
+}
 .concierge-avatar--sources .concierge-dude {
   width: 100%;
   padding-bottom: 7%;
@@ -1711,7 +1717,7 @@
 .concierge-avatar--sources .book {
   position: absolute;
   width: 70%;
-  bottom: -2% x;
+  bottom: -3%;
 }
 .concierge-avatar svg {
   display: block;
@@ -1734,7 +1740,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -2%;
   --corner-height: 12px;
   --clip-path: polygon(
     0% var(--corner-height),

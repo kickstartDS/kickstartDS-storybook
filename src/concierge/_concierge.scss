@@ -2,7 +2,6 @@
 
 .concierge {
   &-avatar {
-    overflow: hidden;
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
@@ -11,6 +10,7 @@
     transition-property: background-size;
 
     &--intro {
+      overflow: hidden;
       background-size: 0%;
       display: flex;
       align-items: end;
@@ -60,6 +60,13 @@
         }
       }
 
+      .concierge-dude--wrapper {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        height: fit-content;
+      }
+
       .concierge-dude {
         width: 100%;
         padding-bottom: 7%;
@@ -70,7 +77,7 @@
       .book {
         position: absolute;
         width: 70%;
-        bottom: -2%x;
+        bottom: -3%;
       }
     }
 
@@ -99,7 +106,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -2%;
 
         --corner-height: 12px;
         --clip-path: polygon(
