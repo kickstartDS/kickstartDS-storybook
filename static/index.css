@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 12 Apr 2023 15:17:05 GMT
+ * Generated on Wed, 12 Apr 2023 15:56:06 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -1717,7 +1717,7 @@
 .concierge-avatar--sources .book {
   position: absolute;
   width: 70%;
-  bottom: -3%;
+  bottom: -2%;
 }
 .concierge-avatar svg {
   display: block;
@@ -1726,7 +1726,6 @@
 .concierge-context-menu {
   flex-direction: column;
   gap: var(--ks-spacing-xxs);
-  font: var(--ks-font-mono-s);
   font-weight: var(--ks-font-weight-semi-bold);
   color: var(--ks-text-color-default);
 }
@@ -1734,6 +1733,8 @@
   text-align: center;
 }
 .concierge-context-menu--concierge span {
+  font: var(--ks-font-mono-s);
+  font-weight: var(--ks-font-weight-bold);
   color: var(--ks-text-color-default);
   padding: var(--ks-spacing-inset-xs);
   background: var(--ks-color-primary-inverted-alpha-8);
@@ -2621,6 +2622,8 @@
 :root .c-form-field__input--highlight,
 [ks-theme] .c-form-field__input--highlight,
 [ks-inverted] .c-form-field__input--highlight {
+  --c-form-field--background-disabled: #083d4a;
+  --c-form-field--border-color-disabled: var(--ks-background-color-default);
   --c-form-field--border-color: var(--ks-color-primary-inverted-to-bg-6);
   --c-form-field_hover--border-color: var(--ks-color-primary-inverted-to-bg-6);
   --c-form-field_focus--border-color: var(--ks-color-primary);
@@ -2628,14 +2631,6 @@
   --c-form-field_focus--shadow: 8px 8px 0px 0px;
   --c-form-field--background: var(--ks-background-color-default);
   --c-form-field_placeholder--color: var(--ks-color-fg-alpha-6);
-  box-shadow: var(--c-form-field--shadow) var(--c-form-field--border-color);
-  transition: var(--ks-transition-bounce);
-  transition-property: all;
-}
-:root .c-form-field__input--highlight.focus-visible,
-[ks-theme] .c-form-field__input--highlight.focus-visible,
-[ks-inverted] .c-form-field__input--highlight.focus-visible {
-  filter: drop-shadow(2px 6px 6px var(--ks-color-primary-alpha-4));
 }
 
 .c-form-field__label {
@@ -2647,6 +2642,17 @@
 }
 .c-form-field--concierge .c-form-field__input {
   font: var(--ks-font-mono-m);
+  box-shadow: var(--c-form-field--shadow) var(--c-form-field--border-color);
+  transition: var(--ks-transition-bounce);
+  transition-property: all;
+}
+.c-form-field--concierge .c-form-field__input.focus-visible {
+  filter: drop-shadow(2px 6px 6px var(--ks-color-primary-alpha-4));
+}
+.c-form-field--concierge .c-form-field__input:disabled {
+  opacity: 1;
+  border-color: var(--c-form-field--border-color-disabled);
+  box-shadow: var(--c-form-field--shadow) var(--c-form-field--border-color-disabled);
 }
 .c-form-field--concierge .c-form-field__label {
   --c-form-field-label--color: var(--ks-text-color-default);
@@ -3839,6 +3845,13 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 }
 .c-teaser.c-source-snippet--mobile.c-teaser-box .c-teaser__body .c-teaser__link .c-button {
   font: var(--ks-font-ui-xs);
+}
+
+.c-source-snippet--placeholder {
+  background-color: var(--ks-background-color-primary-inverted);
+  padding: var(--ks-spacing-inset-stretch-xs);
+  font: var(--ks-font-mono-s);
+  color: var(--ks-text-color-interface);
 }
 
 :root,

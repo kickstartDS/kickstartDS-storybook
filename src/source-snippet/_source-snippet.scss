@@ -65,3 +65,10 @@
     }
   }
 }
+
+.c-source-snippet--placeholder {
+  background-color: var(--ks-background-color-primary-inverted);
+  padding: var(--ks-spacing-inset-stretch-xs);
+  font: var(--ks-font-mono-s);
+  color: var(--ks-text-color-interface);
+}

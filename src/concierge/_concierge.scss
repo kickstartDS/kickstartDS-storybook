@@ -77,7 +77,7 @@
       .book {
         position: absolute;
         width: 70%;
-        bottom: -3%;
+        bottom: -2%;
       }
     }
 
@@ -90,7 +90,7 @@
   &-context-menu {
     flex-direction: column;
     gap: var(--ks-spacing-xxs);
-    font: var(--ks-font-mono-s);
+
     font-weight: var(--ks-font-weight-semi-bold);
     color: var(--ks-text-color-default);
 
@@ -100,6 +100,8 @@
 
     &--concierge {
       span {
+        font: var(--ks-font-mono-s);
+        font-weight: var(--ks-font-weight-bold);
         color: var(--ks-text-color-default);
         padding: var(--ks-spacing-inset-xs);
         background: var(--ks-color-primary-inverted-alpha-8);

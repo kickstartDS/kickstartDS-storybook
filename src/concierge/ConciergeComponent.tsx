@@ -274,7 +274,13 @@ export const Concierge = forwardRef<
                         link={`#${source.id}`}
                       />
                     ))}
-                {!sources || (sources.length === 0 && <div>Lorem Ipsum</div>)}
+                {!sources ||
+                  (sources.length === 0 && (
+                    <div className="c-source-snippet--placeholder">
+                      All relevant sources used for the generation of your
+                      answers will be listed.
+                    </div>
+                  ))}
               </div>
             </div>
           </div>
