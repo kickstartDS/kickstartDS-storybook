@@ -1,14 +1,10 @@
 import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 
-import {
-  TextMedia,
-  ContentBox,
-  Section,
-  TeaserBox,
-} from "@kickstartds/base";
-import {
-  Storytelling,
-} from "@kickstartds/content";
+import { TextMedia } from "@kickstartds/base/lib/text-media";
+import { ContentBox } from "@kickstartds/base/lib/content-box";
+import { Section } from "@kickstartds/base/lib/section";
+import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
+import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
 import HeaderStories from "../header/Header.stories";
 import FooterStories from "../footer/Footer.stories";

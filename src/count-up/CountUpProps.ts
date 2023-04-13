@@ -13,6 +13,10 @@ export type IconIdentifier = string;
 export type AriaRole = string;
 export type AdditionalClass = string;
 /**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute = string;
+/**
  * Topic for the count-up box. Displayed before the text, in bold
  */
 export type Topic = string;
@@ -41,20 +45,20 @@ export type ButtonSize = "small" | "medium" | "large";
  * Link used for button
  */
 export type ButtonHref = string;
-/**
- * Add additional css classes that should be applied to the button
- */
-export type AdditionalClasses = string;
 export type IconIdentifier1 = string;
 export type AriaRole1 = string;
 export type AdditionalClass1 = string;
+/**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute1 = string;
 export type IconIdentifier2 = string;
 export type AriaRole2 = string;
 export type AdditionalClass2 = string;
 /**
- * Overwrite the data-component to use for rendering
+ * Optional custom component identifier
  */
-export type DataComponentAttribute = string;
+export type KsComponentAttribute2 = string;
 /**
  * Add fill animation on hover
  */
@@ -84,9 +88,21 @@ export type DisabledAttribute = boolean;
  */
 export type OpenLinkInNewTab = boolean;
 /**
+ * Add additional css classes that should be applied to the button
+ */
+export type AdditionalClasses = string;
+/**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute3 = string;
+/**
  * Additional css classes attached to the wrapping element
  */
 export type Class = string;
+/**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute4 = string;
 
 /**
  * Component to to increase a number up to a final value
@@ -102,6 +118,7 @@ export interface CountUpProps {
    * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
    */
   expand?: number;
+  component?: KsComponentAttribute4;
   graphic?: "none" | "tokens" | "components" | "properties";
   [k: string]: unknown;
 }
@@ -112,6 +129,7 @@ export interface Icon {
   icon: IconIdentifier;
   role?: AriaRole;
   className?: AdditionalClass;
+  component?: KsComponentAttribute;
   [k: string]: unknown;
 }
 /**
@@ -119,15 +137,13 @@ export interface Icon {
  */
 export interface Link {
   enabled?: DisplayLink;
-  label: Label;
-  variant: ButtonStyle;
+  label?: Label;
+  variant?: ButtonStyle;
   inverted?: Inverted;
-  size: ButtonSize;
+  size?: ButtonSize;
   href?: ButtonHref;
-  className?: AdditionalClasses;
   iconBefore?: IconBeforeButton;
   iconAfter?: IconAfterButton;
-  dataComponent?: DataComponentAttribute;
   fillAnimation?: FillAnimation;
   iconAnimation?: IconAnimation;
   type?: TypeAttribute;
@@ -135,6 +151,8 @@ export interface Link {
   name?: NameAttribute;
   disabled?: DisabledAttribute;
   newTab?: OpenLinkInNewTab;
+  className?: AdditionalClasses;
+  component?: KsComponentAttribute3;
 }
 /**
  * Icon identifier for icon before the button text
@@ -143,6 +161,7 @@ export interface IconBeforeButton {
   icon: IconIdentifier1;
   role?: AriaRole1;
   className?: AdditionalClass1;
+  component?: KsComponentAttribute1;
   [k: string]: unknown;
 }
 /**
@@ -152,5 +171,6 @@ export interface IconAfterButton {
   icon: IconIdentifier2;
   role?: AriaRole2;
   className?: AdditionalClass2;
+  component?: KsComponentAttribute2;
   [k: string]: unknown;
 }

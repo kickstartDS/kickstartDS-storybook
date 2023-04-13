@@ -42,6 +42,10 @@ export type SourceAddition = string;
  */
 export type Class = string;
 /**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute = string;
+/**
  * Description of the type and content of the appearance
  */
 export type DescriptionOfTheAppearance = string;
@@ -136,6 +140,7 @@ export interface QuoteElement {
   source?: Source;
   byline?: SourceAddition;
   className?: Class;
+  component?: KsComponentAttribute;
   [k: string]: unknown;
 }
 /**

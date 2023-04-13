@@ -1,9 +1,5 @@
-import {
-  ContentBox,
-  TeaserBox,
-  Picture,
-  Section,
-} from "@kickstartds/base";
+import { ContentBox } from "@kickstartds/base/lib/content-box";
+import { Picture } from "@kickstartds/base/lib/picture";
 
 export const Steps = ({ home }) => (
   <>

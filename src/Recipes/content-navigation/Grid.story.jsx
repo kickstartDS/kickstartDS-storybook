@@ -1,7 +1,5 @@
-import {
-  TeaserBox,
-  Section,
-} from "@kickstartds/base";
+import { Section } from "@kickstartds/base/lib/section";
+import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 
 const Recipe = () => (
   <>
@@ -23,7 +21,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "Explore generators",
-
         }}
         imageSpacing
       />
@@ -36,7 +33,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "See our components",
-
         }}
         imageSpacing
       />
@@ -49,7 +45,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "See our components",
-
         }}
         imageSpacing
       />
@@ -62,7 +57,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "See our components",
-
         }}
         imageSpacing
       />
@@ -75,7 +69,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "See our components",
-
         }}
         imageSpacing
       />
@@ -88,7 +81,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "See our components",
-
         }}
         imageSpacing
       />
@@ -101,7 +93,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "See our components",
-
         }}
         imageSpacing
       />
@@ -114,7 +105,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "See our components",
-
         }}
         imageSpacing
       />
@@ -127,7 +117,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "See our components",
-
         }}
         imageSpacing
       />
@@ -140,7 +129,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "See our components",
-
         }}
         imageSpacing
       />
@@ -153,7 +141,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "See our components",
-
         }}
         imageSpacing
       />
@@ -166,7 +153,6 @@ const Recipe = () => (
           hidden: true,
           variant: "clear",
           label: "See our components",
-
         }}
         imageSpacing
       />

@@ -1,7 +1,5 @@
-import {
-  Section,
-  TeaserBox,
-} from "@kickstartds/base";
+import { Section } from "@kickstartds/base/lib/section";
+import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 
 export default {
   title: "TeaserVariants",

@@ -3,7 +3,7 @@ import { NavToggle } from "./NavToggleComponent";
 import { Link } from "@kickstartds/base/lib/link";
 import { Button } from "@kickstartds/base/lib/button";
 import { Logo } from "../../logo/LogoComponent";
-import { Icon } from "@kickstartds/base";
+import { Icon } from "@kickstartds/base/lib/icon";
 
 export const NavMain = ({ activeEntry, dark, navEntries = [], cta }) => (
   <div className="nav-main__wrap">

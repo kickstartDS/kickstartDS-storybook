@@ -1,4 +1,5 @@
-import { TeaserBox, Section } from "@kickstartds/base";
+import { Section } from "@kickstartds/base/lib/section";
+import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 
 const Recipe = () => (
   <>

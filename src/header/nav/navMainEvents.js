@@ -8,7 +8,7 @@ let mm;
 if (inBrowser) {
   mm = window.matchMedia("(min-width: 60em)");
   mm.addEventListener("change", (event) =>
-    window.rm.radio.emit(navMainEvents.change, event.matches)
+    window._ks.radio.emit(navMainEvents.change, event.matches)
   );
 }
 

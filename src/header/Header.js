@@ -1,4 +1,4 @@
-import { Component, define } from "@kickstartds/core/lib/core";
+import { Component, define } from "@kickstartds/core/lib/component";
 import { windowEvents } from "@kickstartds/core/lib/utils";
 
 const identifier = "kds.header";
@@ -12,7 +12,7 @@ class Header extends Component {
     this.lastScrollPosition = window.scrollY;
     this.scrollUpDiff = 0;
 
-    window.rm.radio.on(windowEvents.scroll, () => this.changeHeader());
+    window._ks.radio.on(windowEvents.scroll, () => this.changeHeader());
 
     this.changeHeader();
   }

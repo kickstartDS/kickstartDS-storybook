@@ -1,4 +1,4 @@
-import { Component, define } from "@kickstartds/core/lib/core";
+import { Component, define } from "@kickstartds/core/lib/component";
 import { navMainEvents } from "./navMainEvents";
 import body from "../../shared/body";
 
@@ -21,13 +21,13 @@ export default class NavToggle extends Component {
 
     this.element.addEventListener("click", this);
 
-    window.rm.radio.on(navMainEvents.change, (_, desktop) => {
+    window._ks.radio.on(navMainEvents.change, (_, desktop) => {
       if (desktop) {
         this.close();
       }
     });
 
-    window.rm.radio.on('location.change', () => this.close());
+    window._ks.radio.on("location.change", () => this.close());
   }
 
   open() {

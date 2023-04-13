@@ -1,19 +1,16 @@
 import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 
-import {
-  ContentBox,
-  TeaserBox,
-  Section,
-} from "@kickstartds/base";
+import { ContentBox } from "@kickstartds/base/lib/content-box";
+import { Section } from "@kickstartds/base/lib/section";
+import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { Button } from "@kickstartds/base/lib/button";
-import {
-  Visual,
-  Quote,
-  QuotesSlider,
-  LogoTiles,
-  CountUp,
-  Storytelling,
-} from "@kickstartds/content";
+
+import { Visual } from "@kickstartds/content/lib/visual";
+import { Quote } from "@kickstartds/content/lib/quote";
+import { QuotesSlider } from "@kickstartds/content/lib/quotes-slider";
+import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
+import { CountUp } from "@kickstartds/content/lib/count-up";
+import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
 import HeaderStories from "../header/Header.stories";
 import FooterStories from "../footer/Footer.stories";
@@ -28,7 +25,7 @@ export default {
 
 const Page = () => (
   <>
-    <Header  {...unpack(HeaderStories.args)} />
+    <Header {...unpack(HeaderStories.args)} />
     <Section width="full" spaceBefore="none" spaceAfter="small">
       <Visual
         className="contain-image"
@@ -36,8 +33,7 @@ const Page = () => (
           background: "transparent",
           enabled: true,
           headline: {
-            content:
-              "kickstartDS is the starter kit for Design Systems",
+            content: "kickstartDS is the starter kit for Design Systems",
             level: "h1",
             styleAs: "h1",
             subheadline: "The frontend first framework!",
@@ -210,7 +206,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         topic="Tokens"
       />
     </Section>
-
 
     <Section
       gutter="large"

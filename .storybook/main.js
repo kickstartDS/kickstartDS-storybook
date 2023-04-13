@@ -11,7 +11,7 @@ module.exports = {
     "@storybook/addon-a11y",
     "@kickstartds/storybook-addon-component-tokens",
     "@whitespace/storybook-addon-html",
-    // "@kickstartds/storybook-addon-jsonschema",
+    "@kickstartds/storybook-addon-jsonschema",
     "storybook-design-token",
   ],
   staticDirs: ["../static"],

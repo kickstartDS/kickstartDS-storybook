@@ -13,7 +13,7 @@ import Providers from "../src/Providers";
 import { LinkProvider } from "../docs/LinkProvider";
 
 const myActions = actions("radio");
-window.rm.radio.on("*", myActions.radio);
+window._ks.radio.on("*", myActions.radio);
 
 const providerDecorator = (Story, context) => (
   <Providers>

@@ -1,15 +1,12 @@
 import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 
-import {
-  TextMedia,
-  ContentBox,
-  Section,
-} from "@kickstartds/base";
-import {
-  Quote,
-  LogoTiles,
-  Storytelling,
-} from "@kickstartds/content";
+import { ContentBox } from "@kickstartds/base/lib/content-box";
+import { Section } from "@kickstartds/base/lib/section";
+import { TextMedia } from "@kickstartds/base/lib/text-media";
+
+import { Quote } from "@kickstartds/content/lib/quote";
+import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
+import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
 import HeaderStories from "../header/Header.stories";
 import FooterStories from "../footer/Footer.stories";
@@ -23,7 +20,7 @@ export default {
 
 const Page = () => (
   <>
-    <Header {...unpack(HeaderStories.args)}  />
+    <Header {...unpack(HeaderStories.args)} />
     <Section
       mode="list"
       width="wide"
@@ -39,7 +36,8 @@ const Page = () => (
             content: "Lorem Ipsum dolor",
             level: "h1",
             styleAs: "h1",
-            subheadline: "kickstart DS is the foundation for your design system with reusable components and tools",
+            subheadline:
+              "kickstart DS is the foundation for your design system with reusable components and tools",
           },
           link: {
             label: "lorem ipsum",
@@ -74,7 +72,6 @@ Directly engage with components through **Storybooks** rich interface.
       `}
       />
     </Section>
-
 
     <Section
       width="wide"
