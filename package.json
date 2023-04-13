@@ -36,7 +36,7 @@
   "dependencies": {
     "@bedrock-layout/primitives": "^2.2.1",
     "@kickstartds/base": "^2.0.3",
-    "@kickstartds/blog": "^2.0.3",
+    "@kickstartds/blog": "2.0.4-canary.1275.5555.0",
     "@kickstartds/content": "^2.0.0",
     "@kickstartds/core": "^2.0.3",
     "@kickstartds/form": "^2.0.3",
