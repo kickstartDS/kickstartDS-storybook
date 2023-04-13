@@ -6,7 +6,7 @@ import countUpStories, {
 import tokens from "./count-up-tokens.json";
 import schema from "./count-up.schema.dereffed.json";
 
-const { defaultArgs: args, argTypes } = getArgsShared(schema);
+const { args, argTypes } = getArgsShared(schema);
 
 export default {
   ...countUpStories,

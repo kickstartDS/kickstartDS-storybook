@@ -3,7 +3,7 @@ import { getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
 import schema from "./concierge.schema.dereffed.json";
 import { useRef } from "react";
 
-const { defaultArgs: args, argTypes } = getArgsShared(schema);
+const { args, argTypes } = getArgsShared(schema);
 
 const Template = (args) => {
   const textAreaRef = useRef(null);

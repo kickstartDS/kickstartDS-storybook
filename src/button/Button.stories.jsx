@@ -5,7 +5,7 @@ import ButtonStories, {
 } from "@kickstartds/base/lib/button/button.stories";
 import tokens from "./button-tokens.json";
 import schema from "./button.schema.dereffed.json";
-const { defaultArgs: args, argTypes } = getArgsShared(schema);
+const { args, argTypes } = getArgsShared(schema);
 
 export default {
   ...ButtonStories,

@@ -20,21 +20,13 @@ export default {
     },
     controls: { disabled: true },
   },
-  // decorators: [
-  //   (Story) => (
-  //     <LinkProvider>
-  //       <Story />
-  //     </LinkProvider>
-  //   ),
-  // ],
+  decorators: [
+    (Story) => (
+      <LinkProvider>
+        <Story />
+      </LinkProvider>
+    ),
+  ],
 };
 
 export { Landingpage } from "./Landingpage.story";
-export { Integrations } from "./Integrations.story";
-export { Sanity } from "./Sanity.story";
-export { BlogPost } from "./BlogPost.story";
-export { BlogList } from "./BlogList.story";
-export { Concierge } from "./Concierge.story";
-export { GlossaryEntry } from "./GlossaryEntry.story";
-export { ShowcaseEntry } from "./ShowcaseEntry.story";
-export { AppearanceEntry } from "./AppearanceEntry.story";
