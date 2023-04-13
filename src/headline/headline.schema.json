@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://kickstartds.com/headline.schema.json",
   "title": "Headline",
+  "type": "object",
   "allOf": [
     {
       "$ref": "http://schema.kickstartds.com/base/headline.schema.json"
