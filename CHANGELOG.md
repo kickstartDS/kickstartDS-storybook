@@ -1,3 +1,92 @@
+# v2.4.27 (Thu Apr 13 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feat(concierge): fix safari positioning issues ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.4.26 (Wed Apr 12 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat(concoierge): style source snippets placeholder ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.4.25 (Wed Apr 12 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat(form-field): minor style adjustment ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.4.24 (Wed Apr 12 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- fix: update Concierge animations ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.4.23 (Wed Apr 12 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feat(form-field): style concierge form field ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.4.22 (Wed Apr 12 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat(concierge): avatar-sources overflow fix ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.4.21 (Wed Apr 12 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feat(concierge): add concierge state animations ([@fleven-kds](https://github.com/fleven-kds))
+- feat(concierge): style concierge ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.4.20 (Tue Apr 11 2023)
 
 #### ⚠️ Pushed to `master`

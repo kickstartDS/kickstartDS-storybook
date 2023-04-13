@@ -22,7 +22,7 @@ export const Header: FunctionComponent<
   ...props
 }) => (
   <>
-    <div ks-inverted={dark} {...props} className="kds-header--wrap">
+    <div ks-inverted={dark?.toString()} {...props} className="kds-header--wrap">
       <NavSkip />
       {announcementBar && announcementBar.content && (
         <AnnouncementBar

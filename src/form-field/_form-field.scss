@@ -12,18 +12,30 @@
     .c-form-field {
       &__input {
         font: var(--ks-font-mono-m);
+        box-shadow: var(--c-form-field--shadow) var(--c-form-field--border-color);
+        transition: var(--ks-transition-bounce);
+        transition-property: all;
+
+        &.focus-visible {
+          filter: drop-shadow(2px 6px 6px var(--ks-color-primary-alpha-4));
+        }
+
+        &:disabled {
+          opacity: 1;
+          border-color: var(--c-form-field--border-color-disabled);
+          box-shadow: var(--c-form-field--shadow) var(--c-form-field--border-color-disabled);
+        }
       }
 
       &__label {
-        --corner-height: 5px;
-        --c-form-field-label--color: var(--ks-text-color-primary-inverted);
-        box-shadow: 0 0 10px var(--ks-color-fg-alpha-6);
+        --c-form-field-label--color: var(--ks-text-color-default);
+        text-shadow: 0 0 10px var(--ks-color-fg-alpha-6);
         color: var(--c-form-field-label--color);
         display: block;
         text-align: left;
         width: 24em;
         padding: 0.5rem 1rem;
-        background: var(--ks-color-fg);
+        background: var(--ks-background-color-default);
       }
     }
   }
