@@ -33,7 +33,7 @@ const ButtonComponent: ForwardRefExoticComponent<
       className,
       fillAnimation,
       iconAnimation,
-      dataComponent,
+      component,
       iconBefore,
       iconAfter,
       disabled,
@@ -75,7 +75,7 @@ const ButtonComponent: ForwardRefExoticComponent<
             }
           )}
           ks-inverted={inverted?.toString()}
-          data-component={dataComponent}
+          data-component={component}
           {...(isLink && newTab ? { target: "_blank", rel: "noopener" } : {})}
           disabled={isLink ? undefined : disabled}
           ref={ref}
