@@ -1,3 +1,15 @@
+# v2.4.27 (Thu Apr 13 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feat(concierge): fix safari positioning issues ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.4.26 (Wed Apr 12 2023)
 
 #### ⚠️ Pushed to `master`
