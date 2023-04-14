@@ -2895,10 +2895,10 @@
     classnames "^2.3.2"
     date-fns "^2.29.3"
 
-"@kickstartds/content@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-2.0.0.tgz#948f715c3a15a7555dc99f5b9caf991869b67ba0"
-  integrity sha512-h/lF4SmdVaVxsMNltogcxbyubhhMDDwJxvNk45hQfS91a3ndQQyUhDI+/Ffa1Il3ZCtSfc5XJS5CxOLyQh/hAw==
+"@kickstartds/content@2.0.1--canary.48.37.0":
+  version "2.0.1--canary.48.37.0"
+  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-2.0.1--canary.48.37.0.tgz#f2ec18d349e6b2e404828dc67e258edd336419f3"
+  integrity sha512-is0QFXb1TyTZXwkRfTq8KgtyawtdYGzEwPKcXjtuBFyb995OiXFIBOwNpO48n7w5z5Ixv2/kn0hXCUs7gg9lzA==
   dependencies:
     "@babel/runtime" "^7.20.1"
     "@kickstartds/base" "2.0.3"
