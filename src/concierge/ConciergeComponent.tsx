@@ -192,11 +192,11 @@ export const Concierge = forwardRef<
               >
                 <p>Sorry, but it seems that either:</p>
                 <ul>
-                  <li>
+                  <li key="problem-1">
                     Concierge is having some technical difficulties, he'll be
                     right back then!
                   </li>
-                  <li>
+                  <li key="problem-2">
                     Or maybe your question didn't yield any relevant sections
                     from our knowledge base. Feel free to let us know below to
                     fix this!
@@ -326,8 +326,8 @@ export const Concierge = forwardRef<
             <ul>
               {index &&
                 index.length > 0 &&
-                index.slice(0, 18).map((page) => (
-                  <li>
+                index.slice(0, 18).map((page, index) => (
+                  <li key={`references-col1-${index}`}>
                     <a target="blank" href={page.url}>
                       {page.title}
                     </a>
@@ -340,7 +340,7 @@ export const Concierge = forwardRef<
               {index &&
                 index.length > 18 &&
                 index.slice(18, 36).map((page) => (
-                  <li>
+                  <li key={`references-col2-${index}`}>
                     <a target="blank" href={page.url}>
                       {page.title}
                     </a>
@@ -353,7 +353,7 @@ export const Concierge = forwardRef<
               {index &&
                 index.length > 0 &&
                 index.slice(36, 54).map((page) => (
-                  <li>
+                  <li key={`references-col3-${index}`}>
                     <a target="blank" href={page.url}>
                       {page.title}
                     </a>
