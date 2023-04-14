@@ -339,7 +339,7 @@ export const Concierge = forwardRef<
             <ul>
               {index &&
                 index.length > 18 &&
-                index.slice(18, 36).map((page) => (
+                index.slice(18, 36).map((page, index) => (
                   <li key={`references-col2-${index}`}>
                     <a target="blank" href={page.url}>
                       {page.title}
@@ -352,7 +352,7 @@ export const Concierge = forwardRef<
             <ul>
               {index &&
                 index.length > 0 &&
-                index.slice(36, 54).map((page) => (
+                index.slice(36, 54).map((page, index) => (
                   <li key={`references-col3-${index}`}>
                     <a target="blank" href={page.url}>
                       {page.title}
