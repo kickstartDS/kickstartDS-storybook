@@ -24,7 +24,7 @@ button.nav-toggle {
 
   /* critical:end */
 
-  @include breakpoint.media("≥m") {
+  @include breakpoint.media("≥l") {
     /* critical:start */
     display: none;
     /* critical:end */

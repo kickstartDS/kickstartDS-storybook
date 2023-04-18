@@ -98,7 +98,7 @@
   }
 
   // Mobile Nav
-  @include breakpoint.media("<m") {
+  @include breakpoint.media("<l") {
     /* critical:start */
     left: -100%;
     display: flex;
@@ -168,7 +168,7 @@
   }
 
   // Desktop Nav
-  @include breakpoint.media("≥m") {
+  @include breakpoint.media("≥l") {
     /* critical:start */
     > .kds-logo {
       display: none;

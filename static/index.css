@@ -2918,7 +2918,7 @@ header[data-component="kds.header"] {
   width: calc(100% + var(--corner-height) * 2);
   opacity: 1;
 }
-@media (max-width: 47.99em) {
+@media (max-width: 61.99em) {
   .nav-main {
     /* critical:start */
     left: -100%;
@@ -2974,7 +2974,7 @@ header[data-component="kds.header"] {
     --c-button--padding: 0.4rem 1rem;
   }
 }
-@media (min-width: 48em) {
+@media (min-width: 62em) {
   .nav-main {
     /* critical:start */
     /* critical:end */
@@ -3057,7 +3057,7 @@ button.nav-toggle {
   transform: translateX(var(--g-header-spacing-h));
   /* critical:end */
 }
-@media (min-width: 48em) {
+@media (min-width: 62em) {
   button.nav-toggle {
     /* critical:start */
     display: none;
