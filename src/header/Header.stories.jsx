@@ -7,7 +7,7 @@ const { defaultArgs: args, argTypes } = getArgsShared(schema);
 const Template = (args) => <Header {...args} />;
 
 export default {
-  title: "Base/Header",
+  title: "Custom/Header",
   component: Header,
   args,
   argTypes,

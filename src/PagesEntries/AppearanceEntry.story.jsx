@@ -6,12 +6,9 @@ import FooterStories from "../footer/Footer.stories";
 import { Appearance } from "../appearance/AppearanceComponent.tsx";
 import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
-import { Related } from "../related/RelatedComponent";
-
-import { Section } from "@kickstartds/base";
 
 export default {
-  title: "Appearance Entry",
+  title: "Appearance",
 };
 
 const Page = () => (

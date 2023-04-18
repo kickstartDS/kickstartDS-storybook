@@ -23,7 +23,7 @@ export default {
 
 const Page = () => (
   <>
-    <Header {...unpack(HeaderStories.args)}  />
+    <Header {...unpack(HeaderStories.args)} />
     <Section
       mode="list"
       width="wide"

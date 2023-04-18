@@ -8,7 +8,7 @@ args["cta.image.order.desktopImageLast"] = true;
 const Template = (args) => <Glossary {...args} />;
 
 export default {
-  title: "Content/Glossary",
+  title: "Custom/Glossary",
   component: Glossary,
   args,
   argTypes,

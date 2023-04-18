@@ -41,7 +41,19 @@ export const parameters = {
     storySort(a, b) {
       // welcome page to top!
       if (a[0].includes("welcome")) {
+        return -2;
+      }
+
+      if (a[0].includes("design-token")) {
         return -1;
+      }
+
+      if (a[0].includes("custom")) {
+        return 4;
+      }
+
+      if (a[0].includes("pages")) {
+        return 10;
       }
 
       // alphabetically

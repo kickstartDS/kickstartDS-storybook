@@ -6,7 +6,7 @@ const { defaultArgs: args, argTypes } = getArgsShared(schema);
 const Template = (args) => <Footer {...args} />;
 
 export default {
-  title: "Base/Footer",
+  title: "Custom/Footer",
   component: Footer,
   args,
   argTypes,
