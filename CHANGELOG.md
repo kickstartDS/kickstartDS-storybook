@@ -1,3 +1,16 @@
+# v2.4.28 (Tue Apr 18 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feat(concierge): adjust concierge layout ([@fleven-kds](https://github.com/fleven-kds))
+- feat(concierge): concierge design adjustments ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.4.27 (Thu Apr 13 2023)
 
 #### ⚠️ Pushed to `master`
