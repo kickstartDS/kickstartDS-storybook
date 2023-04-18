@@ -9,16 +9,21 @@
   flex-direction: column;
 
   &--concierge.template {
-    gap: var(--ks-spacing-l);
+    gap: var(--ks-spacing-m);
+
+    @include breakpoint.media("≥m") {
+      gap: var(--ks-spacing-l);
+    }
+
     flex-direction: column-reverse;
 
-    @media (min-width: 40rem) {
+    @include breakpoint.media("≥s") {
       flex-direction: row;
     }
 
     .template__main,
     .template__side {
-      @media (min-width: 40rem) {
+      @include breakpoint.media("≥s") {
         height: fit-content;
         position: sticky;
         top: calc(var(--l-section--space-small) * 3);
@@ -26,13 +31,13 @@
     }
 
     .template__main {
-      @media (min-width: 40rem) {
+      @include breakpoint.media("≥s") {
         width: 70%;
       }
     }
 
     .template__side {
-      @media (min-width: 40rem) {
+      @include breakpoint.media("≥s") {
         width: 30%;
       }
     }

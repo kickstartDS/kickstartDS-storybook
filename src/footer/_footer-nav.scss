@@ -4,9 +4,9 @@
   flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
-  grid-gap: var(--ks-spacing-l);
+  grid-gap: var(--ks-spacing-s) var(--ks-spacing-m);
 
-  @include breakpoint.media("≥s") {
+  @include breakpoint.media("≥l") {
     flex-direction: row;
   }
 
