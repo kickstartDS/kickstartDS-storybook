@@ -23,9 +23,9 @@
       justify-content: center;
       aspect-ratio: 1;
       height: 100%;
-      max-height: 300px;
+      max-height: 200px;
 
-      @media (min-width: 40rem) {
+      @include breakpoint.media("≥m") {
         max-height: 400px;
       }
 
@@ -60,7 +60,9 @@
         transition: cubic-bezier(1, -0.5, 0, 1.5) transform 300ms;
         transition-delay: 400ms;
         transform: translateY(0%);
-        bottom: 0;
+        bottom: -1px;
+        width: 65%;
+        left: 11%;
       }
     }
 
@@ -103,6 +105,20 @@
     }
   }
 
+  &--question {
+    cursor: pointer;
+    background-color: var(--ks-color-primary-inverted);
+    border: 2px solid var(--ks-color-primary-inverted);
+    font: var(--ks-font-mono-s);
+    color: var(--ks-text-color-primary);
+    padding: var(--ks-spacing-inset-squish-xs);
+    display: inline-block;
+
+    &:hover {
+      border-color: var(--ks-border-color-interface-interactive-hover);
+    }
+  }
+
   &-context-menu {
     flex-direction: column;
     gap: var(--ks-spacing-xxs);
@@ -142,7 +158,7 @@
       z-index: 2;
       position: relative;
 
-      @include breakpoint.media("<s") {
+      @include breakpoint.media("≤s") {
         max-width: 35%;
       }
     }

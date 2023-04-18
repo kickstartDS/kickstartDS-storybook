@@ -49,7 +49,12 @@ export const Concierge = forwardRef<
     textAreaRef
   ) => (
     <div className="concierge" {...props}>
-      <Section width="default" spaceAfter="small" spaceBefore="small">
+      <Section
+        className="l-section--reverse"
+        width="default"
+        spaceAfter="small"
+        spaceBefore="small"
+      >
         <AvatarIntro
           className={
             status.code === "idle" && !answer ? "idling-animation" : ""
@@ -60,16 +65,18 @@ export const Concierge = forwardRef<
             level="h1"
             align="left"
             content="Design System Concierge"
-            renderContent={(content) => (
-              <div>
-                <div>{content}</div>
-                <TagLabel
-                  style={{ backgroundColor: "#FF009D", color: "white" }}
-                  label="Beta"
-                  size="m"
-                />
-              </div>
-            )}
+            // renderContent={(content) => (
+            //   <div>
+            //     <div>{content}</div>
+            //     <div>
+            //       <TagLabel
+            //         style={{ backgroundColor: "#FF009D", color: "white" }}
+            //         label="Beta"
+            //         size="m"
+            //       />
+            //     </div>
+            //   </div>
+            // )}
             subheadline="Ask anything and get pointed the right way"
           />
         </div>
@@ -92,7 +99,7 @@ export const Concierge = forwardRef<
             id="concierge-question-input"
             hideLabel
             className="c-form-field__input--highlight"
-            rows={6}
+            rows={5}
             ref={textAreaRef}
             placeholder={placeholder}
           />
@@ -138,17 +145,17 @@ export const Concierge = forwardRef<
                       questions.map((question, index) => {
                         return (
                           <li key={`question-${index}`}>
-                            <TagLabel
-                              className="c-tag-label--link"
-                              label={`${question}`}
+                            <span
+                              className="concierge--question"
                               onClick={() => {
                                 if (textAreaRef.current) {
                                   textAreaRef.current.value = question;
                                 }
                                 handleConciergeConfirm();
                               }}
-                              size={"s"}
-                            />
+                            >
+                              {`${question}`}
+                            </span>
                           </li>
                         );
                       })}
