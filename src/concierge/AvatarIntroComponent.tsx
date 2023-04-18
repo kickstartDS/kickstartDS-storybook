@@ -106,8 +106,6 @@ export const AvatarIntro: FC<HTMLAttributes<HTMLElement>> = ({
         </svg>
         <svg
           className="brb-sign"
-          width="178"
-          height="55"
           viewBox="0 0 178 55"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

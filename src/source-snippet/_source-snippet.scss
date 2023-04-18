@@ -38,12 +38,12 @@
 
   &--mobile.c-teaser-box {
     flex-direction: row;
-    gap: var(--ks-spacing-xs);
 
     > :first-child {
       max-width: 7.5rem;
       width: 100%;
       padding: var(--ks-spacing-xs);
+      display: flex;
     }
 
     .c-teaser__body {
