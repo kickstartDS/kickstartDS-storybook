@@ -8,7 +8,7 @@ import { Header } from "../header/HeaderComponent";
 import { Footer } from "../footer/FooterComponent";
 
 export default {
-  title: "Showcase Entry",
+  title: "Showcase",
 };
 
 const Page = () => (

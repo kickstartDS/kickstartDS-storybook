@@ -16,7 +16,7 @@ const Template = (args) => {
 };
 
 export default {
-  title: "Content/Concierge",
+  title: "Custom / Concierge",
   component: Concierge,
   args,
   argTypes,

@@ -7,7 +7,7 @@ const { args, argTypes } = getArgsShared(schema);
 const Template = (args) => <Appearance {...args} />;
 
 export default {
-  title: "Content/Appearance",
+  title: "Custom/Appearance",
   component: Appearance,
   args,
   argTypes,

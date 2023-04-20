@@ -1,12 +1,4 @@
 @use "./tag-label-tokens";
-.c-tag-label {
-  &--link {
-    cursor: pointer;
-    &:hover {
-      border: var(--tag-label--border-hover);
-    }
-  }
-}
 
 .tag-label-container {
   display: flex;
