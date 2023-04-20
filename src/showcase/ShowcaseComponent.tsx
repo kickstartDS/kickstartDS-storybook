@@ -4,7 +4,6 @@ import { Stack, Inline } from "@bedrock-layout/primitives";
 import { Headline } from "@kickstartds/base/lib/headline";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
-import { Section } from "@kickstartds/base/lib/section";
 import { Divider } from "@kickstartds/base/lib/divider";
 import { RichText } from "@kickstartds/base/lib/rich-text";
 
@@ -13,6 +12,7 @@ import { Visual } from "@kickstartds/content/lib/visual";
 
 import { Button } from "../button/ButtonComponent";
 import { Related } from "../related/RelatedComponent";
+import { Section } from "../section/SectionComponent";
 
 import { ShowcaseProps } from "./ShowcaseProps";
 
@@ -191,7 +191,6 @@ export const Showcase: FunctionComponent<
       spaceAfter="default"
       ks-inverted="true"
       pattern="contact"
-      align="left"
       width="narrow"
       headline={{
         content: "Become our next collaborator",

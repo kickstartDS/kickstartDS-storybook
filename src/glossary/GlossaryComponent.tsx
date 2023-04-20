@@ -2,10 +2,10 @@ import { FunctionComponent, HTMLAttributes } from "react";
 
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
-import { Section } from "@kickstartds/base/lib/section";
 
 import { GlossaryProps } from "./GlossaryProps";
 import { Button } from "../button/ButtonComponent";
+import { Section } from "../section/SectionComponent";
 import { Headline } from "@kickstartds/base/lib/headline";
 import { Inline, Stack } from "@bedrock-layout/primitives";
 import { Related } from "../related/RelatedComponent";

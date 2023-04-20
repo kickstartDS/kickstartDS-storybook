@@ -3,29 +3,33 @@ import { FunctionComponent, HTMLAttributes } from "react";
 import {
   SectionContextDefault,
   SectionContext,
+  Section as KdsSection,
 } from "@kickstartds/base/lib/section";
 import classnames from "classnames";
 
 import { SectionProps } from "./SectionProps";
 
-const Section: FunctionComponent<
+const SectionComponent: FunctionComponent<
   SectionProps & HTMLAttributes<HTMLDivElement>
-> = ({ pattern, background, variant, className, ...props }) => (
+> = ({ pattern, inverted, background, variant, className, ...props }) => (
   <SectionContextDefault
     className={classnames(
       className,
       pattern &&
         pattern !== "none" &&
         `l-section__pattern l-section__pattern-${pattern} l-section__pattern-${pattern}--${
-          background === "dark" ? "dark" : "dark"
+          inverted ? "dark" : "dark"
         }`,
       variant && variant !== "none" && `l-section-style--${variant}`
     )}
     background={background}
+    inverted={inverted}
     {...props}
   />
 );
 
 export const SectionProvider = (props) => (
-  <SectionContext.Provider value={Section} {...props} />
+  <SectionContext.Provider value={SectionComponent} {...props} />
 );
+
+export const Section = KdsSection as typeof SectionComponent;

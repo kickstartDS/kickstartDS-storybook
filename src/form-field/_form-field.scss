@@ -15,6 +15,7 @@
         box-shadow: var(--c-form-field--shadow) var(--c-form-field--border-color);
         transition: var(--ks-transition-bounce);
         transition-property: all;
+        padding: var(--ks-spacing-inset-squish-s);
 
         &.focus-visible {
           filter: drop-shadow(2px 6px 6px var(--ks-color-primary-alpha-4));

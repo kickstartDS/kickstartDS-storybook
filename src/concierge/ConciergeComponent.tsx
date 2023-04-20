@@ -1,15 +1,13 @@
 import React, { forwardRef, HTMLAttributes } from "react";
 
-import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Headline } from "@kickstartds/base/lib/headline";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
-import { Picture } from "@kickstartds/base/lib/picture";
-import { Section } from "@kickstartds/base/lib/section";
 import { RichText } from "@kickstartds/base/lib/rich-text";
 import { TextArea } from "@kickstartds/form/lib/text-area";
 
 import { Source } from "../source/SourceComponent";
+import { Section } from "../section/SectionComponent";
 import { Button } from "../button/ButtonComponent";
 import { AvatarIntro } from "./AvatarIntroComponent";
 import { AvatarSources } from "./AvatarSourcesComponent";
@@ -48,7 +46,12 @@ export const Concierge = forwardRef<
     textAreaRef
   ) => (
     <div className="concierge" {...props}>
-      <Section width="default" spaceAfter="small" spaceBefore="small">
+      <Section
+        className="l-section--reverse"
+        width="default"
+        spaceAfter="small"
+        spaceBefore="small"
+      >
         <AvatarIntro
           className={
             status.code === "idle" && !answer ? "idling-animation" : ""
@@ -59,16 +62,18 @@ export const Concierge = forwardRef<
             level="h1"
             align="left"
             content="Design System Concierge"
-            renderContent={(content) => (
-              <div>
-                <div>{content}</div>
-                <TagLabel
-                  style={{ backgroundColor: "#FF009D", color: "white" }}
-                  label="Beta"
-                  size="m"
-                />
-              </div>
-            )}
+            // renderContent={(content) => (
+            //   <div>
+            //     <div>{content}</div>
+            //     <div>
+            //       <TagLabel
+            //         style={{ backgroundColor: "#FF009D", color: "white" }}
+            //         label="Beta"
+            //         size="m"
+            //       />
+            //     </div>
+            //   </div>
+            // )}
             subheadline="Ask anything and get pointed the right way"
           />
         </div>
@@ -91,7 +96,7 @@ export const Concierge = forwardRef<
             id="concierge-question-input"
             hideLabel
             className="c-form-field__input--highlight"
-            rows={6}
+            rows={5}
             ref={textAreaRef}
             placeholder={placeholder}
           />
@@ -120,41 +125,43 @@ export const Concierge = forwardRef<
       <Section spaceBefore="small" background="accent" width="default">
         <div className="template template--concierge">
           <div className="template__main">
-            {status.code !== "loading" && !answer && status.code !== "error" && (
-              <div>
+            {status.code !== "loading" &&
+              !answer &&
+              status.code !== "error" && (
                 <div>
-                  <Headline
-                    content="Not sure where to start?"
-                    subheadline="Try one of the following questions:"
-                    level="h2"
-                    styleAs="h4"
-                  />
-                  <ul className="c-tag-label--list">
-                    {textAreaRef &&
-                      typeof textAreaRef !== "function" &&
-                      questions &&
-                      questions.length > 0 &&
-                      questions.map((question, index) => {
-                        return (
-                          <li key={`question-${index}`}>
-                            <TagLabel
-                              className="c-tag-label--link"
-                              label={`${question}`}
-                              onClick={() => {
-                                if (textAreaRef.current) {
-                                  textAreaRef.current.value = question;
-                                }
-                                handleConciergeConfirm();
-                              }}
-                              size={"s"}
-                            />
-                          </li>
-                        );
-                      })}
-                  </ul>
+                  <div>
+                    <Headline
+                      content="Not sure where to start?"
+                      subheadline="Try one of the following questions:"
+                      level="h2"
+                      styleAs="h4"
+                    />
+                    <ul className="c-tag-label--list">
+                      {textAreaRef &&
+                        typeof textAreaRef !== "function" &&
+                        questions &&
+                        questions.length > 0 &&
+                        questions.map((question, index) => {
+                          return (
+                            <li key={`question-${index}`}>
+                              <span
+                                className="concierge--question"
+                                onClick={() => {
+                                  if (textAreaRef.current) {
+                                    textAreaRef.current.value = question;
+                                  }
+                                  handleConciergeConfirm();
+                                }}
+                              >
+                                {`${question}`}
+                              </span>
+                            </li>
+                          );
+                        })}
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
             {status.code !== "canthelp" &&
               status.code !== "error" &&
               answer && <RichText text={answer} />}
@@ -243,12 +250,12 @@ export const Concierge = forwardRef<
                     label: "View Sources",
                     variant: "clear",
                     size: "small",
-                    iconAfter: true,
-                    href: "#sources",
-                    icon: {
+                    iconAfter: {
                       icon: "chevron-down",
                     },
+                    href: "#sources",
                   }}
+                  ratio={undefined}
                 />
               </div>
               <div className="concierge-context-menu concierge-context-menu--desktop">

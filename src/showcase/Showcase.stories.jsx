@@ -7,7 +7,7 @@ const { args, argTypes } = getArgsShared(schema);
 const Template = (args) => <Showcase {...args} />;
 
 export default {
-  title: "Content/Showcase",
+  title: "Custom/Showcase",
   component: Showcase,
   args,
   argTypes,
