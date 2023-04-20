@@ -4,9 +4,6 @@
   "title": "Section",
   "allOf": [
     {
-      "$ref": "http://schema.kickstartds.com/base/section.schema.json"
-    },
-    {
       "type": "object",
       "properties": {
         "pattern": {
@@ -16,7 +13,7 @@
         },
         "variant": {
           "type": "string",
-          "enum": ["none", "head", "body", "highlight"],
+          "enum": ["none", "head", "body", "highlight", "half"],
           "default": "none"
         },
         "id": {
@@ -80,6 +77,9 @@
           }
         }
       }
+    },
+    {
+      "$ref": "http://schema.kickstartds.com/base/section.schema.json"
     }
   ]
 }

@@ -3,13 +3,13 @@ import { Stack, Inline } from "@bedrock-layout/primitives";
 
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
-import { Section } from "@kickstartds/base/lib/section";
 import { Divider } from "@kickstartds/base/lib/divider";
 import { Headline } from "@kickstartds/base/lib/headline";
 
 import { Button } from "../button/ButtonComponent";
 import { Related } from "../related/RelatedComponent";
 import { Person } from "../person/PersonComponent";
+import { Section } from "../section/SectionComponent";
 
 import { AppearanceProps } from "./AppearanceProps";
 
@@ -142,12 +142,7 @@ ${language}
           </div>
           <div className="template__side">
             <Stack gutter="var(--ks-spacing-stack-s)">
-              <Headline
-                content="Description"
-                level="p"
-                styleAs="p"
-                spaceAfter="none"
-              />
+              <Headline content="Description" level="p" styleAs="p" />
               <TextMedia
                 className="kds-appearance--text-media"
                 media={[]}
@@ -169,12 +164,7 @@ ${language}
               {participants && participants.length > 0 && (
                 <>
                   <Divider />
-                  <Headline
-                    content="Participants"
-                    level="p"
-                    styleAs="p"
-                    spaceAfter="none"
-                  />
+                  <Headline content="Participants" level="p" styleAs="p" />
                   <Stack gutter="var(--ks-spacing-stack-xs)">
                     {participants?.map((item, i) => (
                       <Person
@@ -196,7 +186,6 @@ ${language}
         spaceAfter="default"
         ks-inverted="true"
         pattern="contact"
-        align="left"
         width="narrow"
         headline={{
           content: "Become our next collaborator",
