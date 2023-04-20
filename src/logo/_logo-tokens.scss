@@ -3,14 +3,14 @@
 :root,
 [ks-theme],
 [ks-inverted] {
-  --g-logo-height: 2.5rem;
+  --g-logo-height: 2.25rem;
   --kds-header-spacing: var(--ks-spacing-inset-s);
 
-  @include breakpoint.media("≥s") {
+  @include breakpoint.media("≥m") {
     --g-logo-height: 2.5rem;
   }
 
-  @media (min-width: 80em) {
+  @include breakpoint.media("≥xl") {
     --g-logo-height: 3rem;
   }
 

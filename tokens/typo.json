@@ -146,7 +146,13 @@
       },
       "copy": {
         "bp-factor": {
+          "phone": {
+            "value": 1
+          },
           "tablet": {
+            "value": 1
+          },
+          "desktop": {
             "value": 1.125
           }
         },
@@ -223,7 +229,13 @@
       },
       "interface": {
         "bp-factor": {
+          "phone": {
+            "value": 1
+          },
           "tablet": {
+            "value": 1
+          },
+          "desktop": {
             "value": 1.125
           }
         },

@@ -12,10 +12,16 @@
   }
 
   .l-section__container {
-    --l-section_container--gutter-small: var(--ks-spacing-s);
+    &.l-section__container--gutter-none {
+      --l-section_container--gutter: 0;
+    }
 
-    &--gutter-none {
-      --l-section_container--gutter: 0 !important;
+    &--gutter-small {
+      --l-section_container--gutter: var(--ks-spacing-s);
+    }
+
+    &--gutter-large {
+      --l-section_container--gutter: var(--ks-spacing-l);
     }
 
     @include breakpoint.media("≥s") {
@@ -25,6 +31,10 @@
       .l-section--outer-width-wide {
         --l-section_col--min-width: 16rem;
         --l-section_col--max-width: 500px;
+      }
+
+      &--gutter-large {
+        --l-section_container--gutter: var(--ks-spacing-l);
       }
     }
 

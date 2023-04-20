@@ -3,11 +3,10 @@
 .c-post {
   &__content {
     max-width: calc(var(--l-section--content-width-narrow) - calc(var(--l-section--content-padding) * 2));
-    width: 100%;
 
     .c-post-share-bar {
       padding-top: var(--ks-spacing-s);
-      @include breakpoint.media(">m") {
+      @include breakpoint.media("≥m") {
         display: none;
       }
     }
@@ -15,7 +14,7 @@
 
   &-text {
     > p:not(h2, h3) {
-      @include breakpoint.media(">m") {
+      @include breakpoint.media("≥m") {
         padding: 0 var(--ks-spacing-m);
       }
       max-width: var(--l-section--content-width-narrow);
@@ -26,7 +25,7 @@
 
     > ul,
     > ol {
-      @include breakpoint.media(">m") {
+      @include breakpoint.media("≥m") {
         margin-left: var(--ks-spacing-m);
       }
     }
@@ -44,12 +43,9 @@
 .l-section--blog {
   .l-section__container {
     display: flex;
-    @include breakpoint.media("<m") {
-      flex-direction: column;
-      gap: var(--ks-spacing-xl);
-    }
+    flex-direction: column;
 
-    @include breakpoint.media(">m") {
+    @include breakpoint.media("≥m") {
       justify-content: space-between;
       flex-direction: row-reverse;
     }

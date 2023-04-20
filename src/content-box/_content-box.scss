@@ -86,7 +86,7 @@
       background-size: contain;
       background-image: url(/patterns/progress-arrow.svg);
 
-      @include breakpoint.media(">m") {
+      @include breakpoint.media("≥m") {
         transform: rotate(-90deg) translateY(100%) translateX(50%);
         right: 0;
         top: 50%;

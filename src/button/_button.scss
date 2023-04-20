@@ -277,7 +277,7 @@
         height: var(--border-corner-height);
         left: -11px;
 
-        @include breakpoint.media(">s") {
+        @include breakpoint.media("≥s") {
           left: -12px;
         }
 
@@ -313,7 +313,7 @@
         &::after {
           left: -7px;
 
-          @include breakpoint.media(">s") {
+          @include breakpoint.media("≥s") {
             left: -8px;
           }
         }

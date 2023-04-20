@@ -6,7 +6,7 @@
 [ks-inverted] {
   --c-appearance--img-size: 8rem;
 
-  @include breakpoint.media(">s") {
+  @include breakpoint.media("≥s") {
     --c-appearance--img-size: 15rem;
   }
 }
