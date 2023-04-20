@@ -54,5 +54,4 @@ export interface HeadlineProps {
    * Show subheadline first
    */
   switchOrder?: boolean;
-  [k: string]: unknown;
 }

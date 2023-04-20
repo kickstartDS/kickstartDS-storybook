@@ -321,7 +321,6 @@ export interface IconBeforeButton {
   role?: AriaRole;
   className?: AdditionalClass;
   component?: KsComponentAttribute;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -331,7 +330,6 @@ export interface IconAfterButton {
   role?: AriaRole1;
   className?: AdditionalClass1;
   component?: KsComponentAttribute1;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -345,7 +343,6 @@ export interface Headline {
   spaceAfter?: BottomSpacing;
   className?: AdditionalClasses1;
   component?: KsComponentAttribute3;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -377,7 +374,6 @@ export interface IconBeforeButton1 {
   role?: AriaRole2;
   className?: AdditionalClass2;
   component?: KsComponentAttribute4;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -387,7 +383,6 @@ export interface IconAfterButton1 {
   role?: AriaRole3;
   className?: AdditionalClass3;
   component?: KsComponentAttribute5;
-  [k: string]: unknown;
 }
 /**
  * Wrapper for all media types

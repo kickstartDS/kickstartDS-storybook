@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 18 Apr 2023 10:41:13 GMT
+ * Generated on Thu, 20 Apr 2023 11:40:44 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -315,7 +315,9 @@
   --ks-font-size-display-l-base: 1.25rem;
   --ks-font-size-display-xl-base: 1.5rem;
   --ks-font-size-display-xxl-base: 2rem;
-  --ks-font-size-copy-bp-factor-tablet: 1.125;
+  --ks-font-size-copy-bp-factor-phone: 1;
+  --ks-font-size-copy-bp-factor-tablet: 1;
+  --ks-font-size-copy-bp-factor-desktop: 1.125;
   --ks-font-size-copy-xxs-base: 0.5rem;
   --ks-font-size-copy-xs-base: 0.75rem;
   --ks-font-size-copy-s-base: 1rem;
@@ -323,7 +325,9 @@
   --ks-font-size-copy-l-base: 1.5rem;
   --ks-font-size-copy-xl-base: 1.75rem;
   --ks-font-size-copy-xxl-base: 2rem;
-  --ks-font-size-interface-bp-factor-tablet: 1.125;
+  --ks-font-size-interface-bp-factor-phone: 1;
+  --ks-font-size-interface-bp-factor-tablet: 1;
+  --ks-font-size-interface-bp-factor-desktop: 1.125;
   --ks-font-size-interface-xxs-base: 0.5rem;
   --ks-font-size-interface-xs-base: 0.75rem;
   --ks-font-size-interface-s-base: 1rem;
@@ -828,6 +832,8 @@
 @media (min-width: 36em) {
   :root {
     --ks-font-size-display-bp-factor: var(--ks-font-size-display-bp-factor-phone);
+    --ks-font-size-copy-bp-factor: var(--ks-font-size-copy-bp-factor-phone);
+    --ks-font-size-interface-bp-factor: var(--ks-font-size-interface-bp-factor-phone);
     --ks-spacing-xxs-bp-factor: var(--ks-spacing-xxs-bp-factor-phone);
     --ks-spacing-xs-bp-factor: var(--ks-spacing-xs-bp-factor-phone);
     --ks-spacing-s-bp-factor: var(--ks-spacing-s-bp-factor-phone);
@@ -864,6 +870,8 @@
 }
 @media (min-width: 75em) {
   :root {
+    --ks-font-size-copy-bp-factor: var(--ks-font-size-copy-bp-factor-desktop);
+    --ks-font-size-interface-bp-factor: var(--ks-font-size-interface-bp-factor-desktop);
     --ks-spacing-xxs-bp-factor: var(--ks-spacing-xxs-bp-factor-desktop);
     --ks-spacing-xs-bp-factor: var(--ks-spacing-xs-bp-factor-desktop);
     --ks-spacing-s-bp-factor: var(--ks-spacing-s-bp-factor-desktop);

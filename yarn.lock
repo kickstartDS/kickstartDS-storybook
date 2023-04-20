@@ -501,7 +501,7 @@
     json5 "^2.2.1"
     semver "^6.3.0"
 
-"@babel/core@^7.19.3":
+"@babel/core@^7.19.3", "@babel/core@^7.21.4":
   version "7.21.4"
   resolved "https://registry.npmjs.org/@babel/core/-/core-7.21.4.tgz#c6dc73242507b8e2a27fd13a9c1814f9fa34a659"
   integrity sha512-qt/YV149Jman/6AfmlxJ04LMIu8bMoyl3RB91yTFrxQmgbrSvQMy7cI8Q62FHx1t8wJ8B5fu0UDoLwHAhUo1QA==
@@ -2308,7 +2308,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.20.1":
+"@babel/runtime@^7.20.1", "@babel/runtime@^7.21.0":
   version "7.21.0"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.21.0.tgz#5b55c9d394e5fcf304909a8b00c07dc217b56673"
   integrity sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==
@@ -2871,7 +2871,7 @@
   resolved "https://registry.yarnpkg.com/@jsdevtools/ono/-/ono-7.1.3.tgz#9df03bbd7c696a5c58885c34aa06da41c8543796"
   integrity sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==
 
-"@kickstartds/base@2.0.3", "@kickstartds/base@^2.0.3":
+"@kickstartds/base@2.0.3":
   version "2.0.3"
   resolved "https://registry.npmjs.org/@kickstartds/base/-/base-2.0.3.tgz#551471e5c2b6d1fe51870a194280529331438e3a"
   integrity sha512-b5oC9BdwokpmzktnUFUmVKGViR7TEhLgNgg3jnkvGF2r7s1n5sZA9FN4eJTUGYAv/y16bJK00d7ksH5O321YNA==
@@ -2884,14 +2884,27 @@
     react-markdown "^8.0.3"
     vhtml "^2.2.0"
 
-"@kickstartds/blog@2.0.4-canary.1275.5555.0":
-  version "2.0.4-canary.1275.5555.0"
-  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-2.0.4-canary.1275.5555.0.tgz#5871a98e41edd8584fb7330a422796c87febfa13"
-  integrity sha512-goCJXVlLp8NJ5pODZfzeoJeeEFpXrqXJW2bpT/o2939lfCalas6JzgjclLHRwHCaSWWon5fubJyKo0fa9AmOgQ==
+"@kickstartds/base@2.0.4-canary.1299.5738.0":
+  version "2.0.4-canary.1299.5738.0"
+  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-2.0.4-canary.1299.5738.0.tgz#65417088bbcfe781fca5e91508a085a4d793db93"
+  integrity sha512-ASH8MjsmmXm5hF//j9E90xfycCKAHzac6DKrErCiYiFfhU4QzyqIGF3vmjQkIpR5vEoFv7SaBBLq9jT2gLnvOg==
   dependencies:
-    "@babel/runtime" "^7.20.1"
-    "@kickstartds/base" "^2.0.3"
-    "@kickstartds/core" "^2.0.3"
+    "@babel/runtime" "^7.21.0"
+    "@kickstartds/core" "2.0.4-canary.1299.5738.0"
+    classnames "^2.3.2"
+    focus-visible "^5.0.2"
+    photoswipe "^5.3.2"
+    react-markdown "^8.0.3"
+    vhtml "^2.2.0"
+
+"@kickstartds/blog@2.0.4-canary.1299.5738.0":
+  version "2.0.4-canary.1299.5738.0"
+  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-2.0.4-canary.1299.5738.0.tgz#82e81dc3696bd7101074c6b3dba958a3402ffa38"
+  integrity sha512-9FOF3rZ2YRAJzRTM6dwAYwzIIbPCpyROmw0ewUMtE/zgte4sqfIesz5iZBVQw2Sk7zdsWYnLX0l4DiD5X3uCjg==
+  dependencies:
+    "@babel/runtime" "^7.21.0"
+    "@kickstartds/base" "2.0.4-canary.1299.5738.0"
+    "@kickstartds/core" "2.0.4-canary.1299.5738.0"
     classnames "^2.3.2"
     date-fns "^2.29.3"
 
@@ -2958,14 +2971,33 @@
     pubsub-js "^1.9.4"
     sass "^1.56.0"
 
-"@kickstartds/form@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-2.0.3.tgz#700a1b91be19bddb76f4b352b3cdc48a5667e53f"
-  integrity sha512-0+HscJqAF3I0LHpIiJCroeU0sCLU4mkFwIHtUDeqbCexPfzi4lVunHsyn1WU2Zx5ejNO4vPzdsU7g5fbGYecNA==
+"@kickstartds/core@2.0.4-canary.1299.5738.0":
+  version "2.0.4-canary.1299.5738.0"
+  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-2.0.4-canary.1299.5738.0.tgz#8fd6050ed00bddb6447739745407fd18974ea09d"
+  integrity sha512-+7R0Cm65dp0M1++JM+Ep7Wp5bX5lV0IoF8U3QlzYcJyIGxzeECItnOohaR/JoDKTtgImoe9qFzdOg7nZFlXOaQ==
   dependencies:
-    "@babel/runtime" "^7.20.1"
-    "@kickstartds/base" "^2.0.3"
-    "@kickstartds/core" "^2.0.3"
+    "@babel/runtime" "^7.21.0"
+    bourbon "^7.2.0"
+    classnames "^2.2.6"
+    del "^6.0.0"
+    dependency-graph "^0.11.0"
+    esbuild "^0.15.10"
+    fast-glob "^3.2.11"
+    fs-extra "^10.1.0"
+    lazysizes "^5.3.2"
+    lodash "^4.17.21"
+    lodash-es "^4.17.21"
+    pubsub-js "^1.9.4"
+    sass "^1.56.0"
+
+"@kickstartds/form@2.0.4-canary.1299.5738.0":
+  version "2.0.4-canary.1299.5738.0"
+  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-2.0.4-canary.1299.5738.0.tgz#eadcfb6ea6124554bb487600d9f33158cccfea2c"
+  integrity sha512-soj6NdnsHc7XcMLpAdvz86pVrNawJm5la+peIVnoYqniGf70MInJI8JznmqkHkeRUM5gDgtgUbExVGHCvxMfiA==
+  dependencies:
+    "@babel/runtime" "^7.21.0"
+    "@kickstartds/base" "2.0.4-canary.1299.5738.0"
+    "@kickstartds/core" "2.0.4-canary.1299.5738.0"
     classnames "^2.3.2"
 
 "@kickstartds/json-schema-viewer@^1.1.0":
@@ -3022,22 +3054,22 @@
     react-router-dom "^5.3.0"
     styled-components "^5.3.1"
 
-"@kickstartds/style-dictionary@2.0.0-canary.922.4919.0":
-  version "2.0.0-canary.922.4919.0"
-  resolved "https://registry.npmjs.org/@kickstartds/style-dictionary/-/style-dictionary-2.0.0-canary.922.4919.0.tgz#ad5ced9cc1fb24e44f2b16977f97e416015ab82f"
-  integrity sha512-trXA37omFoGnVT9dDYAgo2lyu71UZa6r+cnOJ26i72T6jGHLG0dkgABJqXnj3UIJl5EkzFHRz1o+PFJQGKIlHA==
+"@kickstartds/style-dictionary@2.0.1-canary.1299.5738.0":
+  version "2.0.1-canary.1299.5738.0"
+  resolved "https://registry.npmjs.org/@kickstartds/style-dictionary/-/style-dictionary-2.0.1-canary.1299.5738.0.tgz#6f3be9d3674634fb651a7c0a649ee4da371e9511"
+  integrity sha512-o8puZ5EqePj/V3eR0ZZbjkouYR+4NGLLVunISk79/JT7CLF4G5tu4/2lZdeTOZ1EPBZ66epbPsyYb4UiBhYcEA==
   dependencies:
-    "@babel/core" "^7.17.8"
-    "@babel/preset-react" "^7.16.7"
+    "@babel/core" "^7.21.4"
+    "@babel/preset-react" "^7.18.6"
     ajv "^8.10.0"
     bezier-js "^6.1.0"
     htmltojsx "^0.3.0"
     lodash "^4.17.21"
     node-html-parser "^5.2.0"
-    postcss "^8.4.6"
+    postcss "^8.4.21"
     postcss-calc "^8.2.4"
     postcss-colormin "^5.3.0"
-    postcss-normalize-whitespace "^5.1.1"
+    postcss-normalize-whitespace "^6.0.0"
     postcss-sort-media-queries "^4.2.1"
     style-dictionary "^3.7.0"
     svgstore "^3.0.1"
@@ -12141,6 +12173,11 @@ nanoid@^3.3.1, nanoid@^3.3.4:
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
 
+nanoid@^3.3.6:
+  version "3.3.6"
+  resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.6.tgz#443380c856d6e9f9824267d960b4236ad583ea4c"
+  integrity sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==
+
 nanomatch@^1.2.9:
   version "1.2.13"
   resolved "https://registry.yarnpkg.com/nanomatch/-/nanomatch-1.2.13.tgz#b87a8aa4fc0de8fe6be88895b38983ff265bd119"
@@ -13217,6 +13254,13 @@ postcss-normalize-whitespace@^5.1.1:
   dependencies:
     postcss-value-parser "^4.2.0"
 
+postcss-normalize-whitespace@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npmjs.org/postcss-normalize-whitespace/-/postcss-normalize-whitespace-6.0.0.tgz#accb961caa42e25ca4179b60855b79b1f7129d4d"
+  integrity sha512-7cfE1AyLiK0+ZBG6FmLziJzqQCpTQY+8XjMhMAz8WSBSCsCNNUKujgIgjCAmDT3cJ+3zjTXFkoD15ZPsckArVw==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
 postcss-scss@^4.0.2:
   version "4.0.4"
   resolved "https://registry.npmjs.org/postcss-scss/-/postcss-scss-4.0.4.tgz#aa8f60e19ee18259bc193db9e4b96edfce3f3b1f"
@@ -13257,6 +13301,15 @@ postcss@^8.3.11, postcss@^8.4.6:
   integrity sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==
   dependencies:
     nanoid "^3.3.4"
+    picocolors "^1.0.0"
+    source-map-js "^1.0.2"
+
+postcss@^8.4.21:
+  version "8.4.23"
+  resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.23.tgz#df0aee9ac7c5e53e1075c24a3613496f9e6552ab"
+  integrity sha512-bQ3qMcpF6A/YjR55xtoTr0jGOlnPOKAIMdOWiv0EIT6HVPEaJiJB4NLljSbiHoC2RX7DN5Uvjtpbg1NPdwv1oA==
+  dependencies:
+    nanoid "^3.3.6"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
