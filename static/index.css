@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 20 Apr 2023 11:40:44 GMT
+ * Generated on Thu, 20 Apr 2023 11:47:42 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -1683,7 +1683,7 @@
   height: 100%;
   max-height: 200px;
 }
-@media (min-width: 60em) {
+@media (min-width: 48em) {
   .concierge-avatar--intro {
     max-height: 400px;
   }
@@ -1795,7 +1795,7 @@
   z-index: 2;
   position: relative;
 }
-@media (max-width: 35.99em) {
+@media (max-width: 36em) {
   .concierge-context-menu .concierge-avatar--sources {
     max-width: 35%;
   }
