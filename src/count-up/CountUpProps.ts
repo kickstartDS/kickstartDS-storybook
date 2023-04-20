@@ -130,7 +130,6 @@ export interface Icon {
   role?: AriaRole;
   className?: AdditionalClass;
   component?: KsComponentAttribute;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -162,7 +161,6 @@ export interface IconBeforeButton {
   role?: AriaRole1;
   className?: AdditionalClass1;
   component?: KsComponentAttribute1;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -172,5 +170,4 @@ export interface IconAfterButton {
   role?: AriaRole2;
   className?: AdditionalClass2;
   component?: KsComponentAttribute2;
-  [k: string]: unknown;
 }

@@ -153,7 +153,6 @@ export type Sources = {
   srcSet?: PictureSourceset1;
   media?: TODOMEDIATITLE;
   type?: TODOTYPETITLE;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -676,7 +675,6 @@ export type Sources1 = {
   srcSet?: PictureSourceset3;
   media?: TODOMEDIATITLE1;
   type?: TODOTYPETITLE1;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -1312,7 +1310,6 @@ export type Sources2 = {
   srcSet?: PictureSourceset5;
   media?: TODOMEDIATITLE2;
   type?: TODOTYPETITLE2;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -2524,7 +2521,6 @@ export type Sources3 = {
   srcSet?: PictureSourceset7;
   media?: TODOMEDIATITLE3;
   type?: TODOTYPETITLE3;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -2760,7 +2756,6 @@ export type Sources4 = {
   srcSet?: PictureSourceset9;
   media?: TODOMEDIATITLE4;
   type?: TODOTYPETITLE4;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -2892,7 +2887,6 @@ export type Sources5 = {
   srcSet?: PictureSourceset11;
   media?: TODOMEDIATITLE5;
   type?: TODOTYPETITLE5;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -3892,7 +3886,6 @@ export type Sources6 = {
   srcSet?: PictureSourceset13;
   media?: TODOMEDIATITLE6;
   type?: TODOTYPETITLE6;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -4002,7 +3995,6 @@ export type Sources7 = {
   srcSet?: PictureSourceset15;
   media?: TODOMEDIATITLE7;
   type?: TODOTYPETITLE7;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -4088,7 +4080,6 @@ export type Sources8 = {
   srcSet?: PictureSourceset17;
   media?: TODOMEDIATITLE8;
   type?: TODOTYPETITLE8;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -4198,7 +4189,6 @@ export type Sources9 = {
   srcSet?: PictureSourceset19;
   media?: TODOMEDIATITLE9;
   type?: TODOTYPETITLE9;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -4316,7 +4306,6 @@ export type Sources10 = {
   srcSet?: PictureSourceset21;
   media?: TODOMEDIATITLE10;
   type?: TODOTYPETITLE10;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -4448,7 +4437,6 @@ export type Sources11 = {
   srcSet?: PictureSourceset23;
   media?: TODOMEDIATITLE11;
   type?: TODOTYPETITLE11;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -4564,7 +4552,6 @@ export type Sources12 = {
   srcSet?: PictureSourceset25;
   media?: TODOMEDIATITLE12;
   type?: TODOTYPETITLE12;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -4738,7 +4725,6 @@ export type Sources13 = {
   srcSet?: PictureSourceset27;
   media?: TODOMEDIATITLE13;
   type?: TODOTYPETITLE13;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -4922,7 +4908,6 @@ export type Sources14 = {
   srcSet?: PictureSourceset29;
   media?: TODOMEDIATITLE14;
   type?: TODOTYPETITLE14;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -5008,7 +4993,6 @@ export type Sources15 = {
   srcSet?: PictureSourceset31;
   media?: TODOMEDIATITLE15;
   type?: TODOTYPETITLE15;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -5090,7 +5074,6 @@ export type Sources16 = {
   srcSet?: PictureSourceset33;
   media?: TODOMEDIATITLE16;
   type?: TODOTYPETITLE16;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -5208,7 +5191,6 @@ export type Sources17 = {
   srcSet?: PictureSourceset35;
   media?: TODOMEDIATITLE17;
   type?: TODOTYPETITLE17;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -5516,7 +5498,6 @@ export type Sources18 = {
   srcSet?: PictureSourceset37;
   media?: TODOMEDIATITLE18;
   type?: TODOTYPETITLE18;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -5817,7 +5798,6 @@ export type Sources19 = {
   srcSet?: PictureSourceset39;
   media?: TODOMEDIATITLE19;
   type?: TODOTYPETITLE19;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -6163,7 +6143,6 @@ export type Sources20 = {
   srcSet?: PictureSourceset41;
   media?: TODOMEDIATITLE20;
   type?: TODOTYPETITLE20;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -6358,7 +6337,6 @@ export type Sources21 = {
   srcSet?: PictureSourceset43;
   media?: TODOMEDIATITLE21;
   type?: TODOTYPETITLE21;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -6665,7 +6643,6 @@ export type Sources22 = {
   srcSet?: PictureSourceset45;
   media?: TODOMEDIATITLE22;
   type?: TODOTYPETITLE22;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -7083,7 +7060,6 @@ export type Sources23 = {
   srcSet?: PictureSourceset47;
   media?: TODOMEDIATITLE23;
   type?: TODOTYPETITLE23;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -8493,7 +8469,6 @@ export type Sources24 = {
   srcSet?: PictureSourceset49;
   media?: TODOMEDIATITLE24;
   type?: TODOTYPETITLE24;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -9018,7 +8993,6 @@ export type Sources25 = {
   srcSet?: PictureSourceset51;
   media?: TODOMEDIATITLE25;
   type?: TODOTYPETITLE25;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -10210,7 +10184,6 @@ export type Sources26 = {
   srcSet?: PictureSourceset53;
   media?: TODOMEDIATITLE26;
   type?: TODOTYPETITLE26;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -10569,7 +10542,6 @@ export type Sources27 = {
   srcSet?: PictureSourceset55;
   media?: TODOMEDIATITLE27;
   type?: TODOTYPETITLE27;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -11067,7 +11039,6 @@ export type Sources28 = {
   srcSet?: PictureSourceset57;
   media?: TODOMEDIATITLE28;
   type?: TODOTYPETITLE28;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -12161,7 +12132,6 @@ export type Sources29 = {
   srcSet?: PictureSourceset59;
   media?: TODOMEDIATITLE29;
   type?: TODOTYPETITLE29;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -12339,7 +12309,6 @@ export type Sources30 = {
   srcSet?: PictureSourceset61;
   media?: TODOMEDIATITLE30;
   type?: TODOTYPETITLE30;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -12447,7 +12416,6 @@ export type Sources31 = {
   srcSet?: PictureSourceset63;
   media?: TODOMEDIATITLE31;
   type?: TODOTYPETITLE31;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -12587,7 +12555,6 @@ export type Sources32 = {
   srcSet?: PictureSourceset65;
   media?: TODOMEDIATITLE32;
   type?: TODOTYPETITLE32;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -12753,7 +12720,6 @@ export type Sources33 = {
   srcSet?: PictureSourceset67;
   media?: TODOMEDIATITLE33;
   type?: TODOTYPETITLE33;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -13002,7 +12968,6 @@ export type Sources34 = {
   srcSet?: PictureSourceset69;
   media?: TODOMEDIATITLE34;
   type?: TODOTYPETITLE34;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -13188,7 +13153,6 @@ export type Sources35 = {
   srcSet?: PictureSourceset71;
   media?: TODOMEDIATITLE35;
   type?: TODOTYPETITLE35;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -13342,7 +13306,6 @@ export type Sources36 = {
   srcSet?: PictureSourceset73;
   media?: TODOMEDIATITLE36;
   type?: TODOTYPETITLE36;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -13600,7 +13563,6 @@ export type Sources37 = {
   srcSet?: PictureSourceset75;
   media?: TODOMEDIATITLE37;
   type?: TODOTYPETITLE37;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -13838,7 +13800,6 @@ export type Sources38 = {
   srcSet?: PictureSourceset77;
   media?: TODOMEDIATITLE38;
   type?: TODOTYPETITLE38;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -14086,7 +14047,6 @@ export type Sources39 = {
   srcSet?: PictureSourceset79;
   media?: TODOMEDIATITLE39;
   type?: TODOTYPETITLE39;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -14194,7 +14154,6 @@ export type Sources40 = {
   srcSet?: PictureSourceset81;
   media?: TODOMEDIATITLE40;
   type?: TODOTYPETITLE40;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -14322,7 +14281,6 @@ export type Sources41 = {
   srcSet?: PictureSourceset83;
   media?: TODOMEDIATITLE41;
   type?: TODOTYPETITLE41;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -14496,7 +14454,6 @@ export type Sources42 = {
   srcSet?: PictureSourceset85;
   media?: TODOMEDIATITLE42;
   type?: TODOTYPETITLE42;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -14682,7 +14639,6 @@ export type Sources43 = {
   srcSet?: PictureSourceset87;
   media?: TODOMEDIATITLE43;
   type?: TODOTYPETITLE43;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -15067,7 +15023,6 @@ export type Sources44 = {
   srcSet?: PictureSourceset89;
   media?: TODOMEDIATITLE44;
   type?: TODOTYPETITLE44;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -15427,7 +15382,6 @@ export type Sources45 = {
   srcSet?: PictureSourceset91;
   media?: TODOMEDIATITLE45;
   type?: TODOTYPETITLE45;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -16077,7 +16031,6 @@ export type Sources46 = {
   srcSet?: PictureSourceset93;
   media?: TODOMEDIATITLE46;
   type?: TODOTYPETITLE46;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -16596,7 +16549,6 @@ export type Sources47 = {
   srcSet?: PictureSourceset95;
   media?: TODOMEDIATITLE47;
   type?: TODOTYPETITLE47;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -17800,7 +17752,6 @@ export type Sources48 = {
   srcSet?: PictureSourceset97;
   media?: TODOMEDIATITLE48;
   type?: TODOTYPETITLE48;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -18328,7 +18279,6 @@ export type Sources49 = {
   srcSet?: PictureSourceset99;
   media?: TODOMEDIATITLE49;
   type?: TODOTYPETITLE49;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -18711,7 +18661,6 @@ export type Sources50 = {
   srcSet?: PictureSourceset101;
   media?: TODOMEDIATITLE50;
   type?: TODOTYPETITLE50;
-  [k: string]: unknown;
 }[];
 /**
  * Set additional class(es) to the picture
@@ -20152,7 +20101,6 @@ export interface SectionProps {
   pattern?: "none" | "1" | "2" | "3" | "4" | "contact";
   variant?: "none" | "head" | "body" | "highlight";
   id?: string;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -20185,7 +20133,6 @@ export interface IconBeforeButton {
   role?: AriaRole;
   className?: AdditionalClass;
   component?: KsComponentAttribute;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20195,7 +20142,6 @@ export interface IconAfterButton {
   role?: AriaRole1;
   className?: AdditionalClass1;
   component?: KsComponentAttribute1;
-  [k: string]: unknown;
 }
 /**
  * Component to show contact information
@@ -20209,7 +20155,6 @@ export interface Contact {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab1;
-    [k: string]: unknown;
   }[];
   copy?: CopyText;
   className?: Class;
@@ -20247,7 +20192,6 @@ export interface Picture {
   lazy?: Lazy;
   sources?: Sources;
   pictureClassName?: ClassAttribute;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon before the button text
@@ -20257,7 +20201,6 @@ export interface IconBeforeButton1 {
   role?: AriaRole2;
   className?: AdditionalClass2;
   component?: KsComponentAttribute5;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20267,7 +20210,6 @@ export interface IconAfterButton1 {
   role?: AriaRole3;
   className?: AdditionalClass3;
   component?: KsComponentAttribute6;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -20300,7 +20242,6 @@ export interface IconBeforeButton2 {
   role?: AriaRole4;
   className?: AdditionalClass4;
   component?: KsComponentAttribute8;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20310,7 +20251,6 @@ export interface IconAfterButton2 {
   role?: AriaRole5;
   className?: AdditionalClass5;
   component?: KsComponentAttribute9;
-  [k: string]: unknown;
 }
 /**
  * Component to display content in a condensed, boxed form
@@ -20369,7 +20309,6 @@ export interface IconBeforeButton3 {
   role?: AriaRole6;
   className?: AdditionalClass6;
   component?: KsComponentAttribute10;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20379,7 +20318,6 @@ export interface IconAfterButton3 {
   role?: AriaRole7;
   className?: AdditionalClass7;
   component?: KsComponentAttribute11;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon before the button text
@@ -20389,7 +20327,6 @@ export interface IconBeforeButton4 {
   role?: AriaRole8;
   className?: AdditionalClass8;
   component?: KsComponentAttribute14;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20399,7 +20336,6 @@ export interface IconAfterButton4 {
   role?: AriaRole9;
   className?: AdditionalClass9;
   component?: KsComponentAttribute15;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -20440,7 +20376,6 @@ export interface IconBeforeButton5 {
   role?: AriaRole10;
   className?: AdditionalClass10;
   component?: KsComponentAttribute17;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20450,7 +20385,6 @@ export interface IconAfterButton5 {
   role?: AriaRole11;
   className?: AdditionalClass11;
   component?: KsComponentAttribute18;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -20480,7 +20414,6 @@ export interface TextMediaVideo {
   video?: Video;
   full?: FullWidthMedia;
   caption?: Caption;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -20491,13 +20424,11 @@ export interface Video {
   title?: VideoTitle;
   width: Width2;
   height: Height1;
-  [k: string]: unknown;
 }
 export interface TextMediaImage {
   image?: Picture1;
   full?: FullWidthMedia1;
   caption?: Caption1;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -20517,13 +20448,11 @@ export interface Picture1 {
   lazy?: Lazy1;
   sources?: Sources1;
   pictureClassName?: ClassAttribute1;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage {
   lightboxImage?: LightboxImage;
   full?: FullWidthMedia2;
   caption?: Caption3;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -20541,7 +20470,6 @@ export interface LightboxImage {
   className?: AdditionalClass12;
   captionClassName?: AdditionalCaptionClass;
   component?: KsComponentAttribute20;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon before the button text
@@ -20551,7 +20479,6 @@ export interface IconBeforeButton6 {
   role?: AriaRole12;
   className?: AdditionalClass13;
   component?: KsComponentAttribute22;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20561,7 +20488,6 @@ export interface IconAfterButton6 {
   role?: AriaRole13;
   className?: AdditionalClass14;
   component?: KsComponentAttribute23;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -20620,7 +20546,6 @@ export interface IconBeforeButton7 {
   role?: AriaRole14;
   className?: AdditionalClass15;
   component?: KsComponentAttribute24;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20630,7 +20555,6 @@ export interface IconAfterButton7 {
   role?: AriaRole15;
   className?: AdditionalClass16;
   component?: KsComponentAttribute25;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon before the button text
@@ -20640,7 +20564,6 @@ export interface IconBeforeButton8 {
   role?: AriaRole16;
   className?: AdditionalClass17;
   component?: KsComponentAttribute28;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20650,7 +20573,6 @@ export interface IconAfterButton8 {
   role?: AriaRole17;
   className?: AdditionalClass18;
   component?: KsComponentAttribute29;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -20706,7 +20628,6 @@ export interface IconBeforeButton9 {
   role?: AriaRole18;
   className?: AdditionalClass19;
   component?: KsComponentAttribute30;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20716,7 +20637,6 @@ export interface IconAfterButton9 {
   role?: AriaRole19;
   className?: AdditionalClass20;
   component?: KsComponentAttribute31;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon before the button text
@@ -20726,7 +20646,6 @@ export interface IconBeforeButton10 {
   role?: AriaRole20;
   className?: AdditionalClass21;
   component?: KsComponentAttribute34;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20736,7 +20655,6 @@ export interface IconAfterButton10 {
   role?: AriaRole21;
   className?: AdditionalClass22;
   component?: KsComponentAttribute35;
-  [k: string]: unknown;
 }
 /**
  * Component to to increase a number up to a final value
@@ -20777,7 +20695,6 @@ export interface Icon {
   role?: AriaRole22;
   className?: AdditionalClass23;
   component?: KsComponentAttribute36;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -20809,7 +20726,6 @@ export interface IconBeforeButton11 {
   role?: AriaRole23;
   className?: AdditionalClass24;
   component?: KsComponentAttribute37;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20819,7 +20735,6 @@ export interface IconAfterButton11 {
   role?: AriaRole24;
   className?: AdditionalClass25;
   component?: KsComponentAttribute38;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon before the button text
@@ -20829,7 +20744,6 @@ export interface IconBeforeButton12 {
   role?: AriaRole25;
   className?: AdditionalClass26;
   component?: KsComponentAttribute41;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20839,7 +20753,6 @@ export interface IconAfterButton12 {
   role?: AriaRole26;
   className?: AdditionalClass27;
   component?: KsComponentAttribute42;
-  [k: string]: unknown;
 }
 /**
  * Component to list logos or seals
@@ -20881,7 +20794,6 @@ export interface Picture2 {
   lazy?: Lazy2;
   sources?: Sources2;
   pictureClassName?: ClassAttribute2;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon before the button text
@@ -20891,7 +20803,6 @@ export interface IconBeforeButton13 {
   role?: AriaRole27;
   className?: AdditionalClass28;
   component?: KsComponentAttribute45;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20901,7 +20812,6 @@ export interface IconAfterButton13 {
   role?: AriaRole28;
   className?: AdditionalClass29;
   component?: KsComponentAttribute46;
-  [k: string]: unknown;
 }
 /**
  * Component to display a rich quote
@@ -20936,7 +20846,6 @@ export interface IconBeforeButton14 {
   role?: AriaRole29;
   className?: AdditionalClass30;
   component?: KsComponentAttribute48;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -20946,7 +20855,6 @@ export interface IconAfterButton14 {
   role?: AriaRole30;
   className?: AdditionalClass31;
   component?: KsComponentAttribute49;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -20990,7 +20898,6 @@ export interface IconBeforeButton15 {
   role?: AriaRole31;
   className?: AdditionalClass32;
   component?: KsComponentAttribute52;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -21000,7 +20907,6 @@ export interface IconAfterButton15 {
   role?: AriaRole32;
   className?: AdditionalClass33;
   component?: KsComponentAttribute53;
-  [k: string]: unknown;
 }
 /**
  * Component to present rich combinations of text and media, best used sequentially
@@ -21071,7 +20977,6 @@ export interface IconBeforeButton16 {
   role?: AriaRole33;
   className?: AdditionalClass34;
   component?: KsComponentAttribute54;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -21081,7 +20986,6 @@ export interface IconAfterButton16 {
   role?: AriaRole34;
   className?: AdditionalClass35;
   component?: KsComponentAttribute55;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -21095,7 +20999,6 @@ export interface Headline1 {
   subheadline?: Subheadline1;
   className?: AdditionalClasses11;
   component?: KsComponentAttribute57;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -21126,7 +21029,6 @@ export interface IconBeforeButton17 {
   role?: AriaRole35;
   className?: AdditionalClass36;
   component?: KsComponentAttribute58;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -21136,7 +21038,6 @@ export interface IconAfterButton17 {
   role?: AriaRole36;
   className?: AdditionalClass37;
   component?: KsComponentAttribute59;
-  [k: string]: unknown;
 }
 /**
  * Image displayed alongside the text content
@@ -21165,7 +21066,6 @@ export interface IconBeforeButton18 {
   role?: AriaRole37;
   className?: AdditionalClass38;
   component?: KsComponentAttribute62;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -21175,7 +21075,6 @@ export interface IconAfterButton18 {
   role?: AriaRole38;
   className?: AdditionalClass39;
   component?: KsComponentAttribute63;
-  [k: string]: unknown;
 }
 /**
  * Visual Slider
@@ -21270,7 +21169,6 @@ export interface Headline2 {
   spaceAfter?: BottomSpacing2;
   className?: AdditionalClasses13;
   component?: KsComponentAttribute64;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -21302,7 +21200,6 @@ export interface IconBeforeButton19 {
   role?: AriaRole39;
   className?: AdditionalClass40;
   component?: KsComponentAttribute65;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -21312,7 +21209,6 @@ export interface IconAfterButton19 {
   role?: AriaRole40;
   className?: AdditionalClass41;
   component?: KsComponentAttribute66;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon before the button text
@@ -21322,7 +21218,6 @@ export interface IconBeforeButton20 {
   role?: AriaRole41;
   className?: AdditionalClass42;
   component?: KsComponentAttribute70;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -21332,7 +21227,6 @@ export interface IconAfterButton20 {
   role?: AriaRole42;
   className?: AdditionalClass43;
   component?: KsComponentAttribute71;
-  [k: string]: unknown;
 }
 /**
  * visual
@@ -21406,7 +21300,6 @@ export interface IconBeforeButton21 {
   role?: AriaRole43;
   className?: AdditionalClass44;
   component?: KsComponentAttribute72;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -21416,7 +21309,6 @@ export interface IconAfterButton21 {
   role?: AriaRole44;
   className?: AdditionalClass45;
   component?: KsComponentAttribute73;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -21430,7 +21322,6 @@ export interface Headline3 {
   spaceAfter?: BottomSpacing3;
   className?: AdditionalClasses17;
   component?: KsComponentAttribute75;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -21462,7 +21353,6 @@ export interface IconBeforeButton22 {
   role?: AriaRole45;
   className?: AdditionalClass46;
   component?: KsComponentAttribute76;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -21472,7 +21362,6 @@ export interface IconAfterButton22 {
   role?: AriaRole46;
   className?: AdditionalClass47;
   component?: KsComponentAttribute77;
-  [k: string]: unknown;
 }
 /**
  * Wrapper for all media types
@@ -21511,7 +21400,6 @@ export interface IconBeforeButton23 {
   role?: AriaRole47;
   className?: AdditionalClass48;
   component?: KsComponentAttribute80;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -21521,7 +21409,6 @@ export interface IconAfterButton23 {
   role?: AriaRole48;
   className?: AdditionalClass49;
   component?: KsComponentAttribute81;
-  [k: string]: unknown;
 }
 /**
  * Component to render a pill / tag / label
@@ -21546,7 +21433,6 @@ export interface Contact1 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab25;
-    [k: string]: unknown;
   }[];
   copy?: CopyText1;
   className?: Class12;
@@ -21574,7 +21460,6 @@ export interface Picture3 {
   lazy?: Lazy3;
   sources?: Sources3;
   pictureClassName?: ClassAttribute3;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -21628,7 +21513,6 @@ export interface TextMediaVideo1 {
   video?: Video1;
   full?: FullWidthMedia3;
   caption?: Caption4;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -21639,13 +21523,11 @@ export interface Video1 {
   title?: VideoTitle1;
   width: Width7;
   height: Height8;
-  [k: string]: unknown;
 }
 export interface TextMediaImage1 {
   image?: Picture4;
   full?: FullWidthMedia4;
   caption?: Caption5;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -21665,13 +21547,11 @@ export interface Picture4 {
   lazy?: Lazy4;
   sources?: Sources4;
   pictureClassName?: ClassAttribute4;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage1 {
   lightboxImage?: LightboxImage1;
   full?: FullWidthMedia5;
   caption?: Caption7;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -21689,7 +21569,6 @@ export interface LightboxImage1 {
   className?: AdditionalClass50;
   captionClassName?: AdditionalCaptionClass1;
   component?: KsComponentAttribute88;
-  [k: string]: unknown;
 }
 /**
  * Component to list logos or seals
@@ -21721,7 +21600,6 @@ export interface Picture5 {
   lazy?: Lazy5;
   sources?: Sources5;
   pictureClassName?: ClassAttribute5;
-  [k: string]: unknown;
 }
 /**
  * Component to display a rich quote
@@ -21822,7 +21700,6 @@ export interface IconBeforeButton24 {
   role?: AriaRole49;
   className?: AdditionalClass51;
   component?: KsComponentAttribute95;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -21832,7 +21709,6 @@ export interface IconAfterButton24 {
   role?: AriaRole50;
   className?: AdditionalClass52;
   component?: KsComponentAttribute96;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -21846,7 +21722,6 @@ export interface Headline5 {
   subheadline?: Subheadline5;
   className?: AdditionalClasses26;
   component?: KsComponentAttribute98;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -21877,7 +21752,6 @@ export interface IconBeforeButton25 {
   role?: AriaRole51;
   className?: AdditionalClass53;
   component?: KsComponentAttribute99;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -21887,7 +21761,6 @@ export interface IconAfterButton25 {
   role?: AriaRole52;
   className?: AdditionalClass54;
   component?: KsComponentAttribute100;
-  [k: string]: unknown;
 }
 /**
  * Image displayed alongside the text content
@@ -21991,7 +21864,6 @@ export interface Headline6 {
   spaceAfter?: BottomSpacing6;
   className?: AdditionalClasses28;
   component?: KsComponentAttribute103;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -22023,7 +21895,6 @@ export interface IconBeforeButton26 {
   role?: AriaRole53;
   className?: AdditionalClass55;
   component?: KsComponentAttribute104;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -22033,7 +21904,6 @@ export interface IconAfterButton26 {
   role?: AriaRole54;
   className?: AdditionalClass56;
   component?: KsComponentAttribute105;
-  [k: string]: unknown;
 }
 /**
  * visual
@@ -22097,7 +21967,6 @@ export interface IconBeforeButton27 {
   role?: AriaRole55;
   className?: AdditionalClass57;
   component?: KsComponentAttribute109;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -22107,7 +21976,6 @@ export interface IconAfterButton27 {
   role?: AriaRole56;
   className?: AdditionalClass58;
   component?: KsComponentAttribute110;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -22121,7 +21989,6 @@ export interface Headline7 {
   spaceAfter?: BottomSpacing7;
   className?: AdditionalClasses32;
   component?: KsComponentAttribute112;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -22153,7 +22020,6 @@ export interface IconBeforeButton28 {
   role?: AriaRole57;
   className?: AdditionalClass59;
   component?: KsComponentAttribute113;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -22163,7 +22029,6 @@ export interface IconAfterButton28 {
   role?: AriaRole58;
   className?: AdditionalClass60;
   component?: KsComponentAttribute114;
-  [k: string]: unknown;
 }
 /**
  * Wrapper for all media types
@@ -22224,7 +22089,6 @@ export interface Button9 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab32;
-    [k: string]: unknown;
   }[];
   copy?: CopyText2;
 }
@@ -22236,7 +22100,6 @@ export interface IconBeforeButton29 {
   role?: AriaRole59;
   className?: AdditionalClass61;
   component?: KsComponentAttribute117;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -22246,7 +22109,6 @@ export interface IconAfterButton29 {
   role?: AriaRole60;
   className?: AdditionalClass62;
   component?: KsComponentAttribute118;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -22266,7 +22128,6 @@ export interface Picture6 {
   lazy?: Lazy6;
   sources?: Sources6;
   pictureClassName?: ClassAttribute6;
-  [k: string]: unknown;
 }
 /**
  * Component to render a pill / tag / label
@@ -22286,7 +22147,6 @@ export interface TagLabel1 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab33;
-    [k: string]: unknown;
   }[];
   copy?: CopyText3;
 }
@@ -22308,7 +22168,6 @@ export interface Picture7 {
   lazy?: Lazy7;
   sources?: Sources7;
   pictureClassName?: ClassAttribute7;
-  [k: string]: unknown;
 }
 /**
  * Component to show contact information
@@ -22322,12 +22181,10 @@ export interface Contact2 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab34;
-    [k: string]: unknown;
   }[];
   copy?: CopyText4;
   className?: Class21;
   component?: KsComponentAttribute124;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -22347,7 +22204,6 @@ export interface Picture8 {
   lazy?: Lazy8;
   sources?: Sources8;
   pictureClassName?: ClassAttribute8;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -22365,7 +22221,6 @@ export interface CollapsibleBox2 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab35;
-    [k: string]: unknown;
   }[];
   copy?: CopyText5;
 }
@@ -22387,7 +22242,6 @@ export interface Picture9 {
   lazy?: Lazy9;
   sources?: Sources9;
   pictureClassName?: ClassAttribute9;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -22413,10 +22267,8 @@ export interface Headline8 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab36;
-    [k: string]: unknown;
   }[];
   copy?: CopyText6;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -22436,7 +22288,6 @@ export interface Picture10 {
   lazy?: Lazy10;
   sources?: Sources10;
   pictureClassName?: ClassAttribute10;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -22455,7 +22306,6 @@ export interface TextMedia2 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab37;
-    [k: string]: unknown;
   }[];
   copy?: CopyText7;
 }
@@ -22463,7 +22313,6 @@ export interface TextMediaVideo2 {
   video?: Video2;
   full?: FullWidthMedia6;
   caption?: Caption8;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -22474,13 +22323,11 @@ export interface Video2 {
   title?: VideoTitle2;
   width: Width16;
   height: Height19;
-  [k: string]: unknown;
 }
 export interface TextMediaImage2 {
   image?: Picture11;
   full?: FullWidthMedia7;
   caption?: Caption9;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -22500,13 +22347,11 @@ export interface Picture11 {
   lazy?: Lazy11;
   sources?: Sources11;
   pictureClassName?: ClassAttribute11;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage2 {
   lightboxImage?: LightboxImage2;
   full?: FullWidthMedia8;
   caption?: Caption11;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -22524,7 +22369,6 @@ export interface LightboxImage2 {
   className?: AdditionalClass63;
   captionClassName?: AdditionalCaptionClass2;
   component?: KsComponentAttribute130;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -22544,7 +22388,6 @@ export interface Picture12 {
   lazy?: Lazy12;
   sources?: Sources12;
   pictureClassName?: ClassAttribute12;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -22564,7 +22407,6 @@ export interface TeaserRow1 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab39;
-    [k: string]: unknown;
   }[];
   copy?: CopyText8;
 }
@@ -22598,7 +22440,6 @@ export interface IconBeforeButton30 {
   role?: AriaRole61;
   className?: AdditionalClass64;
   component?: KsComponentAttribute133;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -22608,7 +22449,6 @@ export interface IconAfterButton30 {
   role?: AriaRole62;
   className?: AdditionalClass65;
   component?: KsComponentAttribute134;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -22628,7 +22468,6 @@ export interface Picture13 {
   lazy?: Lazy13;
   sources?: Sources13;
   pictureClassName?: ClassAttribute13;
-  [k: string]: unknown;
 }
 /**
  * Component to to increase a number up to a final value
@@ -22654,10 +22493,8 @@ export interface CountUp1 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab41;
-    [k: string]: unknown;
   }[];
   copy?: CopyText9;
-  [k: string]: unknown;
 }
 /**
  * Icon
@@ -22667,7 +22504,6 @@ export interface Icon1 {
   role?: AriaRole63;
   className?: AdditionalClass66;
   component?: KsComponentAttribute138;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -22699,7 +22535,6 @@ export interface IconBeforeButton31 {
   role?: AriaRole64;
   className?: AdditionalClass67;
   component?: KsComponentAttribute139;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -22709,7 +22544,6 @@ export interface IconAfterButton31 {
   role?: AriaRole65;
   className?: AdditionalClass68;
   component?: KsComponentAttribute140;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -22729,7 +22563,6 @@ export interface Picture14 {
   lazy?: Lazy14;
   sources?: Sources14;
   pictureClassName?: ClassAttribute14;
-  [k: string]: unknown;
 }
 /**
  * Component to list logos or seals
@@ -22746,10 +22579,8 @@ export interface LogoTiles2 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab42;
-    [k: string]: unknown;
   }[];
   copy?: CopyText10;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -22769,7 +22600,6 @@ export interface Picture15 {
   lazy?: Lazy15;
   sources?: Sources15;
   pictureClassName?: ClassAttribute15;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -22789,7 +22619,6 @@ export interface Picture16 {
   lazy?: Lazy16;
   sources?: Sources16;
   pictureClassName?: ClassAttribute16;
-  [k: string]: unknown;
 }
 /**
  * Component to show contact information
@@ -22806,10 +22635,8 @@ export interface QuotesSlider2 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab43;
-    [k: string]: unknown;
   }[];
   copy?: CopyText11;
-  [k: string]: unknown;
 }
 /**
  * Component to display a rich quote
@@ -22841,7 +22668,6 @@ export interface Picture17 {
   lazy?: Lazy17;
   sources?: Sources17;
   pictureClassName?: ClassAttribute17;
-  [k: string]: unknown;
 }
 /**
  * Component to present rich combinations of text and media, best used sequentially
@@ -22862,10 +22688,8 @@ export interface Storytelling2 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab46;
-    [k: string]: unknown;
   }[];
   copy?: CopyText12;
-  [k: string]: unknown;
 }
 /**
  * Text content to display
@@ -22910,7 +22734,6 @@ export interface IconBeforeButton32 {
   role?: AriaRole66;
   className?: AdditionalClass69;
   component?: KsComponentAttribute150;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -22920,7 +22743,6 @@ export interface IconAfterButton32 {
   role?: AriaRole67;
   className?: AdditionalClass70;
   component?: KsComponentAttribute151;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -22934,7 +22756,6 @@ export interface Headline9 {
   subheadline?: Subheadline9;
   className?: AdditionalClasses53;
   component?: KsComponentAttribute153;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -22965,7 +22786,6 @@ export interface IconBeforeButton33 {
   role?: AriaRole68;
   className?: AdditionalClass71;
   component?: KsComponentAttribute154;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -22975,7 +22795,6 @@ export interface IconAfterButton33 {
   role?: AriaRole69;
   className?: AdditionalClass72;
   component?: KsComponentAttribute155;
-  [k: string]: unknown;
 }
 /**
  * Image displayed alongside the text content
@@ -23000,7 +22819,6 @@ export interface Image2 {
   lazy?: Lazy18;
   sources?: Sources18;
   pictureClassName?: ClassAttribute18;
-  [k: string]: unknown;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -23026,10 +22844,8 @@ export interface VisualSlider2 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab48;
-    [k: string]: unknown;
   }[];
   copy?: CopyText13;
-  [k: string]: unknown;
 }
 /**
  * visual
@@ -23101,7 +22917,6 @@ export interface Headline10 {
   spaceAfter?: BottomSpacing10;
   className?: AdditionalClasses56;
   component?: KsComponentAttribute159;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -23133,7 +22948,6 @@ export interface IconBeforeButton34 {
   role?: AriaRole70;
   className?: AdditionalClass73;
   component?: KsComponentAttribute160;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -23143,7 +22957,6 @@ export interface IconAfterButton34 {
   role?: AriaRole71;
   className?: AdditionalClass74;
   component?: KsComponentAttribute161;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -23163,7 +22976,6 @@ export interface Picture18 {
   lazy?: Lazy19;
   sources?: Sources19;
   pictureClassName?: ClassAttribute19;
-  [k: string]: unknown;
 }
 /**
  * visual
@@ -23186,7 +22998,6 @@ export interface Visual5 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab51;
-    [k: string]: unknown;
   }[];
   copy?: CopyText14;
 }
@@ -23234,7 +23045,6 @@ export interface IconBeforeButton35 {
   role?: AriaRole72;
   className?: AdditionalClass75;
   component?: KsComponentAttribute166;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -23244,7 +23054,6 @@ export interface IconAfterButton35 {
   role?: AriaRole73;
   className?: AdditionalClass76;
   component?: KsComponentAttribute167;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -23258,7 +23067,6 @@ export interface Headline11 {
   spaceAfter?: BottomSpacing11;
   className?: AdditionalClasses61;
   component?: KsComponentAttribute169;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -23290,7 +23098,6 @@ export interface IconBeforeButton36 {
   role?: AriaRole74;
   className?: AdditionalClass77;
   component?: KsComponentAttribute170;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -23300,7 +23107,6 @@ export interface IconAfterButton36 {
   role?: AriaRole75;
   className?: AdditionalClass78;
   component?: KsComponentAttribute171;
-  [k: string]: unknown;
 }
 /**
  * Wrapper for all media types
@@ -23349,7 +23155,6 @@ export interface Picture19 {
   lazy?: Lazy20;
   sources?: Sources20;
   pictureClassName?: ClassAttribute20;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -23384,7 +23189,6 @@ export interface IconBeforeButton37 {
   role?: AriaRole76;
   className?: AdditionalClass79;
   component?: KsComponentAttribute175;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -23394,7 +23198,6 @@ export interface IconAfterButton37 {
   role?: AriaRole77;
   className?: AdditionalClass80;
   component?: KsComponentAttribute176;
-  [k: string]: unknown;
 }
 /**
  * Component to render a pill / tag / label
@@ -23421,7 +23224,6 @@ export interface Contact3 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab53;
-    [k: string]: unknown;
   }[];
   copy?: CopyText15;
   className?: Class31;
@@ -23447,7 +23249,6 @@ export interface Picture20 {
   lazy?: Lazy21;
   sources?: Sources21;
   pictureClassName?: ClassAttribute21;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -23502,7 +23303,6 @@ export interface IconBeforeButton38 {
   role?: AriaRole78;
   className?: AdditionalClass81;
   component?: KsComponentAttribute182;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -23512,7 +23312,6 @@ export interface IconAfterButton38 {
   role?: AriaRole79;
   className?: AdditionalClass82;
   component?: KsComponentAttribute183;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -23548,7 +23347,6 @@ export interface TextMediaVideo3 {
   video?: Video3;
   full?: FullWidthMedia9;
   caption?: Caption12;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -23559,13 +23357,11 @@ export interface Video3 {
   title?: VideoTitle3;
   width: Width29;
   height: Height34;
-  [k: string]: unknown;
 }
 export interface TextMediaImage3 {
   image?: Picture21;
   full?: FullWidthMedia10;
   caption?: Caption13;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -23585,13 +23381,11 @@ export interface Picture21 {
   lazy?: Lazy22;
   sources?: Sources22;
   pictureClassName?: ClassAttribute22;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage3 {
   lightboxImage?: LightboxImage3;
   full?: FullWidthMedia11;
   caption?: Caption15;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -23609,7 +23403,6 @@ export interface LightboxImage3 {
   className?: AdditionalClass83;
   captionClassName?: AdditionalCaptionClass3;
   component?: KsComponentAttribute188;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -23656,7 +23449,6 @@ export interface IconBeforeButton39 {
   role?: AriaRole80;
   className?: AdditionalClass84;
   component?: KsComponentAttribute190;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -23666,7 +23458,6 @@ export interface IconAfterButton39 {
   role?: AriaRole81;
   className?: AdditionalClass85;
   component?: KsComponentAttribute191;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -23710,7 +23501,6 @@ export interface IconBeforeButton40 {
   role?: AriaRole82;
   className?: AdditionalClass86;
   component?: KsComponentAttribute194;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -23720,7 +23510,6 @@ export interface IconAfterButton40 {
   role?: AriaRole83;
   className?: AdditionalClass87;
   component?: KsComponentAttribute195;
-  [k: string]: unknown;
 }
 /**
  * Component to to increase a number up to a final value
@@ -23748,7 +23537,6 @@ export interface Icon2 {
   role?: AriaRole84;
   className?: AdditionalClass88;
   component?: KsComponentAttribute198;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -23780,7 +23568,6 @@ export interface IconBeforeButton41 {
   role?: AriaRole85;
   className?: AdditionalClass89;
   component?: KsComponentAttribute199;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -23790,7 +23577,6 @@ export interface IconAfterButton41 {
   role?: AriaRole86;
   className?: AdditionalClass90;
   component?: KsComponentAttribute200;
-  [k: string]: unknown;
 }
 /**
  * Component to list logos or seals
@@ -23820,7 +23606,6 @@ export interface Picture22 {
   lazy?: Lazy23;
   sources?: Sources23;
   pictureClassName?: ClassAttribute23;
-  [k: string]: unknown;
 }
 /**
  * Component to display a rich quote
@@ -23914,7 +23699,6 @@ export interface IconBeforeButton42 {
   role?: AriaRole87;
   className?: AdditionalClass91;
   component?: KsComponentAttribute208;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -23924,7 +23708,6 @@ export interface IconAfterButton42 {
   role?: AriaRole88;
   className?: AdditionalClass92;
   component?: KsComponentAttribute209;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -23938,7 +23721,6 @@ export interface Headline13 {
   subheadline?: Subheadline13;
   className?: AdditionalClasses77;
   component?: KsComponentAttribute211;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -23969,7 +23751,6 @@ export interface IconBeforeButton43 {
   role?: AriaRole89;
   className?: AdditionalClass93;
   component?: KsComponentAttribute212;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -23979,7 +23760,6 @@ export interface IconAfterButton43 {
   role?: AriaRole90;
   className?: AdditionalClass94;
   component?: KsComponentAttribute213;
-  [k: string]: unknown;
 }
 /**
  * Image displayed alongside the text content
@@ -24081,7 +23861,6 @@ export interface Headline14 {
   spaceAfter?: BottomSpacing14;
   className?: AdditionalClasses79;
   component?: KsComponentAttribute216;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -24113,7 +23892,6 @@ export interface IconBeforeButton44 {
   role?: AriaRole91;
   className?: AdditionalClass95;
   component?: KsComponentAttribute217;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24123,7 +23901,6 @@ export interface IconAfterButton44 {
   role?: AriaRole92;
   className?: AdditionalClass96;
   component?: KsComponentAttribute218;
-  [k: string]: unknown;
 }
 /**
  * visual
@@ -24185,7 +23962,6 @@ export interface IconBeforeButton45 {
   role?: AriaRole93;
   className?: AdditionalClass97;
   component?: KsComponentAttribute222;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24195,7 +23971,6 @@ export interface IconAfterButton45 {
   role?: AriaRole94;
   className?: AdditionalClass98;
   component?: KsComponentAttribute223;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -24209,7 +23984,6 @@ export interface Headline15 {
   spaceAfter?: BottomSpacing15;
   className?: AdditionalClasses83;
   component?: KsComponentAttribute225;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -24241,7 +24015,6 @@ export interface IconBeforeButton46 {
   role?: AriaRole95;
   className?: AdditionalClass99;
   component?: KsComponentAttribute226;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24251,7 +24024,6 @@ export interface IconAfterButton46 {
   role?: AriaRole96;
   className?: AdditionalClass100;
   component?: KsComponentAttribute227;
-  [k: string]: unknown;
 }
 /**
  * Wrapper for all media types
@@ -24319,7 +24091,6 @@ export interface IconBeforeButton47 {
   role?: AriaRole97;
   className?: AdditionalClass101;
   component?: KsComponentAttribute230;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24329,7 +24100,6 @@ export interface IconAfterButton47 {
   role?: AriaRole98;
   className?: AdditionalClass102;
   component?: KsComponentAttribute231;
-  [k: string]: unknown;
 }
 /**
  * Content box link configuration
@@ -24361,7 +24131,6 @@ export interface IconBeforeButton48 {
   role?: AriaRole99;
   className?: AdditionalClass103;
   component?: KsComponentAttribute233;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24371,7 +24140,6 @@ export interface IconAfterButton48 {
   role?: AriaRole100;
   className?: AdditionalClass104;
   component?: KsComponentAttribute234;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -24417,7 +24185,6 @@ export interface IconBeforeButton49 {
   role?: AriaRole101;
   className?: AdditionalClass105;
   component?: KsComponentAttribute237;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24427,7 +24194,6 @@ export interface IconAfterButton49 {
   role?: AriaRole102;
   className?: AdditionalClass106;
   component?: KsComponentAttribute238;
-  [k: string]: unknown;
 }
 /**
  * Component to display content in a condensed, boxed form
@@ -24472,7 +24238,6 @@ export interface IconBeforeButton50 {
   role?: AriaRole103;
   className?: AdditionalClass107;
   component?: KsComponentAttribute240;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24482,7 +24247,6 @@ export interface IconAfterButton50 {
   role?: AriaRole104;
   className?: AdditionalClass108;
   component?: KsComponentAttribute241;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -24537,7 +24301,6 @@ export interface IconBeforeButton51 {
   role?: AriaRole105;
   className?: AdditionalClass109;
   component?: KsComponentAttribute245;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24547,7 +24310,6 @@ export interface IconAfterButton51 {
   role?: AriaRole106;
   className?: AdditionalClass110;
   component?: KsComponentAttribute246;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -24568,7 +24330,6 @@ export interface TextMediaVideo4 {
   video?: Video4;
   full?: FullWidthMedia12;
   caption?: Caption16;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -24579,13 +24340,11 @@ export interface Video4 {
   title?: VideoTitle4;
   width: Width33;
   height: Height40;
-  [k: string]: unknown;
 }
 export interface TextMediaImage4 {
   image?: Picture23;
   full?: FullWidthMedia13;
   caption?: Caption17;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -24605,13 +24364,11 @@ export interface Picture23 {
   lazy?: Lazy24;
   sources?: Sources24;
   pictureClassName?: ClassAttribute24;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage4 {
   lightboxImage?: LightboxImage4;
   full?: FullWidthMedia14;
   caption?: Caption19;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -24629,7 +24386,6 @@ export interface LightboxImage4 {
   className?: AdditionalClass111;
   captionClassName?: AdditionalCaptionClass4;
   component?: KsComponentAttribute249;
-  [k: string]: unknown;
 }
 /**
  * Content box link configuration
@@ -24661,7 +24417,6 @@ export interface IconBeforeButton52 {
   role?: AriaRole107;
   className?: AdditionalClass112;
   component?: KsComponentAttribute251;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24671,7 +24426,6 @@ export interface IconAfterButton52 {
   role?: AriaRole108;
   className?: AdditionalClass113;
   component?: KsComponentAttribute252;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -24719,7 +24473,6 @@ export interface IconBeforeButton53 {
   role?: AriaRole109;
   className?: AdditionalClass114;
   component?: KsComponentAttribute254;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24729,7 +24482,6 @@ export interface IconAfterButton53 {
   role?: AriaRole110;
   className?: AdditionalClass115;
   component?: KsComponentAttribute255;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -24776,7 +24528,6 @@ export interface IconBeforeButton54 {
   role?: AriaRole111;
   className?: AdditionalClass116;
   component?: KsComponentAttribute258;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24786,7 +24537,6 @@ export interface IconAfterButton54 {
   role?: AriaRole112;
   className?: AdditionalClass117;
   component?: KsComponentAttribute259;
-  [k: string]: unknown;
 }
 /**
  * Component to to increase a number up to a final value
@@ -24816,7 +24566,6 @@ export interface Icon3 {
   role?: AriaRole113;
   className?: AdditionalClass118;
   component?: KsComponentAttribute262;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -24848,7 +24597,6 @@ export interface IconBeforeButton55 {
   role?: AriaRole114;
   className?: AdditionalClass119;
   component?: KsComponentAttribute263;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24858,7 +24606,6 @@ export interface IconAfterButton55 {
   role?: AriaRole115;
   className?: AdditionalClass120;
   component?: KsComponentAttribute264;
-  [k: string]: unknown;
 }
 /**
  * Component to list logos or seals
@@ -24892,7 +24639,6 @@ export interface Picture24 {
   lazy?: Lazy25;
   sources?: Sources25;
   pictureClassName?: ClassAttribute25;
-  [k: string]: unknown;
 }
 /**
  * Content box link configuration
@@ -24924,7 +24670,6 @@ export interface IconBeforeButton56 {
   role?: AriaRole116;
   className?: AdditionalClass121;
   component?: KsComponentAttribute269;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24934,7 +24679,6 @@ export interface IconAfterButton56 {
   role?: AriaRole117;
   className?: AdditionalClass122;
   component?: KsComponentAttribute270;
-  [k: string]: unknown;
 }
 /**
  * Component to display a rich quote
@@ -24981,7 +24725,6 @@ export interface IconBeforeButton57 {
   role?: AriaRole118;
   className?: AdditionalClass123;
   component?: KsComponentAttribute273;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -24991,7 +24734,6 @@ export interface IconAfterButton57 {
   role?: AriaRole119;
   className?: AdditionalClass124;
   component?: KsComponentAttribute274;
-  [k: string]: unknown;
 }
 /**
  * Component to display content in a condensed, boxed form
@@ -25049,7 +24791,6 @@ export interface IconBeforeButton58 {
   role?: AriaRole120;
   className?: AdditionalClass125;
   component?: KsComponentAttribute278;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -25059,7 +24800,6 @@ export interface IconAfterButton58 {
   role?: AriaRole121;
   className?: AdditionalClass126;
   component?: KsComponentAttribute279;
-  [k: string]: unknown;
 }
 /**
  * Visual Slider
@@ -25146,7 +24886,6 @@ export interface Headline17 {
   spaceAfter?: BottomSpacing17;
   className?: AdditionalClasses102;
   component?: KsComponentAttribute281;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -25178,7 +24917,6 @@ export interface IconBeforeButton59 {
   role?: AriaRole122;
   className?: AdditionalClass127;
   component?: KsComponentAttribute282;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -25188,7 +24926,6 @@ export interface IconAfterButton59 {
   role?: AriaRole123;
   className?: AdditionalClass128;
   component?: KsComponentAttribute283;
-  [k: string]: unknown;
 }
 /**
  * Content box link configuration
@@ -25220,7 +24957,6 @@ export interface IconBeforeButton60 {
   role?: AriaRole124;
   className?: AdditionalClass129;
   component?: KsComponentAttribute287;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -25230,7 +24966,6 @@ export interface IconAfterButton60 {
   role?: AriaRole125;
   className?: AdditionalClass130;
   component?: KsComponentAttribute288;
-  [k: string]: unknown;
 }
 /**
  * visual
@@ -25296,7 +25031,6 @@ export interface IconBeforeButton61 {
   role?: AriaRole126;
   className?: AdditionalClass131;
   component?: KsComponentAttribute290;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -25306,7 +25040,6 @@ export interface IconAfterButton61 {
   role?: AriaRole127;
   className?: AdditionalClass132;
   component?: KsComponentAttribute291;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -25320,7 +25053,6 @@ export interface Headline18 {
   spaceAfter?: BottomSpacing18;
   className?: AdditionalClasses107;
   component?: KsComponentAttribute293;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -25352,7 +25084,6 @@ export interface IconBeforeButton62 {
   role?: AriaRole128;
   className?: AdditionalClass133;
   component?: KsComponentAttribute294;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -25362,7 +25093,6 @@ export interface IconAfterButton62 {
   role?: AriaRole129;
   className?: AdditionalClass134;
   component?: KsComponentAttribute295;
-  [k: string]: unknown;
 }
 /**
  * Wrapper for all media types
@@ -25423,7 +25153,6 @@ export interface IconBeforeButton63 {
   role?: AriaRole130;
   className?: AdditionalClass135;
   component?: KsComponentAttribute298;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -25433,7 +25162,6 @@ export interface IconAfterButton63 {
   role?: AriaRole131;
   className?: AdditionalClass136;
   component?: KsComponentAttribute299;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -25472,7 +25200,6 @@ export interface IconBeforeButton64 {
   role?: AriaRole132;
   className?: AdditionalClass137;
   component?: KsComponentAttribute301;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -25482,7 +25209,6 @@ export interface IconAfterButton64 {
   role?: AriaRole133;
   className?: AdditionalClass138;
   component?: KsComponentAttribute302;
-  [k: string]: unknown;
 }
 /**
  * Component to render a pill / tag / label
@@ -25513,7 +25239,6 @@ export interface Contact4 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab81;
-    [k: string]: unknown;
   }[];
   copy?: CopyText16;
   className?: Class53;
@@ -25524,7 +25249,6 @@ export interface Contact4 {
   content: Text35;
   subheadline?: Subheadline21;
   spaceAfter?: BottomSpacing21;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -25544,7 +25268,6 @@ export interface Picture25 {
   lazy?: Lazy26;
   sources?: Sources26;
   pictureClassName?: ClassAttribute26;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -25610,7 +25333,6 @@ export interface IconBeforeButton65 {
   role?: AriaRole134;
   className?: AdditionalClass139;
   component?: KsComponentAttribute308;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -25620,7 +25342,6 @@ export interface IconAfterButton65 {
   role?: AriaRole135;
   className?: AdditionalClass140;
   component?: KsComponentAttribute309;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -25638,7 +25359,6 @@ export interface Headline19 {
    * Show subheadline first
    */
   switchOrder?: boolean;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -25660,7 +25380,6 @@ export interface TextMediaVideo5 {
   video?: Video5;
   full?: FullWidthMedia15;
   caption?: Caption20;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -25671,13 +25390,11 @@ export interface Video5 {
   title?: VideoTitle5;
   width: Width38;
   height: Height47;
-  [k: string]: unknown;
 }
 export interface TextMediaImage5 {
   image?: Picture26;
   full?: FullWidthMedia16;
   caption?: Caption21;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -25697,13 +25414,11 @@ export interface Picture26 {
   lazy?: Lazy27;
   sources?: Sources27;
   pictureClassName?: ClassAttribute27;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage5 {
   lightboxImage?: LightboxImage5;
   full?: FullWidthMedia17;
   caption?: Caption23;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -25721,7 +25436,6 @@ export interface LightboxImage5 {
   className?: AdditionalClass141;
   captionClassName?: AdditionalCaptionClass5;
   component?: KsComponentAttribute314;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -25773,7 +25487,6 @@ export interface IconBeforeButton66 {
   role?: AriaRole136;
   className?: AdditionalClass142;
   component?: KsComponentAttribute316;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -25783,7 +25496,6 @@ export interface IconAfterButton66 {
   role?: AriaRole137;
   className?: AdditionalClass143;
   component?: KsComponentAttribute317;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -25832,7 +25544,6 @@ export interface IconBeforeButton67 {
   role?: AriaRole138;
   className?: AdditionalClass144;
   component?: KsComponentAttribute320;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -25842,7 +25553,6 @@ export interface IconAfterButton67 {
   role?: AriaRole139;
   className?: AdditionalClass145;
   component?: KsComponentAttribute321;
-  [k: string]: unknown;
 }
 /**
  * Component to to increase a number up to a final value
@@ -25866,7 +25576,6 @@ export interface CountUp4 {
   content: Text42;
   subheadline?: Subheadline28;
   spaceAfter?: BottomSpacing28;
-  [k: string]: unknown;
 }
 /**
  * Icon
@@ -25876,7 +25585,6 @@ export interface Icon4 {
   role?: AriaRole140;
   className?: AdditionalClass146;
   component?: KsComponentAttribute324;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -25908,7 +25616,6 @@ export interface IconBeforeButton68 {
   role?: AriaRole141;
   className?: AdditionalClass147;
   component?: KsComponentAttribute325;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -25918,7 +25625,6 @@ export interface IconAfterButton68 {
   role?: AriaRole142;
   className?: AdditionalClass148;
   component?: KsComponentAttribute326;
-  [k: string]: unknown;
 }
 /**
  * Component to list logos or seals
@@ -25933,7 +25639,6 @@ export interface LogoTiles5 {
   content: Text43;
   subheadline?: Subheadline29;
   spaceAfter?: BottomSpacing29;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -25953,7 +25658,6 @@ export interface Picture27 {
   lazy?: Lazy28;
   sources?: Sources28;
   pictureClassName?: ClassAttribute28;
-  [k: string]: unknown;
 }
 /**
  * Component to display a rich quote
@@ -25971,7 +25675,6 @@ export interface Quote9 {
   content: Text44;
   subheadline?: Subheadline30;
   spaceAfter?: BottomSpacing30;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -25986,7 +25689,6 @@ export interface QuotesSlider5 {
   content: Text45;
   subheadline?: Subheadline31;
   spaceAfter?: BottomSpacing31;
-  [k: string]: unknown;
 }
 /**
  * Component to display a rich quote
@@ -26018,7 +25720,6 @@ export interface Storytelling4 {
   content: Text48;
   subheadline?: Subheadline33;
   spaceAfter?: BottomSpacing33;
-  [k: string]: unknown;
 }
 /**
  * Text content to display
@@ -26063,7 +25764,6 @@ export interface IconBeforeButton69 {
   role?: AriaRole143;
   className?: AdditionalClass149;
   component?: KsComponentAttribute334;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -26073,7 +25773,6 @@ export interface IconAfterButton69 {
   role?: AriaRole144;
   className?: AdditionalClass150;
   component?: KsComponentAttribute335;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -26087,7 +25786,6 @@ export interface Headline20 {
   subheadline?: Subheadline32;
   className?: AdditionalClasses123;
   component?: KsComponentAttribute337;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -26118,7 +25816,6 @@ export interface IconBeforeButton70 {
   role?: AriaRole145;
   className?: AdditionalClass151;
   component?: KsComponentAttribute338;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -26128,7 +25825,6 @@ export interface IconAfterButton70 {
   role?: AriaRole146;
   className?: AdditionalClass152;
   component?: KsComponentAttribute339;
-  [k: string]: unknown;
 }
 /**
  * Image displayed alongside the text content
@@ -26163,7 +25859,6 @@ export interface VisualSlider5 {
   content: Text51;
   subheadline?: Subheadline35;
   spaceAfter?: BottomSpacing35;
-  [k: string]: unknown;
 }
 /**
  * visual
@@ -26235,7 +25930,6 @@ export interface Headline21 {
   spaceAfter?: BottomSpacing34;
   className?: AdditionalClasses125;
   component?: KsComponentAttribute342;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -26267,7 +25961,6 @@ export interface IconBeforeButton71 {
   role?: AriaRole147;
   className?: AdditionalClass153;
   component?: KsComponentAttribute343;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -26277,7 +25970,6 @@ export interface IconAfterButton71 {
   role?: AriaRole148;
   className?: AdditionalClass154;
   component?: KsComponentAttribute344;
-  [k: string]: unknown;
 }
 /**
  * visual
@@ -26343,7 +26035,6 @@ export interface IconBeforeButton72 {
   role?: AriaRole149;
   className?: AdditionalClass155;
   component?: KsComponentAttribute348;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -26353,7 +26044,6 @@ export interface IconAfterButton72 {
   role?: AriaRole150;
   className?: AdditionalClass156;
   component?: KsComponentAttribute349;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -26367,7 +26057,6 @@ export interface Headline22 {
   spaceAfter?: BottomSpacing36;
   className?: AdditionalClasses129;
   component?: KsComponentAttribute351;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -26399,7 +26088,6 @@ export interface IconBeforeButton73 {
   role?: AriaRole151;
   className?: AdditionalClass157;
   component?: KsComponentAttribute352;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -26409,7 +26097,6 @@ export interface IconAfterButton73 {
   role?: AriaRole152;
   className?: AdditionalClass158;
   component?: KsComponentAttribute353;
-  [k: string]: unknown;
 }
 /**
  * Wrapper for all media types
@@ -26474,7 +26161,6 @@ export interface IconBeforeButton74 {
   role?: AriaRole153;
   className?: AdditionalClass159;
   component?: KsComponentAttribute356;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -26484,13 +26170,11 @@ export interface IconAfterButton74 {
   role?: AriaRole154;
   className?: AdditionalClass160;
   component?: KsComponentAttribute357;
-  [k: string]: unknown;
 }
 export interface TextMediaVideo6 {
   video?: Video6;
   full?: FullWidthMedia18;
   caption?: Caption24;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -26501,13 +26185,11 @@ export interface Video6 {
   title?: VideoTitle6;
   width: Width42;
   height: Height53;
-  [k: string]: unknown;
 }
 export interface TextMediaImage6 {
   image?: Picture28;
   full?: FullWidthMedia19;
   caption?: Caption25;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -26527,13 +26209,11 @@ export interface Picture28 {
   lazy?: Lazy29;
   sources?: Sources29;
   pictureClassName?: ClassAttribute29;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage6 {
   lightboxImage?: LightboxImage6;
   full?: FullWidthMedia20;
   caption?: Caption27;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -26551,7 +26231,6 @@ export interface LightboxImage6 {
   className?: AdditionalClass161;
   captionClassName?: AdditionalCaptionClass6;
   component?: KsComponentAttribute360;
-  [k: string]: unknown;
 }
 /**
  * Component to render a pill / tag / label
@@ -26571,7 +26250,6 @@ export interface TextMediaVideo7 {
   video?: Video7;
   full?: FullWidthMedia21;
   caption?: Caption28;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -26582,13 +26260,11 @@ export interface Video7 {
   title?: VideoTitle7;
   width: Width45;
   height: Height56;
-  [k: string]: unknown;
 }
 export interface TextMediaImage7 {
   image?: Picture29;
   full?: FullWidthMedia22;
   caption?: Caption29;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -26608,13 +26284,11 @@ export interface Picture29 {
   lazy?: Lazy30;
   sources?: Sources30;
   pictureClassName?: ClassAttribute30;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage7 {
   lightboxImage?: LightboxImage7;
   full?: FullWidthMedia23;
   caption?: Caption31;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -26632,7 +26306,6 @@ export interface LightboxImage7 {
   className?: AdditionalClass162;
   captionClassName?: AdditionalCaptionClass7;
   component?: KsComponentAttribute363;
-  [k: string]: unknown;
 }
 /**
  * Component to show contact information
@@ -26646,7 +26319,6 @@ export interface Contact5 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab92;
-    [k: string]: unknown;
   }[];
   copy?: CopyText17;
   className?: Class65;
@@ -26673,13 +26345,11 @@ export interface Picture30 {
   lazy?: Lazy31;
   sources?: Sources31;
   pictureClassName?: ClassAttribute31;
-  [k: string]: unknown;
 }
 export interface TextMediaVideo8 {
   video?: Video8;
   full?: FullWidthMedia24;
   caption?: Caption32;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -26690,13 +26360,11 @@ export interface Video8 {
   title?: VideoTitle8;
   width: Width49;
   height: Height60;
-  [k: string]: unknown;
 }
 export interface TextMediaImage8 {
   image?: Picture31;
   full?: FullWidthMedia25;
   caption?: Caption33;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -26716,13 +26384,11 @@ export interface Picture31 {
   lazy?: Lazy32;
   sources?: Sources32;
   pictureClassName?: ClassAttribute32;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage8 {
   lightboxImage?: LightboxImage8;
   full?: FullWidthMedia26;
   caption?: Caption35;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -26740,7 +26406,6 @@ export interface LightboxImage8 {
   className?: AdditionalClass163;
   captionClassName?: AdditionalCaptionClass8;
   component?: KsComponentAttribute367;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -26757,7 +26422,6 @@ export interface TextMediaVideo9 {
   video?: Video9;
   full?: FullWidthMedia27;
   caption?: Caption36;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -26768,13 +26432,11 @@ export interface Video9 {
   title?: VideoTitle9;
   width: Width52;
   height: Height63;
-  [k: string]: unknown;
 }
 export interface TextMediaImage9 {
   image?: Picture32;
   full?: FullWidthMedia28;
   caption?: Caption37;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -26794,13 +26456,11 @@ export interface Picture32 {
   lazy?: Lazy33;
   sources?: Sources33;
   pictureClassName?: ClassAttribute33;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage9 {
   lightboxImage?: LightboxImage9;
   full?: FullWidthMedia29;
   caption?: Caption39;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -26818,7 +26478,6 @@ export interface LightboxImage9 {
   className?: AdditionalClass164;
   captionClassName?: AdditionalCaptionClass9;
   component?: KsComponentAttribute370;
-  [k: string]: unknown;
 }
 /**
  * Component to display content in a condensed, boxed form
@@ -26865,7 +26524,6 @@ export interface IconBeforeButton75 {
   role?: AriaRole155;
   className?: AdditionalClass165;
   component?: KsComponentAttribute371;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -26875,13 +26533,11 @@ export interface IconAfterButton75 {
   role?: AriaRole156;
   className?: AdditionalClass166;
   component?: KsComponentAttribute372;
-  [k: string]: unknown;
 }
 export interface TextMediaVideo10 {
   video?: Video10;
   full?: FullWidthMedia30;
   caption?: Caption40;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -26892,13 +26548,11 @@ export interface Video10 {
   title?: VideoTitle10;
   width: Width55;
   height: Height66;
-  [k: string]: unknown;
 }
 export interface TextMediaImage10 {
   image?: Picture33;
   full?: FullWidthMedia31;
   caption?: Caption41;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -26918,13 +26572,11 @@ export interface Picture33 {
   lazy?: Lazy34;
   sources?: Sources34;
   pictureClassName?: ClassAttribute34;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage10 {
   lightboxImage?: LightboxImage10;
   full?: FullWidthMedia32;
   caption?: Caption43;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -26942,7 +26594,6 @@ export interface LightboxImage10 {
   className?: AdditionalClass167;
   captionClassName?: AdditionalCaptionClass10;
   component?: KsComponentAttribute376;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -26968,7 +26619,6 @@ export interface TextMediaVideo11 {
   video?: Video11;
   full?: FullWidthMedia33;
   caption?: Caption44;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -26979,13 +26629,11 @@ export interface Video11 {
   title?: VideoTitle11;
   width: Width58;
   height: Height69;
-  [k: string]: unknown;
 }
 export interface TextMediaImage11 {
   image?: Picture34;
   full?: FullWidthMedia34;
   caption?: Caption45;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -27005,13 +26653,11 @@ export interface Picture34 {
   lazy?: Lazy35;
   sources?: Sources35;
   pictureClassName?: ClassAttribute35;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage11 {
   lightboxImage?: LightboxImage11;
   full?: FullWidthMedia35;
   caption?: Caption47;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -27029,7 +26675,6 @@ export interface LightboxImage11 {
   className?: AdditionalClass168;
   captionClassName?: AdditionalCaptionClass11;
   component?: KsComponentAttribute379;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -27045,7 +26690,6 @@ export interface TextMediaVideo12 {
   video?: Video12;
   full?: FullWidthMedia36;
   caption?: Caption48;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -27056,13 +26700,11 @@ export interface Video12 {
   title?: VideoTitle12;
   width: Width61;
   height: Height72;
-  [k: string]: unknown;
 }
 export interface TextMediaImage12 {
   image?: Picture35;
   full?: FullWidthMedia37;
   caption?: Caption49;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -27082,13 +26724,11 @@ export interface Picture35 {
   lazy?: Lazy36;
   sources?: Sources36;
   pictureClassName?: ClassAttribute36;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage12 {
   lightboxImage?: LightboxImage12;
   full?: FullWidthMedia38;
   caption?: Caption51;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -27106,7 +26746,6 @@ export interface LightboxImage12 {
   className?: AdditionalClass169;
   captionClassName?: AdditionalCaptionClass12;
   component?: KsComponentAttribute381;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -27154,7 +26793,6 @@ export interface IconBeforeButton76 {
   role?: AriaRole157;
   className?: AdditionalClass170;
   component?: KsComponentAttribute383;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -27164,13 +26802,11 @@ export interface IconAfterButton76 {
   role?: AriaRole158;
   className?: AdditionalClass171;
   component?: KsComponentAttribute384;
-  [k: string]: unknown;
 }
 export interface TextMediaVideo13 {
   video?: Video13;
   full?: FullWidthMedia39;
   caption?: Caption52;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -27181,13 +26817,11 @@ export interface Video13 {
   title?: VideoTitle13;
   width: Width64;
   height: Height75;
-  [k: string]: unknown;
 }
 export interface TextMediaImage13 {
   image?: Picture36;
   full?: FullWidthMedia40;
   caption?: Caption53;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -27207,13 +26841,11 @@ export interface Picture36 {
   lazy?: Lazy37;
   sources?: Sources37;
   pictureClassName?: ClassAttribute37;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage13 {
   lightboxImage?: LightboxImage13;
   full?: FullWidthMedia41;
   caption?: Caption55;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -27231,7 +26863,6 @@ export interface LightboxImage13 {
   className?: AdditionalClass172;
   captionClassName?: AdditionalCaptionClass13;
   component?: KsComponentAttribute388;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -27276,7 +26907,6 @@ export interface IconBeforeButton77 {
   role?: AriaRole159;
   className?: AdditionalClass173;
   component?: KsComponentAttribute389;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -27286,13 +26916,11 @@ export interface IconAfterButton77 {
   role?: AriaRole160;
   className?: AdditionalClass174;
   component?: KsComponentAttribute390;
-  [k: string]: unknown;
 }
 export interface TextMediaVideo14 {
   video?: Video14;
   full?: FullWidthMedia42;
   caption?: Caption56;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -27303,13 +26931,11 @@ export interface Video14 {
   title?: VideoTitle14;
   width: Width67;
   height: Height78;
-  [k: string]: unknown;
 }
 export interface TextMediaImage14 {
   image?: Picture37;
   full?: FullWidthMedia43;
   caption?: Caption57;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -27329,13 +26955,11 @@ export interface Picture37 {
   lazy?: Lazy38;
   sources?: Sources38;
   pictureClassName?: ClassAttribute38;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage14 {
   lightboxImage?: LightboxImage14;
   full?: FullWidthMedia44;
   caption?: Caption59;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -27353,7 +26977,6 @@ export interface LightboxImage14 {
   className?: AdditionalClass175;
   captionClassName?: AdditionalCaptionClass14;
   component?: KsComponentAttribute394;
-  [k: string]: unknown;
 }
 /**
  * Component to to increase a number up to a final value
@@ -27382,7 +27005,6 @@ export interface Icon5 {
   role?: AriaRole161;
   className?: AdditionalClass176;
   component?: KsComponentAttribute395;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -27414,7 +27036,6 @@ export interface IconBeforeButton78 {
   role?: AriaRole162;
   className?: AdditionalClass177;
   component?: KsComponentAttribute396;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -27424,13 +27045,11 @@ export interface IconAfterButton78 {
   role?: AriaRole163;
   className?: AdditionalClass178;
   component?: KsComponentAttribute397;
-  [k: string]: unknown;
 }
 export interface TextMediaVideo15 {
   video?: Video15;
   full?: FullWidthMedia45;
   caption?: Caption60;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -27441,13 +27060,11 @@ export interface Video15 {
   title?: VideoTitle15;
   width: Width70;
   height: Height81;
-  [k: string]: unknown;
 }
 export interface TextMediaImage15 {
   image?: Picture38;
   full?: FullWidthMedia46;
   caption?: Caption61;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -27467,13 +27084,11 @@ export interface Picture38 {
   lazy?: Lazy39;
   sources?: Sources39;
   pictureClassName?: ClassAttribute39;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage15 {
   lightboxImage?: LightboxImage15;
   full?: FullWidthMedia47;
   caption?: Caption63;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -27491,7 +27106,6 @@ export interface LightboxImage15 {
   className?: AdditionalClass179;
   captionClassName?: AdditionalCaptionClass15;
   component?: KsComponentAttribute401;
-  [k: string]: unknown;
 }
 /**
  * Component to list logos or seals
@@ -27522,13 +27136,11 @@ export interface Picture39 {
   lazy?: Lazy40;
   sources?: Sources40;
   pictureClassName?: ClassAttribute40;
-  [k: string]: unknown;
 }
 export interface TextMediaVideo16 {
   video?: Video16;
   full?: FullWidthMedia48;
   caption?: Caption64;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -27539,13 +27151,11 @@ export interface Video16 {
   title?: VideoTitle16;
   width: Width74;
   height: Height85;
-  [k: string]: unknown;
 }
 export interface TextMediaImage16 {
   image?: Picture40;
   full?: FullWidthMedia49;
   caption?: Caption65;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -27565,13 +27175,11 @@ export interface Picture40 {
   lazy?: Lazy41;
   sources?: Sources41;
   pictureClassName?: ClassAttribute41;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage16 {
   lightboxImage?: LightboxImage16;
   full?: FullWidthMedia50;
   caption?: Caption67;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -27589,7 +27197,6 @@ export interface LightboxImage16 {
   className?: AdditionalClass180;
   captionClassName?: AdditionalCaptionClass16;
   component?: KsComponentAttribute405;
-  [k: string]: unknown;
 }
 /**
  * Component to display a rich quote
@@ -27608,7 +27215,6 @@ export interface TextMediaVideo17 {
   video?: Video17;
   full?: FullWidthMedia51;
   caption?: Caption68;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -27619,13 +27225,11 @@ export interface Video17 {
   title?: VideoTitle17;
   width: Width77;
   height: Height88;
-  [k: string]: unknown;
 }
 export interface TextMediaImage17 {
   image?: Picture41;
   full?: FullWidthMedia52;
   caption?: Caption69;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -27645,13 +27249,11 @@ export interface Picture41 {
   lazy?: Lazy42;
   sources?: Sources42;
   pictureClassName?: ClassAttribute42;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage17 {
   lightboxImage?: LightboxImage17;
   full?: FullWidthMedia53;
   caption?: Caption71;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -27669,7 +27271,6 @@ export interface LightboxImage17 {
   className?: AdditionalClass181;
   captionClassName?: AdditionalCaptionClass17;
   component?: KsComponentAttribute408;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -27698,7 +27299,6 @@ export interface TextMediaVideo18 {
   video?: Video18;
   full?: FullWidthMedia54;
   caption?: Caption72;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -27709,13 +27309,11 @@ export interface Video18 {
   title?: VideoTitle18;
   width: Width80;
   height: Height91;
-  [k: string]: unknown;
 }
 export interface TextMediaImage18 {
   image?: Picture42;
   full?: FullWidthMedia55;
   caption?: Caption73;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -27735,13 +27333,11 @@ export interface Picture42 {
   lazy?: Lazy43;
   sources?: Sources43;
   pictureClassName?: ClassAttribute43;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage18 {
   lightboxImage?: LightboxImage18;
   full?: FullWidthMedia56;
   caption?: Caption75;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -27759,7 +27355,6 @@ export interface LightboxImage18 {
   className?: AdditionalClass182;
   captionClassName?: AdditionalCaptionClass18;
   component?: KsComponentAttribute412;
-  [k: string]: unknown;
 }
 /**
  * Component to present rich combinations of text and media, best used sequentially
@@ -27820,7 +27415,6 @@ export interface IconBeforeButton79 {
   role?: AriaRole164;
   className?: AdditionalClass183;
   component?: KsComponentAttribute413;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -27830,7 +27424,6 @@ export interface IconAfterButton79 {
   role?: AriaRole165;
   className?: AdditionalClass184;
   component?: KsComponentAttribute414;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -27844,7 +27437,6 @@ export interface Headline24 {
   subheadline?: Subheadline39;
   className?: AdditionalClasses156;
   component?: KsComponentAttribute416;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -27875,7 +27467,6 @@ export interface IconBeforeButton80 {
   role?: AriaRole166;
   className?: AdditionalClass185;
   component?: KsComponentAttribute417;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -27885,7 +27476,6 @@ export interface IconAfterButton80 {
   role?: AriaRole167;
   className?: AdditionalClass186;
   component?: KsComponentAttribute418;
-  [k: string]: unknown;
 }
 /**
  * Image displayed alongside the text content
@@ -27910,7 +27500,6 @@ export interface TextMediaVideo19 {
   video?: Video19;
   full?: FullWidthMedia57;
   caption?: Caption76;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -27921,13 +27510,11 @@ export interface Video19 {
   title?: VideoTitle19;
   width: Width83;
   height: Height94;
-  [k: string]: unknown;
 }
 export interface TextMediaImage19 {
   image?: Picture43;
   full?: FullWidthMedia58;
   caption?: Caption77;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -27947,13 +27534,11 @@ export interface Picture43 {
   lazy?: Lazy44;
   sources?: Sources44;
   pictureClassName?: ClassAttribute44;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage19 {
   lightboxImage?: LightboxImage19;
   full?: FullWidthMedia59;
   caption?: Caption79;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -27971,7 +27556,6 @@ export interface LightboxImage19 {
   className?: AdditionalClass187;
   captionClassName?: AdditionalCaptionClass19;
   component?: KsComponentAttribute422;
-  [k: string]: unknown;
 }
 /**
  * Visual Slider
@@ -28055,7 +27639,6 @@ export interface Headline25 {
   spaceAfter?: BottomSpacing40;
   className?: AdditionalClasses159;
   component?: KsComponentAttribute423;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -28087,7 +27670,6 @@ export interface IconBeforeButton81 {
   role?: AriaRole168;
   className?: AdditionalClass188;
   component?: KsComponentAttribute424;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28097,13 +27679,11 @@ export interface IconAfterButton81 {
   role?: AriaRole169;
   className?: AdditionalClass189;
   component?: KsComponentAttribute425;
-  [k: string]: unknown;
 }
 export interface TextMediaVideo20 {
   video?: Video20;
   full?: FullWidthMedia60;
   caption?: Caption80;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -28114,13 +27694,11 @@ export interface Video20 {
   title?: VideoTitle20;
   width: Width86;
   height: Height98;
-  [k: string]: unknown;
 }
 export interface TextMediaImage20 {
   image?: Picture44;
   full?: FullWidthMedia61;
   caption?: Caption81;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -28140,13 +27718,11 @@ export interface Picture44 {
   lazy?: Lazy45;
   sources?: Sources45;
   pictureClassName?: ClassAttribute45;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage20 {
   lightboxImage?: LightboxImage20;
   full?: FullWidthMedia62;
   caption?: Caption83;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -28164,7 +27740,6 @@ export interface LightboxImage20 {
   className?: AdditionalClass190;
   captionClassName?: AdditionalCaptionClass20;
   component?: KsComponentAttribute430;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28203,7 +27778,6 @@ export interface IconBeforeButton82 {
   role?: AriaRole170;
   className?: AdditionalClass191;
   component?: KsComponentAttribute431;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28213,7 +27787,6 @@ export interface IconAfterButton82 {
   role?: AriaRole171;
   className?: AdditionalClass192;
   component?: KsComponentAttribute432;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28245,7 +27818,6 @@ export interface IconBeforeButton83 {
   role?: AriaRole172;
   className?: AdditionalClass193;
   component?: KsComponentAttribute434;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28255,7 +27827,6 @@ export interface IconAfterButton83 {
   role?: AriaRole173;
   className?: AdditionalClass194;
   component?: KsComponentAttribute435;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -28302,7 +27873,6 @@ export interface IconBeforeButton84 {
   role?: AriaRole174;
   className?: AdditionalClass195;
   component?: KsComponentAttribute438;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28312,7 +27882,6 @@ export interface IconAfterButton84 {
   role?: AriaRole175;
   className?: AdditionalClass196;
   component?: KsComponentAttribute439;
-  [k: string]: unknown;
 }
 /**
  * Component to display content in a condensed, boxed form
@@ -28360,7 +27929,6 @@ export interface IconBeforeButton85 {
   role?: AriaRole176;
   className?: AdditionalClass197;
   component?: KsComponentAttribute441;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28370,7 +27938,6 @@ export interface IconAfterButton85 {
   role?: AriaRole177;
   className?: AdditionalClass198;
   component?: KsComponentAttribute442;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -28426,7 +27993,6 @@ export interface IconBeforeButton86 {
   role?: AriaRole178;
   className?: AdditionalClass199;
   component?: KsComponentAttribute446;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28436,7 +28002,6 @@ export interface IconAfterButton86 {
   role?: AriaRole179;
   className?: AdditionalClass200;
   component?: KsComponentAttribute447;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -28458,7 +28023,6 @@ export interface TextMediaVideo21 {
   video?: Video21;
   full?: FullWidthMedia63;
   caption?: Caption84;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -28469,13 +28033,11 @@ export interface Video21 {
   title?: VideoTitle21;
   width: Width89;
   height: Height101;
-  [k: string]: unknown;
 }
 export interface TextMediaImage21 {
   image?: Picture45;
   full?: FullWidthMedia64;
   caption?: Caption85;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -28495,13 +28057,11 @@ export interface Picture45 {
   lazy?: Lazy46;
   sources?: Sources46;
   pictureClassName?: ClassAttribute46;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage21 {
   lightboxImage?: LightboxImage21;
   full?: FullWidthMedia65;
   caption?: Caption87;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -28519,7 +28079,6 @@ export interface LightboxImage21 {
   className?: AdditionalClass201;
   captionClassName?: AdditionalCaptionClass21;
   component?: KsComponentAttribute450;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28551,7 +28110,6 @@ export interface IconBeforeButton87 {
   role?: AriaRole180;
   className?: AdditionalClass202;
   component?: KsComponentAttribute452;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28561,7 +28119,6 @@ export interface IconAfterButton87 {
   role?: AriaRole181;
   className?: AdditionalClass203;
   component?: KsComponentAttribute453;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -28607,7 +28164,6 @@ export interface IconBeforeButton88 {
   role?: AriaRole182;
   className?: AdditionalClass204;
   component?: KsComponentAttribute455;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28617,7 +28173,6 @@ export interface IconAfterButton88 {
   role?: AriaRole183;
   className?: AdditionalClass205;
   component?: KsComponentAttribute456;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -28663,7 +28218,6 @@ export interface IconBeforeButton89 {
   role?: AriaRole184;
   className?: AdditionalClass206;
   component?: KsComponentAttribute459;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28673,7 +28227,6 @@ export interface IconAfterButton89 {
   role?: AriaRole185;
   className?: AdditionalClass207;
   component?: KsComponentAttribute460;
-  [k: string]: unknown;
 }
 /**
  * Component to to increase a number up to a final value
@@ -28704,7 +28257,6 @@ export interface Icon6 {
   role?: AriaRole186;
   className?: AdditionalClass208;
   component?: KsComponentAttribute463;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28737,7 +28289,6 @@ export interface IconBeforeButton90 {
   role?: AriaRole187;
   className?: AdditionalClass209;
   component?: KsComponentAttribute464;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28747,7 +28298,6 @@ export interface IconAfterButton90 {
   role?: AriaRole188;
   className?: AdditionalClass210;
   component?: KsComponentAttribute465;
-  [k: string]: unknown;
 }
 /**
  * Component to list logos or seals
@@ -28782,7 +28332,6 @@ export interface Picture46 {
   lazy?: Lazy47;
   sources?: Sources47;
   pictureClassName?: ClassAttribute47;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28814,7 +28363,6 @@ export interface IconBeforeButton91 {
   role?: AriaRole189;
   className?: AdditionalClass211;
   component?: KsComponentAttribute470;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28824,7 +28372,6 @@ export interface IconAfterButton91 {
   role?: AriaRole190;
   className?: AdditionalClass212;
   component?: KsComponentAttribute471;
-  [k: string]: unknown;
 }
 /**
  * Component to display a rich quote
@@ -28872,7 +28419,6 @@ export interface IconBeforeButton92 {
   role?: AriaRole191;
   className?: AdditionalClass213;
   component?: KsComponentAttribute474;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28882,7 +28428,6 @@ export interface IconAfterButton92 {
   role?: AriaRole192;
   className?: AdditionalClass214;
   component?: KsComponentAttribute475;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -28941,7 +28486,6 @@ export interface IconBeforeButton93 {
   role?: AriaRole193;
   className?: AdditionalClass215;
   component?: KsComponentAttribute479;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -28951,7 +28495,6 @@ export interface IconAfterButton93 {
   role?: AriaRole194;
   className?: AdditionalClass216;
   component?: KsComponentAttribute480;
-  [k: string]: unknown;
 }
 /**
  * Visual Slider
@@ -29039,7 +28582,6 @@ export interface Headline27 {
   spaceAfter?: BottomSpacing42;
   className?: AdditionalClasses179;
   component?: KsComponentAttribute482;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -29071,7 +28613,6 @@ export interface IconBeforeButton94 {
   role?: AriaRole195;
   className?: AdditionalClass217;
   component?: KsComponentAttribute483;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29081,7 +28622,6 @@ export interface IconAfterButton94 {
   role?: AriaRole196;
   className?: AdditionalClass218;
   component?: KsComponentAttribute484;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -29113,7 +28653,6 @@ export interface IconBeforeButton95 {
   role?: AriaRole197;
   className?: AdditionalClass219;
   component?: KsComponentAttribute488;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29123,7 +28662,6 @@ export interface IconAfterButton95 {
   role?: AriaRole198;
   className?: AdditionalClass220;
   component?: KsComponentAttribute489;
-  [k: string]: unknown;
 }
 /**
  * visual
@@ -29190,7 +28728,6 @@ export interface IconBeforeButton96 {
   role?: AriaRole199;
   className?: AdditionalClass221;
   component?: KsComponentAttribute491;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29200,7 +28737,6 @@ export interface IconAfterButton96 {
   role?: AriaRole200;
   className?: AdditionalClass222;
   component?: KsComponentAttribute492;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -29214,7 +28750,6 @@ export interface Headline28 {
   spaceAfter?: BottomSpacing43;
   className?: AdditionalClasses184;
   component?: KsComponentAttribute494;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -29246,7 +28781,6 @@ export interface IconBeforeButton97 {
   role?: AriaRole201;
   className?: AdditionalClass223;
   component?: KsComponentAttribute495;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29256,7 +28790,6 @@ export interface IconAfterButton97 {
   role?: AriaRole202;
   className?: AdditionalClass224;
   component?: KsComponentAttribute496;
-  [k: string]: unknown;
 }
 /**
  * Wrapper for all media types
@@ -29317,7 +28850,6 @@ export interface IconBeforeButton98 {
   role?: AriaRole203;
   className?: AdditionalClass225;
   component?: KsComponentAttribute499;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29327,7 +28859,6 @@ export interface IconAfterButton98 {
   role?: AriaRole204;
   className?: AdditionalClass226;
   component?: KsComponentAttribute500;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -29363,7 +28894,6 @@ export interface IconBeforeButton99 {
   role?: AriaRole205;
   className?: AdditionalClass227;
   component?: KsComponentAttribute502;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29373,7 +28903,6 @@ export interface IconAfterButton99 {
   role?: AriaRole206;
   className?: AdditionalClass228;
   component?: KsComponentAttribute503;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -29405,7 +28934,6 @@ export interface IconBeforeButton100 {
   role?: AriaRole207;
   className?: AdditionalClass229;
   component?: KsComponentAttribute505;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29415,7 +28943,6 @@ export interface IconAfterButton100 {
   role?: AriaRole208;
   className?: AdditionalClass230;
   component?: KsComponentAttribute506;
-  [k: string]: unknown;
 }
 /**
  * Component to show contact information
@@ -29429,7 +28956,6 @@ export interface Contact6 {
     label?: string;
     href?: string;
     newTab?: OpenLinkInNewTab119;
-    [k: string]: unknown;
   }[];
   copy?: CopyText18;
   className?: Class87;
@@ -29457,7 +28983,6 @@ export interface Picture47 {
   lazy?: Lazy48;
   sources?: Sources48;
   pictureClassName?: ClassAttribute48;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -29489,7 +29014,6 @@ export interface IconBeforeButton101 {
   role?: AriaRole209;
   className?: AdditionalClass231;
   component?: KsComponentAttribute510;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29499,7 +29023,6 @@ export interface IconAfterButton101 {
   role?: AriaRole210;
   className?: AdditionalClass232;
   component?: KsComponentAttribute511;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -29543,7 +29066,6 @@ export interface IconBeforeButton102 {
   role?: AriaRole211;
   className?: AdditionalClass233;
   component?: KsComponentAttribute514;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29553,7 +29075,6 @@ export interface IconAfterButton102 {
   role?: AriaRole212;
   className?: AdditionalClass234;
   component?: KsComponentAttribute515;
-  [k: string]: unknown;
 }
 /**
  * Component to display content in a condensed, boxed form
@@ -29600,7 +29121,6 @@ export interface IconBeforeButton103 {
   role?: AriaRole213;
   className?: AdditionalClass235;
   component?: KsComponentAttribute517;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29610,7 +29130,6 @@ export interface IconAfterButton103 {
   role?: AriaRole214;
   className?: AdditionalClass236;
   component?: KsComponentAttribute518;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -29663,7 +29182,6 @@ export interface IconBeforeButton104 {
   role?: AriaRole215;
   className?: AdditionalClass237;
   component?: KsComponentAttribute522;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29673,7 +29191,6 @@ export interface IconAfterButton104 {
   role?: AriaRole216;
   className?: AdditionalClass238;
   component?: KsComponentAttribute523;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -29692,7 +29209,6 @@ export interface TextMediaVideo22 {
   video?: Video22;
   full?: FullWidthMedia66;
   caption?: Caption88;
-  [k: string]: unknown;
 }
 /**
  * Video item to display
@@ -29703,13 +29219,11 @@ export interface Video22 {
   title?: VideoTitle22;
   width: Width94;
   height: Height108;
-  [k: string]: unknown;
 }
 export interface TextMediaImage22 {
   image?: Picture48;
   full?: FullWidthMedia67;
   caption?: Caption89;
-  [k: string]: unknown;
 }
 /**
  * Base component to display a picture
@@ -29729,13 +29243,11 @@ export interface Picture48 {
   lazy?: Lazy49;
   sources?: Sources49;
   pictureClassName?: ClassAttribute49;
-  [k: string]: unknown;
 }
 export interface TextMediaLazyImage22 {
   lightboxImage?: LightboxImage22;
   full?: FullWidthMedia68;
   caption?: Caption91;
-  [k: string]: unknown;
 }
 /**
  * Lightbox Image
@@ -29753,7 +29265,6 @@ export interface LightboxImage22 {
   className?: AdditionalClass239;
   captionClassName?: AdditionalCaptionClass22;
   component?: KsComponentAttribute526;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -29785,7 +29296,6 @@ export interface IconBeforeButton105 {
   role?: AriaRole217;
   className?: AdditionalClass240;
   component?: KsComponentAttribute528;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29795,7 +29305,6 @@ export interface IconAfterButton105 {
   role?: AriaRole218;
   className?: AdditionalClass241;
   component?: KsComponentAttribute529;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -29838,7 +29347,6 @@ export interface IconBeforeButton106 {
   role?: AriaRole219;
   className?: AdditionalClass242;
   component?: KsComponentAttribute531;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29848,7 +29356,6 @@ export interface IconAfterButton106 {
   role?: AriaRole220;
   className?: AdditionalClass243;
   component?: KsComponentAttribute532;
-  [k: string]: unknown;
 }
 /**
  * Component to to increase a number up to a final value
@@ -29876,7 +29383,6 @@ export interface Icon7 {
   role?: AriaRole221;
   className?: AdditionalClass244;
   component?: KsComponentAttribute535;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -29909,7 +29415,6 @@ export interface IconBeforeButton107 {
   role?: AriaRole222;
   className?: AdditionalClass245;
   component?: KsComponentAttribute536;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29919,7 +29424,6 @@ export interface IconAfterButton107 {
   role?: AriaRole223;
   className?: AdditionalClass246;
   component?: KsComponentAttribute537;
-  [k: string]: unknown;
 }
 /**
  * Component to list logos or seals
@@ -29951,7 +29455,6 @@ export interface Picture49 {
   lazy?: Lazy50;
   sources?: Sources50;
   pictureClassName?: ClassAttribute50;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -29983,7 +29486,6 @@ export interface IconBeforeButton108 {
   role?: AriaRole224;
   className?: AdditionalClass247;
   component?: KsComponentAttribute542;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -29993,7 +29495,6 @@ export interface IconAfterButton108 {
   role?: AriaRole225;
   className?: AdditionalClass248;
   component?: KsComponentAttribute543;
-  [k: string]: unknown;
 }
 /**
  * Component to display a rich quote
@@ -30039,7 +29540,6 @@ export interface IconBeforeButton109 {
   role?: AriaRole226;
   className?: AdditionalClass249;
   component?: KsComponentAttribute546;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -30049,7 +29549,6 @@ export interface IconAfterButton109 {
   role?: AriaRole227;
   className?: AdditionalClass250;
   component?: KsComponentAttribute547;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -30105,7 +29604,6 @@ export interface IconBeforeButton110 {
   role?: AriaRole228;
   className?: AdditionalClass251;
   component?: KsComponentAttribute551;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -30115,7 +29613,6 @@ export interface IconAfterButton110 {
   role?: AriaRole229;
   className?: AdditionalClass252;
   component?: KsComponentAttribute552;
-  [k: string]: unknown;
 }
 /**
  * Component to present rich combinations of text and media, best used sequentially
@@ -30176,7 +29673,6 @@ export interface IconBeforeButton111 {
   role?: AriaRole230;
   className?: AdditionalClass253;
   component?: KsComponentAttribute554;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -30186,7 +29682,6 @@ export interface IconAfterButton111 {
   role?: AriaRole231;
   className?: AdditionalClass254;
   component?: KsComponentAttribute555;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -30200,7 +29695,6 @@ export interface Headline30 {
   subheadline?: Subheadline45;
   className?: AdditionalClasses206;
   component?: KsComponentAttribute557;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -30231,7 +29725,6 @@ export interface IconBeforeButton112 {
   role?: AriaRole232;
   className?: AdditionalClass255;
   component?: KsComponentAttribute558;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -30241,7 +29734,6 @@ export interface IconAfterButton112 {
   role?: AriaRole233;
   className?: AdditionalClass256;
   component?: KsComponentAttribute559;
-  [k: string]: unknown;
 }
 /**
  * Image displayed alongside the text content
@@ -30292,7 +29784,6 @@ export interface IconBeforeButton113 {
   role?: AriaRole234;
   className?: AdditionalClass257;
   component?: KsComponentAttribute562;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -30302,7 +29793,6 @@ export interface IconAfterButton113 {
   role?: AriaRole235;
   className?: AdditionalClass258;
   component?: KsComponentAttribute563;
-  [k: string]: unknown;
 }
 /**
  * Visual Slider
@@ -30387,7 +29877,6 @@ export interface Headline31 {
   spaceAfter?: BottomSpacing46;
   className?: AdditionalClasses209;
   component?: KsComponentAttribute565;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -30419,7 +29908,6 @@ export interface IconBeforeButton114 {
   role?: AriaRole236;
   className?: AdditionalClass259;
   component?: KsComponentAttribute566;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -30429,7 +29917,6 @@ export interface IconAfterButton114 {
   role?: AriaRole237;
   className?: AdditionalClass260;
   component?: KsComponentAttribute567;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -30461,7 +29948,6 @@ export interface IconBeforeButton115 {
   role?: AriaRole238;
   className?: AdditionalClass261;
   component?: KsComponentAttribute571;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -30471,7 +29957,6 @@ export interface IconAfterButton115 {
   role?: AriaRole239;
   className?: AdditionalClass262;
   component?: KsComponentAttribute572;
-  [k: string]: unknown;
 }
 /**
  * visual
@@ -30535,7 +30020,6 @@ export interface IconBeforeButton116 {
   role?: AriaRole240;
   className?: AdditionalClass263;
   component?: KsComponentAttribute574;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -30545,7 +30029,6 @@ export interface IconAfterButton116 {
   role?: AriaRole241;
   className?: AdditionalClass264;
   component?: KsComponentAttribute575;
-  [k: string]: unknown;
 }
 /**
  * Headline for the box
@@ -30559,7 +30042,6 @@ export interface Headline32 {
   spaceAfter?: BottomSpacing47;
   className?: AdditionalClasses214;
   component?: KsComponentAttribute577;
-  [k: string]: unknown;
 }
 /**
  * Text box link configuration
@@ -30591,7 +30073,6 @@ export interface IconBeforeButton117 {
   role?: AriaRole242;
   className?: AdditionalClass265;
   component?: KsComponentAttribute578;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -30601,7 +30082,6 @@ export interface IconAfterButton117 {
   role?: AriaRole243;
   className?: AdditionalClass266;
   component?: KsComponentAttribute579;
-  [k: string]: unknown;
 }
 /**
  * Wrapper for all media types
@@ -30662,7 +30142,6 @@ export interface IconBeforeButton118 {
   role?: AriaRole244;
   className?: AdditionalClass267;
   component?: KsComponentAttribute582;
-  [k: string]: unknown;
 }
 /**
  * Icon identifier for icon after the button text
@@ -30672,7 +30151,6 @@ export interface IconAfterButton118 {
   role?: AriaRole245;
   className?: AdditionalClass268;
   component?: KsComponentAttribute583;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -30686,5 +30164,4 @@ export interface Headline33 {
   spaceAfter?: BottomSpacing48;
   className?: AdditionalClasses218;
   component?: KsComponentAttribute585;
-  [k: string]: unknown;
 }
