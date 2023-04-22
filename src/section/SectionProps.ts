@@ -24316,6 +24316,7 @@ export interface Button31 {
   newTab?: OpenLinkInNewTab62;
   className?: AdditionalClasses93;
   component?: KsComponentAttribute249;
+  graphic?: "none" | "tokens" | "components" | "properties";
   to: Number;
   icon?: Icon;
   topic?: Topic34;
@@ -24325,7 +24326,6 @@ export interface Button31 {
    * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
    */
   expand?: number;
-  graphic?: "none" | "tokens" | "components" | "properties";
 }
 /**
  * Icon identifier for icon before the button text
@@ -24410,6 +24410,7 @@ export interface Contact7 {
   copy?: CopyText13;
   className?: Class39;
   component?: KsComponentAttribute255;
+  graphic?: "none" | "tokens" | "components" | "properties";
   to: Number1;
   icon?: Icon1;
   topic?: Topic35;
@@ -24419,7 +24420,6 @@ export interface Contact7 {
    * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
    */
   expand?: number;
-  graphic?: "none" | "tokens" | "components" | "properties";
 }
 /**
  * Base component to display a picture
@@ -24497,6 +24497,7 @@ export interface CollapsibleBox9 {
   text: ContentOfTheCollapsible13;
   className?: Class40;
   component?: KsComponentAttribute260;
+  graphic?: "none" | "tokens" | "components" | "properties";
   to: Number2;
   icon?: Icon2;
   topic?: Topic36;
@@ -24505,7 +24506,6 @@ export interface CollapsibleBox9 {
    * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
    */
   expand?: number;
-  graphic?: "none" | "tokens" | "components" | "properties";
 }
 /**
  * Icon
@@ -24568,13 +24568,13 @@ export interface ContentBox7 {
   link?: Link14;
   className?: AdditionalClasses99;
   component?: KsComponentAttribute268;
+  graphic?: "none" | "tokens" | "components" | "properties";
   to: Number3;
   icon?: Icon3;
   /**
    * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
    */
   expand?: number;
-  graphic?: "none" | "tokens" | "components" | "properties";
 }
 /**
  * Content box link configuration
@@ -24637,6 +24637,7 @@ export interface Headline9 {
   spaceAfter?: BottomSpacing17;
   className?: AdditionalClasses100;
   component?: KsComponentAttribute270;
+  graphic?: "none" | "tokens" | "components" | "properties";
   to: Number4;
   icon?: Icon4;
   topic?: Topic38;
@@ -24646,7 +24647,6 @@ export interface Headline9 {
    * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
    */
   expand?: number;
-  graphic?: "none" | "tokens" | "components" | "properties";
 }
 /**
  * Icon
@@ -24706,6 +24706,7 @@ export interface TextMedia9 {
   media?: Media17;
   className?: Class41;
   component?: KsComponentAttribute277;
+  graphic?: "none" | "tokens" | "components" | "properties";
   to: Number5;
   icon?: Icon5;
   topic?: Topic39;
@@ -24714,7 +24715,6 @@ export interface TextMedia9 {
    * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
    */
   expand?: number;
-  graphic?: "none" | "tokens" | "components" | "properties";
 }
 export interface TextMediaVideo17 {
   video?: Video17;
@@ -24839,13 +24839,13 @@ export interface TeaserBox6 {
   image?: ImageSource24;
   ratio: ImageRatio24;
   imageSpacing?: ImageSpacing12;
+  graphic?: "none" | "tokens" | "components" | "properties";
   to: Number6;
   icon?: Icon6;
   /**
    * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
    */
   expand?: number;
-  graphic?: "none" | "tokens" | "components" | "properties";
 }
 /**
  * Component to display links and call-to-actions
@@ -24907,13 +24907,13 @@ export interface TeaserRow8 {
   link?: Button33;
   className?: Class43;
   component?: KsComponentAttribute290;
+  graphic?: "none" | "tokens" | "components" | "properties";
   to: Number7;
   icon?: Icon7;
   /**
    * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
    */
   expand?: number;
-  graphic?: "none" | "tokens" | "components" | "properties";
 }
 /**
  * Component to display links and call-to-actions

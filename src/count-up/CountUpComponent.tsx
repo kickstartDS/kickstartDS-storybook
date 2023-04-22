@@ -19,16 +19,14 @@ interface RenderFunctions {
 
 const CountUp: FunctionComponent<
   CountUpProps & RenderFunctions & HTMLAttributes<HTMLDivElement>
-> = (props) => (
+> = ({ graphic, icon, ...rest }) => (
   <div
     className={classnames(
       "kds-count-up ",
-      props.graphic &&
-        props.graphic !== "none" &&
-        `kds-count-up--${props.graphic}`
+      graphic && graphic !== "none" && `kds-count-up--${graphic}`
     )}
   >
-    {props.graphic !== "none" && (
+    {graphic !== "none" && (
       <>
         <svg
           className="kds-count-up__progress"
@@ -63,7 +61,7 @@ const CountUp: FunctionComponent<
         </div>
       </>
     )}
-    <CountUpContextDefault {...props} />
+    <CountUpContextDefault icon={graphic === "none" ? icon : {}} {...rest} />
   </div>
 );
 
