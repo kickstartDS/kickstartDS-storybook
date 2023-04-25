@@ -4,7 +4,7 @@
 :root {
   .c-post-aside {
     --tag-label-height: calc(
-      var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs) + calc(var(--ks-spacing-inset-xs) * 2)
+      var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs) + calc(var(--ks-spacing-inset-xs) * 2)
     );
 
     height: fit-content;
@@ -44,7 +44,7 @@
         --icon-size: 1rem;
 
         margin: 0;
-        gap: var(--ks-spacing-s);
+        gap: var(--ks-spacing-stack-xs) var(--ks-spacing-inline-xs);
 
         > * {
           margin: 0;
@@ -62,6 +62,7 @@
 
           .c-headline {
             display: block;
+            padding-bottom: 0;
 
             &__headline {
               font: var(--ks-font-copy-s);
@@ -87,7 +88,7 @@
         &__links {
           font: var(--ks-font-interface-xs);
           &__links {
-            font: var(--ks-font-ui-xs);
+            font: var(--ks-font-interface-xs);
           }
 
           &__link {

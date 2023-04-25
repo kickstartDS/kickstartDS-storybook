@@ -1,10 +1,10 @@
 @use "../breakpoint";
 
 :root {
-  --c-announcement-bar-height: 85px;
+  --kds-announcement-bar-height: 85px;
 
   @include breakpoint.media("≥s") {
-    --c-announcement-bar-height: 45px;
+    --kds-announcement-bar-height: 45px;
   }
 }
 
@@ -12,7 +12,7 @@
 [ks-theme],
 [ks-inverted] {
   --g-header-height: calc(
-    var(--g-logo-height) + calc(var(--g-header-spacing-v) * 2) + var(--c-announcement-bar-height)
+    var(--g-logo-height) + calc(var(--g-header-spacing-v) * 2) + var(--kds-announcement-bar-height)
   );
   --g-header-spacing: var(--g-header-spacing-v) var(--g-header-spacing-h);
   --g-header-spacing-h: var(--l-section--content-padding);
@@ -22,6 +22,4 @@
   @include breakpoint.media("≥m") {
     --g-header-spacing-v: var(--ks-spacing-l);
   }
-  --g-header-shadow: var(--g-shadow-s);
-  --enc-header-spacing: var(--ks-spacing-s);
 }

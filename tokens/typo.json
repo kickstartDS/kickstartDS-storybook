@@ -69,7 +69,7 @@
           "tablet": {
             "value": 1.5
           },
-          "laptop": {
+          "desktop": {
             "value": 1.75
           }
         },

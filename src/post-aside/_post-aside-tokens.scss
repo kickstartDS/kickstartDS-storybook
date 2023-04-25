@@ -4,8 +4,7 @@
 [ks-theme],
 [ks-inverted] {
   .c-post-aside {
-    --c-post-aside--gap: var(--ks-spacing-stack-s);
-    --c-post-aside_author--headline-spacing: var(--ks-spacing-xs);
+    --c-post-aside--gap: var(--ks-spacing-stack-xs);
     --c-post-aside_meta--gap: var(--ks-spacing-m);
     --c-post-aside_meta-item--font: var(--ks-font-interface-xs);
     --c-post-aside_meta-item--color: var(--ks-text-color-ui);

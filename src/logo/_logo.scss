@@ -10,7 +10,6 @@
     display: block;
     height: var(--g-logo-height);
     width: fit-content;
-    transition: height var(--g-transition-duration-s);
 
     @include breakpoint.media("≥s") {
       padding: 0;

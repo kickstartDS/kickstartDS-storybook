@@ -62,18 +62,6 @@ export const Concierge = forwardRef<
             level="h1"
             align="left"
             content="Design System Concierge"
-            // renderContent={(content) => (
-            //   <div>
-            //     <div>{content}</div>
-            //     <div>
-            //       <TagLabel
-            //         style={{ backgroundColor: "#FF009D", color: "white" }}
-            //         label="Beta"
-            //         size="m"
-            //       />
-            //     </div>
-            //   </div>
-            // )}
             subheadline="Ask anything and get pointed the right way"
           />
         </div>
@@ -125,43 +113,41 @@ export const Concierge = forwardRef<
       <Section spaceBefore="small" background="accent" width="default">
         <div className="template template--concierge">
           <div className="template__main">
-            {status.code !== "loading" &&
-              !answer &&
-              status.code !== "error" && (
+            {status.code !== "loading" && !answer && status.code !== "error" && (
+              <div>
                 <div>
-                  <div>
-                    <Headline
-                      content="Not sure where to start?"
-                      subheadline="Try one of the following questions:"
-                      level="h2"
-                      styleAs="h4"
-                    />
-                    <ul className="c-tag-label--list">
-                      {textAreaRef &&
-                        typeof textAreaRef !== "function" &&
-                        questions &&
-                        questions.length > 0 &&
-                        questions.map((question, index) => {
-                          return (
-                            <li key={`question-${index}`}>
-                              <span
-                                className="concierge--question"
-                                onClick={() => {
-                                  if (textAreaRef.current) {
-                                    textAreaRef.current.value = question;
-                                  }
-                                  handleConciergeConfirm();
-                                }}
-                              >
-                                {`${question}`}
-                              </span>
-                            </li>
-                          );
-                        })}
-                    </ul>
-                  </div>
+                  <Headline
+                    content="Not sure where to start?"
+                    subheadline="Try one of the following questions:"
+                    level="h2"
+                    styleAs="h4"
+                  />
+                  <ul className="c-tag-label--list">
+                    {textAreaRef &&
+                      typeof textAreaRef !== "function" &&
+                      questions &&
+                      questions.length > 0 &&
+                      questions.map((question, index) => {
+                        return (
+                          <li key={`question-${index}`}>
+                            <span
+                              className="concierge--question"
+                              onClick={() => {
+                                if (textAreaRef.current) {
+                                  textAreaRef.current.value = question;
+                                }
+                                handleConciergeConfirm();
+                              }}
+                            >
+                              {`${question}`}
+                            </span>
+                          </li>
+                        );
+                      })}
+                  </ul>
                 </div>
-              )}
+              </div>
+            )}
             {status.code !== "canthelp" &&
               status.code !== "error" &&
               answer && <RichText text={answer} />}
