@@ -3374,6 +3374,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   --tag-label-height: calc(
     var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs) + calc(var(--ks-spacing-inset-xs) * 2)
   );
+  flex-grow: 1;
   height: fit-content;
 }
 @media (min-width: 48em) {

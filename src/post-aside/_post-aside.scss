@@ -7,6 +7,7 @@
       var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs) + calc(var(--ks-spacing-inset-xs) * 2)
     );
 
+    flex-grow: 1;
     height: fit-content;
 
     @include breakpoint.media("≥m") {
