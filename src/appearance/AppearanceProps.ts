@@ -54,13 +54,17 @@ export type Class = string;
  */
 export type KsComponentAttribute = string;
 /**
- * Name of the tag
+ * Text to display inside tag label
  */
-export type Tag = string;
+export type Label = string;
 /**
- * Tags for this showcase entry
+ * Set optional href to link the tag
  */
-export type Tags = Tag[];
+export type LinkTarget = string;
+/**
+ * Tags for this appearance entry
+ */
+export type Tags = TagLabel[];
 /**
  * Date the appearance occurred
  */
@@ -110,13 +114,17 @@ export type Url1 = string;
  */
 export type Image = string;
 /**
- * Name of the tag
+ * Text to display inside tag label
  */
-export type Tag1 = string;
+export type Label1 = string;
+/**
+ * Set optional href to link the tag
+ */
+export type LinkTarget1 = string;
 /**
  * Tags for this related teaser
  */
-export type Tags1 = Tag1[];
+export type Tags1 = TagLabel1[];
 /**
  * Entries related to this appearance entry
  */
@@ -165,6 +173,14 @@ export interface Person {
   [k: string]: unknown;
 }
 /**
+ * Component to render a pill / tag / label
+ */
+export interface TagLabel {
+  label?: Label;
+  link?: LinkTarget;
+  [k: string]: unknown;
+}
+/**
  * Add main image to represent this appearance entry
  */
 export interface CoverImage {
@@ -190,5 +206,13 @@ export interface Related {
   url: Url1;
   image: Image;
   tags?: Tags1;
+  [k: string]: unknown;
+}
+/**
+ * Component to render a pill / tag / label
+ */
+export interface TagLabel1 {
+  label?: Label1;
+  link?: LinkTarget1;
   [k: string]: unknown;
 }

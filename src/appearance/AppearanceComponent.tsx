@@ -42,10 +42,13 @@ export const Appearance: FunctionComponent<
           <Headline level="h1" content={title} />
           {tags && tags.length > 0 && (
             <div className="tag-label-container">
-              {tags?.map((tag, i) => (
-                <div>
-                  <TagLabel label={tag} size="m" key={i} />
-                </div>
+              {tags?.map((tags, i) => (
+                <TagLabel
+                  link={tags.link}
+                  label={tags.label}
+                  size="m"
+                  key={i}
+                />
               ))}
             </div>
           )}
@@ -229,7 +232,10 @@ ${language}
                   excerpt={item.excerpt}
                   title={item.title}
                   typeLabel={item.typeLabel}
-                  tags={item.tags}
+                  tags={item.tags?.map((tag) => ({
+                    label: tag.label,
+                    link: tag.link,
+                  }))}
                   key={i}
                 />
               ))}

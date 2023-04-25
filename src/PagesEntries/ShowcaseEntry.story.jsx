@@ -57,7 +57,7 @@ const Page = () => (
           excerpt:
             "Komplexe Technologien für Unternehmen unkompliziert nutzbar machen.",
           image: "img/showcase/maxcluster/maxcluster.jpeg",
-          tags: ["CSS", "HTML"],
+          tags: {}["CSS", "HTML"],
           title: "maxcluster GmbH - Hosting für E-Commerce Profis",
           typeLabel: "Showcase",
           url: "#",
@@ -72,7 +72,16 @@ const Page = () => (
           url: "#",
         },
       ]}
-      tags={["Framework", "Design System"]}
+      tags={[
+        {
+          label: "Framework",
+          link: "#",
+        },
+        {
+          label: "Design System",
+          link: "#",
+        },
+      ]}
       title="encore - Energie im Herzen"
       overviewPage="https://www.kickstartDS.com/showcases/"
     />
