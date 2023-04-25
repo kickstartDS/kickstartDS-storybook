@@ -43,14 +43,37 @@ const Page = () => (
         },
       ]}
       stackshare="https://stackshare.io/julrich/decisions/107141570573419830"
-      tags={["kickstartDS", "Decision"]}
+      tags={[
+        {
+          label: "Framework",
+          link: "#"
+        },
+        {
+          label: "Design System",
+          link: "#"
+        }
+      ]}
       term="TypeScript"
       related={[
         {
           excerpt:
             "JavaScript for us has two uses. On the one hand it is the foundation for progressively layered...",
           image: "img/showcase/showcase-cover.png",
-          tags: ["Frontend", "HTML", "API"],
+          tags:
+            [
+              {
+                label: "Frontend",
+                link: "#"
+              },
+              {
+                label: "HTML",
+                link: "#"
+              },
+              {
+                label: "API",
+                link: "#"
+              }
+            ],
           title: "ECMAScript 6 (ES6)",
           typeLabel: "Glossary",
           url: "#",
@@ -59,7 +82,17 @@ const Page = () => (
           excerpt:
             "ES6 is the specific flavour of JavaScript we're writing for it's much improved module support...",
           image: "img/showcase/showcase-cover.png",
-          tags: ["CSS", "HTML"],
+          tags:
+            [
+              {
+                label: "CSS",
+                link: "#"
+              },
+              {
+                label: "HTML",
+                link: "#"
+              }
+            ],
           title: "JavaScript",
           typeLabel: "Glossary",
           url: "#",

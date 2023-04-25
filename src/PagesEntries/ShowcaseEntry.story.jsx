@@ -57,7 +57,16 @@ const Page = () => (
           excerpt:
             "Komplexe Technologien für Unternehmen unkompliziert nutzbar machen.",
           image: "img/showcase/maxcluster/maxcluster.jpeg",
-          tags: {}["CSS", "HTML"],
+          tags: [
+            {
+              label: "CSS",
+              link: "#"
+            },
+            {
+              label: "HTML",
+              link: "#"
+            }
+          ],
           title: "maxcluster GmbH - Hosting für E-Commerce Profis",
           typeLabel: "Showcase",
           url: "#",
@@ -66,7 +75,16 @@ const Page = () => (
           excerpt:
             "Eine einmalige Service- und Produktwelt für Energieversorger.",
           image: "img/showcase/encore/encore-cover.png",
-          tags: ["JS", "Frameworks"],
+          tags: [
+            {
+              label: "JS",
+              link: "#"
+            },
+            {
+              label: "Frameworks",
+              link: "#"
+            }
+          ],
           title: "encore - Energie im Herzen",
           typeLabel: "Showcase",
           url: "#",
