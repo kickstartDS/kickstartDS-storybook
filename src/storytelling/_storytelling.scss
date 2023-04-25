@@ -15,6 +15,12 @@
   }
 
   &__box {
+    .c-headline {
+      .c-headline__headline {
+        color: var(--g-headline-color);
+      }
+    }
+
     &--right.c-storytelling__box {
       padding-right: 0;
     }

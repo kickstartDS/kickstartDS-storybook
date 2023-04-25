@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 25 Apr 2023 10:18:53 GMT
+ * Generated on Tue, 25 Apr 2023 12:00:34 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -2713,49 +2713,6 @@
   background: var(--ks-background-color-default);
 }
 
-.github-corner {
-  fill: var(--ks-color-background-default);
-  color: var(--ks-color-primary);
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  border: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-}
-@media (min-width: 36em) {
-  .github-corner {
-    width: unset;
-    height: unset;
-  }
-}
-.github-corner .octo-arm {
-  transform-origin: center;
-}
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
-}
-@keyframes octocat-wave {
-  0%, 100% {
-    transform: rotate(0);
-  }
-  20%, 60% {
-    transform: rotate(-25deg);
-  }
-  40%, 80% {
-    transform: rotate(10deg);
-  }
-}
-@media (min-width: 36em) {
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-}
-
 :root,
 [ks-theme],
 [ks-inverted] {
@@ -4637,7 +4594,7 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 :root .l-section.additional-spacing,
 [ks-theme] .l-section.additional-spacing,
 [ks-inverted] .l-section.additional-spacing {
-  margin-bottom: var(--l-section--space);
+  margin-bottom: var(--l-section--space-default);
 }
 :root .l-section.additional-spacing-small,
 [ks-theme] .l-section.additional-spacing-small,
@@ -4740,6 +4697,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   .c-storytelling--full.c-storytelling--order-desktop-image-last .c-storytelling__box {
     padding-top: 0;
   }
+}
+.c-storytelling__box .c-headline .c-headline__headline {
+  color: var(--g-headline-color);
 }
 .c-storytelling__box--right.c-storytelling__box {
   padding-right: 0;
@@ -4922,6 +4882,7 @@ figcaption {
 
 [ks-theme=dark] {
   --ks-background-color-default: #012a34;
+  background-color: var(--ks-background-color-default);
   --g-link--color: var(--ks-color-fg);
 }
 [ks-theme=dark] button.nav-toggle .nav-toggle__icon {
@@ -5295,10 +5256,6 @@ article .c-teaser .c-teaser__body {
 .c-visual .l-container--headline,
 .c-visual .l-container--rich-text {
   container-type: unset;
-}
-
-.l-container.l-container--text-media {
-  container-type: normal;
 }
 
 @container text-media (min-width: 600px) {

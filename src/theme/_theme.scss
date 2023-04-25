@@ -7,6 +7,7 @@
 
 [ks-theme="dark"] {
   --ks-background-color-default: #012a34;
+  background-color: var(--ks-background-color-default);
   --g-link--color: var(--ks-color-fg);
 
   button.nav-toggle .nav-toggle__icon {

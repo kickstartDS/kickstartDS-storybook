@@ -9,10 +9,6 @@
   container-type: unset;
 }
 
-.l-container.l-container--text-media {
-  container-type: normal;
-}
-
 @container text-media (min-width: 600px) {
   .text-media--intext .text-media__gallery {
     max-width: 50%;
