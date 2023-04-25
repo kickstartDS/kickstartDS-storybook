@@ -119,17 +119,29 @@ export const Showcase: FunctionComponent<
                 {media?.map((item, i) => (
                   <TextMedia
                     media={[
-                      {
-                        lightboxImage: {
-                          image: item.src,
-                          thumb: item.src,
-                          height: 853,
-                          width: 1280,
-                          zoomIcon: true,
-                          gallery: "closer-look",
-                        },
-                        caption: item.caption,
-                      },
+                      item.mode === "image"
+                        ? {
+                            lightboxImage: {
+                              image: item.src,
+                              thumb: item.src,
+                              height: 853,
+                              width: 1280,
+                              zoomIcon: true,
+                              gallery: "closer-look",
+                            },
+
+                            caption: item.caption,
+                          }
+                        : {
+                            video: {
+                              src: item.src,
+                              title: "lorem",
+                              height: 853,
+                              width: 1280,
+                              iframe: false,
+                            },
+                            caption: item.caption,
+                          },
                     ]}
                     key={i}
                     text=""

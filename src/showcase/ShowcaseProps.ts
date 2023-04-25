@@ -155,6 +155,7 @@ export interface CoverImage {
  * Single media asset
  */
 export interface MediaAsset {
+  mode?: "image" | "video";
   src?: UrlForTheMediaAsset;
   caption?: CaptionForTheImage;
   [k: string]: unknown;

@@ -80,6 +80,11 @@
         "type": "object",
         "description": "Single media asset",
         "properties": {
+          "mode": {
+            "type": "string",
+            "enum": ["image", "video"],
+            "default": "image"
+          },
           "src": {
             "title": "Url for the media asset",
             "type": "string",

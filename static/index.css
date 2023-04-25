@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 25 Apr 2023 09:59:57 GMT
+ * Generated on Tue, 25 Apr 2023 10:18:53 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -4917,6 +4917,7 @@ figcaption {
 [ks-inverted],
 [ks-theme] {
   background-color: var(--l-section--background);
+  font-family: var(--ks-font-family-copy);
 }
 
 [ks-theme=dark] {

@@ -28,14 +28,17 @@ const Page = () => (
       link="https://www.encore.de/"
       media={[
         {
-          src: "img/showcase/encore/encore-wheel.gif",
+          mode: "video",
+          src: "img/showcase/encore/encore-wheel.webm",
           caption: "Dynamic wheel carousel",
         },
         {
+          mode: "image",
           src: "img/showcase/encore/encore-slider.png",
           caption: "Showcase screenshot",
         },
         {
+          mode: "image",
           src: "img/showcase/encore/encore-paralax.gif",
           caption:
             "We created a paralax effect for the floating text with multiple background layers.",
