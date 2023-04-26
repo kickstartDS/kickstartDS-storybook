@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 25 Apr 2023 13:29:09 GMT
+ * Generated on Wed, 26 Apr 2023 07:43:22 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -3304,6 +3304,9 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 
 .c-post__content {
   max-width: calc(var(--l-section--content-width-narrow) - var(--l-section--content-padding) * 2);
+  flex-basis: 80%;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .c-post__content .c-post-share-bar {
   padding-top: var(--ks-spacing-s);
@@ -3374,7 +3377,10 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
   --tag-label-height: calc(
     var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs) + calc(var(--ks-spacing-inset-xs) * 2)
   );
+  flex-basis: 20%;
   flex-grow: 1;
+  flex-shrink: 0;
+  min-width: calc(var(--ks-font-size-copy-m) * 10);
   height: fit-content;
 }
 @media (min-width: 48em) {
@@ -3412,9 +3418,10 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 }
 :root .c-post-aside__author .c-contact__body {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   gap: var(--ks-spacing-xs);
-  flex-grow: 1 !important;
+  flex-grow: 1;
 }
 :root .c-post-aside__author .c-contact__body > * {
   margin: 0;
@@ -3445,11 +3452,18 @@ button.nav-toggle[aria-expanded=true] .nav-toggle__icon::after {
 :root .c-post-aside__author .c-contact__links {
   font: var(--ks-font-interface-xs);
 }
-:root .c-post-aside__author .c-contact__links__links {
-  font: var(--ks-font-interface-xs);
+:root .c-post-aside__author .c-contact__links .icon {
+  flex-shrink: 0;
 }
-:root .c-post-aside__author .c-contact__links__link {
+:root .c-post-aside__author .c-contact__links li {
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+:root .c-post-aside__author .c-contact__link {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 :root .c-post-aside__author .c-contact .c-rich-text {
   font: var(--ks-font-copy-xs);

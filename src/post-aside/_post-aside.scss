@@ -7,7 +7,10 @@
       var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs) + calc(var(--ks-spacing-inset-xs) * 2)
     );
 
+    flex-basis: 20%;
     flex-grow: 1;
+    flex-shrink: 0;
+    min-width: calc(var(--ks-font-size-copy-m) * 10);
     height: fit-content;
 
     @include breakpoint.media("≥m") {
@@ -53,9 +56,10 @@
 
         &__body {
           display: flex;
+          overflow: hidden;
           flex-direction: column;
           gap: var(--ks-spacing-xs);
-          flex-grow: 1 !important;
+          flex-grow: 1;
 
           > * {
             margin: 0;
@@ -88,13 +92,22 @@
 
         &__links {
           font: var(--ks-font-interface-xs);
-          &__links {
-            font: var(--ks-font-interface-xs);
+
+          .icon {
+            flex-shrink: 0;
           }
 
-          &__link {
-            margin: 0;
+          li {
+            display: flex;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
+        }
+
+        &__link {
+          margin: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         .c-rich-text {
