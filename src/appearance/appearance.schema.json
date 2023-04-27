@@ -24,6 +24,13 @@
       "default": "kickstartDS is a low-code framework and comprehensive component library that enables development teams to create consistent and brand-compliant web frontends. Jonas Ulrich and Daniel Ley join us to talk about kickstartDS, the starter kit for Design Systems. We've talked to Paul Mikulskis about the beginnings of kickstartDS, what we've built so far... and what we still have in our plans! This podcast is a great and short introduction to kickstartDS, we hope you enjoy it!",
       "description": "Description of the type and content of the appearance"
     },
+    "excerpt": {
+      "title": "Text excerpt to tease appearance",
+      "type": "string",
+      "format": "markdown",
+      "default": "kickstartDS is a low-code framework and comprehensive component library that enables development teams to create consistent and brand-compliant web frontends.",
+      "description": "Short text to tease the appearance"
+    },
     "host": {
       "type": "object",
       "title": "Host of the appearance",

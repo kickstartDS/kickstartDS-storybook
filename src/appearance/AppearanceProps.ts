@@ -18,6 +18,10 @@ export type TitleForTheAppearance = string;
  */
 export type DescriptionOfTheAppearance = string;
 /**
+ * Short text to tease the appearance
+ */
+export type TextExcerptToTeaseAppearance = string;
+/**
  * Name of the host
  */
 export type Name = string;
@@ -141,6 +145,7 @@ export interface AppearanceProps {
   link: LinkToAppearance;
   title: TitleForTheAppearance;
   description: DescriptionOfTheAppearance;
+  excerpt?: TextExcerptToTeaseAppearance;
   host: HostOfTheAppearance;
   participants: Participants;
   tags?: Tags;

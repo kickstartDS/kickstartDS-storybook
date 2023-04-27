@@ -24,6 +24,13 @@
       "default": "encore as a German utility company supports their customers with modern, cloud-based software solutions, and a wide spectrum of services around their business.",
       "description": "Title that should be shown for this appearance"
     },
+    "excerpt": {
+      "title": "Text excerpt to tease showcase",
+      "type": "string",
+      "format": "markdown",
+      "default": "encore as a German utility company supports their customers with modern, cloud-based software solutions, and a wide spectrum of services around their business.",
+      "description": "Short text to tease the showcase"
+    },
     "quote": {
       "allOf": [
         {

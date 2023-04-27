@@ -28,6 +28,7 @@ export const Appearance: FunctionComponent<
   tags,
   related,
   overviewPage,
+  excerpt,
   ...props
 }) => {
   return (

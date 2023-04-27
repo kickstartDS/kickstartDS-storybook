@@ -29,6 +29,7 @@ export const Showcase: FunctionComponent<
   summary,
   quote,
   overviewPage,
+  excerpt,
   ...props
 }) => (
   <div {...props}>

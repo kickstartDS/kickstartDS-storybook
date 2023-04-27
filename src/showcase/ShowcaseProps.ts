@@ -18,6 +18,10 @@ export type TitleForTheShowcase = string;
  */
 export type ShortSummaryOfTheShowcase = string;
 /**
+ * Short text to tease the showcase
+ */
+export type TextExcerptToTeaseShowcase = string;
+/**
  * Enable/Disable Quote element
  */
 export type QuoteToggle = boolean;
@@ -129,6 +133,7 @@ export interface ShowcaseProps {
   link: LinkToShowcase;
   title: TitleForTheShowcase;
   summary?: ShortSummaryOfTheShowcase;
+  excerpt?: TextExcerptToTeaseShowcase;
   quote?: QuoteElement;
   description: DescriptionOfTheAppearance;
   cover: CoverImage;
