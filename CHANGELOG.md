@@ -1,3 +1,16 @@
+# v2.5.0 (Thu Apr 27 2023)
+
+#### 🚀 Enhancement
+
+- Update to stable versions of kickstartDS dependencies [#105](https://github.com/kickstartDS/kickstartDS-storybook/pull/105) ([@julrich](https://github.com/julrich) [@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.29 (Tue Apr 18 2023)
 
 #### ⚠️ Pushed to `master`
