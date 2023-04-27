@@ -3,7 +3,7 @@ import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 import { Section } from "@kickstartds/base/lib/section";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
-import { Contact } from "@kickstartds/content/lib/contact";
+import { Contact } from "@kickstartds/base/lib/contact";
 
 import HeaderStories from "../header/Header.stories";
 import FooterStories from "../footer/Footer.stories";

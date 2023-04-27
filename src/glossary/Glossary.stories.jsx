@@ -3,7 +3,7 @@ import { getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
 import schema from "./glossary.schema.dereffed.json";
 import tokens from "./glossary-tokens.json";
 
-const { defaultArgs: args, argTypes } = getArgsShared(schema);
+const { args, argTypes } = getArgsShared(schema);
 args["cta.image.order.desktopImageLast"] = true;
 const Template = (args) => <Glossary {...args} />;
 

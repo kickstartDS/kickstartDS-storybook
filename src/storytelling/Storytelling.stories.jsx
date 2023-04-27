@@ -4,7 +4,7 @@ import storytellingStories, {
 } from "@kickstartds/content/lib/storytelling/storytelling.stories";
 import schema from "./storytelling.schema.dereffed.json";
 
-const { defaultArgs: args, argTypes } = getArgsShared(schema);
+const { args, argTypes } = getArgsShared(schema);
 
 for (const prop in args) {
   if (prop.startsWith("box.link.")) {
@@ -42,7 +42,7 @@ Image.args = pack({
         label: "Request a guided demo",
         href: "#",
         variant: "solid",
-      }
+      },
     ],
   },
 });
@@ -59,8 +59,7 @@ MultipleButtons.args = pack({
     headline: {
       level: "h2",
       content: "Great components",
-      subheadline:
-        "At vero eos et accusam et justo duo dolores",
+      subheadline: "At vero eos et accusam et justo duo dolores",
     },
     text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
     links: [
@@ -99,7 +98,7 @@ ImageFirst.args = pack({
         label: "Request a guided demo",
         href: "#",
         variant: "solid",
-      }
+      },
     ],
   },
 });
@@ -125,7 +124,7 @@ CenteredText.args = pack({
         label: "Request a guided demo",
         href: "#",
         variant: "solid",
-      }
+      },
     ],
   },
 });
@@ -148,7 +147,7 @@ OnlyCenteredText.args = pack({
         label: "Request a guided demo",
         href: "#",
         variant: "solid",
-      }
+      },
     ],
   },
 });
@@ -174,13 +173,14 @@ BackgroundColor.args = pack({
         label: "Request a guided demo",
         href: "#",
         variant: "solid",
-      }
+      },
     ],
   },
 });
 
 export const BackgroundImage = Template.bind({});
 BackgroundImage.args = pack({
+  inverted: true,
   backgroundColor: "#06566A",
   backgroundImage: "img/recipes/background-pattern-dark.svg",
   image: {
@@ -201,7 +201,7 @@ BackgroundImage.args = pack({
         label: "Request a guided demo",
         href: "#",
         variant: "solid",
-      }
+      },
     ],
   },
 });
@@ -238,7 +238,8 @@ ImageFull.parameters = {
 export const TextTop = Template.bind({});
 TextTop.args = pack({
   image: {
-    source: "https://images.unsplash.com/photo-1554672408-730436b60dde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80",
+    source:
+      "https://images.unsplash.com/photo-1554672408-730436b60dde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80",
     order: {
       desktopImageLast: true,
     },
@@ -263,7 +264,8 @@ TextTop.args = pack({
 export const TextBottom = Template.bind({});
 TextBottom.args = pack({
   image: {
-    source: "https://images.unsplash.com/photo-1554672408-730436b60dde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80",
+    source:
+      "https://images.unsplash.com/photo-1554672408-730436b60dde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80",
     order: {
       desktopImageLast: true,
     },
@@ -284,7 +286,3 @@ TextBottom.args = pack({
     ],
   },
 });
-
-
-
-

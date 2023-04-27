@@ -21,9 +21,11 @@ Default.args = pack({
   categories: [
     {
       label: "About kickstartDS",
+      link: "#"
     },
     {
       label: "Background",
+      link: "#"
     },
   ],
   headline: {

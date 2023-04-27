@@ -2,11 +2,11 @@ import { FunctionComponent, HTMLAttributes } from "react";
 
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
-import { Section } from "@kickstartds/base/lib/section";
 
 import { GlossaryProps } from "./GlossaryProps";
-import { LinkButton } from "../link-button/LinkButtonComponent";
-import { Headline, Button, Divider } from "@kickstartds/base";
+import { Button } from "../button/ButtonComponent";
+import { Section } from "../section/SectionComponent";
+import { Headline } from "@kickstartds/base/lib/headline";
 import { Inline, Stack } from "@bedrock-layout/primitives";
 import { Related } from "../related/RelatedComponent";
 
@@ -33,14 +33,17 @@ export const Glossary: FunctionComponent<
       <div>
         <Headline align="left" level="h1" content={term} />
         {tags && tags.length > 0 && (
-          <div className="tag-label-container">
-            {tags?.map((tag, i) => (
-              <div>
-                <TagLabel label={tag} size="m" key={i} />
-              </div>
-            ))}
-          </div>
-        )}
+            <div className="tag-label-container">
+              {tags?.map((tags, i) => (
+                <TagLabel
+                  link={tags.link}
+                  label={tags.label}
+                  size="m"
+                  key={i}
+                />
+              ))}
+            </div>
+          )}
       </div>
       <div className="template">
         <div className="template__split">
@@ -112,16 +115,16 @@ export const Glossary: FunctionComponent<
       }}
     >
       <div>
-        <LinkButton
+        <Button
           label={"Go to StackShare.io"}
           variant="solid"
           size={"medium"}
           highlighted
           href={stackshare}
-          iconAfter
-          icon={{
+          iconAfter={{
             icon: "stackshare",
           }}
+          newTab
         />
       </div>
     </Section>
@@ -148,7 +151,10 @@ export const Glossary: FunctionComponent<
                 excerpt={item.excerpt}
                 title={item.title}
                 typeLabel={item.typeLabel}
-                tags={item.tags}
+                tags={item.tags?.map((tag) => ({
+                  label: tag.label,
+                  link: tag.link,
+                }))}
                 key={i}
               />
             ))}

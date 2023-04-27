@@ -42,6 +42,10 @@ export type SourceAddition = string;
  */
 export type Class = string;
 /**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute = string;
+/**
  * Description of the type and content of the appearance
  */
 export type DescriptionOfTheAppearance = string;
@@ -66,13 +70,17 @@ export type CaptionForTheImage = string;
  */
 export type Media = MediaAsset[];
 /**
- * Name of the tag
+ * Text to display inside tag label
  */
-export type Tag = string;
+export type Label = string;
+/**
+ * Set optional href to link the tag
+ */
+export type LinkTarget = string;
 /**
  * Tags for this showcase entry
  */
-export type Tags = Tag[];
+export type Tags = TagLabel[];
 /**
  * Type of content that is being teased
  */
@@ -94,13 +102,17 @@ export type Url1 = string;
  */
 export type Image = string;
 /**
- * Name of the tag
+ * Text to display inside tag label
  */
-export type Tag1 = string;
+export type Label1 = string;
+/**
+ * Set optional href to link the tag
+ */
+export type LinkTarget1 = string;
 /**
  * Tags for this related teaser
  */
-export type Tags1 = Tag1[];
+export type Tags1 = TagLabel1[];
 /**
  * Entries related to this appearance entry
  */
@@ -136,6 +148,7 @@ export interface QuoteElement {
   source?: Source;
   byline?: SourceAddition;
   className?: Class;
+  component?: KsComponentAttribute;
   [k: string]: unknown;
 }
 /**
@@ -150,8 +163,17 @@ export interface CoverImage {
  * Single media asset
  */
 export interface MediaAsset {
+  mode?: "image" | "video";
   src?: UrlForTheMediaAsset;
   caption?: CaptionForTheImage;
+  [k: string]: unknown;
+}
+/**
+ * Component to render a pill / tag / label
+ */
+export interface TagLabel {
+  label?: Label;
+  link?: LinkTarget;
   [k: string]: unknown;
 }
 /**
@@ -164,5 +186,13 @@ export interface Related {
   url: Url1;
   image: Image;
   tags?: Tags1;
+  [k: string]: unknown;
+}
+/**
+ * Component to render a pill / tag / label
+ */
+export interface TagLabel1 {
+  label?: Label1;
+  link?: LinkTarget1;
   [k: string]: unknown;
 }

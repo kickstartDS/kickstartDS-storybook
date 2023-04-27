@@ -28,14 +28,17 @@ const Page = () => (
       link="https://www.encore.de/"
       media={[
         {
-          src: "img/showcase/encore/encore-wheel.gif",
+          mode: "video",
+          src: "img/showcase/encore/encore-wheel.webm",
           caption: "Dynamic wheel carousel",
         },
         {
+          mode: "image",
           src: "img/showcase/encore/encore-slider.png",
           caption: "Showcase screenshot",
         },
         {
+          mode: "image",
           src: "img/showcase/encore/encore-paralax.gif",
           caption:
             "We created a paralax effect for the floating text with multiple background layers.",
@@ -54,7 +57,16 @@ const Page = () => (
           excerpt:
             "Komplexe Technologien für Unternehmen unkompliziert nutzbar machen.",
           image: "img/showcase/maxcluster/maxcluster.jpeg",
-          tags: ["CSS", "HTML"],
+          tags: [
+            {
+              label: "CSS",
+              link: "#"
+            },
+            {
+              label: "HTML",
+              link: "#"
+            }
+          ],
           title: "maxcluster GmbH - Hosting für E-Commerce Profis",
           typeLabel: "Showcase",
           url: "#",
@@ -63,13 +75,31 @@ const Page = () => (
           excerpt:
             "Eine einmalige Service- und Produktwelt für Energieversorger.",
           image: "img/showcase/encore/encore-cover.png",
-          tags: ["JS", "Frameworks"],
+          tags: [
+            {
+              label: "JS",
+              link: "#"
+            },
+            {
+              label: "Frameworks",
+              link: "#"
+            }
+          ],
           title: "encore - Energie im Herzen",
           typeLabel: "Showcase",
           url: "#",
         },
       ]}
-      tags={["Framework", "Design System"]}
+      tags={[
+        {
+          label: "Framework",
+          link: "#",
+        },
+        {
+          label: "Design System",
+          link: "#",
+        },
+      ]}
       title="encore - Energie im Herzen"
       overviewPage="https://www.kickstartDS.com/showcases/"
     />

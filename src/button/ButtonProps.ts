@@ -5,10 +5,6 @@
  * and run `yarn run schema` to regenerate this file.
  */
 
-/**
- * Link used for button
- */
-export type ButtonHref = string;
 export type ButtonHighlightedStyle = boolean;
 export type ButtonDekoStyle = boolean;
 /**
@@ -25,24 +21,23 @@ export type Inverted = boolean;
  */
 export type ButtonSize = "small" | "medium" | "large";
 /**
- * Add additional css classes that should be applied to the button
+ * Link used for button
  */
-export type AdditionalClasses = string;
+export type ButtonHref = string;
 export type IconIdentifier = string;
 export type AriaRole = string;
 export type AdditionalClass = string;
 /**
- * Display icon before the button text
+ * Optional custom component identifier
  */
-export type IconBeforeButton = boolean;
+export type KsComponentAttribute = string;
+export type IconIdentifier1 = string;
+export type AriaRole1 = string;
+export type AdditionalClass1 = string;
 /**
- * Display icon after the button text
+ * Optional custom component identifier
  */
-export type IconAfterButton = boolean;
-/**
- * Overwrite the data-component to use for rendering
- */
-export type DataComponentAttribute = string;
+export type KsComponentAttribute1 = string;
 /**
  * Add fill animation on hover
  */
@@ -67,36 +62,57 @@ export type NameAttribute = string;
  * Set the disabled attribute for the button
  */
 export type DisabledAttribute = boolean;
+/**
+ * Open link in new Tab
+ */
+export type OpenLinkInNewTab = boolean;
+/**
+ * Add additional css classes that should be applied to the button
+ */
+export type AdditionalClasses = string;
+/**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute2 = string;
 
 /**
  * Component to display links and call-to-actions
  */
 export interface ButtonProps {
-  href?: ButtonHref;
   highlighted?: ButtonHighlightedStyle;
   deko?: ButtonDekoStyle;
-  label: Label;
-  variant: ButtonStyle;
+  label?: Label;
+  variant?: ButtonStyle;
   inverted?: Inverted;
-  size: ButtonSize;
-  className?: AdditionalClasses;
-  icon?: Icon;
+  size?: ButtonSize;
+  href?: ButtonHref;
   iconBefore?: IconBeforeButton;
   iconAfter?: IconAfterButton;
-  dataComponent?: DataComponentAttribute;
   fillAnimation?: FillAnimation;
   iconAnimation?: IconAnimation;
   type?: TypeAttribute;
   value?: ValueAttribute;
   name?: NameAttribute;
   disabled?: DisabledAttribute;
+  newTab?: OpenLinkInNewTab;
+  className?: AdditionalClasses;
+  component?: KsComponentAttribute2;
 }
 /**
- * Icon
+ * Icon identifier for icon before the button text
  */
-export interface Icon {
-  icon?: IconIdentifier;
+export interface IconBeforeButton {
+  icon: IconIdentifier;
   role?: AriaRole;
   className?: AdditionalClass;
-  [k: string]: unknown;
+  component?: KsComponentAttribute;
+}
+/**
+ * Icon identifier for icon after the button text
+ */
+export interface IconAfterButton {
+  icon: IconIdentifier1;
+  role?: AriaRole1;
+  className?: AdditionalClass1;
+  component?: KsComponentAttribute1;
 }

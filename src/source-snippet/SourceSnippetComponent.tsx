@@ -11,7 +11,7 @@ export const SourceSnippet: FunctionComponent<
     className="c-source-snippet"
     topic={title}
     text={url}
-    renderText={(url, link) => (
+    renderText={(url) => (
       <>
         <span>{url}</span>
         <Button
@@ -19,8 +19,7 @@ export const SourceSnippet: FunctionComponent<
           href={link}
           variant={"clear"}
           size={"small"}
-          iconAfter
-          icon={{
+          iconAfter={{
             icon: "chevron-down",
           }}
         />

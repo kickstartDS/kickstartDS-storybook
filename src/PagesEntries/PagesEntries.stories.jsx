@@ -20,6 +20,13 @@ export default {
     },
     controls: { disabled: true },
   },
+  decorators: [
+    (Story) => (
+      <LinkProvider>
+        <Story />
+      </LinkProvider>
+    ),
+  ],
 };
 
 

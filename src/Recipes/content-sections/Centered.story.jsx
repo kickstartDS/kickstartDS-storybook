@@ -1,4 +1,5 @@
-import { TextMedia, Section } from "@kickstartds/base";
+import { Section } from "@kickstartds/base/lib/section";
+import { TextMedia } from "@kickstartds/base/lib/text-media";
 
 const Recipe = () => (
   <>

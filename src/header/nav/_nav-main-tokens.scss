@@ -3,13 +3,15 @@
 :root,
 [ks-theme],
 [ks-inverted] {
+  --c-nav-main--gap: var(--ks-spacing-inline-s);
+
   --c-nav-main_background-color: var(--ks-background-color-default);
 
   --c-nav-main_item--color: var(--ks-text-color-primary-interactive);
   --c-nav-main_item--color-active: var(--ks-text-color-primary-interactive-active);
   --c-nav-main_item--color-hover: var(--ks-text-color-primary-interactive-hover);
 
-  --c-nav-main_item--font: var(--ks-font-ui-l);
+  --c-nav-main_item--font: var(--ks-font-interface-l);
   --c-nav-main_item--font-weight: var(--ks-font-weight-semi-bold);
   --c-nav-main_item--font-weight-active: var(--ks-font-weight-bold);
 
@@ -17,7 +19,11 @@
   --c-nav-main_item--background-color-hover: var(--ks-color-primary-inverted);
 
   @include breakpoint.media("≥m") {
-    --c-nav-main_item--font: var(--ks-font-ui-s);
+    --c-nav-main_item--font: var(--ks-font-interface-s);
     --c-nav-main_item--padding: none;
+  }
+
+  @include breakpoint.media("≥xl") {
+    --c-nav-main--gap: var(--ks-spacing-inline-m);
   }
 }

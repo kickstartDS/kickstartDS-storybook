@@ -9,10 +9,6 @@
   container-type: unset;
 }
 
-.l-container.l-container--text-media {
-  container-type: normal;
-}
-
 @container text-media (min-width: 600px) {
   .text-media--intext .text-media__gallery {
     max-width: 50%;
@@ -217,7 +213,7 @@
   }
 
   .c-teaser .c-button {
-    --c-button--font: var(--ks-font-ui-s);
+    --c-button--font: var(--ks-font-interface-s);
   }
 }
 
@@ -229,7 +225,7 @@
   }
 
   .c-teaser .c-button {
-    --c-button--font: var(--ks-font-ui-m);
+    --c-button--font: var(--ks-font-interface-m);
   }
 }
 

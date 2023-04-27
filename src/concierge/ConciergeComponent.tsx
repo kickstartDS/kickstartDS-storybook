@@ -1,21 +1,18 @@
 import React, { forwardRef, HTMLAttributes } from "react";
 
-import { TagLabel } from "@kickstartds/base/lib/tag-label";
 import { Headline } from "@kickstartds/base/lib/headline";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
-import { Picture } from "@kickstartds/base/lib/picture";
-import { Section } from "@kickstartds/base/lib/section";
 import { RichText } from "@kickstartds/base/lib/rich-text";
 import { TextArea } from "@kickstartds/form/lib/text-area";
 
 import { Source } from "../source/SourceComponent";
+import { Section } from "../section/SectionComponent";
 import { Button } from "../button/ButtonComponent";
 import { AvatarIntro } from "./AvatarIntroComponent";
 import { AvatarSources } from "./AvatarSourcesComponent";
 import { SourceSnippet } from "../source-snippet/SourceSnippetComponent";
 import { ConciergeProps as ConciergeSchemaProps } from "./ConciergeProps";
-import { LinkButton } from "@kickstartds/base";
 
 const defaultHandleResetPrompt = () => {
   return;
@@ -65,18 +62,6 @@ export const Concierge = forwardRef<
             level="h1"
             align="left"
             content="Design System Concierge"
-            // renderContent={(content) => (
-            //   <div>
-            //     <div>{content}</div>
-            //     <div>
-            //       <TagLabel
-            //         style={{ backgroundColor: "#FF009D", color: "white" }}
-            //         label="Beta"
-            //         size="m"
-            //       />
-            //     </div>
-            //   </div>
-            // )}
             subheadline="Ask anything and get pointed the right way"
           />
         </div>
@@ -200,11 +185,11 @@ export const Concierge = forwardRef<
               >
                 <p>Sorry, but it seems that either:</p>
                 <ul>
-                  <li>
+                  <li key="problem-1">
                     Concierge is having some technical difficulties, he'll be
                     right back then!
                   </li>
-                  <li>
+                  <li key="problem-2">
                     Or maybe your question didn't yield any relevant sections
                     from our knowledge base. Feel free to let us know below to
                     fix this!
@@ -251,12 +236,12 @@ export const Concierge = forwardRef<
                     label: "View Sources",
                     variant: "clear",
                     size: "small",
-                    iconAfter: true,
-                    href: "#sources",
-                    icon: {
+                    iconAfter: {
                       icon: "chevron-down",
                     },
+                    href: "#sources",
                   }}
+                  ratio={undefined}
                 />
               </div>
               <div className="concierge-context-menu concierge-context-menu--desktop">
@@ -334,8 +319,8 @@ export const Concierge = forwardRef<
             <ul>
               {index &&
                 index.length > 0 &&
-                index.slice(0, 18).map((page) => (
-                  <li>
+                index.slice(0, 18).map((page, index) => (
+                  <li key={`references-col1-${index}`}>
                     <a target="blank" href={page.url}>
                       {page.title}
                     </a>
@@ -347,8 +332,8 @@ export const Concierge = forwardRef<
             <ul>
               {index &&
                 index.length > 18 &&
-                index.slice(18, 36).map((page) => (
-                  <li>
+                index.slice(18, 36).map((page, index) => (
+                  <li key={`references-col2-${index}`}>
                     <a target="blank" href={page.url}>
                       {page.title}
                     </a>
@@ -360,8 +345,8 @@ export const Concierge = forwardRef<
             <ul>
               {index &&
                 index.length > 0 &&
-                index.slice(36, 54).map((page) => (
-                  <li>
+                index.slice(36, 54).map((page, index) => (
+                  <li key={`references-col3-${index}`}>
                     <a target="blank" href={page.url}>
                       {page.title}
                     </a>
@@ -388,26 +373,26 @@ export const Concierge = forwardRef<
         }}
         width="wide"
       >
-        <LinkButton
+        <Button
           href="mailto:hello@kickstartDS.com"
           variant="solid"
           label="Send us an email!"
           size={"medium"}
-          target="blank"
+          newTab
         />
-        <LinkButton
+        <Button
           variant="solid"
           label="Join our Discord community!"
           size={"medium"}
           href="https://discord.gg/mwKzD5gejY"
-          target="blank"
+          newTab
         />
-        <LinkButton
+        <Button
           href="https://twitter.com/intent/follow?screen_name=kickstartDS"
           variant="solid"
           label="Follow us on Twitter!"
           size={"medium"}
-          target="blank"
+          newTab
         />
       </Section>
     </div>

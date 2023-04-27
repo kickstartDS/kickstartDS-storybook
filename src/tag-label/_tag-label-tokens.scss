@@ -2,7 +2,7 @@
 [ks-theme],
 [ks-inverted] {
   .c-tag-label {
-    --c-tag-label--font: var(--ks-font-ui-s);
+    --c-tag-label--font: var(--ks-font-interface-s);
     --c-tag-label--background-color: var(--ks-background-color-interface);
     --c-tag-label--border-radius: var(--ks-border-radius-pill);
 
@@ -13,11 +13,11 @@
     --c-tag-label--vertical-padding: 0.35em;
 
     &--s {
-      --c-tag-label--font: var(--ks-font-ui-xs);
+      --c-tag-label--font: var(--ks-font-interface-xs);
     }
 
     &--l {
-      --c-tag-label--font: var(--ks-font-ui-m);
+      --c-tag-label--font: var(--ks-font-interface-m);
     }
 
     &--link {

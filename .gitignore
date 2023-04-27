@@ -122,6 +122,10 @@ dist
 /.storybook/icons.html
 /.storybook/tokens.css
 /.storybook/tokens.js
+/.storybook/icons.svg
+
 /src/_token-map.scss
 /src/icon-sprite.html
 /src/tokens.css
+
+/public

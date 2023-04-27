@@ -6,7 +6,7 @@ import headlineStories, {
 import schema from "./headline.schema.dereffed.json";
 import tokens from "./headline-tokens.json";
 
-const { defaultArgs: args, argTypes } = getArgsShared(schema);
+const { args, argTypes } = getArgsShared(schema);
 
 export default {
   ...headlineStories,

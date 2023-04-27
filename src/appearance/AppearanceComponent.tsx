@@ -3,14 +3,13 @@ import { Stack, Inline } from "@bedrock-layout/primitives";
 
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
-import { Section } from "@kickstartds/base/lib/section";
 import { Divider } from "@kickstartds/base/lib/divider";
 import { Headline } from "@kickstartds/base/lib/headline";
 
-import { LinkButton } from "../link-button/LinkButtonComponent";
 import { Button } from "../button/ButtonComponent";
 import { Related } from "../related/RelatedComponent";
 import { Person } from "../person/PersonComponent";
+import { Section } from "../section/SectionComponent";
 
 import { AppearanceProps } from "./AppearanceProps";
 
@@ -43,10 +42,13 @@ export const Appearance: FunctionComponent<
           <Headline level="h1" content={title} />
           {tags && tags.length > 0 && (
             <div className="tag-label-container">
-              {tags?.map((tag, i) => (
-                <div>
-                  <TagLabel label={tag} size="m" key={i} />
-                </div>
+              {tags?.map((tags, i) => (
+                <TagLabel
+                  link={tags.link}
+                  label={tags.label}
+                  size="m"
+                  key={i}
+                />
               ))}
             </div>
           )}
@@ -67,17 +69,16 @@ ${language}
               `}
               />
               <div>
-                <LinkButton
+                <Button
                   href={link}
                   label="Go to appearance"
                   deko={true}
                   variant="solid"
                   size="medium"
-                  iconAfter
-                  target="_blank"
-                  icon={{
+                  iconAfter={{
                     icon: "chevron-right",
                   }}
+                  newTab
                 />
               </div>
             </div>
@@ -144,12 +145,7 @@ ${language}
           </div>
           <div className="template__side">
             <Stack gutter="var(--ks-spacing-stack-s)">
-              <Headline
-                content="Description"
-                level="p"
-                styleAs="p"
-                spaceAfter="none"
-              />
+              <Headline content="Description" level="p" styleAs="p" />
               <TextMedia
                 className="kds-appearance--text-media"
                 media={[]}
@@ -157,14 +153,13 @@ ${language}
                 text={description}
               />
               <div>
-                <LinkButton
+                <Button
                   href={link}
                   label="Go to appearance"
                   variant="outline"
                   size="medium"
-                  target="_blank"
-                  iconAfter
-                  icon={{
+                  newTab
+                  iconAfter={{
                     icon: "chevron-right",
                   }}
                 />
@@ -172,12 +167,7 @@ ${language}
               {participants && participants.length > 0 && (
                 <>
                   <Divider />
-                  <Headline
-                    content="Participants"
-                    level="p"
-                    styleAs="p"
-                    spaceAfter="none"
-                  />
+                  <Headline content="Participants" level="p" styleAs="p" />
                   <Stack gutter="var(--ks-spacing-stack-xs)">
                     {participants?.map((item, i) => (
                       <Person
@@ -199,7 +189,6 @@ ${language}
         spaceAfter="default"
         ks-inverted="true"
         pattern="contact"
-        align="left"
         width="narrow"
         headline={{
           content: "Become our next collaborator",
@@ -215,8 +204,7 @@ ${language}
             size="large"
             deko
             highlighted
-            iconAfter
-            icon={{
+            iconAfter={{
               icon: "chevron-right",
             }}
           />
@@ -244,7 +232,10 @@ ${language}
                   excerpt={item.excerpt}
                   title={item.title}
                   typeLabel={item.typeLabel}
-                  tags={item.tags}
+                  tags={item.tags?.map((tag) => ({
+                    label: tag.label,
+                    link: tag.link,
+                  }))}
                   key={i}
                 />
               ))}
@@ -259,12 +250,11 @@ ${language}
             mode="list"
           >
             <Inline justify="center">
-              <LinkButton
+              <Button
                 variant="outline"
                 label="Appearances Overview"
                 href={overviewPage}
-                iconAfter
-                icon={{
+                iconAfter={{
                   icon: "chevron-right",
                 }}
                 size="large"

@@ -4,7 +4,6 @@ import { Stack, Inline } from "@bedrock-layout/primitives";
 import { Headline } from "@kickstartds/base/lib/headline";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TagLabel } from "@kickstartds/base/lib/tag-label";
-import { Section } from "@kickstartds/base/lib/section";
 import { Divider } from "@kickstartds/base/lib/divider";
 import { RichText } from "@kickstartds/base/lib/rich-text";
 
@@ -12,8 +11,8 @@ import { Quote } from "@kickstartds/content/lib/quote";
 import { Visual } from "@kickstartds/content/lib/visual";
 
 import { Button } from "../button/ButtonComponent";
-import { LinkButton } from "../link-button/LinkButtonComponent";
 import { Related } from "../related/RelatedComponent";
+import { Section } from "../section/SectionComponent";
 
 import { ShowcaseProps } from "./ShowcaseProps";
 
@@ -45,29 +44,29 @@ export const Showcase: FunctionComponent<
           <Headline level="h1" content={title} />
           {tags && tags.length > 0 && (
             <div className="tag-label-container">
-              {tags?.map((tag, i) => (
-                <div>
-                  <TagLabel label={tag} size="m" key={i} />
-                </div>
+              {tags?.map((tags, i) => (
+                <TagLabel
+                  link={tags.link}
+                  label={tags.label}
+                  size="m"
+                  key={i}
+                />
               ))}
             </div>
           )}
         </div>
-
         <RichText text={summary} />
         <div>
-          <LinkButton
+          <Button
             label="Visit showcase"
             variant="solid"
             href={link}
-            iconAfter
-            icon={{
+            iconAfter={{
               icon: "chevron-right",
-              iconAfter: true,
             }}
             highlighted
             deko
-            target="_blank"
+            newTab
             size="medium"
           />
         </div>
@@ -104,6 +103,7 @@ export const Showcase: FunctionComponent<
               "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4",
           },
         }}
+        nonce={undefined}
       />
     </Section>
     <Section
@@ -121,17 +121,29 @@ export const Showcase: FunctionComponent<
                 {media?.map((item, i) => (
                   <TextMedia
                     media={[
-                      {
-                        lightboxImage: {
-                          image: item.src,
-                          thumb: item.src,
-                          height: 853,
-                          width: 1280,
-                          zoomIcon: true,
-                          gallery: "closer-look",
-                        },
-                        caption: item.caption,
-                      },
+                      item.mode === "image"
+                        ? {
+                            lightboxImage: {
+                              image: item.src,
+                              thumb: item.src,
+                              height: 853,
+                              width: 1280,
+                              zoomIcon: true,
+                              gallery: "closer-look",
+                            },
+
+                            caption: item.caption,
+                          }
+                        : {
+                            video: {
+                              src: item.src,
+                              title: "lorem",
+                              height: 853,
+                              width: 1280,
+                              iframe: false,
+                            },
+                            caption: item.caption,
+                          },
                     ]}
                     key={i}
                     text=""
@@ -155,17 +167,15 @@ export const Showcase: FunctionComponent<
             </div>
 
             <div>
-              <LinkButton
+              <Button
                 label="Visit showcase"
                 variant="outline"
                 href={link}
-                iconAfter
-                target="_blank"
-                size="medium"
-                icon={{
+                iconAfter={{
                   icon: "chevron-right",
-                  iconAfter: true,
                 }}
+                newTab
+                size="medium"
               />
             </div>
           </Stack>
@@ -195,7 +205,6 @@ export const Showcase: FunctionComponent<
       spaceAfter="default"
       ks-inverted="true"
       pattern="contact"
-      align="left"
       width="narrow"
       headline={{
         content: "Become our next collaborator",
@@ -211,8 +220,7 @@ export const Showcase: FunctionComponent<
           size="large"
           deko
           highlighted
-          iconAfter
-          icon={{
+          iconAfter={{
             icon: "chevron-right",
           }}
         />
@@ -241,7 +249,10 @@ export const Showcase: FunctionComponent<
                 excerpt={item.excerpt}
                 title={item.title}
                 typeLabel={item.typeLabel}
-                tags={item.tags}
+                tags={item.tags?.map((tag) => ({
+                  label: tag.label,
+                  link: tag.link,
+                }))}
                 key={i}
               />
             ))}
@@ -255,12 +266,11 @@ export const Showcase: FunctionComponent<
           width="wide"
         >
           <Inline justify="center">
-            <LinkButton
+            <Button
               href={overviewPage}
               variant="outline"
               label="Showcases Overview"
-              iconAfter
-              icon={{
+              iconAfter={{
                 icon: "chevron-right",
               }}
               size="large"

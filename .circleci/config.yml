@@ -16,14 +16,14 @@ aliases:
       - yarn-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
       - yarn-{{ checksum "yarn.lock" }}
   - &save-cache-node
-    key: node-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+    key: node-2-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
     paths:
       - node_modules
   - &restore-cache-node
     keys:
-      - node-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
-      - node-{{ checksum "yarn.lock" }}
-      - node-
+      - node-2-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+      - node-2-{{ checksum "yarn.lock" }}
+      - node-2-
 
 jobs:
   install:

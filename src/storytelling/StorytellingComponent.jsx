@@ -1,16 +1,16 @@
-import { LinkButtonContext } from "@kickstartds/base/lib/link-button";
+import { ButtonContext } from "@kickstartds/base/lib/button";
 import { StorytellingContext } from "@kickstartds/content/lib/storytelling";
 import { useContext } from "react";
 
 export const StorytellingProvider = ({ children }) => {
-  const LinkButton = useContext(LinkButtonContext);
+  const Button = useContext(ButtonContext);
   const Storytelling = useContext(StorytellingContext);
 
   const ButtonGroup = ({ buttons = [] }) =>
     buttons.length ? (
       <div className="c-storytelling__action">
         {buttons.map((button, i) =>
-          button.label ? <LinkButton {...button} key={i} /> : ""
+          button.label ? <Button {...button} key={i} /> : ""
         )}
       </div>
     ) : null;
@@ -20,12 +20,12 @@ export const StorytellingProvider = ({ children }) => {
 
     if (links?.length) {
       return (
-        <LinkButtonContext.Provider value={ButtonGroup}>
+        <ButtonContext.Provider value={ButtonGroup}>
           <Storytelling
             box={{ ...boxRest, link: { buttons: links } }}
             {...props}
           />
-        </LinkButtonContext.Provider>
+        </ButtonContext.Provider>
       );
     }
     return <Storytelling box={{ ...boxRest, link }} {...props} />;

@@ -13,19 +13,22 @@
               "items": {
                 "allOf": [
                   {
-                    "$ref": "http://kickstartds.com/link-button.schema.json"
+                    "$ref": "http://kickstartds.com/button.schema.json"
                   },
                   {
                     "type": "object",
                     "properties": {
                       "variant": {
-                        "default": "outline-inverted"
+                        "default": "outline"
+                      },
+                      "inverted": {
+                        "default": true
                       }
                     }
                   }
                 ]
               },
-               "default": [
+              "default": [
                 {
                   "label": "Lorem Ipsum"
                 }

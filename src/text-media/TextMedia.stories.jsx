@@ -12,13 +12,14 @@ export default {
 
 export const ImageAbove = Template.bind({});
 ImageAbove.args = {
+  mediaAlignment: "intext-left",
   media: [
     {
       image: {
         src: "https://picsum.photos/seed/kdsteaserbox/500/300",
-        width: 1280,
-        height: 853,
-      },
+        width: 500,
+        height: 300,
+      }
     },
   ],
   text: `

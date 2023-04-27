@@ -28,10 +28,13 @@ export const Related: FunctionComponent<
       <RichText text={excerpt} />
       {tags && tags.length > 0 && (
         <div className="tag-label-container">
-          {tags?.map((tag, i) => (
-            <div>
-              <TagLabel label={tag} size="s" key={i} />
-            </div>
+          {tags?.map((tags, i) => (
+            <TagLabel
+              link={tags.link}
+              label={tags.label}
+              size="s"
+              key={i}
+            />
           ))}
         </div>
       )}

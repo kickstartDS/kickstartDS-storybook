@@ -1,64 +1,62 @@
 @use "header-tokens";
 @use "../breakpoint";
 
-header[data-component="kds.header"] {
-  display: flex;
-  justify-content: center;
-  transition-duration: var(--g-transition-duration-s);
-  transition-property: all;
-}
-
-.kds-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
-  width: 100%;
-  max-width: var(--l-section--content-width-wide);
-  gap: var(--ks-spacing-s);
-  align-items: flex-end;
-  transition-duration: var(--g-transition-duration-s);
-  transition-property: all;
-  z-index: 1;
-
-  &--wrap {
-    background-color: var(--g-header-background-color);
+:root {
+  header[data-component="kds.header"] {
+    display: flex;
+    justify-content: center;
+    transition-duration: var(--ks-duration-slow);
+    transition-property: all;
   }
 
-  &::after {
-    content: "";
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    left: 0;
-    top: 0;
-    background-color: #02222be6;
-    z-index: -1;
-    pointer-events: none;
-    opacity: 0;
-    transition-property: opacity;
-    -o-transition-property: opacity;
-    transition-duration: 200ms;
-    -o-transition-duration: 200ms;
-  }
-
-  .overlay-open & {
-    &::after {
-      opacity: 1;
-    }
-  }
-
-  @include breakpoint.media("≥m") {
+  .kds-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
     padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
-  }
+    width: 100%;
+    max-width: var(--l-section--content-width-wide);
+    gap: var(--ks-spacing-inline-m);
+    align-items: flex-end;
+    transition-duration: var(--ks-duration-slow);
+    transition-property: all;
+    z-index: 1;
 
-  a {
-    --g-link--text-decoration: none;
-    --g-link--background-hover: none;
-  }
+    &::after {
+      content: "";
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      left: 0;
+      top: 0;
+      background-color: #02222be6;
+      z-index: -1;
+      pointer-events: none;
+      opacity: 0;
+      transition-property: opacity;
+      -o-transition-property: opacity;
+      transition-duration: 200ms;
+      -o-transition-duration: 200ms;
+    }
 
-  &--spacer {
-    height: var(--g-header-height);
+    &.overlay-open {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    @include breakpoint.media("≥m") {
+      padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
+    }
+
+    a {
+      --g-link--text-decoration: none;
+      --g-link--background-hover: none;
+    }
+
+    &--spacer {
+      height: var(--g-header-height);
+    }
   }
 }

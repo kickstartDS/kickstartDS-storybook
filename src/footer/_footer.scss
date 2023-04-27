@@ -3,7 +3,7 @@
 :root,
 [ks-theme],
 [ks-inverted] {
-  --c-footer-font: var(--ks-font-ui-s);
+  --c-footer-font: var(--ks-font-interface-s);
   --c-footer-color: var(--c-rich-text--color);
 }
 
@@ -14,7 +14,7 @@
       flex-direction: column;
       justify-content: space-between;
 
-      @include breakpoint.media("≥m") {
+      @include breakpoint.media("≥l") {
         flex-direction: row;
       }
     }
@@ -32,7 +32,7 @@
     margin: var(--ks-spacing-l) 0 0 0;
     padding: var(--ks-spacing-l) 0 0 0;
 
-    @include breakpoint.media("≥m") {
+    @include breakpoint.media("≥l") {
       margin: 0 0 0 var(--ks-spacing-l);
       padding: 0 0 0 var(--ks-spacing-l);
       border-left: 1px solid var(--ks-border-color-accent);
@@ -40,7 +40,7 @@
     }
 
     p {
-      font: var(--ks-font-ui-xs);
+      font: var(--ks-font-interface-xs);
       margin: var(--ks-spacing-xs) 0;
     }
   }

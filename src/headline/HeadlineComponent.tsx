@@ -2,13 +2,13 @@ import { FunctionComponent, HTMLAttributes } from "react";
 
 import { HeadlineContext } from "@kickstartds/base/lib/headline";
 import classnames from "classnames";
-import { renderFn, defaultRenderFn } from "@kickstartds/core/lib/core";
+import { defaultRenderFn } from "@kickstartds/core/lib/core";
 
 import { HeadlineProps } from "./HeadlineProps";
 
 interface RenderFunctions {
-  renderContent?: renderFn;
-  renderSubheadline?: renderFn;
+  renderContent?: typeof defaultRenderFn;
+  renderSubheadline?: typeof defaultRenderFn;
 }
 
 const Headline: FunctionComponent<
@@ -18,7 +18,6 @@ const Headline: FunctionComponent<
   level = "h2",
   styleAs = "none",
   align = "left",
-  pageHeader,
   subheadline,
   spaceAfter = "small",
   renderContent = defaultRenderFn,
@@ -37,7 +36,6 @@ const Headline: FunctionComponent<
               "c-headline",
               align && `c-headline--align-${align}`,
               spaceAfter && `c-headline--space-after-${spaceAfter}`,
-              { "c-headline--page-header": pageHeader },
               className
             )}
             {...props}

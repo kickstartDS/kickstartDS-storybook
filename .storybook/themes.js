@@ -7,14 +7,14 @@ export const light = create({
   colorPrimary: tokens.KsColorPrimaryBase,
   colorSecondary: tokens.KsColorPrimaryBase,
 
-  // UI
+  // Interface
   appBg: tokens.KsColorPrimaryToBg9Base,
   appContentBg: tokens.KsBackgroundColorDefaultBase,
   appBorderColor: tokens.KsColorPrimaryAlpha2Base,
   appBorderRadius: tokens.KsBorderRadiusCard,
 
   // Typography
-  fontBase: tokens.KsFontFamilyUi,
+  fontBase: tokens.KsFontFamilyInterface,
   fontCode: tokens.KsFontFamilyMono,
 
   // Text colors

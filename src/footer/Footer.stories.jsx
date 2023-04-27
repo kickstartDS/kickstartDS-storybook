@@ -2,7 +2,7 @@ import { Footer } from "./FooterComponent";
 import { getArgsShared } from "@kickstartds/core/lib/storybook/helpers";
 import schema from "./footer.schema.dereffed.json";
 
-const { defaultArgs: args, argTypes } = getArgsShared(schema);
+const { args, argTypes } = getArgsShared(schema);
 const Template = (args) => <Footer {...args} />;
 
 export default {
@@ -12,7 +12,7 @@ export default {
   argTypes,
   parameters: {
     jsonschema: schema,
-  }
+  },
 };
 
 export const Default = Template.bind({});

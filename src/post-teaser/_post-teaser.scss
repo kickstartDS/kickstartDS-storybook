@@ -6,6 +6,10 @@
   .c-post-teaser {
     gap: var(--ks-spacing-s);
 
+    .c-post-meta {
+      margin: 0;
+    }
+
     .c-teaser__topic {
       display: inline;
       transition: var(--ks-transition-hover) all;

@@ -13,6 +13,10 @@ export type IconIdentifier = string;
 export type AriaRole = string;
 export type AdditionalClass = string;
 /**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute = string;
+/**
  * Topic for the count-up box. Displayed before the text, in bold
  */
 export type Topic = string;
@@ -32,29 +36,29 @@ export type Label = string;
  * Choose one of the styles from the list
  */
 export type ButtonStyle = "solid" | "clear" | "outline";
+export type Inverted = boolean;
 /**
  * Choose a size between small, medium and large
  */
 export type ButtonSize = "small" | "medium" | "large";
 /**
- * Add additional css classes that should be applied to the button
+ * Link used for button
  */
-export type AdditionalClasses = string;
+export type ButtonHref = string;
 export type IconIdentifier1 = string;
 export type AriaRole1 = string;
 export type AdditionalClass1 = string;
 /**
- * Display icon before the button text
+ * Optional custom component identifier
  */
-export type IconBeforeButton = boolean;
+export type KsComponentAttribute1 = string;
+export type IconIdentifier2 = string;
+export type AriaRole2 = string;
+export type AdditionalClass2 = string;
 /**
- * Display icon after the button text
+ * Optional custom component identifier
  */
-export type IconAfterButton = boolean;
-/**
- * Overwrite the data-component to use for rendering
- */
-export type DataComponentAttribute = string;
+export type KsComponentAttribute2 = string;
 /**
  * Add fill animation on hover
  */
@@ -64,23 +68,47 @@ export type FillAnimation = boolean;
  */
 export type IconAnimation = boolean;
 /**
- * Link used for button
+ * Select the type attribute for the button
  */
-export type ButtonHref = string;
+export type TypeAttribute = "button" | "submit" | "reset";
+/**
+ * Define a value attribute for the button
+ */
+export type ValueAttribute = string;
+/**
+ * Define a name attribute for the button
+ */
+export type NameAttribute = string;
+/**
+ * Set the disabled attribute for the button
+ */
+export type DisabledAttribute = boolean;
 /**
  * Open link in new Tab
  */
 export type OpenLinkInNewTab = boolean;
-export type Inverted = boolean;
+/**
+ * Add additional css classes that should be applied to the button
+ */
+export type AdditionalClasses = string;
+/**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute3 = string;
 /**
  * Additional css classes attached to the wrapping element
  */
 export type Class = string;
+/**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute4 = string;
 
 /**
  * Component to to increase a number up to a final value
  */
 export interface CountUpProps {
+  graphic?: "none" | "tokens" | "components" | "properties";
   to: Number;
   icon?: Icon;
   topic?: Topic;
@@ -91,43 +119,55 @@ export interface CountUpProps {
    * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
    */
   expand?: number;
-  graphic?: "none" | "tokens" | "components" | "properties";
+  component?: KsComponentAttribute4;
   [k: string]: unknown;
 }
 /**
  * Icon
  */
 export interface Icon {
-  icon?: IconIdentifier;
+  icon: IconIdentifier;
   role?: AriaRole;
   className?: AdditionalClass;
-  [k: string]: unknown;
+  component?: KsComponentAttribute;
 }
 /**
- * link-button
+ * Component to display links and call-to-actions
  */
 export interface Link {
   enabled?: DisplayLink;
-  label: Label;
-  variant: ButtonStyle;
-  size: ButtonSize;
-  className?: AdditionalClasses;
-  icon?: Icon1;
+  label?: Label;
+  variant?: ButtonStyle;
+  inverted?: Inverted;
+  size?: ButtonSize;
+  href?: ButtonHref;
   iconBefore?: IconBeforeButton;
   iconAfter?: IconAfterButton;
-  dataComponent?: DataComponentAttribute;
   fillAnimation?: FillAnimation;
   iconAnimation?: IconAnimation;
-  href: ButtonHref;
+  type?: TypeAttribute;
+  value?: ValueAttribute;
+  name?: NameAttribute;
+  disabled?: DisabledAttribute;
   newTab?: OpenLinkInNewTab;
-  inverted?: Inverted;
+  className?: AdditionalClasses;
+  component?: KsComponentAttribute3;
 }
 /**
- * Icon
+ * Icon identifier for icon before the button text
  */
-export interface Icon1 {
-  icon?: IconIdentifier1;
+export interface IconBeforeButton {
+  icon: IconIdentifier1;
   role?: AriaRole1;
   className?: AdditionalClass1;
-  [k: string]: unknown;
+  component?: KsComponentAttribute1;
+}
+/**
+ * Icon identifier for icon after the button text
+ */
+export interface IconAfterButton {
+  icon: IconIdentifier2;
+  role?: AriaRole2;
+  className?: AdditionalClass2;
+  component?: KsComponentAttribute2;
 }

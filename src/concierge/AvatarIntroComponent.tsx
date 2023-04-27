@@ -49,14 +49,14 @@ export const AvatarIntro: FC<HTMLAttributes<HTMLElement>> = ({
             fill="url(#paint0_linear_2029_4124)"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M219.302 75.104L81.1118 81.112L93.1278 156.215L114.157 201.277L150.207 210.29L183.253 201.277L207.286 156.215L219.302 75.104ZM117.161 106.647L91.6258 113.357L101.814 154.413L119.643 193.467L150.207 201.278L178.224 193.467L198.6 154.413L207.286 113.357L187.759 112.656L133.684 87.12L117.161 106.647Z"
             fill="#052F3A"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M63.087 336.464H27.0373L36.0497 249.344L0 201.277L108.149 210.29L130.68 226.813L63.087 241.833V336.464ZM72.099 249.344L216.298 216.298V336.464H72.099V249.344ZM120.166 273.377C120.166 280.013 114.786 285.393 108.149 285.393C101.512 285.393 96.132 280.013 96.132 273.377C96.132 266.74 101.512 261.36 108.149 261.36C114.786 261.36 120.166 266.74 120.166 273.377ZM180.248 279.385C186.885 279.385 192.265 274.005 192.265 267.369C192.265 260.732 186.885 255.352 180.248 255.352C173.612 255.352 168.232 260.732 168.232 267.369C168.232 274.005 173.612 279.385 180.248 279.385ZM120.166 312.43C120.166 319.067 114.786 324.447 108.149 324.447C101.512 324.447 96.132 319.067 96.132 312.43C96.132 305.794 101.512 300.414 108.149 300.414C114.786 300.414 120.166 305.794 120.166 312.43ZM180.248 324.447C186.885 324.447 192.265 319.067 192.265 312.43C192.265 305.794 186.885 300.414 180.248 300.414C173.612 300.414 168.232 305.794 168.232 312.43C168.232 319.067 173.612 324.447 180.248 324.447ZM270.373 240.331L225.31 216.298V336.464H282.389L270.373 240.331Z"
             fill="url(#paint1_linear_2029_4124)"
           />
@@ -69,8 +69,8 @@ export const AvatarIntro: FC<HTMLAttributes<HTMLElement>> = ({
               y2="69.188"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#07718B" />
-              <stop offset="1" stop-color="#07566B" />
+              <stop stopColor="#07718B" />
+              <stop offset="1" stopColor="#07566B" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_2029_4124"
@@ -80,8 +80,8 @@ export const AvatarIntro: FC<HTMLAttributes<HTMLElement>> = ({
               y2="233.342"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#06566A" />
-              <stop offset="1" stop-color="#06708A" />
+              <stop stopColor="#06566A" />
+              <stop offset="1" stopColor="#06708A" />
             </linearGradient>
           </defs>
         </svg>
@@ -110,7 +110,7 @@ export const AvatarIntro: FC<HTMLAttributes<HTMLElement>> = ({
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_2030_4128)">
+          <g clipPath="url(#clip0_2030_4128)">
             <path d="M50 0L52.4381 55H178L172.514 0H50Z" fill="#C4D0D3" />
             <path d="M10.3688 0L0 55H164.071L172 0H10.3688Z" fill="white" />
             <path

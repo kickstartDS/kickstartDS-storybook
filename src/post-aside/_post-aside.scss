@@ -1,103 +1,123 @@
 @use "../breakpoint";
 @use "./post-aside-tokens";
 
-.c-post-aside {
-  --tag-label-height: calc(
-    var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs) + calc(var(--ks-spacing-inset-xs) * 2)
-  );
+:root {
+  .c-post-aside {
+    --tag-label-height: calc(
+      var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs) + calc(var(--ks-spacing-inset-xs) * 2)
+    );
 
-  height: fit-content;
+    flex-basis: 20%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: calc(var(--ks-font-size-copy-m) * 10);
+    height: fit-content;
 
-  @include breakpoint.media("<m") {
+    @include breakpoint.media("≥m") {
+      position: sticky;
+      top: 0;
+      padding-top: calc(var(--tag-label-height) + var(--ks-spacing-s));
+    }
+
     &__author .c-contact__links,
     .c-post-share-bar,
-    .c-headline,
     .c-divider {
-      display: none;
+      @include breakpoint.media("<m") {
+        display: none;
+      }
     }
-  }
-
-  @include breakpoint.media("≥m") {
-    position: sticky;
-    top: 0;
-    padding-top: calc(var(--tag-label-height) + var(--ks-spacing-s));
 
     .c-headline {
       p {
         font: var(--ks-font-copy-s);
         font-weight: var(--c-headline--font-weight);
       }
+
       &__headline {
         font: var(--ks-font-copy-m);
         font-weight: var(--c-headline--font-weight);
       }
     }
-  }
 
-  &__author {
-    > .c-headline {
-      display: none;
-    }
-
-    .c-contact {
-      --icon-size: 1rem;
-
-      margin: 0;
-      gap: var(--ks-spacing-s);
-
-      > * {
-        margin: 0;
+    &__author {
+      > .c-headline {
+        display: none;
       }
 
-      &__body {
-        display: flex;
-        flex-direction: column;
-        gap: var(--ks-spacing-xs);
-        flex-grow: 1 !important;
+      .c-contact {
+        --icon-size: 1rem;
+
+        margin: 0;
+        gap: var(--ks-spacing-stack-xs) var(--ks-spacing-inline-xs);
 
         > * {
           margin: 0;
         }
 
-        .c-headline {
-          display: block;
+        &__body {
+          display: flex;
+          overflow: hidden;
+          flex-direction: column;
+          gap: var(--ks-spacing-xs);
+          flex-grow: 1;
 
-          &__headline {
-            font: var(--ks-font-copy-s);
-            font-weight: var(--c-headline--font-weight);
+          > * {
+            margin: 0;
           }
+
+          .c-headline {
+            display: block;
+            padding-bottom: 0;
+
+            &__headline {
+              font: var(--ks-font-copy-s);
+              font-weight: var(--c-headline--font-weight);
+            }
+
+            @include breakpoint.media("≥m") {
+              font: var(--ks-font-copy-xs);
+              font-weight: var(--c-headline--font-weight);
+              color: var(--c-rich-text--color);
+            }
+          }
+        }
+
+        &__image {
+          max-width: 3rem;
 
           @include breakpoint.media("≥m") {
-            font: var(--ks-font-copy-xs);
-            font-weight: var(--c-headline--font-weight);
-            color: var(--c-rich-text--color);
+            max-width: 4rem;
           }
         }
-      }
 
-      &__image {
-        max-width: 3rem;
+        &__links {
+          font: var(--ks-font-interface-xs);
 
-        @include breakpoint.media("≥m") {
-          max-width: 4rem;
+          .icon {
+            flex-shrink: 0;
+          }
+
+          li {
+            display: flex;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+
+        &__link {
+          margin: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .c-rich-text {
+          font: var(--ks-font-copy-xs);
         }
       }
 
-      &__links {
-        font: var(--ks-font-ui-xs);
-      }
-
-      &__link {
-        margin: 0;
+      .c-post-share-bar {
+        --c-post-share-bar_link--icon-size: 1.35em;
       }
     }
-
-    .c-rich-text {
-      font: var(--ks-font-copy-xs);
-    }
-  }
-
-  .c-post-share-bar {
-    --c-post-share-bar_link--icon-size: 1.35em;
   }
 }

@@ -1,8 +1,11 @@
 import React, { FunctionComponent, HTMLAttributes } from "react";
 import { RichText } from "@kickstartds/base/lib/rich-text";
-import { CollapsibleBox } from "@kickstartds/content/lib/collapsible-box";
+import { CollapsibleBox } from "@kickstartds/base/lib/collapsible-box";
 import { SourceProps } from "./SourceProps";
-import { LinkButton, Picture, Link } from "@kickstartds/base";
+import { Picture } from "@kickstartds/base/lib/picture";
+import { Link } from "@kickstartds/base/lib/link";
+
+import { Button } from "../button/ButtonComponent";
 
 export const Source: FunctionComponent<
   SourceProps & HTMLAttributes<HTMLDivElement>
@@ -45,16 +48,15 @@ export const Source: FunctionComponent<
             <Link className="c-source__thumbnail" target="_blank" href={url}>
               <Picture src={thumbnail} />
             </Link>
-            <LinkButton
+            <Button
               label={"Visit Source"}
               variant={"clear"}
               size={"medium"}
-              iconAfter
-              newTab
-              href={url}
-              icon={{
+              iconAfter={{
                 icon: "chevron-right",
               }}
+              newTab
+              href={url}
             />
           </div>
         </div>

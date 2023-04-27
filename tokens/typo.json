@@ -15,7 +15,7 @@
           "presenter": "FontFamily"
         }
       },
-      "ui": {
+      "interface": {
         "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
         "token": {
           "category": "Font Families",
@@ -69,7 +69,7 @@
           "tablet": {
             "value": 1.5
           },
-          "laptop": {
+          "desktop": {
             "value": 1.75
           }
         },
@@ -146,7 +146,13 @@
       },
       "copy": {
         "bp-factor": {
+          "phone": {
+            "value": 1
+          },
           "tablet": {
+            "value": 1
+          },
+          "desktop": {
             "value": 1.125
           }
         },
@@ -221,9 +227,15 @@
           }
         }
       },
-      "ui": {
+      "interface": {
         "bp-factor": {
+          "phone": {
+            "value": 1
+          },
           "tablet": {
+            "value": 1
+          },
+          "desktop": {
             "value": 1.125
           }
         },
@@ -423,7 +435,7 @@
           "value": 1.5
         }
       },
-      "ui": {
+      "interface": {
         "xxs": {
           "value": 1.5
         },

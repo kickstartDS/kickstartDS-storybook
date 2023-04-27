@@ -62,7 +62,12 @@ export const Subscription: FC<SubscriptionProps> = ({
           name="EMAIL"
           className="c-subscription__input"
         />
-        <Button label={buttonLabel} variant="solid" size="medium" type="submit" />
+        <Button
+          label={buttonLabel}
+          variant="solid"
+          size="medium"
+          type="submit"
+        />
       </form>
     </div>
   );

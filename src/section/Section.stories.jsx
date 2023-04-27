@@ -27,7 +27,7 @@ const Template = (args) => (
   </Section>
 );
 
-const { defaultArgs: args, argTypes } = getArgsShared(schema);
+const { args, argTypes } = getArgsShared(schema);
 
 export default {
   ...sectionStories,

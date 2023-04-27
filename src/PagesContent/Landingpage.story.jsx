@@ -1,19 +1,16 @@
 import { unpack } from "@kickstartds/core/lib/storybook/helpers";
 
-import {
-  ContentBox,
-  TeaserBox,
-  Section,
-} from "@kickstartds/base";
+import { ContentBox } from "@kickstartds/base/lib/content-box";
+import { Section } from "@kickstartds/base/lib/section";
+import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { Button } from "@kickstartds/base/lib/button";
-import {
-  Visual,
-  Quote,
-  QuotesSlider,
-  LogoTiles,
-  CountUp,
-  Storytelling,
-} from "@kickstartds/content";
+
+import { Visual } from "@kickstartds/content/lib/visual";
+import { Quote } from "@kickstartds/content/lib/quote";
+import { QuotesSlider } from "@kickstartds/content/lib/quotes-slider";
+import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
+import { CountUp } from "@kickstartds/content/lib/count-up";
+import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
 import HeaderStories from "../header/Header.stories";
 import FooterStories from "../footer/Footer.stories";
@@ -28,7 +25,7 @@ export default {
 
 const Page = () => (
   <>
-    <Header  {...unpack(HeaderStories.args)} />
+    <Header {...unpack(HeaderStories.args)} />
     <Section width="full" spaceBefore="none" spaceAfter="small">
       <Visual
         className="contain-image"
@@ -36,8 +33,7 @@ const Page = () => (
           background: "transparent",
           enabled: true,
           headline: {
-            content:
-              "kickstartDS is the starter kit for Design Systems",
+            content: "kickstartDS is the starter kit for Design Systems",
             level: "h1",
             styleAs: "h1",
             subheadline: "The frontend first framework!",
@@ -211,7 +207,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       />
     </Section>
 
-
     <Section
       gutter="large"
       headline={{
@@ -253,7 +248,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       mode="list"
       width="full"
       spaceBefore="default"
-      gutter="small"
+      gutter="none"
       headline={{
         content: "Easy peasy lemon squeezy",
         subheadline: "5 reasons why you should start with kickstartDS today!",
@@ -384,14 +379,27 @@ kickstart DS is the foundation for your design system with reusable components a
       background="default"
     >
       <TeaserBox
-        topic="Lorem Ipsum"
+        image="https://kickstartds.com/static/b75932664b811513543d5af322c2e4ee/headless_design_system_for_developer.svg"
+        inverted
+        topic="... as a developer?"
         link={{
           label: "Get in touch",
         }}
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
       />
       <TeaserBox
-        topic="Accessibility baked in"
+        image="https://kickstartds.com/static/22366760e710d38f85417e550177546f/headless_design_system_for_designer.svg"
+        inverted
+        topic="... as a designer?"
+        link={{
+          label: "Get in touch",
+        }}
+        text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
+      />
+      <TeaserBox
+        image="https://kickstartds.com/static/22366760e710d38f85417e550177546f/headless_design_system_for_designer.svg"
+        inverted
+        topic="... as a product team?"
         link={{
           label: "Get in touch",
         }}

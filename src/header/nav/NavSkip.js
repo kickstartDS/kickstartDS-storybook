@@ -1,4 +1,4 @@
-import { Component, define } from "@kickstartds/core/lib/core";
+import { Component, define } from "@kickstartds/core/lib/component";
 import { navMainEvents, isDesktop } from "./navMainEvents";
 
 class NavSkip extends Component {
@@ -8,7 +8,7 @@ class NavSkip extends Component {
     super(element);
 
     this.skipToNav = element.querySelector('[href*="#nav"]');
-    window.rm.radio.on(navMainEvents.change, () => this.updateSkipLinks());
+    window._ks.radio.on(navMainEvents.change, () => this.updateSkipLinks());
     this.updateSkipLinks();
   }
 
