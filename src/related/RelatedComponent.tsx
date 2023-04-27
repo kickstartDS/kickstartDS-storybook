@@ -32,7 +32,7 @@ export const Related: FunctionComponent<
             <TagLabel
               link={tags.link}
               label={tags.label}
-              size="m"
+              size="s"
               key={i}
             />
           ))}
