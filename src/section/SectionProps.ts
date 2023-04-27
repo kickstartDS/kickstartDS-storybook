@@ -13756,6 +13756,8 @@ export type AdditionalClasses149 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute400 = string;
+export type ButtonHighlightedStyle8 = boolean;
+export type ButtonDekoStyle8 = boolean;
 /**
  * Text used on button
  */
@@ -14002,6 +14004,8 @@ export type AdditionalClasses153 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute408 = string;
+export type ButtonHighlightedStyle9 = boolean;
+export type ButtonDekoStyle9 = boolean;
 /**
  * Text used on button
  */
@@ -14342,6 +14346,8 @@ export type Class71 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute417 = string;
+export type ButtonHighlightedStyle10 = boolean;
+export type ButtonDekoStyle10 = boolean;
 /**
  * Text used on button
  */
@@ -14557,6 +14563,8 @@ export type Class72 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute425 = string;
+export type ButtonHighlightedStyle11 = boolean;
+export type ButtonDekoStyle11 = boolean;
 /**
  * Text used on button
  */
@@ -14812,6 +14820,8 @@ export type AdditionalClasses164 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute433 = string;
+export type ButtonHighlightedStyle12 = boolean;
+export type ButtonDekoStyle12 = boolean;
 /**
  * Text used on button
  */
@@ -15196,6 +15206,8 @@ export type Class73 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute443 = string;
+export type ButtonHighlightedStyle13 = boolean;
+export type ButtonDekoStyle13 = boolean;
 /**
  * Text used on button
  */
@@ -15507,6 +15519,8 @@ export type Class74 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute454 = string;
+export type ButtonHighlightedStyle14 = boolean;
+export type ButtonDekoStyle14 = boolean;
 /**
  * Text used on button
  */
@@ -18258,6 +18272,8 @@ export type AdditionalClasses212 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute532 = string;
+export type ButtonHighlightedStyle15 = boolean;
+export type ButtonDekoStyle15 = boolean;
 /**
  * Text used on button
  */
@@ -18534,6 +18550,8 @@ export type AdditionalClasses216 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute540 = string;
+export type ButtonHighlightedStyle16 = boolean;
+export type ButtonDekoStyle16 = boolean;
 /**
  * Text used on button
  */
@@ -18879,6 +18897,8 @@ export type Class80 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute549 = string;
+export type ButtonHighlightedStyle17 = boolean;
+export type ButtonDekoStyle17 = boolean;
 /**
  * Text used on button
  */
@@ -19147,6 +19167,8 @@ export type Class81 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute557 = string;
+export type ButtonHighlightedStyle18 = boolean;
+export type ButtonDekoStyle18 = boolean;
 /**
  * Text used on button
  */
@@ -19498,6 +19520,8 @@ export type AdditionalClasses228 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute568 = string;
+export type ButtonHighlightedStyle19 = boolean;
+export type ButtonDekoStyle19 = boolean;
 /**
  * Text used on button
  */
@@ -19782,6 +19806,8 @@ export type AdditionalClasses232 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute576 = string;
+export type ButtonHighlightedStyle20 = boolean;
+export type ButtonDekoStyle20 = boolean;
 /**
  * Text used on button
  */
@@ -20134,6 +20160,8 @@ export type ImageRatio36 = "4:3" | "16:9" | "1:1";
  * Optionally add inner spacing to the displayed image
  */
 export type ImageSpacing18 = boolean;
+export type ButtonHighlightedStyle21 = boolean;
+export type ButtonDekoStyle21 = boolean;
 /**
  * Text used on button
  */
@@ -20474,6 +20502,8 @@ export type Class83 = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute598 = string;
+export type ButtonHighlightedStyle22 = boolean;
+export type ButtonDekoStyle22 = boolean;
 /**
  * Text used on button
  */
@@ -27578,6 +27608,8 @@ export interface TextBox {
  * Component to display links and call-to-actions
  */
 export interface Button47 {
+  highlighted?: ButtonHighlightedStyle8;
+  deko?: ButtonDekoStyle8;
   label?: Label96;
   variant?: ButtonStyle75;
   inverted?: Inverted106;
@@ -27719,6 +27751,8 @@ export interface TextBox1 {
  * Component to display links and call-to-actions
  */
 export interface Button49 {
+  highlighted?: ButtonHighlightedStyle9;
+  deko?: ButtonDekoStyle9;
   label?: Label99;
   variant?: ButtonStyle77;
   inverted?: Inverted108;
@@ -27897,6 +27931,8 @@ export interface TextBox2 {
  * Component to display links and call-to-actions
  */
 export interface Button51 {
+  highlighted?: ButtonHighlightedStyle10;
+  deko?: ButtonDekoStyle10;
   label?: Label101;
   variant?: ButtonStyle79;
   inverted?: Inverted111;
@@ -28017,6 +28053,8 @@ export interface TextBox3 {
  * Component to display links and call-to-actions
  */
 export interface Button53 {
+  highlighted?: ButtonHighlightedStyle11;
+  deko?: ButtonDekoStyle11;
   label?: Label103;
   variant?: ButtonStyle81;
   inverted?: Inverted114;
@@ -28160,6 +28198,8 @@ export interface TextBox4 {
  * Component to display links and call-to-actions
  */
 export interface Button55 {
+  highlighted?: ButtonHighlightedStyle12;
+  deko?: ButtonDekoStyle12;
   label?: Label105;
   variant?: ButtonStyle83;
   inverted?: Inverted117;
@@ -28361,6 +28401,8 @@ export interface TextBox5 {
  * Component to display links and call-to-actions
  */
 export interface Button57 {
+  highlighted?: ButtonHighlightedStyle13;
+  deko?: ButtonDekoStyle13;
   label?: Label107;
   variant?: ButtonStyle85;
   inverted?: Inverted120;
@@ -28541,6 +28583,8 @@ export interface TextBox6 {
  * Component to display links and call-to-actions
  */
 export interface Button60 {
+  highlighted?: ButtonHighlightedStyle14;
+  deko?: ButtonDekoStyle14;
   label?: Label110;
   variant?: ButtonStyle88;
   inverted?: Inverted125;
@@ -30066,6 +30110,8 @@ export interface TextBox16 {
  * Component to display links and call-to-actions
  */
 export interface Button66 {
+  highlighted?: ButtonHighlightedStyle15;
+  deko?: ButtonDekoStyle15;
   label?: Label127;
   variant?: ButtonStyle104;
   inverted?: Inverted152;
@@ -30220,6 +30266,8 @@ export interface TextBox17 {
  * Component to display links and call-to-actions
  */
 export interface Button67 {
+  highlighted?: ButtonHighlightedStyle16;
+  deko?: ButtonDekoStyle16;
   label?: Label130;
   variant?: ButtonStyle106;
   inverted?: Inverted155;
@@ -30399,6 +30447,8 @@ export interface TextBox18 {
  * Component to display links and call-to-actions
  */
 export interface Button68 {
+  highlighted?: ButtonHighlightedStyle17;
+  deko?: ButtonDekoStyle17;
   label?: Label132;
   variant?: ButtonStyle108;
   inverted?: Inverted158;
@@ -30551,6 +30601,8 @@ export interface TextBox19 {
  * Component to display links and call-to-actions
  */
 export interface Button69 {
+  highlighted?: ButtonHighlightedStyle18;
+  deko?: ButtonDekoStyle18;
   label?: Label134;
   variant?: ButtonStyle110;
   inverted?: Inverted161;
@@ -30747,6 +30799,8 @@ export interface TextBox20 {
  * Component to display links and call-to-actions
  */
 export interface Button70 {
+  highlighted?: ButtonHighlightedStyle19;
+  deko?: ButtonDekoStyle19;
   label?: Label137;
   variant?: ButtonStyle113;
   inverted?: Inverted165;
@@ -30903,6 +30957,8 @@ export interface TextBox21 {
  * Component to display links and call-to-actions
  */
 export interface Button71 {
+  highlighted?: ButtonHighlightedStyle20;
+  deko?: ButtonDekoStyle20;
   label?: Label139;
   variant?: ButtonStyle115;
   inverted?: Inverted168;
@@ -31100,6 +31156,8 @@ export interface TextBox22 {
  * Component to display links and call-to-actions
  */
 export interface Button73 {
+  highlighted?: ButtonHighlightedStyle21;
+  deko?: ButtonDekoStyle21;
   label?: Label142;
   variant?: ButtonStyle118;
   inverted?: Inverted173;
@@ -31294,6 +31352,8 @@ export interface TextBox23 {
  * Component to display links and call-to-actions
  */
 export interface Button75 {
+  highlighted?: ButtonHighlightedStyle22;
+  deko?: ButtonDekoStyle22;
   label?: Label145;
   variant?: ButtonStyle121;
   inverted?: Inverted178;

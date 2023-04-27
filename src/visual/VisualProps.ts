@@ -5,6 +5,8 @@
  * and run `yarn run schema` to regenerate this file.
  */
 
+export type ButtonHighlightedStyle = boolean;
+export type ButtonDekoStyle = boolean;
 /**
  * Text used on button
  */
@@ -296,6 +298,8 @@ export interface TextBox {
  * Component to display links and call-to-actions
  */
 export interface Button {
+  highlighted?: ButtonHighlightedStyle;
+  deko?: ButtonDekoStyle;
   label?: Label;
   variant?: ButtonStyle;
   inverted?: Inverted;
