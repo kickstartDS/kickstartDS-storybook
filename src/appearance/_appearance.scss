@@ -28,6 +28,12 @@
       flex-direction: column;
       gap: var(--ks-spacing-stack-m);
     }
+
+    .l-container {
+      &--text-media {
+        container-type: normal;
+      }
+    }
   }
 
   &--text-media {
