@@ -1,3 +1,15 @@
+# v2.5.6 (Fri Apr 28 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: hotfix layout without media in appearance ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.5.5 (Fri Apr 28 2023)
 
 #### ⚠️ Pushed to `master`
