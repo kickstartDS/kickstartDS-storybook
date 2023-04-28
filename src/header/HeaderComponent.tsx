@@ -17,6 +17,7 @@ export const Header: FunctionComponent<
   homeLink,
   navEnabled,
   navEntries,
+  secondaryNavEntries,
   className,
   activeEntry,
   cta,
@@ -40,6 +41,7 @@ export const Header: FunctionComponent<
               <NavMain
                 dark={dark}
                 navEntries={navEntries}
+                secondaryNavEntries={secondaryNavEntries}
                 activeEntry={activeEntry}
                 cta={cta}
               />

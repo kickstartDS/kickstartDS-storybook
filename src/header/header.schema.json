@@ -51,14 +51,9 @@
       },
       "default": [
         {
-          "label": "Docs",
-          "href": "/documentation",
-          "id": "documentation"
-        },
-        {
-          "label": "Concierge",
-          "href": "/concierge",
-          "id": "concierge"
+          "label": "Modules",
+          "href": "/modules",
+          "id": "modules"
         },
         {
           "label": "Integrations",
@@ -66,19 +61,72 @@
           "id": "integrations"
         },
         {
-          "label": "Modules",
-          "href": "/modules",
-          "id": "modules"
-        },
-        {
           "label": "Showcases",
           "href": "/showcases",
           "id": "showcases"
         },
         {
+          "label": "About",
+          "href": "/about",
+          "id": "about"
+        },
+        {
           "label": "Services",
           "href": "/services",
           "id": "services"
+        },
+        {
+          "label": "Docs",
+          "href": "/docs",
+          "id": "documentation"
+        }
+      ]
+    },
+    "secondaryNavEntries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "title": "Label for entry",
+            "type": "string",
+            "description": "Label for the navigation entry"
+          },
+          "href": {
+            "title": "Link target for entry",
+            "type": "string",
+            "description": "Link target for the navigation entry"
+          },
+          "id": {
+            "title": "Slug for entry",
+            "type": "string",
+            "description": "Label for the navigation entry, used to mark the active entry"
+          },
+          "icon": {
+            "type": "string",
+            "description": "Icon for mobile view"
+          }
+        },
+        "required": ["label", "href", "id", "icon"]
+      },
+      "default": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/kickstartDS/kickstartDS",
+          "id": "github",
+          "icon": "github"
+        },
+        {
+          "label": "Concierge",
+          "href": "/concierge",
+          "id": "concierge",
+          "icon": "concierge"
+        },
+        {
+          "label": "Storybook",
+          "href": "/storybook",
+          "id": "storybook",
+          "icon": "storybook"
         }
       ]
     },

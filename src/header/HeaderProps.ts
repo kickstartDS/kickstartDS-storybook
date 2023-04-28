@@ -39,6 +39,18 @@ export type NavigationEntries = {
   [k: string]: unknown;
 }[];
 /**
+ * Label for the navigation entry
+ */
+export type LabelForEntry1 = string;
+/**
+ * Link target for the navigation entry
+ */
+export type LinkTargetForEntry1 = string;
+/**
+ * Label for the navigation entry, used to mark the active entry
+ */
+export type SlugForEntry1 = string;
+/**
  * Slug of the current page, to mark it in the Header menu
  */
 export type ActiveNavigationEntry = string;
@@ -59,6 +71,16 @@ export interface HeaderProps {
   homeLink?: LinkToHomePage;
   navEnabled?: EnableNavigation;
   navEntries?: NavigationEntries;
+  secondaryNavEntries?: {
+    label: LabelForEntry1;
+    href: LinkTargetForEntry1;
+    id: SlugForEntry1;
+    /**
+     * Icon for mobile view
+     */
+    icon: string;
+    [k: string]: unknown;
+  }[];
   activeEntry: ActiveNavigationEntry;
   cta?: CallToAction;
   announcementBar?: {
