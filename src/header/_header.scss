@@ -2,7 +2,7 @@
 @use "../breakpoint";
 
 :root {
-  header[data-component="kds.header"] {
+  header[ks-component="kds.header"] {
     display: flex;
     justify-content: center;
     transition-duration: var(--ks-duration-slow);

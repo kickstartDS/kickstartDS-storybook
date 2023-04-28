@@ -33,7 +33,7 @@ export const Header: FunctionComponent<
             targetSessionStorageKey="hideSubscriptionForm"
           />
         )}
-        <header data-component="kds.header">
+        <header ks-component="kds.header">
           <div className={classnames(className, "kds-header")}>
             <Logo dark={dark} homeLink={homeLink} />
             {navEntries && navEntries.length > 0 && navEnabled && (
