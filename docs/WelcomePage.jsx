@@ -16,8 +16,9 @@ export const Welcome = () => (
           headline: {
             level: "h1",
             styleAs: "h1",
-            content: "Say hi to our Design System & Demo space",
-            subheadline: "kickstartDS is an Open Source framework for Design System creation",
+            content: "Welcome to our Design System & Demo space",
+            subheadline:
+              "kickstartDS is an Open Source framework and starter kit for Design System creation",
           },
           horizontal: "center",
           indent: false,
@@ -36,7 +37,7 @@ export const Welcome = () => (
             size: "medium",
             variant: "solid",
           },
-          text: "This Storybook serves us to display and experience our **own Design System** application, but it should also show serve you as a **demo**, to explore the different **component modules**, with its comprehensive components, inclouding design and component tokens, interact with the Storybook controls, or preview sample recipes or pages we've assembled.",
+          text: "This Storybook should serve to display and help experience our **own Design System** application, but it's also structured to allow exploration of kickcstartDS in general. Discover the different **component modules**, with their comprehensive components, including design and component tokens, interact with the Storybook controls of a component, or preview sample recipes and pages we've assembled to show components in context.",
           vertical: "top",
         }}
         height="small"
@@ -186,8 +187,7 @@ export const Welcome = () => (
         content: "Next-gen UI-development toolkit",
         level: "h2",
         pageHeader: false,
-        subheadline:
-          "and framework for Design System creation",
+        subheadline: "and framework for Design System creation",
       }}
       mode="list"
       spaceAfter="small"

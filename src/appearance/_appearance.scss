@@ -47,3 +47,11 @@
     }
   }
 }
+
+.template {
+  &__main.template__main-only {
+    @media (min-width: 76rem) {
+      width: 80%;
+    }
+  }
+}
