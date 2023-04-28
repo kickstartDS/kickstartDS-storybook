@@ -1,3 +1,15 @@
+# v2.5.5 (Fri Apr 28 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Content update of Storybook welcome page ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+#### Authors: 1
+
+- Daniel ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+---
+
 # v2.5.4 (Fri Apr 28 2023)
 
 #### ⚠️ Pushed to `master`
