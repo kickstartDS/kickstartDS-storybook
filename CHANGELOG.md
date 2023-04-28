@@ -1,3 +1,15 @@
+# v2.5.3 (Fri Apr 28 2023)
+
+#### 🐛 Bug Fix
+
+- Decrease maximum appearance cover image size [#107](https://github.com/kickstartDS/kickstartDS-storybook/pull/107) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.5.2 (Fri Apr 28 2023)
 
 #### 🐛 Bug Fix
