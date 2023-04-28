@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 28 Apr 2023 11:29:59 GMT
+ * Generated on Fri, 28 Apr 2023 13:31:22 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -1107,10 +1107,12 @@
 }
 .kds-appearance-meta__content {
   display: flex;
+  justify-content: space-between;
   gap: var(--ks-spacing-m);
 }
 .kds-appearance-meta__col {
-  flex: 1 1;
+  flex: 1 0 auto;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   gap: var(--ks-spacing-stack-m);
