@@ -18,7 +18,7 @@
   --c-nav-main_item--padding: 0.5rem var(--g-header-spacing-h);
   --c-nav-main_item--background-color-hover: var(--ks-color-primary-inverted);
 
-  @include breakpoint.media("≥m") {
+  @include breakpoint.media("≥l") {
     --c-nav-main_item--font: var(--ks-font-interface-s);
     --c-nav-main_item--padding: none;
   }
