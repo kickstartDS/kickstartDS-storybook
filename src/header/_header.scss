@@ -1,62 +1,60 @@
 @use "header-tokens";
 @use "../breakpoint";
 
-:root {
-  header[ks-component="kds.header"] {
-    display: flex;
-    justify-content: center;
-    transition-duration: var(--ks-duration-slow);
-    transition-property: all;
+header[ks-component="kds.header"] {
+  display: flex;
+  justify-content: center;
+  transition-duration: var(--ks-duration-slow);
+  transition-property: all;
+}
+
+.kds-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
+  width: 100%;
+  max-width: var(--l-section--content-width-wide);
+  gap: var(--ks-spacing-inline-m);
+  align-items: flex-end;
+  transition-duration: var(--ks-duration-slow);
+  transition-property: all;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    background-color: #02222be6;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+    transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-duration: 200ms;
+    -o-transition-duration: 200ms;
   }
 
-  .kds-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
-    width: 100%;
-    max-width: var(--l-section--content-width-wide);
-    gap: var(--ks-spacing-inline-m);
-    align-items: flex-end;
-    transition-duration: var(--ks-duration-slow);
-    transition-property: all;
-    z-index: 1;
-
+  .overlay-open & {
     &::after {
-      content: "";
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      left: 0;
-      top: 0;
-      background-color: #02222be6;
-      z-index: -1;
-      pointer-events: none;
-      opacity: 0;
-      transition-property: opacity;
-      -o-transition-property: opacity;
-      transition-duration: 200ms;
-      -o-transition-duration: 200ms;
+      opacity: 1;
     }
+  }
 
-    &.overlay-open {
-      &::after {
-        opacity: 1;
-      }
-    }
+  @include breakpoint.media("≥m") {
+    padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
+  }
 
-    @include breakpoint.media("≥m") {
-      padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
-    }
+  a {
+    --g-link--text-decoration: none;
+    --g-link--background-hover: none;
+  }
 
-    a {
-      --g-link--text-decoration: none;
-      --g-link--background-hover: none;
-    }
-
-    &--spacer {
-      height: var(--g-header-height);
-    }
+  &--spacer {
+    height: var(--g-header-height);
   }
 }
