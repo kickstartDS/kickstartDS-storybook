@@ -15,10 +15,14 @@ import { SourceSnippet } from "../source-snippet/SourceSnippetComponent";
 import { ConciergeProps as ConciergeSchemaProps } from "./ConciergeProps";
 
 const defaultHandleResetPrompt = () => {
+  document.querySelector("#msg")?.scrollIntoView({ block: "center" });
   return;
 };
 
 const defaultHandleConciergeConfirm = () => {
+  document
+    .querySelector(".template--concierge")
+    ?.scrollIntoView({ block: "center" });
   return;
 };
 
@@ -63,6 +67,28 @@ export const Concierge = forwardRef<
             align="left"
             content="Design System Concierge"
             subheadline="Ask anything and get pointed the right way"
+            renderContent={(content) => (
+              <div>
+                {content}
+                <br />
+                <a
+                  href="https://www.producthunt.com/posts/design-system-concierge?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-design&#0045;system&#0045;concierge"
+                  target="_blank"
+                >
+                  <img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=391189&theme=light"
+                    alt="Design&#0032;System&#0032;Concierge - Your&#0032;AI&#0045;powered&#0032;Design&#0032;System&#0032;assistant | Product Hunt"
+                    style={{
+                      width: "250px",
+                      height: "54px",
+                      marginTop: "1rem",
+                    }}
+                    width="250"
+                    height="54"
+                  />
+                </a>
+              </div>
+            )}
           />
         </div>
       </Section>
