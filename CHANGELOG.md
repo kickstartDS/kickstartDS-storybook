@@ -1,3 +1,51 @@
+# v2.5.7 (Sun Apr 30 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add Product Hunt badge to concierge for launch ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.5.6 (Fri Apr 28 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: hotfix layout without media in appearance ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.5.5 (Fri Apr 28 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Content update of Storybook welcome page ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+#### Authors: 1
+
+- Daniel ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+---
+
+# v2.5.4 (Fri Apr 28 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Add DS Concierge image for Storybook welcome page ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+#### Authors: 1
+
+- Daniel ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+---
+
 # v2.5.3 (Fri Apr 28 2023)
 
 #### 🐛 Bug Fix

@@ -11,7 +11,53 @@ import { Related } from "../related/RelatedComponent";
 import { Person } from "../person/PersonComponent";
 import { Section } from "../section/SectionComponent";
 
-import { AppearanceProps } from "./AppearanceProps";
+import { AppearanceProps, Participants } from "./AppearanceProps";
+
+const Description: FunctionComponent<{
+  description: string;
+  link: string;
+  participants: Participants;
+}> = ({ description, link, participants }) => {
+  return (
+    <Stack gutter="var(--ks-spacing-stack-s)">
+      <Headline content="Description" level="p" styleAs="p" />
+      <TextMedia
+        className="kds-appearance--text-media"
+        media={[]}
+        mediaAlignment="intext-left"
+        text={description}
+      />
+      <div>
+        <Button
+          href={link}
+          label="Go to appearance"
+          variant="outline"
+          size="medium"
+          newTab
+          iconAfter={{
+            icon: "chevron-right",
+          }}
+        />
+      </div>
+      {participants && participants.length > 0 && (
+        <>
+          <Divider />
+          <Headline content="Participants" level="p" styleAs="p" />
+          <Stack gutter="var(--ks-spacing-stack-xs)">
+            {participants?.map((item, i) => (
+              <Person
+                name={item.name}
+                avatar={item.avatar}
+                size={"m"}
+                key={i}
+              />
+            ))}
+          </Stack>
+        </>
+      )}
+    </Stack>
+  );
+};
 
 export const Appearance: FunctionComponent<
   AppearanceProps & HTMLAttributes<HTMLDivElement>
@@ -110,12 +156,16 @@ ${language}
         headline={{
           level: "h3",
           align: "left",
-          content: "Some impressions",
+          content: media && media.length > 0 ? "Some impressions" : "",
         }}
       >
         <div className="template">
-          <div className="template__main">
-            {media && media.length > 0 && (
+          <div
+            className={`template__main${
+              media && media.length > 0 ? "" : " template__main-only"
+            }`}
+          >
+            {media && media.length > 0 ? (
               <Stack gutter="var(--ks-spacing-stack-l)">
                 {media && media.length > 0 && (
                   <>
@@ -142,47 +192,23 @@ ${language}
                   </>
                 )}
               </Stack>
+            ) : (
+              <Description
+                description={description}
+                link={link}
+                participants={participants}
+              />
             )}
           </div>
-          <div className="template__side">
-            <Stack gutter="var(--ks-spacing-stack-s)">
-              <Headline content="Description" level="p" styleAs="p" />
-              <TextMedia
-                className="kds-appearance--text-media"
-                media={[]}
-                mediaAlignment="intext-left"
-                text={description}
+          {media && media.length > 0 && (
+            <div className="template__side">
+              <Description
+                description={description}
+                link={link}
+                participants={participants}
               />
-              <div>
-                <Button
-                  href={link}
-                  label="Go to appearance"
-                  variant="outline"
-                  size="medium"
-                  newTab
-                  iconAfter={{
-                    icon: "chevron-right",
-                  }}
-                />
-              </div>
-              {participants && participants.length > 0 && (
-                <>
-                  <Divider />
-                  <Headline content="Participants" level="p" styleAs="p" />
-                  <Stack gutter="var(--ks-spacing-stack-xs)">
-                    {participants?.map((item, i) => (
-                      <Person
-                        name={item.name}
-                        avatar={item.avatar}
-                        size={"m"}
-                        key={i}
-                      />
-                    ))}
-                  </Stack>
-                </>
-              )}
-            </Stack>
-          </div>
+            </div>
+          )}
         </div>
       </Section>
       <Section

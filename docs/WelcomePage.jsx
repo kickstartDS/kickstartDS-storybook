@@ -16,8 +16,9 @@ export const Welcome = () => (
           headline: {
             level: "h1",
             styleAs: "h1",
-            content: "Welcome 👋",
-            subheadline: "Get started with the kickstartDS Design System!",
+            content: "Welcome to our Design System & Demo space",
+            subheadline:
+              "kickstartDS is an Open Source framework and starter kit for Design System creation",
           },
           horizontal: "center",
           indent: false,
@@ -36,7 +37,7 @@ export const Welcome = () => (
             size: "medium",
             variant: "solid",
           },
-          text: "Explore our frontend first framework, and all of its comprehensive components backing our landing page, our Wordpress blog and the glossary. Take a deeper look at our design and component tokens, interact with the Storybook controls, or preview some sample pages we've assembled.",
+          text: "This Storybook should serve to display and help experience our **own Design System** application, but it's also structured to allow exploration of kickcstartDS in general. Discover the different **component modules**, with their comprehensive components, including design and component tokens, interact with the Storybook controls of a component, or preview sample recipes and pages we've assembled to show components in context.",
           vertical: "top",
         }}
         height="small"
@@ -105,18 +106,48 @@ export const Welcome = () => (
         }}
       />
       <TeaserBox
-        topic="Blog"
-        text="Learn about the newest developments, or explore background articles about our architectural choices, and the rationale behind our decisions!"
+        topic="Dev Documentation"
+        text="Get started in just 5 minutes with our extensive documentation around the creation of Design Systems, including explaination and guides on how to create your Design System."
         link={{
-          href: "https://www.kickstartds.com/blog",
+          href: "https://www.kickstartds.com/docs",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
-          label: "Read more",
+          label: "Get started",
           newTab: false,
           variant: "outline",
         }}
       />
+    </Section>
+    <Section
+      className="col-four"
+      spaceAfter="small"
+      spaceBefore="small"
+      width="max"
+    >
+      <TeaserBox
+        topic="Design System Concierge"
+        text="Our AI-powered DS assistant helps by providing expert guidance and pointing you towards the right Design System resources."
+        link={{
+          href: "https://www.kickstartds.com/concierge",
+          iconAfter: false,
+          iconAnimation: false,
+          iconBefore: false,
+          label: "View Recipes",
+          newTab: true,
+          variant: "solid",
+        }}
+      />
+      <div>
+        <ContentBox image="img/concierge-sources-hand-storybook.svg" />
+        <Headline
+          content="Design System Concierge"
+          styleAs="h2"
+          subheadline="Your AI-powered Design System assistant"
+          align="center"
+          className="no-spacing"
+        />
+      </div>
     </Section>
     <Section
       className="col-four"
@@ -153,11 +184,10 @@ export const Welcome = () => (
       gutter="default"
       headline={{
         align: "left",
-        content: "Frontend first framework",
+        content: "Next-gen UI-development toolkit",
         level: "h2",
         pageHeader: false,
-        subheadline:
-          "Proven content components to serve your frontend needs. It works for either explicit HTML integration or direct usage in React (for the start) and comes with built-in styleguide and documentation.",
+        subheadline: "and framework for Design System creation",
       }}
       mode="list"
       spaceAfter="small"
@@ -168,15 +198,15 @@ export const Welcome = () => (
       ks-inverted="true"
     >
       <TeaserBox
-        topic="Interested and want to know more?"
+        topic="Learn how to own a Design System without investing years of development"
         darkStyle
-        text="**kickstartDS** is made for productivity. And so are we! Start the conversation today, tell us what you think and let's discuss if kickstartDS could be a real option for your next project."
+        text="With **kickstartDS** teams are able to design, build, and organize UI components better and faster. Using Storybook you make sure every element aligns with all the responsive scenarios your users may encounter!"
         link={{
-          href: "mailto:hello@kickstartds.com",
+          href: "https://www.kickstartds.com/docs",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
-          label: "Send us an email",
+          label: "Try it, it's Open Source",
           newTab: true,
           variant: "solid",
         }}
