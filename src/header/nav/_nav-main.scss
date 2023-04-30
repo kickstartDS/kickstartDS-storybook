@@ -60,9 +60,7 @@
       width: fit-content;
       padding: var(--c-nav-main_item--padding);
       --ks-text-color-default-interactive: var(--c-nav-main_item--color);
-      --ks-text-color-default-interactive-hover: var(
-        --c-nav-main_item--color-hover
-      );
+      --ks-text-color-default-interactive-hover: var(--c-nav-main_item--color-hover);
       --g-link--font-weight: var(--c-nav-main_item--font-weight);
       /* critical:end */
 
@@ -102,10 +100,7 @@
   @include breakpoint.media("<l") {
     /* critical:start */
     left: -100%;
-    justify-content: space-between;
     /* critical:end */
-
-    top: 0 !important;
     height: 100vh;
     overflow: hidden;
 

@@ -12,7 +12,7 @@
       order: -1;
       margin-top: 0 !important;
       justify-content: flex-end;
-      gap: 2px; // manually align to icons
+      gap: var(--ks-spacing-inline-s); // manually align to icons
     }
   }
 
@@ -22,7 +22,7 @@
       flex-direction: column;
       align-items: center;
       font: var(--ks-font-interface-xs);
-      padding: var(--ks-spacing-xs);
+      padding: var(--ks-spacing-xs) 0;
       position: relative;
 
       .icon {

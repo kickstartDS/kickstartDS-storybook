@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 30 Apr 2023 12:50:15 GMT
+ * Generated on Sun, 30 Apr 2023 20:17:31 GMT
  */
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-primary-to-bg-9-base);
@@ -2771,13 +2771,14 @@
   }
 }
 
-:root header[ks-component="kds.header"] {
+header[ks-component="kds.header"] {
   display: flex;
   justify-content: center;
   transition-duration: var(--ks-duration-slow);
   transition-property: all;
 }
-:root .kds-header {
+
+.kds-header {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -2790,7 +2791,7 @@
   transition-property: all;
   z-index: 1;
 }
-:root .kds-header::after {
+.kds-header::after {
   content: "";
   position: fixed;
   width: 100vw;
@@ -2807,19 +2808,19 @@
   transition-duration: 200ms;
   -o-transition-duration: 200ms;
 }
-:root .kds-header.overlay-open::after {
+.overlay-open .kds-header::after {
   opacity: 1;
 }
 @media (min-width: 48em) {
-  :root .kds-header {
+  .kds-header {
     padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
   }
 }
-:root .kds-header a {
+.kds-header a {
   --g-link--text-decoration: none;
   --g-link--background-hover: none;
 }
-:root .kds-header--spacer {
+.kds-header--spacer {
   height: var(--g-header-height);
 }
 
@@ -2837,7 +2838,7 @@
   --c-nav-main_item--padding: 0.5rem var(--g-header-spacing-h);
   --c-nav-main_item--background-color-hover: var(--ks-color-primary-inverted);
 }
-@media (min-width: 48em) {
+@media (min-width: 62em) {
   :root,
 [ks-theme],
 [ks-inverted] {
@@ -2864,7 +2865,7 @@
     order: -1;
     margin-top: 0 !important;
     justify-content: flex-end;
-    gap: 2px;
+    gap: var(--ks-spacing-inline-s);
   }
 }
 .nav-main-secondary__item__link {
@@ -2872,7 +2873,7 @@
   flex-direction: column;
   align-items: center;
   font: var(--ks-font-interface-xs);
-  padding: var(--ks-spacing-xs);
+  padding: var(--ks-spacing-xs) 0;
   position: relative;
 }
 .nav-main-secondary__item__link .icon {
@@ -2959,9 +2960,7 @@
   width: fit-content;
   padding: var(--c-nav-main_item--padding);
   --ks-text-color-default-interactive: var(--c-nav-main_item--color);
-  --ks-text-color-default-interactive-hover: var(
-    --c-nav-main_item--color-hover
-  );
+  --ks-text-color-default-interactive-hover: var(--c-nav-main_item--color-hover);
   --g-link--font-weight: var(--c-nav-main_item--font-weight);
   /* critical:end */
 }
@@ -2987,9 +2986,7 @@
   .nav-main {
     /* critical:start */
     left: -100%;
-    justify-content: space-between;
     /* critical:end */
-    top: 0 !important;
     height: 100vh;
     overflow: hidden;
     position: fixed;
