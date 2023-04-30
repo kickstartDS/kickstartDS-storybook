@@ -1,3 +1,15 @@
+# v2.5.7 (Sun Apr 30 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add Product Hunt badge to concierge for launch ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.5.6 (Fri Apr 28 2023)
 
 #### ⚠️ Pushed to `master`
