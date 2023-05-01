@@ -246,7 +246,9 @@ export const Concierge = forwardRef<
               </span>
               <br />
               <br />
-              <a href="#">Read our blog post about it (coming soon!)</a>
+              <a href="/blog/launching-the-design-system-concierge/">
+                Read our blog post about it!
+              </a>
             </div>
           </div>
           <div className="template__side">
