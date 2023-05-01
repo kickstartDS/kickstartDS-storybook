@@ -1,3 +1,17 @@
+# v2.5.8 (Mon May 01 2023)
+
+#### 🐛 Bug Fix
+
+- Secondary nav [#108](https://github.com/kickstartDS/kickstartDS-storybook/pull/108) ([@lmestel](https://github.com/lmestel) [@julrich](https://github.com/julrich) [@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 3
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.5.7 (Sun Apr 30 2023)
 
 #### ⚠️ Pushed to `master`
