@@ -2,8 +2,13 @@
 @use "bourbon/core/bourbon";
 @use "../../breakpoint";
 @use "./nav-main-tokens";
+@use "./nav-main-secondary";
 
 .nav-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
   ul {
     /* critical:start */
     box-sizing: border-box;
@@ -29,12 +34,6 @@
     }
 
     &.nav-main__item--icon {
-      &::after {
-        content: none;
-      }
-    }
-
-    &--github {
       .icon {
         border-radius: var(--ks-border-radius-circle);
         transition: all var(--ks-transition-hover);
@@ -43,6 +42,12 @@
       &:hover {
         .icon {
           background-color: var(--ks-color-primary-inverted);
+        }
+      }
+
+      .nav-main__item__link {
+        &::after {
+          content: none;
         }
       }
     }
@@ -95,16 +100,10 @@
   @include breakpoint.media("<l") {
     /* critical:start */
     left: -100%;
-    display: flex;
-    justify-content: space-between;
     /* critical:end */
-
-    top: 0 !important;
-    height: 200vh;
+    height: 100vh;
     overflow: hidden;
 
-    flex-direction: column;
-    justify-content: flex-start;
     position: fixed;
     width: 77vw;
     max-width: 23rem;
@@ -120,6 +119,10 @@
     box-shadow: 20px 0px 30px #00000000;
 
     &__item {
+      &--icon {
+        @include bourbon.hide-visually;
+      }
+
       &__link {
         &::after {
           height: 100%;
@@ -192,13 +195,6 @@
     }
 
     &__item {
-      &--github {
-        .nav-main__item__link {
-          &::after {
-            content: none;
-          }
-        }
-      }
       /* critical:start */
       flex-shrink: 0;
 

@@ -7,7 +7,7 @@ export const NavToggle = () => (
     id="toggle-sidebar"
     aria-controls="nav-main"
     aria-expanded="false"
-    data-component="base.nav-toggle"
+    ks-component="base.nav-toggle"
   >
     <span className="nav-toggle__label">Navigation öffnen/schließen</span>
     <div className="nav-toggle__icon">

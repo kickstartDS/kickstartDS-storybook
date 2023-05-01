@@ -1,0 +1,73 @@
+@use "bourbon/core/bourbon";
+@use "../../breakpoint";
+
+.nav-main-secondary {
+  &__list {
+    margin-top: var(--ks-spacing-stack-l) !important;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    @include breakpoint.media("≥l") {
+      order: -1;
+      margin-top: 0 !important;
+      justify-content: flex-end;
+      gap: var(--ks-spacing-inline-s); // manually align to icons
+    }
+  }
+
+  &__item {
+    &__link {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      font: var(--ks-font-interface-xs);
+      padding: var(--ks-spacing-xs) 0;
+      position: relative;
+
+      .icon {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: var(--ks-spacing-stack-xs);
+
+        @include breakpoint.media("≥l") {
+          @include bourbon.hide-visually;
+        }
+      }
+
+      &::after {
+        --corner-height: 8px;
+
+        content: "";
+        width: 0;
+        background-color: var(--c-nav-main_item--background-color-hover);
+        position: absolute;
+        height: 30%;
+        left: calc(var(--corner-height) * -1);
+        bottom: 5%;
+        z-index: -1;
+        clip-path: polygon(
+          0% var(--corner-height),
+          var(--corner-height) 0,
+          100% 0,
+          100% calc(100% - var(--corner-height) * 1),
+          calc(100% - var(--corner-height) * 1) 100%,
+          0 100%
+        );
+
+        opacity: 0;
+        transition: all var(--ks-duration-medium);
+
+        @include breakpoint.media("≥l") {
+          bottom: 20%;
+        }
+      }
+      &:hover {
+        &::after {
+          width: calc(100% + var(--corner-height) * 2);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

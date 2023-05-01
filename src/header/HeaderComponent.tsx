@@ -17,6 +17,7 @@ export const Header: FunctionComponent<
   homeLink,
   navEnabled,
   navEntries,
+  secondaryNavEntries,
   className,
   activeEntry,
   cta,
@@ -24,29 +25,26 @@ export const Header: FunctionComponent<
   ...props
 }) => (
   <>
-    <Section {...props} spaceAfter="none" spaceBefore="none" width="full">
-      <div>
-        <NavSkip />
-        {announcementBar && announcementBar.content && (
-          <AnnouncementBar
-            {...announcementBar}
-            targetSessionStorageKey="hideSubscriptionForm"
+    <NavSkip />
+    {announcementBar && announcementBar.content && (
+      <AnnouncementBar
+        {...announcementBar}
+        targetSessionStorageKey="hideSubscriptionForm"
+      />
+    )}
+    <header ks-component="kds.header">
+      <div className={classnames(className, "kds-header")}>
+        <Logo dark={dark} homeLink={homeLink} />
+        {navEntries && navEntries.length > 0 && navEnabled && (
+          <NavMain
+            dark={dark}
+            navEntries={navEntries}
+            secondaryNavEntries={secondaryNavEntries}
+            activeEntry={activeEntry}
+            cta={cta}
           />
         )}
-        <header data-component="kds.header">
-          <div className={classnames(className, "kds-header")}>
-            <Logo dark={dark} homeLink={homeLink} />
-            {navEntries && navEntries.length > 0 && navEnabled && (
-              <NavMain
-                dark={dark}
-                navEntries={navEntries}
-                activeEntry={activeEntry}
-                cta={cta}
-              />
-            )}
-          </div>
-        </header>
       </div>
-    </Section>
+    </header>
   </>
 );

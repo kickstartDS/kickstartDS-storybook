@@ -246,7 +246,30 @@ export const Concierge = forwardRef<
               </span>
               <br />
               <br />
-              <a href="#">Read our blog post about it (coming soon!)</a>
+              <a href="/blog/launching-the-design-system-concierge/">
+                Read our blog post about it!
+              </a>
+              <br />
+              <br />
+              <span>
+                And we'd love to hear your thoughts on how the Concierge has
+                helped with your Design System-related questions. Your feedback
+                is invaluable as we work to improve the experience.{" "}
+                <a href="https://discord.gg/mwKzD5gejY" target="_blank">
+                  Join our Discord Community
+                </a>{" "}
+                to share any comments or suggestions, and thank you for being
+                part of our journey!
+              </span>
+              <br />
+              <br />
+              <Button
+                label="Join our Discord Community"
+                size="small"
+                variant="outline"
+                href="https://discord.gg/mwKzD5gejY"
+                newTab={true}
+              />
             </div>
           </div>
           <div className="template__side">
