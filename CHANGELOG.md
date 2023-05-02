@@ -1,3 +1,16 @@
+# v2.5.11 (Tue May 02 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat(welcome-page): update welcome page + add custom teaser-row classes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.5.10 (Tue May 02 2023)
 
 #### ⚠️ Pushed to `master`
