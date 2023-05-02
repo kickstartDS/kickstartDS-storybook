@@ -1,3 +1,15 @@
+# v2.5.10 (Tue May 02 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: correction of image ratio ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+#### Authors: 1
+
+- Daniel ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+---
+
 # v2.5.9 (Tue May 02 2023)
 
 #### ⚠️ Pushed to `master`
