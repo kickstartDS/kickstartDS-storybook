@@ -1,13 +1,15 @@
 import { Button } from "@kickstartds/base/lib/button";
+import { Picture } from "@kickstartds/base/lib/picture";
 import { Section } from "@kickstartds/base/lib/section";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { ContentBox } from "@kickstartds/base/lib/content-box";
 import { Headline } from "@kickstartds/base/lib/headline";
 import { Visual } from "@kickstartds/content/lib/visual";
+import { Inline } from "@bedrock-layout/primitives";
 
 export const Welcome = () => (
   <>
-    <Section width="full" spaceBefore="none" spaceAfter="small">
+    <Section mode="list" width="full" spaceBefore="none" spaceAfter="small">
       <Visual
         className="c-visual--welcome"
         box={{
@@ -20,7 +22,7 @@ export const Welcome = () => (
             subheadline:
               "kickstartDS is an Open Source framework and starter kit for Design System creation",
           },
-          horizontal: "center",
+          horizontal: "left",
           indent: false,
           link: {
             enabled: false,
@@ -37,15 +39,15 @@ export const Welcome = () => (
             size: "medium",
             variant: "solid",
           },
-          text: "This Storybook should serve to display and help experience our **own Design System** application, but it's also structured to allow exploration of kickcstartDS in general. Discover the different **component modules**, with their comprehensive components, including design and component tokens, interact with the Storybook controls of a component, or preview sample recipes and pages we've assembled to show components in context.",
+          text: "This Storybook should serve to display and help experience our **own Design System** application, but it's also structured to allow exploration of kickstartDS in general. Discover the different **component modules**, with their comprehensive components, including design and component tokens, interact with the Storybook controls of a component, or preview sample recipes and pages we've assembled to show components in context.",
           vertical: "top",
         }}
         height="small"
         media={{
           image: {
             indent: "none",
-            srcDesktop: "img/banner/welcome-centered.svg",
-            srcTablet: "img/banner/welcome-centered.svg",
+            srcDesktop: "img/banner/welcome.svg",
+            srcTablet: "img/banner/welcome-tablet.svg",
             srcMobile: "img/banner/welcome-centered-m.svg",
           },
           mode: "image",
@@ -124,8 +126,19 @@ export const Welcome = () => (
       spaceAfter="small"
       spaceBefore="small"
       width="max"
+      headline={{
+        content: "Design System Concierge",
+        styleAs: "h2",
+        subheadline: "Your AI-powered Design System assistant",
+        align: "center",
+        spaceAfter: "small",
+        className: "no-spacing",
+      }}
     >
       <TeaserBox
+        imageSpacing
+        className="c-teaser--row"
+        image="img/concierge-sources-hand-storybook.svg"
         topic="Design System Concierge"
         text="Our AI-powered DS assistant helps by providing expert guidance and pointing you towards the right Design System resources."
         link={{
@@ -133,39 +146,31 @@ export const Welcome = () => (
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
-          label: "View Recipes",
+          label: "Go to Concierge",
           newTab: true,
           variant: "solid",
         }}
       />
-      <div>
-        <ContentBox image="img/concierge-sources-hand-storybook.svg" />
-        <Headline
-          content="Design System Concierge"
-          styleAs="h2"
-          subheadline="Your AI-powered Design System assistant"
-          align="center"
-          className="no-spacing"
-        />
-      </div>
+
     </Section>
     <Section
       className="col-four"
       spaceAfter="small"
       spaceBefore="small"
       width="max"
+      headline={{
+        content: "Need inspiration?",
+        styleAs: "h2",
+        spaceAfter: "small",
+        subheadline: "Check out our Recipe catalogue",
+        align: "center",
+        className: "no-spacing",
+      }}
     >
-      <div>
-        <ContentBox image="img/lightbulb.png" />
-        <Headline
-          content="Need inspiration?"
-          styleAs="h2"
-          subheadline="Check out our Recipe catalogue"
-          align="center"
-          className="no-spacing"
-        />
-      </div>
       <TeaserBox
+        imageSpacing
+        className="c-teaser--row"
+        image="img/lightbulb.png"
         topic="Recipes"
         text="Explore the possibilities of kickstartDS in our component-cookbook. It shows a variety of use cases, easy for you to recreate and to play around with."
         link={{

@@ -9,7 +9,6 @@
     &__box {
       --c-visual_box--color: var(--c-rich-text--color);
       --c-visual_box--background: var(--ks-color-fg-inverted);
-      box-shadow: 4px 4px 0 var(--ks-color-secondary);
     }
 
     [ks-inverted="true"] {
@@ -33,6 +32,22 @@
     @media (max-width: 39.99em) {
       &--full {
         height: unset;
+      }
+    }
+  }
+
+  @container visual (min-width: 640px) {
+    .c-visual {
+      &__box {
+        --c-visual_box--max-width: 90%;
+      }
+    }
+  }
+
+  @container visual (min-width: 1200px) {
+    .c-visual {
+      &__box {
+        --c-visual_box--max-width: 70%;
       }
     }
   }

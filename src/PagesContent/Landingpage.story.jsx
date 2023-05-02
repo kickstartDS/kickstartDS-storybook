@@ -33,10 +33,10 @@ const Page = () => (
           background: "transparent",
           enabled: true,
           headline: {
-            content: "kickstartDS is the starter kit for Design Systems",
+            content: "kickstartDS is the Open Source starter kit for Design Systems",
             level: "h1",
             styleAs: "h1",
-            subheadline: "The frontend first framework!",
+            subheadline: "Democratizing Design Systems",
             switchOrder: true,
           },
           horizontal: "left",
@@ -58,7 +58,8 @@ const Page = () => (
             size: "medium",
             variant: "solid",
           },
-          text: `We **enable** web development **teams to create** consistent and brand compliant web **frontends** super **efficiently.** With a **built-in Design System** to serve all your digital touch points. Easy like squeeeeezing a lemon.`,
+          text: `
+A low-code framework, UI develeopment toolkit and comprehensive component library enabling digital teams to create consistent and brand compliant web frontends super efficiently. Easy like squeeeeezing a lemon`,
           vertical: "center",
         }}
         height="default"
