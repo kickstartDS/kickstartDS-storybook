@@ -1,3 +1,15 @@
+# v2.5.12 (Wed May 24 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix(appearance): Layout for Appearances without media / images ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.5.11 (Tue May 02 2023)
 
 #### ⚠️ Pushed to `master`
