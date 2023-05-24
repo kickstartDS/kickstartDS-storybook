@@ -76,6 +76,40 @@ A low-code framework, UI develeopment toolkit and comprehensive component librar
     </Section>
     <Section
       ks-inverted="true"
+      width="full"
+      spaceAfter="none"
+      spaceBefore="none"
+      variant="highlight"
+      className="l-section--outer-width-wide"
+    >
+      <Storytelling
+        box={{
+          headline: {
+            content: "Meet our Design System Concierge",
+            subheadline: "Your AI-powered Design System assistant!"
+          },
+          text: "Our Design System Concierge can help by providing expert guidance and pointing you towards the right resources, whether it's implementation guides, architecture documents, adoption strategies, or other content.",
+
+          links:
+            [
+              {
+                label: "Try it, it's free"
+              },
+              {
+                label: "Upvote on ProductHunt",
+                variant: "outline"
+              },
+            ]
+        }}
+        image={{
+          source: "img/concierge/concierge-desk.svg",
+          hAlign: "center"
+        }}
+
+      />
+    </Section>
+    {/* <Section
+      ks-inverted="true"
       headline={{
         align: "center",
         content: "How does it work",
@@ -92,7 +126,7 @@ A low-code framework, UI develeopment toolkit and comprehensive component librar
       className="l-section--outer-width-max"
     >
       <Steps />
-    </Section>
+    </Section> */}
 
     <Section
       width="wide"

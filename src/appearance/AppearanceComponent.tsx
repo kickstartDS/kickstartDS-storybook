@@ -19,14 +19,16 @@ const Description: FunctionComponent<{
   participants: Participants;
 }> = ({ description, link, participants }) => {
   return (
-    <Stack gutter="var(--ks-spacing-stack-s)">
-      <Headline content="Description" level="p" styleAs="p" />
-      <TextMedia
-        className="kds-appearance--text-media"
-        media={[]}
-        mediaAlignment="intext-left"
-        text={description}
-      />
+    <Stack gutter="var(--ks-spacing-stack-m)">
+      <div>
+        <Headline content="Description" level="p" spaceAfter="small" />
+        <TextMedia
+          className="kds-appearance--text-media"
+          media={[]}
+          mediaAlignment="intext-left"
+          text={description}
+        />
+      </div>
       <div>
         <Button
           href={link}
@@ -42,17 +44,19 @@ const Description: FunctionComponent<{
       {participants && participants.length > 0 && (
         <>
           <Divider />
-          <Headline content="Participants" level="p" styleAs="p" />
-          <Stack gutter="var(--ks-spacing-stack-xs)">
-            {participants?.map((item, i) => (
-              <Person
-                name={item.name}
-                avatar={item.avatar}
-                size={"m"}
-                key={i}
-              />
-            ))}
-          </Stack>
+          <div>
+            <Headline content="Participants" level="p" styleAs="p" />
+            <Stack gutter="var(--ks-spacing-stack-xs)">
+              {participants?.map((item, i) => (
+                <Person
+                  name={item.name}
+                  avatar={item.avatar}
+                  size={"m"}
+                  key={i}
+                />
+              ))}
+            </Stack>
+          </div>
         </>
       )}
     </Stack>
