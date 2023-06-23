@@ -1,3 +1,15 @@
+# v2.5.13 (Fri Jun 23 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feat(visual-stories): set headline levels to h2 ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.5.12 (Wed May 24 2023)
 
 #### ⚠️ Pushed to `master`
