@@ -13,7 +13,7 @@
               "items": {
                 "allOf": [
                   {
-                    "$ref": "http://schema.kickstartds.com/base/button.schema.json"
+                    "$ref": "http://kickstartds.com/button.schema.json"
                   },
                   {
                     "type": "object",

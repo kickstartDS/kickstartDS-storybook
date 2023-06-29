@@ -29,6 +29,7 @@ export const Showcase: FunctionComponent<
   summary,
   quote,
   overviewPage,
+  excerpt,
   ...props
 }) => (
   <div {...props}>
@@ -44,15 +45,17 @@ export const Showcase: FunctionComponent<
           <Headline level="h1" content={title} />
           {tags && tags.length > 0 && (
             <div className="tag-label-container">
-              {tags?.map((tag, i) => (
-                <div>
-                  <TagLabel label={tag} size="m" key={i} />
-                </div>
+              {tags?.map((tags, i) => (
+                <TagLabel
+                  link={tags.link}
+                  label={tags.label}
+                  size="m"
+                  key={i}
+                />
               ))}
             </div>
           )}
         </div>
-
         <RichText text={summary} />
         <div>
           <Button
@@ -119,17 +122,29 @@ export const Showcase: FunctionComponent<
                 {media?.map((item, i) => (
                   <TextMedia
                     media={[
-                      {
-                        lightboxImage: {
-                          image: item.src,
-                          thumb: item.src,
-                          height: 853,
-                          width: 1280,
-                          zoomIcon: true,
-                          gallery: "closer-look",
-                        },
-                        caption: item.caption,
-                      },
+                      item.mode === "image"
+                        ? {
+                            lightboxImage: {
+                              image: item.src,
+                              thumb: item.src,
+                              height: 853,
+                              width: 1280,
+                              zoomIcon: true,
+                              gallery: "closer-look",
+                            },
+
+                            caption: item.caption,
+                          }
+                        : {
+                            video: {
+                              src: item.src,
+                              title: "lorem",
+                              height: 853,
+                              width: 1280,
+                              iframe: false,
+                            },
+                            caption: item.caption,
+                          },
                     ]}
                     key={i}
                     text=""
@@ -235,7 +250,10 @@ export const Showcase: FunctionComponent<
                 excerpt={item.excerpt}
                 title={item.title}
                 typeLabel={item.typeLabel}
-                tags={item.tags}
+                tags={item.tags?.map((tag) => ({
+                  label: tag.label,
+                  link: tag.link,
+                }))}
                 key={i}
               />
             ))}

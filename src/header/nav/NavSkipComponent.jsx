@@ -4,7 +4,7 @@ export const NavSkip = () => (
   <nav
     className="nav-skip"
     aria-label="Sprungmarken"
-    data-component="base.nav-skip"
+    ks-component="base.nav-skip"
   >
     <ul className="nav-skip__list">
       <li>

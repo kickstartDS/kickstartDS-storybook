@@ -8,8 +8,17 @@
   .l-container--headline[min-width~="640"] .c-headline {
     max-width: 90%;
   }
+
   .c-headline {
     max-width: calc(100vw - calc(var(--l-section--content-padding) * 2));
+
+    .c-headline__headline {
+      padding-bottom: var(--c-headline--space-after);
+    }
+
+    p.c-headline__headline {
+      --c-rich-text_headline--font: var(--ks-font-copy-m);
+    }
 
     h1 + .c-headline__subheadline,
     .c-headline__h1 + .c-headline__subheadline {

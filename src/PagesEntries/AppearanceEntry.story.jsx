@@ -26,7 +26,16 @@ const Page = () => (
         name: "Podrocket by Logrocket",
         url: "https://podrocket.logrocket.com/",
       }}
-      tags={["Framework", "Design System"]}
+      tags={[
+        {
+          label: "Framework",
+          link: "#"
+        },
+        {
+          label: "Design System",
+          link: "#"
+        }
+      ]}
       language="English"
       link="http://podrocket.logrocket.com/design-system-starter-kit"
       media={[
@@ -60,7 +69,20 @@ const Page = () => (
           excerpt:
             "We talked about how we have put together a code-sided starter kit for digital design systems and...",
           image: "img/showcase/showcase-cover.png",
-          tags: ["Frontend", "HTML", "API"],
+          tags: [
+            {
+              label: "Frontend",
+              link: "#"
+            },
+            {
+              label: "HTML",
+              link: "#"
+            },
+            {
+              label: "API",
+              link: "#"
+            }
+          ],
           title: "Amplifyn ",
           typeLabel: "Appearance",
           url: "/appearance/amplifyn/",
@@ -69,7 +91,16 @@ const Page = () => (
           excerpt:
             "We talked about how we have put together a code-sided starter kit for digital design systems and...",
           image: "img/showcase/showcase-cover.png",
-          tags: ["CSS", "HTML"],
+          tags: [
+            {
+              label: "CSS",
+              link: "#"
+            },
+            {
+              label: "HTML",
+              link: "#"
+            }
+          ],
           title: "Podrocket ",
           typeLabel: "Appearance",
           url: "/appearance/amplifyn/",
@@ -78,7 +109,16 @@ const Page = () => (
           excerpt:
             "We talked about how we have put together a code-sided starter kit for digital design systems and...",
           image: "img/showcase/showcase-cover.png",
-          tags: ["JS", "Frameworks"],
+          tags: [
+            {
+              label: "JS",
+              link: "#"
+            },
+            {
+              label: "Frameworks",
+              link: "#"
+            }
+          ],
           title: "Amplifyn ",
           typeLabel: "Appearance",
           url: "/appearance/amplifyn/",

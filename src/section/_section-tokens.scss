@@ -13,19 +13,19 @@
 
   .l-section__container {
     &.l-section__container--gutter-none {
-      --l-section_container--gutter: 0;
+      --l-section--gutter: 0;
     }
 
     &--gutter-small {
-      --l-section_container--gutter: var(--ks-spacing-s);
+      --l-section--gutter: var(--ks-spacing-s);
     }
 
     &--gutter-large {
-      --l-section_container--gutter: var(--ks-spacing-l);
+      --l-section--gutter: var(--ks-spacing-l);
     }
 
     @include breakpoint.media("≥s") {
-      --l-section_container--gutter: var(--ks-spacing-m);
+      --l-section--gutter: var(--ks-spacing-m);
       --l-section_col--min-width: 12rem;
 
       .l-section--outer-width-wide {
@@ -34,7 +34,7 @@
       }
 
       &--gutter-large {
-        --l-section_container--gutter: var(--ks-spacing-l);
+        --l-section--gutter: var(--ks-spacing-l);
       }
     }
 
@@ -45,13 +45,13 @@
       }
 
       &--gutter-large {
-        --l-section_container--gutter: var(--ks-spacing-l);
+        --l-section--gutter: var(--ks-spacing-l);
       }
     }
 
     @include breakpoint.media("≥l") {
       &--gutter-large {
-        --l-section_container--gutter: var(--ks-spacing-xl);
+        --l-section--gutter: var(--ks-spacing-xl);
         --l-section_col--min-width: 20rem;
       }
     }
@@ -60,7 +60,7 @@
   .l-section.four-grid {
     .l-section__container {
       --l-section_col--min-width: 12rem;
-      --l-section_container--gutter: var(--ks-spacing-s);
+      --l-section--gutter: var(--ks-spacing-s);
 
       @include breakpoint.media("≥s") {
         --l-section_col--min-width: 8rem;
@@ -71,7 +71,7 @@
       }
 
       @include breakpoint.media("≥xl") {
-        --l-section_container--gutter: var(--ks-spacing-m);
+        --l-section--gutter: var(--ks-spacing-m);
       }
     }
   }

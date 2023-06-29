@@ -68,10 +68,24 @@
       "description": "Tags for this glossary entry",
       "type": "array",
       "items": {
-        "type": "string",
-        "title": "Tag",
-        "default": "elitr",
-        "description": "Name of the tag"
+        "title": "Tag Label",
+        "description": "Component to render a pill / tag / label",
+        "type": "object",
+        "properties": {
+          "label": {
+            "title": "Label",
+            "description": "Text to display inside tag label",
+            "type": "string",
+            "examples": ["Lorem Ipsum"]
+          },
+          "link": {
+            "title": "Link Target",
+            "description": "Set optional href to link the tag",
+            "type": "string",
+            "examples": ["#"],
+            "format": "uri"
+          }
+        }
       }
     },
     "related": {

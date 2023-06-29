@@ -19,14 +19,22 @@
 
     &__content {
       display: flex;
+      justify-content: space-between;
       gap: var(--ks-spacing-m);
     }
 
     &__col {
-      flex: 1 1;
+      flex: 1 0 auto;
+      max-width: 50%;
       display: flex;
       flex-direction: column;
       gap: var(--ks-spacing-stack-m);
+    }
+
+    .l-container {
+      &--text-media {
+        container-type: normal;
+      }
     }
   }
 
@@ -36,6 +44,14 @@
         width: var(--c-appearance--img-size);
         height: var(--c-appearance--img-size);
       }
+    }
+  }
+}
+
+.template {
+  &__main.template__main-only {
+    @media (min-width: 76rem) {
+      width: 80%;
     }
   }
 }

@@ -15,10 +15,14 @@ import { SourceSnippet } from "../source-snippet/SourceSnippetComponent";
 import { ConciergeProps as ConciergeSchemaProps } from "./ConciergeProps";
 
 const defaultHandleResetPrompt = () => {
+  document.querySelector("#msg")?.scrollIntoView({ block: "center" });
   return;
 };
 
 const defaultHandleConciergeConfirm = () => {
+  document
+    .querySelector(".template--concierge")
+    ?.scrollIntoView({ block: "center" });
   return;
 };
 
@@ -62,19 +66,29 @@ export const Concierge = forwardRef<
             level="h1"
             align="left"
             content="Design System Concierge"
-            // renderContent={(content) => (
-            //   <div>
-            //     <div>{content}</div>
-            //     <div>
-            //       <TagLabel
-            //         style={{ backgroundColor: "#FF009D", color: "white" }}
-            //         label="Beta"
-            //         size="m"
-            //       />
-            //     </div>
-            //   </div>
-            // )}
             subheadline="Ask anything and get pointed the right way"
+            renderContent={(content) => (
+              <div>
+                {content}
+                <br />
+                <a
+                  href="https://www.producthunt.com/posts/design-system-concierge?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-design&#0045;system&#0045;concierge"
+                  target="_blank"
+                >
+                  <img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=391189&theme=light"
+                    alt="Design&#0032;System&#0032;Concierge - Your&#0032;AI&#0045;powered&#0032;Design&#0032;System&#0032;assistant | Product Hunt"
+                    style={{
+                      width: "250px",
+                      height: "54px",
+                      marginTop: "1rem",
+                    }}
+                    width="250"
+                    height="54"
+                  />
+                </a>
+              </div>
+            )}
           />
         </div>
       </Section>
@@ -125,43 +139,41 @@ export const Concierge = forwardRef<
       <Section spaceBefore="small" background="accent" width="default">
         <div className="template template--concierge">
           <div className="template__main">
-            {status.code !== "loading" &&
-              !answer &&
-              status.code !== "error" && (
+            {status.code !== "loading" && !answer && status.code !== "error" && (
+              <div>
                 <div>
-                  <div>
-                    <Headline
-                      content="Not sure where to start?"
-                      subheadline="Try one of the following questions:"
-                      level="h2"
-                      styleAs="h4"
-                    />
-                    <ul className="c-tag-label--list">
-                      {textAreaRef &&
-                        typeof textAreaRef !== "function" &&
-                        questions &&
-                        questions.length > 0 &&
-                        questions.map((question, index) => {
-                          return (
-                            <li key={`question-${index}`}>
-                              <span
-                                className="concierge--question"
-                                onClick={() => {
-                                  if (textAreaRef.current) {
-                                    textAreaRef.current.value = question;
-                                  }
-                                  handleConciergeConfirm();
-                                }}
-                              >
-                                {`${question}`}
-                              </span>
-                            </li>
-                          );
-                        })}
-                    </ul>
-                  </div>
+                  <Headline
+                    content="Not sure where to start?"
+                    subheadline="Try one of the following questions:"
+                    level="h2"
+                    styleAs="h4"
+                  />
+                  <ul className="c-tag-label--list">
+                    {textAreaRef &&
+                      typeof textAreaRef !== "function" &&
+                      questions &&
+                      questions.length > 0 &&
+                      questions.map((question, index) => {
+                        return (
+                          <li key={`question-${index}`}>
+                            <span
+                              className="concierge--question"
+                              onClick={() => {
+                                if (textAreaRef.current) {
+                                  textAreaRef.current.value = question;
+                                }
+                                handleConciergeConfirm();
+                              }}
+                            >
+                              {`${question}`}
+                            </span>
+                          </li>
+                        );
+                      })}
+                  </ul>
                 </div>
-              )}
+              </div>
+            )}
             {status.code !== "canthelp" &&
               status.code !== "error" &&
               answer && <RichText text={answer} />}
@@ -234,7 +246,30 @@ export const Concierge = forwardRef<
               </span>
               <br />
               <br />
-              <a href="#">Read our blog post about it (coming soon!)</a>
+              <a href="/blog/launching-the-design-system-concierge/">
+                Read our blog post about it!
+              </a>
+              <br />
+              <br />
+              <span>
+                And we'd love to hear your thoughts on how the Concierge has
+                helped with your Design System-related questions. Your feedback
+                is invaluable as we work to improve the experience.{" "}
+                <a href="https://discord.gg/mwKzD5gejY" target="_blank">
+                  Join our Discord Community
+                </a>{" "}
+                to share any comments or suggestions, and thank you for being
+                part of our journey!
+              </span>
+              <br />
+              <br />
+              <Button
+                label="Join our Discord Community"
+                size="small"
+                variant="outline"
+                href="https://discord.gg/mwKzD5gejY"
+                newTab={true}
+              />
             </div>
           </div>
           <div className="template__side">

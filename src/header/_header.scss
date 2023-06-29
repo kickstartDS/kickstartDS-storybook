@@ -1,10 +1,10 @@
 @use "header-tokens";
 @use "../breakpoint";
 
-header[data-component="kds.header"] {
+header[ks-component="kds.header"] {
   display: flex;
   justify-content: center;
-  transition-duration: var(--g-transition-duration-s);
+  transition-duration: var(--ks-duration-slow);
   transition-property: all;
 }
 
@@ -15,15 +15,11 @@ header[data-component="kds.header"] {
   padding: var(--g-header-spacing-v) var(--g-header-spacing-h);
   width: 100%;
   max-width: var(--l-section--content-width-wide);
-  gap: var(--ks-spacing-s);
+  gap: var(--ks-spacing-inline-m);
   align-items: flex-end;
-  transition-duration: var(--g-transition-duration-s);
+  transition-duration: var(--ks-duration-slow);
   transition-property: all;
   z-index: 1;
-
-  &--wrap {
-    background-color: var(--g-header-background-color);
-  }
 
   &::after {
     content: "";

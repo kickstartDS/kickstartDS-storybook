@@ -31,7 +31,7 @@ digital touch points a consistent interface...
     href: "#",
     label: "Read more"
   },
-  categories: [{ label: "About kickstartDS" }, { label: "Background" }],
+  categories: [{ label: "About kickstartDS", link: "#" }, { label: "Background", link: "#" }],
   meta: {
     author: {
       name: "Daniel Ley",

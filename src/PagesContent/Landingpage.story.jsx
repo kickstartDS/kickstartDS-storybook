@@ -33,10 +33,10 @@ const Page = () => (
           background: "transparent",
           enabled: true,
           headline: {
-            content: "kickstartDS is the starter kit for Design Systems",
+            content: "kickstartDS is the Open Source starter kit for Design Systems",
             level: "h1",
             styleAs: "h1",
-            subheadline: "The frontend first framework!",
+            subheadline: "Democratizing Design Systems",
             switchOrder: true,
           },
           horizontal: "left",
@@ -58,7 +58,8 @@ const Page = () => (
             size: "medium",
             variant: "solid",
           },
-          text: `We **enable** web development **teams to create** consistent and brand compliant web **frontends** super **efficiently.** With a **built-in Design System** to serve all your digital touch points. Easy like squeeeeezing a lemon.`,
+          text: `
+A low-code framework, UI develeopment toolkit and comprehensive component library enabling digital teams to create consistent and brand compliant web frontends super efficiently. Easy like squeeeeezing a lemon`,
           vertical: "center",
         }}
         height="default"
@@ -74,6 +75,40 @@ const Page = () => (
       />
     </Section>
     <Section
+      ks-inverted="true"
+      width="full"
+      spaceAfter="none"
+      spaceBefore="none"
+      variant="highlight"
+      className="l-section--outer-width-wide"
+    >
+      <Storytelling
+        box={{
+          headline: {
+            content: "Meet our Design System Concierge",
+            subheadline: "Your AI-powered Design System assistant!"
+          },
+          text: "Our Design System Concierge can help by providing expert guidance and pointing you towards the right resources, whether it's implementation guides, architecture documents, adoption strategies, or other content.",
+
+          links:
+            [
+              {
+                label: "Try it, it's free"
+              },
+              {
+                label: "Upvote on ProductHunt",
+                variant: "outline"
+              },
+            ]
+        }}
+        image={{
+          source: "img/concierge/concierge-desk.svg",
+          hAlign: "center"
+        }}
+
+      />
+    </Section>
+    {/* <Section
       ks-inverted="true"
       headline={{
         align: "center",
@@ -91,7 +126,7 @@ const Page = () => (
       className="l-section--outer-width-max"
     >
       <Steps />
-    </Section>
+    </Section> */}
 
     <Section
       width="wide"
@@ -248,7 +283,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
       mode="list"
       width="full"
       spaceBefore="default"
-      gutter="small"
+      gutter="none"
       headline={{
         content: "Easy peasy lemon squeezy",
         subheadline: "5 reasons why you should start with kickstartDS today!",
@@ -379,14 +414,27 @@ kickstart DS is the foundation for your design system with reusable components a
       background="default"
     >
       <TeaserBox
-        topic="Lorem Ipsum"
+        image="https://kickstartds.com/static/b75932664b811513543d5af322c2e4ee/headless_design_system_for_developer.svg"
+        inverted
+        topic="... as a developer?"
         link={{
           label: "Get in touch",
         }}
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
       />
       <TeaserBox
-        topic="Accessibility baked in"
+        image="https://kickstartds.com/static/22366760e710d38f85417e550177546f/headless_design_system_for_designer.svg"
+        inverted
+        topic="... as a designer?"
+        link={{
+          label: "Get in touch",
+        }}
+        text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
+      />
+      <TeaserBox
+        image="https://kickstartds.com/static/22366760e710d38f85417e550177546f/headless_design_system_for_designer.svg"
+        inverted
+        topic="... as a product team?"
         link={{
           label: "Get in touch",
         }}

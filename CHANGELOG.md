@@ -1,3 +1,175 @@
+# v2.5.13 (Fri Jun 23 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feat(visual-stories): set headline levels to h2 ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.5.12 (Wed May 24 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix(appearance): Layout for Appearances without media / images ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.5.11 (Tue May 02 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/kickstartDS/kickstartDS-storybook ([@fleven-kds](https://github.com/fleven-kds))
+- feat(welcome-page): update welcome page + add custom teaser-row classes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.5.10 (Tue May 02 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: correction of image ratio ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+#### Authors: 1
+
+- Daniel ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+---
+
+# v2.5.9 (Tue May 02 2023)
+
+#### ⚠️ Pushed to `master`
+
+- feat(IconSprice): remove fill from concierge Icon ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.5.8 (Mon May 01 2023)
+
+#### 🐛 Bug Fix
+
+- Secondary nav [#108](https://github.com/kickstartDS/kickstartDS-storybook/pull/108) ([@lmestel](https://github.com/lmestel) [@julrich](https://github.com/julrich) [@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 3
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v2.5.7 (Sun Apr 30 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add Product Hunt badge to concierge for launch ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.5.6 (Fri Apr 28 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: hotfix layout without media in appearance ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.5.5 (Fri Apr 28 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Content update of Storybook welcome page ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+#### Authors: 1
+
+- Daniel ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+---
+
+# v2.5.4 (Fri Apr 28 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Add DS Concierge image for Storybook welcome page ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+#### Authors: 1
+
+- Daniel ([@DanielLeyUX](https://github.com/DanielLeyUX))
+
+---
+
+# v2.5.3 (Fri Apr 28 2023)
+
+#### 🐛 Bug Fix
+
+- Decrease maximum appearance cover image size [#107](https://github.com/kickstartDS/kickstartDS-storybook/pull/107) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v2.5.2 (Fri Apr 28 2023)
+
+#### 🐛 Bug Fix
+
+- Move `Related` component to "Custom" category [#106](https://github.com/kickstartDS/kickstartDS-storybook/pull/106) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v2.5.1 (Thu Apr 27 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: add excerpt to appearance and showcase components ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.5.0 (Thu Apr 27 2023)
+
+#### 🚀 Enhancement
+
+- Update to stable versions of kickstartDS dependencies [#105](https://github.com/kickstartDS/kickstartDS-storybook/pull/105) ([@julrich](https://github.com/julrich) [@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.4.29 (Tue Apr 18 2023)
 
 #### ⚠️ Pushed to `master`

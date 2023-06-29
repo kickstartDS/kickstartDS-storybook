@@ -3,10 +3,53 @@
 
 .template {
   position: relative;
-  margin: auto;
   gap: var(--ks-spacing-l);
   display: flex;
   flex-direction: column;
+
+  @include breakpoint.media("≥m") {
+    flex-direction: row;
+  }
+
+  .l-container {
+    container-type: normal;
+  }
+
+  .l-section {
+    margin: unset;
+  }
+
+  &__main,
+  &__split,
+  &__side {
+    max-width: var(--l-section--content-width-narrow);
+
+    @media (min-width: 76rem) {
+      height: fit-content;
+      position: sticky;
+      top: var(--ks-spacing-m);
+    }
+  }
+
+  &__split {
+    @media (min-width: 76rem) {
+      flex-basis: 50%;
+    }
+  }
+
+  &__main {
+    @media (min-width: 76rem) {
+      flex-basis: 60%;
+      flex-grow: 6;
+    }
+  }
+
+  &__side {
+    @media (min-width: 76rem) {
+      flex-basis: 40%;
+      flex-grow: 4;
+    }
+  }
 
   &--concierge.template {
     gap: var(--ks-spacing-m);
@@ -23,7 +66,7 @@
 
     .template__main,
     .template__side {
-      @include breakpoint.media("≥s") {
+      @include breakpoint.media("≥m") {
         height: fit-content;
         position: sticky;
         top: calc(var(--l-section--space-small) * 3);
@@ -31,73 +74,17 @@
     }
 
     .template__main {
-      @include breakpoint.media("≥s") {
-        width: 70%;
+      @include breakpoint.media("≥m") {
+        flex-basis: 70%;
+        flex-grow: 7;
       }
     }
 
     .template__side {
-      @include breakpoint.media("≥s") {
-        width: 30%;
+      @include breakpoint.media("≥m") {
+        flex-basis: 30%;
+        flex-grow: 3;
       }
-    }
-  }
-
-  @media (min-width: 76rem) {
-    flex-direction: row;
-  }
-
-  .l-container {
-    container-type: normal;
-  }
-
-  .l-section {
-    margin: unset;
-  }
-
-  &__main,
-  &__split,
-  &__side {
-    max-width: var(--l-section--content-width-narrow);
-    @media (min-width: 76rem) {
-      height: fit-content;
-      position: sticky;
-      top: var(--ks-spacing-m);
-    }
-  }
-
-  &__split {
-    @media (min-width: 76rem) {
-      width: 50%;
-    }
-  }
-
-  &__main,
-  &__split,
-  &__side {
-    max-width: var(--l-section--content-width-narrow);
-    @media (min-width: 76rem) {
-      height: fit-content;
-      position: sticky;
-      top: var(--ks-spacing-m);
-    }
-  }
-
-  &__split {
-    @media (min-width: 76rem) {
-      width: 50%;
-    }
-  }
-
-  &__main {
-    @media (min-width: 76rem) {
-      width: 60%;
-    }
-  }
-
-  &__side {
-    @media (min-width: 76rem) {
-      width: 40%;
     }
   }
 }

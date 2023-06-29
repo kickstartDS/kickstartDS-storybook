@@ -4,9 +4,13 @@
 :root {
   .c-post-aside {
     --tag-label-height: calc(
-      var(--ks-font-size-ui-xs) * var(--ks-line-height-ui-xs) + calc(var(--ks-spacing-inset-xs) * 2)
+      var(--ks-font-size-interface-xs) * var(--ks-line-height-interface-xs) + calc(var(--ks-spacing-inset-xs) * 2)
     );
 
+    flex-basis: 20%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: calc(var(--ks-font-size-copy-m) * 10);
     height: fit-content;
 
     @include breakpoint.media("≥m") {
@@ -44,7 +48,7 @@
         --icon-size: 1rem;
 
         margin: 0;
-        gap: var(--ks-spacing-s);
+        gap: var(--ks-spacing-stack-xs) var(--ks-spacing-inline-xs);
 
         > * {
           margin: 0;
@@ -52,9 +56,10 @@
 
         &__body {
           display: flex;
+          overflow: hidden;
           flex-direction: column;
           gap: var(--ks-spacing-xs);
-          flex-grow: 1 !important;
+          flex-grow: 1;
 
           > * {
             margin: 0;
@@ -62,6 +67,7 @@
 
           .c-headline {
             display: block;
+            padding-bottom: 0;
 
             &__headline {
               font: var(--ks-font-copy-s);
@@ -86,13 +92,22 @@
 
         &__links {
           font: var(--ks-font-interface-xs);
-          &__links {
-            font: var(--ks-font-ui-xs);
+
+          .icon {
+            flex-shrink: 0;
           }
 
-          &__link {
-            margin: 0;
+          li {
+            display: flex;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
+        }
+
+        &__link {
+          margin: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         .c-rich-text {

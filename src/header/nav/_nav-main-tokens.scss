@@ -3,6 +3,8 @@
 :root,
 [ks-theme],
 [ks-inverted] {
+  --c-nav-main--gap: var(--ks-spacing-inline-s);
+
   --c-nav-main_background-color: var(--ks-background-color-default);
 
   --c-nav-main_item--color: var(--ks-text-color-primary-interactive);
@@ -16,8 +18,12 @@
   --c-nav-main_item--padding: 0.5rem var(--g-header-spacing-h);
   --c-nav-main_item--background-color-hover: var(--ks-color-primary-inverted);
 
-  @include breakpoint.media("≥m") {
+  @include breakpoint.media("≥l") {
     --c-nav-main_item--font: var(--ks-font-interface-s);
     --c-nav-main_item--padding: none;
+  }
+
+  @include breakpoint.media("≥xl") {
+    --c-nav-main--gap: var(--ks-spacing-inline-m);
   }
 }

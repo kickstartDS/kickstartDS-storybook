@@ -26,11 +26,6 @@
         max-width: var(--l-section--content-width-wide);
       }
 
-      @include breakpoint.media("≥s") {
-        padding-top: var(--ks-spacing-l);
-        padding-bottom: var(--ks-spacing-l);
-      }
-
       &--center {
         .c-visual__link {
           justify-content: center;
@@ -51,9 +46,8 @@
     &--welcome {
       @include breakpoint.media("≥s") {
         --c-visual--min-height: 10rem;
-
         .c-visual__box {
-          --c-visual_box--max-width: 25rem;
+          --c-visual_box--max-width: 90%;
         }
       }
     }

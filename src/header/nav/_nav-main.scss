@@ -2,11 +2,12 @@
 @use "bourbon/core/bourbon";
 @use "../../breakpoint";
 @use "./nav-main-tokens";
+@use "./nav-main-secondary";
 
 .nav-main {
-  /* critical:start */
-  font: var(--c-nav-main_item--font);
-  /* critical:end */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
   ul {
     /* critical:start */
@@ -33,12 +34,6 @@
     }
 
     &.nav-main__item--icon {
-      &::after {
-        content: none;
-      }
-    }
-
-    &--github {
       .icon {
         border-radius: var(--ks-border-radius-circle);
         transition: all var(--ks-transition-hover);
@@ -49,20 +44,25 @@
           background-color: var(--ks-color-primary-inverted);
         }
       }
+
+      .nav-main__item__link {
+        &::after {
+          content: none;
+        }
+      }
     }
 
     &__link {
       /* critical:start */
+      font: var(--c-nav-main_item--font);
       position: relative;
       display: block;
       width: fit-content;
-      font-weight: var(--ks-font-weight-bold);
       padding: var(--c-nav-main_item--padding);
       --ks-text-color-default-interactive: var(--c-nav-main_item--color);
       --ks-text-color-default-interactive-hover: var(--c-nav-main_item--color-hover);
-      --g-link--background: var(--c-nav-main--background-color);
-      --g-link--background-hover: var(--c-nav-main_item--background-color-hover);
       --g-link--font-weight: var(--c-nav-main_item--font-weight);
+      /* critical:end */
 
       &::after {
         --corner-height: 8px;
@@ -85,7 +85,7 @@
         );
 
         opacity: 0;
-        transition: all 200ms;
+        transition: all var(--ks-duration-medium);
       }
       &:hover {
         &::after {
@@ -93,7 +93,6 @@
           opacity: 1;
         }
       }
-      /* critical:end */
     }
   }
 
@@ -101,20 +100,14 @@
   @include breakpoint.media("<l") {
     /* critical:start */
     left: -100%;
-    display: flex;
-    justify-content: space-between;
     /* critical:end */
-
-    top: 0 !important;
-    height: 200vh;
+    height: 100vh;
     overflow: hidden;
 
-    flex-direction: column;
-    justify-content: flex-start;
     position: fixed;
     width: 77vw;
     max-width: 23rem;
-    transition: all 300ms;
+    transition: all var(--ks-duration-slow);
 
     right: 0;
     bottom: 0;
@@ -126,6 +119,10 @@
     box-shadow: 20px 0px 30px #00000000;
 
     &__item {
+      &--icon {
+        @include bourbon.hide-visually;
+      }
+
       &__link {
         &::after {
           height: 100%;
@@ -158,7 +155,7 @@
         margin-top: var(--g-header-spacing-v);
 
         .c-button {
-          --c-button--font: var(--ks-font-size-interface-s);
+          --c-button--font: var(--ks-font-interface-s);
           .c-button__content {
             --c-button--padding: 0.4rem 1rem;
           }
@@ -176,7 +173,7 @@
     /* critical:end */
 
     .c-button--wrapper {
-      margin-left: var(--ks-spacing-s);
+      margin-left: var(--ks-spacing-inline-xs);
     }
 
     &__list {
@@ -184,11 +181,11 @@
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
-      gap: var(--ks-spacing-m);
+      gap: var(--c-nav-main--gap);
 
       .nav-main--button {
         .c-button {
-          --c-button--font: var(--ks-font-size-interface-s);
+          --c-button--font: var(--ks-font-interface-s);
           span {
             font-size: 98%;
           }
@@ -198,13 +195,6 @@
     }
 
     &__item {
-      &--github {
-        .nav-main__item__link {
-          &::after {
-            content: none;
-          }
-        }
-      }
       /* critical:start */
       flex-shrink: 0;
 

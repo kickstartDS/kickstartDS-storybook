@@ -108,6 +108,7 @@ export type KsComponentAttribute4 = string;
  * Component to to increase a number up to a final value
  */
 export interface CountUpProps {
+  graphic?: "none" | "tokens" | "components" | "properties";
   to: Number;
   icon?: Icon;
   topic?: Topic;
@@ -119,7 +120,6 @@ export interface CountUpProps {
    */
   expand?: number;
   component?: KsComponentAttribute4;
-  graphic?: "none" | "tokens" | "components" | "properties";
   [k: string]: unknown;
 }
 /**

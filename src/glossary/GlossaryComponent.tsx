@@ -33,14 +33,17 @@ export const Glossary: FunctionComponent<
       <div>
         <Headline align="left" level="h1" content={term} />
         {tags && tags.length > 0 && (
-          <div className="tag-label-container">
-            {tags?.map((tag, i) => (
-              <div>
-                <TagLabel label={tag} size="m" key={i} />
-              </div>
-            ))}
-          </div>
-        )}
+            <div className="tag-label-container">
+              {tags?.map((tags, i) => (
+                <TagLabel
+                  link={tags.link}
+                  label={tags.label}
+                  size="m"
+                  key={i}
+                />
+              ))}
+            </div>
+          )}
       </div>
       <div className="template">
         <div className="template__split">
@@ -148,7 +151,10 @@ export const Glossary: FunctionComponent<
                 excerpt={item.excerpt}
                 title={item.title}
                 typeLabel={item.typeLabel}
-                tags={item.tags}
+                tags={item.tags?.map((tag) => ({
+                  label: tag.label,
+                  link: tag.link,
+                }))}
                 key={i}
               />
             ))}

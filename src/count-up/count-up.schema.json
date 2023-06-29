@@ -4,9 +4,6 @@
   "title": "Count Up",
   "allOf": [
     {
-      "$ref": "http://schema.kickstartds.com/content/count-up.schema.json"
-    },
-    {
       "type": "object",
       "properties": {
         "graphic": {
@@ -15,6 +12,9 @@
           "default": "none"
         }
       }
+    },
+    {
+      "$ref": "http://schema.kickstartds.com/content/count-up.schema.json"
     }
   ]
 }

@@ -3,6 +3,9 @@
 .c-post {
   &__content {
     max-width: calc(var(--l-section--content-width-narrow) - calc(var(--l-section--content-padding) * 2));
+    flex-basis: 80%;
+    flex-grow: 1;
+    flex-shrink: 1;
 
     .c-post-share-bar {
       padding-top: var(--ks-spacing-s);

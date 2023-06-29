@@ -11,10 +11,10 @@
   }
 
   @include breakpoint.media("≥xl") {
-    --g-logo-height: 3rem;
+    --g-logo-height: 2.75rem;
   }
 
   @media (min-width: 100em) {
-    --g-logo-height: 3.5rem;
+    --g-logo-height: 3.25rem;
   }
 }

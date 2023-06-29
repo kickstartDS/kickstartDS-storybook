@@ -34,13 +34,17 @@ export type CaptionForTheMainImage1 = string;
  */
 export type Media = MediaAsset[];
 /**
- * Name of the tag
+ * Text to display inside tag label
  */
-export type Tag = string;
+export type Label = string;
+/**
+ * Set optional href to link the tag
+ */
+export type LinkTarget = string;
 /**
  * Tags for this glossary entry
  */
-export type Tags = Tag[];
+export type Tags = TagLabel[];
 /**
  * Type of content that is being teased
  */
@@ -62,13 +66,17 @@ export type Url = string;
  */
 export type Image = string;
 /**
- * Name of the tag
+ * Text to display inside tag label
  */
-export type Tag1 = string;
+export type Label1 = string;
+/**
+ * Set optional href to link the tag
+ */
+export type LinkTarget1 = string;
 /**
  * Tags for this related teaser
  */
-export type Tags1 = Tag1[];
+export type Tags1 = TagLabel1[];
 /**
  * Entries related to this glossary entry
  */
@@ -108,6 +116,14 @@ export interface MediaAsset {
   [k: string]: unknown;
 }
 /**
+ * Component to render a pill / tag / label
+ */
+export interface TagLabel {
+  label?: Label;
+  link?: LinkTarget;
+  [k: string]: unknown;
+}
+/**
  * A preview of contextually relevant content
  */
 export interface Related {
@@ -117,5 +133,13 @@ export interface Related {
   url: Url;
   image: Image;
   tags?: Tags1;
+  [k: string]: unknown;
+}
+/**
+ * Component to render a pill / tag / label
+ */
+export interface TagLabel1 {
+  label?: Label1;
+  link?: LinkTarget1;
   [k: string]: unknown;
 }

@@ -42,6 +42,7 @@ BoxRight.args = pack({
     background: "solid",
     headline: {
       spaceAfter: "small",
+      level: "h2",
     },
     links: [
       {
@@ -75,6 +76,7 @@ BoxCenter.args = pack({
     horizontal: "center",
     headline: {
       spaceAfter: "small",
+      level: "h2",
     },
     links: [
       {
@@ -106,6 +108,7 @@ BoxInverted.args = pack({
   box: {
     headline: {
       spaceAfter: "small",
+      level: "h2",
     },
     inverted: true,
     links: [
@@ -137,6 +140,7 @@ BoxTransparent.args = pack({
   box: {
     headline: {
       spaceAfter: "small",
+      level: "h2",
     },
     background: "transparent",
     links: [
@@ -169,6 +173,7 @@ FullScreen.args = pack({
   box: {
     headline: {
       spaceAfter: "small",
+      level: "h2",
     },
     background: "solid",
     inverted: true,
@@ -198,6 +203,7 @@ Video.args = pack({
   box: {
     headline: {
       spaceAfter: "small",
+      level: "h2",
     },
     background: "light",
     links: [
@@ -268,6 +274,7 @@ SkipButton.args = pack({
   box: {
     headline: {
       spaceAfter: "small",
+      level: "h2",
     },
     background: "light",
     links: [
@@ -300,6 +307,7 @@ InboxMobile.args = pack({
   box: {
     headline: {
       spaceAfter: "small",
+      level: "h2",
     },
     background: "light",
     links: [

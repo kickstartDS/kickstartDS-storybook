@@ -24,6 +24,13 @@
       "default": "kickstartDS is a low-code framework and comprehensive component library that enables development teams to create consistent and brand-compliant web frontends. Jonas Ulrich and Daniel Ley join us to talk about kickstartDS, the starter kit for Design Systems. We've talked to Paul Mikulskis about the beginnings of kickstartDS, what we've built so far... and what we still have in our plans! This podcast is a great and short introduction to kickstartDS, we hope you enjoy it!",
       "description": "Description of the type and content of the appearance"
     },
+    "excerpt": {
+      "title": "Text excerpt to tease appearance",
+      "type": "string",
+      "format": "markdown",
+      "default": "kickstartDS is a low-code framework and comprehensive component library that enables development teams to create consistent and brand-compliant web frontends.",
+      "description": "Short text to tease the appearance"
+    },
     "host": {
       "type": "object",
       "title": "Host of the appearance",
@@ -54,13 +61,27 @@
     },
     "tags": {
       "title": "Tags",
-      "description": "Tags for this showcase entry",
+      "description": "Tags for this appearance entry",
       "type": "array",
       "items": {
-        "type": "string",
-        "title": "Tag",
-        "default": "Frontend",
-        "description": "Name of the tag"
+        "title": "Tag Label",
+        "description": "Component to render a pill / tag / label",
+        "type": "object",
+        "properties": {
+          "label": {
+            "title": "Label",
+            "description": "Text to display inside tag label",
+            "type": "string",
+            "examples": ["Lorem Ipsum"]
+          },
+          "link": {
+            "title": "Link Target",
+            "description": "Set optional href to link the tag",
+            "type": "string",
+            "examples": ["#"],
+            "format": "uri"
+          }
+        }
       }
     },
     "date": {

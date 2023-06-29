@@ -5,6 +5,7 @@ import {
   forwardRef,
   HTMLAttributes,
   ElementType,
+  PropsWithChildren,
 } from "react";
 import classnames from "classnames";
 import { Icon } from "@kickstartds/base/lib/icon";
@@ -75,7 +76,7 @@ const ButtonComponent: ForwardRefExoticComponent<
             }
           )}
           ks-inverted={inverted?.toString()}
-          data-component={component}
+          ks-component={component}
           {...(isLink && newTab ? { target: "_blank", rel: "noopener" } : {})}
           disabled={isLink ? undefined : disabled}
           ref={ref}
@@ -106,7 +107,7 @@ const ButtonComponent: ForwardRefExoticComponent<
   }
 );
 
-export const ButtonProvider: FunctionComponent<unknown> = (props) => (
-  <ButtonContext.Provider value={ButtonComponent} {...props} />
-);
+export const ButtonProvider: FunctionComponent<PropsWithChildren<never>> = (
+  props
+) => <ButtonContext.Provider value={ButtonComponent} {...props} />;
 export const Button = KdsButton as typeof ButtonComponent;

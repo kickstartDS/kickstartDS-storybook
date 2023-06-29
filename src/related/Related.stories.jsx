@@ -7,7 +7,7 @@ const { args, argTypes } = getArgsShared(schema);
 const Template = (args) => <Related {...args} />;
 
 export default {
-  title: "Content/Related",
+  title: "Custom/Related",
   component: Related,
   args,
   argTypes,
