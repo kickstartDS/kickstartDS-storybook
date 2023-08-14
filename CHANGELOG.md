@@ -1,3 +1,15 @@
+# v2.5.15 (Mon Aug 14 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: update resource class ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.5.14 (Mon Aug 14 2023)
 
 
