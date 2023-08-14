@@ -21,6 +21,9 @@ export type URL = string;
  * Small image preview of the references site
  */
 export type Thumbnail = string;
+/**
+ * @minItems 1
+ */
 export type Sections = [
   {
     excerpt: Excerpt;
