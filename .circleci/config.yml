@@ -4,7 +4,7 @@ defaults: &defaults
   docker:
     - image: cimg/node:16.14
   working_directory: /mnt/ramdisk
-  resource_class: medium+
+  resource_class: large
 
 aliases:
   - &save-cache-yarn
