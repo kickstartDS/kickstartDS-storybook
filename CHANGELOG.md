@@ -1,3 +1,15 @@
+# v2.5.16 (Sun Sep 10 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: missing attributes in some JSON schemas ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.5.15 (Mon Aug 14 2023)
 
 #### ⚠️ Pushed to `master`
