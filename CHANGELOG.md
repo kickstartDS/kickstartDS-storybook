@@ -1,3 +1,15 @@
+# v2.5.17 (Sun Sep 10 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: missing type object in button schema ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.5.16 (Sun Sep 10 2023)
 
 #### ⚠️ Pushed to `master`
