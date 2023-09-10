@@ -1,4 +1,3 @@
-import React from "react";
 import { Section } from "@kickstartds/base/lib/section";
 import { Button } from "@kickstartds/base/lib/button";
 import { useSessionState } from "../hooks/useSessionState";

@@ -1,4 +1,4 @@
-import { StorybookConfig } from '@storybook/react-vite';
+import { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
   stories: [
@@ -9,10 +9,15 @@ const config: StorybookConfig = {
   addons: [
     "@storybook/addon-essentials",
     "@storybook/addon-a11y",
-    // "@kickstartds/storybook-addon-component-tokens",
+    "@kickstartds/storybook-addon-component-tokens",
     "@whitespace/storybook-addon-html",
     // "@kickstartds/storybook-addon-jsonschema",
-    "storybook-design-token",
+    {
+      name: "storybook-design-token",
+      options: {
+        designTokenGlob: ".storybook/tokens/*.{css,svg}",
+      },
+    },
     "@storybook/addon-mdx-gfm",
   ],
   staticDirs: ["../static"],

@@ -1,0 +1,18 @@
+diff --git a/node_modules/@kickstartds/blog/package.json b/node_modules/@kickstartds/blog/package.json
+index 5743560..423ace9 100644
+--- a/node_modules/@kickstartds/blog/package.json
++++ b/node_modules/@kickstartds/blog/package.json
+@@ -13,13 +13,6 @@
+   },
+   "license": "(MIT OR Apache-2.0)",
+   "author": "Jonas Ulrich <jonas.ulrich@kickstartds.com> (https://www.kickstartDS.com/)",
+-  "typesVersions": {
+-    "*": {
+-      "*": [
+-        "*/index.d.ts"
+-      ]
+-    }
+-  },
+   "files": [
+     "lib",
+     "source/**/_container.scss",

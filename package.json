@@ -10,8 +10,8 @@
     "dist"
   ],
   "scripts": {
-    "init-tokens": "kickstartDS tokens init --cleanup --rc-only",
-    "build-tokens": "kickstartDS tokens compile --cleanup --rc-only",
+    "init-tokens": "kickstartDS tokens init --token-dictionary-path tokensGeil,  --cleanup --rc-only",
+    "build-tokens": "kickstartDS tokens compile --token-dictionary-path tokens --cleanup --rc-only",
     "build-storybook": "yarn build-tokens && run-p sass sass-manager schema token && DESIGN_TOKEN_GLOB=.storybook/tokens.css storybook build --output-dir storybook",
     "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --storybook-build-dir 'storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes --exit-once-uploaded",
     "dist:js": "esbuild index=src/dist.js --outdir=dist --format=esm --bundle --minify --splitting",
@@ -57,7 +57,7 @@
     "@babel/preset-env": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
-    "@kickstartds/storybook-addon-component-tokens": "^0.1.6",
+    "@kickstartds/storybook-addon-component-tokens": "1.0.0-canary.18.36.0",
     "@kickstartds/storybook-addon-jsonschema": "^1.0.6",
     "@storybook/addon-a11y": "^7.0.24",
     "@storybook/addon-actions": "^7.0.24",

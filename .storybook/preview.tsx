@@ -1,10 +1,9 @@
-import React from "react";
 import { actions } from "@storybook/addon-actions";
 import { Preview } from "@storybook/react";
 import { DocsContainer } from "@storybook/addon-docs";
 // @see https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/attrchange
 import "lazysizes/plugins/attrchange/ls.attrchange";
-import { unpackDecorator } from "@kickstartds/core/lib/storybook/helpers";
+import { unpackDecorator } from "@kickstartds/core/lib/storybook";
 
 import "@kickstartds/base/lib/global/base.js";
 import "@kickstartds/base/lib/global/base.css";

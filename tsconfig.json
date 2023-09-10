@@ -2,11 +2,11 @@
   "compilerOptions": {
     "emitDeclarationOnly": true,
     "declaration": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "outDir": "dist/components",
     "strict": false,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
-  "include": ["src/types.ts"],
   "exclude": ["node_modules"]
 }

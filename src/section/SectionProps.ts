@@ -26731,7 +26731,6 @@ export interface Quote {
   byline?: SourceAddition8;
   className?: Class53;
   component?: KsComponentAttribute348;
-  [k: string]: unknown;
 }
 /**
  * Component to render a pill / tag / label
@@ -26755,7 +26754,6 @@ export interface Quote1 {
   byline?: SourceAddition9;
   className?: Class54;
   component?: KsComponentAttribute350;
-  [k: string]: unknown;
 }
 /**
  * Component to show contact information
@@ -26804,7 +26802,6 @@ export interface Quote2 {
   byline?: SourceAddition10;
   className?: Class56;
   component?: KsComponentAttribute353;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -26826,7 +26823,6 @@ export interface Quote3 {
   byline?: SourceAddition11;
   className?: Class58;
   component?: KsComponentAttribute355;
-  [k: string]: unknown;
 }
 /**
  * Component to display content in a condensed, boxed form
@@ -26892,7 +26888,6 @@ export interface Quote4 {
   byline?: SourceAddition12;
   className?: Class59;
   component?: KsComponentAttribute360;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -26918,7 +26913,6 @@ export interface Quote5 {
   byline?: SourceAddition13;
   className?: Class60;
   component?: KsComponentAttribute362;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -27002,7 +26996,6 @@ export interface Quote6 {
   byline?: SourceAddition14;
   className?: Class62;
   component?: KsComponentAttribute366;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -27069,7 +27062,6 @@ export interface Quote7 {
   byline?: SourceAddition15;
   className?: Class64;
   component?: KsComponentAttribute371;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -27133,7 +27125,6 @@ export interface Quote8 {
   byline?: SourceAddition16;
   className?: Class66;
   component?: KsComponentAttribute376;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -27602,7 +27593,6 @@ export interface TextBox {
   vAlign?: BoxVerticalAlignment;
   hAlign?: BoxHorizontalAlignment;
   link?: Button48;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -27706,7 +27696,6 @@ export interface Image6 {
   vAlign?: ImageVerticalAlignment;
   hAlign?: ImageHorizontalAlignment;
   order?: Order;
-  [k: string]: unknown;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -27714,7 +27703,6 @@ export interface Image6 {
 export interface Order {
   mobileImageLast?: MobileImageAfterText;
   desktopImageLast?: DesktopImageAfterText;
-  [k: string]: unknown;
 }
 /**
  * Component to render a pill / tag / label
@@ -27745,7 +27733,6 @@ export interface TextBox1 {
   vAlign?: BoxVerticalAlignment1;
   hAlign?: BoxHorizontalAlignment1;
   link?: Button50;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -27849,7 +27836,6 @@ export interface Image7 {
   vAlign?: ImageVerticalAlignment1;
   hAlign?: ImageHorizontalAlignment1;
   order?: Order1;
-  [k: string]: unknown;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -27857,7 +27843,6 @@ export interface Image7 {
 export interface Order1 {
   mobileImageLast?: MobileImageAfterText1;
   desktopImageLast?: DesktopImageAfterText1;
-  [k: string]: unknown;
 }
 /**
  * Component to show contact information
@@ -27911,7 +27896,6 @@ export interface Picture47 {
 export interface Order2 {
   mobileImageLast?: MobileImageAfterText2;
   desktopImageLast?: DesktopImageAfterText2;
-  [k: string]: unknown;
 }
 /**
  * Text content to display
@@ -27925,7 +27909,6 @@ export interface TextBox2 {
   vAlign?: BoxVerticalAlignment2;
   hAlign?: BoxHorizontalAlignment2;
   link?: Button52;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28047,7 +28030,6 @@ export interface TextBox3 {
   vAlign?: BoxVerticalAlignment3;
   hAlign?: BoxHorizontalAlignment3;
   link?: Button54;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28151,7 +28133,6 @@ export interface Image8 {
   vAlign?: ImageVerticalAlignment3;
   hAlign?: ImageHorizontalAlignment3;
   order?: Order3;
-  [k: string]: unknown;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28159,7 +28140,6 @@ export interface Image8 {
 export interface Order3 {
   mobileImageLast?: MobileImageAfterText3;
   desktopImageLast?: DesktopImageAfterText3;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -28192,7 +28172,6 @@ export interface TextBox4 {
   vAlign?: BoxVerticalAlignment4;
   hAlign?: BoxHorizontalAlignment4;
   link?: Button56;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28296,7 +28275,6 @@ export interface Image9 {
   vAlign?: ImageVerticalAlignment4;
   hAlign?: ImageHorizontalAlignment4;
   order?: Order4;
-  [k: string]: unknown;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28304,7 +28282,6 @@ export interface Image9 {
 export interface Order4 {
   mobileImageLast?: MobileImageAfterText4;
   desktopImageLast?: DesktopImageAfterText4;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -28395,7 +28372,6 @@ export interface TextBox5 {
   vAlign?: BoxVerticalAlignment5;
   hAlign?: BoxHorizontalAlignment5;
   link?: Button58;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28499,7 +28475,6 @@ export interface Image10 {
   vAlign?: ImageVerticalAlignment5;
   hAlign?: ImageHorizontalAlignment5;
   order?: Order5;
-  [k: string]: unknown;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28507,7 +28482,6 @@ export interface Image10 {
 export interface Order5 {
   mobileImageLast?: MobileImageAfterText5;
   desktopImageLast?: DesktopImageAfterText5;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -28577,7 +28551,6 @@ export interface TextBox6 {
   vAlign?: BoxVerticalAlignment6;
   hAlign?: BoxHorizontalAlignment6;
   link?: Button61;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28681,7 +28654,6 @@ export interface Image11 {
   vAlign?: ImageVerticalAlignment6;
   hAlign?: ImageHorizontalAlignment6;
   order?: Order6;
-  [k: string]: unknown;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28689,7 +28661,6 @@ export interface Image11 {
 export interface Order6 {
   mobileImageLast?: MobileImageAfterText6;
   desktopImageLast?: DesktopImageAfterText6;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28765,7 +28736,6 @@ export interface BackgroundImage7 {
   src?: OptionalSource;
   indent?: ImageIndent;
   alt?: AltText49;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -28774,7 +28744,6 @@ export interface BackgroundVideo {
   srcMobile: MobileVideoSource;
   srcTablet: TabletVideoSource;
   srcDesktop: DesktopVideoSource;
-  [k: string]: unknown;
 }
 /**
  * Content and style configuration for the text box
@@ -28889,7 +28858,6 @@ export interface BackgroundImage8 {
   src?: OptionalSource1;
   indent?: ImageIndent1;
   alt?: AltText50;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -28898,7 +28866,6 @@ export interface BackgroundVideo1 {
   srcMobile: MobileVideoSource1;
   srcTablet: TabletVideoSource1;
   srcDesktop: DesktopVideoSource1;
-  [k: string]: unknown;
 }
 /**
  * Content and style configuration for the text box
@@ -29038,7 +29005,6 @@ export interface BackgroundImage9 {
   src?: OptionalSource2;
   indent?: ImageIndent2;
   alt?: AltText52;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -29047,7 +29013,6 @@ export interface BackgroundVideo2 {
   srcMobile: MobileVideoSource2;
   srcTablet: TabletVideoSource2;
   srcDesktop: DesktopVideoSource2;
-  [k: string]: unknown;
 }
 /**
  * Content and style configuration for the text box
@@ -29160,7 +29125,6 @@ export interface BackgroundImage10 {
   src?: OptionalSource3;
   indent?: ImageIndent3;
   alt?: AltText53;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -29169,7 +29133,6 @@ export interface BackgroundVideo3 {
   srcMobile: MobileVideoSource3;
   srcTablet: TabletVideoSource3;
   srcDesktop: DesktopVideoSource3;
-  [k: string]: unknown;
 }
 /**
  * Content and style configuration for the text box
@@ -29326,7 +29289,6 @@ export interface BackgroundImage11 {
   src?: OptionalSource4;
   indent?: ImageIndent4;
   alt?: AltText54;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -29335,7 +29297,6 @@ export interface BackgroundVideo4 {
   srcMobile: MobileVideoSource4;
   srcTablet: TabletVideoSource4;
   srcDesktop: DesktopVideoSource4;
-  [k: string]: unknown;
 }
 /**
  * Content and style configuration for the text box
@@ -29452,7 +29413,6 @@ export interface BackgroundImage12 {
   src?: OptionalSource5;
   indent?: ImageIndent5;
   alt?: AltText55;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -29461,7 +29421,6 @@ export interface BackgroundVideo5 {
   srcMobile: MobileVideoSource5;
   srcTablet: TabletVideoSource5;
   srcDesktop: DesktopVideoSource5;
-  [k: string]: unknown;
 }
 /**
  * Content and style configuration for the text box
@@ -29636,7 +29595,6 @@ export interface BackgroundImage13 {
   src?: OptionalSource6;
   indent?: ImageIndent6;
   alt?: AltText57;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -29645,7 +29603,6 @@ export interface BackgroundVideo6 {
   srcMobile: MobileVideoSource6;
   srcTablet: TabletVideoSource6;
   srcDesktop: DesktopVideoSource6;
-  [k: string]: unknown;
 }
 /**
  * Content and style configuration for the text box
@@ -29803,7 +29760,6 @@ export interface BackgroundImage14 {
   src?: OptionalSource7;
   indent?: ImageIndent7;
   alt?: AltText58;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -29812,7 +29768,6 @@ export interface BackgroundVideo7 {
   srcMobile: MobileVideoSource7;
   srcTablet: TabletVideoSource7;
   srcDesktop: DesktopVideoSource7;
-  [k: string]: unknown;
 }
 /**
  * Content and style configuration for the text box
@@ -29967,7 +29922,6 @@ export interface BackgroundImage15 {
   src?: OptionalSource8;
   indent?: ImageIndent8;
   alt?: AltText59;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -29976,7 +29930,6 @@ export interface BackgroundVideo8 {
   srcMobile: MobileVideoSource8;
   srcTablet: TabletVideoSource8;
   srcDesktop: DesktopVideoSource8;
-  [k: string]: unknown;
 }
 /**
  * Content and style configuration for the text box
@@ -30218,7 +30171,6 @@ export interface BackgroundImage16 {
   src?: OptionalSource9;
   indent?: ImageIndent9;
   alt?: AltText60;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -30227,7 +30179,6 @@ export interface BackgroundVideo9 {
   srcMobile: MobileVideoSource9;
   srcTablet: TabletVideoSource9;
   srcDesktop: DesktopVideoSource9;
-  [k: string]: unknown;
 }
 /**
  * Component to render a pill / tag / label
@@ -30374,7 +30325,6 @@ export interface BackgroundImage17 {
   src?: OptionalSource10;
   indent?: ImageIndent10;
   alt?: AltText61;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -30383,7 +30333,6 @@ export interface BackgroundVideo10 {
   srcMobile: MobileVideoSource10;
   srcTablet: TabletVideoSource10;
   srcDesktop: DesktopVideoSource10;
-  [k: string]: unknown;
 }
 /**
  * Component to show contact information
@@ -30555,7 +30504,6 @@ export interface BackgroundImage18 {
   src?: OptionalSource11;
   indent?: ImageIndent11;
   alt?: AltText63;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -30564,7 +30512,6 @@ export interface BackgroundVideo11 {
   srcMobile: MobileVideoSource11;
   srcTablet: TabletVideoSource11;
   srcDesktop: DesktopVideoSource11;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -30709,7 +30656,6 @@ export interface BackgroundImage19 {
   src?: OptionalSource12;
   indent?: ImageIndent12;
   alt?: AltText64;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -30718,7 +30664,6 @@ export interface BackgroundVideo12 {
   srcMobile: MobileVideoSource12;
   srcTablet: TabletVideoSource12;
   srcDesktop: DesktopVideoSource12;
-  [k: string]: unknown;
 }
 /**
  * Component to display content in a condensed, boxed form
@@ -30907,7 +30852,6 @@ export interface BackgroundImage20 {
   src?: OptionalSource13;
   indent?: ImageIndent13;
   alt?: AltText65;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -30916,7 +30860,6 @@ export interface BackgroundVideo13 {
   srcMobile: MobileVideoSource13;
   srcTablet: TabletVideoSource13;
   srcDesktop: DesktopVideoSource13;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -31065,7 +31008,6 @@ export interface BackgroundImage21 {
   src?: OptionalSource14;
   indent?: ImageIndent14;
   alt?: AltText66;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -31074,7 +31016,6 @@ export interface BackgroundVideo14 {
   srcMobile: MobileVideoSource14;
   srcTablet: TabletVideoSource14;
   srcDesktop: DesktopVideoSource14;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -31264,7 +31205,6 @@ export interface BackgroundImage22 {
   src?: OptionalSource15;
   indent?: ImageIndent15;
   alt?: AltText67;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -31273,7 +31213,6 @@ export interface BackgroundVideo15 {
   srcMobile: MobileVideoSource15;
   srcTablet: TabletVideoSource15;
   srcDesktop: DesktopVideoSource15;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -31460,7 +31399,6 @@ export interface BackgroundImage23 {
   src?: OptionalSource16;
   indent?: ImageIndent16;
   alt?: AltText68;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -31469,7 +31407,6 @@ export interface BackgroundVideo16 {
   srcMobile: MobileVideoSource16;
   srcTablet: TabletVideoSource16;
   srcDesktop: DesktopVideoSource16;
-  [k: string]: unknown;
 }
 /**
  * Headline

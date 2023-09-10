@@ -406,7 +406,6 @@ export interface BackgroundImage {
   src?: OptionalSource;
   indent?: ImageIndent;
   alt?: AltText;
-  [k: string]: unknown;
 }
 /**
  * Sources of background videos for different screen sizes
@@ -415,5 +414,4 @@ export interface BackgroundVideo {
   srcMobile: MobileVideoSource;
   srcTablet: TabletVideoSource;
   srcDesktop: DesktopVideoSource;
-  [k: string]: unknown;
 }

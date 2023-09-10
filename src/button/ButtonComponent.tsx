@@ -15,7 +15,6 @@ import {
   ButtonContext,
   Button as KdsButton,
 } from "@kickstartds/base/lib/button";
-import React from "react";
 
 const ButtonComponent: ForwardRefExoticComponent<
   RefAttributes<HTMLButtonElement | HTMLAnchorElement> &
