@@ -1,6 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://kickstartds.com/visual.schema.json",
+  "title": "Visual",
+  "type": "object",
   "allOf": [
     {
       "type": "object",
