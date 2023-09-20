@@ -710,7 +710,7 @@ export type Caption3 = string;
 /**
  * Collection of media items to display
  */
-export type Media = (TextMediaVideo | TextMediaImage | TextMediaLazyImage)[];
+export type Media = (MediaVideo | MediaImage | MediaLazyImage)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -1453,7 +1453,7 @@ export type Caption7 = string;
 /**
  * Collection of media items to display
  */
-export type Media1 = (TextMediaVideo1 | TextMediaImage1 | TextMediaLazyImage1)[];
+export type Media1 = (MediaVideo1 | MediaImage1 | MediaLazyImage1)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -2202,7 +2202,7 @@ export type Caption11 = string;
 /**
  * Collection of media items to display
  */
-export type Media2 = (TextMediaVideo2 | TextMediaImage2 | TextMediaLazyImage2)[];
+export type Media2 = (MediaVideo2 | MediaImage2 | MediaLazyImage2)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -2988,7 +2988,7 @@ export type Caption15 = string;
 /**
  * Collection of media items to display
  */
-export type Media3 = (TextMediaVideo3 | TextMediaImage3 | TextMediaLazyImage3)[];
+export type Media3 = (MediaVideo3 | MediaImage3 | MediaLazyImage3)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -3832,7 +3832,7 @@ export type Caption19 = string;
 /**
  * Collection of media items to display
  */
-export type Media4 = (TextMediaVideo4 | TextMediaImage4 | TextMediaLazyImage4)[];
+export type Media4 = (MediaVideo4 | MediaImage4 | MediaLazyImage4)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -4743,7 +4743,7 @@ export type Caption23 = string;
 /**
  * Collection of media items to display
  */
-export type Media5 = (TextMediaVideo5 | TextMediaImage5 | TextMediaLazyImage5)[];
+export type Media5 = (MediaVideo5 | MediaImage5 | MediaLazyImage5)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -5231,7 +5231,7 @@ export type Caption27 = string;
 /**
  * Collection of media items to display
  */
-export type Media6 = (TextMediaVideo6 | TextMediaImage6 | TextMediaLazyImage6)[];
+export type Media6 = (MediaVideo6 | MediaImage6 | MediaLazyImage6)[];
 /**
  * Text to display inside tag label
  */
@@ -5408,7 +5408,7 @@ export type Caption31 = string;
 /**
  * Collection of media items to display
  */
-export type Media7 = (TextMediaVideo7 | TextMediaImage7 | TextMediaLazyImage7)[];
+export type Media7 = (MediaVideo7 | MediaImage7 | MediaLazyImage7)[];
 /**
  * Picture source
  */
@@ -5654,7 +5654,7 @@ export type Caption35 = string;
 /**
  * Collection of media items to display
  */
-export type Media8 = (TextMediaVideo8 | TextMediaImage8 | TextMediaLazyImage8)[];
+export type Media8 = (MediaVideo8 | MediaImage8 | MediaLazyImage8)[];
 /**
  * Include the text for the collapsible that should be visible before opening
  */
@@ -5819,7 +5819,7 @@ export type Caption39 = string;
 /**
  * Collection of media items to display
  */
-export type Media9 = (TextMediaVideo9 | TextMediaImage9 | TextMediaLazyImage9)[];
+export type Media9 = (MediaVideo9 | MediaImage9 | MediaLazyImage9)[];
 /**
  * Choose one of the set ratios, all ratios except `none` stretch the image to 100% width
  */
@@ -6067,7 +6067,7 @@ export type Caption43 = string;
 /**
  * Collection of media items to display
  */
-export type Media10 = (TextMediaVideo10 | TextMediaImage10 | TextMediaLazyImage10)[];
+export type Media10 = (MediaVideo10 | MediaImage10 | MediaLazyImage10)[];
 /**
  * Select the headline level to use, or p alternatively
  */
@@ -6252,7 +6252,7 @@ export type Caption47 = string;
 /**
  * Collection of media items to display
  */
-export type Media11 = (TextMediaVideo11 | TextMediaImage11 | TextMediaLazyImage11)[];
+export type Media11 = (MediaVideo11 | MediaImage11 | MediaLazyImage11)[];
 /**
  * Copy text for the element
  */
@@ -6405,7 +6405,7 @@ export type Caption51 = string;
 /**
  * Collection of media items to display
  */
-export type Media12 = (TextMediaVideo12 | TextMediaImage12 | TextMediaLazyImage12)[];
+export type Media12 = (MediaVideo12 | MediaImage12 | MediaLazyImage12)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -6662,7 +6662,7 @@ export type Caption55 = string;
 /**
  * Collection of media items to display
  */
-export type Media13 = (TextMediaVideo13 | TextMediaImage13 | TextMediaLazyImage13)[];
+export type Media13 = (MediaVideo13 | MediaImage13 | MediaLazyImage13)[];
 /**
  * Topic for the teaser box. Displayed before the text, in bold
  */
@@ -6899,7 +6899,7 @@ export type Caption59 = string;
 /**
  * Collection of media items to display
  */
-export type Media14 = (TextMediaVideo14 | TextMediaImage14 | TextMediaLazyImage14)[];
+export type Media14 = (MediaVideo14 | MediaImage14 | MediaLazyImage14)[];
 /**
  * Text used on button
  */
@@ -7546,7 +7546,7 @@ export type Caption63 = string;
 /**
  * Collection of media items to display
  */
-export type Media15 = (TextMediaVideo15 | TextMediaImage15 | TextMediaLazyImage15)[];
+export type Media15 = (MediaVideo15 | MediaImage15 | MediaLazyImage15)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -8622,7 +8622,7 @@ export type Caption67 = string;
 /**
  * Collection of media items to display
  */
-export type Media16 = (TextMediaVideo16 | TextMediaImage16 | TextMediaLazyImage16)[];
+export type Media16 = (MediaVideo16 | MediaImage16 | MediaLazyImage16)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -9621,7 +9621,7 @@ export type Caption71 = string;
 /**
  * Collection of media items to display
  */
-export type Media17 = (TextMediaVideo17 | TextMediaImage17 | TextMediaLazyImage17)[];
+export type Media17 = (MediaVideo17 | MediaImage17 | MediaLazyImage17)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -10855,7 +10855,7 @@ export type Caption75 = string;
 /**
  * Collection of media items to display
  */
-export type Media18 = (TextMediaVideo18 | TextMediaImage18 | TextMediaLazyImage18)[];
+export type Media18 = (MediaVideo18 | MediaImage18 | MediaLazyImage18)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -11729,7 +11729,7 @@ export type Caption79 = string;
 /**
  * Collection of media items to display
  */
-export type Media19 = (TextMediaVideo19 | TextMediaImage19 | TextMediaLazyImage19)[];
+export type Media19 = (MediaVideo19 | MediaImage19 | MediaLazyImage19)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -12585,7 +12585,7 @@ export type Caption83 = string;
 /**
  * Collection of media items to display
  */
-export type Media20 = (TextMediaVideo20 | TextMediaImage20 | TextMediaLazyImage20)[];
+export type Media20 = (MediaVideo20 | MediaImage20 | MediaLazyImage20)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -13400,7 +13400,7 @@ export type Caption87 = string;
 /**
  * Collection of media items to display
  */
-export type Media21 = (TextMediaVideo21 | TextMediaImage21 | TextMediaLazyImage21)[];
+export type Media21 = (MediaVideo21 | MediaImage21 | MediaLazyImage21)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -13981,6 +13981,10 @@ export type MobileImageAfterText = boolean;
  */
 export type DesktopImageAfterText = boolean;
 /**
+ * Image description
+ */
+export type AltText47 = string;
+/**
  * Text to display inside tag label
  */
 export type Label98 = string;
@@ -14228,6 +14232,10 @@ export type MobileImageAfterText1 = boolean;
  * Switch to displaying the image after the text on desktop
  */
 export type DesktopImageAfterText1 = boolean;
+/**
+ * Image description
+ */
+export type AltText48 = string;
 export type Inverted110 = boolean;
 /**
  * Picture source
@@ -14240,7 +14248,7 @@ export type PictureSourceset94 = string;
 /**
  * Alt text to display for picture
  */
-export type AltText47 = string;
+export type AltText49 = string;
 /**
  * Width of the picture
  */
@@ -14787,6 +14795,10 @@ export type MobileImageAfterText3 = boolean;
  * Switch to displaying the image after the text on desktop
  */
 export type DesktopImageAfterText3 = boolean;
+/**
+ * Image description
+ */
+export type AltText50 = string;
 export type Inverted116 = boolean;
 /**
  * Select the headline level to use, or p alternatively
@@ -15044,6 +15056,10 @@ export type MobileImageAfterText4 = boolean;
  * Switch to displaying the image after the text on desktop
  */
 export type DesktopImageAfterText4 = boolean;
+/**
+ * Image description
+ */
+export type AltText51 = string;
 export type Inverted119 = boolean;
 /**
  * Copy text for the element
@@ -15102,7 +15118,7 @@ export type PictureSourceset96 = string;
 /**
  * Alt text to display for picture
  */
-export type AltText48 = string;
+export type AltText52 = string;
 /**
  * Width of the picture
  */
@@ -15197,7 +15213,7 @@ export type Caption91 = string;
 /**
  * Collection of media items to display
  */
-export type Media22 = (TextMediaVideo22 | TextMediaImage22 | TextMediaLazyImage22)[];
+export type Media22 = (MediaVideo22 | MediaImage22 | MediaLazyImage22)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -15430,6 +15446,10 @@ export type MobileImageAfterText5 = boolean;
  * Switch to displaying the image after the text on desktop
  */
 export type DesktopImageAfterText5 = boolean;
+/**
+ * Image description
+ */
+export type AltText53 = string;
 export type Inverted122 = boolean;
 /**
  * Topic for the teaser box. Displayed before the text, in bold
@@ -15744,6 +15764,10 @@ export type MobileImageAfterText6 = boolean;
  */
 export type DesktopImageAfterText6 = boolean;
 /**
+ * Image description
+ */
+export type AltText54 = string;
+/**
  * Text used on button
  */
 export type Label112 = string;
@@ -15842,7 +15866,7 @@ export type ImageIndent = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText49 = string;
+export type AltText55 = string;
 /**
  * Background video source for small screens
  */
@@ -16064,7 +16088,7 @@ export type ImageIndent1 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText50 = string;
+export type AltText56 = string;
 /**
  * Background video source for small screens
  */
@@ -16241,7 +16265,7 @@ export type PictureSourceset98 = string;
 /**
  * Alt text to display for picture
  */
-export type AltText51 = string;
+export type AltText57 = string;
 /**
  * Width of the picture
  */
@@ -16355,7 +16379,7 @@ export type ImageIndent2 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText52 = string;
+export type AltText58 = string;
 /**
  * Background video source for small screens
  */
@@ -16569,7 +16593,7 @@ export type ImageIndent3 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText53 = string;
+export type AltText59 = string;
 /**
  * Background video source for small screens
  */
@@ -16866,7 +16890,7 @@ export type ImageIndent4 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText54 = string;
+export type AltText60 = string;
 /**
  * Background video source for small screens
  */
@@ -17096,7 +17120,7 @@ export type ImageIndent5 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText55 = string;
+export type AltText61 = string;
 /**
  * Background video source for small screens
  */
@@ -17319,7 +17343,7 @@ export type PictureSourceset100 = string;
 /**
  * Alt text to display for picture
  */
-export type AltText56 = string;
+export type AltText62 = string;
 /**
  * Width of the picture
  */
@@ -17414,7 +17438,7 @@ export type Caption95 = string;
 /**
  * Collection of media items to display
  */
-export type Media23 = (TextMediaVideo23 | TextMediaImage23 | TextMediaLazyImage23)[];
+export type Media23 = (MediaVideo23 | MediaImage23 | MediaLazyImage23)[];
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -17455,7 +17479,7 @@ export type ImageIndent6 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText57 = string;
+export type AltText63 = string;
 /**
  * Background video source for small screens
  */
@@ -17753,7 +17777,7 @@ export type ImageIndent7 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText58 = string;
+export type AltText64 = string;
 /**
  * Background video source for small screens
  */
@@ -18039,7 +18063,7 @@ export type ImageIndent8 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText59 = string;
+export type AltText65 = string;
 /**
  * Background video source for small screens
  */
@@ -18497,7 +18521,7 @@ export type ImageIndent9 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText60 = string;
+export type AltText66 = string;
 /**
  * Background video source for small screens
  */
@@ -18775,7 +18799,7 @@ export type ImageIndent10 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText61 = string;
+export type AltText67 = string;
 /**
  * Background video source for small screens
  */
@@ -18815,7 +18839,7 @@ export type PictureSourceset102 = string;
 /**
  * Alt text to display for picture
  */
-export type AltText62 = string;
+export type AltText68 = string;
 /**
  * Width of the picture
  */
@@ -19122,7 +19146,7 @@ export type ImageIndent11 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText63 = string;
+export type AltText69 = string;
 /**
  * Background video source for small screens
  */
@@ -19392,7 +19416,7 @@ export type ImageIndent12 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText64 = string;
+export type AltText70 = string;
 /**
  * Background video source for small screens
  */
@@ -19745,7 +19769,7 @@ export type ImageIndent13 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText65 = string;
+export type AltText71 = string;
 /**
  * Background video source for small screens
  */
@@ -20031,7 +20055,7 @@ export type ImageIndent14 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText66 = string;
+export type AltText72 = string;
 /**
  * Background video source for small screens
  */
@@ -20385,7 +20409,7 @@ export type ImageIndent15 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText67 = string;
+export type AltText73 = string;
 /**
  * Background video source for small screens
  */
@@ -20727,7 +20751,7 @@ export type ImageIndent16 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText68 = string;
+export type AltText74 = string;
 /**
  * Background video source for small screens
  */
@@ -21294,7 +21318,7 @@ export interface TextMedia {
   disabled?: DisabledAttribute6;
   newTab?: OpenLinkInNewTab7;
 }
-export interface TextMediaVideo {
+export interface MediaVideo {
   video?: Video;
   full?: FullWidthMedia;
   caption?: Caption;
@@ -21309,7 +21333,7 @@ export interface Video {
   width: Width1;
   height: Height1;
 }
-export interface TextMediaImage {
+export interface MediaImage {
   image?: Picture1;
   full?: FullWidthMedia1;
   caption?: Caption1;
@@ -21333,7 +21357,7 @@ export interface Picture1 {
   sources?: Sources1;
   pictureClassName?: ClassAttribute1;
 }
-export interface TextMediaLazyImage {
+export interface MediaLazyImage {
   lightboxImage?: LightboxImage;
   full?: FullWidthMedia2;
   caption?: Caption3;
@@ -21639,7 +21663,7 @@ export interface TextMedia1 {
   link?: LinkTarget4;
   removable?: Removable4;
 }
-export interface TextMediaVideo1 {
+export interface MediaVideo1 {
   video?: Video1;
   full?: FullWidthMedia3;
   caption?: Caption4;
@@ -21654,7 +21678,7 @@ export interface Video1 {
   width: Width5;
   height: Height5;
 }
-export interface TextMediaImage1 {
+export interface MediaImage1 {
   image?: Picture3;
   full?: FullWidthMedia4;
   caption?: Caption5;
@@ -21678,7 +21702,7 @@ export interface Picture3 {
   sources?: Sources3;
   pictureClassName?: ClassAttribute3;
 }
-export interface TextMediaLazyImage1 {
+export interface MediaLazyImage1 {
   lightboxImage?: LightboxImage1;
   full?: FullWidthMedia5;
   caption?: Caption7;
@@ -21944,7 +21968,7 @@ export interface TextMedia2 {
   }[];
   copy?: CopyText7;
 }
-export interface TextMediaVideo2 {
+export interface MediaVideo2 {
   video?: Video2;
   full?: FullWidthMedia6;
   caption?: Caption8;
@@ -21959,7 +21983,7 @@ export interface Video2 {
   width: Width13;
   height: Height13;
 }
-export interface TextMediaImage2 {
+export interface MediaImage2 {
   image?: Picture9;
   full?: FullWidthMedia7;
   caption?: Caption9;
@@ -21983,7 +22007,7 @@ export interface Picture9 {
   sources?: Sources9;
   pictureClassName?: ClassAttribute9;
 }
-export interface TextMediaLazyImage2 {
+export interface MediaLazyImage2 {
   lightboxImage?: LightboxImage2;
   full?: FullWidthMedia8;
   caption?: Caption11;
@@ -22285,7 +22309,7 @@ export interface TextMedia3 {
   component?: KsComponentAttribute79;
   summary: SummaryTextForTheCollapsible9;
 }
-export interface TextMediaVideo3 {
+export interface MediaVideo3 {
   video?: Video3;
   full?: FullWidthMedia9;
   caption?: Caption12;
@@ -22300,7 +22324,7 @@ export interface Video3 {
   width: Width19;
   height: Height19;
 }
-export interface TextMediaImage3 {
+export interface MediaImage3 {
   image?: Picture13;
   full?: FullWidthMedia10;
   caption?: Caption13;
@@ -22324,7 +22348,7 @@ export interface Picture13 {
   sources?: Sources13;
   pictureClassName?: ClassAttribute13;
 }
-export interface TextMediaLazyImage3 {
+export interface MediaLazyImage3 {
   lightboxImage?: LightboxImage3;
   full?: FullWidthMedia11;
   caption?: Caption15;
@@ -22719,7 +22743,7 @@ export interface TextMedia4 {
   topic?: Topic11;
   link?: Link6;
 }
-export interface TextMediaVideo4 {
+export interface MediaVideo4 {
   video?: Video4;
   full?: FullWidthMedia12;
   caption?: Caption16;
@@ -22734,7 +22758,7 @@ export interface Video4 {
   width: Width22;
   height: Height22;
 }
-export interface TextMediaImage4 {
+export interface MediaImage4 {
   image?: Picture14;
   full?: FullWidthMedia13;
   caption?: Caption17;
@@ -22758,7 +22782,7 @@ export interface Picture14 {
   sources?: Sources14;
   pictureClassName?: ClassAttribute14;
 }
-export interface TextMediaLazyImage4 {
+export interface MediaLazyImage4 {
   lightboxImage?: LightboxImage4;
   full?: FullWidthMedia14;
   caption?: Caption19;
@@ -23166,7 +23190,7 @@ export interface TextMedia5 {
    */
   switchOrder?: boolean;
 }
-export interface TextMediaVideo5 {
+export interface MediaVideo5 {
   video?: Video5;
   full?: FullWidthMedia15;
   caption?: Caption20;
@@ -23181,7 +23205,7 @@ export interface Video5 {
   width: Width26;
   height: Height26;
 }
-export interface TextMediaImage5 {
+export interface MediaImage5 {
   image?: Picture16;
   full?: FullWidthMedia16;
   caption?: Caption21;
@@ -23205,7 +23229,7 @@ export interface Picture16 {
   sources?: Sources16;
   pictureClassName?: ClassAttribute16;
 }
-export interface TextMediaLazyImage5 {
+export interface MediaLazyImage5 {
   lightboxImage?: LightboxImage5;
   full?: FullWidthMedia17;
   caption?: Caption23;
@@ -23394,7 +23418,7 @@ export interface IconAfterButton29 {
   className?: AdditionalClass65;
   component?: KsComponentAttribute144;
 }
-export interface TextMediaVideo6 {
+export interface MediaVideo6 {
   video?: Video6;
   full?: FullWidthMedia18;
   caption?: Caption24;
@@ -23409,7 +23433,7 @@ export interface Video6 {
   width: Width29;
   height: Height29;
 }
-export interface TextMediaImage6 {
+export interface MediaImage6 {
   image?: Picture17;
   full?: FullWidthMedia19;
   caption?: Caption25;
@@ -23433,7 +23457,7 @@ export interface Picture17 {
   sources?: Sources17;
   pictureClassName?: ClassAttribute17;
 }
-export interface TextMediaLazyImage6 {
+export interface MediaLazyImage6 {
   lightboxImage?: LightboxImage6;
   full?: FullWidthMedia20;
   caption?: Caption27;
@@ -23469,7 +23493,7 @@ export interface TagLabel4 {
   mediaAlignment?: MediaAlignment7;
   media?: Media7;
 }
-export interface TextMediaVideo7 {
+export interface MediaVideo7 {
   video?: Video7;
   full?: FullWidthMedia21;
   caption?: Caption28;
@@ -23484,7 +23508,7 @@ export interface Video7 {
   width: Width32;
   height: Height32;
 }
-export interface TextMediaImage7 {
+export interface MediaImage7 {
   image?: Picture18;
   full?: FullWidthMedia22;
   caption?: Caption29;
@@ -23508,7 +23532,7 @@ export interface Picture18 {
   sources?: Sources18;
   pictureClassName?: ClassAttribute18;
 }
-export interface TextMediaLazyImage7 {
+export interface MediaLazyImage7 {
   lightboxImage?: LightboxImage7;
   full?: FullWidthMedia23;
   caption?: Caption31;
@@ -23569,7 +23593,7 @@ export interface Picture19 {
   sources?: Sources19;
   pictureClassName?: ClassAttribute19;
 }
-export interface TextMediaVideo8 {
+export interface MediaVideo8 {
   video?: Video8;
   full?: FullWidthMedia24;
   caption?: Caption32;
@@ -23584,7 +23608,7 @@ export interface Video8 {
   width: Width36;
   height: Height36;
 }
-export interface TextMediaImage8 {
+export interface MediaImage8 {
   image?: Picture20;
   full?: FullWidthMedia25;
   caption?: Caption33;
@@ -23608,7 +23632,7 @@ export interface Picture20 {
   sources?: Sources20;
   pictureClassName?: ClassAttribute20;
 }
-export interface TextMediaLazyImage8 {
+export interface MediaLazyImage8 {
   lightboxImage?: LightboxImage8;
   full?: FullWidthMedia26;
   caption?: Caption35;
@@ -23641,7 +23665,7 @@ export interface CollapsibleBox6 {
   mediaAlignment?: MediaAlignment9;
   media?: Media9;
 }
-export interface TextMediaVideo9 {
+export interface MediaVideo9 {
   video?: Video9;
   full?: FullWidthMedia27;
   caption?: Caption36;
@@ -23656,7 +23680,7 @@ export interface Video9 {
   width: Width39;
   height: Height39;
 }
-export interface TextMediaImage9 {
+export interface MediaImage9 {
   image?: Picture21;
   full?: FullWidthMedia28;
   caption?: Caption37;
@@ -23680,7 +23704,7 @@ export interface Picture21 {
   sources?: Sources21;
   pictureClassName?: ClassAttribute21;
 }
-export interface TextMediaLazyImage9 {
+export interface MediaLazyImage9 {
   lightboxImage?: LightboxImage9;
   full?: FullWidthMedia29;
   caption?: Caption39;
@@ -23757,7 +23781,7 @@ export interface IconAfterButton30 {
   className?: AdditionalClass71;
   component?: KsComponentAttribute159;
 }
-export interface TextMediaVideo10 {
+export interface MediaVideo10 {
   video?: Video10;
   full?: FullWidthMedia30;
   caption?: Caption40;
@@ -23772,7 +23796,7 @@ export interface Video10 {
   width: Width42;
   height: Height42;
 }
-export interface TextMediaImage10 {
+export interface MediaImage10 {
   image?: Picture22;
   full?: FullWidthMedia31;
   caption?: Caption41;
@@ -23796,7 +23820,7 @@ export interface Picture22 {
   sources?: Sources22;
   pictureClassName?: ClassAttribute22;
 }
-export interface TextMediaLazyImage10 {
+export interface MediaLazyImage10 {
   lightboxImage?: LightboxImage10;
   full?: FullWidthMedia32;
   caption?: Caption43;
@@ -23834,7 +23858,7 @@ export interface Headline6 {
   mediaAlignment?: MediaAlignment11;
   media?: Media11;
 }
-export interface TextMediaVideo11 {
+export interface MediaVideo11 {
   video?: Video11;
   full?: FullWidthMedia33;
   caption?: Caption44;
@@ -23849,7 +23873,7 @@ export interface Video11 {
   width: Width45;
   height: Height45;
 }
-export interface TextMediaImage11 {
+export interface MediaImage11 {
   image?: Picture23;
   full?: FullWidthMedia34;
   caption?: Caption45;
@@ -23873,7 +23897,7 @@ export interface Picture23 {
   sources?: Sources23;
   pictureClassName?: ClassAttribute23;
 }
-export interface TextMediaLazyImage11 {
+export interface MediaLazyImage11 {
   lightboxImage?: LightboxImage11;
   full?: FullWidthMedia35;
   caption?: Caption47;
@@ -23905,7 +23929,7 @@ export interface TextMedia6 {
   className?: Class28;
   component?: KsComponentAttribute169;
 }
-export interface TextMediaVideo12 {
+export interface MediaVideo12 {
   video?: Video12;
   full?: FullWidthMedia36;
   caption?: Caption48;
@@ -23920,7 +23944,7 @@ export interface Video12 {
   width: Width48;
   height: Height48;
 }
-export interface TextMediaImage12 {
+export interface MediaImage12 {
   image?: Picture24;
   full?: FullWidthMedia37;
   caption?: Caption49;
@@ -23944,7 +23968,7 @@ export interface Picture24 {
   sources?: Sources24;
   pictureClassName?: ClassAttribute24;
 }
-export interface TextMediaLazyImage12 {
+export interface MediaLazyImage12 {
   lightboxImage?: LightboxImage12;
   full?: FullWidthMedia38;
   caption?: Caption51;
@@ -24022,7 +24046,7 @@ export interface IconAfterButton31 {
   className?: AdditionalClass76;
   component?: KsComponentAttribute171;
 }
-export interface TextMediaVideo13 {
+export interface MediaVideo13 {
   video?: Video13;
   full?: FullWidthMedia39;
   caption?: Caption52;
@@ -24037,7 +24061,7 @@ export interface Video13 {
   width: Width51;
   height: Height51;
 }
-export interface TextMediaImage13 {
+export interface MediaImage13 {
   image?: Picture25;
   full?: FullWidthMedia40;
   caption?: Caption53;
@@ -24061,7 +24085,7 @@ export interface Picture25 {
   sources?: Sources25;
   pictureClassName?: ClassAttribute25;
 }
-export interface TextMediaLazyImage13 {
+export interface MediaLazyImage13 {
   lightboxImage?: LightboxImage13;
   full?: FullWidthMedia41;
   caption?: Caption55;
@@ -24136,7 +24160,7 @@ export interface IconAfterButton32 {
   className?: AdditionalClass79;
   component?: KsComponentAttribute177;
 }
-export interface TextMediaVideo14 {
+export interface MediaVideo14 {
   video?: Video14;
   full?: FullWidthMedia42;
   caption?: Caption56;
@@ -24151,7 +24175,7 @@ export interface Video14 {
   width: Width54;
   height: Height54;
 }
-export interface TextMediaImage14 {
+export interface MediaImage14 {
   image?: Picture26;
   full?: FullWidthMedia43;
   caption?: Caption57;
@@ -24175,7 +24199,7 @@ export interface Picture26 {
   sources?: Sources26;
   pictureClassName?: ClassAttribute26;
 }
-export interface TextMediaLazyImage14 {
+export interface MediaLazyImage14 {
   lightboxImage?: LightboxImage14;
   full?: FullWidthMedia44;
   caption?: Caption59;
@@ -24469,7 +24493,7 @@ export interface TextMedia7 {
   ratio: ImageRatio19;
   imageSpacing?: ImageSpacing9;
 }
-export interface TextMediaVideo15 {
+export interface MediaVideo15 {
   video?: Video15;
   full?: FullWidthMedia45;
   caption?: Caption60;
@@ -24484,7 +24508,7 @@ export interface Video15 {
   width: Width57;
   height: Height57;
 }
-export interface TextMediaImage15 {
+export interface MediaImage15 {
   image?: Picture27;
   full?: FullWidthMedia46;
   caption?: Caption61;
@@ -24508,7 +24532,7 @@ export interface Picture27 {
   sources?: Sources27;
   pictureClassName?: ClassAttribute27;
 }
-export interface TextMediaLazyImage15 {
+export interface MediaLazyImage15 {
   lightboxImage?: LightboxImage15;
   full?: FullWidthMedia47;
   caption?: Caption63;
@@ -25017,7 +25041,7 @@ export interface TextMedia8 {
   inverted?: Inverted66;
   link?: Button29;
 }
-export interface TextMediaVideo16 {
+export interface MediaVideo16 {
   video?: Video16;
   full?: FullWidthMedia48;
   caption?: Caption64;
@@ -25032,7 +25056,7 @@ export interface Video16 {
   width: Width61;
   height: Height61;
 }
-export interface TextMediaImage16 {
+export interface MediaImage16 {
   image?: Picture29;
   full?: FullWidthMedia49;
   caption?: Caption65;
@@ -25056,7 +25080,7 @@ export interface Picture29 {
   sources?: Sources29;
   pictureClassName?: ClassAttribute29;
 }
-export interface TextMediaLazyImage16 {
+export interface MediaLazyImage16 {
   lightboxImage?: LightboxImage16;
   full?: FullWidthMedia50;
   caption?: Caption67;
@@ -25589,7 +25613,7 @@ export interface TextMedia9 {
    */
   expand?: number;
 }
-export interface TextMediaVideo17 {
+export interface MediaVideo17 {
   video?: Video17;
   full?: FullWidthMedia51;
   caption?: Caption68;
@@ -25604,7 +25628,7 @@ export interface Video17 {
   width: Width65;
   height: Height65;
 }
-export interface TextMediaImage17 {
+export interface MediaImage17 {
   image?: Picture31;
   full?: FullWidthMedia52;
   caption?: Caption69;
@@ -25628,7 +25652,7 @@ export interface Picture31 {
   sources?: Sources31;
   pictureClassName?: ClassAttribute31;
 }
-export interface TextMediaLazyImage17 {
+export interface MediaLazyImage17 {
   lightboxImage?: LightboxImage17;
   full?: FullWidthMedia53;
   caption?: Caption71;
@@ -26130,7 +26154,7 @@ export interface TextMedia10 {
   component?: KsComponentAttribute312;
   logos?: Logos6;
 }
-export interface TextMediaVideo18 {
+export interface MediaVideo18 {
   video?: Video18;
   full?: FullWidthMedia54;
   caption?: Caption72;
@@ -26145,7 +26169,7 @@ export interface Video18 {
   width: Width75;
   height: Height75;
 }
-export interface TextMediaImage18 {
+export interface MediaImage18 {
   image?: Picture39;
   full?: FullWidthMedia55;
   caption?: Caption73;
@@ -26169,7 +26193,7 @@ export interface Picture39 {
   sources?: Sources39;
   pictureClassName?: ClassAttribute39;
 }
-export interface TextMediaLazyImage18 {
+export interface MediaLazyImage18 {
   lightboxImage?: LightboxImage18;
   full?: FullWidthMedia56;
   caption?: Caption75;
@@ -26510,7 +26534,7 @@ export interface TextMedia11 {
   source?: Source69;
   byline?: SourceAddition5;
 }
-export interface TextMediaVideo19 {
+export interface MediaVideo19 {
   video?: Video19;
   full?: FullWidthMedia57;
   caption?: Caption76;
@@ -26525,7 +26549,7 @@ export interface Video19 {
   width: Width81;
   height: Height81;
 }
-export interface TextMediaImage19 {
+export interface MediaImage19 {
   image?: Picture43;
   full?: FullWidthMedia58;
   caption?: Caption77;
@@ -26549,7 +26573,7 @@ export interface Picture43 {
   sources?: Sources43;
   pictureClassName?: ClassAttribute43;
 }
-export interface TextMediaLazyImage19 {
+export interface MediaLazyImage19 {
   lightboxImage?: LightboxImage19;
   full?: FullWidthMedia59;
   caption?: Caption79;
@@ -26731,7 +26755,6 @@ export interface Quote {
   byline?: SourceAddition8;
   className?: Class53;
   component?: KsComponentAttribute348;
-  [k: string]: unknown;
 }
 /**
  * Component to render a pill / tag / label
@@ -26755,7 +26778,6 @@ export interface Quote1 {
   byline?: SourceAddition9;
   className?: Class54;
   component?: KsComponentAttribute350;
-  [k: string]: unknown;
 }
 /**
  * Component to show contact information
@@ -26804,7 +26826,6 @@ export interface Quote2 {
   byline?: SourceAddition10;
   className?: Class56;
   component?: KsComponentAttribute353;
-  [k: string]: unknown;
 }
 /**
  * Component to conditionally show additional info
@@ -26826,7 +26847,6 @@ export interface Quote3 {
   byline?: SourceAddition11;
   className?: Class58;
   component?: KsComponentAttribute355;
-  [k: string]: unknown;
 }
 /**
  * Component to display content in a condensed, boxed form
@@ -26892,7 +26912,6 @@ export interface Quote4 {
   byline?: SourceAddition12;
   className?: Class59;
   component?: KsComponentAttribute360;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -26918,7 +26937,6 @@ export interface Quote5 {
   byline?: SourceAddition13;
   className?: Class60;
   component?: KsComponentAttribute362;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -26931,7 +26949,7 @@ export interface TextMedia12 {
   component?: KsComponentAttribute365;
   slides?: Quote6[];
 }
-export interface TextMediaVideo20 {
+export interface MediaVideo20 {
   video?: Video20;
   full?: FullWidthMedia60;
   caption?: Caption80;
@@ -26946,7 +26964,7 @@ export interface Video20 {
   width: Width85;
   height: Height85;
 }
-export interface TextMediaImage20 {
+export interface MediaImage20 {
   image?: Picture45;
   full?: FullWidthMedia61;
   caption?: Caption81;
@@ -26970,7 +26988,7 @@ export interface Picture45 {
   sources?: Sources45;
   pictureClassName?: ClassAttribute45;
 }
-export interface TextMediaLazyImage20 {
+export interface MediaLazyImage20 {
   lightboxImage?: LightboxImage20;
   full?: FullWidthMedia62;
   caption?: Caption83;
@@ -27002,7 +27020,6 @@ export interface Quote6 {
   byline?: SourceAddition14;
   className?: Class62;
   component?: KsComponentAttribute366;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -27069,7 +27086,6 @@ export interface Quote7 {
   byline?: SourceAddition15;
   className?: Class64;
   component?: KsComponentAttribute371;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -27133,7 +27149,6 @@ export interface Quote8 {
   byline?: SourceAddition16;
   className?: Class66;
   component?: KsComponentAttribute376;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -27345,7 +27360,7 @@ export interface TextMedia13 {
   image: Image4;
   tags?: Tags5;
 }
-export interface TextMediaVideo21 {
+export interface MediaVideo21 {
   video?: Video21;
   full?: FullWidthMedia63;
   caption?: Caption84;
@@ -27360,7 +27375,7 @@ export interface Video21 {
   width: Width88;
   height: Height88;
 }
-export interface TextMediaImage21 {
+export interface MediaImage21 {
   image?: Picture46;
   full?: FullWidthMedia64;
   caption?: Caption85;
@@ -27384,7 +27399,7 @@ export interface Picture46 {
   sources?: Sources46;
   pictureClassName?: ClassAttribute46;
 }
-export interface TextMediaLazyImage21 {
+export interface MediaLazyImage21 {
   lightboxImage?: LightboxImage21;
   full?: FullWidthMedia65;
   caption?: Caption87;
@@ -27602,7 +27617,6 @@ export interface TextBox {
   vAlign?: BoxVerticalAlignment;
   hAlign?: BoxHorizontalAlignment;
   link?: Button48;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -27706,7 +27720,7 @@ export interface Image6 {
   vAlign?: ImageVerticalAlignment;
   hAlign?: ImageHorizontalAlignment;
   order?: Order;
-  [k: string]: unknown;
+  alt?: AltText47;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -27714,7 +27728,6 @@ export interface Image6 {
 export interface Order {
   mobileImageLast?: MobileImageAfterText;
   desktopImageLast?: DesktopImageAfterText;
-  [k: string]: unknown;
 }
 /**
  * Component to render a pill / tag / label
@@ -27745,7 +27758,6 @@ export interface TextBox1 {
   vAlign?: BoxVerticalAlignment1;
   hAlign?: BoxHorizontalAlignment1;
   link?: Button50;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -27849,7 +27861,7 @@ export interface Image7 {
   vAlign?: ImageVerticalAlignment1;
   hAlign?: ImageHorizontalAlignment1;
   order?: Order1;
-  [k: string]: unknown;
+  alt?: AltText48;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -27857,7 +27869,6 @@ export interface Image7 {
 export interface Order1 {
   mobileImageLast?: MobileImageAfterText1;
   desktopImageLast?: DesktopImageAfterText1;
-  [k: string]: unknown;
 }
 /**
  * Component to show contact information
@@ -27887,7 +27898,7 @@ export interface Contact10 {
 export interface Picture47 {
   src?: Source86;
   srcSet?: PictureSourceset94;
-  alt?: AltText47;
+  alt?: AltText49;
   width?: Width91;
   height?: Height91;
   className?: AdditionalClasses157;
@@ -27911,7 +27922,6 @@ export interface Picture47 {
 export interface Order2 {
   mobileImageLast?: MobileImageAfterText2;
   desktopImageLast?: DesktopImageAfterText2;
-  [k: string]: unknown;
 }
 /**
  * Text content to display
@@ -27925,7 +27935,6 @@ export interface TextBox2 {
   vAlign?: BoxVerticalAlignment2;
   hAlign?: BoxHorizontalAlignment2;
   link?: Button52;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28047,7 +28056,6 @@ export interface TextBox3 {
   vAlign?: BoxVerticalAlignment3;
   hAlign?: BoxHorizontalAlignment3;
   link?: Button54;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28151,7 +28159,7 @@ export interface Image8 {
   vAlign?: ImageVerticalAlignment3;
   hAlign?: ImageHorizontalAlignment3;
   order?: Order3;
-  [k: string]: unknown;
+  alt?: AltText50;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28159,7 +28167,6 @@ export interface Image8 {
 export interface Order3 {
   mobileImageLast?: MobileImageAfterText3;
   desktopImageLast?: DesktopImageAfterText3;
-  [k: string]: unknown;
 }
 /**
  * Headline
@@ -28192,7 +28199,6 @@ export interface TextBox4 {
   vAlign?: BoxVerticalAlignment4;
   hAlign?: BoxHorizontalAlignment4;
   link?: Button56;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28296,7 +28302,7 @@ export interface Image9 {
   vAlign?: ImageVerticalAlignment4;
   hAlign?: ImageHorizontalAlignment4;
   order?: Order4;
-  [k: string]: unknown;
+  alt?: AltText51;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28304,7 +28310,6 @@ export interface Image9 {
 export interface Order4 {
   mobileImageLast?: MobileImageAfterText4;
   desktopImageLast?: DesktopImageAfterText4;
-  [k: string]: unknown;
 }
 /**
  * Component to display copy text, including media
@@ -28322,7 +28327,7 @@ export interface TextMedia14 {
   image?: Image10;
   inverted?: Inverted122;
 }
-export interface TextMediaVideo22 {
+export interface MediaVideo22 {
   video?: Video22;
   full?: FullWidthMedia66;
   caption?: Caption88;
@@ -28337,7 +28342,7 @@ export interface Video22 {
   width: Width92;
   height: Height92;
 }
-export interface TextMediaImage22 {
+export interface MediaImage22 {
   image?: Picture48;
   full?: FullWidthMedia67;
   caption?: Caption89;
@@ -28348,7 +28353,7 @@ export interface TextMediaImage22 {
 export interface Picture48 {
   src?: Source88;
   srcSet?: PictureSourceset96;
-  alt?: AltText48;
+  alt?: AltText52;
   width?: Width93;
   height?: Height93;
   className?: AdditionalClasses168;
@@ -28361,7 +28366,7 @@ export interface Picture48 {
   sources?: Sources48;
   pictureClassName?: ClassAttribute48;
 }
-export interface TextMediaLazyImage22 {
+export interface MediaLazyImage22 {
   lightboxImage?: LightboxImage22;
   full?: FullWidthMedia68;
   caption?: Caption91;
@@ -28395,7 +28400,6 @@ export interface TextBox5 {
   vAlign?: BoxVerticalAlignment5;
   hAlign?: BoxHorizontalAlignment5;
   link?: Button58;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28499,7 +28503,7 @@ export interface Image10 {
   vAlign?: ImageVerticalAlignment5;
   hAlign?: ImageHorizontalAlignment5;
   order?: Order5;
-  [k: string]: unknown;
+  alt?: AltText53;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28507,7 +28511,6 @@ export interface Image10 {
 export interface Order5 {
   mobileImageLast?: MobileImageAfterText5;
   desktopImageLast?: DesktopImageAfterText5;
-  [k: string]: unknown;
 }
 /**
  * Component to tease external content
@@ -28577,7 +28580,6 @@ export interface TextBox6 {
   vAlign?: BoxVerticalAlignment6;
   hAlign?: BoxHorizontalAlignment6;
   link?: Button61;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28681,7 +28683,7 @@ export interface Image11 {
   vAlign?: ImageVerticalAlignment6;
   hAlign?: ImageHorizontalAlignment6;
   order?: Order6;
-  [k: string]: unknown;
+  alt?: AltText54;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28689,7 +28691,6 @@ export interface Image11 {
 export interface Order6 {
   mobileImageLast?: MobileImageAfterText6;
   desktopImageLast?: DesktopImageAfterText6;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -28760,21 +28761,19 @@ export interface MediaWrapper {
  */
 export interface BackgroundImage7 {
   srcMobile: MobileImageSource;
-  srcTablet: TabletImageSource;
-  srcDesktop: DesktopImageSource;
+  srcTablet?: TabletImageSource;
+  srcDesktop?: DesktopImageSource;
   src?: OptionalSource;
   indent?: ImageIndent;
-  alt?: AltText49;
-  [k: string]: unknown;
+  alt?: AltText55;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo {
   srcMobile: MobileVideoSource;
-  srcTablet: TabletVideoSource;
-  srcDesktop: DesktopVideoSource;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource;
+  srcDesktop?: DesktopVideoSource;
 }
 /**
  * Content and style configuration for the text box
@@ -28884,21 +28883,19 @@ export interface MediaWrapper1 {
  */
 export interface BackgroundImage8 {
   srcMobile: MobileImageSource1;
-  srcTablet: TabletImageSource1;
-  srcDesktop: DesktopImageSource1;
+  srcTablet?: TabletImageSource1;
+  srcDesktop?: DesktopImageSource1;
   src?: OptionalSource1;
   indent?: ImageIndent1;
-  alt?: AltText50;
-  [k: string]: unknown;
+  alt?: AltText56;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo1 {
   srcMobile: MobileVideoSource1;
-  srcTablet: TabletVideoSource1;
-  srcDesktop: DesktopVideoSource1;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource1;
+  srcDesktop?: DesktopVideoSource1;
 }
 /**
  * Content and style configuration for the text box
@@ -28992,7 +28989,7 @@ export interface Contact11 {
 export interface Picture49 {
   src?: Source89;
   srcSet?: PictureSourceset98;
-  alt?: AltText51;
+  alt?: AltText57;
   width?: Width95;
   height?: Height97;
   className?: AdditionalClasses184;
@@ -29033,21 +29030,19 @@ export interface MediaWrapper2 {
  */
 export interface BackgroundImage9 {
   srcMobile: MobileImageSource2;
-  srcTablet: TabletImageSource2;
-  srcDesktop: DesktopImageSource2;
+  srcTablet?: TabletImageSource2;
+  srcDesktop?: DesktopImageSource2;
   src?: OptionalSource2;
   indent?: ImageIndent2;
-  alt?: AltText52;
-  [k: string]: unknown;
+  alt?: AltText58;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo2 {
   srcMobile: MobileVideoSource2;
-  srcTablet: TabletVideoSource2;
-  srcDesktop: DesktopVideoSource2;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource2;
+  srcDesktop?: DesktopVideoSource2;
 }
 /**
  * Content and style configuration for the text box
@@ -29155,21 +29150,19 @@ export interface MediaWrapper3 {
  */
 export interface BackgroundImage10 {
   srcMobile: MobileImageSource3;
-  srcTablet: TabletImageSource3;
-  srcDesktop: DesktopImageSource3;
+  srcTablet?: TabletImageSource3;
+  srcDesktop?: DesktopImageSource3;
   src?: OptionalSource3;
   indent?: ImageIndent3;
-  alt?: AltText53;
-  [k: string]: unknown;
+  alt?: AltText59;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo3 {
   srcMobile: MobileVideoSource3;
-  srcTablet: TabletVideoSource3;
-  srcDesktop: DesktopVideoSource3;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource3;
+  srcDesktop?: DesktopVideoSource3;
 }
 /**
  * Content and style configuration for the text box
@@ -29321,21 +29314,19 @@ export interface MediaWrapper4 {
  */
 export interface BackgroundImage11 {
   srcMobile: MobileImageSource4;
-  srcTablet: TabletImageSource4;
-  srcDesktop: DesktopImageSource4;
+  srcTablet?: TabletImageSource4;
+  srcDesktop?: DesktopImageSource4;
   src?: OptionalSource4;
   indent?: ImageIndent4;
-  alt?: AltText54;
-  [k: string]: unknown;
+  alt?: AltText60;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo4 {
   srcMobile: MobileVideoSource4;
-  srcTablet: TabletVideoSource4;
-  srcDesktop: DesktopVideoSource4;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource4;
+  srcDesktop?: DesktopVideoSource4;
 }
 /**
  * Content and style configuration for the text box
@@ -29447,21 +29438,19 @@ export interface MediaWrapper5 {
  */
 export interface BackgroundImage12 {
   srcMobile: MobileImageSource5;
-  srcTablet: TabletImageSource5;
-  srcDesktop: DesktopImageSource5;
+  srcTablet?: TabletImageSource5;
+  srcDesktop?: DesktopImageSource5;
   src?: OptionalSource5;
   indent?: ImageIndent5;
-  alt?: AltText55;
-  [k: string]: unknown;
+  alt?: AltText61;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo5 {
   srcMobile: MobileVideoSource5;
-  srcTablet: TabletVideoSource5;
-  srcDesktop: DesktopVideoSource5;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource5;
+  srcDesktop?: DesktopVideoSource5;
 }
 /**
  * Content and style configuration for the text box
@@ -29542,7 +29531,7 @@ export interface TextMedia15 {
   autoplay?: AutoPlay6;
   slides: Visual6[];
 }
-export interface TextMediaVideo23 {
+export interface MediaVideo23 {
   video?: Video23;
   full?: FullWidthMedia69;
   caption?: Caption92;
@@ -29557,7 +29546,7 @@ export interface Video23 {
   width: Width96;
   height: Height102;
 }
-export interface TextMediaImage23 {
+export interface MediaImage23 {
   image?: Picture50;
   full?: FullWidthMedia70;
   caption?: Caption93;
@@ -29568,7 +29557,7 @@ export interface TextMediaImage23 {
 export interface Picture50 {
   src?: Source91;
   srcSet?: PictureSourceset100;
-  alt?: AltText56;
+  alt?: AltText62;
   width?: Width97;
   height?: Height103;
   className?: AdditionalClasses200;
@@ -29581,7 +29570,7 @@ export interface Picture50 {
   sources?: Sources50;
   pictureClassName?: ClassAttribute50;
 }
-export interface TextMediaLazyImage23 {
+export interface MediaLazyImage23 {
   lightboxImage?: LightboxImage23;
   full?: FullWidthMedia71;
   caption?: Caption95;
@@ -29631,21 +29620,19 @@ export interface MediaWrapper6 {
  */
 export interface BackgroundImage13 {
   srcMobile: MobileImageSource6;
-  srcTablet: TabletImageSource6;
-  srcDesktop: DesktopImageSource6;
+  srcTablet?: TabletImageSource6;
+  srcDesktop?: DesktopImageSource6;
   src?: OptionalSource6;
   indent?: ImageIndent6;
-  alt?: AltText57;
-  [k: string]: unknown;
+  alt?: AltText63;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo6 {
   srcMobile: MobileVideoSource6;
-  srcTablet: TabletVideoSource6;
-  srcDesktop: DesktopVideoSource6;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource6;
+  srcDesktop?: DesktopVideoSource6;
 }
 /**
  * Content and style configuration for the text box
@@ -29798,21 +29785,19 @@ export interface MediaWrapper7 {
  */
 export interface BackgroundImage14 {
   srcMobile: MobileImageSource7;
-  srcTablet: TabletImageSource7;
-  srcDesktop: DesktopImageSource7;
+  srcTablet?: TabletImageSource7;
+  srcDesktop?: DesktopImageSource7;
   src?: OptionalSource7;
   indent?: ImageIndent7;
-  alt?: AltText58;
-  [k: string]: unknown;
+  alt?: AltText64;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo7 {
   srcMobile: MobileVideoSource7;
-  srcTablet: TabletVideoSource7;
-  srcDesktop: DesktopVideoSource7;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource7;
+  srcDesktop?: DesktopVideoSource7;
 }
 /**
  * Content and style configuration for the text box
@@ -29962,21 +29947,19 @@ export interface MediaWrapper8 {
  */
 export interface BackgroundImage15 {
   srcMobile: MobileImageSource8;
-  srcTablet: TabletImageSource8;
-  srcDesktop: DesktopImageSource8;
+  srcTablet?: TabletImageSource8;
+  srcDesktop?: DesktopImageSource8;
   src?: OptionalSource8;
   indent?: ImageIndent8;
-  alt?: AltText59;
-  [k: string]: unknown;
+  alt?: AltText65;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo8 {
   srcMobile: MobileVideoSource8;
-  srcTablet: TabletVideoSource8;
-  srcDesktop: DesktopVideoSource8;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource8;
+  srcDesktop?: DesktopVideoSource8;
 }
 /**
  * Content and style configuration for the text box
@@ -30213,21 +30196,19 @@ export interface MediaWrapper9 {
  */
 export interface BackgroundImage16 {
   srcMobile: MobileImageSource9;
-  srcTablet: TabletImageSource9;
-  srcDesktop: DesktopImageSource9;
+  srcTablet?: TabletImageSource9;
+  srcDesktop?: DesktopImageSource9;
   src?: OptionalSource9;
   indent?: ImageIndent9;
-  alt?: AltText60;
-  [k: string]: unknown;
+  alt?: AltText66;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo9 {
   srcMobile: MobileVideoSource9;
-  srcTablet: TabletVideoSource9;
-  srcDesktop: DesktopVideoSource9;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource9;
+  srcDesktop?: DesktopVideoSource9;
 }
 /**
  * Component to render a pill / tag / label
@@ -30369,21 +30350,19 @@ export interface MediaWrapper10 {
  */
 export interface BackgroundImage17 {
   srcMobile: MobileImageSource10;
-  srcTablet: TabletImageSource10;
-  srcDesktop: DesktopImageSource10;
+  srcTablet?: TabletImageSource10;
+  srcDesktop?: DesktopImageSource10;
   src?: OptionalSource10;
   indent?: ImageIndent10;
-  alt?: AltText61;
-  [k: string]: unknown;
+  alt?: AltText67;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo10 {
   srcMobile: MobileVideoSource10;
-  srcTablet: TabletVideoSource10;
-  srcDesktop: DesktopVideoSource10;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource10;
+  srcDesktop?: DesktopVideoSource10;
 }
 /**
  * Component to show contact information
@@ -30415,7 +30394,7 @@ export interface Contact12 {
 export interface Picture51 {
   src?: Source92;
   srcSet?: PictureSourceset102;
-  alt?: AltText62;
+  alt?: AltText68;
   width?: Width99;
   height?: Height110;
   className?: AdditionalClasses220;
@@ -30550,21 +30529,19 @@ export interface MediaWrapper11 {
  */
 export interface BackgroundImage18 {
   srcMobile: MobileImageSource11;
-  srcTablet: TabletImageSource11;
-  srcDesktop: DesktopImageSource11;
+  srcTablet?: TabletImageSource11;
+  srcDesktop?: DesktopImageSource11;
   src?: OptionalSource11;
   indent?: ImageIndent11;
-  alt?: AltText63;
-  [k: string]: unknown;
+  alt?: AltText69;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo11 {
   srcMobile: MobileVideoSource11;
-  srcTablet: TabletVideoSource11;
-  srcDesktop: DesktopVideoSource11;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource11;
+  srcDesktop?: DesktopVideoSource11;
 }
 /**
  * Component to conditionally show additional info
@@ -30704,21 +30681,19 @@ export interface MediaWrapper12 {
  */
 export interface BackgroundImage19 {
   srcMobile: MobileImageSource12;
-  srcTablet: TabletImageSource12;
-  srcDesktop: DesktopImageSource12;
+  srcTablet?: TabletImageSource12;
+  srcDesktop?: DesktopImageSource12;
   src?: OptionalSource12;
   indent?: ImageIndent12;
-  alt?: AltText64;
-  [k: string]: unknown;
+  alt?: AltText70;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo12 {
   srcMobile: MobileVideoSource12;
-  srcTablet: TabletVideoSource12;
-  srcDesktop: DesktopVideoSource12;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource12;
+  srcDesktop?: DesktopVideoSource12;
 }
 /**
  * Component to display content in a condensed, boxed form
@@ -30902,21 +30877,19 @@ export interface MediaWrapper13 {
  */
 export interface BackgroundImage20 {
   srcMobile: MobileImageSource13;
-  srcTablet: TabletImageSource13;
-  srcDesktop: DesktopImageSource13;
+  srcTablet?: TabletImageSource13;
+  srcDesktop?: DesktopImageSource13;
   src?: OptionalSource13;
   indent?: ImageIndent13;
-  alt?: AltText65;
-  [k: string]: unknown;
+  alt?: AltText71;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo13 {
   srcMobile: MobileVideoSource13;
-  srcTablet: TabletVideoSource13;
-  srcDesktop: DesktopVideoSource13;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource13;
+  srcDesktop?: DesktopVideoSource13;
 }
 /**
  * Headline
@@ -31060,21 +31033,19 @@ export interface MediaWrapper14 {
  */
 export interface BackgroundImage21 {
   srcMobile: MobileImageSource14;
-  srcTablet: TabletImageSource14;
-  srcDesktop: DesktopImageSource14;
+  srcTablet?: TabletImageSource14;
+  srcDesktop?: DesktopImageSource14;
   src?: OptionalSource14;
   indent?: ImageIndent14;
-  alt?: AltText66;
-  [k: string]: unknown;
+  alt?: AltText72;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo14 {
   srcMobile: MobileVideoSource14;
-  srcTablet: TabletVideoSource14;
-  srcDesktop: DesktopVideoSource14;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource14;
+  srcDesktop?: DesktopVideoSource14;
 }
 /**
  * Component to tease external content
@@ -31259,21 +31230,19 @@ export interface MediaWrapper15 {
  */
 export interface BackgroundImage22 {
   srcMobile: MobileImageSource15;
-  srcTablet: TabletImageSource15;
-  srcDesktop: DesktopImageSource15;
+  srcTablet?: TabletImageSource15;
+  srcDesktop?: DesktopImageSource15;
   src?: OptionalSource15;
   indent?: ImageIndent15;
-  alt?: AltText67;
-  [k: string]: unknown;
+  alt?: AltText73;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo15 {
   srcMobile: MobileVideoSource15;
-  srcTablet: TabletVideoSource15;
-  srcDesktop: DesktopVideoSource15;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource15;
+  srcDesktop?: DesktopVideoSource15;
 }
 /**
  * Component to tease external content
@@ -31455,21 +31424,19 @@ export interface MediaWrapper16 {
  */
 export interface BackgroundImage23 {
   srcMobile: MobileImageSource16;
-  srcTablet: TabletImageSource16;
-  srcDesktop: DesktopImageSource16;
+  srcTablet?: TabletImageSource16;
+  srcDesktop?: DesktopImageSource16;
   src?: OptionalSource16;
   indent?: ImageIndent16;
-  alt?: AltText68;
-  [k: string]: unknown;
+  alt?: AltText74;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo16 {
   srcMobile: MobileVideoSource16;
-  srcTablet: TabletVideoSource16;
-  srcDesktop: DesktopVideoSource16;
-  [k: string]: unknown;
+  srcTablet?: TabletVideoSource16;
+  srcDesktop?: DesktopVideoSource16;
 }
 /**
  * Headline
