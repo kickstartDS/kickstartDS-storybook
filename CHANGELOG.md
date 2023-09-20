@@ -1,3 +1,16 @@
+# v2.5.20 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- chore: circumvent existing Circle CI cache ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.5.19 (Wed Sep 20 2023)
 
 
