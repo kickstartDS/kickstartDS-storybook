@@ -4,7 +4,7 @@ defaults: &defaults
   docker:
     - image: cimg/node:16.14
   working_directory: /mnt/ramdisk
-  resource_class: medium+
+  resource_class: large
 
 aliases:
   - &save-cache-yarn
@@ -16,14 +16,14 @@ aliases:
       - yarn-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
       - yarn-{{ checksum "yarn.lock" }}
   - &save-cache-node
-    key: node-2-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+    key: node-3-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
     paths:
       - node_modules
   - &restore-cache-node
     keys:
-      - node-2-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
-      - node-2-{{ checksum "yarn.lock" }}
-      - node-2-
+      - node-3-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+      - node-3-{{ checksum "yarn.lock" }}
+      - node-3-
 
 jobs:
   install:

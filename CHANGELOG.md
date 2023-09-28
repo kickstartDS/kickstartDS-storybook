@@ -1,3 +1,70 @@
+# v2.5.20 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kickstartDS/kickstartDS-storybook ([@julrich](https://github.com/julrich))
+- chore: circumvent existing Circle CI cache ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.5.19 (Wed Sep 20 2023)
+
+
+
+---
+
+# v2.5.18 (Wed Sep 20 2023)
+
+
+
+---
+
+# v2.5.17 (Sun Sep 10 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: missing type object in button schema ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.5.16 (Sun Sep 10 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: missing attributes in some JSON schemas ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.5.15 (Mon Aug 14 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: update resource class ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.5.14 (Mon Aug 14 2023)
+
+
+
+---
+
 # v2.5.13 (Fri Jun 23 2023)
 
 #### ⚠️ Pushed to `master`
