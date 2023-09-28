@@ -2,11 +2,7 @@ import { Section } from "@kickstartds/base/lib/section";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
 const Recipe = () => (
-  <Section
-    width="narow"
-    spaceAfter="none"
-    spaceBefore="none"
-  >
+  <Section width="narrow" spaceAfter="none" spaceBefore="none">
     <Storytelling
       backgroundColor="#eceff3"
       full
@@ -21,7 +17,6 @@ const Recipe = () => (
           subheadline:
             "Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.",
         },
-        spaceAfter: "none",
         text: "",
         link: {
           label: "Get in touch",
@@ -33,4 +28,6 @@ const Recipe = () => (
   </Section>
 );
 
-export const BannerSplit = Recipe.bind({});
+export const BannerSplit = {
+  render: Recipe,
+};

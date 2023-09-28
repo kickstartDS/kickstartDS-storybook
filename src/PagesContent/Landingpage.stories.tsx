@@ -6,7 +6,7 @@ import { Section } from "../section/SectionComponent";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 import { Button } from "@kickstartds/base/lib/button";
 
-import { Visual } from "../visual/VisualComponent";
+import { Visual } from "@kickstartds/content/lib/visual";
 import { Quote } from "@kickstartds/content/lib/quote";
 import { QuotesSlider } from "@kickstartds/content/lib/quotes-slider";
 import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
@@ -37,19 +37,19 @@ const Page = () => (
             level: "h1",
             styleAs: "h1",
             subheadline: "Democratizing Design Systems",
+            // @ts-expect-error
             switchOrder: true,
           },
           horizontal: "left",
           indent: true,
           link: {
+            // @ts-expect-error
             deko: true,
             highlighted: true,
             enabled: true,
             fillAnimation: false,
             href: "#",
-            iconAfter: true,
             iconAnimation: false,
-            iconBefore: false,
             icon: {
               icon: "chevron-right",
             },
@@ -59,7 +59,7 @@ const Page = () => (
             variant: "solid",
           },
           text: `
-A low-code framework, UI develeopment toolkit and comprehensive component library enabling digital teams to create consistent and brand compliant web frontends super efficiently. Easy like squeeeeezing a lemon`,
+A low-code framework, UI develeopment toolkit and comprehensive component library enabling digital teams to create consistent and brand compliant web frontends super efficiently. Easy like squeeeeezing a lemon`.trim(),
           vertical: "center",
         }}
         height="default"
@@ -89,7 +89,7 @@ A low-code framework, UI develeopment toolkit and comprehensive component librar
             subheadline: "Your AI-powered Design System assistant!",
           },
           text: "Our Design System Concierge can help by providing expert guidance and pointing you towards the right resources, whether it's implementation guides, architecture documents, adoption strategies, or other content.",
-
+          // @ts-expect-error
           links: [
             {
               label: "Try it, it's free",
@@ -114,7 +114,7 @@ A low-code framework, UI develeopment toolkit and comprehensive component librar
         subheadline:
           "Setup a Design System and put it into action in just 5 steps",
         level: "h2",
-        pageHeader: false,
+        
         spaceAfter: "small",
       }}
       width="full"
@@ -135,8 +135,7 @@ A low-code framework, UI develeopment toolkit and comprehensive component librar
         subheadline:
           "Out-of-the-box kickstartDS let's you connect your interfaces to:",
         level: "h2",
-        pageHeader: false,
-        spaceAfter: "none",
+        spaceAfter: "minimum",
       }}
     >
       <LogoTiles
@@ -193,7 +192,6 @@ A low-code framework, UI develeopment toolkit and comprehensive component librar
         subheadline:
           "The foundation to scale your design system across all your platforms and website",
         level: "h2",
-        pageHeader: false,
       }}
       className="l-section--outer-width-wide additional-spacing"
       variant="highlight"
@@ -203,9 +201,8 @@ A low-code framework, UI develeopment toolkit and comprehensive component librar
       spaceBefore="small"
     >
       <CountUp
+        // @ts-expect-error
         graphic="components"
-        icon={[]}
-        link={[]}
         text={`
 Use our components as **solid building blocks**, adapt and improve them as needed. From tokens to full customization.
 
@@ -215,9 +212,8 @@ Benefit from **15+ years of frontend experience!**
         topic="Components"
       />
       <CountUp
+        // @ts-expect-error
         graphic="properties"
-        icon={[]}
-        link={[]}
         text={`
 Component properties encode decisions, **rooted in reality**, pre-solving everyday problems for you.
 
@@ -227,9 +223,8 @@ Directly engage with components through **Storybooks** rich interface.
         topic="Properties"
       />
       <CountUp
+        // @ts-expect-error
         graphic="tokens"
-        icon={[]}
-        link={[]}
         text={`
 Of course we have **design tokens** – colors, fonts, sizes and iconography.
 
@@ -248,7 +243,6 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
         subheadline:
           "... a holistic view of components; unifying content creators, developers, designers and stakeholders under one roof",
         level: "h2",
-        pageHeader: false,
       }}
       spaceAfter="default"
       spaceBefore="default"
@@ -321,7 +315,7 @@ Additionally, **component tokens** provide a solid base layer of defaults for yo
           },
           text: `kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.
           
-kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.`,
+kickstart DS is the foundation for your design system with reusable components and tools, guided by clear standards, that can be assembled together to build digital products.`.trim(),
         }}
         image={{
           source: "img/landingpage/storybook.webp",
@@ -352,12 +346,10 @@ kickstart DS is the foundation for your design system with reusable components a
     </Section>
     <Section
       headline={{
-        align: "center",
         content: "What our customers say",
         level: "h2",
         styleAs: "h2",
         align: "left",
-        pageHeader: false,
       }}
       mode="list"
       className="l-section--outer-width-wide" /* Background Weite */
@@ -403,7 +395,6 @@ kickstart DS is the foundation for your design system with reusable components a
         subheadline:
           "kickstartDS comes accessibility baked in and provides support",
         level: "h2",
-        pageHeader: false,
       }}
       pattern="2"
       spaceAfter="default"
@@ -411,6 +402,7 @@ kickstart DS is the foundation for your design system with reusable components a
       width="default"
       background="default"
     >
+      {/* @ts-expect-error */}
       <TeaserBox
         image="https://kickstartds.com/static/b75932664b811513543d5af322c2e4ee/headless_design_system_for_developer.svg"
         inverted
@@ -420,6 +412,7 @@ kickstart DS is the foundation for your design system with reusable components a
         }}
         text="kickstartDS makes it easy to implement and use [its packages](http://example.com/) across any framework or no framework at all. We accomplish this by using standardized web platform APIs and [Web Components](http://example.com/)."
       />
+      {/* @ts-expect-error */}
       <TeaserBox
         image="https://kickstartds.com/static/22366760e710d38f85417e550177546f/headless_design_system_for_designer.svg"
         inverted
@@ -429,6 +422,7 @@ kickstart DS is the foundation for your design system with reusable components a
         }}
         text="kickstartDS comes accessibility baked in and provides support for W3C’s [WCAG 2.1 spec](http://example.com/). We make sure all our components support touch screens, keyboard navigation, screen readers, and more."
       />
+      {/* @ts-expect-error */}
       <TeaserBox
         image="https://kickstartds.com/static/22366760e710d38f85417e550177546f/headless_design_system_for_designer.svg"
         inverted
@@ -448,7 +442,6 @@ kickstart DS is the foundation for your design system with reusable components a
         subheadline:
           "kickstartDS comes accessibility baked in and provides support",
         level: "h2",
-        pageHeader: false,
       }}
       pattern="2"
       spaceAfter="default"
@@ -480,7 +473,6 @@ kickstart DS is the foundation for your design system with reusable components a
         align: "center",
         content: "What kickstartDS can do for you?",
         level: "h2",
-        pageHeader: false,
       }}
       className="l-section--outer-width-wide"
       variant="highlight"
@@ -526,7 +518,11 @@ After working in a large tech corporation for a long time I very well know today
 
 const meta: Meta<typeof Page> = {
   component: Page,
-  title: "Landingpage",
+  title: "Pages / Content / Landingpage",
+  parameters: {
+    layout: "fullscreen",
+    controls: { disabled: true },
+  },
 };
 export default meta;
 type Story = StoryObj<typeof Page>;

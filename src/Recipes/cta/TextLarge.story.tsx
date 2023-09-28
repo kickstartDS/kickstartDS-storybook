@@ -14,29 +14,32 @@ const Recipe = () => (
           "Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.",
       },
       text: "",
+      // @ts-expect-error
       links: [
         {
           fillAnimation: false,
-          href: '#',
+          href: "#",
           iconAfter: false,
           iconAnimation: false,
           iconBefore: false,
-          label: 'Start now',
+          label: "Start now",
           newTab: false,
-          size: 'medium',
-          variant: 'solid'
+          size: "medium",
+          variant: "solid",
         },
         {
-          href: '#',
-          label: 'Learn more',
-          variant: 'outline'
-        }
+          href: "#",
+          label: "Learn more",
+          variant: "outline",
+        },
       ],
     }}
   />
 );
 
-export const TextLarge = Recipe.bind({});
-TextLarge.parameters = {
-  backgrounds: { default: "dark" },
+export const TextLarge = {
+  render: Recipe,
+  parameters: {
+    backgrounds: { default: "dark" },
+  },
 };

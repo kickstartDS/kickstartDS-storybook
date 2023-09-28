@@ -230,6 +230,10 @@ export type MobileImageAfterText = boolean;
  */
 export type DesktopImageAfterText = boolean;
 /**
+ * Image description
+ */
+export type AltText = string;
+/**
  * Additional css classes attached to the wrapping element
  */
 export type Class = string;
@@ -367,6 +371,7 @@ export interface Image {
   vAlign?: ImageVerticalAlignment;
   hAlign?: ImageHorizontalAlignment;
   order?: Order;
+  alt?: AltText;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text

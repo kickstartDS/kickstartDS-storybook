@@ -14,18 +14,21 @@ const Recipe = () => (
       }}
     >
       <TextMedia
+        text=""
         media={[
           {
             image: {
               height: 853,
-              src: 'img/recipes/device.png',
-              width: 1280
-            }
-          }
+              src: "img/recipes/device.png",
+              width: 1280,
+            },
+          },
         ]}
       />
     </Section>
   </>
 );
 
-export const LargeDevice = Recipe.bind({});
+export const LargeDevice = {
+  render: Recipe,
+};

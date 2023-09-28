@@ -17,9 +17,10 @@ const meta: Meta<typeof PostShareBar> = {
 export default meta;
 type Story = StoryObj<typeof PostShareBar>;
 
-export const Default: Story = {};
-Default.args = pack({
-  headline: {
-    level: "h3",
-  },
-});
+export const Default: Story = {
+  args: pack({
+    headline: {
+      level: "h3",
+    },
+  }),
+};

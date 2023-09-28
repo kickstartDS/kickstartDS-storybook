@@ -2,8 +2,8 @@ import { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
   stories: [
-    "../docs/**/*.story.mdx",
-    "../src/**/*.stories.mdx",
+    "../docs/**/*.mdx",
+    "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   addons: [
@@ -15,10 +15,9 @@ const config: StorybookConfig = {
     {
       name: "storybook-design-token",
       options: {
-        designTokenGlob: ".storybook/tokens/*.{css,svg}",
+        designTokenGlob: ".storybook/*.{css,svg}",
       },
     },
-    "@storybook/addon-mdx-gfm",
   ],
   staticDirs: ["../static"],
   framework: {

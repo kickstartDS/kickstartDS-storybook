@@ -360,8 +360,12 @@ const Page = () => {
 };
 
 const meta: Meta<typeof Page> = {
+  title: "Pages/Concierge",
   component: Page,
-  title: "Concierge",
+  parameters: {
+    layout: "fullscreen",
+    controls: { disabled: true },
+  },
 };
 export default meta;
 type Story = StoryObj<typeof Page>;

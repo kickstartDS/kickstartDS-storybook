@@ -49,8 +49,7 @@ export const AnnouncementBar: FC<AnnouncementBarProps> = ({
       width="max"
       spaceBefore="none"
       spaceAfter="none"
-      align="center"
-      inverted="true"
+      inverted={true}
       className="c-announcement-bar--section"
     >
       <div className="c-announcement-bar">

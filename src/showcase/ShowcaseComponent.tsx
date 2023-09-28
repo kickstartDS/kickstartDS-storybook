@@ -1,4 +1,4 @@
-import React, { FunctionComponent, HTMLAttributes } from "react";
+import { FunctionComponent, HTMLAttributes } from "react";
 import { Stack, Inline } from "@bedrock-layout/primitives";
 
 import { Headline } from "@kickstartds/base/lib/headline";
@@ -104,7 +104,6 @@ export const Showcase: FunctionComponent<
               "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4",
           },
         }}
-        nonce={undefined}
       />
     </Section>
     <Section

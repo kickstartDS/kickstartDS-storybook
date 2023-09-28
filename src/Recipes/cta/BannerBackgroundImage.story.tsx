@@ -24,4 +24,6 @@ const Recipe = () => (
   />
 );
 
-export const BannerBackgroundImage = Recipe.bind({});
+export const BannerBackgroundImage = {
+  render: Recipe,
+};

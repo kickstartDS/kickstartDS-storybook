@@ -105,7 +105,11 @@ const Page = () => (
 
 const meta: Meta<typeof Page> = {
   component: Page,
-  title: "Glossary",
+  title: "Pages/Entries/Glossary",
+  parameters: {
+    layout: "fullscreen",
+    controls: { disabled: true },
+  },
 };
 export default meta;
 type Story = StoryObj<typeof Page>;

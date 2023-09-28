@@ -10,6 +10,7 @@ import { Headline } from "@kickstartds/base/lib/headline";
 const meta: Meta<typeof Headline> = {
   ...headlineStories,
   ...getArgsShared(schema as JSONSchema7),
+  title: "Base/Headline",
   parameters: {
     cssprops: merge(headlineStories.parameters?.cssprops, tokens),
     jsonschema: schema,
@@ -18,43 +19,49 @@ const meta: Meta<typeof Headline> = {
 export default meta;
 type Story = StoryObj<typeof Headline>;
 
-export const H1: Story = {};
-H1.args = pack({
-  level: "h1",
-  content: "Lorem Ipsum",
-  align: "left",
-});
+export const H1: Story = {
+  args: pack({
+    level: "h1",
+    content: "Lorem Ipsum",
+    align: "left",
+  }),
+};
 
-export const H2: Story = {};
-H2.args = pack({
-  level: "h2",
-  content: "Lorem Ipsum",
-  align: "left",
-});
+export const H2: Story = {
+  args: pack({
+    level: "h2",
+    content: "Lorem Ipsum",
+    align: "left",
+  }),
+};
 
-export const H3: Story = {};
-H3.args = pack({
-  level: "h3",
-  content: "Lorem Ipsum",
-  align: "left",
-});
+export const H3: Story = {
+  args: pack({
+    level: "h3",
+    content: "Lorem Ipsum",
+    align: "left",
+  }),
+};
 
-export const H4: Story = {};
-H4.args = pack({
-  level: "h4",
-  content: "Lorem Ipsum",
-  align: "left",
-});
+export const H4: Story = {
+  args: pack({
+    level: "h4",
+    content: "Lorem Ipsum",
+    align: "left",
+  }),
+};
 
-export const Subheadline: Story = {};
-Subheadline.args = pack({
-  ...H2.args,
-  subheadline: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-});
+export const Subheadline: Story = {
+  args: pack({
+    ...H2.args,
+    subheadline: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+  }),
+};
 
-export const SubheadlineOrderSwapped: Story = {};
-SubheadlineOrderSwapped.args = pack({
-  ...H2.args,
-  subheadline: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-  switchOrder: true,
-});
+export const SubheadlineOrderSwapped: Story = {
+  args: pack({
+    ...H2.args,
+    subheadline: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    switchOrder: true,
+  }),
+};

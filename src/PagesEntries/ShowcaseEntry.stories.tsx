@@ -1,5 +1,5 @@
-import React, { ComponentProps } from "react";
-import type { Args, Meta, StoryObj } from "@storybook/react";
+import { ComponentProps } from "react";
+import type { Meta, StoryObj } from "@storybook/react";
 import { unpack } from "@kickstartds/core/lib/storybook";
 
 import HeaderStories from "../header/Header.stories";
@@ -111,7 +111,11 @@ const Page = () => (
 
 const meta: Meta<typeof Page> = {
   component: Page,
-  title: "Showcase",
+  title: "Pages/Entries/Showcase",
+  parameters: {
+    layout: "fullscreen",
+    controls: { disabled: true },
+  },
 };
 export default meta;
 type Story = StoryObj<typeof Page>;

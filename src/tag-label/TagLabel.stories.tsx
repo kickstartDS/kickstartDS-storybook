@@ -5,6 +5,7 @@ import { TagLabel } from "@kickstartds/base/lib/tag-label";
 
 const meta: Meta<typeof TagLabel> = {
   ...tagLabelStories,
+  title: "Base/Tag Label",
   parameters: {
     jsonschema: schema,
   },
@@ -12,37 +13,42 @@ const meta: Meta<typeof TagLabel> = {
 export default meta;
 type Story = StoryObj<typeof TagLabel>;
 
-export const Small: Story = {};
-Small.args = {
-  label: "Lorem Ipsum",
-  link: "#",
-  size: "s",
+export const Small: Story = {
+  args: {
+    label: "Lorem Ipsum",
+    link: "#",
+    size: "s",
+  },
 };
 
-export const Medium: Story = {};
-Medium.args = {
-  label: "Lorem Ipsum",
-  link: "#",
-  size: "m",
+export const Medium: Story = {
+  args: {
+    label: "Lorem Ipsum",
+    link: "#",
+    size: "m",
+  },
 };
 
-export const Large: Story = {};
-Large.args = {
-  label: "Lorem Ipsum",
-  link: "#",
-  size: "l",
+export const Large: Story = {
+  args: {
+    label: "Lorem Ipsum",
+    link: "#",
+    size: "l",
+  },
 };
 
-export const WithoutLink: Story = {};
-WithoutLink.args = {
-  label: "Lorem Ipsum",
-  size: "m",
+export const WithoutLink: Story = {
+  args: {
+    label: "Lorem Ipsum",
+    size: "m",
+  },
 };
 
-export const Removable: Story = {};
-Removable.args = {
-  label: "Lorem Ipsum",
-  link: "#",
-  removable: true,
-  size: "m",
+export const Removable: Story = {
+  args: {
+    label: "Lorem Ipsum",
+    link: "#",
+    removable: true,
+    size: "m",
+  },
 };

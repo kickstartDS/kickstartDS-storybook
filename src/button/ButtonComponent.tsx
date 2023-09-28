@@ -106,7 +106,7 @@ const ButtonComponent: ForwardRefExoticComponent<
   }
 );
 
-export const ButtonProvider: FunctionComponent<PropsWithChildren<never>> = (
+export const ButtonProvider: FunctionComponent<PropsWithChildren<any>> = (
   props
 ) => <ButtonContext.Provider value={ButtonComponent} {...props} />;
 export const Button = KdsButton as typeof ButtonComponent;

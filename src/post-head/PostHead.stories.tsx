@@ -17,24 +17,25 @@ const meta: Meta<typeof PostHead> = {
 export default meta;
 type Story = StoryObj<typeof PostHead>;
 
-export const Default: Story = {};
-Default.args = pack({
-  categories: [
-    {
-      label: "About kickstartDS",
-      link: "#",
+export const Default: Story = {
+  args: pack({
+    categories: [
+      {
+        label: "About kickstartDS",
+        link: "#",
+      },
+      {
+        label: "Background",
+        link: "#",
+      },
+    ],
+    headline: {
+      content: "Why we are creating kickstartDS",
+      level: "h1",
+      
     },
-    {
-      label: "Background",
-      link: "#",
+    image: {
+      src: "/img/why-kickstart-Design-System.svg",
     },
-  ],
-  headline: {
-    content: "Why we are creating kickstartDS",
-    level: "h1",
-    pageHeader: false,
-  },
-  image: {
-    src: "/img/why-kickstart-Design-System.svg",
-  },
-});
+  }),
+};

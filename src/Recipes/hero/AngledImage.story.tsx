@@ -2,11 +2,7 @@ import { Storytelling } from "@kickstartds/content/lib/storytelling";
 import { Section } from "@kickstartds/base/lib/section";
 
 const Recipe = () => (
-  <Section
-    width="full"
-    spaceBefore="none"
-    spaceAfter="none"
-  >
+  <Section width="full" spaceBefore="none" spaceAfter="none">
     <Storytelling
       image={{
         source: "img/recipes/hero-angled.png",
@@ -19,27 +15,27 @@ const Recipe = () => (
           level: "h1",
           styleAs: "h1",
           content: "We help you overcome digital obstacles",
-          subheadline:
-            "Autem voluptas quis facere et qui voluptate earum.",
+          subheadline: "Autem voluptas quis facere et qui voluptate earum.",
         },
         text: `Lorem ipsum dolor sit amet, [consetetur sadipscing](http://example.com/) elitr, sed diam voluptua. At vero eos et accusam et justo duo **dolores et ea rebum.**`,
+        // @ts-expect-error
         links: [
           {
             fillAnimation: false,
-            href: '#',
+            href: "#",
             iconAfter: false,
             iconAnimation: false,
             iconBefore: false,
-            label: 'Start now',
+            label: "Start now",
             newTab: false,
-            size: 'medium',
-            variant: 'solid'
+            size: "medium",
+            variant: "solid",
           },
           {
-            href: '#',
-            label: 'Request a demo',
-            variant: 'outline'
-          }
+            href: "#",
+            label: "Request a demo",
+            variant: "outline",
+          },
         ],
       }}
       full
@@ -47,4 +43,6 @@ const Recipe = () => (
   </Section>
 );
 
-export const AngledImage = Recipe.bind({});
+export const AngledImage = {
+  render: Recipe,
+};

@@ -2,11 +2,7 @@ import { Section } from "@kickstartds/base/lib/section";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
 const Recipe = () => (
-  <Section
-    width="wide"
-    spaceBefore="none"
-    spaceAfter="none"
-  >
+  <Section width="wide" spaceBefore="none" spaceAfter="none">
     <Storytelling
       image={{
         source: "img/recipes/cta-support.svg",
@@ -34,4 +30,6 @@ const Recipe = () => (
   </Section>
 );
 
-export const TextImage = Recipe.bind({});
+export const TextImage = {
+  render: Recipe,
+};

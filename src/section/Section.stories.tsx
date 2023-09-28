@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import merge from "deepmerge";
+import { JSONSchema7 } from "json-schema";
 import { pack, unpack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import sectionStories from "@kickstartds/base/lib/section/section.stories";
 import contentBoxStory, {
@@ -8,26 +9,27 @@ import contentBoxStory, {
 import schema from "./section.schema.dereffed.json";
 import tokens from "./section-tokens.json";
 import { Section } from "./SectionComponent";
+import { ContentBox } from "@kickstartds/base/lib/content-box";
 
-ImageWithButton.displayName = "ContentBox";
 const Template = (args) => (
   <Section {...args}>
-    <ImageWithButton
+    <ContentBox
       {...merge(contentBoxStory.args, unpack(ImageWithButton.args))}
     />
-    <ImageWithButton
+    <ContentBox
       {...merge(contentBoxStory.args, unpack(ImageWithButton.args))}
     />
-    <ImageWithButton
+    <ContentBox
       {...merge(contentBoxStory.args, unpack(ImageWithButton.args))}
     />
   </Section>
 );
 
-const { args, argTypes } = getArgsShared(schema);
+const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 
 const meta: Meta<typeof Section> = {
   ...sectionStories,
+  title: "Base / Section",
   args,
   argTypes,
   parameters: {
@@ -39,7 +41,8 @@ const meta: Meta<typeof Section> = {
 export default meta;
 type Story = StoryObj<typeof Section>;
 
-export const ContentBoxes: Story = {};
-ContentBoxes.args = pack({
-  mode: "tile",
-});
+export const ContentBoxes: Story = {
+  args: pack({
+    mode: "tile",
+  }),
+};

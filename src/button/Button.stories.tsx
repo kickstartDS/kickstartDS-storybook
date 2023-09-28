@@ -19,39 +19,44 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Solid: Story = {};
-Solid.args = pack({
-  variant: "solid",
-  href: "#",
-  label: "mehr erfahren",
-});
+export const Solid: Story = {
+  args: pack({
+    variant: "solid",
+    href: "#",
+    label: "mehr erfahren",
+  }),
+};
 
-export const Main: Story = {};
-Main.args = pack({
-  variant: "solid",
-  highlighted: true,
-  deko: true,
-  href: "#",
-  label: "Request a guided demo",
-});
+export const Main: Story = {
+  args: pack({
+    variant: "solid",
+    highlighted: true,
+    deko: true,
+    href: "#",
+    label: "Request a guided demo",
+  }),
+};
 
-export const MitIcon: Story = {};
-MitIcon.args = pack({
-  ...Solid.args,
-  iconAfter: true,
-  icon: {
-    icon: "chevron-right",
-  },
-});
+export const MitIcon: Story = {
+  args: pack({
+    ...Solid.args,
+    iconAfter: true,
+    icon: {
+      icon: "chevron-right",
+    },
+  }),
+};
 
-export const Outline: Story = {};
-Outline.args = pack({
-  ...Solid.args,
-  variant: "outline",
-});
+export const Outline: Story = {
+  args: pack({
+    ...Solid.args,
+    variant: "outline",
+  }),
+};
 
-export const Clear: Story = {};
-Clear.args = pack({
-  ...Solid.args,
-  variant: "clear",
-});
+export const Clear: Story = {
+  args: pack({
+    ...Solid.args,
+    variant: "clear",
+  }),
+};

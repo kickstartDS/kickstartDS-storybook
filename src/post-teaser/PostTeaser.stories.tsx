@@ -18,41 +18,42 @@ const meta: Meta<typeof PostTeaser> = {
 export default meta;
 type Story = StoryObj<typeof PostTeaser>;
 
-export const Default: Story = {};
-Default.args = pack({
-  image: {
-    src: "img/blog/Blog-Post01-5.webp",
-  },
-  title: "Why we are creating kickstartDS",
-  body: `
+export const Default: Story = {
+  args: pack({
+    image: {
+      src: "img/blog/Blog-Post01-5.webp",
+    },
+    title: "Why we are creating kickstartDS",
+    body: `
 #tldr: We want to support you to create one library of components,
 patterns and tokens to be used in any frontend you need to give your
 digital touch points a consistent interface...
-  `,
-  link: {
-    href: "#",
-    label: "Read more",
-  },
-  categories: [
-    { label: "About kickstartDS", link: "#" },
-    { label: "Background", link: "#" },
-  ],
-  meta: {
-    author: {
-      name: "Daniel Ley",
-      image: {
-        src: "img/blog/web_profile_images-teaser.png",
-      },
+    `.trim(),
+    link: {
+      href: "#",
+      label: "Read more",
     },
-    items: [
-      {
-        icon: "date",
-        text: "29.03.2021",
-      },
-      {
-        icon: "time",
-        text: "5 min read",
-      },
+    categories: [
+      { label: "About kickstartDS", link: "#" },
+      { label: "Background", link: "#" },
     ],
-  },
-});
+    meta: {
+      author: {
+        name: "Daniel Ley",
+        image: {
+          src: "img/blog/web_profile_images-teaser.png",
+        },
+      },
+      items: [
+        {
+          icon: "date",
+          text: "29.03.2021",
+        },
+        {
+          icon: "time",
+          text: "5 min read",
+        },
+      ],
+    },
+  }),
+};

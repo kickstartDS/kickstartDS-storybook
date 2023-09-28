@@ -21,8 +21,8 @@ const Recipe = () => (
           subheadline:
             "Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.",
         },
-        spaceAfter: "none",
         text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.",
+        // @ts-expect-error
         links: [
           {
             fillAnimation: false,
@@ -46,4 +46,6 @@ const Recipe = () => (
   </Section>
 );
 
-export const Screenshot = Recipe.bind({});
+export const Screenshot = {
+  render: Recipe,
+};

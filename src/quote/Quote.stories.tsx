@@ -17,30 +17,32 @@ const meta: Meta<typeof QuotesSlider> = {
 export default meta;
 type Story = StoryObj<typeof QuotesSlider>;
 
-export const Image: Story = {};
-Image.args = pack({
-  text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-  source: "Max Mustermann, ABC GmbH",
-  // image:"img/example/portrait.png",
-  date: undefined,
-});
+export const Image: Story = {
+  args: pack({
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    source: "Max Mustermann, ABC GmbH",
+    // image:"img/example/portrait.png",
+    date: undefined,
+  }),
+};
 
 const SliderTemplate = (args) => <QuotesSlider {...args} />;
-export const Slider: Story = {};
-Slider.render = SliderTemplate;
-Slider.args = pack({
-  slides: [
-    {
-      source: "Max Muster, Key Account Manager Strategic Account Business",
-      text: "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
-    },
-    {
-      source: "Max Muster, Key Account Manager Strategic Account Business",
-      text: "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
-    },
-    {
-      source: "Max Muster, Key Account Manager Strategic Account Business",
-      text: "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
-    },
-  ],
-});
+export const Slider: Story = {
+  render: SliderTemplate,
+  args: pack({
+    slides: [
+      {
+        source: "Max Muster, Key Account Manager Strategic Account Business",
+        text: "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
+      },
+      {
+        source: "Max Muster, Key Account Manager Strategic Account Business",
+        text: "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
+      },
+      {
+        source: "Max Muster, Key Account Manager Strategic Account Business",
+        text: "Eum dolorem deleniti cumque officiis quod. Quibusdam velit rerum nihil dolor. Tenetur est quae aut explicabo ut ducimus in. Nihil maxime omnis consequatur sit quasi. Recusandae laborum accusantium accusantium illum sunt. Eius enim quod dolores ratione nobis.",
+      },
+    ],
+  }),
+};

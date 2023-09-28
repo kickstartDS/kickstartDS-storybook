@@ -17,32 +17,35 @@ const meta: Meta<typeof ContentBox> = {
 export default meta;
 type Story = StoryObj<typeof ContentBox>;
 
-export const Image: Story = {};
-Image.args = pack({
-  ratio: "16:9",
-  topic: "Lorem Ipsum",
-  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ispum dolor distinctio minima unde voluptatum aut. Lorem ipsum dolor sit amet.",
-});
+export const Image: Story = {
+  args: pack({
+    ratio: "16:9",
+    topic: "Lorem Ipsum",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ispum dolor distinctio minima unde voluptatum aut. Lorem ipsum dolor sit amet.",
+  }),
+};
 
-export const ImageWithButton: Story = {};
-ImageWithButton.args = pack({
-  ...Image.args,
-  link: {
-    enabled: true,
-    variant: "solid",
-    href: "#",
-    label: "Learn more",
-  },
-});
+export const ImageWithButton: Story = {
+  args: pack({
+    ...Image.args,
+    link: {
+      enabled: true,
+      variant: "solid",
+      href: "#",
+      label: "Learn more",
+    },
+  }),
+};
 
-export const Icon: Story = {};
-Icon.args = pack({
-  ...Image.args,
-  link: {
-    enabled: false,
-  },
-  ratio: "none",
-  alignement: "center",
-  image: "img/icons/tokens.svg",
-  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-});
+export const Icon: Story = {
+  args: pack({
+    ...Image.args,
+    link: {
+      enabled: false,
+    },
+    ratio: "none",
+    alignement: "center",
+    image: "img/icons/tokens.svg",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+  }),
+};

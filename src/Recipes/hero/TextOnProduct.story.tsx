@@ -21,8 +21,7 @@ const Recipe = () => (
           },
         }}
         box={{
-          inverted: "true",
-          textColor: "#fff",
+          inverted: true,
           enabled: true,
           headline: {
             content: "Hic maxime sed eos non. Consequatur ut qui amet.",
@@ -33,7 +32,8 @@ const Recipe = () => (
           horizontal: "right",
           vertical: "center",
           background: "transparent",
-          links: [{ label: "" }],
+          // @ts-expect-error
+          links: [],
         }}
       />
 
@@ -41,4 +41,6 @@ const Recipe = () => (
   </>
 );
 
-export const TextOnProduct = Recipe.bind({});
+export const TextOnProduct = {
+  render: Recipe,
+};

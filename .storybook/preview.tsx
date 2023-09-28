@@ -1,6 +1,7 @@
+import { PropsWithChildren } from "react";
 import { actions } from "@storybook/addon-actions";
 import { Preview } from "@storybook/react";
-import { DocsContainer } from "@storybook/addon-docs";
+import { DocsContainer, DocsContainerProps } from "@storybook/addon-docs";
 // @see https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/attrchange
 import "lazysizes/plugins/attrchange/ls.attrchange";
 import { unpackDecorator } from "@kickstartds/core/lib/storybook";
@@ -66,7 +67,7 @@ const preview: Preview = {
       disable: true,
     },
     docs: {
-      container: (props) => (
+      container: (props: PropsWithChildren<DocsContainerProps>) => (
         <LinkProvider>
           <Providers>
             <IconSprite />

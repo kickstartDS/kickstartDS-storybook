@@ -13981,6 +13981,10 @@ export type MobileImageAfterText = boolean;
  */
 export type DesktopImageAfterText = boolean;
 /**
+ * Image description
+ */
+export type AltText47 = string;
+/**
  * Text to display inside tag label
  */
 export type Label98 = string;
@@ -14228,6 +14232,10 @@ export type MobileImageAfterText1 = boolean;
  * Switch to displaying the image after the text on desktop
  */
 export type DesktopImageAfterText1 = boolean;
+/**
+ * Image description
+ */
+export type AltText48 = string;
 export type Inverted110 = boolean;
 /**
  * Picture source
@@ -14240,7 +14248,7 @@ export type PictureSourceset94 = string;
 /**
  * Alt text to display for picture
  */
-export type AltText47 = string;
+export type AltText49 = string;
 /**
  * Width of the picture
  */
@@ -14787,6 +14795,10 @@ export type MobileImageAfterText3 = boolean;
  * Switch to displaying the image after the text on desktop
  */
 export type DesktopImageAfterText3 = boolean;
+/**
+ * Image description
+ */
+export type AltText50 = string;
 export type Inverted116 = boolean;
 /**
  * Select the headline level to use, or p alternatively
@@ -15044,6 +15056,10 @@ export type MobileImageAfterText4 = boolean;
  * Switch to displaying the image after the text on desktop
  */
 export type DesktopImageAfterText4 = boolean;
+/**
+ * Image description
+ */
+export type AltText51 = string;
 export type Inverted119 = boolean;
 /**
  * Copy text for the element
@@ -15102,7 +15118,7 @@ export type PictureSourceset96 = string;
 /**
  * Alt text to display for picture
  */
-export type AltText48 = string;
+export type AltText52 = string;
 /**
  * Width of the picture
  */
@@ -15430,6 +15446,10 @@ export type MobileImageAfterText5 = boolean;
  * Switch to displaying the image after the text on desktop
  */
 export type DesktopImageAfterText5 = boolean;
+/**
+ * Image description
+ */
+export type AltText53 = string;
 export type Inverted122 = boolean;
 /**
  * Topic for the teaser box. Displayed before the text, in bold
@@ -15744,6 +15764,10 @@ export type MobileImageAfterText6 = boolean;
  */
 export type DesktopImageAfterText6 = boolean;
 /**
+ * Image description
+ */
+export type AltText54 = string;
+/**
  * Text used on button
  */
 export type Label112 = string;
@@ -15842,7 +15866,7 @@ export type ImageIndent = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText49 = string;
+export type AltText55 = string;
 /**
  * Background video source for small screens
  */
@@ -16064,7 +16088,7 @@ export type ImageIndent1 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText50 = string;
+export type AltText56 = string;
 /**
  * Background video source for small screens
  */
@@ -16241,7 +16265,7 @@ export type PictureSourceset98 = string;
 /**
  * Alt text to display for picture
  */
-export type AltText51 = string;
+export type AltText57 = string;
 /**
  * Width of the picture
  */
@@ -16355,7 +16379,7 @@ export type ImageIndent2 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText52 = string;
+export type AltText58 = string;
 /**
  * Background video source for small screens
  */
@@ -16569,7 +16593,7 @@ export type ImageIndent3 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText53 = string;
+export type AltText59 = string;
 /**
  * Background video source for small screens
  */
@@ -16866,7 +16890,7 @@ export type ImageIndent4 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText54 = string;
+export type AltText60 = string;
 /**
  * Background video source for small screens
  */
@@ -17096,7 +17120,7 @@ export type ImageIndent5 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText55 = string;
+export type AltText61 = string;
 /**
  * Background video source for small screens
  */
@@ -17319,7 +17343,7 @@ export type PictureSourceset100 = string;
 /**
  * Alt text to display for picture
  */
-export type AltText56 = string;
+export type AltText62 = string;
 /**
  * Width of the picture
  */
@@ -17455,7 +17479,7 @@ export type ImageIndent6 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText57 = string;
+export type AltText63 = string;
 /**
  * Background video source for small screens
  */
@@ -17753,7 +17777,7 @@ export type ImageIndent7 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText58 = string;
+export type AltText64 = string;
 /**
  * Background video source for small screens
  */
@@ -18039,7 +18063,7 @@ export type ImageIndent8 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText59 = string;
+export type AltText65 = string;
 /**
  * Background video source for small screens
  */
@@ -18497,7 +18521,7 @@ export type ImageIndent9 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText60 = string;
+export type AltText66 = string;
 /**
  * Background video source for small screens
  */
@@ -18775,7 +18799,7 @@ export type ImageIndent10 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText61 = string;
+export type AltText67 = string;
 /**
  * Background video source for small screens
  */
@@ -18815,7 +18839,7 @@ export type PictureSourceset102 = string;
 /**
  * Alt text to display for picture
  */
-export type AltText62 = string;
+export type AltText68 = string;
 /**
  * Width of the picture
  */
@@ -19122,7 +19146,7 @@ export type ImageIndent11 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText63 = string;
+export type AltText69 = string;
 /**
  * Background video source for small screens
  */
@@ -19392,7 +19416,7 @@ export type ImageIndent12 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText64 = string;
+export type AltText70 = string;
 /**
  * Background video source for small screens
  */
@@ -19745,7 +19769,7 @@ export type ImageIndent13 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText65 = string;
+export type AltText71 = string;
 /**
  * Background video source for small screens
  */
@@ -20031,7 +20055,7 @@ export type ImageIndent14 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText66 = string;
+export type AltText72 = string;
 /**
  * Background video source for small screens
  */
@@ -20385,7 +20409,7 @@ export type ImageIndent15 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText67 = string;
+export type AltText73 = string;
 /**
  * Background video source for small screens
  */
@@ -20727,7 +20751,7 @@ export type ImageIndent16 = "none" | "left" | "right";
 /**
  * Alt text to display for picture
  */
-export type AltText68 = string;
+export type AltText74 = string;
 /**
  * Background video source for small screens
  */
@@ -27696,6 +27720,7 @@ export interface Image6 {
   vAlign?: ImageVerticalAlignment;
   hAlign?: ImageHorizontalAlignment;
   order?: Order;
+  alt?: AltText47;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -27836,6 +27861,7 @@ export interface Image7 {
   vAlign?: ImageVerticalAlignment1;
   hAlign?: ImageHorizontalAlignment1;
   order?: Order1;
+  alt?: AltText48;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -27872,7 +27898,7 @@ export interface Contact10 {
 export interface Picture47 {
   src?: Source86;
   srcSet?: PictureSourceset94;
-  alt?: AltText47;
+  alt?: AltText49;
   width?: Width91;
   height?: Height91;
   className?: AdditionalClasses157;
@@ -28133,6 +28159,7 @@ export interface Image8 {
   vAlign?: ImageVerticalAlignment3;
   hAlign?: ImageHorizontalAlignment3;
   order?: Order3;
+  alt?: AltText50;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28275,6 +28302,7 @@ export interface Image9 {
   vAlign?: ImageVerticalAlignment4;
   hAlign?: ImageHorizontalAlignment4;
   order?: Order4;
+  alt?: AltText51;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28325,7 +28353,7 @@ export interface TextMediaImage22 {
 export interface Picture48 {
   src?: Source88;
   srcSet?: PictureSourceset96;
-  alt?: AltText48;
+  alt?: AltText52;
   width?: Width93;
   height?: Height93;
   className?: AdditionalClasses168;
@@ -28475,6 +28503,7 @@ export interface Image10 {
   vAlign?: ImageVerticalAlignment5;
   hAlign?: ImageHorizontalAlignment5;
   order?: Order5;
+  alt?: AltText53;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28654,6 +28683,7 @@ export interface Image11 {
   vAlign?: ImageVerticalAlignment6;
   hAlign?: ImageHorizontalAlignment6;
   order?: Order6;
+  alt?: AltText54;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -28731,19 +28761,19 @@ export interface MediaWrapper {
  */
 export interface BackgroundImage7 {
   srcMobile: MobileImageSource;
-  srcTablet: TabletImageSource;
-  srcDesktop: DesktopImageSource;
+  srcTablet?: TabletImageSource;
+  srcDesktop?: DesktopImageSource;
   src?: OptionalSource;
   indent?: ImageIndent;
-  alt?: AltText49;
+  alt?: AltText55;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo {
   srcMobile: MobileVideoSource;
-  srcTablet: TabletVideoSource;
-  srcDesktop: DesktopVideoSource;
+  srcTablet?: TabletVideoSource;
+  srcDesktop?: DesktopVideoSource;
 }
 /**
  * Content and style configuration for the text box
@@ -28853,19 +28883,19 @@ export interface MediaWrapper1 {
  */
 export interface BackgroundImage8 {
   srcMobile: MobileImageSource1;
-  srcTablet: TabletImageSource1;
-  srcDesktop: DesktopImageSource1;
+  srcTablet?: TabletImageSource1;
+  srcDesktop?: DesktopImageSource1;
   src?: OptionalSource1;
   indent?: ImageIndent1;
-  alt?: AltText50;
+  alt?: AltText56;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo1 {
   srcMobile: MobileVideoSource1;
-  srcTablet: TabletVideoSource1;
-  srcDesktop: DesktopVideoSource1;
+  srcTablet?: TabletVideoSource1;
+  srcDesktop?: DesktopVideoSource1;
 }
 /**
  * Content and style configuration for the text box
@@ -28959,7 +28989,7 @@ export interface Contact11 {
 export interface Picture49 {
   src?: Source89;
   srcSet?: PictureSourceset98;
-  alt?: AltText51;
+  alt?: AltText57;
   width?: Width95;
   height?: Height97;
   className?: AdditionalClasses184;
@@ -29000,19 +29030,19 @@ export interface MediaWrapper2 {
  */
 export interface BackgroundImage9 {
   srcMobile: MobileImageSource2;
-  srcTablet: TabletImageSource2;
-  srcDesktop: DesktopImageSource2;
+  srcTablet?: TabletImageSource2;
+  srcDesktop?: DesktopImageSource2;
   src?: OptionalSource2;
   indent?: ImageIndent2;
-  alt?: AltText52;
+  alt?: AltText58;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo2 {
   srcMobile: MobileVideoSource2;
-  srcTablet: TabletVideoSource2;
-  srcDesktop: DesktopVideoSource2;
+  srcTablet?: TabletVideoSource2;
+  srcDesktop?: DesktopVideoSource2;
 }
 /**
  * Content and style configuration for the text box
@@ -29120,19 +29150,19 @@ export interface MediaWrapper3 {
  */
 export interface BackgroundImage10 {
   srcMobile: MobileImageSource3;
-  srcTablet: TabletImageSource3;
-  srcDesktop: DesktopImageSource3;
+  srcTablet?: TabletImageSource3;
+  srcDesktop?: DesktopImageSource3;
   src?: OptionalSource3;
   indent?: ImageIndent3;
-  alt?: AltText53;
+  alt?: AltText59;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo3 {
   srcMobile: MobileVideoSource3;
-  srcTablet: TabletVideoSource3;
-  srcDesktop: DesktopVideoSource3;
+  srcTablet?: TabletVideoSource3;
+  srcDesktop?: DesktopVideoSource3;
 }
 /**
  * Content and style configuration for the text box
@@ -29284,19 +29314,19 @@ export interface MediaWrapper4 {
  */
 export interface BackgroundImage11 {
   srcMobile: MobileImageSource4;
-  srcTablet: TabletImageSource4;
-  srcDesktop: DesktopImageSource4;
+  srcTablet?: TabletImageSource4;
+  srcDesktop?: DesktopImageSource4;
   src?: OptionalSource4;
   indent?: ImageIndent4;
-  alt?: AltText54;
+  alt?: AltText60;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo4 {
   srcMobile: MobileVideoSource4;
-  srcTablet: TabletVideoSource4;
-  srcDesktop: DesktopVideoSource4;
+  srcTablet?: TabletVideoSource4;
+  srcDesktop?: DesktopVideoSource4;
 }
 /**
  * Content and style configuration for the text box
@@ -29408,19 +29438,19 @@ export interface MediaWrapper5 {
  */
 export interface BackgroundImage12 {
   srcMobile: MobileImageSource5;
-  srcTablet: TabletImageSource5;
-  srcDesktop: DesktopImageSource5;
+  srcTablet?: TabletImageSource5;
+  srcDesktop?: DesktopImageSource5;
   src?: OptionalSource5;
   indent?: ImageIndent5;
-  alt?: AltText55;
+  alt?: AltText61;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo5 {
   srcMobile: MobileVideoSource5;
-  srcTablet: TabletVideoSource5;
-  srcDesktop: DesktopVideoSource5;
+  srcTablet?: TabletVideoSource5;
+  srcDesktop?: DesktopVideoSource5;
 }
 /**
  * Content and style configuration for the text box
@@ -29527,7 +29557,7 @@ export interface TextMediaImage23 {
 export interface Picture50 {
   src?: Source91;
   srcSet?: PictureSourceset100;
-  alt?: AltText56;
+  alt?: AltText62;
   width?: Width97;
   height?: Height103;
   className?: AdditionalClasses200;
@@ -29590,19 +29620,19 @@ export interface MediaWrapper6 {
  */
 export interface BackgroundImage13 {
   srcMobile: MobileImageSource6;
-  srcTablet: TabletImageSource6;
-  srcDesktop: DesktopImageSource6;
+  srcTablet?: TabletImageSource6;
+  srcDesktop?: DesktopImageSource6;
   src?: OptionalSource6;
   indent?: ImageIndent6;
-  alt?: AltText57;
+  alt?: AltText63;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo6 {
   srcMobile: MobileVideoSource6;
-  srcTablet: TabletVideoSource6;
-  srcDesktop: DesktopVideoSource6;
+  srcTablet?: TabletVideoSource6;
+  srcDesktop?: DesktopVideoSource6;
 }
 /**
  * Content and style configuration for the text box
@@ -29755,19 +29785,19 @@ export interface MediaWrapper7 {
  */
 export interface BackgroundImage14 {
   srcMobile: MobileImageSource7;
-  srcTablet: TabletImageSource7;
-  srcDesktop: DesktopImageSource7;
+  srcTablet?: TabletImageSource7;
+  srcDesktop?: DesktopImageSource7;
   src?: OptionalSource7;
   indent?: ImageIndent7;
-  alt?: AltText58;
+  alt?: AltText64;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo7 {
   srcMobile: MobileVideoSource7;
-  srcTablet: TabletVideoSource7;
-  srcDesktop: DesktopVideoSource7;
+  srcTablet?: TabletVideoSource7;
+  srcDesktop?: DesktopVideoSource7;
 }
 /**
  * Content and style configuration for the text box
@@ -29917,19 +29947,19 @@ export interface MediaWrapper8 {
  */
 export interface BackgroundImage15 {
   srcMobile: MobileImageSource8;
-  srcTablet: TabletImageSource8;
-  srcDesktop: DesktopImageSource8;
+  srcTablet?: TabletImageSource8;
+  srcDesktop?: DesktopImageSource8;
   src?: OptionalSource8;
   indent?: ImageIndent8;
-  alt?: AltText59;
+  alt?: AltText65;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo8 {
   srcMobile: MobileVideoSource8;
-  srcTablet: TabletVideoSource8;
-  srcDesktop: DesktopVideoSource8;
+  srcTablet?: TabletVideoSource8;
+  srcDesktop?: DesktopVideoSource8;
 }
 /**
  * Content and style configuration for the text box
@@ -30166,19 +30196,19 @@ export interface MediaWrapper9 {
  */
 export interface BackgroundImage16 {
   srcMobile: MobileImageSource9;
-  srcTablet: TabletImageSource9;
-  srcDesktop: DesktopImageSource9;
+  srcTablet?: TabletImageSource9;
+  srcDesktop?: DesktopImageSource9;
   src?: OptionalSource9;
   indent?: ImageIndent9;
-  alt?: AltText60;
+  alt?: AltText66;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo9 {
   srcMobile: MobileVideoSource9;
-  srcTablet: TabletVideoSource9;
-  srcDesktop: DesktopVideoSource9;
+  srcTablet?: TabletVideoSource9;
+  srcDesktop?: DesktopVideoSource9;
 }
 /**
  * Component to render a pill / tag / label
@@ -30320,19 +30350,19 @@ export interface MediaWrapper10 {
  */
 export interface BackgroundImage17 {
   srcMobile: MobileImageSource10;
-  srcTablet: TabletImageSource10;
-  srcDesktop: DesktopImageSource10;
+  srcTablet?: TabletImageSource10;
+  srcDesktop?: DesktopImageSource10;
   src?: OptionalSource10;
   indent?: ImageIndent10;
-  alt?: AltText61;
+  alt?: AltText67;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo10 {
   srcMobile: MobileVideoSource10;
-  srcTablet: TabletVideoSource10;
-  srcDesktop: DesktopVideoSource10;
+  srcTablet?: TabletVideoSource10;
+  srcDesktop?: DesktopVideoSource10;
 }
 /**
  * Component to show contact information
@@ -30364,7 +30394,7 @@ export interface Contact12 {
 export interface Picture51 {
   src?: Source92;
   srcSet?: PictureSourceset102;
-  alt?: AltText62;
+  alt?: AltText68;
   width?: Width99;
   height?: Height110;
   className?: AdditionalClasses220;
@@ -30499,19 +30529,19 @@ export interface MediaWrapper11 {
  */
 export interface BackgroundImage18 {
   srcMobile: MobileImageSource11;
-  srcTablet: TabletImageSource11;
-  srcDesktop: DesktopImageSource11;
+  srcTablet?: TabletImageSource11;
+  srcDesktop?: DesktopImageSource11;
   src?: OptionalSource11;
   indent?: ImageIndent11;
-  alt?: AltText63;
+  alt?: AltText69;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo11 {
   srcMobile: MobileVideoSource11;
-  srcTablet: TabletVideoSource11;
-  srcDesktop: DesktopVideoSource11;
+  srcTablet?: TabletVideoSource11;
+  srcDesktop?: DesktopVideoSource11;
 }
 /**
  * Component to conditionally show additional info
@@ -30651,19 +30681,19 @@ export interface MediaWrapper12 {
  */
 export interface BackgroundImage19 {
   srcMobile: MobileImageSource12;
-  srcTablet: TabletImageSource12;
-  srcDesktop: DesktopImageSource12;
+  srcTablet?: TabletImageSource12;
+  srcDesktop?: DesktopImageSource12;
   src?: OptionalSource12;
   indent?: ImageIndent12;
-  alt?: AltText64;
+  alt?: AltText70;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo12 {
   srcMobile: MobileVideoSource12;
-  srcTablet: TabletVideoSource12;
-  srcDesktop: DesktopVideoSource12;
+  srcTablet?: TabletVideoSource12;
+  srcDesktop?: DesktopVideoSource12;
 }
 /**
  * Component to display content in a condensed, boxed form
@@ -30847,19 +30877,19 @@ export interface MediaWrapper13 {
  */
 export interface BackgroundImage20 {
   srcMobile: MobileImageSource13;
-  srcTablet: TabletImageSource13;
-  srcDesktop: DesktopImageSource13;
+  srcTablet?: TabletImageSource13;
+  srcDesktop?: DesktopImageSource13;
   src?: OptionalSource13;
   indent?: ImageIndent13;
-  alt?: AltText65;
+  alt?: AltText71;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo13 {
   srcMobile: MobileVideoSource13;
-  srcTablet: TabletVideoSource13;
-  srcDesktop: DesktopVideoSource13;
+  srcTablet?: TabletVideoSource13;
+  srcDesktop?: DesktopVideoSource13;
 }
 /**
  * Headline
@@ -31003,19 +31033,19 @@ export interface MediaWrapper14 {
  */
 export interface BackgroundImage21 {
   srcMobile: MobileImageSource14;
-  srcTablet: TabletImageSource14;
-  srcDesktop: DesktopImageSource14;
+  srcTablet?: TabletImageSource14;
+  srcDesktop?: DesktopImageSource14;
   src?: OptionalSource14;
   indent?: ImageIndent14;
-  alt?: AltText66;
+  alt?: AltText72;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo14 {
   srcMobile: MobileVideoSource14;
-  srcTablet: TabletVideoSource14;
-  srcDesktop: DesktopVideoSource14;
+  srcTablet?: TabletVideoSource14;
+  srcDesktop?: DesktopVideoSource14;
 }
 /**
  * Component to tease external content
@@ -31200,19 +31230,19 @@ export interface MediaWrapper15 {
  */
 export interface BackgroundImage22 {
   srcMobile: MobileImageSource15;
-  srcTablet: TabletImageSource15;
-  srcDesktop: DesktopImageSource15;
+  srcTablet?: TabletImageSource15;
+  srcDesktop?: DesktopImageSource15;
   src?: OptionalSource15;
   indent?: ImageIndent15;
-  alt?: AltText67;
+  alt?: AltText73;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo15 {
   srcMobile: MobileVideoSource15;
-  srcTablet: TabletVideoSource15;
-  srcDesktop: DesktopVideoSource15;
+  srcTablet?: TabletVideoSource15;
+  srcDesktop?: DesktopVideoSource15;
 }
 /**
  * Component to tease external content
@@ -31394,19 +31424,19 @@ export interface MediaWrapper16 {
  */
 export interface BackgroundImage23 {
   srcMobile: MobileImageSource16;
-  srcTablet: TabletImageSource16;
-  srcDesktop: DesktopImageSource16;
+  srcTablet?: TabletImageSource16;
+  srcDesktop?: DesktopImageSource16;
   src?: OptionalSource16;
   indent?: ImageIndent16;
-  alt?: AltText68;
+  alt?: AltText74;
 }
 /**
  * Sources of background videos for different screen sizes
  */
 export interface BackgroundVideo16 {
   srcMobile: MobileVideoSource16;
-  srcTablet: TabletVideoSource16;
-  srcDesktop: DesktopVideoSource16;
+  srcTablet?: TabletVideoSource16;
+  srcDesktop?: DesktopVideoSource16;
 }
 /**
  * Headline

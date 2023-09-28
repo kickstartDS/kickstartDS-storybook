@@ -61,7 +61,7 @@ const CountUp: FunctionComponent<
         </div>
       </>
     )}
-    <CountUpContextDefault icon={graphic === "none" ? icon : {}} {...rest} />
+    <CountUpContextDefault icon={graphic === "none" ? icon : undefined} {...rest} />
   </div>
 );
 

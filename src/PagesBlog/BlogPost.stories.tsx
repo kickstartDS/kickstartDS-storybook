@@ -149,7 +149,11 @@ After working in a large tech corporation for a long time I very well know today
 
 const meta: Meta<typeof Page> = {
   component: Page,
-  title: "Blog Post",
+  title: "Pages/Blog/Blog Post",
+  parameters: {
+    layout: "fullscreen",
+    controls: { disabled: true },
+  },
 };
 export default meta;
 type Story = StoryObj<typeof Page>;

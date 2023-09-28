@@ -2,11 +2,15 @@
   "compilerOptions": {
     "emitDeclarationOnly": true,
     "declaration": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "jsx": "react-jsx",
     "outDir": "dist/components",
     "strict": false,
+    "skipLibCheck": true,
     "esModuleInterop": true,
     "resolveJsonModule": true
   },
+  "include": ["src/**/*", ".storybook/**/*", "docs/**/*"],
   "exclude": ["node_modules"]
 }

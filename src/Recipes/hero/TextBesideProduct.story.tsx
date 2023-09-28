@@ -20,9 +20,8 @@ const Recipe = () => (
         text: `
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 
-Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.`,
+Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.`.trim(),
         vAlign: "center",
-        align: "center",
       }}
       image={{
         source: "https://images.unsplash.com/photo-1631747206566-3cf2880892a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
@@ -35,4 +34,6 @@ Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferend
   </Section>
 );
 
-export const TextBesideProduct = Recipe.bind({});
+export const TextBesideProduct = {
+  render: Recipe,
+};

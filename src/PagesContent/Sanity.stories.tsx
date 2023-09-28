@@ -273,7 +273,11 @@ Directly engage with components through **Storybooks** rich interface.
 
 const meta: Meta<typeof Page> = {
   component: Page,
-  title: "Sanity",
+  title: "Pages / Content / Sanity",
+  parameters: {
+    layout: "fullscreen",
+    controls: { disabled: true },
+  },
 };
 export default meta;
 type Story = StoryObj<typeof Page>;

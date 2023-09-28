@@ -3,11 +3,7 @@ import { Section } from "@kickstartds/base/lib/section";
 
 const Recipe = () => (
   <>
-    <Section
-      width="full"
-      spaceBefore="none"
-      spaceAfter="none"
-    >
+    <Section width="full" spaceBefore="none" spaceAfter="none">
       <Visual
         backgroundColor="#f6f6f6"
         inbox
@@ -32,12 +28,14 @@ const Recipe = () => (
           horizontal: "center",
           vertical: "top",
           background: "transparent",
-          links: [{ label: "" }],
+          // @ts-expect-error
+          links: [],
         }}
       />
-
     </Section>
   </>
 );
 
-export const AtmosphericVideo = Recipe.bind({});
+export const AtmosphericVideo = {
+  render: Recipe,
+};

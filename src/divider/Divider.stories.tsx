@@ -5,6 +5,7 @@ import { Divider } from "@kickstartds/base/lib/divider";
 
 const meta: Meta<typeof Divider> = {
   ...dividerStories,
+  title: "Base / Divider",
   parameters: {
     jsonschema: schema,
   },

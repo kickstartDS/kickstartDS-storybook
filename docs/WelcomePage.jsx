@@ -1,11 +1,7 @@
 import { Button } from "@kickstartds/base/lib/button";
-import { Picture } from "@kickstartds/base/lib/picture";
 import { Section } from "@kickstartds/base/lib/section";
 import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
-import { ContentBox } from "@kickstartds/base/lib/content-box";
-import { Headline } from "@kickstartds/base/lib/headline";
 import { Visual } from "@kickstartds/content/lib/visual";
-import { Inline } from "@bedrock-layout/primitives";
 
 export const Welcome = () => (
   <>
@@ -60,7 +56,6 @@ export const Welcome = () => (
         align: "center",
         content: "Getting started with ...",
         level: "h2",
-        pageHeader: false,
       }}
       className="col-four"
       mode="tile"
@@ -121,6 +116,7 @@ export const Welcome = () => (
         }}
       />
     </Section>
+
     <Section
       className="col-four"
       spaceAfter="small"
@@ -151,8 +147,8 @@ export const Welcome = () => (
           variant: "solid",
         }}
       />
-
     </Section>
+
     <Section
       className="col-four"
       spaceAfter="small"
@@ -191,14 +187,12 @@ export const Welcome = () => (
         align: "left",
         content: "Next-gen UI-development toolkit",
         level: "h2",
-        pageHeader: false,
         subheadline: "and framework for Design System creation",
       }}
       mode="list"
       spaceAfter="small"
       spaceBefore="small"
       width="max"
-      deko="true"
       pattern="1"
       ks-inverted="true"
     >
