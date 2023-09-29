@@ -36,12 +36,12 @@
   },
   "dependencies": {
     "@bedrock-layout/primitives": "^2.2.5",
-    "@kickstartds/base": "^2.3.0-next.2",
-    "@kickstartds/blog": "^2.3.0-next.2",
-    "@kickstartds/content": "^2.2.0-next.1",
-    "@kickstartds/core": "^2.3.0-next.2",
-    "@kickstartds/form": "^2.3.0-next.2",
-    "@kickstartds/style-dictionary": "^2.2.1-next.0",
+    "@kickstartds/base": "2.3.0-next.3",
+    "@kickstartds/blog": "2.3.0-next.3",
+    "@kickstartds/content": "2.2.0-next.2",
+    "@kickstartds/core": "2.3.0-next.3",
+    "@kickstartds/form": "2.3.0-next.3",
+    "@kickstartds/style-dictionary": "^2.2.1-next.1",
     "classnames": "^2.3.2",
     "styled-components": "^5.3.11"
   },
