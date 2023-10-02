@@ -26,7 +26,7 @@
     "sass": "sass --load-path=node_modules src/index.scss static/index.css",
     "sass-manager": "sass --load-path=node_modules .storybook/manager.scss static/manager.css",
     "token": "node scripts/customPropertyExtract.js",
-    "typings": "tsc",
+    "typings": "tsc --project tsconfig.build.json",
     "watch:schema": "yarn schema && chokidar \"src/**/*.schema.json\" -c \"yarn schema {path}\"",
     "watch:token": "yarn build-tokens && yarn token && chokidar \"src/**/*-tokens.scss\" -c \"yarn token {path}\"",
     "watch:sass": "yarn sass --watch",

@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
-    "emitDeclarationOnly": true,
-    "declaration": true,
     "module": "ESNext",
     "moduleResolution": "Node",
     "jsx": "react-jsx",
-    "outDir": "dist/components",
+    "outDir": "dist",
     "strict": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
