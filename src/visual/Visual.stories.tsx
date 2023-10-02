@@ -17,6 +17,7 @@ for (const prop in args) {
 
 const meta: Meta<typeof Visual> = {
   ...visualStories,
+  title: "Content/Visual",
   component: Visual,
   args,
   argTypes,

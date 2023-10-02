@@ -6,6 +6,7 @@ import { TeaserBox } from "@kickstartds/base/lib/teaser-box";
 
 const meta: Meta<typeof TeaserBox> = {
   ...teaserBoxStories,
+  title: "Base/Teaser Box",
   component: TeaserBox,
   parameters: {
     jsonschema: schema,
