@@ -114,9 +114,6 @@ dist
 # Local Netlify folder
 .netlify
 
-# TypeScript definition files
-*.d.ts
-
 # Style Dictionary related, generated files
 /.storybook/IconSprite.js
 /.storybook/icons.html

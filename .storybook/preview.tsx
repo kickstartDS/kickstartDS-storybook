@@ -14,14 +14,6 @@ import { IconSprite } from "../src/icon-sprite/IconSpriteComponent";
 import Providers from "../src/Providers";
 import { LinkProvider } from "../docs/LinkProvider";
 
-declare global {
-  interface Window {
-    _ks: any;
-  }
-}
-
-window._ks = window._ks || {};
-
 const myActions = actions("radio");
 window._ks.radio.on("*", myActions.radio);
 
