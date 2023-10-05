@@ -2,6 +2,8 @@ import { PropsWithChildren } from "react";
 import { actions } from "@storybook/addon-actions";
 import { Preview } from "@storybook/react";
 import { DocsContainer, DocsContainerProps } from "@storybook/addon-docs";
+import { Decorator } from "@storybook/react";
+import { defaultDecorateStory } from "@storybook/preview-api";
 // @see https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/attrchange
 import "lazysizes/plugins/attrchange/ls.attrchange";
 import { unpackDecorator } from "@kickstartds/core/lib/storybook";
@@ -17,10 +19,8 @@ import { LinkProvider } from "../docs/LinkProvider";
 const myActions = actions("radio");
 window._ks.radio.on("*", myActions.radio);
 
-const providerDecorator = (Story, context) => (
-  <Providers>
-    <Story {...context} />
-  </Providers>
+const providerDecorator: Decorator = (Story, context) => (
+  <Providers>{Story(context)}</Providers>
 );
 
 const preview: Preview = {
@@ -36,18 +36,14 @@ const preview: Preview = {
       prettier: {
         tabWidth: 4,
       },
-      decorator: providerDecorator,
+      decorator: (Story, context) =>
+        defaultDecorateStory(Story, [unpackDecorator, providerDecorator])(
+          context
+        ),
     },
     options: {
       storySort: {
-        order: [
-          "Welcome",
-          "Design Token",
-          "*",
-          "Custom",
-          "Recipes",
-          "Pages"
-        ],
+        order: ["Welcome", "Design Token", "*", "Custom", "Recipes", "Pages"],
         method: "alphabetical",
       },
     },

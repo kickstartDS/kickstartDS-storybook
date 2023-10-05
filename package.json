@@ -13,7 +13,7 @@
   "scripts": {
     "init-tokens": "kickstartDS tokens init --token-dictionary-path tokensGeil,  --cleanup --rc-only",
     "build-tokens": "kickstartDS tokens compile --token-dictionary-path tokens --cleanup --rc-only",
-    "build-storybook": "yarn build-tokens && run-p sass sass-manager schema token && DESIGN_TOKEN_GLOB=.storybook/tokens.css storybook build --output-dir storybook",
+    "build-storybook": "yarn build-tokens && run-p sass sass-manager schema token && storybook build --output-dir storybook",
     "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --storybook-build-dir 'storybook' --skip '@(renovate/**|dependabot/**)' --exit-zero-on-changes --exit-once-uploaded",
     "dist:js": "esbuild index=src/dist.js --outdir=dist --format=esm --bundle --minify --splitting",
     "dist:sass": "sass --load-path=node_modules src/dist.scss dist/index.css",
@@ -32,7 +32,7 @@
     "watch:sass": "yarn sass --watch",
     "schema": "node scripts/schema.js",
     "start": "yarn sass && run-p watch:* storybook",
-    "storybook": "DESIGN_TOKEN_GLOB=.storybook/tokens.css storybook dev -p 6006"
+    "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "@bedrock-layout/primitives": "^2.2.5",
