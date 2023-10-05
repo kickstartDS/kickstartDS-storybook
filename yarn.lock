@@ -1953,10 +1953,10 @@
   resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-component-tokens/-/storybook-addon-component-tokens-1.0.0-canary.18.36.0.tgz#279e7fa763795d24bac41439dc6d7773514e67ab"
   integrity sha512-gmKjwu3+hdFXk5rYHLuelurn95Vs5O8gB0ffXUZQUoqIFSqNa8CTBJbXYRsxENVwwwXh7UmcR8hMN6rirR0LNA==
 
-"@kickstartds/storybook-addon-jsonschema@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-2.0.0.tgz#0785de7bf1247e0af3b3e3ca0df93e57dc9aea8a"
-  integrity sha512-IhjhCThuzD9WiQC9nZ8UjEUUX9ulPHMvgnMgT629yqvQY+4uYykffMyBFlI/pKepRp7LA9+4c4z7CCWuaoXJDQ==
+"@kickstartds/storybook-addon-jsonschema@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-2.0.1.tgz#4ed35b2f4647d12169941f76d40b7965db80211b"
+  integrity sha512-tjLeFipLK2haHDJ58yiWBpPJmZTjNW1/p3pyjZvrW/GDeiS/NosA9Ybn0gsdVB66ysiSxW8UT7KChuCfYNcLAg==
 
 "@kickstartds/style-dictionary@^2.0.0":
   version "2.2.0"

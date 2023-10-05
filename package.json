@@ -49,7 +49,7 @@
     "@auto-it/npm": "^10.46.0",
     "@auto-it/released": "^10.46.0",
     "@kickstartds/storybook-addon-component-tokens": "1.0.0-canary.18.36.0",
-    "@kickstartds/storybook-addon-jsonschema": "^2.0.0",
+    "@kickstartds/storybook-addon-jsonschema": "^2.0.1",
     "@storybook/addon-a11y": "^7.4.0",
     "@storybook/addon-actions": "^7.4.0",
     "@storybook/addon-docs": "^7.4.0",
