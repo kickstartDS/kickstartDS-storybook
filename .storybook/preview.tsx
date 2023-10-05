@@ -39,28 +39,16 @@ const preview: Preview = {
       decorator: providerDecorator,
     },
     options: {
-      storySort(a, b) {
-        // welcome page to top!
-        if (a[0].includes("welcome")) {
-          return -2;
-        }
-
-        if (a[0].includes("design-token")) {
-          return -1;
-        }
-
-        if (a[0].includes("custom")) {
-          return 4;
-        }
-
-        if (a[0].includes("pages")) {
-          return 10;
-        }
-
-        // alphabetically
-        return a[1].kind === b[1].kind
-          ? 0
-          : a[1].id.localeCompare(b[1].id, undefined, { numeric: true });
+      storySort: {
+        order: [
+          "Welcome",
+          "Design Token",
+          "*",
+          "Custom",
+          "Recipes",
+          "Pages"
+        ],
+        method: "alphabetical",
       },
     },
     designToken: {
