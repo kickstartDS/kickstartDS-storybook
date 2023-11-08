@@ -28,7 +28,6 @@ const Recipe = () => (
           horizontal: "center",
           vertical: "top",
           background: "transparent",
-          // @ts-expect-error
           links: [],
         }}
       />

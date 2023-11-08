@@ -29,7 +29,13 @@ export declare type Label = string;
 /**
  * Choose one of the styles from the list
  */
-export declare type ButtonStyle = "solid" | "solid-inverted" | "clear" | "clear-inverted" | "outline" | "outline-inverted";
+export declare type ButtonStyle =
+  | "solid"
+  | "solid-inverted"
+  | "clear"
+  | "clear-inverted"
+  | "outline"
+  | "outline-inverted";
 /**
  * Choose a size between small, medium and large
  */
@@ -77,52 +83,52 @@ export declare type Class = string;
  * Component to to increase a number up to a final value
  */
 export interface CountUpProps {
-    to: Number;
-    icon?: Icon;
-    topic?: Topic;
-    text?: TextContent;
-    link?: Link;
-    className?: Class;
-    /**
-     * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
-     */
-    expand?: number;
-    graphic?: "none" | "tokens" | "components" | "properties";
-    [k: string]: unknown;
+  to: Number;
+  icon?: Icon;
+  topic?: Topic;
+  text?: TextContent;
+  link?: Link;
+  className?: Class;
+  /**
+   * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
+   */
+  expand?: number;
+  graphic?: "none" | "tokens" | "components" | "properties";
+  [k: string]: unknown;
 }
 /**
  * Icon
  */
 export interface Icon {
-    icon?: IconIdentifier;
-    role?: AriaRole;
-    className?: AdditionalClass;
-    [k: string]: unknown;
+  icon?: IconIdentifier;
+  role?: AriaRole;
+  className?: AdditionalClass;
+  [k: string]: unknown;
 }
 /**
  * link-button
  */
 export interface Link {
-    enabled?: DisplayLink;
-    label: Label;
-    variant: ButtonStyle;
-    size: ButtonSize;
-    className?: AdditionalClasses;
-    icon?: Icon1;
-    iconBefore?: IconBeforeButton;
-    iconAfter?: IconAfterButton;
-    dataComponent?: DataComponentAttribute;
-    fillAnimation?: FillAnimation;
-    iconAnimation?: IconAnimation;
-    href: ButtonHref;
-    newTab?: OpenLinkInNewTab;
+  enabled?: DisplayLink;
+  label: Label;
+  variant: ButtonStyle;
+  size: ButtonSize;
+  className?: AdditionalClasses;
+  icon?: Icon1;
+  iconBefore?: IconBeforeButton;
+  iconAfter?: IconAfterButton;
+  dataComponent?: DataComponentAttribute;
+  fillAnimation?: FillAnimation;
+  iconAnimation?: IconAnimation;
+  href: ButtonHref;
+  newTab?: OpenLinkInNewTab;
 }
 /**
  * Icon
  */
 export interface Icon1 {
-    icon?: IconIdentifier1;
-    role?: AriaRole1;
-    className?: AdditionalClass1;
-    [k: string]: unknown;
+  icon?: IconIdentifier1;
+  role?: AriaRole1;
+  className?: AdditionalClass1;
+  [k: string]: unknown;
 }

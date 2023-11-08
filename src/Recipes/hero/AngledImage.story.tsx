@@ -18,14 +18,11 @@ const Recipe = () => (
           subheadline: "Autem voluptas quis facere et qui voluptate earum.",
         },
         text: `Lorem ipsum dolor sit amet, [consetetur sadipscing](http://example.com/) elitr, sed diam voluptua. At vero eos et accusam et justo duo **dolores et ea rebum.**`,
-        // @ts-expect-error
         links: [
           {
             fillAnimation: false,
             href: "#",
-            iconAfter: false,
             iconAnimation: false,
-            iconBefore: false,
             label: "Start now",
             newTab: false,
             size: "medium",

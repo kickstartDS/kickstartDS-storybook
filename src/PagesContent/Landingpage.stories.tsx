@@ -37,13 +37,11 @@ const Page = () => (
             level: "h1",
             styleAs: "h1",
             subheadline: "Democratizing Design Systems",
-            // @ts-expect-error
             switchOrder: true,
           },
           horizontal: "left",
           indent: true,
           link: {
-            // @ts-expect-error
             deko: true,
             highlighted: true,
             enabled: true,
@@ -89,7 +87,6 @@ A low-code framework, UI develeopment toolkit and comprehensive component librar
             subheadline: "Your AI-powered Design System assistant!",
           },
           text: "Our Design System Concierge can help by providing expert guidance and pointing you towards the right resources, whether it's implementation guides, architecture documents, adoption strategies, or other content.",
-          // @ts-expect-error
           links: [
             {
               label: "Try it, it's free",
@@ -201,7 +198,6 @@ A low-code framework, UI develeopment toolkit and comprehensive component librar
       spaceBefore="small"
     >
       <CountUp
-        // @ts-expect-error
         graphic="components"
         text={`
 Use our components as **solid building blocks**, adapt and improve them as needed. From tokens to full customization.
@@ -212,7 +208,6 @@ Benefit from **15+ years of frontend experience!**
         topic="Components"
       />
       <CountUp
-        // @ts-expect-error
         graphic="properties"
         text={`
 Component properties encode decisions, **rooted in reality**, pre-solving everyday problems for you.
@@ -223,7 +218,6 @@ Directly engage with components through **Storybooks** rich interface.
         topic="Properties"
       />
       <CountUp
-        // @ts-expect-error
         graphic="tokens"
         text={`
 Of course we have **design tokens** – colors, fonts, sizes and iconography.

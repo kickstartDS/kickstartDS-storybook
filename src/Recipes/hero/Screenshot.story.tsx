@@ -2,11 +2,7 @@ import { Section } from "@kickstartds/base/lib/section";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
 const Recipe = () => (
-  <Section
-    width="full"
-    spaceAfter="none"
-    spaceBefore="none"
-  >
+  <Section width="full" spaceAfter="none" spaceBefore="none">
     <Storytelling
       backgroundColor="#eceff3"
       full
@@ -22,24 +18,21 @@ const Recipe = () => (
             "Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.",
         },
         text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.",
-        // @ts-expect-error
         links: [
           {
             fillAnimation: false,
-            href: '#',
-            iconAfter: false,
+            href: "#",
             iconAnimation: false,
-            iconBefore: false,
-            label: 'Start building',
+            label: "Start building",
             newTab: false,
-            size: 'medium',
-            variant: 'solid'
+            size: "medium",
+            variant: "solid",
           },
           {
-            href: '#',
-            label: 'Get a demo',
-            variant: 'outline'
-          }
+            href: "#",
+            label: "Get a demo",
+            variant: "outline",
+          },
         ],
       }}
     />

@@ -14,14 +14,11 @@ const Recipe = () => (
           "Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis.",
       },
       text: "",
-      // @ts-expect-error
       links: [
         {
           fillAnimation: false,
           href: "#",
-          iconAfter: false,
           iconAnimation: false,
-          iconBefore: false,
           label: "Start now",
           newTab: false,
           size: "medium",

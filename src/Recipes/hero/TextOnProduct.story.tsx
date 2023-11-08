@@ -3,11 +3,7 @@ import { Section } from "@kickstartds/base/lib/section";
 
 const Recipe = () => (
   <>
-    <Section
-      width="full"
-      spaceBefore="none"
-      spaceAfter="none"
-    >
+    <Section width="full" spaceBefore="none" spaceAfter="none">
       <Visual
         backgroundColor="#f6f6f6"
         inbox
@@ -15,9 +11,12 @@ const Recipe = () => (
         media={{
           mode: "image",
           image: {
-            srcMobile: "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-            srcTablet: "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-            srcDesktop: "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            srcMobile:
+              "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            srcTablet:
+              "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            srcDesktop:
+              "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
           },
         }}
         box={{
@@ -32,11 +31,9 @@ const Recipe = () => (
           horizontal: "right",
           vertical: "center",
           background: "transparent",
-          // @ts-expect-error
           links: [],
         }}
       />
-
     </Section>
   </>
 );
