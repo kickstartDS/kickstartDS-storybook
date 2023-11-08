@@ -40,8 +40,7 @@ export const Main: Story = {
 export const MitIcon: Story = {
   args: pack({
     ...Solid.args,
-    iconAfter: true,
-    icon: {
+    iconAfter: {
       icon: "chevron-right",
     },
   }),
