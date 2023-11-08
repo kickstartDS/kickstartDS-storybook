@@ -1,4 +1,3 @@
-import React from "react";
 import { Section } from "@kickstartds/base/lib/section";
 import { Button } from "@kickstartds/base/lib/button";
 import { useSessionState } from "../hooks/useSessionState";
@@ -50,8 +49,7 @@ export const AnnouncementBar: FC<AnnouncementBarProps> = ({
       width="max"
       spaceBefore="none"
       spaceAfter="none"
-      align="center"
-      inverted="true"
+      inverted={true}
       className="c-announcement-bar--section"
     >
       <div className="c-announcement-bar">
