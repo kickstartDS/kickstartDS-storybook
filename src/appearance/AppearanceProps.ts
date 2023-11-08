@@ -31,6 +31,8 @@ export type Name = string;
 export type Link = string;
 /**
  * Who participated in this appearance?
+ *
+ * @minItems 1
  */
 export type Participants = [Person, ...Person[]];
 /**

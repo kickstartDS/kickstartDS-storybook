@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "emitDeclarationOnly": true,
-    "declaration": true,
-    "jsx": "preserve",
-    "outDir": "dist/components",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "outDir": "dist",
     "strict": false,
-    "esModuleInterop": true
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
-  "include": ["src/types.ts"],
+  "include": ["src/**/*", ".storybook/**/*", "docs/**/*"],
   "exclude": ["node_modules"]
 }

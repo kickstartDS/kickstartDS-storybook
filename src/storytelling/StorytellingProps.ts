@@ -230,6 +230,10 @@ export type MobileImageAfterText = boolean;
  */
 export type DesktopImageAfterText = boolean;
 /**
+ * Image description
+ */
+export type AltText = string;
+/**
  * Additional css classes attached to the wrapping element
  */
 export type Class = string;
@@ -251,7 +255,6 @@ export interface StorytellingProps {
   className?: Class;
   inverted?: Inverted2;
   component?: KsComponentAttribute7;
-  [k: string]: unknown;
 }
 /**
  * Text content to display
@@ -265,7 +268,6 @@ export interface TextBox {
   vAlign?: BoxVerticalAlignment;
   hAlign?: BoxHorizontalAlignment;
   link?: Button1;
-  [k: string]: unknown;
 }
 /**
  * Component to display links and call-to-actions
@@ -369,7 +371,7 @@ export interface Image {
   vAlign?: ImageVerticalAlignment;
   hAlign?: ImageHorizontalAlignment;
   order?: Order;
-  [k: string]: unknown;
+  alt?: AltText;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
@@ -377,5 +379,4 @@ export interface Image {
 export interface Order {
   mobileImageLast?: MobileImageAfterText;
   desktopImageLast?: DesktopImageAfterText;
-  [k: string]: unknown;
 }

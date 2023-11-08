@@ -120,7 +120,6 @@ export interface CountUpProps {
    */
   expand?: number;
   component?: KsComponentAttribute4;
-  [k: string]: unknown;
 }
 /**
  * Icon

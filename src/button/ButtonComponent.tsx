@@ -15,7 +15,6 @@ import {
   ButtonContext,
   Button as KdsButton,
 } from "@kickstartds/base/lib/button";
-import React from "react";
 
 const ButtonComponent: ForwardRefExoticComponent<
   RefAttributes<HTMLButtonElement | HTMLAnchorElement> &
@@ -107,7 +106,7 @@ const ButtonComponent: ForwardRefExoticComponent<
   }
 );
 
-export const ButtonProvider: FunctionComponent<PropsWithChildren<never>> = (
+export const ButtonProvider: FunctionComponent<PropsWithChildren<any>> = (
   props
 ) => <ButtonContext.Provider value={ButtonComponent} {...props} />;
 export const Button = KdsButton as typeof ButtonComponent;

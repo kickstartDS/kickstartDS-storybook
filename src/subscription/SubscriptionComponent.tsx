@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from "react";
+import { FC, HTMLAttributes } from "react";
 import { Headline } from "@kickstartds/base/lib/headline";
 import { TextField } from "@kickstartds/form/lib/text-field";
 import { Button } from "@kickstartds/base/lib/button";

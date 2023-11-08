@@ -15,7 +15,7 @@ export const VisualProvider = ({ children }) => {
       </>
     ) : null;
 
-  const VisualComponent = ({ box, ...props }) => {
+  const VisualComponent = ({ box = {}, ...props }) => {
     const { link, links, ...boxRest } = box;
 
     if (links?.length) {

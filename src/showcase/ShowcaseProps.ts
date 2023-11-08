@@ -154,7 +154,6 @@ export interface QuoteElement {
   byline?: SourceAddition;
   className?: Class;
   component?: KsComponentAttribute;
-  [k: string]: unknown;
 }
 /**
  * Add main image to represent this showcase entry

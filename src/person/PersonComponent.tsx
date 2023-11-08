@@ -3,8 +3,6 @@ import { Picture } from "@kickstartds/base/lib/picture";
 import classnames from "classnames";
 import { PersonProps } from "./PersonProps";
 
-import React from "react";
-
 export const Person: FunctionComponent<
   PersonProps & HTMLAttributes<HTMLDivElement>
 > = ({ name, avatar, size, title, className, ...props }) => {

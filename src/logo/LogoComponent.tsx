@@ -1,7 +1,6 @@
 import { FC, HTMLAttributes } from "react";
 import { Link } from "@kickstartds/base/lib/link";
 import { LogoProps } from "./LogoProps";
-import React from "react";
 
 export const Logo: FC<LogoProps & HTMLAttributes<HTMLElement>> = ({
   dark,
