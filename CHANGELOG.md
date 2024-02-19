@@ -1,3 +1,15 @@
+# v2.5.22 (Mon Feb 19 2024)
+
+#### ⚠️ Pushed to `master`
+
+- fix: remove product hunt launch button ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.5.21 (Fri Jan 26 2024)
 
 
